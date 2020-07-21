@@ -18,7 +18,7 @@
                         <i class="linearicons-toggle-on"></i>
                     </a>
                     <a href="<?php echo HTTP_PATH ?>" class="logo-text float-left">
-                        <div class="logo-img"><img src="<?php echo HTTP_PATH .'app-assets/images/logo/logo2.png'; ?>" alt="VNI Logo"></div>
+                        <div class="logo-img"><img src="<?php echo HTTP_PATH ?>app-assets/images/logo/logo2.png" alt="VNI Logo"></div>
                         <span class="text align-middle" style="font-weight: 900;">VNI</span>
                     </a>
                 </div>

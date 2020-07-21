@@ -1582,7 +1582,7 @@ var App = function () {
     };
 
 
-    var _componentWizard = function() {
+    var _component_steps_form = function() {
         if (!$().steps) {
             console.warn('Warning - steps.min.js is not loaded.');
             return;
@@ -1729,7 +1729,7 @@ var App = function () {
 
         // Initialize all components
         initComponents: function() {
-            _componentWizard();
+            _component_steps_form(); //Khai bao truoc
             _component_tooltip();
             _component_popover();
             _component_daterange();

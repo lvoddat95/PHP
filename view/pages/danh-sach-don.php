@@ -288,7 +288,7 @@
                                                 <th width="30px" data-orderable="false" class="text-center all"><input type="checkbox" id="input-chk-all"></th>
                                                 <th class="all">Số đơn</th>
                                                 <th class="min-tablet">Ngày cấp</th>
-                                                <th class="desktop">Loại hình</th>
+                                                <th width="80px" class="desktop">Loại hình</th>
                                                 <th width="30%" class="min-tablet">Tên khách hàng</td>
                                                 <th class="desktop">Cán bộ khai thác</th>
                                                 <th class="desktop">Cán bộ cấp đơn</th>
