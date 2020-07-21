@@ -2,8 +2,8 @@
 <?php
  include_once HEADER; 
 
- var_dump(DOCUMENT_ROOT);
-var_dump(file_exists("../../config.php"));
+//  var_dump(DOCUMENT_ROOT);
+// var_dump(file_exists("../../config.php"));
 
 
 

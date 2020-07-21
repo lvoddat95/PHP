@@ -29,7 +29,7 @@ if(in_array($_SERVER['REMOTE_ADDR'], $addr_list)){
     $GLOBALS['svr'] = 'local';
 }
 
-
+var_dump($GLOBALS['svr']);
 function get_site_url($p_dir="", $root=false) 
 {
     // output: /myproject/index.php
