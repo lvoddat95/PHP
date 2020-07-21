@@ -14,7 +14,7 @@
             <div class="sidebar-content">
                 <!-- Logo -->
                 <div class="logo clearfix">
-                    <a href="#" class="sidebar-main-toggle">
+                    <a href="<?php echo get_site_url() ?>" class="sidebar-main-toggle">
                         <i class="linearicons-toggle-on"></i>
                     </a>
                     <a href="" class="logo-text float-left">
@@ -39,13 +39,11 @@
                                 <span class="menu-title"> Pages Template</span>
                             </a>
                             <ul class="nav nav-group-sub" data-submenu-title="Pages Template">
-                                <li><a href="index2.html" class="nav-link"><div class="menu-title">Màn hình danh sách</div></a></li>
-                                <li><a href="nhap_don1.html" class="nav-link"><div class="menu-title">Màn hình nhập đơn</div></a></li>
-                                <li><a href="nhap_don2.html" class="nav-link"><div class="menu-title">Màn hình chi tiết đơn</div></a></li>
-                                <li><a href="login.html" class="nav-link"><div class="menu-title">Trang Login</div></a></li>
-                                <!-- <li><a href="account.html" class="nav-link"><div class="menu-title">Trang tài khoản</div></a></li> -->
-                                <li><a href="404.html" class="nav-link"><div class="menu-title">Trang 404</div></a></li>
-                                <!-- <li><a href="faq.html" class="nav-link"><div class="menu-title">Trang FAQ</div></a></li> -->
+                                <li><a href="<?php echo get_site_url('view/pages/danh-sach-don.php') ?>" class="nav-link"><div class="menu-title">Danh sách đơn</div></a></li>
+                                <li><a href="<?php echo get_site_url('view/pages/nhap-don.php') ?>" class="nav-link"><div class="menu-title">Nhập đơn</div></a></li>
+                                <li><a href="<?php echo get_site_url('view/pages/xem-don.php') ?>" class="nav-link"><div class="menu-title">Xem đơn</div></a></li>
+                                <li><a href="<?php echo get_site_url('view/pages/login.php') ?>" class="nav-link"><div class="menu-title">Trang Login</div></a></li>
+                                <li><a href="<?php echo get_site_url('view/pages/404.php') ?>" class="nav-link"><div class="menu-title">Trang 404</div></a></li>
                             </ul>
                         </li>
                         <li class="nav-item nav-item-submenu">
@@ -55,8 +53,8 @@
                             </a>
 
                             <ul class="nav nav-group-sub" data-submenu-title="Bảo hiểm xe cơ giới">
-                                <li><a href="f01.html" class="nav-link"><div class="menu-title">F01 - Bảo hiểm xe máy</div></a></li>
-                                <li class="active"><a href="nhap_don1.html" class="nav-link"><div class="menu-title">F02 - Bảo hiểm ô tô</div></a></li>
+                                <li><a href="<?php echo get_site_url('view/insurance/MVP/f01.php') ?>" class="nav-link"><div class="menu-title">F01 - Bảo hiểm xe máy</div></a></li>
+                                <li class="active"><a href="<?php echo get_site_url('view/insurance/MVP/f02.php') ?>" class="nav-link"><div class="menu-title">F02 - Bảo hiểm ô tô</div></a></li>
                             </ul>
                         </li>
                         <li class="nav-item nav-item-submenu">
