@@ -24,7 +24,7 @@
                     <ul class="media-list dropdown-scrollable">
                         <li class="media">
                             <div class="mr-2 position-relative">
-                                <img src="app-assets/images/placeholder.jpg" width="24" height="24"
+                                <img src="<?php echo HTTP_PATH; ?>app-assets/images/placeholder.jpg" width="24" height="24"
                                     class="rounded-circle" alt="">
                             </div>
 
@@ -42,7 +42,7 @@
 
                         <li class="media">
                             <div class="mr-2 position-relative">
-                                <img src="app-assets/images/placeholder.jpg" width="24" height="24"
+                                <img src="<?php echo HTTP_PATH; ?>app-assets/images/placeholder.jpg" width="24" height="24"
                                     class="rounded-circle" alt="">
                             </div>
 
@@ -61,7 +61,7 @@
 
                         <li class="media">
                             <div class="mr-2 position-relative">
-                                <img src="app-assets/images/placeholder.jpg" width="24" height="24"
+                                <img src="<?php echo HTTP_PATH; ?>app-assets/images/placeholder.jpg" width="24" height="24"
                                     class="rounded-circle" alt="">
                             </div>
                             <div class="media-body">
@@ -80,7 +80,7 @@
 
                         <li class="media">
                             <div class="mr-2 position-relative">
-                                <img src="app-assets/images/placeholder.jpg" width="24" height="24"
+                                <img src="<?php echo HTTP_PATH; ?>app-assets/images/placeholder.jpg" width="24" height="24"
                                     class="rounded-circle" alt="">
                             </div>
                             <div class="media-body">
@@ -99,7 +99,7 @@
 
                         <li class="media">
                             <div class="mr-2 position-relative">
-                                <img src="app-assets/images/placeholder.jpg" width="24" height="24"
+                                <img src="<?php echo HTTP_PATH; ?>app-assets/images/placeholder.jpg" width="24" height="24"
                                     class="rounded-circle" alt="">
                             </div>
                             <div class="media-body">
@@ -132,7 +132,7 @@
         </li>
         <li class="dropdown dropdown-user dropdown-bg">
             <a href="#" class="dropdown-toggle caret-0" data-toggle="dropdown">
-                <img src="app-assets/images/icon-user.png" class="rounded-circle" height="24" alt="">
+                <img src="<?php echo HTTP_PATH; ?>app-assets/images/icon-user.png" class="rounded-circle" height="24" alt="">
             </a>
             <div class="dropdown-menu dropdown-menu-right">
                 <div class="dropdown-item">

@@ -3,7 +3,7 @@
 
     <body class="sidebar-xs">
 
-        <div class="page-content home-page">
+        <div class="page-content">
 
             <?php include_once SIDEBAR; ?>
 
@@ -20,7 +20,7 @@
                         </button>
                         <div class="top-left">
                             <div class="breadcrumb">
-                                <a href="index2.html" class="breadcrumb-item"><i class="icon-steering-wheel mr-1"></i> F02 - Bảo hiểm ô tô</a>
+                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="icon-steering-wheel mr-1"></i> F02 - Bảo hiểm ô tô</a>
                                 <span class="breadcrumb-item active">Cập nhập đơn</span>
                             </div>
                             <div class="d-md-none logo-mobile">
@@ -31,7 +31,7 @@
                             </div>
                         </div>
 
-                        <?php include_once MOBILE_NAV; ?>
+                        <?php include_once TOP_RIGHT; ?>
                         
                     </div>
                     <!-- /Header -->
@@ -377,75 +377,72 @@
                                                                                
                                                                             </div>
                                                                             <div class="col-md-12">
-                                                                                <table class=" table table-light lich-thanh-toan">
-                                                                                    <colgroup>
-                                                                                        <col width="25%">
-                                                                                        <col width="15%">
-                                                                                        <col width="10%">
-                                                                                        <col width="10%">
-                                                                                        <col width="20%">
-                                                                                        <col width="5%">
-                                                                                    </colgroup>
-                                                                                    <thead class="thead-light">
-                                                                                        <th><b>Tên công ty</b></th>
-                                                                                        <th><b>Vai trò</b></th>
-                                                                                        <th><b>Tỷ lệ ĐBH </b></th>
-                                                                                        <th><b>Phí quản lý (%)</b></th>
-                                                                                        <th><b>Thành tiền phí quản lý ĐBH</b></th>
-                                                                                        <th></th>
-                                                                                    </thead>
-                                                                                    <tbody data-repeater-list="so-lan-thanh-toan">
-                                                                                        <tr data-repeater-item>
-                                                                                            <td>
-                                                                                                <select class="form-control required" select2 name="cong_ty">
-                                                                                                    <option id="" value="" name="">--- Chọn công ty---</option>
-                                                                                                    <option id="BR-020" name="VNI" value="BR-020">VNI</option>
-                                                                                                    <option id="BR" name="BIC (thừa, đề nghị không chọn)" value="BR">BIC (thừa, đề nghị không chọn)</option>
-                                                                                                    <option id="BR-001" name="AON Hà Nội (thừa, đề nghị không chọn)" value="BR-001">AON Hà Nội (thừa, đề nghị không chọn)</option>
-                                                                                                    <option id="BR-002" name="QBE Mercantile Mutual" value="BR-002">QBE Mercantile Mutual</option>
-                                                                                                    <option id="BR-003" name="BMS Casualty" value="BR-003">BMS Casualty</option>
-                                                                                                    <option id="BR-004" name="GRASS-SAVOYE HCMC" value="BR-004">GRASS-SAVOYE HCMC</option>
-                                                                                                    <option id="BR-005" name="Webster Hyde Health" value="BR-005">Webster Hyde Health</option>
-                                                                                                    <option id="BR-006" name="JARDINE HANOI" value="BR-006">JARDINE HANOI</option>
-                                                                                                    <option id="BR-007" name="Marsh Việt Nam" value="BR-007">Marsh Việt Nam</option>
-                                                                                                    <option id="BR-008" name="SWIRE" value="BR-008">SWIRE</option>
-                                                                                                    <option id="BR-009" name="AON Hồ Chí Minh (thừa, đề nghị không chọn)" value="BR-009">AON Hồ Chí Minh (thừa, đề nghị không chọn)</option>
-                                                                                                    <option id="BR-010" name="Grass Savoye Hà Nội (thừa, đề nghị không chọn)" value="BR-010">Grass Savoye Hà Nội (thừa, đề nghị không chọn)</option>
-                                                                                                    <option id="BR-011" name="JARDINE HCMC" value="BR-011">JARDINE HCMC</option>
-                                                                                                    <option id="BR-012" name="Asia Pacific Risk Consultants" value="BR-012">Asia Pacific Risk Consultants</option>
-                                                                                                    <option id="BR-013" name="RIVER INSURANCE MANAGEMENT LTD" value="BR-013">RIVER INSURANCE MANAGEMENT LTD</option>
-                                                                                                    <option id="BR-014" name="VIET QUOC INSURANCE BROKER" value="BR-014">VIET QUOC INSURANCE BROKER</option>
-                                                                                                    <option id="BR-015" name="EAST ASIA JOINT STOCK INS BROKER CO LTD" value="BR-015">EAST ASIA JOINT STOCK INS BROKER CO LTD</option>
-                                                                                                    <option id="BR-016" name="JARDINE LLYOY THOMPSON HONG KONG" value="BR-016">JARDINE LLYOY THOMPSON HONG KONG</option>
-                                                                                                    <option id="BR-017" name="EAST ASIA JOINT STOCK INS BROKER CO HN" value="BR-017">EAST ASIA JOINT STOCK INS BROKER CO HN</option>
-                                                                                                    <option id="BR-018" name="AON Thailand" value="BR-018">AON Thailand</option>
-                                                                                                    <option id="BR-019" name="AON Việt Nam" value="BR-019">AON Việt Nam</option>
-                                                                                                    <option id="OA-009" name="Bảo Việt (thừa, đề nghị không chọn)" value="OA-009">Bảo Việt (thừa, đề nghị không chọn)</option>
-                                                                                                    <option id="OA-010" name="Bảo Minh (thừa, đề nghị không chọn)" value="OA-010">Bảo Minh (thừa, đề nghị không chọn)</option>
-                                                                                                    <option id="OA-011" name="Allianz" value="OA-011">Allianz</option>
-                                                                                                    <option id="OA-013" name="PVI" value="OA-013">PVI</option>
-                                                                                                    <option id="OA-012" name="PJICO" value="OA-012">PJICO</option>
-                                                                                                </select>
-                                                                                            </td>
-                                                                                            <td>
-                                                                                                <div class="form-group-select">
-                                                                                                    <select class="form-control required" select2 name="nha">
-                                                                                                        <option value="">--- Chọn ---</option>
-                                                                                                        <option value="opt1">Đứng đầu</option>
-                                                                                                        <option value="opt2">Nhà đồng bảo hiểm</option>
+                                                                                <div class="repeater-obj" repeater>
+                                                                                    <table class=" table table-light datatable"
+                                                                                            data-paging="false"
+                                                                                            data-info="false"
+                                                                                            data-ordering="false"
+                                                                                            data-searching="false"
+                                                                                    >
+                                                                                        <thead class="thead-light">
+                                                                                            <th width="25%"><b>Tên công ty</b></th>
+                                                                                            <th width="15%"><b>Vai trò</b></th>
+                                                                                            <th width="10%"><b>Tỷ lệ ĐBH </b></th>
+                                                                                            <th width="10%"><b>Phí quản lý (%)</b></th>
+                                                                                            <th width="20%"><b>Thành tiền phí quản lý ĐBH</b></th>
+                                                                                            <th width=70px></th>
+                                                                                        </thead>
+                                                                                        <tbody data-repeater-list="dbh-cong-ty">
+                                                                                            <tr data-repeater-item>
+                                                                                                <td>
+                                                                                                    <select class="form-control required" select2 name="cong_ty">
+                                                                                                        <option id="" value="" name="">--- Chọn công ty---</option>
+                                                                                                        <option id="BR-020" name="VNI" value="BR-020">VNI</option>
+                                                                                                        <option id="BR" name="BIC (thừa, đề nghị không chọn)" value="BR">BIC (thừa, đề nghị không chọn)</option>
+                                                                                                        <option id="BR-001" name="AON Hà Nội (thừa, đề nghị không chọn)" value="BR-001">AON Hà Nội (thừa, đề nghị không chọn)</option>
+                                                                                                        <option id="BR-002" name="QBE Mercantile Mutual" value="BR-002">QBE Mercantile Mutual</option>
+                                                                                                        <option id="BR-003" name="BMS Casualty" value="BR-003">BMS Casualty</option>
+                                                                                                        <option id="BR-004" name="GRASS-SAVOYE HCMC" value="BR-004">GRASS-SAVOYE HCMC</option>
+                                                                                                        <option id="BR-005" name="Webster Hyde Health" value="BR-005">Webster Hyde Health</option>
+                                                                                                        <option id="BR-006" name="JARDINE HANOI" value="BR-006">JARDINE HANOI</option>
+                                                                                                        <option id="BR-007" name="Marsh Việt Nam" value="BR-007">Marsh Việt Nam</option>
+                                                                                                        <option id="BR-008" name="SWIRE" value="BR-008">SWIRE</option>
+                                                                                                        <option id="BR-009" name="AON Hồ Chí Minh (thừa, đề nghị không chọn)" value="BR-009">AON Hồ Chí Minh (thừa, đề nghị không chọn)</option>
+                                                                                                        <option id="BR-010" name="Grass Savoye Hà Nội (thừa, đề nghị không chọn)" value="BR-010">Grass Savoye Hà Nội (thừa, đề nghị không chọn)</option>
+                                                                                                        <option id="BR-011" name="JARDINE HCMC" value="BR-011">JARDINE HCMC</option>
+                                                                                                        <option id="BR-012" name="Asia Pacific Risk Consultants" value="BR-012">Asia Pacific Risk Consultants</option>
+                                                                                                        <option id="BR-013" name="RIVER INSURANCE MANAGEMENT LTD" value="BR-013">RIVER INSURANCE MANAGEMENT LTD</option>
+                                                                                                        <option id="BR-014" name="VIET QUOC INSURANCE BROKER" value="BR-014">VIET QUOC INSURANCE BROKER</option>
+                                                                                                        <option id="BR-015" name="EAST ASIA JOINT STOCK INS BROKER CO LTD" value="BR-015">EAST ASIA JOINT STOCK INS BROKER CO LTD</option>
+                                                                                                        <option id="BR-016" name="JARDINE LLYOY THOMPSON HONG KONG" value="BR-016">JARDINE LLYOY THOMPSON HONG KONG</option>
+                                                                                                        <option id="BR-017" name="EAST ASIA JOINT STOCK INS BROKER CO HN" value="BR-017">EAST ASIA JOINT STOCK INS BROKER CO HN</option>
+                                                                                                        <option id="BR-018" name="AON Thailand" value="BR-018">AON Thailand</option>
+                                                                                                        <option id="BR-019" name="AON Việt Nam" value="BR-019">AON Việt Nam</option>
+                                                                                                        <option id="OA-009" name="Bảo Việt (thừa, đề nghị không chọn)" value="OA-009">Bảo Việt (thừa, đề nghị không chọn)</option>
+                                                                                                        <option id="OA-010" name="Bảo Minh (thừa, đề nghị không chọn)" value="OA-010">Bảo Minh (thừa, đề nghị không chọn)</option>
+                                                                                                        <option id="OA-011" name="Allianz" value="OA-011">Allianz</option>
+                                                                                                        <option id="OA-013" name="PVI" value="OA-013">PVI</option>
+                                                                                                        <option id="OA-012" name="PJICO" value="OA-012">PJICO</option>
                                                                                                     </select>
-                                                                                                </div>
-                                                                                            </td>
-                                                                                            <td><input class="form-control" type="text" placeholder=""></td>
-                                                                                            <td><input class="form-control" type="text" placeholder=""></td>
-                                                                                            <td><input class="form-control input-money" type="text" placeholder=""></td>
-                                                                                            <td><input data-repeater-delete class="btn bg-danger" type="button" value="- Xóa"/></td>
-                                                                                        </tr>
-                                                                                    </tbody>
-                                                                                    <tfoot>
-                                                                                        <th colspan="7" class="text-center"><input class="btn bg-success" data-repeater-create type="button" value="+ Thêm"/></th>
-                                                                                    </tfoot>
-                                                                                </table>
+                                                                                                </td>
+                                                                                                <td>
+                                                                                                    <div class="form-group-select">
+                                                                                                        <select class="form-control required" select2 name="nha">
+                                                                                                            <option value="">--- Chọn ---</option>
+                                                                                                            <option value="opt1">Đứng đầu</option>
+                                                                                                            <option value="opt2">Nhà đồng bảo hiểm</option>
+                                                                                                        </select>
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                                <td><input class="form-control" type="text" placeholder=""></td>
+                                                                                                <td><input class="form-control" type="text" placeholder=""></td>
+                                                                                                <td><input class="form-control input-money" type="text" placeholder=""></td>
+                                                                                                <td><input data-repeater-delete class="btn bg-danger" type="button" value="- Xóa"/></td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                    <div class="border p-1 text-center"><input class="btn bg-success" data-repeater-create="" type="button" value="+ Thêm" aria-invalid="false"></div>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -2202,46 +2199,44 @@
                                                                     </table>
                                                                 </div>
                                                                 <div class="col-md-8">
-                                                                    <table class="table table-bordered lich-thanh-toan datatable"
-                                                                        data-paging="false"
-                                                                        data-info="false"
-                                                                        data-ordering="false"
-                                                                        data-searching="false"
-                                                                    >
-                                                                        <thead class="thead-light">
-                                                                            <tr>
-                                                                                <th width="10%"><b>Lần</b></th>
-                                                                                <th width="20%"><b>Ngày thanh toán</b></th>
-                                                                                <th width="25%" class="desktop"><b>Phí BH(có VAT)</b></th>
-                                                                                <th width="25%" class="desktop"><b>Thành tiền VAT</b></th>
-                                                                                <th width="25%" class="desktop"><b>Phí BH(chưa VAT) </b></th>
-                                                                                <th width="5%"></th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody data-repeater-list="so-lan-thanh-toan">
-                                                                            <tr data-repeater-item style="display: none;">
-                                                                                <td><input class="form-control input-number" type="text" value="" ></td>
-                                                                                <td><input class="form-control datepicker input-date" type="text" placeholder="dd/mm/yyyy"></td>
-                                                                                <td><input class="form-control input-money" type="text" placeholder="Nhập..."></td>
-                                                                                <td><input class="form-control input-money" type="text" placeholder="Nhập..."></td>
-                                                                                <td><input class="form-control input-money" type="text" placeholder="Nhập..."></td>
-                                                                                <td><input data-repeater-delete class="btn bg-danger" type="button" value="- Xóa"/></td>
-                                                                            </tr>
-                                                                            <tr data-repeater-item>
-                                                                                <td><input class="form-control" type="text" value="1"></td>
-                                                                                <td><input class="form-control datepicker input-date" type="text" placeholder="dd/mm/yyyy" value="16/06/2020"></td>
-                                                                                <td><input class="form-control input-money" type="text" placeholder="Nhập..." value="893,400"></td>
-                                                                                <td><input class="form-control input-money" type="text" placeholder="Nhập..." value="79,400"></td>
-                                                                                <td><input class="form-control input-money" type="text" placeholder="Nhập..." value="814,000"></td>
-                                                                                <td><input data-repeater-delete class="btn bg-danger" type="button" value="- Xóa"/></td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                        <tfoot>
-                                                                            <tr>
-                                                                                <th colspan="6" class="all text-center"><input class="btn bg-success" data-repeater-create type="button" value="+ Thêm"/></th>
-                                                                            </tr>
-                                                                        </tfoot>
-                                                                    </table>
+                                                                    <div class="repeater-obj" repeater>
+                                                                        <table class="table table-bordered lich-thanh-toan datatable"
+                                                                            data-paging="false"
+                                                                            data-info="false"
+                                                                            data-ordering="false"
+                                                                            data-searching="false"
+                                                                        >
+                                                                            <thead class="thead-light">
+                                                                                <tr>
+                                                                                    <th width="10%"><b>Lần</b></th>
+                                                                                    <th width="20%"><b>Ngày thanh toán</b></th>
+                                                                                    <th width="25%" class="desktop"><b>Phí BH(có VAT)</b></th>
+                                                                                    <th width="25%" class="desktop"><b>Thành tiền VAT</b></th>
+                                                                                    <th width="25%" class="desktop"><b>Phí BH(chưa VAT) </b></th>
+                                                                                    <th width="70px"></th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody data-repeater-list="so-lan-thanh-toan">
+                                                                                <tr data-repeater-item style="display: none;">
+                                                                                    <td><input class="form-control input-number" type="text" value="" ></td>
+                                                                                    <td><input class="form-control datepicker input-date" type="text" placeholder="dd/mm/yyyy"></td>
+                                                                                    <td><input class="form-control input-money" type="text" placeholder="Nhập..."></td>
+                                                                                    <td><input class="form-control input-money" type="text" placeholder="Nhập..."></td>
+                                                                                    <td><input class="form-control input-money" type="text" placeholder="Nhập..."></td>
+                                                                                    <td><input data-repeater-delete class="btn bg-danger" type="button" value="- Xóa"/></td>
+                                                                                </tr>
+                                                                                <tr data-repeater-item>
+                                                                                    <td><input class="form-control" type="text" value="1"></td>
+                                                                                    <td><input class="form-control datepicker input-date" type="text" placeholder="dd/mm/yyyy" value="16/06/2020"></td>
+                                                                                    <td><input class="form-control input-money" type="text" placeholder="Nhập..." value="893,400"></td>
+                                                                                    <td><input class="form-control input-money" type="text" placeholder="Nhập..." value="79,400"></td>
+                                                                                    <td><input class="form-control input-money" type="text" placeholder="Nhập..." value="814,000"></td>
+                                                                                    <td><input data-repeater-delete class="btn bg-danger" type="button" value="- Xóa"/></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <div class="border p-1 text-center"><input class="btn bg-success" data-repeater-create type="button" value="+ Thêm"/></div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
 
@@ -2294,11 +2289,28 @@
                     <?php include_once BOTTOM; ?>
                 
                 </div>
+                <!-- /content -->
 
             </div>
-            
+            <!-- /content-wrapper -->
         </div>
+        <!-- /page-content -->
+
+        <?php inc('chat-box.php'); ?> 
+        <?php inc('quick-action.php'); ?> 
+
+        <?php inc('modal/ds_so_hop_dong_xin_cap.php'); ?> 
+        <div class="modal-group">
+            <?php
+                inc('modal/ds_cac_khach_hang.php'); 
+                inc('modal/cap_nhap_thong_tin_khach_hang.php'); 
+            ?>
+        </div>
+        <?php inc('modal/ds_files.php'); ?> 
         
+
+
     </body>
 
-<?php include_once FOOTER; ?>
+<?php include_once FOOTER; ?>            
+        </div> 

@@ -5,9 +5,11 @@ define('HEADER', 'header.php');
 define('FOOTER', 'footer.php');
 define('SIDEBAR', 'sidebar.php');
 define('MOBILE_NAV', 'mobile-bottom.php');
+define('TOP_RIGHT', 'top-right.php');
 define('BOTTOM', 'bottom.php');
 
 define('DIR', dirname(__FILE__));
+
 define('APP_NAME', trim(strrchr(__DIR__, DIRECTORY_SEPARATOR), DIRECTORY_SEPARATOR));
 
 define('HTTP_PATH', get_site_url('',true)); 
@@ -57,4 +59,8 @@ function get_site_url($p_dir="", $root=false)
     return $protocol.'://'.$hostName.$pathInfo."/".$p_dir;
 }
 
+
+function inc($view){
+    require_once $view;
+}
 

@@ -1,12 +1,15 @@
 <?php require_once 'config.php'; ?>
 <?php include_once HEADER; ?>
-
-        <div class="page-content home-page">
+        
+        <!-- page-content -->
+        <div class="page-content">
 
             <?php include_once SIDEBAR; ?>
-
+            
+            <!-- content-wrapper -->
             <div class="content-wrapper">
-
+                
+                <!-- content -->
                 <div class="content">
 
                     <?php include_once MOBILE_NAV; ?>
@@ -39,9 +42,12 @@
                     <?php include_once BOTTOM; ?>
                 
                 </div>
+                <!-- /content -->
 
             </div>
+            <!-- /content-wrapper -->
             
         </div>
+        <!-- /page-content -->
 
 <?php include_once FOOTER; ?>

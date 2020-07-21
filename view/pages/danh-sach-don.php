@@ -20,18 +20,18 @@
                         </button>
                         <div class="top-left">
                             <div class="breadcrumb">
-                                <a href="index2.html" class="breadcrumb-item"><i class="icon-steering-wheel mr-1"></i> F02 - Bảo hiểm ô tô</a>
+                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="icon-steering-wheel mr-1"></i> F02 - Bảo hiểm ô tô</a>
                                 <span class="breadcrumb-item active">Danh sách đơn bảo hiểm</span>
                             </div>
                             <div class="d-md-none logo-mobile">
-                                <a href="index.html" class="logo-text">
+                                <a href="<?php echo HTTP_PATH; ?>" class="logo-text">
                                     <div class="logo-img"><img src="<?php echo HTTP_PATH .'app-assets/images/logo/logo2.png'; ?>" alt="VNI Logo"></div>
                                     <span class="text align-middle" style="font-weight: 900;">VNI</span>
                                 </a>
                             </div>
                         </div>
 
-                        <?php include_once MOBILE_NAV; ?>
+                        <?php include_once TOP_RIGHT; ?>
                     </div>
                     <!-- /Header -->
 
@@ -39,9 +39,9 @@
                         <div class="p-title">
                             <h1 class="font-weight-semibold font-size-m"><i class="icon-stack-text mr-2"></i>Danh sách đơn bảo hiểm</h1>
                         </div>
-                        <div class="p-button">
-                            <a href="nhap_don1.html" class="btn bg-teal-400 btn-labeled btn-labeled-left mr-1"><b><i class="icon-plus2"></i></b> Thêm đơn</a>
-                            <a href="ban_chao_list.html" class="btn bg-teal-400 btn-labeled btn-labeled-left mr-1"><b><i class="icon-list3"></i></b> Danh sách bản chào</a>
+                        <div class="">
+                            <a href="<?php echo HTTP_PATH .'view/pages/nhap-don.php'; ?>" class="btn bg-teal-400 btn-labeled btn-labeled-left mr-1"><b><i class="icon-plus2"></i></b> Thêm đơn</a>
+                            <a href="<?php echo HTTP_PATH .'view/welcome/ban-chao-list.php'; ?>" class="btn bg-teal-400 btn-labeled btn-labeled-left mr-1"><b><i class="icon-list3"></i></b> Danh sách bản chào</a>
               
                             <div class="btn-group">
                                 <button type="button" class="btn bg-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon-printer2"></i> IN</button>
@@ -286,13 +286,13 @@
                                         <thead class="thead-light">
                                             <tr>
                                                 <th width="30px" data-orderable="false" class="text-center all"><input type="checkbox" id="input-chk-all"></th>
-                                                <th width="15%" class="all">Số đơn</th>
+                                                <th class="all">Số đơn</th>
                                                 <th class="min-tablet">Ngày cấp</th>
                                                 <th class="desktop">Loại hình</th>
                                                 <th width="30%" class="min-tablet">Tên khách hàng</td>
                                                 <th class="desktop">Cán bộ khai thác</th>
                                                 <th class="desktop">Cán bộ cấp đơn</th>
-                                                <th class="all">Trạng thái</th>
+                                                <th width="80px" class="all">Trạng thái</th>
                                                 <th width="30px" class="text-center min-tablet" data-orderable="false">#</th>
                                             </tr>
                                         </thead>
@@ -310,7 +310,7 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
                                                                 <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
                                                                 
                                                             </div>
@@ -332,7 +332,7 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
                                                                 <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
                                                                 
                                                             </div>
@@ -353,7 +353,7 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
                                                                 <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
                                                                 
                                                             </div>
@@ -374,7 +374,7 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
                                                                 <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
                                                                 
                                                             </div>
@@ -395,7 +395,7 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
                                                                 <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
                                                                 
                                                             </div>
@@ -417,7 +417,7 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
                                                                 <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
                                                                 
                                                             </div>
@@ -438,7 +438,7 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
                                                                 <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
                                                                 
                                                             </div>
@@ -459,7 +459,7 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
                                                                 <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
                                                                 
                                                             </div>
@@ -480,7 +480,7 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
                                                                 <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
                                                                 
                                                             </div>
@@ -501,7 +501,7 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
                                                                 <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
                                                                 
                                                             </div>
@@ -522,7 +522,7 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
                                                                 <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
                                                                 
                                                             </div>
@@ -543,7 +543,7 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
                                                                 <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
                                                                 
                                                             </div>
@@ -564,7 +564,7 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
                                                                 <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
                                                                 
                                                             </div>
@@ -585,7 +585,7 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
                                                                 <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
                                                                 
                                                             </div>
@@ -606,7 +606,7 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
                                                                 <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
                                                                 
                                                             </div>
@@ -627,7 +627,7 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
                                                                 <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
                                                                 
                                                             </div>
@@ -648,7 +648,7 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
                                                                 <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
                                                                 
                                                             </div>
@@ -669,7 +669,7 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
                                                                 <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
                                                                 
                                                             </div>
@@ -690,7 +690,7 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
                                                                 <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
                                                                 
                                                             </div>
@@ -711,7 +711,7 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
                                                                 <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
                                                                 
                                                             </div>
@@ -732,7 +732,7 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
                                                                 <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
                                                                 
                                                             </div>
@@ -753,7 +753,7 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
                                                                 <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
                                                                 
                                                             </div>
@@ -774,7 +774,7 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
                                                                 <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
                                                                 
                                                             </div>
@@ -795,7 +795,7 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
                                                                 <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
                                                                 
                                                             </div>
@@ -820,6 +820,8 @@
             </div>
             
         </div>
+
+        <?php inc('modal/lich_su_ton_that.php'); ?>
 
     </body>
 

@@ -19,8 +19,8 @@
 	                    </button>
 	                    <div class="top-left">
 	                        <div class="breadcrumb">
-	                            <a href="index2.html" class="breadcrumb-item"><i class="icon-steering-wheel mr-1"></i> F02 - Bảo hiểm ô tô</a>
-	                            <span class="breadcrumb-item active">Cập nhập đơn</span>
+	                            <a href="" class="breadcrumb-item"><i class="icon-home5 mr-1"></i> Bảng điều khiển</a>
+	                            <span class="breadcrumb-item active">Ứng dụng</span>
 	                        </div>
 	                        <div class="d-md-none logo-mobile">
 	                            <a href="index.html" class="logo-text">
@@ -30,7 +30,7 @@
 	                        </div>
 	                    </div>
 
-	                    <?php include_once MOBILE_NAV; ?>
+	                    <?php include_once TOP_RIGHT; ?>
 	                    
 	                </div>
 	                <!-- /Header -->

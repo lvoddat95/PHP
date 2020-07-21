@@ -2611,8 +2611,8 @@ body.sidebar-mobile-main .quick-action {
     width: 100px;
 }
 .f-right.list .file-wrapper .dropdown {
-    left: 0px;
-    right: auto;
+    left: auto;
+    right: 0px;
     top: 8px;
 }
 .f-right.list .file-wrapper:hover{
