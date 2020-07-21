@@ -9,7 +9,7 @@
 
                 <div class="content">
 
-                    <?php include_once 'view/inc/mobile-bottom.php'; ?>
+                    <?php include_once MOBILE_NAV; ?>
 
                     <!-- Header -->
                     <div class="header-top">
@@ -23,7 +23,7 @@
                             </div>
                             <div class="d-md-none logo-mobile">
                                 <a href="index.html" class="logo-text">
-                                    <div class="logo-img"><img src="app-assets/images/logo/logo2.png" alt="Convex Logo"></div>
+                                    <div class="logo-img"><img src="<?php echo HTTP_PATH .'app-assets/images/logo/logo2.png'; ?>" alt="VNI Logo"></div>
                                     <span class="text align-middle" style="font-weight: 900;">VNI</span>
                                 </a>
                             </div>

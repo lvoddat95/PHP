@@ -14,11 +14,11 @@
             <div class="sidebar-content">
                 <!-- Logo -->
                 <div class="logo clearfix">
-                    <a href="<?php echo get_site_url() ?>" class="sidebar-main-toggle">
+                    <a href="<?php echo HTTP_PATH ?>" class="sidebar-main-toggle">
                         <i class="linearicons-toggle-on"></i>
                     </a>
                     <a href="" class="logo-text float-left">
-                        <div class="logo-img"><img src="app-assets/images/logo/logo2.png" alt="Convex Logo"></div>
+                        <div class="logo-img"><img src="<?php echo HTTP_PATH .'app-assets/images/logo/logo2.png'; ?>" alt="VNI Logo"></div>
                         <span class="text align-middle" style="font-weight: 900;">VNI</span>
                     </a>
                 </div>
@@ -39,11 +39,11 @@
                                 <span class="menu-title"> Pages Template</span>
                             </a>
                             <ul class="nav nav-group-sub" data-submenu-title="Pages Template">
-                                <li><a href="<?php echo get_site_url('view/pages/danh-sach-don.php') ?>" class="nav-link"><div class="menu-title">Danh sách đơn</div></a></li>
-                                <li><a href="<?php echo get_site_url('view/pages/nhap-don.php') ?>" class="nav-link"><div class="menu-title">Nhập đơn</div></a></li>
-                                <li><a href="<?php echo get_site_url('view/pages/xem-don.php') ?>" class="nav-link"><div class="menu-title">Xem đơn</div></a></li>
-                                <li><a href="<?php echo get_site_url('view/pages/login.php') ?>" class="nav-link"><div class="menu-title">Trang Login</div></a></li>
-                                <li><a href="<?php echo get_site_url('view/pages/404.php') ?>" class="nav-link"><div class="menu-title">Trang 404</div></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="nav-link"><div class="menu-title">Danh sách đơn</div></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/pages/nhap-don.php'; ?>" class="nav-link"><div class="menu-title">Nhập đơn</div></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/pages/xem-don.php'; ?>" class="nav-link"><div class="menu-title">Xem đơn</div></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/pages/login.php'; ?>" class="nav-link"><div class="menu-title">Trang Login</div></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/pages/404.php'; ?>" class="nav-link"><div class="menu-title">Trang 404</div></a></li>
                             </ul>
                         </li>
                         <li class="nav-item nav-item-submenu">
@@ -53,8 +53,8 @@
                             </a>
 
                             <ul class="nav nav-group-sub" data-submenu-title="Bảo hiểm xe cơ giới">
-                                <li><a href="<?php echo get_site_url('view/insurance/MVP/f01.php') ?>" class="nav-link"><div class="menu-title">F01 - Bảo hiểm xe máy</div></a></li>
-                                <li class="active"><a href="<?php echo get_site_url('view/insurance/MVP/f02.php') ?>" class="nav-link"><div class="menu-title">F02 - Bảo hiểm ô tô</div></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/MVP/f01.php'; ?>" class="nav-link"><div class="menu-title">F01 - Bảo hiểm xe máy</div></a></li>
+                                <li class="active"><a href="<?php echo HTTP_PATH .'view/insurance/MVP/f02.php'; ?>" class="nav-link"><div class="menu-title">F02 - Bảo hiểm ô tô</div></a></li>
                             </ul>
                         </li>
                         <li class="nav-item nav-item-submenu">

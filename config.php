@@ -10,16 +10,13 @@ define('BOTTOM', 'bottom.php');
 define('DIR', dirname(__FILE__));
 define('APP_NAME', trim(strrchr(__DIR__, DIRECTORY_SEPARATOR), DIRECTORY_SEPARATOR));
 
-define('HTTP_ROOT', get_site_url()); 
+define('HTTP_PATH', get_site_url('',true)); 
 
-define('INC_ROOT', HTTP_ROOT.'view/inc'); 
+define('INC_ROOT', HTTP_PATH.'view/inc'); 
 
-define('ASSET_ROOT', HTTP_ROOT.'app-assets');
+define('ASSET_ROOT', HTTP_PATH.'app-assets');
 
 define('DOCUMENT_ROOT',$_SERVER['DOCUMENT_ROOT'].'/'.APP_NAME); 
-
-var_dump(APP_NAME) ;
-var_dump(get_site_url('',true)) ;
 
 function get_site_url($p_dir="", $root=false) 
 {
