@@ -14,7 +14,7 @@
             <div class="sidebar-content">
                 <!-- Logo -->
                 <div class="logo clearfix">
-                    <a href="" class="sidebar-main-toggle">
+                    <a href="javascript:;" class="sidebar-main-toggle">
                         <i class="linearicons-toggle-on"></i>
                     </a>
                     <a href="<?php echo HTTP_PATH ?>" class="logo-text float-left">

@@ -11,8 +11,6 @@
 
                 <div class="content">
 
-                    <?php include_once MOBILE_NAV; ?>
-
                     <!-- Header -->
                     <div class="header-top">
                         <button class="d-md-none sidebar-mobile-main-toggle" type="button">
@@ -2286,6 +2284,7 @@
                         </div>
                     </div>
 
+                    <?php include_once MOBILE_NAV; ?>
                     <?php include_once BOTTOM; ?>
                 
                 </div>
@@ -2306,9 +2305,7 @@
                 inc('modal/cap_nhap_thong_tin_khach_hang.php'); 
             ?>
         </div>
-        <?php inc('modal/ds_files.php'); ?> 
-        
-
+        <?php inc('modal/ds_files.php'); ?>
 
     </body>
 
