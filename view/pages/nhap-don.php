@@ -1,5 +1,13 @@
 <?php require_once '../../config.php'; ?>
-<?php include_once HEADER; ?>
+<?php
+ include_once HEADER; 
+
+ var_dump(DOCUMENT_ROOT);
+var_dump(file_exists("../../config.php"));
+
+
+
+?>
 
     <body class="sidebar-xs">
 
@@ -2291,7 +2299,6 @@
                         </div>
                     </div>
 
-
                     <?php include_once BOTTOM; ?>
                 
                 </div>
@@ -2299,7 +2306,7 @@
             </div>
             
         </div>
-        
+
     </body>
 
 <?php include_once FOOTER; ?>

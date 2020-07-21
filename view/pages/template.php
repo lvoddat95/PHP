@@ -9,7 +9,7 @@
 
                 <div class="content">
 
-                    <?php include_once 'view/inc/mobile-bottom.php'; ?>
+                    <?php include_once MOBILE_NAV; ?>
 
                     <!-- Header -->
                     <div class="header-top">
@@ -30,9 +30,10 @@
                         </div>
 
                         <?php include_once MOBILE_NAV; ?>
-                        
                     </div>
                     <!-- /Header -->
+
+                    
 
 
                     <?php include_once BOTTOM; ?>
