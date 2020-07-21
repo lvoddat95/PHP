@@ -18,7 +18,6 @@ define('ASSET_ROOT', HTTP_PATH.'app-assets');
 
 define('DOCUMENT_ROOT',$_SERVER['DOCUMENT_ROOT'].'/'.APP_NAME); 
 
-
 function get_site_url($p_dir="", $root=false) 
 {
     // output: /myproject/index.php

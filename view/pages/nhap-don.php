@@ -1,14 +1,5 @@
 <?php require_once '../../config.php'; ?>
-<?php
- include_once HEADER; 
-
- echo '<br>';
- var_dump(HTTP_PATH);
-// var_dump(file_exists("../../config.php"));
-
-
-
-?>
+<?php include_once HEADER; ?>
 
     <body class="sidebar-xs">
 
@@ -2307,7 +2298,7 @@
             </div>
             
         </div>
-
+        
     </body>
 
 <?php include_once FOOTER; ?>
