@@ -15,7 +15,7 @@ define('BOTTOM', 'view/inc/bottom.php');
 
 
 
-
+var_dump(get_site_url());
 
 function get_site_url($p_dir="") 
 {
