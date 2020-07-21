@@ -37,4 +37,3 @@
 
     </head>
 
-    <body class="sidebar-xs">

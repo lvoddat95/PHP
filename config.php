@@ -26,7 +26,19 @@ function get_site_url($p_dir="", $root=false)
     // output: Array ( [dirname] => /myproject [basename] => index.php [extension] => php [filename] => index ) 
     $pathInfo = pathinfo($currentPath)['dirname']; 
     if ($root == true) {
-        $pathInfo = '/'.APP_NAME;
+
+        $path = '/'.APP_NAME;
+
+        $whitelist = array(
+            '127.0.0.1',
+            '::1'
+        );
+
+        if(!in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
+            $path = '';
+        }
+
+        $pathInfo = $path;
     }
 
     // output: localhost

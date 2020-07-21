@@ -236,7 +236,7 @@
                         <h3>Hỗ trợ khẩn cấp</h3>
                         <p>Liên hệ ngay cho tôi !</p>
                     </div>
-                    <img class="img" src="app-assets/images/sidebar-bg/chat.png" alt="">
+                    <img class="img" src="<?php echo HTTP_PATH .'app-assets/images/sidebar-bg/chat.png'; ?>" alt="">
                     <div class="sup-down">
                         <p><a href=""><i class="linearicons-bubble mr-1"></i> <span>Chat</span></a></p>
                         <p><a href=""><i class="linearicons-phone-wave mr-1"></i> <span>Call</span></a></p>

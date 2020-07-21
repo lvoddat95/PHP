@@ -35,5 +35,4 @@
 
 	<!-- /Footer -->
 
-	</body>
 </html>

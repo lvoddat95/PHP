@@ -1,7 +1,7 @@
 <?php require_once 'config.php'; ?>
 
 <?php include_once HEADER; ?>
-
+	<body>
 		<div class="page-content home-page">
 
 		    <?php include_once SIDEBAR; ?>

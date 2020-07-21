@@ -1,16 +1,17 @@
 
 <?php require 'config.php'; ?>
-<?php include 'view/inc/header.php'; ?>
-
-
+<?php include_once 'view/inc/header.php'; ?>
+	
+	<body class="sidebar-xs">
+		
 		<div class="page-content home-page">
 
-		    <?php include 'view/inc/sidebar.php'; ?>
+		    <?php include_once 'view/inc/sidebar.php'; ?>
 
 	        <div class="content-wrapper">
 	            <div class="content">
 
-		    		<?php include 'view/inc/mobile-bottom.php'; ?>
+		    		<?php include_once 'view/inc/mobile-bottom.php'; ?>
 
 		    		<!-- Header -->
 	                <div class="header-top">
@@ -30,17 +31,19 @@
 	                        </div>
 	                    </div>
 
-	                    <?php include 'view/inc/mobile-bottom.php'; ?>
+	                    <?php include_once 'view/inc/mobile-bottom.php'; ?>
 	                    
 	                </div>
 	                <!-- /Header -->
 
-	            	<?php include 'view/inc/bottom.php'; ?>
+	            	<?php include_once 'view/inc/bottom.php'; ?>
 				
 	            </div>
 	        </div>
 		</div>
 
+	</body>
 
-<?php include 'view/inc/footer.php'; ?>
+
+<?php include_once 'view/inc/footer.php'; ?>
 
