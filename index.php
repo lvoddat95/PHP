@@ -1,16 +1,16 @@
 <?php require_once 'config.php'; ?>
 
-<?php include HEADER; ?>
+<?php include_once HEADER; ?>
 
 		<div class="page-content home-page">
 
-		    <?php include SIDEBAR; ?>
+		    <?php include_once SIDEBAR; ?>
 
 	        <div class="content-wrapper">
 
 	            <div class="content">
 
-		    		<?php include 'view/inc/mobile-bottom.php'; ?>
+		    		<?php include_once 'view/inc/mobile-bottom.php'; ?>
 
 		    		<!-- Header -->
 	                <div class="header-top">
@@ -30,7 +30,7 @@
 	                        </div>
 	                    </div>
 
-	                    <?php include MOBILE_NAV; ?>
+	                    <?php include_once MOBILE_NAV; ?>
 	                    
 	                </div>
 	                <!-- /Header -->
@@ -201,7 +201,7 @@
 	                    </div>
 	                </section>
 
-	            	<?php include BOTTOM; ?>
+	            	<?php include_once BOTTOM; ?>
 				
 	            </div>
 
@@ -209,5 +209,5 @@
 
 		</div>
 
-<?php include FOOTER; ?>
+<?php include_once FOOTER; ?>
 
