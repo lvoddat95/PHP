@@ -2,7 +2,8 @@
 <?php
  include_once HEADER; 
 
-//  var_dump(DOCUMENT_ROOT);
+ echo '<br>';
+ var_dump(HTTP_PATH);
 // var_dump(file_exists("../../config.php"));
 
 

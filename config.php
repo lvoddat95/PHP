@@ -18,18 +18,7 @@ define('ASSET_ROOT', HTTP_PATH.'app-assets');
 
 define('DOCUMENT_ROOT',$_SERVER['DOCUMENT_ROOT'].'/'.APP_NAME); 
 
-$GLOBALS['svr'] = '';
 
-$addr_list = array(
-    '127.0.0.1',
-    '::1'
-);
-
-if(in_array($_SERVER['REMOTE_ADDR'], $addr_list)){
-    $GLOBALS['svr'] = 'local';
-}
-
-var_dump($GLOBALS['svr']);
 function get_site_url($p_dir="", $root=false) 
 {
     // output: /myproject/index.php
@@ -41,9 +30,12 @@ function get_site_url($p_dir="", $root=false)
 
         $path = '/'.APP_NAME;
 
-        global $svr;
+        $whitelist = array(
+            '127.0.0.1',
+            '::1'
+        );
 
-        if($svr == 'local'){
+        if(!in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
             $path = '';
         }
 
@@ -66,12 +58,4 @@ function get_site_url($p_dir="", $root=false)
     return $protocol.'://'.$hostName.$pathInfo."/".$p_dir;
 }
 
-
-function inc($view){
-    try {
-        require_once $view;
-    } catch (Exception $e) {
-        exit('Require failed! Error: '.$e);
-    }
-}
 
