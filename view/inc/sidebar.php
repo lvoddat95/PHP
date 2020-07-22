@@ -60,6 +60,29 @@
                         </li>
                         <li class="nav-item nav-item-submenu">
                             <a href="javascript:;" class="nav-link">
+                                <i class="linearicons-man-woman"></i>
+                                <span class="menu-title"> Bảo hiểm con người</span>
+                            </a>
+                            <ul class="nav nav-group-sub" data-submenu-title="Bảo hiểm con người">
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g01.php'; ?>" class="nav-link"><div class="menu-title">G01 - Bảo hiểm sức khỏe toàn diện</div></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g02.php'; ?>" class="nav-link"><div class="menu-title">G02 - Bảo hiểm con người mức trách nhiệm cao (VNI Care)</div></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g03.php'; ?>" class="nav-link"><div class="menu-title">G03 - Bảo hiểm tai nạn con người</div></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g04.php'; ?>" class="nav-link"><div class="menu-title">G04 - Bảo hiểm tai nạn con người của Cologne Re</div></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g05.php'; ?>" class="nav-link"><div class="menu-title">G05 - Bảo hiểm toàn diện học sinh</div></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g06.php'; ?>" class="nav-link"><div class="menu-title">G06 - Bảo hiểm du lịch trong nước</div></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g07.php'; ?>" class="nav-link"><div class="menu-title">G07 - Bảo hiểm du lịch quốc tế</div></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g08.php'; ?>" class="nav-link"><div class="menu-title">G08 - Bảo hiểm sức khỏe giáo viên</div></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g09.php'; ?>" class="nav-link"><div class="menu-title">G09 - Bảo hiểm tai nạn đối với người lao động</div></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g12.php'; ?>" class="nav-link"><div class="menu-title">G12 - Bảo hiểm chăm sóc sức khỏe cá nhân White Lotus</div></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g13.php'; ?>" class="nav-link"><div class="menu-title">G13 - Bảo hiểm tai nạn hộ sử dụng điện</div></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g14.php'; ?>" class="nav-link"><div class="menu-title">G14 - Bảo hiểm tai nạn con người tại hộ gia đình do cháy chung cư, nhà riêng</div></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g15.php'; ?>" class="nav-link"><div class="menu-title">G15 - Toàn Diện Hộ Gia Đình</div></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g16.php'; ?>" class="nav-link"><div class="menu-title">G16 - Bảo hiểm sức khỏe người vay vốn</div></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g17.php'; ?>" class="nav-link"><div class="menu-title">G17 - Bảo hiểm tai nạn giao thông đường bộ</div></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-item-submenu">
+                            <a href="javascript:;" class="nav-link">
                                 <i class="linearicons-chart-growth"></i>
                                 <span class="menu-title"> Bảo hiểm hàng hóa</span>
                             </a>
@@ -84,29 +107,7 @@
                                 <li><a href="h08.html" class="nav-link"><div class="menu-title">H08 - Bảo hiểm trách nhiệm hoạt động cảng</div></a></li>
                             </ul>
                         </li>
-                        <li class="nav-item nav-item-submenu">
-                            <a href="javascript:;" class="nav-link">
-                                <i class="linearicons-man-woman"></i>
-                                <span class="menu-title"> Bảo hiểm con người</span>
-                            </a>
-                            <ul class="nav nav-group-sub" data-submenu-title="Bảo hiểm con người">
-                                <li><a href="g01.html" class="nav-link"><div class="menu-title">G01 - Bảo hiểm sức khỏe toàn diện</div></a></li>
-                                <li><a href="g02.html" class="nav-link"><div class="menu-title">G02 - Bảo hiểm con người mức trách nhiệm cao (VNI Care)</div></a></li>
-                                <li><a href="g03.html" class="nav-link"><div class="menu-title">G03 - Bảo hiểm tai nạn con người</div></a></li>
-                                <li><a href="g04.html" class="nav-link"><div class="menu-title">G04 - Bảo hiểm tai nạn con người của Cologne Re</div></a></li>
-                                <li><a href="g05.html" class="nav-link"><div class="menu-title">G05 - Bảo hiểm toàn diện học sinh</div></a></li>
-                                <li><a href="g06.html" class="nav-link"><div class="menu-title">G06 - Bảo hiểm du lịch trong nước</div></a></li>
-                                <li><a href="g07.html" class="nav-link"><div class="menu-title">G07 - Bảo hiểm du lịch quốc tế</div></a></li>
-                                <li><a href="g08.html" class="nav-link"><div class="menu-title">G08 - Bảo hiểm sức khỏe giáo viên</div></a></li>
-                                <li><a href="g09.html" class="nav-link"><div class="menu-title">G09 - Bảo hiểm tai nạn đối với người lao động</div></a></li>
-                                <li><a href="g12.html" class="nav-link"><div class="menu-title">G12 - Bảo hiểm chăm sóc sức khỏe cá nhân White Lotus</div></a></li>
-                                <li><a href="g13.html" class="nav-link"><div class="menu-title">G13 - Bảo hiểm tai nạn hộ sử dụng điện</div></a></li>
-                                <li><a href="g14.html" class="nav-link"><div class="menu-title">G14 - Bảo hiểm tai nạn con người tại hộ gia đình do cháy chung cư, nhà riêng</div></a></li>
-                                <li><a href="g15.html" class="nav-link"><div class="menu-title">G15 - Toàn Diện Hộ Gia Đình</div></a></li>
-                                <li><a href="g16.html" class="nav-link"><div class="menu-title">G16 - Bảo hiểm sức khỏe người vay vốn</div></a></li>
-                                <li><a href="g17.html" class="nav-link"><div class="menu-title">G17 - Bảo hiểm tai nạn giao thông đường bộ</div></a></li>
-                            </ul>
-                        </li>
+                        
                         <li class="nav-item nav-item-submenu">
                             <a href="javascript:;" class="nav-link">
                                 <i class="linearicons-bag-dollar"></i>

@@ -131,6 +131,7 @@
     -ms-flex-align: start;
     align-items: flex-start;
     padding: 8px 15px;
+    padding-right: 20px !important;
     color: #fff;
     transition: background-color ease-in-out 0.15s, color ease-in-out 0.15s;
 }
@@ -206,7 +207,7 @@
     top: 50%;
     transform: -webkit-translateY(-50%);
     transform: translateY(-50%);
-    right: 15px;
+    right: 5px;
     transition: -webkit-transform 0.25s ease-in-out;
     transition: transform 0.25s ease-in-out;
     transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
@@ -341,7 +342,7 @@
         -ms-flex-pack: center;
         justify-content: center;
         padding-left: 0;
-        padding-right: 0;
+        padding-right: 0 !important;
     }
     .sidebar-xs .sidebar ul li a i {
         margin-right: 0px;

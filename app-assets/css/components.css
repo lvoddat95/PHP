@@ -1558,7 +1558,7 @@ input[type=text].noui-height-helper:not(.noUi-target)[data-fouc] {
 }
 
 .select2-selection--multiple .select2-selection__choice {
-    background-color: #455A64;
+    background-color: #2196f3;
     color: #fff;
     cursor: default;
     float: left;
@@ -1578,7 +1578,7 @@ input[type=text].noui-height-helper:not(.noUi-target)[data-fouc] {
 }
 
 .select2-selection--multiple .select2-selection__choice:hover, .select2-selection--multiple .select2-selection__choice:focus {
-    background-color: #455A64;
+    background-color: #1976d2;
     color: #fff;
 }
 
@@ -1590,7 +1590,7 @@ input[type=text].noui-height-helper:not(.noUi-target)[data-fouc] {
     cursor: pointer;
     float: right;
     font-size: 0.875rem;
-    margin-top: 0.18752rem;
+    margin-top: 2px;
     line-height: 1;
     margin-left: 0.625rem;
     opacity: 0.75;

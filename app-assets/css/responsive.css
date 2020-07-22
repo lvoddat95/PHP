@@ -14,9 +14,6 @@
         box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     }
 
-    body:not(.sidebar-xs) .wizard>.actions {
-        left: 265px;
-    }
 
 
 
@@ -85,6 +82,7 @@
     [class*=" icon-"], [class^=icon-]{
         font-size: 12px;
     }
+    
     .mobile-bottom {
         -ms-display: flex;
         display: flex;
@@ -267,7 +265,7 @@
         margin-right: 5px !important;
     }
     .p-button{
-        margin: -2.5px;
+        margin: -2.5px !important;
     }
     .p-button > *{
         margin: 2.5px !important;
@@ -321,8 +319,13 @@
     .list-files li{
         width: 25%;
     }
-
-
+    
+    .header-button{
+        display: block !important;
+    }
+    .header-button .card-title{
+        margin-bottom: 10px;
+    }
 
 
 
