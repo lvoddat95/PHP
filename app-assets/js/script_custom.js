@@ -6,7 +6,6 @@ $(function(){
         $(document)
         .off('focusin.bs.modal')
         .on('focusin.bs.modal', function (e) {
-
             if ($(e.target).hasClass('select2-search__field')) {
                 return true;
             }

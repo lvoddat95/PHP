@@ -42,6 +42,7 @@
                                 <li><a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="nav-link"><div class="menu-title">Danh sách đơn</div></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/pages/nhap-don.php'; ?>" class="nav-link"><div class="menu-title">Nhập đơn</div></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/pages/xem-don.php'; ?>" class="nav-link"><div class="menu-title">Xem đơn</div></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/welcome/ban-chao-list.php'; ?>" class="nav-link"><div class="menu-title">Bản chào</div></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/pages/login.php'; ?>" class="nav-link"><div class="menu-title">Trang Login</div></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/pages/404.php'; ?>" class="nav-link"><div class="menu-title">Trang 404</div></a></li>
                             </ul>
