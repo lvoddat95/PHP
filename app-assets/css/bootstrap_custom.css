@@ -4666,3 +4666,8 @@ a.badge[class*=bg-]:not(.bg-transparent):not(.bg-white):not(.bg-light):hover, a.
 .tooltip{
 	font-size: inherit;
 }
+
+.dropdown-item:hover, 
+.dropdown-item:focus{
+    background-color: rgba(0, 0, 0, .1);
+}

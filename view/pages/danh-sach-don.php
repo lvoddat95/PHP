@@ -257,7 +257,7 @@
                                 <div class="card-header header-elements-inline header-button ">
                                     <p class="card-title font-size-s">Danh sách đơn bảo hiểm</p>
                                     <div class="header-elements p-button">
-                                        <a href="" class="btn btn-labeled btn-labeled-left mr-2"><b><i class="icon-file-check"></i></b> Trình duyệt</a>
+                                        <a href="#" data-toggle="modal" data-target="#trinh_duyet_don" class="btn btn-labeled btn-labeled-left mr-2"><b><i class="icon-file-check"></i></b> Trình duyệt</a>
                                         <a href="" class="btn btn-labeled btn-labeled-left mr-2"><b><i class="icon-trash"></i></b> Xóa</a>
                                         <div class="btn-group">
                                             <button type="button" class="btn bg-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon-printer2"></i> IN</button>
@@ -278,7 +278,7 @@
                                         data-ordering="true"
                                         data-searching="false"
                                         data-page-length="20"
-                                        data-order='[[3, "desc"]]'
+                                        data-order='[[0, "desc"]]'
                                     >
                                         <thead class="thead-light">
                                             <tr>
@@ -287,9 +287,9 @@
                                                 <th width="100px" class="min-tablet">Ngày cấp</th>
                                                 <th width="100px" class="desktop">Loại hình</th>
                                                 <th width="30%" class="min-tablet">Tên khách hàng</td>
-                                                <th class="desktop">Cán bộ khai thác</th>
-                                                <th class="desktop">Cán bộ cấp đơn</th>
-                                                <th width="80px" class="all">Trạng thái</th>
+                                                <th class="desktop">Số tiền BH</th>
+                                                <th class="desktop">Phí bảo hiểm</th>
+                                                <th width="110px" class="all">Trạng thái</th>
                                                 <th width="30px" class="text-center min-tablet" data-orderable="false">#</th>
                                             </tr>
                                         </thead>
@@ -299,8 +299,8 @@
                                                 <td>26/05/2020</td>
                                                 <td>F02</td>
                                                 <td>Vũ Huy Anh</td>
-                                                <td>Đặng Văn Lịch</td>
-                                                <td>Bùi Thị Nhung</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-success">Mới thêm</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
@@ -321,8 +321,8 @@
                                                 <td>27/05/2020</td>
                                                 <td>F02</td>
                                                 <td>CTCP Thiết Bị Và Thang Máy Messi</td>
-                                                <td>Bùi Thị Nhung</td>
-                                                <td>Bùi Thị Nhung</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-dark">Từ chối</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
@@ -342,8 +342,8 @@
                                                 <td>22/05/2020</td>
                                                 <td>F02</td>
                                                 <td>Công Ty CP DV Suất Ăn Hàng Không VN</td>
-                                                <td>Đỗ Thùy Dương</td>
-                                                <td>Bùi Thị Nhung</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-info">Chờ duyệt</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
@@ -363,8 +363,8 @@
                                                 <td>25/05/2020</td>
                                                 <td>F02</td>
                                                 <td>Trần Văn Luyện</td>
-                                                <td>Tô Thị Hoàng Yến</td>
-                                                <td>Tô Thị Hoàng Yến</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-primary">Chấp nhận</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
@@ -384,8 +384,8 @@
                                                 <td>25/05/2020</td>
                                                 <td>E01</td>
                                                 <td>Công Ty TNHH Thành An - Hà Nội</td>
-                                                <td>Đỗ Thùy Dương</td>
-                                                <td>Tô Thị Hoàng Yến</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-danger ">TBH Từ chối</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
@@ -406,8 +406,8 @@
                                                 <td>16/05/2020</td>
                                                 <td>F02</td>
                                                 <td>CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ DU LỊCH ADV PRO</td>
-                                                <td>Nguyễn Đức Cường</td>
-                                                <td>Nguyễn Đức Cường</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-primary">Chấp nhận</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
@@ -427,8 +427,8 @@
                                                 <td>26/05/2020</td>
                                                 <td>F02</td>
                                                 <td>Phạm Thị Thu Huyền</td>
-                                                <td>Đặng Văn Lịch</td>
-                                                <td>Bùi Thị Nhung</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-danger ">TBH Từ chối</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
@@ -448,8 +448,8 @@
                                                 <td>18/05/2020</td>
                                                 <td>F02</td>
                                                 <td>Nguyễn Hoàng Thị Bé</td>
-                                                <td>Lê Vi Linh</td>
-                                                <td>Lê Vi Linh</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-success">Mới thêm</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
@@ -469,8 +469,8 @@
                                                 <td>26/05/2020</td>
                                                 <td>E02</td>
                                                 <td>CÔNG TY CHẾ BIẾN THAN QUẢNG NINH-TKV</td>
-                                                <td>Ngô Thị Hà Trang</td>
-                                                <td>Ngô Thị Hà Trang</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-danger ">TBH Từ chối</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
@@ -490,8 +490,8 @@
                                                 <td>16/05/2020</td>
                                                 <td>F02</td>
                                                 <td>Đào Nguyên Tùng</td>
-                                                <td>Đặng Văn Lịch</td>
-                                                <td>Bùi Thị Nhung</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-success">Mới thêm</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
@@ -511,8 +511,8 @@
                                                 <td>16/05/2020</td>
                                                 <td>F02</td>
                                                 <td>Trần Anh Dũng</td>
-                                                <td>Đặng Văn Lịch</td>
-                                                <td>Bùi Thị Nhung</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-danger ">TBH Từ chối</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
@@ -532,8 +532,8 @@
                                                 <td>26/05/2020</td>
                                                 <td>F02</td>
                                                 <td>Công Ty CP DV Và Vận Chuyển Ngọc Cường</td>
-                                                <td>Bùi Thị Nhung</td>
-                                                <td>Bùi Thị Nhung</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-primary">Chấp nhận</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
@@ -553,8 +553,8 @@
                                                 <td>26/05/2020</td>
                                                 <td>F02</td>
                                                 <td>Công Ty Cổ Phần Tập Đoàn Sơn Spentes Việt Nam</td>
-                                                <td>Đặng Văn Lịch</td>
-                                                <td>Bùi Thị Nhung</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-danger ">TBH Từ chối</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
@@ -574,8 +574,8 @@
                                                 <td>24/05/2020</td>
                                                 <td>E02</td>
                                                 <td>Chi Nhánh Tập Đoàn Công Nghiệp Than - Khoáng Sản Việt Nam Công Ty Kho Vận Và Cảng Cẩm Phả - VINACOMIN </td>
-                                                <td>Bùi Thị Nhung</td>
-                                                <td>Bùi Thị Nhung</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-primary">Chấp nhận</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
@@ -595,8 +595,8 @@
                                                 <td>20/05/2020</td>
                                                 <td>C01</td>
                                                 <td>BAN QUẢN LÝ DỰ ÁN CÔNG TRÌNH THỦY LỢI NỘI ĐỒNG</td>
-                                                <td>Nguyễn Ngọc Cường</td>
-                                                <td>Trương Thị Bích Liên</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-dark">Từ chối</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
@@ -616,8 +616,8 @@
                                                 <td>22/05/2020 </td>
                                                 <td>C01</td>
                                                 <td>CÔNG TY TNHH MỘT THÀNH VIÊN KHAI THÁC CÔNG TRÌNH THUỶ LỢI BẮC HƯNG HẢI</td>
-                                                <td>Nguyễn Ngọc Cường</td>
-                                                <td>Trương Thị Bích Liên</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-info">Chờ duyệt</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
@@ -637,8 +637,8 @@
                                                 <td> 22/05/2020</td>
                                                 <td> C01 </td>
                                                 <td>ĐOÀN KINH TẾ - QUỐC PHÒNG 327</td>
-                                                <td> Nguyễn Ngọc Cường</td>
-                                                <td>Trương Thị Bích Liên</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-danger ">TBH Từ chối</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
@@ -658,8 +658,8 @@
                                                 <td>22/04/2020 </td>
                                                 <td>C01 </td>
                                                 <td>BAN QUẢN LÝ DỰ ÁN DƯỜNG DỒ CHÍ MINH </td>
-                                                <td>Đỗ Thùy Dương   </td>
-                                                <td>Đỗ Thùy Dương   </td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-info">Chờ duyệt</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
@@ -679,8 +679,8 @@
                                                 <td>20/05/2020</td>
                                                 <td>F02</td>
                                                 <td>CTY TNHH THÀNH CÔNG</td>
-                                                <td>Lê Vi Linh</td>
-                                                <td>Bùi Thị Nhung    </td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-info">Chờ duyệt</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
@@ -700,8 +700,8 @@
                                                 <td>21/05/2020 </td>
                                                 <td>F02 </td>
                                                 <td>Công Ty Cố Phần Bánh Mứt Kẹo Hoàng Minh </td>
-                                                <td>Đặng Văn Lịch   </td>
-                                                <td>Bùi Thị Nhung     </td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-dark">Từ chối</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
@@ -721,8 +721,8 @@
                                                 <td>20/05/2020 </td>
                                                 <td>F02</td>
                                                 <td>CTY TNHH THÀNH CÔNG</td>
-                                                <td>Vũ Văn Đạt</td>
-                                                <td>Bùi Thị Nhung</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-success">Mới thêm</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
@@ -742,8 +742,8 @@
                                                 <td>21/05/2020 </td>
                                                 <td>F02</td>
                                                 <td>Nguyễn Quang Anh    </td>
-                                                <td>Phạm Duy Tùng   </td>
-                                                <td>Nguyễn Đức Cường</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-success">Mới thêm</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
@@ -763,8 +763,8 @@
                                                 <td>22/05/2020</td>
                                                 <td>F02</td>
                                                 <td>Công Ty Unid Việt Nam</td>
-                                                <td>Đặng Văn Lịch</td>
-                                                <td>Bùi Thị Nhung</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-danger ">TBH Từ chối</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
@@ -784,8 +784,8 @@
                                                 <td>13/05/2020 </td>
                                                 <td>C01 </td>
                                                 <td>BAN QUẢN LÝ DỰ ÁN PHÁT TRIỂN ĐIỆN LỰC HÀ NỘI - TỔNG CÔNG TY ĐIỆN LỰC TP HÀ NỘI </td>
-                                                <td>Nguyễn Ngọc Cường</td>
-                                                <td>Trương Thị Bích Liên</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-success">Mới thêm</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
@@ -819,6 +819,7 @@
         </div>
 
         <?php inc('modal/lich_su_ton_that.php'); ?>
+        <?php inc('modal/trinh_duyet_don.php'); ?>
 
     </body>
 

@@ -569,6 +569,7 @@ var App = function () {
                 language: "vi",
                 minimumResultsForSearch: 5,
                 width: '100%',
+                placeholder: "--- Chọn ---"
             });
         }
     }

@@ -14378,7 +14378,6 @@ textarea#HandsontableCopyPaste {
 .dataTable {
     margin: 0;
     max-width: none;
-    table-layout: fixed;
 }
 
 .dataTable thead th, .dataTable thead td {
@@ -14726,6 +14725,9 @@ textarea#HandsontableCopyPaste {
         float: none;
         display: block;
         text-align: center;
+    }
+    .dataTable {
+        table-layout: fixed;
     }
 }
 
@@ -15364,7 +15366,10 @@ textarea#HandsontableCopyPaste {
     display: table-cell;
     padding: 0.5rem 0;
 }
-
+.dataTable tr.child .dtr-data input,
+.dataTable tr.child .dtr-data select{
+    width: 100%;
+}
 .dataTable tr td.child {
     white-space: normal;
     position: relative;
