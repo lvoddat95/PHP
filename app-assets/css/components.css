@@ -14678,8 +14678,8 @@ textarea#HandsontableCopyPaste {
 
 .dataTables_paginate .paginate_button.current, .dataTables_paginate .paginate_button.current:hover, .dataTables_paginate .paginate_button.current:focus {
     color: #fff;
-    background-color: #1C3FAA;
-    border-color: #1C3FAA;
+    background-color: #777;
+    border-color: #777;
 }
 
 .dataTables_paginate .paginate_button.disabled, .dataTables_paginate .paginate_button.disabled:hover, .dataTables_paginate .paginate_button.disabled:focus {

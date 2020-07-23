@@ -54,7 +54,6 @@ $(function(){
         });
     }
     
-    
 
     if ($().perfectScrollbar) {
         $('.dropdown-scrollable').perfectScrollbar();
@@ -74,28 +73,24 @@ $(function(){
     }
 
 
-
     $(".go-top").click(function () {
         $("html, body").animate({scrollTop: 0}, 500);
     });
 
    
+
+   
 });
 
-var on_change_hinh_thuc_khai_thac = function(p_this){
-    console.log(p_this.value);
-    if(p_this.value == 'tai-bh'){
-        $('#tai-bh').slideDown();
-        $('#dong-bh').slideUp();
-    }else if(p_this.value == 'dong-bh'){
-        $('#tai-bh').slideUp();
-        $('#dong-bh').slideDown();
-        $($.fn.dataTable.tables(true)).DataTable().columns.adjust().responsive.recalc();
+var on_change_nguon_dich_vu = function(p_this){
+    var v_input_value = $(p_this).val();
+    if ( v_input_value == 'NGAN_HANG' ){
+        $(p_this).closest('fieldset').find('#ngan_hang_opt').slideDown('400');
     }else{
-        $('#tai-bh, #dong-bh').slideUp();
+        $(p_this).closest('fieldset').find('#ngan_hang_opt').slideUp('400');
     }
-    
 }
+
 
 var on_change_kenh_khai_thac = function(p_this){
     if(p_this.value == 'daili'){
@@ -107,6 +102,22 @@ var on_change_kenh_khai_thac = function(p_this){
     }else{
         $('#daili, #moigioi').show();
     }
+}
+
+var on_change_hinh_thuc_khai_thac = function(p_this){
+        console.log(p_this.value)
+    if(p_this.value == 'tai-bh'){
+        $('#tai-bh').slideDown();
+        $('#dong-bh').slideUp();
+        console.log(p_this.value)
+    }else if(p_this.value == 'dong-bh'){
+        $('#tai-bh').slideUp();
+        $('#dong-bh').slideDown();
+        $($.fn.dataTable.tables(true)).DataTable().columns.adjust().responsive.recalc();
+    }else{
+        $('#tai-bh, #dong-bh').slideUp();
+    }
+    
 }
 
 var _xoa_dong = function(p_this) {

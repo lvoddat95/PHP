@@ -14,8 +14,6 @@ define('APP_NAME', trim(strrchr(__DIR__, DIRECTORY_SEPARATOR), DIRECTORY_SEPARAT
 
 define('HTTP_PATH', get_site_url('',true)); 
 
-define('INC_ROOT', HTTP_PATH.'view/inc'); 
-
 define('ASSET_ROOT', HTTP_PATH.'app-assets');
 
 define('DOCUMENT_ROOT',$_SERVER['DOCUMENT_ROOT'].'/'.APP_NAME); 
