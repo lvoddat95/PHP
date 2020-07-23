@@ -9,7 +9,7 @@
 
                 <div class="content d-flex justify-content-center align-items-center">
                     <!-- Login form -->
-                    <form class="login-form" action="index.html">
+                    <form class="login-form" action="">
                         <div class="card mb-0">
                             <div class="login-top"></div>
                             <div class="card-body">
@@ -39,7 +39,7 @@
                                             <label class="ml-2 mb-0" for="remember">Lưu mật khẩu</label>
                                     </div>
 
-                                    <a href="login_password_recover.html" class="ml-auto">Quên mật khẩu ?</a>
+                                    <a href="" class="ml-auto">Quên mật khẩu ?</a>
                                 </div>
 
                                 <div class="form-group">

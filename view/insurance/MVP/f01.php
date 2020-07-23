@@ -18,7 +18,8 @@
                         </button>
                         <div class="top-left">
                             <div class="breadcrumb">
-                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="icon-steering-wheel mr-1"></i> F01 - Bảo hiểm xe máy</a>
+                                <a href="<?php echo HTTP_PATH; ?>" class="breadcrumb-item"><i class="icon-home5 mr-1"></i> Trang chủ</a>
+                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item">F01 - Bảo hiểm xe máy</a>
                                 <span class="breadcrumb-item active">Cập nhập đơn</span>
                             </div>
                             <div class="d-md-none logo-mobile">
@@ -238,9 +239,7 @@
                                                         <fieldset>
                                                             <div class="row">
                                                                 <div class="col-md-12">
-                                                                    <div class="form-group">
-                                                                        <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php'); ?>
-                                                                    </div>
+                                                                    <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php'); ?>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <?php inc('template/4_pham_vi_bao_hiem/thong_tin_ve_thoi_han_thanh_toan.php'); ?>

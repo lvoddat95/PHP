@@ -19,11 +19,11 @@
 	                    </button>
 	                    <div class="top-left">
 	                        <div class="breadcrumb">
-	                            <a href="" class="breadcrumb-item"><i class="icon-home5 mr-1"></i> Bảng điều khiển</a>
+	                            <a href="" class="breadcrumb-item"><i class="icon-home5 mr-1"></i> Trang chủ</a>
 	                            <span class="breadcrumb-item active">Ứng dụng</span>
 	                        </div>
 	                        <div class="d-md-none logo-mobile">
-	                            <a href="index.html" class="logo-text">
+	                            <a href="" class="logo-text">
 	                                <div class="logo-img"><img src="app-assets/images/logo/logo2.png" alt="Convex Logo"></div>
 	                                <span class="text align-middle" style="font-weight: 900;">VNI</span>
 	                            </a>
