@@ -2288,7 +2288,7 @@ input[type=text].noui-height-helper:not(.noUi-target)[data-fouc] {
     font-family: "icomoon";
     font-size: 1rem;
     position: absolute;
-    top: 0.12502rem;
+    top: 0;
     left: 0;
     display: inline-block;
     line-height: 1;

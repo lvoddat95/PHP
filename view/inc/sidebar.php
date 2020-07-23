@@ -28,7 +28,7 @@
                 <div class="card card-sidebar-mobile">
                     <ul class="nav nav-sidebar" data-nav-type="accordion">
                         <li class="nav-item">
-                            <a href="/" class="nav-link active" data-menu-title="Bảng điều khiển">
+                            <a href="<?php echo HTTP_PATH ?>" class="nav-link active" data-menu-title="Bảng điều khiển">
                                 <i class="linearicons-home"></i>
                                 <span class="menu-title">Bảng điều khiển</span>
                             </a>
