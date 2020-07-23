@@ -18,8 +18,7 @@
                         </button>
                         <div class="top-left">
                             <div class="breadcrumb">
-                                <a href="<?php echo HTTP_PATH; ?>" class="breadcrumb-item"><i class="icon-home5 mr-1"></i> Trang chủ</a>
-                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item">F01 - Bảo hiểm xe máy</a>
+                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="icon-arrow-left16 mr-1"></i> F01 - Bảo hiểm xe máy</a>
                                 <span class="breadcrumb-item active">Cập nhập đơn</span>
                             </div>
                             <div class="d-md-none logo-mobile">
@@ -113,13 +112,16 @@
                                                             </div>
 
                                                             <div class="row">
-                                                                <div class="col-md-4">
+                                                                <div class="col-md-3">
                                                                     <?php inc('template/1_thong_tin_chung/can_bo_khai_thac.php'); ?>
                                                                 </div>
-                                                                <div class="col-md-4">
+                                                                <div class="col-md-3">
                                                                     <?php inc('template/1_thong_tin_chung/can_bo_cap_don.php'); ?>
                                                                 </div>
-                                                                <div class="col-md-4">
+                                                                <div class="col-md-3">
+                                                                    <?php inc('template/1_thong_tin_chung/can_bo_ki_don.php'); ?>
+                                                                </div>
+                                                                <div class="col-md-3">
                                                                     <?php inc('template/1_thong_tin_chung/ngay_cap.php'); ?>
                                                                 </div>
                                                             </div>

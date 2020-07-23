@@ -15,8 +15,7 @@
                                     data-paging="false"
                                     data-info="false"
                                     data-ordering="false"
-                                    data-searching="false"
-                                >
+                                    data-searching="false" >
                                     <thead class="thead-light">
                                         <th width="30px"><input type="checkbox" value=""></th>
                                         <th>Tên rủi ro bảo hiểm</th>

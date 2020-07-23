@@ -18,7 +18,7 @@
                         </button>
                         <div class="top-left">
                             <div class="breadcrumb">
-                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="icon-arrow-left16 mr-1"></i> G02 - Bảo hiểm con người mức trách nhiệm cao (VNI Care)</a>
+                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="icon-arrow-left16 mr-1"></i> G16 - Bảo hiểm sức khỏe người vay vốn</a>
                                 <span class="breadcrumb-item active">Cập nhập đơn</span>
                             </div>
                             <div class="d-md-none logo-mobile">
@@ -145,8 +145,200 @@
                                                         <h6>Đối tượng bảo hiểm</h6>
                                                         <fieldset>
                                                             <div class="row">
-                                                                <div class="col-md-6">
-                                                                    <?php inc('template/3_doi_tuong_bao_hiem/PER/so_nguoi_duoc_bao_hiem.php'); ?>
+                                                                <div class="col-12 mb-1">
+                                                                    <span class="font-weight-semibold"><i class="icon-info22 mr-1"></i>Thông tin sản phẩm bảo an tín dụng</span>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group ">
+                                                                        <label>Nhóm khách hàng: </label>
+                                                                        <select class="form-control" select2 name="">
+                                                                            <option>--- Chọn Nhóm khách hàng ---</option>
+                                                                            <option>Khách hàng TONKIN (OCB)</option>
+                                                                            <option>Nhóm khách hàng vay tín chấp(Bắt buộc tham gia bảo hiểm)</option>
+                                                                            <option>Khách hàng vay thế chấp</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group ">
+                                                                        <label>Đối tượng vay: </label>
+                                                                        <select class="form-control" select2 name="">
+                                                                            <option>--- Chọn Đối tượng vay ---</option>
+                                                                            <option>KH Cá nhân/Hộ gia đình</option>
+                                                                            <option>KH DN vừa và nhỏ</option>
+                                                                            <option>KH DN lớn</option>
+                                                                            <option>KH DN siêu vi mô</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group ">
+                                                                        <label>Nhóm khách hàng: </label>
+                                                                        <select class="form-control" select2 name="">
+                                                                           <option>--- Chọn Phân khúc ---</option>
+                                                                           <option>Khách hàng ưu tiên</option>
+                                                                           <option>Khách hàng trung lưu</option>
+                                                                           <option>Khách hàng DN nhiều tiền gửi</option>
+                                                                           <option>Khách hàng phổ thông</option>
+                                                                           <option>Khách hàng DN vừa</option>
+                                                                           <option>Tập đoàn,TCTY nhà nước</option>
+                                                                           <option>KH DN lớn</option>
+                                                                           <option>Khách hàng DN siêu lớn</option>
+                                                                           <option>KH DN vi mô</option>
+                                                                           <option>KH DN siêu vi mô</option>
+                                                                       </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-12 mb-1">
+                                                                    <span class="font-weight-semibold"><i class="icon-info22 mr-1"></i>Thông tin doanh nghiệp</span>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="form-group ">
+                                                                        <label>Mã KH doanh nghiệp: </label>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group ">
+                                                                        <label>Tên KH Doanh nghiệp: </label>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="form-group ">
+                                                                        <label>Mã số thuế: </label>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group ">
+                                                                        <label>Địa chỉ: </label>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-12 mb-1">
+                                                                    <span class="font-weight-semibold"><i class="icon-info22 mr-1"></i>Thông tin Hợp đồng tín dụng</span>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <div class="form-group ">
+                                                                        <label>Hợp đồng tín dụng: <span class="text-danger">*</span></label>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <div class="form-group ">
+                                                                        <label>Số tiền vay: </label>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <div class="form-group ">
+                                                                        <label>Thời hạn vay: </label>
+                                                                        <select class="form-control" select2 name="">
+                                                                           <option id="" value="" name="">--- Chọn Thời hạn vay ---</option>
+                                                                           <option id="1" name="1 Tháng" value="1">1 Tháng</option>
+                                                                           <option id="2" name="2 Tháng" value="2">2 Tháng</option>
+                                                                           <option id="3" name="3 Tháng" value="3">3 Tháng</option>
+                                                                           <option id="4" name="4 Tháng" value="4">4 Tháng</option>
+                                                                           <option id="5" name="5 Tháng" value="5">5 Tháng</option>
+                                                                           <option id="6" name="6 Tháng" value="6">6 Tháng</option>
+                                                                           <option id="7" name="7 Tháng" value="7">7 Tháng</option>
+                                                                           <option id="8" name="8 Tháng" value="8">8 Tháng</option>
+                                                                           <option id="9" name="9 Tháng" value="9">9 Tháng</option>
+                                                                           <option id="10" name="10 Tháng" value="10">10 Tháng</option>
+                                                                           <option id="11" name="11 Tháng" value="11">11 Tháng</option>
+                                                                           <option id="12" name="12 Tháng" value="12">12 Tháng</option>
+                                                                           <option id="13" name="13 Tháng" value="13">13 Tháng</option>
+                                                                           <option id="14" name="14 Tháng" value="14">14 Tháng</option>
+                                                                           <option id="15" name="15 Tháng" value="15">15 Tháng</option>
+                                                                           <option id="16" name="16 Tháng" value="16">16 Tháng</option>
+                                                                           <option id="17" name="17 Tháng" value="17">17 Tháng</option>
+                                                                           <option id="18" name="18 Tháng" value="18">18 Tháng</option>
+                                                                           <option id="19" name="19 Tháng" value="19">19 Tháng</option>
+                                                                           <option id="20" name="20 Tháng" value="20">20 Tháng</option>
+                                                                           <option id="21" name="21 Tháng" value="21">21 Tháng</option>
+                                                                           <option id="22" name="22 Tháng" value="22">22 Tháng</option>
+                                                                           <option id="23" name="23 Tháng" value="23">23 Tháng</option>
+                                                                           <option id="24" name="24 Tháng" value="24">24 Tháng</option>
+                                                                           <option id="25" name="25 Tháng" value="25">25 Tháng</option>
+                                                                           <option id="26" name="26 Tháng" value="26">26 Tháng</option>
+                                                                           <option id="27" name="27 Tháng" value="27">27 Tháng</option>
+                                                                           <option id="28" name="28 Tháng" value="28">28 Tháng</option>
+                                                                           <option id="29" name="29 Tháng" value="29">29 Tháng</option>
+                                                                           <option id="30" name="30 Tháng" value="30">30 Tháng</option>
+                                                                           <option id="31" name="31 Tháng" value="31">31 Tháng</option>
+                                                                           <option id="32" name="32 Tháng" value="32">32 Tháng</option>
+                                                                           <option id="33" name="33 Tháng" value="33">33 Tháng</option>
+                                                                           <option id="34" name="34 Tháng" value="34">34 Tháng</option>
+                                                                           <option id="35" name="35 Tháng" value="35">35 Tháng</option>
+                                                                           <option id="36" name="36 Tháng" value="36">36 Tháng</option>
+                                                                           <option id="48" name="4 Năm" value="48">4 Năm</option>
+                                                                           <option id="60" name="5 Năm" value="60">5 Năm</option>
+                                                                           <option id="72" name="6 Năm" value="72">6 Năm</option>
+                                                                           <option id="84" name="7 Năm" value="84">7 Năm</option>
+                                                                           <option id="96" name="8 Năm" value="96">8 Năm</option>
+                                                                           <option id="108" name="9 Năm" value="108">9 Năm</option>
+                                                                           <option id="120" name="10 Năm" value="120">10 Năm</option>
+                                                                       </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <div class="form-group ">
+                                                                        <label>Gói bảo hiểm: </label>
+                                                                        <select class="form-control" select2 name="">
+                                                                            <option>--- Chọn Gói BH ---</option>
+                                                                            <option>Điều kiện A+B (Tử vong, thương tật toàn bộ vĩnh viễn do tai nạn, ốm đau, bệnh tật, thai sản)</option>
+                                                                            <option>Điều kiện A(Tai nạn)</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-12 mb-1">
+                                                                    <span class="font-weight-semibold"><i class="icon-info22 mr-1"></i>Thông tin người thụ hưởng</span>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <div class="form-group">
+                                                                        <label>Người thụ hưởng 1: </label>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-9">
+                                                                    <div class="form-group">
+                                                                        <label>Địa chỉ: </label>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <div class="form-group ">
+                                                                        <label>Người thụ hưởng 2: </label>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <div class="form-group ">
+                                                                        <label>Địa chỉ: </label>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <div class="form-group ">
+                                                                        <label>Quan hệ: </label>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <div class="form-group ">
+                                                                        <label>CMTND/HC: </label>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </fieldset>
@@ -189,7 +381,7 @@
                                                                                 </thead>
                                                                                 <tbody>
                                                                                     <tr>
-                                                                                        <td>1. Phạm vi A (Chết, tàn tật toàn bộ vĩnh viễn do ốm đau bệnh tật)</td>
+                                                                                        <td>Tử vong,thương tật toàn bộ vĩnh viễn do tai nạn</td>
                                                                                         <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                         <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                         <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
@@ -199,12 +391,12 @@
                                                                                         <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                         <td>
                                                                                             <select class="form-control " select2 name="dinh_muc" >
-                                                                                                <option>Bảo hiểm con nguời mức trách nhiệm cao (VNI Care)</option>    
+                                                                                                <option>Tử vong,thương tật toàn bộ vĩnh viễn do tai nạn</option>    
                                                                                             </select>
                                                                                         </td>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td>2. Phạm vi B (Tai nạn cá nhân)</td>
+                                                                                        <td>Tử vong, tàn tật toàn bộ vĩnh viễn do ốm đau, bệnh tật, thai sản</td>
                                                                                         <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                         <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                         <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
@@ -214,37 +406,7 @@
                                                                                         <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                         <td>
                                                                                             <select class="form-control " select2 name="dinh_muc" >
-                                                                                                <option>Bảo hiểm con nguời mức trách nhiệm cao (VNI Care)</option>
-                                                                                            </select>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>3. Phạm vi C (Trợ cấp nằm viện và phẫu thuật)</td>
-                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
-                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                        <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
-                                                                                        <td><input class="form-control text-right input-money" type="text" value="0"></td>
-                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
-                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                        <td>
-                                                                                            <select class="form-control " select2 name="dinh_muc" >
-                                                                                                <option>Bảo hiểm con nguời mức trách nhiệm cao (VNI Care)</option>
-                                                                                            </select>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>4. Phạm vi D (Điều trị ngoại trú do ốm bệnh)</td>
-                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
-                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                        <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
-                                                                                        <td><input class="form-control text-right input-money" type="text" value="0"></td>
-                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
-                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                        <td>
-                                                                                            <select class="form-control " select2 name="dinh_muc" >
-                                                                                                <option>Bảo hiểm con nguời mức trách nhiệm cao (VNI Care)</option> 
+                                                                                                <option>Tử vong, tàn tật toàn bộ vĩnh viễn do ốm đau, bệnh tật, thai sản</option>    
                                                                                             </select>
                                                                                         </td>
                                                                                     </tr>
@@ -328,20 +490,11 @@
                                                                         </thead>
                                                                         <tbody>
                                                                             <tr>
-                                                                                <td>Phạm vi A (Chết, tàn tật toàn bộ vĩnh viễn do ốm đau bệnh tật)</td>
-                                                                                <td class="text-right">0</td>
-                                                                            </tr>
-                                                                            
-                                                                            <tr>
-                                                                                <td>Phạm vi B (Tai nạn cá nhân)</td>
+                                                                                <td>Tử vong,thương tật toàn bộ vĩnh viễn do tai nạn</td>
                                                                                 <td class="text-right">0</td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td>Phạm vi C (Trợ cấp nằm viện và phẫu thuật)</td>
-                                                                                <td class="text-right">0</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Phạm vi D (Điều trị ngoại trú do ốm bệnh)</td>
+                                                                                <td>Tử vong, tàn tật toàn bộ vĩnh viễn do ốm đau, bệnh tật, thai sản</td>
                                                                                 <td class="text-right">0</td>
                                                                             </tr>
                                                                             <tr class="bold" style="background-color: #fff;">

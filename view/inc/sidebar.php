@@ -79,6 +79,7 @@
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g15.php'; ?>" class="nav-link"><div class="menu-title">G15 - Toàn Diện Hộ Gia Đình</div></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g16.php'; ?>" class="nav-link"><div class="menu-title">G16 - Bảo hiểm sức khỏe người vay vốn</div></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g17.php'; ?>" class="nav-link"><div class="menu-title">G17 - Bảo hiểm tai nạn giao thông đường bộ</div></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g18.php'; ?>" class="nav-link"><div class="menu-title">G18 - Thông tư 329 - Bảo hiểm đối với người lao động thi công trên công trường</div></a></li>
                             </ul>
                         </li>
                         <li class="nav-item nav-item-submenu">

@@ -18,7 +18,7 @@
                         </button>
                         <div class="top-left">
                             <div class="breadcrumb">
-                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="icon-arrow-left16 mr-1"></i> G02 - Bảo hiểm con người mức trách nhiệm cao (VNI Care)</a>
+                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="icon-arrow-left16 mr-1"></i> G14 - Bảo hiểm tai nạn con người tại hộ gia đình do cháy chung cư, nhà riêng</a>
                                 <span class="breadcrumb-item active">Cập nhập đơn</span>
                             </div>
                             <div class="d-md-none logo-mobile">
@@ -141,16 +141,6 @@
                                                         <h6>Trung gian bảo hiểm</h6>
                                                         <?php inc('template/2_trung_gian_bao_hiem/2_trung_gian_bao_hiem.php'); ?>
                                                         
-                                                        <!-- Step 3 -->
-                                                        <h6>Đối tượng bảo hiểm</h6>
-                                                        <fieldset>
-                                                            <div class="row">
-                                                                <div class="col-md-6">
-                                                                    <?php inc('template/3_doi_tuong_bao_hiem/PER/so_nguoi_duoc_bao_hiem.php'); ?>
-                                                                </div>
-                                                            </div>
-                                                        </fieldset>
-                                                        
                                                         <!-- Step 4 -->
                                                         <h6>Phạm vi bảo hiểm</h6>
                                                         <fieldset>
@@ -189,7 +179,7 @@
                                                                                 </thead>
                                                                                 <tbody>
                                                                                     <tr>
-                                                                                        <td>1. Phạm vi A (Chết, tàn tật toàn bộ vĩnh viễn do ốm đau bệnh tật)</td>
+                                                                                        <td>Tai nạn con người tại hộ gia đình do cháy chung cư, nhà riêng</td>
                                                                                         <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                         <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                         <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
@@ -199,12 +189,12 @@
                                                                                         <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                         <td>
                                                                                             <select class="form-control " select2 name="dinh_muc" >
-                                                                                                <option>Bảo hiểm con nguời mức trách nhiệm cao (VNI Care)</option>    
+                                                                                                <option>Tai nạn con người tại hộ gia đình do cháy chung cư, nhà riêng</option>    
                                                                                             </select>
                                                                                         </td>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td>2. Phạm vi B (Tai nạn cá nhân)</td>
+                                                                                        <td>Rủi ro phụ(Sửa chữa hoặc mua mới xe máy do cháy hộ chung cư, nhà riêng)</td>
                                                                                         <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                         <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                         <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
@@ -214,37 +204,7 @@
                                                                                         <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                         <td>
                                                                                             <select class="form-control " select2 name="dinh_muc" >
-                                                                                                <option>Bảo hiểm con nguời mức trách nhiệm cao (VNI Care)</option>
-                                                                                            </select>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>3. Phạm vi C (Trợ cấp nằm viện và phẫu thuật)</td>
-                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
-                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                        <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
-                                                                                        <td><input class="form-control text-right input-money" type="text" value="0"></td>
-                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
-                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                        <td>
-                                                                                            <select class="form-control " select2 name="dinh_muc" >
-                                                                                                <option>Bảo hiểm con nguời mức trách nhiệm cao (VNI Care)</option>
-                                                                                            </select>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>4. Phạm vi D (Điều trị ngoại trú do ốm bệnh)</td>
-                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
-                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                        <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
-                                                                                        <td><input class="form-control text-right input-money" type="text" value="0"></td>
-                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
-                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                        <td>
-                                                                                            <select class="form-control " select2 name="dinh_muc" >
-                                                                                                <option>Bảo hiểm con nguời mức trách nhiệm cao (VNI Care)</option> 
+                                                                                                <option>Rủi ro phụ(Sửa chữa hoặc mua mới xe máy do cháy hộ chung cư, nhà riêng)</option>    
                                                                                             </select>
                                                                                         </td>
                                                                                     </tr>
@@ -328,20 +288,11 @@
                                                                         </thead>
                                                                         <tbody>
                                                                             <tr>
-                                                                                <td>Phạm vi A (Chết, tàn tật toàn bộ vĩnh viễn do ốm đau bệnh tật)</td>
-                                                                                <td class="text-right">0</td>
-                                                                            </tr>
-                                                                            
-                                                                            <tr>
-                                                                                <td>Phạm vi B (Tai nạn cá nhân)</td>
+                                                                                <td>Tai nạn con người tại hộ gia đình do cháy chung cư, nhà riêng</td>
                                                                                 <td class="text-right">0</td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td>Phạm vi C (Trợ cấp nằm viện và phẫu thuật)</td>
-                                                                                <td class="text-right">0</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Phạm vi D (Điều trị ngoại trú do ốm bệnh)</td>
+                                                                                <td>Rủi ro phụ(Sửa chữa hoặc mua mới xe máy do cháy hộ chung cư, nhà riêng)</td>
                                                                                 <td class="text-right">0</td>
                                                                             </tr>
                                                                             <tr class="bold" style="background-color: #fff;">

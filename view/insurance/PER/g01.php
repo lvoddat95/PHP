@@ -18,8 +18,7 @@
                         </button>
                         <div class="top-left">
                             <div class="breadcrumb">
-                                <a href="<?php echo HTTP_PATH; ?>" class="breadcrumb-item"><i class="icon-home5 mr-1"></i> Trang chủ</a>
-                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item">G01 - Bảo hiểm sức khỏe toàn diện</a>
+                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="icon-arrow-left16 mr-1"></i> G01 - Bảo hiểm sức khỏe toàn diện</a>
                                 <span class="breadcrumb-item active">Cập nhập đơn</span>
                             </div>
                             <div class="d-md-none logo-mobile">
@@ -130,7 +129,7 @@
                                                                                         <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                         <td>
                                                                                             <select class="form-control " select2 name="dinh_muc" >
-                                                                                                <option value="">Bảo hiểm sức khỏe</option>                                                                                        
+                                                                                                <option>Bảo hiểm sức khỏe</option>
                                                                                             </select>
                                                                                         </td>
                                                                                     </tr>
@@ -145,7 +144,7 @@
                                                                                         <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                         <td>
                                                                                             <select class="form-control " select2 name="dinh_muc" >
-                                                                                                <option value="">Bảo hiểm sức khỏe</option>                                                                                        
+                                                                                                <option>Bảo hiểm sức khỏe</option>                                                   
                                                                                             </select>
                                                                                         </td>
                                                                                     </tr>
@@ -160,7 +159,7 @@
                                                                                         <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                         <td>
                                                                                             <select class="form-control " select2 name="dinh_muc" >
-                                                                                                <option value="">Bảo hiểm sức khỏe</option>                                                                                        
+                                                                                                <option>Bảo hiểm sức khỏe</option>
                                                                                             </select>
                                                                                         </td>
                                                                                     </tr>
@@ -214,6 +213,15 @@
                                                                 </div>
                                                                 <div class="col-md-4">
                                                                     <?php inc('template/4_pham_vi_bao_hiem/dieu_khoan_loai_tru.php'); ?>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <?php inc('template/4_pham_vi_bao_hiem/dia_diem_bao_hiem.php'); ?>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <?php inc('template/4_pham_vi_bao_hiem/quy_tac_bao_hiem.php'); ?>
                                                                 </div>
                                                             </div>
 
@@ -311,6 +319,7 @@
 
         <?php inc('modal/ds_rui_ro_bao_hiem.php'); ?> 
         <?php inc('modal/ds_dieu_khoan_loai_tru.php'); ?> 
+        <?php inc('modal/dieu_khoan_sua_doi_bo_sung.php'); ?> 
         <?php inc('modal/ds_files.php'); ?>
 
     </body>

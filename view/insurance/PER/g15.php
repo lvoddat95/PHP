@@ -18,7 +18,7 @@
                         </button>
                         <div class="top-left">
                             <div class="breadcrumb">
-                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="icon-arrow-left16 mr-1"></i> G02 - Bảo hiểm con người mức trách nhiệm cao (VNI Care)</a>
+                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="icon-arrow-left16 mr-1"></i> G15 - Toàn diện hộ gia đình</a>
                                 <span class="breadcrumb-item active">Cập nhập đơn</span>
                             </div>
                             <div class="d-md-none logo-mobile">
@@ -189,7 +189,7 @@
                                                                                 </thead>
                                                                                 <tbody>
                                                                                     <tr>
-                                                                                        <td>1. Phạm vi A (Chết, tàn tật toàn bộ vĩnh viễn do ốm đau bệnh tật)</td>
+                                                                                        <td>Điều kiện A</td>
                                                                                         <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                         <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                         <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
@@ -199,12 +199,12 @@
                                                                                         <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                         <td>
                                                                                             <select class="form-control " select2 name="dinh_muc" >
-                                                                                                <option>Bảo hiểm con nguời mức trách nhiệm cao (VNI Care)</option>    
+                                                                                                <option>Toàn diện hộ gia đình</option>    
                                                                                             </select>
                                                                                         </td>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td>2. Phạm vi B (Tai nạn cá nhân)</td>
+                                                                                        <td>Điều kiện B</td>
                                                                                         <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                         <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                         <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
@@ -214,37 +214,7 @@
                                                                                         <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                         <td>
                                                                                             <select class="form-control " select2 name="dinh_muc" >
-                                                                                                <option>Bảo hiểm con nguời mức trách nhiệm cao (VNI Care)</option>
-                                                                                            </select>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>3. Phạm vi C (Trợ cấp nằm viện và phẫu thuật)</td>
-                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
-                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                        <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
-                                                                                        <td><input class="form-control text-right input-money" type="text" value="0"></td>
-                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
-                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                        <td>
-                                                                                            <select class="form-control " select2 name="dinh_muc" >
-                                                                                                <option>Bảo hiểm con nguời mức trách nhiệm cao (VNI Care)</option>
-                                                                                            </select>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>4. Phạm vi D (Điều trị ngoại trú do ốm bệnh)</td>
-                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
-                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                        <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
-                                                                                        <td><input class="form-control text-right input-money" type="text" value="0"></td>
-                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
-                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                        <td>
-                                                                                            <select class="form-control " select2 name="dinh_muc" >
-                                                                                                <option>Bảo hiểm con nguời mức trách nhiệm cao (VNI Care)</option> 
+                                                                                                <option>Toàn diện hộ gia đình</option>    
                                                                                             </select>
                                                                                         </td>
                                                                                     </tr>
@@ -328,20 +298,11 @@
                                                                         </thead>
                                                                         <tbody>
                                                                             <tr>
-                                                                                <td>Phạm vi A (Chết, tàn tật toàn bộ vĩnh viễn do ốm đau bệnh tật)</td>
-                                                                                <td class="text-right">0</td>
-                                                                            </tr>
-                                                                            
-                                                                            <tr>
-                                                                                <td>Phạm vi B (Tai nạn cá nhân)</td>
+                                                                                <td>Điều kiện A</td>
                                                                                 <td class="text-right">0</td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td>Phạm vi C (Trợ cấp nằm viện và phẫu thuật)</td>
-                                                                                <td class="text-right">0</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Phạm vi D (Điều trị ngoại trú do ốm bệnh)</td>
+                                                                                <td>Điều kiện B</td>
                                                                                 <td class="text-right">0</td>
                                                                             </tr>
                                                                             <tr class="bold" style="background-color: #fff;">
