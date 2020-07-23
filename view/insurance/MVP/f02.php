@@ -22,7 +22,7 @@
                                 <span class="breadcrumb-item active">Cập nhập đơn</span>
                             </div>
                             <div class="d-md-none logo-mobile">
-                                <a href="<?php echo HTTP_PATH; ?" class="logo-text">
+                                <a href="<?php echo HTTP_PATH; ?>" class="logo-text">
                                     <div class="logo-img"><img src="<?php echo HTTP_PATH .'app-assets/images/logo/logo2.png'; ?>" alt="VNI Logo"></div>
                                     <span class="text align-middle" style="font-weight: 900;">VNI</span>
                                 </a>
