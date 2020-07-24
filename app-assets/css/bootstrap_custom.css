@@ -749,6 +749,7 @@ select[multiple] option+option, select[size] option+option {
     background: #eee;
     border-color: #eee !important;
     box-shadow: none !important;
+    cursor: not-allowed;
 }
 
 .form-control[class*=bg-]:not(.bg-white):not(.bg-light):not(.bg-transparent):disabled, .form-control[class*=bg-]:not(.bg-white):not(.bg-light):not(.bg-transparent)[readonly] {

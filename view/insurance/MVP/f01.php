@@ -196,19 +196,18 @@
                                                                 <div class="col-md-4">
                                                                     <?php inc('template/3_doi_tuong_bao_hiem/MVP/nam_sx.php'); ?>
                                                                 </div>
-                                        
-                                                                <div class="col-md-4">
-                                                                    <?php inc('template/3_doi_tuong_bao_hiem/MVP/bien_kiem_soat.php'); ?>
-                                                                </div>
                                                                 <div class="col-md-4">
                                                                     <div class="row align-items-center">
                                                                         <div class="col-md-6">
-                                                                            <?php inc('template/3_doi_tuong_bao_hiem/MVP/loai_bien.php'); ?>
-                                                                        </div>
-                                                                        <div class="col-md-6">
                                                                             <?php inc('template/3_doi_tuong_bao_hiem/MVP/chua_co_bien.php'); ?>
                                                                         </div>
+                                                                        <div class="col-md-6">
+                                                                            <?php inc('template/3_doi_tuong_bao_hiem/MVP/loai_bien.php'); ?>
+                                                                        </div>
                                                                     </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <?php inc('template/3_doi_tuong_bao_hiem/MVP/bien_kiem_soat.php'); ?>
                                                                 </div>
                                                                 <div class="col-md-4">
                                                                     <?php inc('template/3_doi_tuong_bao_hiem/MVP/f01/so_gcn_xe.php'); ?>

@@ -82,6 +82,25 @@ $(function(){
    
 });
 
+
+var on_change_disable_control = function(p_this, p_list){
+    const arr = p_list.split(',')
+    if (p_this.checked){
+        for (index = 0; index < arr.length; ++index) {
+            if (arr[index].length > 0){
+                $('#'+ arr[index]).attr('disabled', 'disabled');
+            }
+         }
+    }else{
+        for (index = 0; index < arr.length; ++index) {
+            if (arr[index].length > 0){
+                $('#'+ arr[index]).removeAttr("disabled")
+            }
+        }
+    }
+}
+
+
 var on_change_nguon_dich_vu = function(p_this){
     var v_input_value = $(p_this).val();
     if ( v_input_value == 'NGAN_HANG' ){

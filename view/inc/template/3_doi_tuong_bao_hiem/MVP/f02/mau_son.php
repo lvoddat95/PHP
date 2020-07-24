@@ -1,6 +1,7 @@
 <div class="form-group ">
 	<label>Màu sơn:</label>
 	<select class="form-control" select2>
+		<option value="">--- Chọn màu sơn ---</option>
 		<option>Màu đen</option>
 		<option>Màu trắng</option>
 		<option>Đỏ</option>

@@ -1490,7 +1490,7 @@ var App = function () {
             onFinished: function (event, currentIndex) {
                 if ($('#modal_form').length == 0 ) return;
                 var v_tr = $('#ban_chao_list tbody tr').length + 1;
-                $('#ban_chao_list tbody').append('<tr> <td class="text-center">'+v_tr+'</td><td>71C05150</td><td>Xe khác</td><td>2019</td><td>1,690,000</td><td>166,000</td> <td>1,856,000</td> <td align="center"><a href="javascript:;" title="Xem chi tiết" class="btn bg-primary btn-labeled btn-labeled-left mr-2"><b><i class="icon-file-eye"></i></b> Xem</a> <a href="javascript:;" title="Xóa đối tượng" onclick="_xoa_dong(this);" class="btn bg-danger-300 btn-labeled btn-labeled-left mr-2"><b><i class="icon-trash"></i></b> Xóa</a></td> </tr>');
+                $('#ban_chao_list tbody').append('<tr> <td class="text-center">'+v_tr+'</td><td>71C05150</td><td>Xe khác</td><td>2019</td><td>1,690,000</td><td>166,000</td> <td>1,856,000</td> <td align="center"><div class="list-icons"> <div class="dropdown"> <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a> <div class="dropdown-menu dropdown-menu-right"> <a class="dropdown-item" href="http://localhost/bhhk/view/pages/nhap-don.php"><i class="icon-file-plus mr-1 text-success"></i> Tạo mới đơn BH</a> <a class="dropdown-item" href="javascript:;" data-toggle="modal" data-target="#modal_form" title="Xem chi tiết"><i class="icon-file-eye mr-1 text-primary"></i> Xem chi tiết</a> <a class="dropdown-item" href="javascript:;" title="Xóa đối tượng" onclick="_xoa_dong(this);"><b><i class="icon-trash mr-1 text-danger"></i></b> Xóa đối tượng</a> </div> </div> </div></td> </tr>');
                 $('#modal_form').modal('hide');
             }
         });
