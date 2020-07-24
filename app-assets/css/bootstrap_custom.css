@@ -2674,9 +2674,8 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
 
 .dropdown .dropdown-menu {
 	display: block;
-	margin-top: 10px;
 	top: calc(100% + 30px) !important;
-	min-width: 220px;
+	min-width: 180px;
 	border-radius: 4px;
 	padding: 10px;
 	opacity: 0;

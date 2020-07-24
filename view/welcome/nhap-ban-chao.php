@@ -36,11 +36,32 @@
                         <div class="p-title">
                             <h4 class="font-weight-semibold"><i class="icon-bookmark mr-2"></i>Bản chào bảo hiểm xe cơ giới</h4>
                         </div>
-                        <div class="p-button">
-                            <a href="<?php echo HTTP_PATH .'view/welcome/danh-sach-ban-chao.php'; ?>" class="btn btn-labeled btn-labeled-left mr-2"><b><i class="icon-file-locked"></i></b> Đóng bản chào</a>
-                            <a href="<?php echo HTTP_PATH .'view/welcome/danh-sach-ban-chao.php'; ?>" class="btn btn-labeled btn-labeled-left mr-2"><b><i class="icon-files-empty"></i></b> Lưu &amp; Copy</a>
-                            <a href="<?php echo HTTP_PATH .'view/welcome/danh-sach-ban-chao.php'; ?>" class="btn bg-primary btn-labeled btn-labeled-left mr-2"><b><i class="icon-file-plus"></i></b> Lưu</a>
-
+                        <div class=" p-button">
+                            <div class="dropdown d-inline-block mr-2">
+                                <a href="#" class="list-icons-item dropdown-toggle caret-0 btn" data-toggle="dropdown"><i class="icon-gear"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="#" class="dropdown-item"><i class="icon-file-check"></i>Trình duyệt</a>
+                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i>Đóng đơn</a>
+                                    <a href="#" class="dropdown-item"><i class="icon-loop3"></i>Tái tục đơn</a>
+                                </div>
+                            </div>
+                            <div class="dropdown d-inline-block mr-2">
+                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon-printer2"></i> IN</button>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="#" class="dropdown-item"><i class="icon-file-text2"></i>Giấy yêu cầu BH</a>
+                                    <a href="#" class="dropdown-item"><i class="icon-file-text2"></i>Hợp đồng BH</a>
+                                    <a href="#" class="dropdown-item"><i class="icon-file-text2"></i>Bản chào phí BH</a>
+                                    <a href="#" class="dropdown-item"><i class="icon-file-text2"></i>Giấy chứng nhận BH</a>
+                                </div>
+                            </div>
+                            
+                            <a href="#" class="btn btn-labeled btn-labeled-left mr-2">
+                                <b><i class="icon-files-empty"></i></b>Lưu & Copy
+                            </a>
+                            <a href="#" class="btn btn-labeled btn-labeled-left mr-2">
+                                <b><i class="icon-file-plus"></i></b> Lưu & thêm mới
+                            </a>
+                            <a href="javascript:;" class="btn bg-primary"><i class="icon-floppy-disk mr-1"></i> Lưu</a>
                         </div>
                     </div>
 
@@ -98,9 +119,6 @@
                                                 <div class="col-md-4">
                                                     <?php inc('template/1_thong_tin_chung/ti_gia_thuc_te.php'); ?>
                                                 </div>
-                                                <div class="col-md-12">
-                                                    <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php'); ?>
-                                                </div>
                                                 
                                             </div>
                                         </fieldset>
@@ -131,7 +149,7 @@
                                                     <th class="min-tablet">Phí bảo hiểm</th>
                                                     <th class="min-tablet">VAT</th>
                                                     <th>Tổng phí thanh toán</th>
-                                                    <th width="50px" class="text-center desktop">#</th>
+                                                    <th width="50px" data-orderable="false" class="text-center desktop">#</th>
                                                 </tr>
                                             </thead>
                                             <tbody>

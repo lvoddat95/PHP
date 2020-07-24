@@ -308,8 +308,8 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
-                                                                <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
+
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                                 
                                                             </div>
                                                         </div>

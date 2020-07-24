@@ -22,7 +22,7 @@
                             <div class="breadcrumb">
                                 <a href="<?php echo HTTP_PATH; ?>" class="breadcrumb-item"><i class="icon-home5 mr-1"></i>Trang chủ</a>
                                 <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item">F02 - Bảo hiểm ô tô</a>
-                                <span class="breadcrumb-item active">Cập nhập đơn</span>
+                                <span class="breadcrumb-item active">Xem đơn</span>
                             </div>
                             <div class="d-md-none logo-mobile">
                                 <a href="<?php echo HTTP_PATH; ?>" class="logo-text">
@@ -39,15 +39,37 @@
 
                     <div class="page-title">
                         <div class="p-title">
-                            <p class="font-weight-semibold font-size-m mb-0"><i class="icon-certificate mr-2"></i>Thêm mới đơn bảo hiểm</p>
-                            <span class="text-muted d-block font-size-xs">Nhập thông tin theo từng bước. Vui lòng nhập đầy đủ thông tin vào trường bắt buộc có dấu <code>*</code>.</span>
+                            <p class="font-weight-semibold font-size-m mb-0"><i class="icon-certificate mr-2"></i>Màn hình đơn</p>
                         </div>
-                        <div class="p-button">
-                            <a href="" class="btn mr-1"><i class="icon-arrow-left52 mr-1"></i> Quay lại</a>
-                            <a href="javascript:;" class="btn mr-1"><i class="icon-files-empty mr-1"></i> Lưu & Copy</a>
+                        <div class=" p-button">
+                            <div class="dropdown d-inline-block mr-2">
+                                <a href="#" class="list-icons-item dropdown-toggle caret-0 btn" data-toggle="dropdown"><i class="icon-gear"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="#" class="dropdown-item"><i class="icon-file-check"></i>Trình duyệt</a>
+                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i>Đóng đơn</a>
+                                    <a href="#" class="dropdown-item"><i class="icon-loop3"></i>Tái tục đơn</a>
+                                </div>
+                            </div>
+                            <div class="dropdown d-inline-block mr-2">
+                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon-printer2"></i> IN</button>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="#" class="dropdown-item"><i class="icon-file-text2"></i>Giấy yêu cầu BH</a>
+                                    <a href="#" class="dropdown-item"><i class="icon-file-text2"></i>Hợp đồng BH</a>
+                                    <a href="#" class="dropdown-item"><i class="icon-file-text2"></i>Bản chào phí BH</a>
+                                    <a href="#" class="dropdown-item"><i class="icon-file-text2"></i>Giấy chứng nhận BH</a>
+                                </div>
+                            </div>
+                            
+                            <a href="#" class="btn btn-labeled btn-labeled-left mr-2">
+                                <b><i class="icon-files-empty"></i></b>Lưu & Copy
+                            </a>
+                            <a href="#" class="btn btn-labeled btn-labeled-left mr-2">
+                                <b><i class="icon-file-plus"></i></b> Lưu & thêm mới
+                            </a>
                             <a href="javascript:;" class="btn bg-primary"><i class="icon-floppy-disk mr-1"></i> Lưu</a>
                         </div>
                     </div>
+
 
                     <div class="row">
                         <div class="col-lg-12">
@@ -1883,20 +1905,6 @@
                                             <!-- End-Bước 4 -->
 
 
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <div class="d-flex justify-content-end">
-                                                        <div class="d-flex-sm p-button">
-                                                            <a href="nhap_don1.html" class="btn mr-1"><i class="icon-file-locked mr-1"></i>Đóng đơn</a>
-                                                            <a href="nhap_don1.html" class="btn mr-1"><i class="icon-file-check mr-1"></i>Trình duyệt</a>
-                                                            <a href="javascript:;" class="btn mr-1"><i class="icon-files-empty mr-1"></i> Lưu & Copy</a>
-                                                            <a href="javascript:;" class="btn bg-primary"><i class="icon-floppy-disk mr-1"></i> Lưu</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            
                                         </form>
                                     </div>
                                 </div>
@@ -1932,4 +1940,3 @@
     </body>
 
 <?php include_once FOOTER; ?>            
-        </div> 
