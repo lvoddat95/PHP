@@ -13,10 +13,6 @@
         <link rel="icon" type="image/png" sizes="16x16" href="<?php echo ASSET_ROOT; ?>/images/ico//favicon-16x16.png">
         <link rel="manifest" href="<?php echo ASSET_ROOT; ?>/images/ico/site.webmanifest">
         <meta name="apple-mobile-web-app-status-bar-style" content="default">
-        <!-- init Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <!-- /init Font -->
 
         <!-- core stylesheet -->
         <link rel="stylesheet" type="text/css" href="<?php echo ASSET_ROOT; ?>/fonts/linearicons/linearicons.css">
