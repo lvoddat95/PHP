@@ -58,11 +58,11 @@
                                                 <span class="menu-title">Theo dõi số hợp đồng</span>
                                             </a>
                                         </li>
-                                        <li class="nav-item">
+                                       <!--  <li class="nav-item">
                                             <a href="<?php echo HTTP_PATH .'view/pages/ql-so-hop-dong/cap-nhap-ki-ket.php'; ?>" class="nav-link">
                                                 <span class="menu-title">Cập nhập kí kết</span>
                                             </a>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </li>
                                 <li><a href="<?php echo HTTP_PATH .'view/pages/login.php'; ?>" class="nav-link"><span class="menu-title">Trang Login</span></a></li>
