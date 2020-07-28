@@ -1,7 +1,7 @@
 <?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?>
 
-    <body>
+    <body class="sidebar-xs">
         
         <!-- page-content -->
         <div class="page-content">
@@ -44,8 +44,8 @@
 
                     <section class="content-block">
                         <div class="card">
-                            <div class="card-body" style="">
-                                <div class="row mb-1">
+                            <div class="card-body">
+                                <div class="row">
                                     <div class="col-sm-4">
                                         <div class="form-group">
                                             <label class="mb-0">Loại hình bảo hiểm</label>
@@ -154,16 +154,17 @@
                                             data-ordering="true"
                                             data-searching="false">
                                             <thead class="thead-light">
-                                                <th width="30px" class="text-center">#</th>
-                                                <th>Ngày lấy</th>
-                                                <th>Số hợp đồng</th>
+                                                <th width="30px" data-orderable="false" class="text-center">#</th>
+                                                <th class="desktop">Ngày lấy</th>
+                                                <th width="10%">Số hợp đồng</th>
                                                 <th width="20%">Loại hình bảo hiểm</th>
                                                 <th class="desktop">Gói HĐ</th>
                                                 <th width="20%">Khách hàng</th>
                                                 <th class="desktop">Số lượng xe</th>
                                                 <th>Trạng thái</th>
-                                                <th>Hạn dùng</th>
+                                                <th class="desktop">Hạn dùng</th>
                                                 <th class="desktop">Đề nghị</th>
+                                                <th class="all" width="30px" data-orderable="false">#</th>
                                             </thead>
                                             <tbody>
                                                 <tr>
@@ -177,6 +178,17 @@
                                                     <td>Chưa sử dụng</td>
                                                     <td>24/07/2020</td>
                                                     <td></td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <a href="#" class="dropdown-item" data-toggle="modal" data-target="#xin_gia_han_hop_dong"><i class="icon-file-plus text-success"></i> Xin gia hạn</a>
+                                                                <a href="#" class="dropdown-item" data-toggle="modal" data-target="#xin_huy_hop_dong"><i class="icon-file-minus text-danger"></i> Xin hủy</a>
+                                                                <div class="dropdown-divider"></div>
+                                                                <a href="#" class="dropdown-item"><i class="icon-printer2"></i> In tờ trình</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
                                                 </tr>
 
                                                 <tr>
@@ -190,6 +202,17 @@
                                                     <td>Chưa sử dụng</td>
                                                     <td>21/07/2020</td>
                                                     <td></td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <a href="#" class="dropdown-item" data-toggle="modal" data-target="#xin_gia_han_hop_dong"><i class="icon-file-plus text-success"></i> Xin gia hạn</a>
+                                                                <a href="#" class="dropdown-item" data-toggle="modal" data-target="#xin_huy_hop_dong"><i class="icon-file-minus text-danger"></i> Xin hủy</a>
+                                                                <div class="dropdown-divider"></div>
+                                                                <a href="#" class="dropdown-item"><i class="icon-printer2"></i> In tờ trình</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
                                                 </tr>
 
                                                 <tr>
@@ -203,45 +226,87 @@
                                                     <td>Đã sử dụng</td>
                                                     <td>17/07/2020</td>
                                                     <td></td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <a href="#" class="dropdown-item" data-toggle="modal" data-target="#xin_gia_han_hop_dong"><i class="icon-file-plus text-success"></i> Xin gia hạn</a>
+                                                                <a href="#" class="dropdown-item" data-toggle="modal" data-target="#xin_huy_hop_dong"><i class="icon-file-minus text-danger"></i> Xin hủy</a>
+                                                                <div class="dropdown-divider"></div>
+                                                                <a href="#" class="dropdown-item"><i class="icon-printer2"></i> In tờ trình</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
                                                 </tr>
 
                                                 <tr>
                                                     <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
                                                 </tr>
 
                                                 <tr>
                                                     <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
                                                 </tr>
 
                                                 <tr>
                                                     <td>&nbsp;</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
                                                     <td>&nbsp;</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
                                                     <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
                                                 </tr>
                                                
                                             </tbody>
@@ -252,19 +317,7 @@
 
                             <div class="card-footer ">
                                 <div class="p-button justify-content-end">
-                                    <div class="dropdown p-0">
-                                        <a href="#" class="dropdown-toggle btn btn-light" data-toggle="dropdown" aria-expanded="false">
-                                            <i class="icon-gear mr-1"></i>
-                                            Lựa chọn
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right">
-                                            <a href="#" class="dropdown-item" data-toggle="modal" data-target="#xin_cap_hop_dong"><i class="icon-file-check text-primary"></i> Xin cấp số hợp đồng</a>
-                                            <a href="#" class="dropdown-item" data-toggle="modal" data-target="#xin_gia_han_hop_dong"><i class="icon-file-plus text-success"></i> Xin gia hạn</a>
-                                            <a href="#" class="dropdown-item" data-toggle="modal" data-target="#xin_huy_hop_dong"><i class="icon-file-minus text-danger"></i> Xin hủy</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="#" class="dropdown-item"><i class="icon-printer2"></i> In tờ trình</a>
-                                        </div>
-                                    </div>
+                                    <a href="#" data-toggle="modal" data-target="#xin_cap_hop_dong" class="btn btn-labeled btn-labeled-left mr-1"><b><i class="icon-file-check"></i></b> Xin cấp số hợp đồng</a>
                                     <button type="submit" class="btn bg-primary">Chọn</button>
                                 </div>
                             </div>

@@ -1,7 +1,7 @@
 <?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?>
 
-    <body>
+    <body class="sidebar-xs">
         
         <!-- page-content -->
         <div class="page-content">
@@ -105,7 +105,7 @@
                                         </div>
                                         <div class="col-md-3 col-sm-4 col-6 ">
                                             <div class="form-group ">
-                                                <label class="font-weight-semibold">Khách hàng:</label>
+                                                <label class="font-weight-semibold">Tình trạng sử dụng:</label>
                                                 <div class="input-group">
                                                     <span class="input-group-prepend">
                                                         <span class="input-group-text"><i class="icon-profile "></i></span>
