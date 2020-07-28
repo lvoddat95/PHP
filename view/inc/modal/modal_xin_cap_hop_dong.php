@@ -151,12 +151,18 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Ghi chú:</label>
+                                <textarea rows="3" cols="5" class="form-control" placeholder=""></textarea>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-light" data-dismiss="modal">Đóng</button>
-                    <button type="submit" class="btn bg-primary">Chọn</button>
+                    <a href=":;" class="btn bg-primary btn-labeled btn-labeled-left mr-1"><b><i class="icon-floppy-disk"></i></b> Lưu</a>
                 </div>
             </form>
         </div>

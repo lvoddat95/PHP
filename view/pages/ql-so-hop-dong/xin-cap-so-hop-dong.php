@@ -45,7 +45,7 @@
                     <section class="content-block">
                         <div class="card">
                             <div class="card-body" style="">
-                                <div class="row">
+                                <div class="row mb-1">
                                     <div class="col-sm-4">
                                         <div class="form-group">
                                             <label class="mb-0">Loại hình bảo hiểm</label>
@@ -151,7 +151,7 @@
                                         <table class="table table-bordered table-hover datatable"  
                                             data-paging="true"
                                             data-info="true"
-                                            data-ordering="false"
+                                            data-ordering="true"
                                             data-searching="false">
                                             <thead class="thead-light">
                                                 <th width="30px" class="text-center">#</th>

@@ -45,8 +45,6 @@
                                 <li><a href="<?php echo HTTP_PATH .'view/pages/nhap-don.php'; ?>" class="nav-link"><span class="menu-title">Nhập đơn</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/pages/xem-don.php'; ?>" class="nav-link"><span class="menu-title">Xem đơn</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/pages/ban-chao/danh-sach-ban-chao.php'; ?>" class="nav-link"><span class="menu-title">Bản chào phí bảo hiểm</span></a></li>
-                                <li><a href="<?php echo HTTP_PATH .'view/pages/login.php'; ?>" class="nav-link"><span class="menu-title">Trang Login</span></a></li>
-                                <li><a href="<?php echo HTTP_PATH .'view/pages/404.php'; ?>" class="nav-link"><span class="menu-title">Trang 404</span></a></li>
                                 <li class="nav-item nav-item-submenu">
                                     <a href="javascript:;" class="nav-link"><span class="menu-title">Quản lí số hợp đồng</span></a>
                                     <ul class="nav nav-group-sub">
@@ -67,6 +65,9 @@
                                         </li>
                                     </ul>
                                 </li>
+                                <li><a href="<?php echo HTTP_PATH .'view/pages/login.php'; ?>" class="nav-link"><span class="menu-title">Trang Login</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/pages/404.php'; ?>" class="nav-link"><span class="menu-title">Trang 404</span></a></li>
+                                
                             </ul>
                         </li>
 

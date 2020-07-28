@@ -471,8 +471,9 @@ var App = function () {
         $('.input-number').toArray().forEach(function (field) {
             new Cleave(field, {
                 numeral: true,
-    numeralPositiveOnly: true,
-    prefix: '$',
+                numeralPositiveOnly: true,
+                numeralDecimalMark: '',
+                delimiter: ''
             });
         });
         $('.input-phone').toArray().forEach(function (field) {

@@ -326,7 +326,7 @@
 }
 
 .sidebar ul li.nav-item a:not(.active):hover {
-    background: rgba(255, 255, 255, .1);
+    background: rgba(255, 255, 255, .1) !important;
 }
 
 .sidebar ul li.nav-item>a.active:before {
