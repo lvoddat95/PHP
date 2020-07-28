@@ -1,4 +1,4 @@
-<?php require_once '../../config.php'; ?>
+<?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?>
     
     <body class="sidebar-xs">
@@ -37,18 +37,8 @@
                             <h1 class="font-weight-semibold font-size-m"><i class="icon-stack-text mr-2"></i>Danh sách bản chào</h1>
                         </div>
                         <div class="p-button">
-                            <a href="<?php echo HTTP_PATH .'view/welcome/nhap-ban-chao.php'; ?>" class="btn bg-teal-400 btn-labeled btn-labeled-left mr-1"><b><i class="icon-plus2"></i></b> Tạo bản chào</a>
-                            <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="btn bg-teal-400 btn-labeled btn-labeled-left mr-1"><b><i class="icon-list3"></i></b> Danh sách đơn bảo hiểm</a>
-                            <div class="btn-group">
-                                <button type="button" class="btn bg-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon-printer2"></i> IN</button>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <a href="#" class="dropdown-item" data-popup="tooltip" title="" data-placement="right" data-original-title="In thông báo thu phí"><i class="icon-file-text2"></i> In TB thu phí</a>
-                                    <a href="#" class="dropdown-item" data-popup="tooltip" title="" data-placement="right" data-original-title="In thông báo hoa hồng"><i class="icon-cash3"></i> In TB HH</a>
-                                    <a href="#" class="dropdown-item" data-popup="tooltip" title="" data-placement="right" data-original-title="In phiếu thanh toán hoa hồng"><i class="icon-credit-card"></i> In phiếu TT HH</a>
-                                    <a href="#" class="dropdown-item" data-popup="tooltip" title="" data-placement="right" data-original-title="In mẫu in"><i class="icon-stack"></i> In mẫu in</a>
-                                    <a href="#" class="dropdown-item" data-popup="tooltip" title="" data-placement="right" data-original-title="In tờ trình"><i class="icon-certificate"></i> In tờ trình</a>
-                                </div>
-                            </div>
+                            <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="btn btn-labeled btn-labeled-left mr-1"><b><i class="icon-list3"></i></b> Danh sách đơn bảo hiểm</a>
+                            <a href="<?php echo HTTP_PATH .'view/pages/ban-chao/nhap-ban-chao.php'; ?>" class="btn bg-primary btn-labeled btn-labeled-left mr-1"><b><i class="icon-plus2"></i></b> Tạo bản chào</a>
                         </div>
                     </div>
 
@@ -218,7 +208,7 @@
                                         data-paging="true"
                                         data-info="true"
                                         data-ordering="true"
-                                        data-searching="true"
+                                        data-searching="false"
                                         data-page-length="20"
                                         data-order='[[3, "desc"]]'
                                     >
@@ -231,7 +221,7 @@
                                                 <th width="30%" class="min-tablet">Tên khách hàng</td>
                                                 <th class="desktop">Cán bộ khai thác</th>
                                                 <th class="desktop">Cán bộ cấp đơn</th>
-                                                <th width="80px" class="all">Trạng thái</th>
+                                                <th width="110px" class="all">Trạng thái</th>
                                                 <th width="30px" class="text-center min-tablet" data-orderable="false">#</th>
                                             </tr>
                                         </thead>
@@ -241,17 +231,18 @@
                                                 <td>26/05/2020</td>
                                                 <td>F02</td>
                                                 <td>Vũ Huy Anh</td>
-                                                <td>Đặng Văn Lịch</td>
-                                                <td>Bùi Thị Nhung</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-success">Mới thêm</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
-                                                                <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
-                                                                
+                                                                <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -263,17 +254,18 @@
                                                 <td>27/05/2020</td>
                                                 <td>F02</td>
                                                 <td>CTCP Thiết Bị Và Thang Máy Messi</td>
-                                                <td>Bùi Thị Nhung</td>
-                                                <td>Bùi Thị Nhung</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-dark">Từ chối</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
-                                                                <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
-                                                                
+                                                                <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -284,17 +276,18 @@
                                                 <td>22/05/2020</td>
                                                 <td>F02</td>
                                                 <td>Công Ty CP DV Suất Ăn Hàng Không VN</td>
-                                                <td>Đỗ Thùy Dương</td>
-                                                <td>Bùi Thị Nhung</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-info">Chờ duyệt</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
-                                                                <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
-                                                                
+                                                                <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -305,17 +298,18 @@
                                                 <td>25/05/2020</td>
                                                 <td>F02</td>
                                                 <td>Trần Văn Luyện</td>
-                                                <td>Tô Thị Hoàng Yến</td>
-                                                <td>Tô Thị Hoàng Yến</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-primary">Chấp nhận</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
-                                                                <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
-                                                                
+                                                                <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -326,17 +320,18 @@
                                                 <td>25/05/2020</td>
                                                 <td>E01</td>
                                                 <td>Công Ty TNHH Thành An - Hà Nội</td>
-                                                <td>Đỗ Thùy Dương</td>
-                                                <td>Tô Thị Hoàng Yến</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-danger ">TBH Từ chối</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
-                                                                <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
-                                                                
+                                                                <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -348,17 +343,18 @@
                                                 <td>16/05/2020</td>
                                                 <td>F02</td>
                                                 <td>CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ DU LỊCH ADV PRO</td>
-                                                <td>Nguyễn Đức Cường</td>
-                                                <td>Nguyễn Đức Cường</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-primary">Chấp nhận</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
-                                                                <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
-                                                                
+                                                                <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -369,17 +365,18 @@
                                                 <td>26/05/2020</td>
                                                 <td>F02</td>
                                                 <td>Phạm Thị Thu Huyền</td>
-                                                <td>Đặng Văn Lịch</td>
-                                                <td>Bùi Thị Nhung</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-danger ">TBH Từ chối</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
-                                                                <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
-                                                                
+                                                                <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -390,17 +387,18 @@
                                                 <td>18/05/2020</td>
                                                 <td>F02</td>
                                                 <td>Nguyễn Hoàng Thị Bé</td>
-                                                <td>Lê Vi Linh</td>
-                                                <td>Lê Vi Linh</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-success">Mới thêm</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
-                                                                <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
-                                                                
+                                                                <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -411,17 +409,18 @@
                                                 <td>26/05/2020</td>
                                                 <td>E02</td>
                                                 <td>CÔNG TY CHẾ BIẾN THAN QUẢNG NINH-TKV</td>
-                                                <td>Ngô Thị Hà Trang</td>
-                                                <td>Ngô Thị Hà Trang</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-danger ">TBH Từ chối</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
-                                                                <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
-                                                                
+                                                                <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -432,17 +431,18 @@
                                                 <td>16/05/2020</td>
                                                 <td>F02</td>
                                                 <td>Đào Nguyên Tùng</td>
-                                                <td>Đặng Văn Lịch</td>
-                                                <td>Bùi Thị Nhung</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-success">Mới thêm</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
-                                                                <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
-                                                                
+                                                                <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -453,17 +453,18 @@
                                                 <td>16/05/2020</td>
                                                 <td>F02</td>
                                                 <td>Trần Anh Dũng</td>
-                                                <td>Đặng Văn Lịch</td>
-                                                <td>Bùi Thị Nhung</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-danger ">TBH Từ chối</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
-                                                                <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
-                                                                
+                                                                <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -474,17 +475,18 @@
                                                 <td>26/05/2020</td>
                                                 <td>F02</td>
                                                 <td>Công Ty CP DV Và Vận Chuyển Ngọc Cường</td>
-                                                <td>Bùi Thị Nhung</td>
-                                                <td>Bùi Thị Nhung</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-primary">Chấp nhận</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
-                                                                <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
-                                                                
+                                                                <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -495,17 +497,18 @@
                                                 <td>26/05/2020</td>
                                                 <td>F02</td>
                                                 <td>Công Ty Cổ Phần Tập Đoàn Sơn Spentes Việt Nam</td>
-                                                <td>Đặng Văn Lịch</td>
-                                                <td>Bùi Thị Nhung</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-danger ">TBH Từ chối</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
-                                                                <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
-                                                                
+                                                                <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -516,17 +519,18 @@
                                                 <td>24/05/2020</td>
                                                 <td>E02</td>
                                                 <td>Chi Nhánh Tập Đoàn Công Nghiệp Than - Khoáng Sản Việt Nam Công Ty Kho Vận Và Cảng Cẩm Phả - VINACOMIN </td>
-                                                <td>Bùi Thị Nhung</td>
-                                                <td>Bùi Thị Nhung</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-primary">Chấp nhận</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
-                                                                <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
-                                                                
+                                                                <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -537,17 +541,18 @@
                                                 <td>20/05/2020</td>
                                                 <td>C01</td>
                                                 <td>BAN QUẢN LÝ DỰ ÁN CÔNG TRÌNH THỦY LỢI NỘI ĐỒNG</td>
-                                                <td>Nguyễn Ngọc Cường</td>
-                                                <td>Trương Thị Bích Liên</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-dark">Từ chối</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
-                                                                <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
-                                                                
+                                                                <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -558,17 +563,18 @@
                                                 <td>22/05/2020 </td>
                                                 <td>C01</td>
                                                 <td>CÔNG TY TNHH MỘT THÀNH VIÊN KHAI THÁC CÔNG TRÌNH THUỶ LỢI BẮC HƯNG HẢI</td>
-                                                <td>Nguyễn Ngọc Cường</td>
-                                                <td>Trương Thị Bích Liên</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-info">Chờ duyệt</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
-                                                                <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
-                                                                
+                                                                <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -579,17 +585,18 @@
                                                 <td> 22/05/2020</td>
                                                 <td> C01 </td>
                                                 <td>ĐOÀN KINH TẾ - QUỐC PHÒNG 327</td>
-                                                <td> Nguyễn Ngọc Cường</td>
-                                                <td>Trương Thị Bích Liên</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-danger ">TBH Từ chối</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
-                                                                <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
-                                                                
+                                                                <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -597,20 +604,21 @@
                                             </tr>
                                             <tr>
                                                 <td align="center"><input type="checkbox" class="input-chk"></td><td>162000031/C01 </td>
-                                                <td>    22/04/2020 </td>
-                                                <td>    C01 </td>
-                                                <td>    BAN QUẢN LÝ DỰ ÁN DƯỜNG DỒ CHÍ MINH </td>
-                                                <td>    Đỗ Thùy Dương   </td>
-                                                <td>Đỗ Thùy Dương   </td>
+                                                <td>22/04/2020 </td>
+                                                <td>C01 </td>
+                                                <td>BAN QUẢN LÝ DỰ ÁN DƯỜNG DỒ CHÍ MINH </td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-info">Chờ duyệt</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
-                                                                <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
-                                                                
+                                                                <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -621,17 +629,18 @@
                                                 <td>20/05/2020</td>
                                                 <td>F02</td>
                                                 <td>CTY TNHH THÀNH CÔNG</td>
-                                                <td>Lê Vi Linh</td>
-                                                <td>Bùi Thị Nhung    </td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-info">Chờ duyệt</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
-                                                                <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
-                                                                
+                                                                <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -639,20 +648,21 @@
                                             </tr>
                                             <tr>
                                                 <td align="center"><input type="checkbox" class="input-chk"></td><td>162003380/F02.BB19/0102290 </td>
-                                                <td>    21/05/2020 </td>
-                                                <td>    F02     </td>
+                                                <td>21/05/2020 </td>
+                                                <td>F02 </td>
                                                 <td>Công Ty Cố Phần Bánh Mứt Kẹo Hoàng Minh </td>
-                                                <td>    Đặng Văn Lịch   </td>
-                                                <td>Bùi Thị Nhung     </td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-dark">Từ chối</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
-                                                                <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
-                                                                
+                                                                <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -663,17 +673,18 @@
                                                 <td>20/05/2020 </td>
                                                 <td>F02</td>
                                                 <td>CTY TNHH THÀNH CÔNG</td>
-                                                <td>Vũ Văn Đạt</td>
-                                                <td>Bùi Thị Nhung</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-success">Mới thêm</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
-                                                                <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
-                                                                
+                                                                <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -681,20 +692,21 @@
                                             </tr>
                                             <tr>
                                                 <td align="center"><input type="checkbox" class="input-chk"></td><td>   162003369/F02.BB19/0102314</td>
-                                                <td>    21/05/2020 </td>
-                                                <td>    F02     </td>
+                                                <td>21/05/2020 </td>
+                                                <td>F02</td>
                                                 <td>Nguyễn Quang Anh    </td>
-                                                <td>Phạm Duy Tùng   </td>
-                                                <td>Nguyễn Đức Cường</td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-success">Mới thêm</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
-                                                                <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
-                                                                
+                                                                <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -702,20 +714,21 @@
                                             </tr>
                                             <tr>
                                                 <td align="center"><input type="checkbox" class="input-chk"></td><td>162003457/F02.BB19/0102368 </td>
-                                                <td>    22/05/2020  </td>
-                                                <td>F02     </td>
+                                                <td>22/05/2020</td>
+                                                <td>F02</td>
                                                 <td>Công Ty Unid Việt Nam</td>
-                                                <td>    Đặng Văn Lịch   </td>
-                                                <td>Bùi Thị Nhung     </td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-danger ">TBH Từ chối</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
-                                                                <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
-                                                                
+                                                                <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -724,19 +737,20 @@
                                             <tr>
                                                 <td align="center"><input type="checkbox" class="input-chk"></td><td>162000022/C01  </td>
                                                 <td>13/05/2020 </td>
-                                                <td>    C01     </td>
+                                                <td>C01 </td>
                                                 <td>BAN QUẢN LÝ DỰ ÁN PHÁT TRIỂN ĐIỆN LỰC HÀ NỘI - TỔNG CÔNG TY ĐIỆN LỰC TP HÀ NỘI </td>
-                                                <td>    Nguyễn Ngọc Cường   </td>
-                                                <td>Trương Thị Bích Liên    </td>
+                                                <td>11,820,000 VNĐ</td>
+                                                <td>200,000 VNĐ</td>
                                                 <td><span class="badge badge-success">Mới thêm</span></td>
                                                 <td class="text-center">
                                                     <div class="list-icons">
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" data-toggle="modal" data-target="#modal_form1" class="dropdown-item"><i class="icon-file-stats"></i> Xem lịch sử tổn thất</a>
-                                                                <!-- <a href="#" data-toggle="modal" data-target="#modal_form2"  class="dropdown-item"><i class="icon-map5"></i> Xem vị trí gđ online</a> -->
-                                                                
+                                                                <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -759,7 +773,9 @@
             
         </div>
 
-        <?php inc('modal/lich_su_ton_that.php'); ?>
+        <?php inc('modal/modal_lich_su_ton_that.php'); ?>
+        <?php inc('modal/modal_trinh_duyet_mot_don.php'); ?>
+
 
     </body>
 

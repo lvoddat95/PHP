@@ -57,19 +57,19 @@
         <?php inc('chat-box.php'); ?> 
         <?php inc('quick-action.php'); ?> 
 
-        <?php inc('modal/ds_so_hop_dong_xin_cap.php'); ?> 
-        <?php inc('modal/ds_nguoi_tham_gia_bao_hiem.php'); ?> 
+        <?php inc('modal/modal_ds_so_hop_dong_xin_cap.php'); ?> 
+        <?php inc('modal/modal_ds_nguoi_tham_gia_bao_hiem.php'); ?> 
 
         <div class="modal-group">
             <?php
-                inc('modal/ds_cac_khach_hang.php'); 
-                inc('modal/cap_nhap_thong_tin_khach_hang.php'); 
+                inc('modal/modal_ds_cac_khach_hang.php'); 
+                inc('modal/modal_cap_nhap_thong_tin_khach_hang.php'); 
             ?>
         </div>
 
-        <?php inc('modal/ds_rui_ro_bao_hiem.php'); ?> 
-        <?php inc('modal/ds_dieu_khoan_loai_tru.php'); ?> 
-        <?php inc('modal/ds_files.php'); ?>
+        <?php inc('modal/modal_ds_rui_ro_bao_hiem.php'); ?> 
+        <?php inc('modal/modal_ds_dieu_khoan_loai_tru.php'); ?> 
+        <?php inc('modal/modal_ds_files.php'); ?>
 
     </body>
 

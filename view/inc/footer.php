@@ -19,7 +19,7 @@
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/daterangepicker.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/bootstrap/bootstrap-datepicker.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/datatable/datatables.min.js"></script>
-    <script src="<?php echo ASSET_ROOT; ?>/vendors/js/datatable/responsive.min.js"></script>
+    <script src="<?php echo ASSET_ROOT; ?>/vendors/js/datatable/dataTables.responsive.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/datatable/dataTables.buttons.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/datatable/buttons.flash.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/datatable/jszip.min.js"></script>

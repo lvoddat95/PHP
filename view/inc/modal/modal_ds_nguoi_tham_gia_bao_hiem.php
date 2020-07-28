@@ -3,7 +3,7 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title ont-weight-semibold ">Danh sách người tham gia bảo hiểm</h5>
+                <h5 class="modal-title font-weight-semibold ">Danh sách người tham gia bảo hiểm</h5>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
 

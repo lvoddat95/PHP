@@ -401,6 +401,8 @@ var App = function () {
         }
     }
 
+
+
     // Select2
     var _component_select2 = function(p_select) {
 
@@ -468,7 +470,9 @@ var App = function () {
         });
         $('.input-number').toArray().forEach(function (field) {
             new Cleave(field, {
-                numericOnly: true,
+                numeral: true,
+    numeralPositiveOnly: true,
+    prefix: '$',
             });
         });
         $('.input-phone').toArray().forEach(function (field) {
@@ -1624,157 +1628,127 @@ var App = function () {
         }
     }
 }();
- // Datatable 
-var _create_datatable = function(p_table = '') {
 
-    var table = $('.datatable');
-    if (p_table)  table = p_table;
+// Datatable 
+    var _component_datatable = function(p_table = '') {
 
-    var v_datatable = table.DataTable( {
-        autoWidth: false,
-        responsive: {
-            details: {
-                type: 'column',
+        var table = $('.datatable');
+        if (p_table)  table = p_table;
+
+        if (!$().DataTable) {
+            console.warn('Warning - datatables.min.js is not loaded.');
+            return;
+        }
+
+        // Setting datatable defaults
+        $.extend( $.fn.dataTable.defaults, {
+            autoWidth: false,
+            responsive: {
+                details: {
+                    type: 'column'
+                },
+                breakpoints: [
+                    {name: 'desktop', width: Infinity},
+                    {name: 'tablet-l', width: 1200},
+                    {name: 'tablet-p', width: 992},
+                    {name: 'mobile-l', width: 576},
+                    {name: 'mobile-p', width: 320}
+                ]
             },
-            breakpoints: [
-                {name: 'desktop', width: Infinity},
-                {name: 'tablet-l', width: 1200},
-                {name: 'tablet-p', width: 992},
-                {name: 'mobile-l', width: 576},
-                {name: 'mobile-p', width: 320}
-            ]
-        },
-        columnDefs: [
-            {
-                className: 'control not-desktop text-center',
-                orderable: false,
-                targets:   0
-            },
-        ],
-        lengthMenu: [
-            [10, 20, 50, 100, 200, 300, 400, 500, 1000, -1], 
-            [10, 20, 50, 100, 200, 300, 400, 500, 1000, "Tất cả"]
-        ],
-
-    });
-
-    v_datatable.on( 'responsive-display', function ( e, datatable, row, showHide, update ) {
-        var v_li =  $(this).find('tbody > tr.child > td.child > ul.dtr-details > li');
-        v_li.each(function(index, li) { 
-            var v_dtr_title = $(li).find('.dtr-title');
-            var v_dtr_data = $(li).find('.dtr-data');
-
-            if (v_dtr_title.is(':empty')) {
-                $(li).addClass('dtr-title-empty');
-            }
-
-            if (v_dtr_data.is(':empty')) {
-                $(li).addClass('dtr-data-empty');
-            }
-
-        });
-                               
-    });
-
-}    
-
-var _component_datatable = function(p_table = '') {
-
-    var table = $('.datatable');
-    if (p_table)  table = p_table;
-
-    if (!$().DataTable) {
-        console.warn('Warning - datatables.min.js is not loaded.');
-        return;
-    }
-
-    // Setting datatable defaults
-    $.extend( $.fn.dataTable.defaults, {
-        autoWidth: false,
-        responsive: {
-            details: {
-                type: 'column'
-            },
-            breakpoints: [
-                {name: 'desktop', width: Infinity},
-                {name: 'tablet-l', width: 1200},
-                {name: 'tablet-p', width: 992},
-                {name: 'mobile-l', width: 576},
-                {name: 'mobile-p', width: 320}
-            ]
-        },
-        columnDefs: [
-            {
-                className: 'control not-desktop text-center',
-                orderable: false,
-                targets:   0
-            },
-        ],
-        dom: '<"datatable-header"f><"datatable-body"t><"datatable-footer"<"datatable-li"li>p>',
-        language: {
-            decimal:        "",
-            emptyTable:     "Không có dữ liệu trong bảng",
-            info:           " Tổng số _TOTAL_ bản ghi",
-            infoEmpty:      "Không có bản ghi nào",
-            infoFiltered:   "(filtered from _MAX_ total entries)",
-            infoPostFix:    "",
-            thousands:      ",",
-            lengthMenu:     " _MENU_ ",
-            loadingRecords: "Đang tải...",
-            processing:     "Đang xử lý...",
-            search:         "",
-            searchPlaceholder: 'Tìm kiếm nhanh ...',
-            zeroRecords:    "Không tìm thấy hồ sơ phù hợp",
-            paginate: {
-                first:      "Đầu",
-                last:       "Cuối",
-                next:       "Sau >>",
-                previous:   "<< Trước"
-            },
-            aria: {
-                sortAscending:  ": kích hoạt để sắp xếp cột tăng dần",
-                sortDescending: ": kích hoạt để sắp xếp cột giảm dần"
-            },
-            buttons: {
-                copyTitle: 'Đã thêm vào clipboard',
-                copyKeys: 'Nhấn ctrl hoặc <i>\u2318</i> + C để sao chép dữ liệu từ bảng vào khay nhớ tạm của bạn. Để hủy, bấm vào tin nhắn này hoặc nhấn Esc.',
-                copySuccess: {
-                    _: 'Sao chép %d dòng ',
-                    1: 'Sao chép 1 dòng '
+            columnDefs: [
+                {
+                    className: 'control not-desktop text-center',
+                    orderable: false,
+                    targets:   0
+                },
+            ],
+            dom: '<"datatable-header"f><"datatable-body"t><"datatable-footer"<"datatable-li"li>p>',
+            language: {
+                decimal:        "",
+                emptyTable:     "Không có dữ liệu trong bảng",
+                info:           " Tổng số _TOTAL_ bản ghi",
+                infoEmpty:      "Không có bản ghi nào",
+                infoFiltered:   "(filtered from _MAX_ total entries)",
+                infoPostFix:    "",
+                thousands:      ",",
+                lengthMenu:     " _MENU_ ",
+                loadingRecords: "Đang tải...",
+                processing:     "Đang xử lý...",
+                search:         "",
+                searchPlaceholder: 'Tìm kiếm nhanh ...',
+                zeroRecords:    "Không tìm thấy hồ sơ phù hợp",
+                paginate: {
+                    first:      "Đầu",
+                    last:       "Cuối",
+                    next:       "Sau >>",
+                    previous:   "<< Trước"
+                },
+                aria: {
+                    sortAscending:  ": kích hoạt để sắp xếp cột tăng dần",
+                    sortDescending: ": kích hoạt để sắp xếp cột giảm dần"
+                },
+                buttons: {
+                    copyTitle: 'Đã thêm vào clipboard',
+                    copyKeys: 'Nhấn ctrl hoặc <i>\u2318</i> + C để sao chép dữ liệu từ bảng vào khay nhớ tạm của bạn. Để hủy, bấm vào tin nhắn này hoặc nhấn Esc.',
+                    copySuccess: {
+                        _: 'Sao chép %d dòng ',
+                        1: 'Sao chép 1 dòng '
+                    }
                 }
-            }
-        }
-    });
-
-    
-    table.find('tr').each(function(){
-       var v_th = $(this).find('th').eq(0);
-       var v_td = $(this).find('td').eq(0);
-       if (!v_th.hasClass('cell')) {
-            v_th.before('<th class="cell" width="30px"></th>');
-        }
-        if (!v_td.hasClass('cell')) {
-            v_td.before('<td class="cell"></td>');
-        }
-    });
-
-    
-    _create_datatable(p_table);
-
-
-    $( "[datatable-collapse]" ).on("shown.bs.collapse", function() {
-        $.each($.fn.dataTable.tables(true), function(){
-            $(this).DataTable().columns.adjust().draw();
+            },
+            lengthMenu: [
+                [10, 20, 50, 100, 200, 300, 400, 500, 1000, -1], 
+                [10, 20, 50, 100, 200, 300, 400, 500, 1000, "Tất cả"]
+            ],
         });
-    });
 
-    $('[datatable-modal]').on('shown.bs.modal', function(e){
-        $($.fn.dataTable.tables(true)).DataTable()
-           .columns.adjust()
-           .responsive.recalc();
-     });
-  
-};
+        
+        table.find('tr').each(function(){
+           var v_th = $(this).find('th').eq(0);
+           var v_td = $(this).find('td').eq(0);
+           if (!v_th.hasClass('cell')) {
+                v_th.before('<th class="cell" width="30px"></th>');
+            }
+            if (!v_td.hasClass('cell')) {
+                v_td.before('<td class="cell"></td>');
+            }
+        });
+
+        
+        var v_datatable = table.DataTable();
+
+        v_datatable.on( 'responsive-display', function ( e, datatable, row, showHide, update ) {
+            var v_li =  $(this).find('tbody > tr.child > td.child > ul.dtr-details > li');
+            v_li.each(function(index, li) { 
+                var v_dtr_title = $(li).find('.dtr-title');
+                var v_dtr_data = $(li).find('.dtr-data');
+
+                if (v_dtr_title.is(':empty')) {
+                    $(li).addClass('dtr-title-empty');
+                }
+
+                if (v_dtr_data.is(':empty')) {
+                    $(li).addClass('dtr-data-empty');
+                }
+
+            });
+                                   
+        });
+
+
+        $( "[datatable-collapse]" ).on("shown.bs.collapse", function() {
+            $.each($.fn.dataTable.tables(true), function(){
+                $(this).DataTable().columns.adjust().draw();
+            });
+        });
+
+        $('[datatable-modal]').on('shown.bs.modal', function(e){
+            $($.fn.dataTable.tables(true)).DataTable()
+               .columns.adjust()
+               .responsive.recalc();
+         });
+      
+    };
 
 // Initialize module
 // ------------------------------

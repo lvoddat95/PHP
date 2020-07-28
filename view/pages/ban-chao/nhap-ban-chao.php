@@ -1,4 +1,4 @@
-<?php require_once '../../config.php'; ?>
+<?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?>
     
     <body class="sidebar-xs">
@@ -18,7 +18,7 @@
                         </button>
                         <div class="top-left">
                             <div class="breadcrumb">
-                                <a href="<?php echo HTTP_PATH .'view/welcome/danh-sach-ban-chao.php'; ?>" class="breadcrumb-item"><i class="icon-steering-wheel mr-1"></i>Danh sách bản chào</a>
+                                <a href="<?php echo HTTP_PATH .'view/pages/ban-chao/danh-sach-ban-chao.php'; ?>" class="breadcrumb-item"><i class="icon-steering-wheel mr-1"></i>Danh sách bản chào</a>
                                 <span class="breadcrumb-item active">Cập nhập bản chào</span>
                             </div>
                             <div class="d-md-none logo-mobile">
@@ -38,11 +38,11 @@
                         </div>
                         <div class=" p-button">
                             <div class="dropdown d-inline-block mr-2">
-                                <a href="#" class="list-icons-item dropdown-toggle caret-0 btn" data-toggle="dropdown"><i class="icon-gear"></i></a>
+                                <a href="#" class="list-icons-item dropdown-toggle caret-0 btn" data-toggle="dropdown"><i class="icon-gear spinner"></i></a>
                                 <div class="dropdown-menu dropdown-menu-right">
                                     <a href="#" class="dropdown-item"><i class="icon-file-check"></i>Trình duyệt</a>
                                     <a href="#" class="dropdown-item"><i class="icon-file-locked"></i>Đóng đơn</a>
-                                    <a href="#" class="dropdown-item"><i class="icon-loop3"></i>Tái tục đơn</a>
+                                    <a href="#" class="dropdown-item"><i class="icon-file-upload"></i>Tái tục đơn</a>
                                 </div>
                             </div>
                             <div class="dropdown d-inline-block mr-2">
@@ -1712,11 +1712,11 @@
         <?php inc('chat-box.php'); ?> 
         <?php inc('quick-action.php'); ?> 
 
-        <?php inc('modal/ds_so_hop_dong_xin_cap.php'); ?>
+        <?php inc('modal/modal_ds_so_hop_dong_xin_cap.php'); ?>
         <div class="modal-group">
             <?php
-                inc('modal/ds_cac_khach_hang.php'); 
-                inc('modal/cap_nhap_thong_tin_khach_hang.php'); 
+                inc('modal/modal_ds_cac_khach_hang.php'); 
+                inc('modal/modal_cap_nhap_thong_tin_khach_hang.php'); 
             ?>
         </div>
 

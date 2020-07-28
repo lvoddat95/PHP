@@ -28,7 +28,7 @@
             
         </div>
 
-        <?php inc('modal/lich_su_ton_that.php'); ?>
+        <?php inc('modal/modal_lich_su_ton_that.php'); ?>
 
     </body>
 

@@ -59,8 +59,6 @@
             
         </div>
 
-        <?php inc('modal/lich_su_ton_that.php'); ?>
-
     </body>
 
 <?php include_once FOOTER; ?>

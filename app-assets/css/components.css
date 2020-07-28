@@ -14379,6 +14379,7 @@ textarea#HandsontableCopyPaste {
  * ---------------------------------------------------------------------------- */
 
 .dataTable {
+    table-layout: fixed;
     margin: 0;
     max-width: none;
 }
@@ -14448,6 +14449,7 @@ textarea#HandsontableCopyPaste {
 
 .dataTable tbody th, .dataTable tbody td {
     outline: 0;
+    word-wrap: break-word;
 }
 
 .dataTable tbody th.active, .dataTable tbody td.active {
@@ -15332,7 +15334,10 @@ textarea#HandsontableCopyPaste {
     width: 30px;
 }
 
-.dtr-inline.collapsed tbody tr td:first-child:before, .dtr-inline.collapsed tbody tr th:first-child:before, .dtr-column tbody tr td.control:before, .dtr-column tbody tr th.control:before {
+.dtr-inline.collapsed tbody tr td:first-child:before, 
+.dtr-inline.collapsed tbody tr th:first-child:before, 
+.dtr-column tbody tr td.control:before, 
+.dtr-column tbody tr th.control:before {
     content: "\ed5e";
     font-family: "icomoon";
     display: inline-block;

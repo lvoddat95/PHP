@@ -294,7 +294,7 @@
     flex-direction: column;
 }
 
-.sidebar .nav-sidebar .nav-item:not(.nav-item-divider) {
+.sidebar .nav-sidebar > .nav-item:not(.nav-item-divider) {
     margin-bottom: 5px;
 }
 
@@ -369,7 +369,7 @@
     background-color: #F1F5F8;
 }
 
-.sidebar li.nav-item-submenu>a>span:after {
+.sidebar li.nav-item-submenu>a>.menu-title:after {
     content: "\ec3c";
     font-family: 'Linearicons';
     display: inline-block;

@@ -2666,18 +2666,19 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
 }
 
 .dropdown .dropdown-menu.show {
+	top: 100% !important;
 	opacity: 1;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	visibility: visible;
-	top: 100% !important;
 }
 
 .dropdown .dropdown-menu {
-	display: block;
-	top: calc(100% + 30px) !important;
+    display: block;
+	top: calc(100% + 20px) !important;
 	min-width: 180px;
 	border-radius: 4px;
 	padding: 10px;
+	margin: 0;
 	opacity: 0;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	visibility: hidden;
@@ -4116,6 +4117,8 @@ a.badge[class*=bg-]:not(.bg-transparent):not(.bg-white):not(.bg-light):hover, a.
     padding: 12px 15px;
     position: relative;
 	border-top: 3px solid #2196f3;
+	-ms-align-items: center;
+	align-items: center;
 }
 .modal-body{
     padding: 15px;
@@ -4144,6 +4147,12 @@ a.badge[class*=bg-]:not(.bg-transparent):not(.bg-white):not(.bg-light):hover, a.
 		max-width: 94%;
 		margin-left: 3%;
 		margin-right: 3%;
+	}
+
+}
+@media (max-width: 575px) {
+	.modal-header .p-button{
+		display: none !important;
 	}
 }
 

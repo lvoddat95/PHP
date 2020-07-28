@@ -1,5 +1,5 @@
 <!-- Trình duyệt đơn -->
-<div id="trinh_duyet_don" class="modal fade" tabindex="-1" datatable-modal>
+<div id="trinh_duyet_mot_don" class="modal fade" tabindex="-1" datatable-modal>
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -30,53 +30,11 @@
                                 <th class="all">Số đơn</th>
                                 <th width="20%" class="desktop">Số tiền BH</th>
                                 <th width="20%" class="desktop">Phí bảo hiểm</th>
-                                <th width="20%" class="min-tablet">Người duyệt</td>
+                                <th width="20%" style="max-width: 200px;" class="min-tablet">Người duyệt</td>
                                 <th width="20%" class="text-center min-tablet" data-orderable="false">Ghi chú</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>3412000035/G06</td>
-                                <td>18,240,000,000 VND</td>
-                                <td>1,520,000 VND</td>
-                                <td>
-                                    <select select2>
-                                        <option>--- Chọn---</option>
-                                        <option>Nguyễn Thanh Thủy - Ban nghiệp vụ XCG&amp;CN - Hạn mức duyệt:50,000,000,000 VND</option>
-                                        <option>Nguyễn Thanh Bình(DA) - Ban Dự Án - Hạn mức duyệt:30,000,000,000 VND</option>
-                                        <option>Lê Thị Kim Liên - Ban nghiệp vụ XCG&amp;CN - Hạn mức duyệt:50,000,000,000 VND</option>                                
-                                    </select>
-                                </td>
-                                <td><span class="badge badge-danger badge-icon rounded-circle"><i class="icon-"></i></span> Số tiền duyệt trên phân cấp</td>
-                            </tr>
-                            <tr>
-                                <td>4532001940/F02.AD20/206549</td>
-                                <td>580,000,000 VND</td>
-                                <td>6,380,000 VND</td>
-                                <td>
-                                    <select select2>
-                                        <option>--- Chọn---</option>
-                                        <option>Nguyễn Thanh Thủy - Ban nghiệp vụ XCG&amp;CN - Hạn mức duyệt:50,000,000,000 VND</option>
-                                        <option>Nguyễn Thanh Bình(DA) - Ban Dự Án - Hạn mức duyệt:30,000,000,000 VND</option>
-                                        <option>Lê Thị Kim Liên - Ban nghiệp vụ XCG&amp;CN - Hạn mức duyệt:50,000,000,000 VND</option>                                
-                                    </select>
-                                </td>
-                                <td><span class="badge badge-danger badge-icon rounded-circle"><i class="icon-"></i></span> Số ngày nhập phát sinh (334) vượt quá số ngày cho phép (60 ngày).</td>
-                            </tr>
-                            <tr>
-                                <td>062003777/F02.AD20/135642</td>
-                                <td>1,240,000,000 VND</td>
-                                <td>1,520,000 VND</td>
-                                <td>
-                                    <select select2>
-                                        <option>--- Chọn---</option>
-                                        <option>Nguyễn Thanh Thủy - Ban nghiệp vụ XCG&amp;CN - Hạn mức duyệt:50,000,000,000 VND</option>
-                                        <option>Nguyễn Thanh Bình(DA) - Ban Dự Án - Hạn mức duyệt:30,000,000,000 VND</option>
-                                        <option>Lê Thị Kim Liên - Ban nghiệp vụ XCG&amp;CN - Hạn mức duyệt:50,000,000,000 VND</option>                                
-                                    </select>
-                                </td>
-                                <td><span class="badge badge-primary badge-icon rounded-circle"><i class="icon-"></i></span></td>
-                            </tr>
                             <tr>
                                 <td>4842003931/F02.AD20/0143689 </td>
                                 <td>8,240,000 VND</td>

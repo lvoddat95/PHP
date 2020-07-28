@@ -146,13 +146,6 @@ var _xoa_dong = function(p_this) {
     }
 }
 
-var on_change_dkbs = function() {
-    var v_sum = 0;
-    $('.dkbs > input:checked').each(function(i,obj) {
-    });
-}
-
-
 var list_view = function(p_this){
     $(p_this).closest('.f-right').removeClass('grid').addClass('list');
 }
@@ -196,4 +189,3 @@ $(function(){
         lastScrollTop = windowTop;
     } );
 })
-

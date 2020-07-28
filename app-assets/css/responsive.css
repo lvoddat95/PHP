@@ -264,12 +264,7 @@
     .page-title > *:first-child i{
         margin-right: 5px !important;
     }
-    .p-button{
-        margin: -2.5px !important;
-    }
-    .p-button > *{
-        margin: 2.5px !important;
-    }
+
     .bieu-do > div{
         width: 50%;
     }

@@ -1,6 +1,14 @@
 <?php 
 
-set_include_path( get_include_path() . PATH_SEPARATOR . $_SERVER['DOCUMENT_ROOT'].'/view/inc/' . PATH_SEPARATOR . $_SERVER['DOCUMENT_ROOT'].'/bhhk/view/inc/'  );
+// Cau hinh thu muc nhan include
+$include_paths = array(
+    $_SERVER['DOCUMENT_ROOT'].'/view/inc/',
+    $_SERVER['DOCUMENT_ROOT'].'/bhhk/view/inc/',
+    $_SERVER['DOCUMENT_ROOT'].'/view/pages/',
+    $_SERVER['DOCUMENT_ROOT'].'/bhhk/view/pages/',
+);
+set_include_path(get_include_path() . PATH_SEPARATOR . implode(PATH_SEPARATOR, $include_paths));
+
 define('HEADER', 'header.php');
 define('FOOTER', 'footer.php');
 define('SIDEBAR', 'sidebar.php');
