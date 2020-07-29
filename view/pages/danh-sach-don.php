@@ -266,11 +266,11 @@
                                             <div class="btn-group">
                                                 <button type="button" class="btn bg-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon-printer2"></i> IN</button>
                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                    <a href="#" class="dropdown-item" data-popup="tooltip" title="" data-placement="right" data-original-title="In thông báo thu phí"><i class="icon-file-text2"></i> In TB thu phí</a>
-                                                    <a href="#" class="dropdown-item" data-popup="tooltip" title="" data-placement="right" data-original-title="In thông báo hoa hồng"><i class="icon-cash3"></i> In TB HH</a>
-                                                    <a href="#" class="dropdown-item" data-popup="tooltip" title="" data-placement="right" data-original-title="In phiếu thanh toán hoa hồng"><i class="icon-credit-card"></i> In phiếu TT HH</a>
-                                                    <a href="#" class="dropdown-item" data-popup="tooltip" title="" data-placement="right" data-original-title="In mẫu in"><i class="icon-stack"></i> In mẫu in</a>
-                                                    <a href="#" class="dropdown-item" data-popup="tooltip" title="" data-placement="right" data-original-title="In tờ trình"><i class="icon-certificate"></i> In tờ trình</a>
+                                                    <a href="#" class="dropdown-item" data-tooltip="tipsy" original-title="In thông báo thu phí" data-position="left"><i class="icon-file-text2"></i> In TB thu phí</a>
+                                                    <a href="#" class="dropdown-item" data-tooltip="tipsy" original-title="In thông báo hoa hồng" data-position="left"><i class="icon-cash3"></i> In TB HH</a>
+                                                    <a href="#" class="dropdown-item" data-tooltip="tipsy" original-title="In phiếu thanh toán hoa hồng" data-position="left"><i class="icon-credit-card"></i> In phiếu TT HH</a>
+                                                    <a href="#" class="dropdown-item" data-tooltip="tipsy" original-title="In mẫu in" data-position="left"><i class="icon-stack"></i> In mẫu in</a>
+                                                    <a href="#" class="dropdown-item" data-tooltip="tipsy" original-title="In tờ trình" data-position="left"><i class="icon-certificate"></i> In tờ trình</a>
                                                 </div>
                                             </div>
                                         </div>

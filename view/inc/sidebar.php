@@ -95,18 +95,18 @@
                                 <span class="menu-title"> Bảo hiểm xe tài sản</span>
                             </a>
                             <ul class="nav nav-group-sub" data-submenu-title="Bảo hiểm xe tài sản">
-                                <li><a href="b01.html" class="nav-link"><span class="menu-title">B01 - Bảo hiểm hỏa hoạn và các rủi ro đặc biệt</span></a></li>
-                                <li><a href="b02.html" class="nav-link"><span class="menu-title">B02 - Bảo hiểm mọi rủi ro tài sản</span></a></li>
-                                <li><a href="b03.html" class="nav-link"><span class="menu-title">B03 - Bảo hiểm công trình kỹ thuật dân dụng hoàn thành</span></a></li>            
-                                <li><a href="b04.html" class="nav-link"><span class="menu-title">B04 - Bảo hiểm mọi rủi ro văn phòng</span></a></li>
-                                <li><a href="b05.html" class="nav-link"><span class="menu-title">B05 - Bảo hiểm mọi rủi ro nhà ở</span></a></li>
-                                <li><a href="b06.html" class="nav-link"><span class="menu-title">B06 - Bảo hiểm tiền</span></a></li>
-                                <li><a href="b07.html" class="nav-link"><span class="menu-title">B07 - Bảo hiểm hư hỏng hàng hóa trong kho lạnh</span></a></li>
-                                <li><a href="b08.html" class="nav-link"><span class="menu-title">B08 - Bảo hiểm lòng trung thành</span></a></li>
-                                <li><a href="b09.html" class="nav-link"><span class="menu-title">B09 - Chứng thư bảo lãnh</span></a></li>
-                                <li><a href="b12.html" class="nav-link"><span class="menu-title">B12 - Bảo hiểm bảng hiệu đèn quảng cáo</span></a></li>
-                                <li><a href="b16.html" class="nav-link"><span class="menu-title">B16 - Bảo hiểm toàn diện nhà chung cư</span></a></li>
-                                <li><a href="b17.html" class="nav-link"><span class="menu-title">B17 - Bảo hiểm vườn cây cao su</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PRO/b01.php'; ?>" class="nav-link"><span class="menu-title">B01 - Bảo hiểm hỏa hoạn và các rủi ro đặc biệt</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PRO/b02.php'; ?>" class="nav-link"><span class="menu-title">B02 - Bảo hiểm mọi rủi ro tài sản</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PRO/b03.php'; ?>" class="nav-link"><span class="menu-title">B03 - Bảo hiểm công trình kỹ thuật dân dụng hoàn thành</span></a></li>            
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PRO/b04.php'; ?>" class="nav-link"><span class="menu-title">B04 - Bảo hiểm mọi rủi ro văn phòng</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PRO/b05.php'; ?>" class="nav-link"><span class="menu-title">B05 - Bảo hiểm mọi rủi ro nhà ở</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PRO/b06.php'; ?>" class="nav-link"><span class="menu-title">B06 - Bảo hiểm tiền</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PRO/b07.php'; ?>" class="nav-link"><span class="menu-title">B07 - Bảo hiểm hư hỏng hàng hóa trong kho lạnh</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PRO/b08.php'; ?>" class="nav-link"><span class="menu-title">B08 - Bảo hiểm lòng trung thành</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PRO/b09.php'; ?>" class="nav-link"><span class="menu-title">B09 - Chứng thư bảo lãnh</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PRO/b12.php'; ?>" class="nav-link"><span class="menu-title">B12 - Bảo hiểm bảng hiệu đèn quảng cáo</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PRO/b16.php'; ?>" class="nav-link"><span class="menu-title">B16 - Bảo hiểm toàn diện nhà chung cư</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PRO/b17.php'; ?>" class="nav-link"><span class="menu-title">B17 - Bảo hiểm vườn cây cao su</span></a></li>
                             </ul>
                         </li>
 
