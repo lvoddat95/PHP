@@ -26,7 +26,7 @@
                                 <td>Lê Minh Nam</td>
                                 <td>27/07/2020</td>
                                 <td>06/08/2020</td>
-                                <td></td>
+                                <td><input type="text" class="form-control"></td>
                             </tr>
                         </tbody>
                     </table>
