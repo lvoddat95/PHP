@@ -10,7 +10,7 @@
             <form action="#">
                 <div class="modal-body">
 
-                    <div class="row mb-4 align-items-center">
+                    <div class="row mb-3 align-items-center">
                         <div class="col-sm-4">
                             <button class="btn btn-light btn-file mr-3">
                                 <i class="icon-upload7 mr-2"></i> 

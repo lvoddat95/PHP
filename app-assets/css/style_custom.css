@@ -2813,6 +2813,8 @@ body.sidebar-mobile-main .quick-action {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin: -2.5px !important;
 }
 .p-button > *{

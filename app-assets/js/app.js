@@ -417,7 +417,6 @@ var App = function () {
                 language: "vi",
                 minimumResultsForSearch: 5,
                 width: '100%',
-                placeholder: "--- Chọn ---"
             });
         }
     }
@@ -427,10 +426,23 @@ var App = function () {
         var datepicker = $('.datepicker');
         if (p_datepicker) datepicker = p_datepicker;
         if ($().datepicker) {
-            $(datepicker).datepicker({
+
+            console.log(datepicker)
+            console.log($(datepicker))
+            var v_type = $(datepicker).attr('type');
+            datepicker.datepicker({
                 language: "vi",
                 todayBtn: "linked",
+                format: 'dd/mm/yyyy'
+            }).on('show', function(e){
+                datepicker.datepicker({
+                    format: 'yyyy-mm-dd'
+                });
+
             });
+                    $().datepicker.defaults.format = 'yyyy-mm-dd';
+
+            // 
         }
     }
     

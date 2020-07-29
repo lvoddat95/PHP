@@ -4260,7 +4260,7 @@ a.badge[class*=bg-]:not(.bg-transparent):not(.bg-white):not(.bg-light):hover, a.
 .datepicker-dropdown {
 	top: 0;
 	left: 0;
-	padding: 20px 22px
+	padding: 15px;
 }
 
 .datepicker-dropdown:after, .datepicker-dropdown:before {
@@ -4343,8 +4343,8 @@ a.badge[class*=bg-]:not(.bg-transparent):not(.bg-white):not(.bg-light):hover, a.
 
 .datepicker table tr td, .datepicker table tr th {
 	transition: all 250ms cubic-bezier(.27, .01, .38, 1.06);
-	width: 36px;
-	height: 36px;
+	width: 26px;
+	height: 26px;
 	border: none;
 	text-align: center
 }

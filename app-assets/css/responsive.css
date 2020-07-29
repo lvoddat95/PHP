@@ -332,6 +332,9 @@
     body{
         font-size: 10px;
     }
+    .btn{
+        font-size: 10px;
+    }
     .row {
         margin-right: -5px;
         margin-left: -5px;
@@ -510,7 +513,10 @@
         margin-bottom: 0;
     }
 
-
+    .f-left, .f-right {
+        float: none;
+        width: 100%;
+    }
 
 
 

@@ -109,90 +109,146 @@
                                                                         <?php inc('template/4_pham_vi_bao_hiem/thanh_toan_tai_ngan_hang.php'); ?>
                                                                     </div>
                                                                     <div class="col-md-12">
+                                                                        <div class="form-group ">
+                                                                            <input type="checkbox" id="phamvi"><label class="mb-0 ml-1" for="phamvi">Bao gồm các phạm vi về giông bão, lũ lụt</label>
+                                                                        </div>
                                                                         <div class="form-group">
-                                                                            <label>Phạm vi bảo hiểm:</label>
-                                                                            <div>
-                                                                                <table class="table table-bordered datatable" 
-                                                                                    data-paging="false"
-                                                                                    data-info="false"
-                                                                                    data-ordering="false"
-                                                                                    data-searching="false"
-                                                                                    >
-                                                                                    <thead class="thead-light">
-                                                                                        <tr>
-                                                                                            <th width="20%">Phạm vi bảo hiểm</th>
-                                                                                            <th width="10%">Số tiền bảo hiểm</th>
-                                                                                            <th width="5%" class="desktop">Phí (%)</th>
-                                                                                            <th width="10%" class="desktop">Phí BH (có VAT)</th>
-                                                                                            <th width="5%" class="desktop">VAT (%)</th>
-                                                                                            <th width="10%" class="desktop">VAT</th>
-                                                                                            <th width="5%" class="desktop">COM (%)</th>
-                                                                                            <th width="10%" class="desktop">COM</th>
-                                                                                            <th width="20%" class="desktop">Định mức</th>
-                                                                                        </tr>
-                                                                                    </thead>
-                                                                                    <tbody>
-                                                                                        <tr>
-                                                                                            <td>1. Phạm vi A (Chết do ốm đau, bệnh tật, thai sản)</td>
-                                                                                            <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                            <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
-                                                                                            <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                            <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
-                                                                                            <td><input class="form-control text-right input-money" type="text" value="0"></td>
-                                                                                            <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
-                                                                                            <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                            <td>
-                                                                                                <select class="form-control " select2 name="dinh_muc" >
-                                                                                                    <option>Bảo hiểm sức khỏe</option>
-                                                                                                </select>
-                                                                                            </td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>2. Phạm vi B (Chết và thương tật thân thể do tai nạn)</td>
-                                                                                            <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                            <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
-                                                                                            <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                            <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
-                                                                                            <td><input class="form-control text-right input-money" type="text" value="0"></td>
-                                                                                            <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
-                                                                                            <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                            <td>
-                                                                                                <select class="form-control " select2 name="dinh_muc" >
-                                                                                                    <option>Bảo hiểm sức khỏe</option>                                                   
-                                                                                                </select>
-                                                                                            </td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>3. Phạm vi C (Ốm đau, bệnh tật, thai sản phải nằm viện hoặc phẫu thuật)</td>
-                                                                                            <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                            <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
-                                                                                            <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                            <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
-                                                                                            <td><input class="form-control text-right input-money" type="text" value="0"></td>
-                                                                                            <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
-                                                                                            <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                            <td>
-                                                                                                <select class="form-control " select2 name="dinh_muc" >
-                                                                                                    <option>Bảo hiểm sức khỏe</option>
-                                                                                                </select>
-                                                                                            </td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <th><b>Tổng cộng: </b></th>
-                                                                                            <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></th>
-                                                                                            <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0.99"></th>
-                                                                                            <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></th>
-                                                                                            <th align="right"><input class="form-control text-right" type="text" disabled readonly value="10"></th>
-                                                                                            <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></th>
-                                                                                            <th align="right"><input class="form-control text-right" type="text" disabled readonly value="10.0"></th>
-                                                                                            <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></th>
-                                                                                            <th align="right"></th>
-                                                                                        </tr>
-                                                                                    </tbody>
-                                                                                        
-                                                                                </table>
-                                                                                        
-                                                                            </div>
+                                                                            <table class="table table-bordered datatable" 
+                                                                                data-paging="false"
+                                                                                data-info="false"
+                                                                                data-ordering="false"
+                                                                                data-searching="false"
+                                                                                >
+                                                                                <thead class="thead-light">
+                                                                                    <tr>
+                                                                                        <th width="20%">Phạm vi bảo hiểm</th>
+                                                                                        <th width="10%">Số tiền bảo hiểm</th>
+                                                                                        <th width="5%" class="desktop">Phí (%)</th>
+                                                                                        <th width="10%" class="desktop">Phí BH (có VAT)</th>
+                                                                                        <th width="5%" class="desktop">VAT (%)</th>
+                                                                                        <th width="10%" class="desktop">VAT</th>
+                                                                                        <th width="5%" class="desktop">COM (%)</th>
+                                                                                        <th width="10%" class="desktop">COM</th>
+                                                                                        <th width="20%" class="desktop">Định mức</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td>1. Cháy nổ tự nguyện</td>
+                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
+                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                        <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
+                                                                                        <td><input class="form-control text-right input-money" type="text" value="0"></td>
+                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
+                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                        <td>
+                                                                                            <select class="form-control " select2 name="dinh_muc" >
+                                                                                                <option title="Bảo hiểm cháy nổ nhà tư nhân: giá trị bảo hiểm<20 tỷ">Bảo hiểm cháy nổ nhà tư nhân: giá trị bảo hiểm&lt;20 tỷ</option>
+                                                                                                <option title="Cat1-Giá trị bảo hiểm < 25 tỷ">Cat1-Giá trị bảo hiểm &lt; 25 tỷ</option>
+                                                                                                <option title="Cat1-Giá trị bảo hiểm từ 25 tỷ đến 500 tỷ">Cat1-Giá trị bảo hiểm từ 25 tỷ đến 500 tỷ</option>
+                                                                                                <option title="Cat1-500 tỷ ≤ Giá trị bảo hiểm < 1000 tỷ">Cat1-500 tỷ ≤ Giá trị bảo hiểm &lt; 1000 tỷ</option>
+                                                                                                <option title="Cat1-Giá trị bảo hiểm từ 1000 tỷ đến 3000 tỷ">Cat1-Giá trị bảo hiểm từ 1000 tỷ đến 3000 tỷ</option>
+                                                                                                <option title="Cat1-Giá trị bảo hiểm trên 3000 tỷ">Cat1-Giá trị bảo hiểm trên 3000 tỷ</option>
+                                                                                                <option title="Cat2-Giá trị bảo hiểm < 25 tỷ">Cat2-Giá trị bảo hiểm &lt; 25 tỷ</option>
+                                                                                                <option title="Cat2-Giá trị bảo hiểm từ 25 tỷ đến 350 tỷ">Cat2-Giá trị bảo hiểm từ 25 tỷ đến 350 tỷ</option>
+                                                                                                <option title="Cat2-350 tỷ ≤ Giá trị bảo hiểm < 1000 tỷ">Cat2-350 tỷ ≤ Giá trị bảo hiểm &lt; 1000 tỷ</option>
+                                                                                                <option title="Cat2-Giá trị bảo hiểm từ 1000 tỷ đến 2100 tỷ">Cat2-Giá trị bảo hiểm từ 1000 tỷ đến 2100 tỷ</option>
+                                                                                                <option title="Cat2-Giá trị bảo hiểm trên 2100 tỷ">Cat2-Giá trị bảo hiểm trên 2100 tỷ</option>
+                                                                                                <option title="Cat3-Giá trị bảo hiểm <100 tỷ">Cat3-Giá trị bảo hiểm &lt;100 tỷ</option>
+                                                                                                <option title="Cat3-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ">Cat3-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ</option>
+                                                                                                <option title="Cat3-Giá trị bảo hiểm trên 600 tỷ">Cat3-Giá trị bảo hiểm trên 600 tỷ</option>
+                                                                                                <option title="Cat4A-Giá trị bảo hiểm <100 tỷ">Cat4A-Giá trị bảo hiểm &lt;100 tỷ</option>
+                                                                                                <option title="Cat4A-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ">Cat4A-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ</option>
+                                                                                                <option title="Cat4A-Giá trị bảo hiểm trên 600 tỷ">Cat4A-Giá trị bảo hiểm trên 600 tỷ</option>
+                                                                                                <option title="Cat4B-Giá trị bảo hiểm <100 tỷ">Cat4B-Giá trị bảo hiểm &lt;100 tỷ</option>
+                                                                                                <option title="Cat4B-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ">Cat4B-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ</option>
+                                                                                                <option title="Cat4B-Giá trị bảo hiểm trên 600 tỷ">Cat4B-Giá trị bảo hiểm trên 600 tỷ</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>2. Cháy nổ bắt buộc</td>
+                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
+                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                        <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
+                                                                                        <td><input class="form-control text-right input-money" type="text" value="0"></td>
+                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
+                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                        <td>
+                                                                                            <select class="form-control " select2 name="dinh_muc" >
+                                                                                                <option title="Bảo hiểm cháy nổ nhà tư nhân: giá trị bảo hiểm<20 tỷ">Bảo hiểm cháy nổ nhà tư nhân: giá trị bảo hiểm&lt;20 tỷ</option>
+                                                                                                <option title="Cat1-Giá trị bảo hiểm < 25 tỷ">Cat1-Giá trị bảo hiểm &lt; 25 tỷ</option>
+                                                                                                <option title="Cat1-Giá trị bảo hiểm từ 25 tỷ đến 500 tỷ">Cat1-Giá trị bảo hiểm từ 25 tỷ đến 500 tỷ</option>
+                                                                                                <option title="Cat1-500 tỷ ≤ Giá trị bảo hiểm < 1000 tỷ">Cat1-500 tỷ ≤ Giá trị bảo hiểm &lt; 1000 tỷ</option>
+                                                                                                <option title="Cat1-Giá trị bảo hiểm từ 1000 tỷ đến 3000 tỷ">Cat1-Giá trị bảo hiểm từ 1000 tỷ đến 3000 tỷ</option>
+                                                                                                <option title="Cat1-Giá trị bảo hiểm trên 3000 tỷ">Cat1-Giá trị bảo hiểm trên 3000 tỷ</option>
+                                                                                                <option title="Cat2-Giá trị bảo hiểm < 25 tỷ">Cat2-Giá trị bảo hiểm &lt; 25 tỷ</option>
+                                                                                                <option title="Cat2-Giá trị bảo hiểm từ 25 tỷ đến 350 tỷ">Cat2-Giá trị bảo hiểm từ 25 tỷ đến 350 tỷ</option>
+                                                                                                <option title="Cat2-350 tỷ ≤ Giá trị bảo hiểm < 1000 tỷ">Cat2-350 tỷ ≤ Giá trị bảo hiểm &lt; 1000 tỷ</option>
+                                                                                                <option title="Cat2-Giá trị bảo hiểm từ 1000 tỷ đến 2100 tỷ">Cat2-Giá trị bảo hiểm từ 1000 tỷ đến 2100 tỷ</option>
+                                                                                                <option title="Cat2-Giá trị bảo hiểm trên 2100 tỷ">Cat2-Giá trị bảo hiểm trên 2100 tỷ</option>
+                                                                                                <option title="Cat3-Giá trị bảo hiểm <100 tỷ">Cat3-Giá trị bảo hiểm &lt;100 tỷ</option>
+                                                                                                <option title="Cat3-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ">Cat3-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ</option>
+                                                                                                <option title="Cat3-Giá trị bảo hiểm trên 600 tỷ">Cat3-Giá trị bảo hiểm trên 600 tỷ</option>
+                                                                                                <option title="Cat4A-Giá trị bảo hiểm <100 tỷ">Cat4A-Giá trị bảo hiểm &lt;100 tỷ</option>
+                                                                                                <option title="Cat4A-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ">Cat4A-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ</option>
+                                                                                                <option title="Cat4A-Giá trị bảo hiểm trên 600 tỷ">Cat4A-Giá trị bảo hiểm trên 600 tỷ</option>
+                                                                                                <option title="Cat4B-Giá trị bảo hiểm <100 tỷ">Cat4B-Giá trị bảo hiểm &lt;100 tỷ</option>
+                                                                                                <option title="Cat4B-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ">Cat4B-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ</option>
+                                                                                                <option title="Cat4B-Giá trị bảo hiểm trên 600 tỷ">Cat4B-Giá trị bảo hiểm trên 600 tỷ</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>3. Gián đoạn kinh doanh sau hỏa hoạn và các rủi ro đặc biệt</td>
+                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
+                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                        <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
+                                                                                        <td><input class="form-control text-right input-money" type="text" value="0"></td>
+                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
+                                                                                        <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                        <td>
+                                                                                            <select class="form-control " select2 name="dinh_muc" >
+                                                                                                <option title="Bảo hiểm cháy nổ nhà tư nhân: giá trị bảo hiểm<20 tỷ">Bảo hiểm cháy nổ nhà tư nhân: giá trị bảo hiểm&lt;20 tỷ</option>
+                                                                                                <option title="Cat1-Giá trị bảo hiểm < 25 tỷ">Cat1-Giá trị bảo hiểm &lt; 25 tỷ</option>
+                                                                                                <option title="Cat1-Giá trị bảo hiểm từ 25 tỷ đến 500 tỷ">Cat1-Giá trị bảo hiểm từ 25 tỷ đến 500 tỷ</option>
+                                                                                                <option title="Cat1-500 tỷ ≤ Giá trị bảo hiểm < 1000 tỷ">Cat1-500 tỷ ≤ Giá trị bảo hiểm &lt; 1000 tỷ</option>
+                                                                                                <option title="Cat1-Giá trị bảo hiểm từ 1000 tỷ đến 3000 tỷ">Cat1-Giá trị bảo hiểm từ 1000 tỷ đến 3000 tỷ</option>
+                                                                                                <option title="Cat1-Giá trị bảo hiểm trên 3000 tỷ">Cat1-Giá trị bảo hiểm trên 3000 tỷ</option>
+                                                                                                <option title="Cat2-Giá trị bảo hiểm < 25 tỷ">Cat2-Giá trị bảo hiểm &lt; 25 tỷ</option>
+                                                                                                <option title="Cat2-Giá trị bảo hiểm từ 25 tỷ đến 350 tỷ">Cat2-Giá trị bảo hiểm từ 25 tỷ đến 350 tỷ</option>
+                                                                                                <option title="Cat2-350 tỷ ≤ Giá trị bảo hiểm < 1000 tỷ">Cat2-350 tỷ ≤ Giá trị bảo hiểm &lt; 1000 tỷ</option>
+                                                                                                <option title="Cat2-Giá trị bảo hiểm từ 1000 tỷ đến 2100 tỷ">Cat2-Giá trị bảo hiểm từ 1000 tỷ đến 2100 tỷ</option>
+                                                                                                <option title="Cat2-Giá trị bảo hiểm trên 2100 tỷ">Cat2-Giá trị bảo hiểm trên 2100 tỷ</option>
+                                                                                                <option title="Cat3-Giá trị bảo hiểm <100 tỷ">Cat3-Giá trị bảo hiểm &lt;100 tỷ</option>
+                                                                                                <option title="Cat3-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ">Cat3-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ</option>
+                                                                                                <option title="Cat3-Giá trị bảo hiểm trên 600 tỷ">Cat3-Giá trị bảo hiểm trên 600 tỷ</option>
+                                                                                                <option title="Cat4A-Giá trị bảo hiểm <100 tỷ">Cat4A-Giá trị bảo hiểm &lt;100 tỷ</option>
+                                                                                                <option title="Cat4A-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ">Cat4A-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ</option>
+                                                                                                <option title="Cat4A-Giá trị bảo hiểm trên 600 tỷ">Cat4A-Giá trị bảo hiểm trên 600 tỷ</option>
+                                                                                                <option title="Cat4B-Giá trị bảo hiểm <100 tỷ">Cat4B-Giá trị bảo hiểm &lt;100 tỷ</option>
+                                                                                                <option title="Cat4B-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ">Cat4B-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ</option>
+                                                                                                <option title="Cat4B-Giá trị bảo hiểm trên 600 tỷ">Cat4B-Giá trị bảo hiểm trên 600 tỷ</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <th><b>Tổng cộng: </b></th>
+                                                                                        <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></th>
+                                                                                        <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0.99"></th>
+                                                                                        <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></th>
+                                                                                        <th align="right"><input class="form-control text-right" type="text" disabled readonly value="10"></th>
+                                                                                        <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></th>
+                                                                                        <th align="right"><input class="form-control text-right" type="text" disabled readonly value="10.0"></th>
+                                                                                        <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></th>
+                                                                                        <th align="right"></th>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                    
+                                                                            </table>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -257,16 +313,16 @@
                                                                             </thead>
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td>Phạm vi A (Chết do ốm đau, bệnh tật, thai sản)</td>
+                                                                                    <td>Cháy nổ tự nguyện</td>
                                                                                     <td class="text-right">0</td>
                                                                                 </tr>
                                                                                 
                                                                                 <tr>
-                                                                                    <td>Phạm vi B (Chết và thương tật thân thể do tai nạn)</td>
+                                                                                    <td>Cháy nổ bắt buộc</td>
                                                                                     <td class="text-right">0</td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td>Phạm vi C (Ốm đau, bệnh tật, thai sản phải nằm viện hoặc phẫu thuật)</td>
+                                                                                    <td>Gián đoạn kinh doanh sau hỏa hoạn và các rủi ro đặc biệt</td>
                                                                                     <td class="text-right">0</td>
                                                                                 </tr>
                                                                                 <tr class="bold" style="background-color: #fff;">
