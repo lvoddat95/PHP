@@ -26,6 +26,7 @@
         <!-- core stylesheet -->
 
         <!-- custom stylesheet -->
+        <link rel="stylesheet" type="text/css" href="<?php echo ASSET_ROOT; ?>/css/sweetalert2.min.css">
         <link rel="stylesheet" type="text/css" href="<?php echo ASSET_ROOT; ?>/vendors/css/chartist.css">
         <link rel="stylesheet" type="text/css" href="<?php echo ASSET_ROOT; ?>/css/style_custom.css">
         <link rel="stylesheet" type="text/css" href="<?php echo ASSET_ROOT; ?>/css/responsive.css">

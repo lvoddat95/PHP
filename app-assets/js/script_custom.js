@@ -153,7 +153,6 @@ var grid_view = function(p_this){
     $(p_this).closest('.f-right').removeClass('list').addClass('grid');
 }
 
-
 $(function(){
     var $window       = $(window);
     var lastScrollTop = 0;

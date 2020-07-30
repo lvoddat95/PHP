@@ -423,27 +423,68 @@ var App = function () {
     
     // Datepicker
     var _component_datepicker = function(p_datepicker){
+        $.datepicker.regional['vi'] = {
+            closeText: "Đóng",
+            prevText: "&#x3C;Trước",
+            nextText: "Tiếp&#x3E;",
+            currentText: "Hôm nay",
+            monthNames: [ "Tháng Một", "Tháng Hai", "Tháng Ba", "Tháng Tư", "Tháng Năm", "Tháng Sáu",
+            "Tháng Bảy", "Tháng Tám", "Tháng Chín", "Tháng Mười", "Tháng Mười Một", "Tháng Mười Hai" ],
+            monthNamesShort: [ "Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6",
+            "Tháng 7", "Tháng 8", "Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12" ],
+            dayNames: [ "Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy" ],
+            dayNamesShort: [ "CN", "T2", "T3", "T4", "T5", "T6", "T7" ],
+            dayNamesMin: [ "CN", "T2", "T3", "T4", "T5", "T6", "T7" ],
+            weekHeader: "Tu",
+            dateFormat: "dd/mm/yy",
+            firstDay: 0,
+            isRTL: false,
+            showMonthAfterYear: false,
+            yearSuffix: ""
+        };
+        $.datepicker.setDefaults($.datepicker.regional['vi']);
+
         var datepicker = $('.datepicker');
         if (p_datepicker) datepicker = p_datepicker;
+
         if ($().datepicker) {
 
-            console.log(datepicker)
-            console.log($(datepicker))
-            var v_type = $(datepicker).attr('type');
+            $.datepicker._updateDatepicker_original = $.datepicker._updateDatepicker;
+            $.datepicker._updateDatepicker = function(inst) {
+                $.datepicker._updateDatepicker_original(inst);
+                var afterShow = this._get(inst, 'afterShow');
+                if (afterShow)
+                    afterShow.apply((inst.input ? inst.input[0] : null));  // trigger custom callback
+            }
+
             datepicker.datepicker({
-                language: "vi",
-                todayBtn: "linked",
-                format: 'dd/mm/yyyy'
-            }).on('show', function(e){
-                datepicker.datepicker({
-                    format: 'yyyy-mm-dd'
-                });
+                firstDay: 1,
+                showButtonPanel: true,
+                changeMonth: true,
+                changeYear: true,
+                dateFormat: 'yy-mm-dd', 
+                onSelect: function (date, obj) {
+                    console.log(obj)
+                },
+                beforeShow: function (e, obj) { 
+                },
+                afterShow: function() {
+                    $(".ui-datepicker select").select2();
+                }
+            })
+            datepicker.each(function (i,e) {
+                var v_type = $(e).attr('type');
+                if (v_type != 'date') {
+                    $(e).datepicker('option', 'dateFormat', 'dd/mm/yy');
+                }
+            })
 
+            $(document).on('click', ".ui-datepicker-current", function() {
+                datepicker.datepicker('setDate', new Date())  
             });
-                    $().datepicker.defaults.format = 'yyyy-mm-dd';
 
-            // 
         }
+
     }
     
     // Cleave js: dinh dang kieu nhap du lieu input
@@ -456,6 +497,9 @@ var App = function () {
         });
     
         $('.input-date').toArray().forEach(function (field) {
+            if ($(field).attr('type') == 'date') {
+                return;
+            }
             new Cleave(field, {
                 date: true,
                 delimiter: '/',

@@ -2,12 +2,13 @@
 
     <!-- CORE JS-->
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/jquery-3.3.1.min.js"></script>
+    <script src="<?php echo ASSET_ROOT; ?>/vendors/js/jquery-ui.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/bootstrap/bootstrap.min.js"></script>
-    <script src="<?php echo ASSET_ROOT; ?>/vendors/js/jquery_ui/blockui.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/jquery.matchHeight-min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/perfect-scrollbar.jquery.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/moment/moment-with-locales.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/jquery.tipsy.js"></script>
+    <script src="<?php echo ASSET_ROOT; ?>/vendors/js/sweetalert2.min.js"></script>
     <!-- /CORE JS-->
     
     <!-- JS Trang-->
@@ -16,8 +17,6 @@
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/jquery.repeater.min.js"></script>
 	<script src="<?php echo ASSET_ROOT; ?>/vendors/js/form/jquery.steps.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/form/jquery.validate.min.js"></script>
-    <script src="<?php echo ASSET_ROOT; ?>/vendors/js/daterangepicker.js"></script>
-    <script src="<?php echo ASSET_ROOT; ?>/vendors/js/bootstrap/bootstrap-datepicker.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/datatable/datatables.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/datatable/dataTables.responsive.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/datatable/dataTables.buttons.min.js"></script>
