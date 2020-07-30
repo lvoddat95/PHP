@@ -13,20 +13,8 @@ body {
     font-size: 12px;
     line-height: 1.42857;
     color: #2d3748;
-    min-height: 100vh;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex: 1;
-    flex: 1;
 }
 .page-content {
-    min-height: 100vh;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
     position: relative;
     z-index: 9;
     background: #1C3FAA;
@@ -40,6 +28,13 @@ body {
 }
 
 .content {
+    min-height: calc(100vh - 50px);
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex: 1;
+    flex: 1;
     padding: 15px;
     padding-bottom: 50px;
 }

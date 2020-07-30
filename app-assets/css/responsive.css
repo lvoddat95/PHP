@@ -127,25 +127,18 @@
         position: relative;
         z-index: 1;
         padding: 0 15px 50px;
-        min-height: 100vh;
-        display: -webkit-flex;
-        display: -ms-flex;
-        display: flex;
-        -ms-flex-direction: column;
-        flex-direction: column;
     }
     #footer {
+        display: block ;
         bottom: 0;
-        left: -15px;
-        right: -15px;
-        width: calc(100% + 30px);
-        display: block !important;
+        left: 0;
+        right: 0;
         text-align: center;
         margin-top: auto;
         color: #fff;
         margin: 0;
         max-height: 59px;
-        padding: 10px 15px 7px !important;
+        padding: 10px 15px 7px;
     }
     #footer::before {
         position: absolute;
@@ -515,7 +508,9 @@
     .chat{
         margin-bottom: 0;
     }
-
+    .file-manager{
+        display: block;
+    }
     .f-left, .f-right {
         float: none;
         width: 100%;
