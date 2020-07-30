@@ -292,7 +292,7 @@
                                                     <th width="30%" class="min-tablet">Tên khách hàng</td>
                                                     <th class="desktop">Số tiền BH</th>
                                                     <th class="desktop">Phí bảo hiểm</th>
-                                                    <th width="110px" class="all">Trạng thái</th>
+                                                    <th width="100px" class="all">Trạng thái</th>
                                                     <th width="30px" class="text-center min-tablet" data-orderable="false">#</th>
                                                 </tr>
                                             </thead>
