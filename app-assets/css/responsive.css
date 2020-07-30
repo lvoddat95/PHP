@@ -135,12 +135,14 @@
         flex-direction: column;
     }
     #footer {
-        position: relative;
+        left: -15px;
+        right: -15px;
+        width: calc(100% + 30px);
         display: block !important;
         text-align: center;
         margin-top: auto;
         color: #fff;
-        margin: auto -15px 0;
+        margin: 0;
         max-height: 59px;
         padding: 10px 15px 7px !important;
     }
