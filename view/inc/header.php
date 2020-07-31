@@ -15,7 +15,6 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
         <!-- core stylesheet -->
-        <link rel="stylesheet" type="text/css" href="<?php echo ASSET_ROOT; ?>/fonts/linearicons/linearicons.css">
         <link rel="stylesheet" type="text/css" href="<?php echo ASSET_ROOT; ?>/fonts/iconmoon/iconmoon.min.css">
         <link rel="stylesheet" type="text/css" href="<?php echo ASSET_ROOT; ?>/fonts/font-awesome/css/fontawesome.min.css">
         <link rel="stylesheet" type="text/css" href="<?php echo ASSET_ROOT; ?>/vendors/css/perfect-scrollbar.min.css">

@@ -21,7 +21,7 @@
                         </button>
                         <div class="top-left">
                             <div class="breadcrumb">
-                                <a href="<?php echo HTTP_PATH; ?>" class="breadcrumb-item"><i class="icon-home5 mr-1"></i>Trang chủ</a>
+                                <a href="<?php echo HTTP_PATH; ?>" class="breadcrumb-item"><i class="fad fa-home mr-1"></i>Trang chủ</a>
                                 <span class="breadcrumb-item active">Danh sách số hợp đồng đã xin cấp</span>
                             </div>
                             <div class="d-md-none logo-mobile">

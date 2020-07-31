@@ -15,7 +15,7 @@
                 <!-- Logo -->
                 <div class="logo clearfix">
                     <a href="javascript:;" class="sidebar-main-toggle">
-                        <i class="linearicons-toggle-on"></i>
+                        <i class="fal fa-toggle-on"></i>
                     </a>
                     <a href="<?php echo HTTP_PATH ?>" class="logo-text float-left">
                         <div class="logo-img"><img src="<?php echo HTTP_PATH ?>app-assets/images/logo/logo2.png" alt="VNI Logo"></div>
@@ -30,14 +30,14 @@
 
                         <li class="nav-item">
                             <a href="<?php echo HTTP_PATH ?>" class="nav-link active" data-menu-title="Bảng điều khiển">
-                                <i class="linearicons-home"></i>
+                                <i class="fad fa-home fa-fw"></i>
                                 <span class="menu-title">Bảng điều khiển</span>
                             </a>
                         </li>
 
                         <li class="nav-item nav-item-submenu">
                             <a href="javascript:;" class="nav-link">
-                                <i class="linearicons-layers"></i>
+                                <i class="fad fa-browser fa-fw"></i>
                                 <span class="menu-title"> Pages Template</span>
                             </a>
                             <ul class="nav nav-group-sub" data-submenu-title="Pages Template">
@@ -54,7 +54,7 @@
 
                         <li class="nav-item nav-item-submenu">
                             <a href="javascript:;" class="nav-link">
-                                <i class="linearicons-car"></i>
+                                <i class="fad fa-peace fa-fw"></i>
                                 <span class="menu-title"> Bảo hiểm xe cơ giới</span>
                             </a>
 
@@ -66,7 +66,7 @@
 
                         <li class="nav-item nav-item-submenu">
                             <a href="javascript:;" class="nav-link">
-                                <i class="linearicons-man-woman"></i>
+                                <i class="fad fa-user-shield fa-fw"></i>
                                 <span class="menu-title"> Bảo hiểm con người</span>
                             </a>
                             <ul class="nav nav-group-sub" data-submenu-title="Bảo hiểm con người">
@@ -91,7 +91,7 @@
 
                         <li class="nav-item nav-item-submenu">
                             <a href="javascript:;" class="nav-link">
-                                <i class="linearicons-bag-dollar"></i>
+                                <i class="fad fa-sack-dollar fa-fw"></i>
                                 <span class="menu-title"> Bảo hiểm xe tài sản</span>
                             </a>
                             <ul class="nav nav-group-sub" data-submenu-title="Bảo hiểm xe tài sản">
@@ -112,7 +112,7 @@
 
                         <li class="nav-item nav-item-submenu">
                             <a href="javascript:;" class="nav-link">
-                                <i class="linearicons-chart-growth"></i>
+                                <i class="fad fa-container-storage fa-fw"></i>
                                 <span class="menu-title"> Bảo hiểm hàng hóa</span>
                             </a>
                             <ul class="nav nav-group-sub" data-submenu-title="Bảo hiểm hàng hóa">
@@ -124,7 +124,7 @@
 
                         <li class="nav-item nav-item-submenu">
                             <a href="javascript:;" class="nav-link">
-                                <i class="linearicons-shield-check"></i>
+                                <i class="fad fa-shield fa-fw"></i>
                                 <span class="menu-title"> Bảo hiểm trách nhiệm</span>
                             </a>
                             <ul class="nav nav-group-sub" data-submenu-title="Bảo hiểm trách nhiệm">
@@ -141,7 +141,7 @@
                         
                         <li class="nav-item nav-item-submenu">
                             <a href="javascript:;" class="nav-link">
-                                <i class="linearicons-ship2"></i>
+                                <i class="fad fa-ship fa-fw"></i>
                                 <span class="menu-title"> Bảo hiểm tàu thuyền</span>
                             </a>
                             <ul class="nav nav-group-sub" data-submenu-title="Bảo hiểm tàu thuyền">
@@ -158,7 +158,7 @@
 
                         <li class="nav-item nav-item-submenu">
                             <a href="javascript:;" class="nav-link">
-                                <i class="linearicons-construction"></i>
+                                <i class="fad fa-construction fa-fw"></i>
                                 <span class="menu-title"> Bảo hiểm kĩ thuật</span>
                             </a>
                             <ul class="nav nav-group-sub" data-submenu-title="Bảo hiểm kĩ thuật">
@@ -177,7 +177,7 @@
 
                         <li class="nav-item nav-item-submenu">
                             <a href="javascript:;" class="nav-link">
-                                <i class="linearicons-plane"></i>
+                                <i class="fad fa-plane fa-fw"></i>
                                 <span class="menu-title">Bảo hiểm hàng không</span>
                             </a>
                             <ul class="nav nav-group-sub" data-submenu-title="Bảo hiểm hàng không">
@@ -216,7 +216,7 @@
                         
                         <li class="nav-item nav-item-submenu">
                             <a href="javascript:;" class="nav-link">
-                                <i class="linearicons-gas"></i>
+                                <i class="fad fa-gas-pump fa-fw"></i>
                                 <span class="menu-title"> Bảo hiểm dầu khí</span>
                             </a>
                             <ul class="nav nav-group-sub" data-submenu-title="Bảo hiểm dầu khí">
@@ -225,7 +225,7 @@
                         </li>
                         <li class="nav-item nav-item-submenu">
                             <a href="javascript:;" class="nav-link">
-                                <i class="linearicons-repeat-one3"></i>
+                                <i class="fad fa-repeat fa-fw"></i>
                                 <span class="menu-title"> Nhận tái cố định</span>
                             </a>
 
@@ -254,8 +254,8 @@
                     </div>
                     <img class="img" src="<?php echo HTTP_PATH .'app-assets/images/sidebar-bg/chat.png'; ?>" alt="">
                     <div class="sup-down">
-                        <p><a href=""><i class="linearicons-bubble mr-1"></i> <span>Chat</span></a></p>
-                        <p><a href=""><i class="linearicons-phone-wave mr-1"></i> <span>Call</span></a></p>
+                        <p><a href=""><i class="fad fa-comment-lines mr-1"></i> <span>Chat</span></a></p>
+                        <p><a href=""><i class="fad fa-phone-rotary mr-1"></i> <span>Call</span></a></p>
                     </div>
                 </div>
                 <!-- End-BOX -->

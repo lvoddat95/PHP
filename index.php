@@ -19,12 +19,12 @@
 	                    </button>
 	                    <div class="top-left">
 	                        <div class="breadcrumb">
-	                            <a href="" class="breadcrumb-item"><i class="icon-home5 mr-1"></i> Trang chủ</a>
+	                            <a href="" class="breadcrumb-item"><i class="fad fa-home mr-1"></i> Trang chủ</a>
 	                            <span class="breadcrumb-item active">Ứng dụng</span>
 	                        </div>
 	                        <div class="d-md-none logo-mobile">
 	                            <a href="" class="logo-text">
-	                                <div class="logo-img"><img src="app-assets/images/logo/logo2.png" alt="Convex Logo"></div>
+	                                <div class="logo-img"><img src="app-assets/images/logo/logo2.png" alt="VNI Logo"></div>
 	                                <span class="text align-middle" style="font-weight: 900;">VNI</span>
 	                            </a>
 	                        </div>
@@ -48,7 +48,7 @@
 	                                                    <span class="grey darken-1">Doanh thu hôm nay</span>
 	                                                </div>
 	                                                <div class="media-right text-right">
-	                                                    <i class="icon-coins  text-indigo-700" style="font-size: 26px;"></i>
+	                                                    <i class="fad fa-sack-dollar text-indigo-700" style="font-size: 26px;"></i>
 	                                                </div>
 	                                            </div>
 	                                        </div>
@@ -68,7 +68,7 @@
 	                                                    <span class="grey darken-1">Thanh toán bồi thường</span>
 	                                                </div>
 	                                                <div class="media-right text-right">
-	                                                    <i class="icon-wallet  text-danger" style="font-size: 26px;"></i>
+	                                                    <i class="fad fa-credit-card text-danger" style="font-size: 26px;"></i>
 	                                                </div>
 	                                            </div>
 	                                        </div>
@@ -88,7 +88,7 @@
 	                                                    <span class="grey darken-1">Đơn bảo hiểm mới</span>
 	                                                </div>
 	                                                <div class="media-right text-right">
-	                                                    <i class="icon-certificate  text-success" style="font-size: 26px;"></i>
+	                                                    <i class="fad fa-layer-plus text-success" style="font-size: 26px;"></i>
 	                                                </div>
 	                                            </div>
 	                                        </div>
@@ -110,28 +110,30 @@
 	                                    <div class="col-md-4 col-sm-4 col-4">
 	                                        <div class="about-box bg-theme-10">
 	                                            <div class="about-opacity-icon"> 
-	                                                <i class="linearicons-shield-check" aria-hidden="true"></i> 
+	                                                <i class="fad fa-shield" aria-hidden="true"></i> 
 	                                            </div>
 	                                            <div class="about-main-icon">
-	                                                <i class="linearicons-shield-check" aria-hidden="true"></i>
+	                                                <i class="fad fa-shield" aria-hidden="true"></i>
 	                                            </div>
 	                                            <h5 class="mb-0 font-size-s">Bảo lãnh</h5>
 	                                        </div>
 	                                    </div>
 	                                    <div class="col-md-4 col-sm-4 col-4">
 	                                        <div class="about-box bg-theme-9">
-	                                            <div class="about-opacity-icon"> <i class="linearicons-bag-dollar" aria-hidden="true"></i> </div>
+	                                            <div class="about-opacity-icon"> 
+	                                            	<i class="fad fa-sack-dollar" aria-hidden="true"></i> 
+	                                            </div>
 	                                            <div class="about-main-icon">
-	                                            <i class="linearicons-bag-dollar" aria-hidden="true"></i>
+	                                            <i class="fad fa-sack-dollar" aria-hidden="true"></i>
 	                                            </div>
 	                                            <h5 class="mb-0 font-size-s">Bồi thường</h5>
 	                                        </div>
 	                                    </div>
 	                                    <div class="col-md-4 col-sm-4 col-4">
 	                                        <div class="about-box bg-blue-400">
-	                                            <div class="about-opacity-icon"> <i class="linearicons-repeat-one3" aria-hidden="true"></i> </div>
+	                                            <div class="about-opacity-icon"> <i class="fad fa-repeat" aria-hidden="true"></i> </div>
 	                                            <div class="about-main-icon">
-	                                            <i class="linearicons-repeat-one3" aria-hidden="true"></i>
+	                                            <i class="fad fa-repeat" aria-hidden="true"></i>
 	                                            </div>
 	                                            <h5 class="mb-0 font-size-s">Tái bảo hiểm</h5>
 	                                        </div>
@@ -139,9 +141,9 @@
 
 	                                    <div class="col-md-4 col-sm-4 col-4">
 	                                        <div class="about-box bg-pink-500">
-	                                            <div class="about-opacity-icon"> <i class="linearicons-calculator2" aria-hidden="true"></i> </div>
+	                                            <div class="about-opacity-icon"> <i class="fad fa-calculator" aria-hidden="true"></i> </div>
 	                                            <div class="about-main-icon">
-	                                            <i class="linearicons-calculator2" aria-hidden="true"></i>
+	                                            <i class="fad fa-calculator" aria-hidden="true"></i>
 	                                            </div>
 	                                            <h5 class="mb-0 font-size-s">Kế toán</h5>
 	                                        </div>
@@ -149,45 +151,45 @@
 
 	                                    <div class="col-md-4 col-sm-4 col-4">
 	                                        <div class="about-box bg-theme-11">
-	                                            <div class="about-opacity-icon"> <i class="linearicons-papers" aria-hidden="true"></i> </div>
+	                                            <div class="about-opacity-icon"> <i class="fad fa-file-certificate" aria-hidden="true"></i> </div>
 	                                            <div class="about-main-icon">
-	                                            <i class="linearicons-papers" aria-hidden="true"></i>
+	                                            <i class="fad fa-file-certificate" aria-hidden="true"></i>
 	                                            </div>
 	                                            <h5 class="mb-0 font-size-s">Ấn Chỉ</h5>
 	                                        </div>
 	                                    </div>
 	                                    <div class="col-md-4 col-sm-4 col-4">
 	                                        <div class="about-box bg-teal-600">
-	                                            <div class="about-opacity-icon"> <i class="linearicons-chart-growth" aria-hidden="true"></i> </div>
+	                                            <div class="about-opacity-icon"> <i class="fad fa-analytics" aria-hidden="true"></i> </div>
 	                                            <div class="about-main-icon">
-	                                            <i class="linearicons-chart-growth" aria-hidden="true"></i>
+	                                            <i class="fad fa-analytics" aria-hidden="true"></i>
 	                                            </div>
 	                                            <h5 class="mb-0 font-size-s">Báo cáo</h5>
 	                                        </div>
 	                                    </div>
 	                                    <div class="col-md-4 col-sm-4 col-4">
 	                                        <div class="about-box bg-indigo-700">
-	                                            <div class="about-opacity-icon"> <i class="linearicons-archive2" aria-hidden="true"></i> </div>
+	                                            <div class="about-opacity-icon"> <i class="fad fa-archive" aria-hidden="true"></i> </div>
 	                                            <div class="about-main-icon">
-	                                            <i class="linearicons-archive2" aria-hidden="true"></i>
+	                                            <i class="fad fa-archive" aria-hidden="true"></i>
 	                                            </div>
 	                                            <h5 class="mb-0 font-size-s">Danh mục dùng chung</h5>
 	                                        </div>
 	                                    </div>
 	                                    <div class="col-md-4 col-sm-4 col-4">
 	                                        <div class="about-box bg-purple-600">
-	                                            <div class="about-opacity-icon"> <i class="linearicons-users2" aria-hidden="true"></i> </div>
+	                                            <div class="about-opacity-icon"> <i class="fad fa-users-cog" aria-hidden="true"></i> </div>
 	                                            <div class="about-main-icon">
-	                                            <i class="linearicons-users2" aria-hidden="true"></i>
+	                                            <i class="fad fa-users-cog" aria-hidden="true"></i>
 	                                            </div>
 	                                            <h5 class="mb-0 font-size-s">Quản trị người dùng</h5>
 	                                        </div>
 	                                    </div>
 	                                    <div class="col-md-4 col-sm-4 col-4">
 	                                        <div class="about-box bg-theme-16">
-	                                            <div class="about-opacity-icon"> <i class="linearicons-register" aria-hidden="true"></i> </div>
+	                                            <div class="about-opacity-icon"> <i class="fad fa-money-check-edit" aria-hidden="true"></i> </div>
 	                                            <div class="about-main-icon">
-	                                            <i class="linearicons-register" aria-hidden="true"></i>
+	                                            <i class="fad fa-money-check-edit" aria-hidden="true"></i>
 	                                            </div>
 	                                            <h5 class="mb-0 font-size-s">Cấp đơn Bancassurance</h5>
 	                                        </div>

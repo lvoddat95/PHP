@@ -166,7 +166,7 @@ a.sidebar-main-toggle:hover{
 }
 
 .sidebar-xs .sidebar-main-toggle>i:before {
-    content: "\e970";
+    content: "\f204";
 }
 
 .sidebar .logo {
@@ -426,6 +426,7 @@ a.sidebar-main-toggle:hover{
 }
 .top-right > ul > li > a i{
     font-size: 14px;
+    vertical-align: middle;
 }
 
 .top-right > ul > li:not(.dropdown-user) > a:after{

@@ -6,12 +6,12 @@
         </li>
         <li>
             <a href="#" data-tooltip="tipsy" original-title="Trợ giúp" data-position="bottom">
-                <i class="icon-help"></i>
+                <i class="fad fa-question-circle"></i>
             </a>
         </li>
         <li class="dropdown-alert dropdown">
             <a href="#" class="dropdown-toggle caret-0" data-toggle="dropdown" data-tooltip="tipsy" original-title="Thông báo" data-position="bottom">
-                <i class="icon-bubbles4"></i>
+                <i class="fad fa-bell"></i>
                 <span class="badge ">9</span>
             </a>
             <div class="dropdown-menu dropdown-menu-right dropdown-content wmin-md-350">
@@ -140,11 +140,11 @@
                     <span class="sub">Ban CNTT - Trụ Sở Chính</span>
                 </div>
                 <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item"><i class="icon-user"></i> Tài khoản</a>
-                <a href="#" class="dropdown-item"><i class="icon-cog5"></i> Cài đặt</a>
-                <a href="#" class="dropdown-item"><i class="icon-help"></i> Trợ giúp</a>
+                <a href="#" class="dropdown-item"><i class="fa fa-user"></i> Tài khoản</a>
+                <a href="#" class="dropdown-item"><i class="fa fa-cog"></i> Cài đặt</a>
+                <a href="#" class="dropdown-item"><i class="fa fa-question-circle"></i> Trợ giúp</a>
                 <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item"><i class="icon-switch2"></i> Đăng xuất</a>
+                <a href="#" class="dropdown-item"><i class="fa fa-sign-out"></i> Đăng xuất</a>
             </div>
         </li>
     </ul>

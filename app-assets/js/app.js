@@ -1725,8 +1725,8 @@ var App = function () {
                 paginate: {
                     first:      "Đầu",
                     last:       "Cuối",
-                    next:       "Sau >>",
-                    previous:   "<< Trước"
+                    next:       "Sau <i class='far fa-chevron-double-right fa-xs'></i>",
+                    previous:   "<i class='far fa-chevron-double-left fa-xs'></i> Trước"
                 },
                 aria: {
                     sortAscending:  ": kích hoạt để sắp xếp cột tăng dần",
