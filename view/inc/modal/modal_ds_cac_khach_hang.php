@@ -66,7 +66,7 @@
                             </div>
                         </div>
                         <div class="text-right">
-                            <button type="submit" class="btn bg-primary"><i class="icon-filter3 mr-1"></i>Lọc</button>
+                            <button type="submit" class="btn bg-primary"><i class="fa fa-filter mr-1"></i>Lọc</button>
                             <button type="button" class="btn btn-light" data-dismiss="modal"><i class="icon-cross2 mr-1"></i>Hủy điều kiện lọc</button>
                         </div>
                     </div>
@@ -272,11 +272,10 @@
                         
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-light" data-dismiss="modal">Đóng</button>
-                    <button type="button" class="btn btn-light">Xuất ra XML</button>
+                    <button type="button" class="btn btn-light" data-dismiss="modal"><i class="far fa-times mr-1"></i>Đóng</button>
                     <button type="button" class="btn btn-light">– Xóa</button>
                     <button type="button" class="btn btn-light" data-toggle="modal" data-target="#cap_nhap_thong_tin_khach_hang">+ Thêm</button>
-                    <button type="submit" class="btn bg-primary">Chọn</button>
+                    <a href="#" class="btn bg-primary btn-labeled btn-labeled-left mr-1"><b><i class="icon-checkmark4"></i></b> Chọn</a>
                 </div>
             </form>
         </div>

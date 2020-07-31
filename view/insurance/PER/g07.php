@@ -274,17 +274,17 @@
                                                                     </div>
                                                                     <div class="col-md-4">
                                                                         <table class="table table-bordered" style="margin: auto;">
-                                                                            <colgroup>
-                                                                                <col width="70%">
-                                                                                <col width="30%">
-                                                                            </colgroup>
                                                                             <thead class="thead-light">
                                                                                 <tr>
-                                                                                    <th width="70%">Quyền lợi</th>
-                                                                                    <th class="text-right" width="30%">Phí BH có VAT</th>
+                                                                                    <th class="w70p">Quyền lợi</th>
+                                                                                    <th class="w30p text-right">Phí BH có VAT</th>
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
+                                                                                <tr>
+                                                                                    <td>Số tiền giảm miễn thường</td>
+                                                                                    <td class="text-right">0</td>
+                                                                                </tr>
                                                                                 <tr>
                                                                                     <td>Du lịch quốc tế</td>
                                                                                     <td class="text-right">0</td>

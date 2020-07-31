@@ -310,7 +310,7 @@
                                                                                                         <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                         <td>
                                                                                                             <select class="form-control required " select2 name="dinh_muc" >
-                                                                                                                <option>Xe cơ giới khác</option>
+                                                                                                                <option selected>Xe cơ giới khác</option>
                                                                                                                 <option>Biển xanh, biển đỏ, biển nước ngoài</option>
                                                                                                                 <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
                                                                                                                 <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
@@ -623,21 +623,12 @@
                                                                                                         </td>
                                                                                                         <td>
                                                                                                             <select class="form-control required " select2 name="dinh_muc" >
-                                                                                                                <option id="1A0CB825-AF10-4E71-973D-47A14076CABD" value="1A0CB825-AF10-4E71-973D-47A14076CABD"
-                                                                                                                    title="Xe cơ giới khác">Xe cơ giới khác</option>
-                                                                                                                <option id="A43D9544-9201-490D-8087-A99CC3A6D906" value="A43D9544-9201-490D-8087-A99CC3A6D906"
-                                                                                                                    title="Biển xanh, biển đỏ, biển nước ngoài">Biển xanh, biển đỏ, biển nước ngoài</option>
-                                                                                                                <option id="506CE15B-BC49-4F11-899A-7E950EC8A456" value="506CE15B-BC49-4F11-899A-7E950EC8A456"
-                                                                                                                    title="Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>15 tuổi kể từ ngày SX">Xe taxi, đầu
-                                                                                                                    kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
-                                                                                                                <option id="9A3B6724-5296-4AC1-A93F-D86E5E3439FB" value="9A3B6724-5296-4AC1-A93F-D86E5E3439FB"
-                                                                                                                    title="Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX">Xe taxi, đầu
-                                                                                                                    kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;10 tuổi kể từ ngày SX</option>
-                                                                                                                <option id="98BDBF21-0466-4BA7-8464-7455F86D7E81" value="98BDBF21-0466-4BA7-8464-7455F86D7E81"
-                                                                                                                    title="Xe cơ giới khai thác qua Ngân hàng, show room">Xe cơ giới khai thác qua Ngân hàng, show room</option>
-                                                                                                                <option id="27292D06-61D1-4EE9-8417-AEF6FADD987B" value="27292D06-61D1-4EE9-8417-AEF6FADD987B" title="Xe tải">Xe tải
-                                                                                                                </option>
-                                                                                                            
+                                                                                                                <option>Xe cơ giới khác</option>
+                                                                                                                <option>Biển xanh, biển đỏ, biển nước ngoài</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe cơ giới khai thác qua Ngân hàng, show room</option>
+                                                                                                                <option>Xe tải</option>
                                                                                                             </select>
                                                                                                         </td>
                                                                                                     </tr>
@@ -689,6 +680,95 @@
                                                                                                         <td></td>
                                                                                                     </tr>
                                                                                                 
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="c-item">
+                                                                                    <div class="c-title">
+                                                                                        <span class="button-switch no-label">
+                                                                                            <input type="checkbox" id="tndsbb" class="switch cls_ckb" name="ckbchild4">
+                                                                                            <label for="tndsbb" data-off="Không" data-on="Có"></label>
+                                                                                        </span>
+                                                                                        <a class="collapsed " data-toggle="collapse" href="#collapsible-item4">TNDS bắt buộc</a>
+                                                                                    </div>
+                                                                                    <div id="collapsible-item4" class="collapse" datatable-collapse>
+                                                                                        <div class="c-body">
+                                                                                            <div class="row mb-3">
+                                                                                                <div class="col-md-4">
+                                                                                                    <label>Thời hạn bảo hiểm: <span class="text-danger">*</span></label>
+                                                                                                    <div class="d-flex mb-2">
+                                                                                                        <span style="width: 100px;">Từ</span>
+                                                                                                        <input type="time" class="form-control mr-2" step="width: 100px;">
+                                                                                                        <input type="text" class="form-control datepicker input-date" placeholder="dd/mm/yyyy">
+                                                                                                    </div>
+                                                                                                    <div class="d-flex">
+                                                                                                        <span style="width: 100px;">Đến</span>
+                                                                                                        <input type="time" class="form-control mr-2" step="width: 100px;">
+                                                                                                        <input type="text" class="form-control datepicker input-date" placeholder="dd/mm/yyyy">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="col-md-4">
+                                                                                                    <label>Số GCNBH: <span class="text-danger">*</span></label>
+                                                                                                    <input type="text" class="form-control" placeholder="Nhập số giấy chứng nhận...">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <table class="table table-bordered datatable"
+                                                                                                data-paging="false"
+                                                                                                data-info="false"
+                                                                                                data-ordering="false"
+                                                                                                data-searching="false"
+                                                                                            >
+                                                                                                <thead class="thead-light">
+                                                                                                    <tr>
+                                                                                                        <th class="desktop w10p">Quyền lợi</th>
+                                                                                                        <th class="desktop w20p">Số tiền bảo hiểm</th>
+                                                                                                        <th class="desktop w5p">Phí (%)</th>
+                                                                                                        <th class="desktop w10p">Phí BH (có VAT)</th>
+                                                                                                        <th class="desktop w5p">VAT (%)</th>
+                                                                                                        <th class="desktop w10p">VAT</th>
+                                                                                                        <th class="desktop w5p">COM (%)</th>
+                                                                                                        <th class="desktop w10p">COM</th>
+                                                                                                        <th class="desktop w20p">Định mức</th>
+                                                                                                    </tr>
+                                                                                                </thead>
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td><b>TNDS bắt buộc </b></td>
+                                                                                                        <td>
+                                                                                                            <b>TNDS về người: 100tr/người/vụ</b>
+                                                                                                            <br>
+                                                                                                            <b>TNDS về tài sản: 100tr/vụ</b>
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-right" style="color: red;" type="text" value="0">
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-right" type="text" value="100,000,000" >
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10" >
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-right" type="text"value="0" >
+                                                                                                        </td>
+                                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="5.0"></td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-right input-money" type="text" value="0" >
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <select class="form-control required " select2 name="dinh_muc" >
+                                                                                                                <option>Xe cơ giới khác</option>
+                                                                                                                <option>Biển xanh, biển đỏ, biển nước ngoài</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe cơ giới khai thác qua Ngân hàng, show room</option>
+                                                                                                                <option>Xe tải</option>
+                                                                                                            </select>
+                                                                                                        </td>
+                                                                                                    </tr>
                                                                                                 </tbody>
                                                                                             </table>
                                                                                         </div>
@@ -771,36 +851,17 @@
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
-                
+
                                                                                 <div class="c-item">
                                                                                     <div class="c-title">
                                                                                         <span class="button-switch no-label">
-                                                                                            <input type="checkbox" id="tndsbb" class="switch cls_ckb" name="ckbchild4">
-                                                                                            <label for="tndsbb" data-off="Không" data-on="Có"></label>
+                                                                                            <input type="checkbox" id="tnlpx" class="switch cls_ckb" name="ckbchild3">
+                                                                                            <label for="tnlpx" data-off="Không" data-on="Có"></label>
                                                                                         </span>
-                                                                                        <a class="collapsed " data-toggle="collapse" href="#collapsible-item4">TNDS bắt buộc</a>
+                                                                                        <a class="collapsed " data-toggle="collapse" href="#collapsible-item3">TNDS của chủ xe với hàng hóa</a>
                                                                                     </div>
-                                                                                    <div id="collapsible-item4" class="collapse" datatable-collapse>
+                                                                                    <div id="collapsible-item3" class="collapse" datatable-collapse>
                                                                                         <div class="c-body">
-                                                                                            <div class="row mb-3">
-                                                                                                <div class="col-md-4">
-                                                                                                    <label>Thời hạn bảo hiểm: <span class="text-danger">*</span></label>
-                                                                                                    <div class="d-flex mb-2">
-                                                                                                        <span style="width: 100px;">Từ</span>
-                                                                                                        <input type="time" class="form-control mr-2" step="width: 100px;">
-                                                                                                        <input type="text" class="form-control datepicker input-date" placeholder="dd/mm/yyyy">
-                                                                                                    </div>
-                                                                                                    <div class="d-flex">
-                                                                                                        <span style="width: 100px;">Đến</span>
-                                                                                                        <input type="time" class="form-control mr-2" step="width: 100px;">
-                                                                                                        <input type="text" class="form-control datepicker input-date" placeholder="dd/mm/yyyy">
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div class="col-md-4">
-                                                                                                    <label>Số GCNBH: <span class="text-danger">*</span></label>
-                                                                                                    <input type="text" class="form-control" placeholder="Nhập số giấy chứng nhận...">
-                                                                                                </div>
-                                                                                            </div>
                                                                                             <table class="table table-bordered datatable"
                                                                                                 data-paging="false"
                                                                                                 data-info="false"
@@ -809,8 +870,8 @@
                                                                                             >
                                                                                                 <thead class="thead-light">
                                                                                                     <tr>
-                                                                                                        <th class="desktop w10p">Quyền lợi</th>
-                                                                                                        <th class="desktop w20p">Số tiền bảo hiểm</th>
+                                                                                                        <th class="desktop w15p">Quyền lợi</th>
+                                                                                                        <th class="desktop w15p">Số tiền bảo hiểm</th>
                                                                                                         <th class="desktop w5p">Phí (%)</th>
                                                                                                         <th class="desktop w10p">Phí BH (có VAT)</th>
                                                                                                         <th class="desktop w5p">VAT (%)</th>
@@ -822,25 +883,23 @@
                                                                                                 </thead>
                                                                                                 <tbody>
                                                                                                     <tr>
-                                                                                                        <td><b style="text-transform: uppercase;">TNDS bắt buộc </b></td>
+                                                                                                        <td><b>TNDS của chủ xe với hàng hóa</b></td>
                                                                                                         <td>
-                                                                                                            <b>TNDS về người: 100tr/người/vụ</b>
-                                                                                                            <br>
-                                                                                                            <b>TNDS về tài sản: 100tr/vụ</b>
+                                                                                                            <input class="form-control text-right" type="text" value="0" >
                                                                                                         </td>
                                                                                                         <td>
-                                                                                                            <input class="form-control text-right" style="color: red;" type="text" value="0">
+                                                                                                            <input class="form-control text-left" style="color: red;" type="text" value="0" >
                                                                                                         </td>
                                                                                                         <td>
-                                                                                                            <input class="form-control text-right" type="text" value="100,000,000" >
+                                                                                                            <input class="form-control text-right" type="text" value="0">
                                                                                                         </td>
                                                                                                         <td>
-                                                                                                            <input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10" >
+                                                                                                            <input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="0">
                                                                                                         </td>
                                                                                                         <td>
-                                                                                                            <input class="form-control text-right" type="text"value="0" >
+                                                                                                            <input class="form-control text-right" type="text" value="0">
                                                                                                         </td>
-                                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="5.0"></td>
+                                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0.0"></td>
                                                                                                         <td>
                                                                                                             <input class="form-control text-right input-money" type="text" value="0" >
                                                                                                         </td>
@@ -860,6 +919,7 @@
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
+                                                                                
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -900,6 +960,11 @@
                                                                             </thead>
                                                                             <tbody>
                                                                                 <tr>
+                                                                                    <td>Số tiền giảm miễn thường</td>
+                                                                                    <td class="text-right">0</td>
+                                                                                </tr>
+
+                                                                                <tr>
                                                                                     <td>Vật chất xe </td>
                                                                                     <td class="text-right">0</td>
                                                                                 </tr>
@@ -908,11 +973,7 @@
                                                                                     <td>Điều khoản bổ sung</td>
                                                                                     <td class="text-right">0</td>
                                                                                 </tr>
-                                                                                <tr>
-                                                                                    <td>Số tiền giảm miễn thường</td>
-                                                                                    <td class="text-right">0</td>
-                                                                                </tr>
-                                                                                
+
                                                                                 <tr>
                                                                                     <td>TNDS tự nguyện về người</td>
                                                                                     <td class="text-right">0</td>
@@ -922,15 +983,20 @@
                                                                                     <td>TNDS tự nguyện về tài sản </td>
                                                                                     <td class="text-right">0</td>
                                                                                 </tr>
-                                                                                
+
+                                                                                <tr>
+                                                                                    <td>TNDS bắt buộc </td>
+                                                                                    <td class="text-right" >0</td>
+                                                                                </tr>
+
                                                                                 <tr>
                                                                                     <td>Tai nạn lái, phụ xe và người ngồi trên xe </td>
                                                                                     <td class="text-right">0</td>
                                                                                 </tr>
-                                                                                
+
                                                                                 <tr>
-                                                                                    <td>TNDS bắt buộc </td>
-                                                                                    <td class="text-right" >0</td>
+                                                                                    <td>TNDS của chủ xe với hàng hóa</td>
+                                                                                    <td class="text-right">0</td>
                                                                                 </tr>
                                                                                 
                                                                                 <tr class="bold" style="background-color: #fff;">

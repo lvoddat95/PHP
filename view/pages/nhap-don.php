@@ -287,15 +287,15 @@
                                                                                             >
                                                                                                 <thead class="thead-light">
                                                                                                     <tr>
-                                                                                                        <th width="20%">Phạm vi bảo hiểm</th>
-                                                                                                        <th width="10%">Số tiền bảo hiểm</th>
-                                                                                                        <th width="5%" class="desktop">Phí (%)</th>
-                                                                                                        <th width="10%" class="desktop">Phí BH (có VAT)</th>
-                                                                                                        <th width="5%" class="desktop">VAT (%)</th>
-                                                                                                        <th width="10%" class="desktop">VAT</th>
-                                                                                                        <th width="5%" class="desktop">COM (%)</th>
-                                                                                                        <th width="10%" class="desktop">COM</th>
-                                                                                                        <th width="20%" class="desktop">Định mức</th>
+                                                                                                        <th class="desktop w20p">Quyền lợi</th>
+                                                                                                        <th class="desktop w10p">Số tiền bảo hiểm</th>
+                                                                                                        <th class="desktop w5p">Phí (%)</th>
+                                                                                                        <th class="desktop w10p">Phí BH (có VAT)</th>
+                                                                                                        <th class="desktop w5p">VAT (%)</th>
+                                                                                                        <th class="desktop w10p">VAT</th>
+                                                                                                        <th class="desktop w5p">COM (%)</th>
+                                                                                                        <th class="desktop w10p">COM</th>
+                                                                                                        <th class="desktop w20p">Định mức</th>
                                                                                                     </tr>
                                                                                                 </thead>
                                                                                                 <tbody>
@@ -310,21 +310,12 @@
                                                                                                         <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                         <td>
                                                                                                             <select class="form-control required " select2 name="dinh_muc" >
-                                                                                                                <option id="1A0CB825-AF10-4E71-973D-47A14076CABD" value="1A0CB825-AF10-4E71-973D-47A14076CABD"
-                                                                                                                    title="Xe cơ giới khác">Xe cơ giới khác</option>
-                                                                                                                <option id="A43D9544-9201-490D-8087-A99CC3A6D906" value="A43D9544-9201-490D-8087-A99CC3A6D906"
-                                                                                                                    title="Biển xanh, biển đỏ, biển nước ngoài">Biển xanh, biển đỏ, biển nước ngoài</option>
-                                                                                                                <option id="506CE15B-BC49-4F11-899A-7E950EC8A456" value="506CE15B-BC49-4F11-899A-7E950EC8A456"
-                                                                                                                    title="Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>15 tuổi kể từ ngày SX">Xe taxi, đầu
-                                                                                                                    kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
-                                                                                                                <option id="9A3B6724-5296-4AC1-A93F-D86E5E3439FB" value="9A3B6724-5296-4AC1-A93F-D86E5E3439FB"
-                                                                                                                    title="Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX">Xe taxi, đầu
-                                                                                                                    kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;10 tuổi kể từ ngày SX</option>
-                                                                                                                <option id="98BDBF21-0466-4BA7-8464-7455F86D7E81" value="98BDBF21-0466-4BA7-8464-7455F86D7E81"
-                                                                                                                    title="Xe cơ giới khai thác qua Ngân hàng, show room">Xe cơ giới khai thác qua Ngân hàng, show room</option>
-                                                                                                                <option id="27292D06-61D1-4EE9-8417-AEF6FADD987B" value="27292D06-61D1-4EE9-8417-AEF6FADD987B" title="Xe tải">Xe tải
-                                                                                                                </option>
-                                                                                                            
+                                                                                                                <option selected>Xe cơ giới khác</option>
+                                                                                                                <option>Biển xanh, biển đỏ, biển nước ngoài</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe cơ giới khai thác qua Ngân hàng, show room</option>
+                                                                                                                <option>Xe tải</option>
                                                                                                             </select>
                                                                                                         </td>
                                                                                                     </tr>
@@ -339,17 +330,15 @@
                                                                                             >
                                                                                                 <thead>
                                                                                                     <tr>
-                                                                                                        <th width="20%">
-                                                                                                            <b>II. Điều khoản sửa đổi bổ sung</b>
-                                                                                                        </th>
-                                                                                                        <th width="10%" class="desktop "></th>
-                                                                                                        <th width="5%" desktop-10></th>
-                                                                                                        <th width="10%" class="desktop "></th>
-                                                                                                        <th width="5%" class="desktop "></th>
-                                                                                                        <th width="10%" class="desktop "></th>
-                                                                                                        <th width="5%" class="desktop "></th>
-                                                                                                        <th width="10%" class="desktop "></th>
-                                                                                                        <th width="20%" class="desktop "></th>
+                                                                                                        <th class="desktop w20p"><b>II. Điều khoản sửa đổi bổ sung</b></th>
+                                                                                                        <th class="desktop w10p"></th>
+                                                                                                        <th class="desktop w5p"></th>
+                                                                                                        <th class="desktop w10p"></th>
+                                                                                                        <th class="desktop w5p"></th>
+                                                                                                        <th class="desktop w10p"></th>
+                                                                                                        <th class="desktop w5p"></th>
+                                                                                                        <th class="desktop w10p"></th>
+                                                                                                        <th class="desktop w20p"></th>
                                                                                                     </tr>
                                                                                                 </thead>
                                                                                                 <tbody>
@@ -550,15 +539,15 @@
                                                                                             >
                                                                                                 <thead>
                                                                                                     <tr>
-                                                                                                        <th width="20%"><b>Tổng cộng: </b></th>
-                                                                                                        <th width="10%">Số tiền bảo hiểm</th>
-                                                                                                        <th width="5%" class="desktop">Phí (%)</th>
-                                                                                                        <th width="10%" class="desktop">Phí BH (có VAT)</th>
-                                                                                                        <th width="5%" class="desktop">VAT (%)</th>
-                                                                                                        <th width="10%" class="desktop">VAT</th>
-                                                                                                        <th width="5%" class="desktop">COM (%)</th>
-                                                                                                        <th width="10%" class="desktop">COM</th>
-                                                                                                        <th width="20%" class="desktop"></th>
+                                                                                                        <th class="desktop w20p"><b>Tổng cộng: </b></th>
+                                                                                                        <th class="desktop w10p">Số tiền bảo hiểm</th>
+                                                                                                        <th class="desktop w5p">Phí (%)</th>
+                                                                                                        <th class="desktop w10p">Phí BH (có VAT)</th>
+                                                                                                        <th class="desktop w5p">VAT (%)</th>
+                                                                                                        <th class="desktop w10p">VAT</th>
+                                                                                                        <th class="desktop w5p">COM (%)</th>
+                                                                                                        <th class="desktop w10p">COM</th>
+                                                                                                        <th class="desktop w20p">Định mức</th>
                                                                                                     </tr>
                                                                                                 </thead>
                                                                                                 <tbody>
@@ -598,15 +587,15 @@
                                                                                             >
                                                                                                 <thead class="thead-light">
                                                                                                     <tr>
-                                                                                                        <th width="15%">Quyền lợi</th>
-                                                                                                        <th width="15%">Số tiền bảo hiểm</th>
-                                                                                                        <th width="5%" class="desktop">Phí (%)</th>
-                                                                                                        <th width="10%" class="desktop">Phí BH (có VAT)</th>
-                                                                                                        <th width="5%" class="desktop">VAT (%)</th>
-                                                                                                        <th width="10%" class="desktop">VAT</th>
-                                                                                                        <th width="5%" class="desktop">COM (%)</th>
-                                                                                                        <th width="10%" class="desktop">COM</th>
-                                                                                                        <th  style="max-width: 280px;" width="20%" class="desktop">Định mức</th>
+                                                                                                        <th class="desktop w15p">Quyền lợi</th>
+                                                                                                        <th class="desktop w15p">Số tiền bảo hiểm</th>
+                                                                                                        <th class="desktop w5p">Phí (%)</th>
+                                                                                                        <th class="desktop w10p">Phí BH (có VAT)</th>
+                                                                                                        <th class="desktop w5p">VAT (%)</th>
+                                                                                                        <th class="desktop w10p">VAT</th>
+                                                                                                        <th class="desktop w5p">COM (%)</th>
+                                                                                                        <th class="desktop w10p">COM</th>
+                                                                                                        <th class="desktop w20p">Định mức</th>
                                                                                                     </tr>
                                                                                                 </thead>
                                                                                                 <tbody>
@@ -634,21 +623,12 @@
                                                                                                         </td>
                                                                                                         <td>
                                                                                                             <select class="form-control required " select2 name="dinh_muc" >
-                                                                                                                <option id="1A0CB825-AF10-4E71-973D-47A14076CABD" value="1A0CB825-AF10-4E71-973D-47A14076CABD"
-                                                                                                                    title="Xe cơ giới khác">Xe cơ giới khác</option>
-                                                                                                                <option id="A43D9544-9201-490D-8087-A99CC3A6D906" value="A43D9544-9201-490D-8087-A99CC3A6D906"
-                                                                                                                    title="Biển xanh, biển đỏ, biển nước ngoài">Biển xanh, biển đỏ, biển nước ngoài</option>
-                                                                                                                <option id="506CE15B-BC49-4F11-899A-7E950EC8A456" value="506CE15B-BC49-4F11-899A-7E950EC8A456"
-                                                                                                                    title="Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>15 tuổi kể từ ngày SX">Xe taxi, đầu
-                                                                                                                    kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
-                                                                                                                <option id="9A3B6724-5296-4AC1-A93F-D86E5E3439FB" value="9A3B6724-5296-4AC1-A93F-D86E5E3439FB"
-                                                                                                                    title="Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX">Xe taxi, đầu
-                                                                                                                    kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;10 tuổi kể từ ngày SX</option>
-                                                                                                                <option id="98BDBF21-0466-4BA7-8464-7455F86D7E81" value="98BDBF21-0466-4BA7-8464-7455F86D7E81"
-                                                                                                                    title="Xe cơ giới khai thác qua Ngân hàng, show room">Xe cơ giới khai thác qua Ngân hàng, show room</option>
-                                                                                                                <option id="27292D06-61D1-4EE9-8417-AEF6FADD987B" value="27292D06-61D1-4EE9-8417-AEF6FADD987B" title="Xe tải">Xe tải
-                                                                                                                </option>
-                                                                                                            
+                                                                                                                <option>Xe cơ giới khác</option>
+                                                                                                                <option>Biển xanh, biển đỏ, biển nước ngoài</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe cơ giới khai thác qua Ngân hàng, show room</option>
+                                                                                                                <option>Xe tải</option>
                                                                                                             </select>
                                                                                                         </td>
                                                                                                     </tr>
@@ -679,21 +659,12 @@
                                                                                                         </td>
                                                                                                         <td>
                                                                                                             <select class="form-control required " select2 name="dinh_muc" >
-                                                                                                                <option id="1A0CB825-AF10-4E71-973D-47A14076CABD" value="1A0CB825-AF10-4E71-973D-47A14076CABD"
-                                                                                                                    title="Xe cơ giới khác">Xe cơ giới khác</option>
-                                                                                                                <option id="A43D9544-9201-490D-8087-A99CC3A6D906" value="A43D9544-9201-490D-8087-A99CC3A6D906"
-                                                                                                                    title="Biển xanh, biển đỏ, biển nước ngoài">Biển xanh, biển đỏ, biển nước ngoài</option>
-                                                                                                                <option id="506CE15B-BC49-4F11-899A-7E950EC8A456" value="506CE15B-BC49-4F11-899A-7E950EC8A456"
-                                                                                                                    title="Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>15 tuổi kể từ ngày SX">Xe taxi, đầu
-                                                                                                                    kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
-                                                                                                                <option id="9A3B6724-5296-4AC1-A93F-D86E5E3439FB" value="9A3B6724-5296-4AC1-A93F-D86E5E3439FB"
-                                                                                                                    title="Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX">Xe taxi, đầu
-                                                                                                                    kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;10 tuổi kể từ ngày SX</option>
-                                                                                                                <option id="98BDBF21-0466-4BA7-8464-7455F86D7E81" value="98BDBF21-0466-4BA7-8464-7455F86D7E81"
-                                                                                                                    title="Xe cơ giới khai thác qua Ngân hàng, show room">Xe cơ giới khai thác qua Ngân hàng, show room</option>
-                                                                                                                <option id="27292D06-61D1-4EE9-8417-AEF6FADD987B" value="27292D06-61D1-4EE9-8417-AEF6FADD987B" title="Xe tải">Xe tải
-                                                                                                                </option>
-                                                                                                            
+                                                                                                                <option>Xe cơ giới khác</option>
+                                                                                                                <option>Biển xanh, biển đỏ, biển nước ngoài</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe cơ giới khai thác qua Ngân hàng, show room</option>
+                                                                                                                <option>Xe tải</option>
                                                                                                             </select>
                                                                                                         </td>
                                                                                                     </tr>
@@ -714,93 +685,7 @@
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
-                
-                                                                                <div class="c-item">
-                                                                                    <div class="c-title">
-                                                                                        <span class="button-switch no-label">
-                                                                                            <input type="checkbox" id="tnlpx" class="switch cls_ckb" name="ckbchild3">
-                                                                                            <label for="tnlpx" data-off="Không" data-on="Có"></label>
-                                                                                        </span>
-                                                                                        <a class="collapsed " data-toggle="collapse" href="#collapsible-item3">Tai nạn lái, phụ xe và người ngồi trên xe</a>
-                                                                                    </div>
-                                                                                    <div id="collapsible-item3" class="collapse" datatable-collapse>
-                                                                                        <div class="c-body">
-                                                                                            <div class="row">
-                                                                                                <div class="col-md-2">
-                                                                                                    <div class="form-group">
-                                                                                                        <label>Số người tham gia: <span class="text-danger">*</span></label>
-                                                                                                        <input type="text" class="form-control" name="so_nguoi_tham_gia" placeholder="Nhập số người tham gia..." value="0" >
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <table class="table table-bordered datatable"
-                                                                                                data-paging="false"
-                                                                                                data-info="false"
-                                                                                                data-ordering="false"
-                                                                                                data-searching="false"
-                                                                                            >
-                                                                                                <thead class="thead-light">
-                                                                                                    <tr>
-                                                                                                        <th width="15%">Quyền lợi</th>
-                                                                                                        <th width="15%">Số tiền bảo hiểm</th>
-                                                                                                        <th width="5%" class="desktop">Phí (%)</th>
-                                                                                                        <th width="10%" class="desktop">Phí BH (có VAT)</th>
-                                                                                                        <th width="5%" class="desktop">VAT (%)</th>
-                                                                                                        <th width="10%" class="desktop">VAT</th>
-                                                                                                        <th width="5%" class="desktop">COM (%)</th>
-                                                                                                        <th width="10%" class="desktop">COM</th>
-                                                                                                        <th  style="max-width: 280px;" width="20%" class="desktop">Định mức</th>
-                                                                                                    </tr>
-                                                                                                </thead>
-                                                                                                <tbody>
-                                                                                                    <tr>
-                                                                                                        <td><b>Tai nạn lái, phụ xe và người ngồi trên xe </b></td>
-                                                                                                        <td>
-                                                                                                            <input class="form-control text-right" style="display: inline-block; width: calc(100% - 65px);" type="text" value="0" >
-                                                                                                            <span style="width: 62px;">(/người/vụ)</span>
-                                                                                                        </td>
-                                                                                                        <td>
-                                                                                                            <input class="form-control text-left" style="color: red;" type="text" value="0" >
-                                                                                                        </td>
-                                                                                                        <td>
-                                                                                                            <input class="form-control text-right" type="text" value="0">
-                                                                                                        </td>
-                                                                                                        <td>
-                                                                                                            <input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="0">
-                                                                                                        </td>
-                                                                                                        <td>
-                                                                                                            <input class="form-control text-right" type="text" value="0">
-                                                                                                        </td>
-                                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0.0"></td>
-                                                                                                        <td>
-                                                                                                            <input class="form-control text-right input-money" type="text" value="0" >
-                                                                                                        </td>
-                                                                                                        <td>
-                                                                                                            <select class="form-control required " select2 name="dinh_muc" >
-                                                                                                                <option id="1A0CB825-AF10-4E71-973D-47A14076CABD" value="1A0CB825-AF10-4E71-973D-47A14076CABD"
-                                                                                                                    title="Xe cơ giới khác">Xe cơ giới khác</option>
-                                                                                                                <option id="A43D9544-9201-490D-8087-A99CC3A6D906" value="A43D9544-9201-490D-8087-A99CC3A6D906"
-                                                                                                                    title="Biển xanh, biển đỏ, biển nước ngoài">Biển xanh, biển đỏ, biển nước ngoài</option>
-                                                                                                                <option id="506CE15B-BC49-4F11-899A-7E950EC8A456" value="506CE15B-BC49-4F11-899A-7E950EC8A456"
-                                                                                                                    title="Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>15 tuổi kể từ ngày SX">Xe taxi, đầu
-                                                                                                                    kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
-                                                                                                                <option id="9A3B6724-5296-4AC1-A93F-D86E5E3439FB" value="9A3B6724-5296-4AC1-A93F-D86E5E3439FB"
-                                                                                                                    title="Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX">Xe taxi, đầu
-                                                                                                                    kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;10 tuổi kể từ ngày SX</option>
-                                                                                                                <option id="98BDBF21-0466-4BA7-8464-7455F86D7E81" value="98BDBF21-0466-4BA7-8464-7455F86D7E81"
-                                                                                                                    title="Xe cơ giới khai thác qua Ngân hàng, show room">Xe cơ giới khai thác qua Ngân hàng, show room</option>
-                                                                                                                <option id="27292D06-61D1-4EE9-8417-AEF6FADD987B" value="27292D06-61D1-4EE9-8417-AEF6FADD987B" title="Xe tải">Xe tải
-                                                                                                                </option>
-                                                                                                            
-                                                                                                            </select>
-                                                                                                        </td>
-                                                                                                    </tr>
-                                                                                                </tbody>
-                                                                                            </table>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                
+
                                                                                 <div class="c-item">
                                                                                     <div class="c-title">
                                                                                         <span class="button-switch no-label">
@@ -838,20 +723,20 @@
                                                                                             >
                                                                                                 <thead class="thead-light">
                                                                                                     <tr>
-                                                                                                        <th width="10%">Quyền lợi</th>
-                                                                                                        <th width="20%">Số tiền bảo hiểm</th>
-                                                                                                        <th width="5%" class="desktop">Phí (%)</th>
-                                                                                                        <th width="10%" class="desktop">Phí BH (có VAT)</th>
-                                                                                                        <th width="5%" class="desktop">VAT (%)</th>
-                                                                                                        <th width="10%" class="desktop">VAT</th>
-                                                                                                        <th width="5%" class="desktop">COM (%)</th>
-                                                                                                        <th width="10%" class="desktop">COM</th>
-                                                                                                        <th  style="max-width: 280px;" width="20%" class="desktop">Định mức</th>
+                                                                                                        <th class="desktop w10p">Quyền lợi</th>
+                                                                                                        <th class="desktop w20p">Số tiền bảo hiểm</th>
+                                                                                                        <th class="desktop w5p">Phí (%)</th>
+                                                                                                        <th class="desktop w10p">Phí BH (có VAT)</th>
+                                                                                                        <th class="desktop w5p">VAT (%)</th>
+                                                                                                        <th class="desktop w10p">VAT</th>
+                                                                                                        <th class="desktop w5p">COM (%)</th>
+                                                                                                        <th class="desktop w10p">COM</th>
+                                                                                                        <th class="desktop w20p">Định mức</th>
                                                                                                     </tr>
                                                                                                 </thead>
                                                                                                 <tbody>
                                                                                                     <tr>
-                                                                                                        <td><b style="text-transform: uppercase;">TNDS bắt buộc </b></td>
+                                                                                                        <td><b>TNDS bắt buộc </b></td>
                                                                                                         <td>
                                                                                                             <b>TNDS về người: 100tr/người/vụ</b>
                                                                                                             <br>
@@ -875,21 +760,12 @@
                                                                                                         </td>
                                                                                                         <td>
                                                                                                             <select class="form-control required " select2 name="dinh_muc" >
-                                                                                                                <option id="1A0CB825-AF10-4E71-973D-47A14076CABD" value="1A0CB825-AF10-4E71-973D-47A14076CABD"
-                                                                                                                    title="Xe cơ giới khác">Xe cơ giới khác</option>
-                                                                                                                <option id="A43D9544-9201-490D-8087-A99CC3A6D906" value="A43D9544-9201-490D-8087-A99CC3A6D906"
-                                                                                                                    title="Biển xanh, biển đỏ, biển nước ngoài">Biển xanh, biển đỏ, biển nước ngoài</option>
-                                                                                                                <option id="506CE15B-BC49-4F11-899A-7E950EC8A456" value="506CE15B-BC49-4F11-899A-7E950EC8A456"
-                                                                                                                    title="Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>15 tuổi kể từ ngày SX">Xe taxi, đầu
-                                                                                                                    kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
-                                                                                                                <option id="9A3B6724-5296-4AC1-A93F-D86E5E3439FB" value="9A3B6724-5296-4AC1-A93F-D86E5E3439FB"
-                                                                                                                    title="Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX">Xe taxi, đầu
-                                                                                                                    kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;10 tuổi kể từ ngày SX</option>
-                                                                                                                <option id="98BDBF21-0466-4BA7-8464-7455F86D7E81" value="98BDBF21-0466-4BA7-8464-7455F86D7E81"
-                                                                                                                    title="Xe cơ giới khai thác qua Ngân hàng, show room">Xe cơ giới khai thác qua Ngân hàng, show room</option>
-                                                                                                                <option id="27292D06-61D1-4EE9-8417-AEF6FADD987B" value="27292D06-61D1-4EE9-8417-AEF6FADD987B" title="Xe tải">Xe tải
-                                                                                                                </option>
-                                                                                                            
+                                                                                                                <option>Xe cơ giới khác</option>
+                                                                                                                <option>Biển xanh, biển đỏ, biển nước ngoài</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe cơ giới khai thác qua Ngân hàng, show room</option>
+                                                                                                                <option>Xe tải</option>
                                                                                                             </select>
                                                                                                         </td>
                                                                                                     </tr>
@@ -898,6 +774,152 @@
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
+                
+                                                                                <div class="c-item">
+                                                                                    <div class="c-title">
+                                                                                        <span class="button-switch no-label">
+                                                                                            <input type="checkbox" id="tnlpx" class="switch cls_ckb" name="ckbchild3">
+                                                                                            <label for="tnlpx" data-off="Không" data-on="Có"></label>
+                                                                                        </span>
+                                                                                        <a class="collapsed " data-toggle="collapse" href="#collapsible-item3">Tai nạn lái, phụ xe và người ngồi trên xe</a>
+                                                                                    </div>
+                                                                                    <div id="collapsible-item3" class="collapse" datatable-collapse>
+                                                                                        <div class="c-body">
+                                                                                            <div class="row">
+                                                                                                <div class="col-md-2">
+                                                                                                    <div class="form-group">
+                                                                                                        <label>Số người tham gia: <span class="text-danger">*</span></label>
+                                                                                                        <input type="text" class="form-control" name="so_nguoi_tham_gia" placeholder="Nhập số người tham gia..." value="0" >
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <table class="table table-bordered datatable"
+                                                                                                data-paging="false"
+                                                                                                data-info="false"
+                                                                                                data-ordering="false"
+                                                                                                data-searching="false"
+                                                                                            >
+                                                                                                <thead class="thead-light">
+                                                                                                    <tr>
+                                                                                                        <th class="desktop w15p">Quyền lợi</th>
+                                                                                                        <th class="desktop w15p">Số tiền bảo hiểm</th>
+                                                                                                        <th class="desktop w5p">Phí (%)</th>
+                                                                                                        <th class="desktop w10p">Phí BH (có VAT)</th>
+                                                                                                        <th class="desktop w5p">VAT (%)</th>
+                                                                                                        <th class="desktop w10p">VAT</th>
+                                                                                                        <th class="desktop w5p">COM (%)</th>
+                                                                                                        <th class="desktop w10p">COM</th>
+                                                                                                        <th class="desktop w20p">Định mức</th>
+                                                                                                    </tr>
+                                                                                                </thead>
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td><b>Tai nạn lái, phụ xe và người ngồi trên xe </b></td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-right" style="display: inline-block; width: calc(100% - 65px);" type="text" value="0" >
+                                                                                                            <span style="width: 62px;">(/người/vụ)</span>
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-left" style="color: red;" type="text" value="0" >
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-right" type="text" value="0">
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="0">
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-right" type="text" value="0">
+                                                                                                        </td>
+                                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0.0"></td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-right input-money" type="text" value="0" >
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <select class="form-control required " select2 name="dinh_muc" >
+                                                                                                                <option>Xe cơ giới khác</option>
+                                                                                                                <option>Biển xanh, biển đỏ, biển nước ngoài</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe cơ giới khai thác qua Ngân hàng, show room</option>
+                                                                                                                <option>Xe tải</option>
+                                                                                                            </select>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="c-item">
+                                                                                    <div class="c-title">
+                                                                                        <span class="button-switch no-label">
+                                                                                            <input type="checkbox" id="tnlpx" class="switch cls_ckb" name="ckbchild3">
+                                                                                            <label for="tnlpx" data-off="Không" data-on="Có"></label>
+                                                                                        </span>
+                                                                                        <a class="collapsed " data-toggle="collapse" href="#collapsible-item3">TNDS của chủ xe với hàng hóa</a>
+                                                                                    </div>
+                                                                                    <div id="collapsible-item3" class="collapse" datatable-collapse>
+                                                                                        <div class="c-body">
+                                                                                            <table class="table table-bordered datatable"
+                                                                                                data-paging="false"
+                                                                                                data-info="false"
+                                                                                                data-ordering="false"
+                                                                                                data-searching="false"
+                                                                                            >
+                                                                                                <thead class="thead-light">
+                                                                                                    <tr>
+                                                                                                        <th class="desktop w15p">Quyền lợi</th>
+                                                                                                        <th class="desktop w15p">Số tiền bảo hiểm</th>
+                                                                                                        <th class="desktop w5p">Phí (%)</th>
+                                                                                                        <th class="desktop w10p">Phí BH (có VAT)</th>
+                                                                                                        <th class="desktop w5p">VAT (%)</th>
+                                                                                                        <th class="desktop w10p">VAT</th>
+                                                                                                        <th class="desktop w5p">COM (%)</th>
+                                                                                                        <th class="desktop w10p">COM</th>
+                                                                                                        <th class="desktop w20p">Định mức</th>
+                                                                                                    </tr>
+                                                                                                </thead>
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td><b>TNDS của chủ xe với hàng hóa</b></td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-right" type="text" value="0" >
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-left" style="color: red;" type="text" value="0" >
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-right" type="text" value="0">
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="0">
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-right" type="text" value="0">
+                                                                                                        </td>
+                                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0.0"></td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-right input-money" type="text" value="0" >
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <select class="form-control required " select2 name="dinh_muc" >
+                                                                                                                <option>Xe cơ giới khác</option>
+                                                                                                                <option>Biển xanh, biển đỏ, biển nước ngoài</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe cơ giới khai thác qua Ngân hàng, show room</option>
+                                                                                                                <option>Xe tải</option>
+                                                                                                            </select>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -929,18 +951,19 @@
                                                                         <b><label>Lịch thanh toán bảo hiểm: </label></b>
                                                                     </div>
                                                                     <div class="col-md-4">
-                                                                        <table class="table table-bordered" style="margin: auto;">
-                                                                            <colgroup>
-                                                                                <col width="70%">
-                                                                                <col width="30%">
-                                                                            </colgroup>
+                                                                        <table class="table table-bordered">
                                                                             <thead class="thead-light">
                                                                                 <tr>
-                                                                                    <th width="70%">Quyền lợi</th>
-                                                                                    <th class="text-right" width="30%">Phí BH có VAT</th>
+                                                                                    <th class="w70p">Quyền lợi</th>
+                                                                                    <th class="w30p text-right">Phí BH có VAT</th>
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
+                                                                                <tr>
+                                                                                    <td>Số tiền giảm miễn thường</td>
+                                                                                    <td class="text-right">0</td>
+                                                                                </tr>
+                                                                                
                                                                                 <tr>
                                                                                     <td>Vật chất xe </td>
                                                                                     <td class="text-right">0</td>
@@ -948,10 +971,6 @@
                                                                                 
                                                                                 <tr>
                                                                                     <td>Điều khoản bổ sung</td>
-                                                                                    <td class="text-right">0</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td>Số tiền giảm miễn thường</td>
                                                                                     <td class="text-right">0</td>
                                                                                 </tr>
                                                                                 
@@ -964,15 +983,20 @@
                                                                                     <td>TNDS tự nguyện về tài sản </td>
                                                                                     <td class="text-right">0</td>
                                                                                 </tr>
-                                                                                
+
+                                                                                <tr>
+                                                                                    <td>TNDS bắt buộc </td>
+                                                                                    <td class="text-right" >0</td>
+                                                                                </tr>
+
                                                                                 <tr>
                                                                                     <td>Tai nạn lái, phụ xe và người ngồi trên xe </td>
                                                                                     <td class="text-right">0</td>
                                                                                 </tr>
-                                                                                
+
                                                                                 <tr>
-                                                                                    <td>TNDS bắt buộc </td>
-                                                                                    <td class="text-right" >0</td>
+                                                                                    <td>TNDS của chủ xe với hàng hóa</td>
+                                                                                    <td class="text-right">0</td>
                                                                                 </tr>
                                                                                 
                                                                                 <tr class="bold" style="background-color: #fff;">

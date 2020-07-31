@@ -4,17 +4,16 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title font-weight-semibold ">Cập nhập thông tin khách hàng</h5>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="p-button">
+                    <button type="button" class="btn btn-light" data-dismiss="modal"><i class="far fa-times mr-1"></i>Đóng</button>
+                    <button type="submit" class="btn bg-primary"><i class="fa fa-save mr-1"></i>Lưu</button>
+                </div>
             </div>
             <form action="#">
                 <div class="modal-body">
                     <fieldset class="">
                         <legend class="text-primary-800 font-weight-semibold d-flex align-items-end justify-content-between">
                             Thông tin chung 
-                            <div class="">
-                                <button type="button" class="btn btn-light" data-dismiss="modal">Đóng</button>
-                                <button type="submit" class="btn bg-primary"><i class="fa fa-save mr-1"></i>Lưu</button>
-                            </div>
                         </legend>
                         <div class="row ">
                             <div class="col-sm-4">
@@ -179,8 +178,10 @@
                         
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-light" data-dismiss="modal">Đóng</button>
-                    <button type="submit" class="btn bg-primary"><i class="fa fa-save mr-1"></i>Lưu</button>
+                    <div class="p-button">
+                        <button type="button" class="btn btn-light" data-dismiss="modal"><i class="far fa-times mr-1"></i>Đóng</button>
+                        <button type="submit" class="btn bg-primary"><i class="fa fa-save mr-1"></i>Lưu</button>
+                    </div>
                 </div>
             </form>
         </div>
