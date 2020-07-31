@@ -25,6 +25,30 @@
     });
 })(window, document, jQuery);
 
+// Datepicker 
+if ($().datepicker) {
+    $.datepicker.regional['vi'] = {
+        closeText: "Đóng",
+        prevText: "&#x3C;Trước",
+        nextText: "Tiếp&#x3E;",
+        currentText: "Hôm nay",
+        monthNames: [ "Tháng Một", "Tháng Hai", "Tháng Ba", "Tháng Tư", "Tháng Năm", "Tháng Sáu",
+        "Tháng Bảy", "Tháng Tám", "Tháng Chín", "Tháng Mười", "Tháng Mười Một", "Tháng Mười Hai" ],
+        monthNamesShort: [ "Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6",
+        "Tháng 7", "Tháng 8", "Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12" ],
+        dayNames: [ "Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy" ],
+        dayNamesShort: [ "CN", "T2", "T3", "T4", "T5", "T6", "T7" ],
+        dayNamesMin: [ "CN", "T2", "T3", "T4", "T5", "T6", "T7" ],
+        weekHeader: "Tu",
+        dateFormat: "dd/mm/yy",
+        firstDay: 0,
+        isRTL: false,
+        showMonthAfterYear: false,
+        yearSuffix: ""
+    };
+    $.datepicker.setDefaults($.datepicker.regional['vi']);
+}
+
 // Cleave phone vn
 !function(){function n(n,t){var l=n.split("."),e=U;l[0]in e||!e.execScript||e.execScript("var "+l[0]);for(var r;l.length&&(r=l.shift());)l.length||void 0===t?e=e[r]?e[r]:e[r]={}:e[r]=t}function t(n,t){function l(){}l.prototype=t.prototype,n.M=t.prototype,n.prototype=new l,n.prototype.constructor=n,n.N=function(n,l,e){for(var r=Array(arguments.length-2),u=2;u<arguments.length;u++)r[u-2]=arguments[u];return t.prototype[l].apply(n,r)}}function l(n,t){null!=n&&this.a.apply(this,arguments)}function e(n){n.b=""}function r(n,t){n.sort(t||u)}function u(n,t){return n>t?1:n<t?-1:0}function i(n){var t,l=[],e=0;for(t in n)l[e++]=n[t];return l}function a(n,t){this.b=n,this.a={};for(var l=0;l<t.length;l++){var e=t[l];this.a[e.b]=e}}function o(n){return n=i(n.a),r(n,function(n,t){return n.b-t.b}),n}function s(n,t){switch(this.b=n,this.g=!!t.v,this.a=t.c,this.i=t.type,this.h=!1,this.a){case J:case K:case L:case O:case Z:case k:case Y:this.h=!0}this.f=t.defaultValue}function f(){this.a={},this.f=this.j().a,this.b=this.g=null}function p(n,t){for(var l=o(n.j()),e=0;e<l.length;e++){var r=l[e],u=r.b;if(null!=t.a[u]){n.b&&delete n.b[r.b];var i=11==r.a||10==r.a;if(r.g)for(var r=c(t,u)||[],a=0;a<r.length;a++){var s=n,f=u,h=i?r[a].clone():r[a];s.a[f]||(s.a[f]=[]),s.a[f].push(h),s.b&&delete s.b[f]}else r=c(t,u),i?(i=c(n,u))?p(i,r):m(n,u,r.clone()):m(n,u,r)}}}function c(n,t){var l=n.a[t];if(null==l)return null;if(n.g){if(!(t in n.b)){var e=n.g,r=n.f[t];if(null!=l)if(r.g){for(var u=[],i=0;i<l.length;i++)u[i]=e.b(r,l[i]);l=u}else l=e.b(r,l);return n.b[t]=l}return n.b[t]}return l}function h(n,t,l){var e=c(n,t);return n.f[t].g?e[l||0]:e}function g(n,t){var l;if(null!=n.a[t])l=h(n,t,void 0);else n:{if(l=n.f[t],void 0===l.f){var e=l.i;if(e===Boolean)l.f=!1;else if(e===Number)l.f=0;else{if(e!==String){l=new e;break n}l.f=l.h?"0":""}}l=l.f}return l}function d(n,t){return n.f[t].g?null!=n.a[t]?n.a[t].length:0:null!=n.a[t]?1:0}function m(n,t,l){n.a[t]=l,n.b&&(n.b[t]=l)}function b(n,t){var l,e=[];for(l in t)0!=l&&e.push(new s(l,t[l]));return new a(n,e)}
 function y(){f.call(this)}function v(){f.call(this)}function _(){f.call(this)}function $(){}function S(){}function w(){}

@@ -16,7 +16,6 @@ body {
     min-height: 100vh;
 }
 .page-content {
-    min-height: 100vh;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-positive: 1;
@@ -27,8 +26,15 @@ body {
 }
 
 .content-wrapper {
+    min-height: 100vh;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
     -ms-flex: 1;
-    flex: 1;
+    flex: 1;    
+    -ms-flex-direction: column;
+    flex-direction: column;
     position: relative;
     background-color: #F1F5F8;
     border-top-left-radius: 30px;
