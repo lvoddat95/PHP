@@ -61,12 +61,12 @@
                             </div>
                             
                             <a href="#" class="btn btn-labeled btn-labeled-left mr-2">
-                                <b><i class="icon-files-empty"></i></b>Lưu & Copy
+                                <b><i class="far fa-copy"></i></b>Lưu & Copy
                             </a>
                             <a href="#" class="btn btn-labeled btn-labeled-left mr-2">
                                 <b><i class="icon-file-plus"></i></b> Lưu & thêm mới
                             </a>
-                            <a href="javascript:;" class="btn bg-primary"><i class="icon-floppy-disk mr-1"></i> Lưu</a>
+                            <a href="javascript:;" class="btn bg-primary"><i class="fa fa-save mr-1"></i> Lưu</a>
                         </div>
                     </div>
             
@@ -535,6 +535,7 @@
                                                                                     <label>Tháng SX/ĐK lần đầu: <span class="text-danger">*</span></label>
                                                                                     <div class="form-group-select">
                                                                                         <select class="form-control required" select2 name="thang_sx_dk" >
+                                                                                            <option value="">--- Chọn tháng ---</option>
                                                                                             <option id="1" name="1" value="1" selected="">1</option>
                                                                                             <option id="2" name="2" value="2">2</option>
                                                                                             <option id="3" name="3" value="3">3</option>
@@ -1884,16 +1885,15 @@
                                                                     <div class="col-md-12">
                                                                         <div class="form-group">
                                                                             <label>Tài liệu đính kèm: <span class="text-danger">*</span></label>
-                                                                            <div class="input-group file-caption-main">
-                                                                                <button class="btn btn-light btn-file mr-3 mb-1">
-                                                                                    <i class="icon-upload7 mr-2"></i> 
-                                                                                    <span class="hidden-xs">Tải lên tài liệu</span>
-                                                                                    <input type="file" class="file-input-preview">
+                                                                            <div class="p-button">
+                                                                                <button class="btn btn-light btn-file mr-3">
+                                                                                <i class="far fa-upload mr-1"></i>
+                                                                                <span class="hidden-xs">Tải lên tài liệu</span>
+                                                                                <input type="file" class="file-input-preview">
                                                                                 </button>
-
-                                                                                <button type="button" class="btn btn-light mb-1" data-toggle="modal" data-target="#ds_files">
-                                                                                    <i class="icon-stack2 mr-2"></i> 
-                                                                                    <span class="hidden-xs">Danh sách tài liệu</span>
+                                                                                <button type="button" class="btn btn-light" data-toggle="modal" data-target="#ds_files">
+                                                                                <i class="far fa-folder-open mr-1"></i>
+                                                                                <span class="hidden-xs">Danh sách tài liệu</span>
                                                                                 </button>
                                                                             </div>
                                                                         </div>

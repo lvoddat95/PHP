@@ -162,7 +162,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-light" data-dismiss="modal">Đóng</button>
-                    <a href=":;" class="btn bg-primary btn-labeled btn-labeled-left mr-1"><b><i class="icon-floppy-disk"></i></b> Lưu</a>
+                    <a href=":;" class="btn bg-primary btn-labeled btn-labeled-left mr-1"><b><i class="fa fa-save"></i></b> Lưu</a>
                 </div>
             </form>
         </div>

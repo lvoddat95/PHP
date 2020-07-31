@@ -13,7 +13,7 @@
                             Thông tin chung 
                             <div class="">
                                 <button type="button" class="btn btn-light" data-dismiss="modal">Đóng</button>
-                                <button type="submit" class="btn bg-primary"><i class="icon-floppy-disk mr-1"></i>Lưu</button>
+                                <button type="submit" class="btn bg-primary"><i class="fa fa-save mr-1"></i>Lưu</button>
                             </div>
                         </legend>
                         <div class="row ">
@@ -180,7 +180,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-light" data-dismiss="modal">Đóng</button>
-                    <button type="submit" class="btn bg-primary"><i class="icon-floppy-disk mr-1"></i>Lưu</button>
+                    <button type="submit" class="btn bg-primary"><i class="fa fa-save mr-1"></i>Lưu</button>
                 </div>
             </form>
         </div>

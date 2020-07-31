@@ -1,7 +1,8 @@
 <div class="form-group">
     <label class="font-weight-semibold">Tháng SX/ĐK lần đầu: <span class="text-danger">*</span></label>
     <select class="form-control required" select2 name="thang_sx_dk" >
-        <option id="1" name="1" value="1" selected="">1</option>
+        <option value="">--- Chọn tháng ---</option>
+        <option id="1" name="1" value="1">1</option>
         <option id="2" name="2" value="2">2</option>
         <option id="3" name="3" value="3">3</option>
         <option id="4" name="4" value="4">4</option>

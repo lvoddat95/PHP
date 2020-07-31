@@ -374,14 +374,13 @@
     font-family: "Font Awesome 5 Pro";
     display: inline-block;
     font-size: 10px;
-    font-weight: 300;
     vertical-align: middle;
     line-height: 1;
     position: absolute;
     top: 50%;
     transform: -webkit-translateY(-50%);
     transform: translateY(-50%);
-    right: 5px;
+    right: 10px;
     transition: -webkit-transform 0.25s ease-in-out;
     transition: transform 0.25s ease-in-out;
     transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;

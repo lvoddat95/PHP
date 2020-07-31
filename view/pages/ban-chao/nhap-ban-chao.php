@@ -56,12 +56,12 @@
                             </div>
                             
                             <a href="#" class="btn btn-labeled btn-labeled-left mr-2">
-                                <b><i class="icon-files-empty"></i></b>Lưu & Copy
+                                <b><i class="far fa-copy"></i></b>Lưu & Copy
                             </a>
                             <a href="#" class="btn btn-labeled btn-labeled-left mr-2">
                                 <b><i class="icon-file-plus"></i></b> Lưu & thêm mới
                             </a>
-                            <a href="javascript:;" class="btn bg-primary"><i class="icon-floppy-disk mr-1"></i> Lưu</a>
+                            <a href="javascript:;" class="btn bg-primary"><i class="fa fa-save mr-1"></i> Lưu</a>
                         </div>
                     </div>
 
@@ -1701,7 +1701,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-light" data-dismiss="modal">Đóng</button>
-                            <button type="submit" class="btn bg-primary"><i class="icon-floppy-disk mr-1"></i>Ghi</button>
+                            <button type="submit" class="btn bg-primary"><i class="fa fa-save mr-1"></i>Ghi</button>
                         </div>
                     </form>
                 </div>

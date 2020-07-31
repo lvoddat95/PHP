@@ -749,6 +749,8 @@ select[multiple] option+option, select[size] option+option {
     background: #eee;
     border-color: #eee !important;
     box-shadow: none !important;
+}
+.form-control:disabled {
     cursor: not-allowed;
 }
 

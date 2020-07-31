@@ -2,12 +2,12 @@
     <label>Tài liệu đính kèm: <span class="text-danger">*</span></label>
     <div class="p-button">
         <button class="btn btn-light btn-file mr-3">
-        <i class="icon-upload7 mr-2"></i>
+        <i class="far fa-upload mr-1"></i>
         <span class="hidden-xs">Tải lên tài liệu</span>
         <input type="file" class="file-input-preview">
         </button>
         <button type="button" class="btn btn-light" data-toggle="modal" data-target="#ds_files">
-        <i class="icon-stack2 mr-2"></i>
+        <i class="far fa-folder-open mr-1"></i>
         <span class="hidden-xs">Danh sách tài liệu</span>
         </button>
     </div>
