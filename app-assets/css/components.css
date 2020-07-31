@@ -4525,7 +4525,6 @@ body.trumbowyg-body-fullscreen {
  * ---------------------------------------------------------------------------- */
 
 .dataTable {
-    table-layout: fixed;
     margin: 0;
     max-width: none;
 }
@@ -4877,11 +4876,12 @@ body.trumbowyg-body-fullscreen {
         display: block;
         text-align: center;
     }
-    .dataTable {
-        table-layout: fixed;
+}
+@media (max-width: 1200px) {
+    .datatable {
+        /*table-layout: fixed;*/
     }
 }
-
 /* ------------------------------------------------------------------------------
  *
  *  # Columns reorder

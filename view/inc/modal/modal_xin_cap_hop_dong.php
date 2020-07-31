@@ -161,7 +161,7 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-light" data-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-light" data-dismiss="modal"> <i class="far fa-times mr-1"></i>Đóng</button>
                     <a href=":;" class="btn bg-primary btn-labeled btn-labeled-left mr-1"><b><i class="fa fa-save"></i></b> Lưu</a>
                 </div>
             </form>

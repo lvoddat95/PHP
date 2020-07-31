@@ -214,15 +214,15 @@
                                     >
                                         <thead class="thead-light">
                                             <tr>
-                                                <th width="30px" data-orderable="false" class="text-center all"><input type="checkbox" id="input-chk-all"></th>
+                                                <th class="all text-center w1px" data-orderable="false"><input type="checkbox" id="input-chk-all"></th>
                                                 <th class="all">Số bản chào</th>
-                                                <th width="100px" class="min-tablet">Ngày cấp</th>
-                                                <th width="100px" class="desktop">Loại hình</th>
-                                                <th width="30%" class="min-tablet">Tên khách hàng</td>
-                                                <th class="desktop">Cán bộ khai thác</th>
-                                                <th class="desktop">Cán bộ cấp đơn</th>
-                                                <th width="110px" class="all">Trạng thái</th>
-                                                <th width="30px" class="text-center min-tablet" data-orderable="false">#</th>
+                                                <th class="min-tablet">Ngày cấp</th>
+                                                <th class="desktop">Loại hình</th>
+                                                <th class="min-tablet w30p">Tên khách hàng</td>
+                                                <th class="desktop">Số tiền BH</th>
+                                                <th class="desktop">Phí bảo hiểm</th>
+                                                <th class="all w10p">Trạng thái</th>
+                                                <th class="text-center min-tablet w1p" data-orderable="false">#</th>
                                             </tr>
                                         </thead>
                                         <tbody>

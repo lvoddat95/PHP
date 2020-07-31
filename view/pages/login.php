@@ -22,14 +22,14 @@
                                 <div class="form-group form-group-feedback form-group-feedback-left">
                                     <input type="text" class="form-control form-control-lg border-2" placeholder="Tài khoản">
                                     <div class="form-control-feedback">
-                                        <i class="icon-user text-primary"></i>
+                                        <i class="fad fa-user text-primary"></i>
                                     </div>
                                 </div>
 
                                 <div class="form-group form-group-feedback form-group-feedback-left">
                                     <input type="password" class="form-control form-control-lg border-2" placeholder="Mật khẩu">
                                     <div class="form-control-feedback">
-                                        <i class="icon-lock2 text-primary"></i>
+                                        <i class="fad fa-lock text-primary"></i>
                                     </div>
                                 </div>
 

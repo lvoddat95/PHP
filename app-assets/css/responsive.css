@@ -26,15 +26,9 @@
 
 
 @media only screen and (max-width: 1217px) {
-    .dataTable thead th[desktop-10]{
-        width: 10%;
-    }
     
 }
 @media only screen and (max-width: 1009px) {
-    .dataTable thead th[tablet-10]{
-        width: 10%;
-    }
 }
 
 

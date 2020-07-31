@@ -6,12 +6,12 @@
         data-searching="false" >
         <thead class="thead-light">
             <tr>
-                <th width="10%"><b>Lần</b></th>
-                <th width="20%"><b>Ngày thanh toán</b></th>
-                <th width="25%" class="desktop"><b>Phí BH(có VAT)</b></th>
-                <th width="25%" class="desktop"><b>Thành tiền VAT</b></th>
-                <th width="25%" class="desktop"><b>Phí BH(chưa VAT) </b></th>
-                <th width="70px"></th>
+                <th class="w10p"><b>Lần</b></th>
+                <th class="w20p"><b>Ngày thanh toán</b></th>
+                <th class="desktop w25p"><b>Phí BH(có VAT)</b></th>
+                <th class="desktop w25p"><b>Thành tiền VAT</b></th>
+                <th class="desktop w25p"><b>Phí BH(chưa VAT) </b></th>
+                <th class="w5p"></th>
             </tr>
         </thead>
         <tbody data-repeater-list="so-lan-thanh-toan">

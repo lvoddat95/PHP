@@ -1694,10 +1694,10 @@ var App = function () {
                 },
                 breakpoints: [
                     {name: 'desktop', width: Infinity},
-                    {name: 'tablet-l', width: 1200},
-                    {name: 'tablet-p', width: 992},
-                    {name: 'mobile-l', width: 576},
-                    {name: 'mobile-p', width: 320}
+                    {name: 'tablet-l', width: 1183},
+                    {name: 'tablet-p', width: 975},
+                    {name: 'mobile-l', width: 559},
+                    {name: 'mobile-p', width: 303}
                 ]
             },
             columnDefs: [
@@ -1752,7 +1752,7 @@ var App = function () {
            var v_th = $(this).find('th').eq(0);
            var v_td = $(this).find('td').eq(0);
            if (!v_th.hasClass('cell')) {
-                v_th.before('<th class="cell" width="30px"></th>');
+                v_th.before('<th class="cell w1p"></th>');
             }
             if (!v_td.hasClass('cell')) {
                 v_td.before('<td class="cell"></td>');
