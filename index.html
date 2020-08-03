@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="robots" content="noindex, nofollow" />
+        <title>Form wizard (using tabs) - Bootsnipp.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+        <style type="text/css">
+            /* ------------------------------------------------------------------------------
+			*
+			*  # Steps wizard
+			*
+			*  Styles for steps.min.js - An all-in-one wizard plugin that is extremely flexible, compact and feature-rich
+			*
+			* ---------------------------------------------------------------------------- */
+
+            .wizard {
+                width: 100%;
+            }
+
+            .wizard > .steps .current-info,
+            .wizard > .content > .title {
+                display: none;
+            }
+
+            .wizard > .content {
+                position: relative;
+                width: auto;
+                padding: 0;
+            }
+
+            .wizard > .content > .body {
+                padding: 0 1.25rem;
+            }
+
+            .wizard > .content > iframe {
+                border: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .wizard > .steps {
+                position: relative;
+                display: block;
+                width: 100%;
+            }
+
+            .wizard > .steps > ul {
+                display: table;
+                width: 100%;
+                table-layout: fixed;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            .wizard > .steps > ul > li {
+                display: table-cell;
+                width: auto;
+                vertical-align: top;
+                text-align: center;
+                position: relative;
+            }
+
+            .wizard > .steps > ul > li a {
+                position: relative;
+                padding-top: 35px;
+                margin: 30px 0;
+                display: block;
+                outline: 0;
+                color: #999;
+            }
+
+            .wizard > .steps > ul > li:before,
+            .wizard > .steps > ul > li:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 45px;
+                width: 50%;
+                height: 2px;
+                background-color: #1c3faa;
+                z-index: 1;
+            }
+
+            .wizard > .steps > ul > li:before {
+                left: 0;
+            }
+
+            .wizard > .steps > ul > li:after {
+                right: 0;
+            }
+
+            .wizard > .steps > ul > li:first-child:before,
+            .wizard > .steps > ul > li:last-child:after {
+                content: none;
+            }
+
+            .wizard > .steps > ul > li.current:after,
+            .wizard > .steps > ul > li.current ~ li:before,
+            .wizard > .steps > ul > li.current ~ li:after {
+                background-color: #eee;
+            }
+
+            .wizard > .steps > ul > li.current > a {
+                color: #333;
+                cursor: default;
+            }
+
+            .wizard > .steps > ul > li.current .number {
+                font-size: 0;
+                border-color: #1c3faa;
+                background-color: #fff;
+                color: #1c3faa;
+            }
+
+            .wizard > .steps > ul > li.current .number:after {
+                content: "";
+                font-family: "icomoon";
+                display: inline-block;
+                font-size: 12px;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                transition: all ease-in-out 0.15s;
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                .wizard > .steps > ul > li.current .number:after {
+                    transition: none;
+                }
+            }
+
+            .wizard > .steps > ul > li.disabled a {
+                cursor: default;
+            }
+
+            .wizard > .steps > ul > li.done a,
+            .wizard > .steps > ul > li.done a:hover,
+            .wizard > .steps > ul > li.done a:focus {
+                color: #999;
+            }
+
+            .wizard > .steps > ul > li.done .number {
+                font-size: 0;
+                background-color: #1c3faa;
+                border-color: #1c3faa;
+                color: #fff;
+            }
+
+            .wizard > .steps > ul > li.done .number:after {
+                content: "";
+                font-family: "icomoon";
+                display: inline-block;
+                font-size: 1rem;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                transition: all ease-in-out 0.15s;
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                .wizard > .steps > ul > li.done .number:after {
+                    transition: none;
+                }
+            }
+
+            .wizard > .steps > ul > li.error .number {
+                border-color: #f44336;
+                color: #f44336;
+            }
+
+            .card > .card-header:not([class*="bg-"]) > .wizard > .steps > ul {
+                border-top: 1px solid rgba(0, 0, 0, 0.125);
+            }
+
+            @media (max-width: 991.98px) {
+            }
+
+            @media (max-width: 767.98px) {
+                .wizard > .steps > ul > li {
+                    width: 100%;
+                }
+                .wizard > .steps > ul > li.current:after {
+                    background-color: #1c3faa;
+                }
+            }
+
+            .wizard > .steps .number {
+                background-color: #fff;
+                color: #ccc;
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                margin-left: -1.1875rem;
+                border: 2px solid #eee;
+                z-index: 2;
+                text-align: center;
+                width: 30px;
+                height: 30px;
+                line-height: 26px;
+                border-radius: 50%;
+            }
+
+            .wizard > .actions {
+                position: relative;
+                text-align: right;
+                padding: 15px;
+            }
+
+            .wizard > .actions > ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .wizard > .actions > ul::after {
+                display: block;
+                clear: both;
+                content: "";
+            }
+
+            .wizard > .actions > ul > li {
+                display: inline-block;
+            }
+
+            .wizard > .actions > ul > li + li {
+                margin-left: 1.25rem;
+            }
+
+            .wizard > .actions > ul {
+                float: right;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .wizard > .actions > ul:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .wizard > .actions > ul > li {
+                float: left;
+            }
+
+            .wizard > .actions > ul > li + li {
+                margin-left: 10px;
+            }
+
+            .wizard > .actions > ul > li > a {
+                background: #1c3faa;
+                color: #fff;
+                display: block;
+                padding: 7px 12px;
+                border-radius: 0.375rem;
+                border: 1px solid transparent;
+            }
+
+            .wizard > .actions > ul > li > a:hover {
+                -webkit-box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.05) inset;
+                box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.05) inset;
+            }
+
+            .wizard > .actions > ul > li > a:focus {
+                -webkit-box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.05) inset;
+                box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.05) inset;
+            }
+
+            .wizard > .actions > ul > li > a:active {
+                -webkit-box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.1) inset;
+                box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.1) inset;
+            }
+
+            .wizard > .actions > ul > li > a[href="#previous"] {
+                background-color: #fcfcfc;
+                color: #333;
+                border: 1px solid #ddd;
+            }
+
+            .wizard > .actions > ul > li > a[href="#previous"]:hover {
+                -webkit-box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.02) inset;
+                box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.02) inset;
+            }
+
+            .wizard > .actions > ul > li > a[href="#previous"]:focus {
+                -webkit-box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.02) inset;
+                box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.02) inset;
+            }
+
+            .wizard > .actions > ul > li > a[href="#previous"]:active {
+                -webkit-box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.04) inset;
+                box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.04) inset;
+            }
+
+            .wizard > .actions > ul > li.disabled > a {
+                color: #718096;
+                cursor: no-drop;
+            }
+
+            .wizard > .actions > ul > li.disabled > a:hover {
+                color: #718096;
+            }
+
+            .wizard > .actions > ul > li.disabled > a:focus {
+                color: #718096;
+            }
+
+            .wizard > .actions > ul > li.disabled > a[href="#previous"] {
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+
+            .wizard > .actions > ul > li.disabled > a[href="#previous"]:hover {
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+
+            .wizard > .actions > ul > li.disabled > a[href="#previous"]:focus {
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="https://bhhk.herokuapp.com/app-assets/vendors/js/form/jquery.validate.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <section class="steps-validation">
+                    <div class="wizard ">
+
+                        <div class="steps clearfix">
+						    <ul class="nav nav-tabs" role="tablist">
+						        <li role="presentation" class="active">
+						            <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab">
+					            		<span class="number">1</span> Thông tin chung
+					            	</a>
+						        </li>
+						        <li role="presentation" class="disabled">
+						            <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab">
+						            	<span class="number">2</span> Trung gian bảo hiểm
+						            </a>
+						        </li>
+						        <li role="presentation" class="disabled">
+						            <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab">
+						            	<span class="number">3</span> Đối tượng bảo hiểm
+						            </a>
+						        </li>
+						        <li role="presentation" class="disabled">
+						            <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab">
+						            	<span class="number">4</span> Phạm vi bảo hiểm
+						            </a>
+						        </li>
+						    </ul>
+						</div>
+
+                        <form role="form">
+                            <div class="tab-content">
+                                <div class="tab-pane active" role="tabpanel" id="step1">
+                                    <h3>Step 1</h3>
+                                    <div class="form-group row">
+										<label class="col-form-label col-lg-3">Basic text input <span class="text-danger">*</span></label>
+										<div class="col-lg-9">
+											<input type="text" id="basic" name="basic" class="form-control" required="" placeholder="Text input validation" aria-invalid="true">
+										</div>
+									</div>
+                                </div>
+                                <div class="tab-pane" role="tabpanel" id="step2">
+                                    <h3>Step 2</h3>
+                                </div>
+                                <div class="tab-pane" role="tabpanel" id="step3">
+                                    <h3>Step 3</h3>
+                                </div>
+                                <div class="tab-pane" role="tabpanel" id="step4">
+                                    <h3>Step 4</h3>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+
+                            
+                            
+                        </form>
+                        <div class="actions clearfix">
+						    <ul role="menu" aria-label="Phân trang">
+						        <li class="disabled" aria-disabled="true">
+						            <button type="button" class="btn btn-default prev-step">Quay lại</button>
+						        </li>
+						        <li aria-hidden="false" aria-disabled="false" class="" style="">
+						            <button type="button" class="btn btn-primary btn-info-full next-step">Tiếp theo</button>
+						        </li>
+						        <li aria-hidden="true" style="display: none;">
+						            <button type="submit" class="btn btn-primary btn-info-full next-step"><i class="icon-floppy-disk mr-1"></i> Cập nhập</button>
+						        </li>
+						    </ul>
+						</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+            	// Initialize validation
+		        $('.steps-validation').validate({
+		            rules: {
+		                basic: "required",
+		            },
+		            messages: {
+		                basic: "Vui lòng nhập basic",
+		            }
+		        });
+                //Initialize tooltips
+                $(".nav-tabs > li a[title]").tooltip();
+
+                //Wizard
+                $('a[data-toggle="tab"]').on("show.bs.tab", function (e) {
+                    var $target = $(e.target);
+                    if ($target.parent().hasClass("disabled")) {
+                        return false;
+                    }
+                });
+                $(".next-step").click(function (e) {
+                    var $active = $(".wizard .nav-tabs li.active");
+                    $active.next().removeClass("disabled");
+                    nextTab($active);
+                });
+                $(".prev-step").click(function (e) {
+                    var $active = $(".wizard .nav-tabs li.active");
+                    prevTab($active);
+                });
+            });
+            function nextTab(elem) {
+                $(elem).next().find('a[data-toggle="tab"]').click();
+            }
+            function prevTab(elem) {
+                $(elem).prev().find('a[data-toggle="tab"]').click();
+            }
+        </script>
+    </body>
+</html>

@@ -478,7 +478,7 @@
         display: none;
     }
     .input-don .input-group-append > .btn {
-        max-width: 80px;
+        max-width: 120px;
         font-size: 9px;
         padding: 0px 5px;
         line-height: normal;

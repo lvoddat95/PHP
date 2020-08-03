@@ -18,7 +18,7 @@
 	<script src="<?php echo ASSET_ROOT; ?>/vendors/js/form/jquery.steps.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/form/jquery.validate.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/datatable/datatables.min.js"></script>
-    <script src="<?php echo ASSET_ROOT; ?>/vendors/js/datatable/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.5/js/dataTables.responsive.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/datatable/dataTables.buttons.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/datatable/buttons.flash.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/datatable/jszip.min.js"></script>

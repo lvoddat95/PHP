@@ -276,7 +276,7 @@
                                         </div>
                                     </div>
                                     <div class="card-body">
-                                        <table class="table-list table table-bordered table-hover datatable" 
+                                        <table class="table table-bordered table-hover datatable" 
                                             data-paging="true"
                                             data-info="true"
                                             data-ordering="true"
@@ -285,15 +285,15 @@
                                         >
                                             <thead class="thead-light">
                                                 <tr>
-                                                    <th class="all text-center w1px" data-orderable="false"><input type="checkbox" id="input-chk-all"></th>
-                                                    <th class="all">Số đơn</th>
-                                                    <th class="min-tablet">Ngày cấp</th>
-                                                    <th class="desktop">Loại hình</th>
-                                                    <th class="min-tablet w30p">Tên khách hàng</td>
-                                                    <th class="desktop">Số tiền BH</th>
-                                                    <th class="desktop">Phí bảo hiểm</th>
-                                                    <th class="all w10p">Trạng thái</th>
-                                                    <th class="text-center min-tablet w1p" data-orderable="false">#</th>
+                                                    <th data-orderable="false"><input type="checkbox" id="input-chk-all"></th>
+                                                    <th >Số đơn</th>
+                                                    <th >Ngày cấp</th>
+                                                    <th >Loại hình</th>
+                                                    <th >Tên khách hàng</td>
+                                                    <th >Số tiền BH</th>
+                                                    <th >Phí bảo hiểm</th>
+                                                    <th >Trạng thái</th>
+                                                    <th data-orderable="false">#</th>
                                                 </tr>
                                             </thead>
                                             <tbody>

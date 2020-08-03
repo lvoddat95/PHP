@@ -4128,6 +4128,8 @@ a.badge[class*=bg-]:not(.bg-transparent):not(.bg-white):not(.bg-light):hover, a.
 	border-radius: 6px;
 }
 .modal-footer {
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
     padding: 12px 15px;
 }
 

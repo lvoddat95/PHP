@@ -143,6 +143,16 @@
                                                             <!-- Step 2 -->
                                                             <h6>Trung gian bảo hiểm</h6>
                                                             <?php inc('template/2_trung_gian_bao_hiem/2_trung_gian_bao_hiem.php'); ?>
+
+                                                            <!-- Step 3 -->
+                                                            <h6>Đối tượng bảo hiểm</h6>
+                                                            <fieldset>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <?php inc('template/3_doi_tuong_bao_hiem/PER/so_nguoi_duoc_bao_hiem.php'); ?>
+                                                                    </div>
+                                                                </div>
+                                                            </fieldset>
                                                             
                                                             <!-- Step 4 -->
                                                             <h6>Phạm vi bảo hiểm</h6>

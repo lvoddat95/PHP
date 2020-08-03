@@ -8,9 +8,9 @@
             <tr>
                 <th class="w10p"><b>Lần</b></th>
                 <th class="w20p"><b>Ngày thanh toán</b></th>
-                <th class="desktop w25p"><b>Phí BH(có VAT)</b></th>
-                <th class="desktop w25p"><b>Thành tiền VAT</b></th>
-                <th class="desktop w25p"><b>Phí BH(chưa VAT) </b></th>
+                <th class=" w25p"><b>Phí BH(có VAT)</b></th>
+                <th class=" w25p"><b>Thành tiền VAT</b></th>
+                <th class=" w25p"><b>Phí BH(chưa VAT) </b></th>
                 <th class="w5p"></th>
             </tr>
         </thead>
