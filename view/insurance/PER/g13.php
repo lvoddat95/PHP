@@ -65,17 +65,17 @@
                                                                         </a>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="#step2" data-toggle="tab">
+                                                                        <a href="#step2" class="disabled" data-toggle="tab">
                                                                             <span class="number">2</span> Trung gian bảo hiểm
                                                                         </a>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="#step3" data-toggle="tab">
+                                                                        <a href="#step3" class="disabled" data-toggle="tab">
                                                                             <span class="number">3</span> Đối tượng bảo hiểm
                                                                         </a>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="#step4" data-toggle="tab">
+                                                                        <a href="#step4" class="disabled" data-toggle="tab">
                                                                             <span class="number">4</span> Phạm vi bảo hiểm
                                                                         </a>
                                                                     </li>

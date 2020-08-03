@@ -1587,41 +1587,32 @@ var App = function () {
         });
 
         //Wizard
-        $('.wizard > .steps > ul > li a[data-toggle="tab"]').on("show.bs.tab", function (e) {
+        $('.wizard .nav-tabs li > a').on("show.bs.tab", function (e) {
             var $target = $(e.target);
             if ($target.parent().hasClass("disabled")) {
                 return false;
             }
         });
+
+        $('.next-step').on('click', function(e) {
+            e.preventDefault();
+            
+            var $active = $(".wizard .nav-tabs li > .active");
+            if (!form.valid()) {
+                return false;
+            }
+            $active.parent().next().find('a').removeClass("disabled").click();
+        })
         $('.prev-step').on('click', function(e) {
             e.preventDefault();
-            console.log($('.wizard > .steps > ul > li > .active').parent().prev().find('a').attr('id'));
-            $('#' + $('.wizard > .steps > ul > li > .active').parent().prev().find('a').attr('id')).tab('show')
+
+            var $active = $(".wizard .nav-tabs li > .active");
+            if (!form.valid()) {
+                return false;
+            }
+            $active.parent().prev().find('a').click();
         })
-        $('.next-step').on('click', function(e) {
-            e.preventDefault()
-            console.log($('.wizard > .steps > ul > li > .active').parent().next().find('a').attr('id'));
-            $('#' + $('.wizard > .steps > ul > li > .active').parent().next().find('a').attr('id')).tab('show')
-        })
-        // $(".next-step").click(function (e) {
-        //     var $active = $(".wizard .nav-tabs li.active");
 
-        //     if (!form.valid()) {
-        //         return false;
-        //     }
-
-        //     console.log($active.next());
-
-        //     $active.next().removeClass("disabled");
-        //     $($active).next().find('a[data-toggle="tab"]').click();
-        // });
-        // $(".prev-step").click(function (e) {
-        //     if (!form.valid()) {
-        //         return false;
-        //     }
-        //     var $active = $(".wizard .nav-tabs li.active");
-        //     $($active).prev().find('a[data-toggle="tab"]').click();
-        // });
     };
 
 
@@ -1828,7 +1819,14 @@ var _component_datatable = function(p_table = '') {
         $($.fn.dataTable.tables(true)).DataTable()
            .columns.adjust()
            .responsive.recalc();
-     });
+    });
+
+    $("a[data-toggle=\"tab\"]").on("shown.bs.tab", function (e) {
+      console.log( 'show tab' );
+        $($.fn.dataTable.tables(true)).DataTable()
+          .columns.adjust()
+          .responsive.recalc();
+    });
   
 };
 
