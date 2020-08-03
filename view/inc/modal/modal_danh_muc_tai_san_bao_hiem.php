@@ -13,7 +13,7 @@
                     <div class="row mb-3 align-items-center">
                         <div class="col-sm-4">
                             <button class="btn btn-light btn-file mr-3">
-                                <i class="icon-upload7 mr-2"></i> 
+                                <i class="far fa-upload mr-2"></i> 
                                 <span class="hidden-xs">Import file</span>
                                 <input type="file" class="file-input-preview">
                             </button>
