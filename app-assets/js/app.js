@@ -1496,7 +1496,7 @@ var App = function () {
         }
 
         // Show form
-        var form = $('.steps-validation').show();
+        var step_form = $('.steps-validation').show();
 
         // Initialize wizard
         $('.steps-validation').steps({
@@ -1546,7 +1546,7 @@ var App = function () {
 
 
         // Initialize validation
-        $('.steps-validation').validate({
+        var form = $('.form-validation').validate({
             ignore: 'input[type=hidden], .select2-search__field', // ignore hidden fields
             errorClass: 'validation-invalid-label',
             highlight: function(element, errorClass) {
@@ -1585,6 +1585,43 @@ var App = function () {
                 }
             }
         });
+
+        //Wizard
+        $('.wizard > .steps > ul > li a[data-toggle="tab"]').on("show.bs.tab", function (e) {
+            var $target = $(e.target);
+            if ($target.parent().hasClass("disabled")) {
+                return false;
+            }
+        });
+        $('.prev-step').on('click', function(e) {
+            e.preventDefault();
+            console.log($('.wizard > .steps > ul > li > .active').parent().prev().find('a').attr('id'));
+            $('#' + $('.wizard > .steps > ul > li > .active').parent().prev().find('a').attr('id')).tab('show')
+        })
+        $('.next-step').on('click', function(e) {
+            e.preventDefault()
+            console.log($('.wizard > .steps > ul > li > .active').parent().next().find('a').attr('id'));
+            $('#' + $('.wizard > .steps > ul > li > .active').parent().next().find('a').attr('id')).tab('show')
+        })
+        // $(".next-step").click(function (e) {
+        //     var $active = $(".wizard .nav-tabs li.active");
+
+        //     if (!form.valid()) {
+        //         return false;
+        //     }
+
+        //     console.log($active.next());
+
+        //     $active.next().removeClass("disabled");
+        //     $($active).next().find('a[data-toggle="tab"]').click();
+        // });
+        // $(".prev-step").click(function (e) {
+        //     if (!form.valid()) {
+        //         return false;
+        //     }
+        //     var $active = $(".wizard .nav-tabs li.active");
+        //     $($active).prev().find('a[data-toggle="tab"]').click();
+        // });
     };
 
 

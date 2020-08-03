@@ -322,9 +322,9 @@
                 box-shadow: none;
             }
         </style>
-        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-        <script src="https://bhhk.herokuapp.com/app-assets/vendors/js/form/jquery.validate.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
     </head>
     <body>
         <div class="container">
@@ -335,29 +335,29 @@
                         <div class="steps clearfix">
 						    <ul class="nav nav-tabs" role="tablist">
 						        <li role="presentation" class="active">
-						            <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab">
+						            <a href="#step1" data-toggle="tab">
 					            		<span class="number">1</span> Thông tin chung
 					            	</a>
 						        </li>
 						        <li role="presentation" class="disabled">
-						            <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab">
+						            <a href="#step2" data-toggle="tab">
 						            	<span class="number">2</span> Trung gian bảo hiểm
 						            </a>
 						        </li>
 						        <li role="presentation" class="disabled">
-						            <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab">
+						            <a href="#step3" data-toggle="tab">
 						            	<span class="number">3</span> Đối tượng bảo hiểm
 						            </a>
 						        </li>
 						        <li role="presentation" class="disabled">
-						            <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab">
+						            <a href="#step4" data-toggle="tab">
 						            	<span class="number">4</span> Phạm vi bảo hiểm
 						            </a>
 						        </li>
 						    </ul>
 						</div>
 
-                        <form role="form">
+                        <form role="form" class="form-validate">
                             <div class="tab-content">
                                 <div class="tab-pane active" role="tabpanel" id="step1">
                                     <h3>Step 1</h3>
@@ -380,22 +380,24 @@
                                 <div class="clearfix"></div>
                             </div>
 
+                            <div class="actions clearfix">
+							    <ul role="menu" aria-label="Phân trang">
+							        <li class="disabled" aria-disabled="true">
+							            <button type="button" class="btn btn-default prev-step">Quay lại</button>
+							        </li>
+							        <li aria-hidden="false" aria-disabled="false" class="" style="">
+							            <button type="button" class="btn btn-primary btn-info-full next-step">Tiếp theo</button>
+							        </li>
+							        <li aria-hidden="true" style="display: block;">
+							            <button type="submit" class="btn btn-primary btn-info-full"><i class="icon-floppy-disk mr-1"></i> Cập nhập</button>
+							        </li>
+							    </ul>
+							</div>
+
                             
                             
                         </form>
-                        <div class="actions clearfix">
-						    <ul role="menu" aria-label="Phân trang">
-						        <li class="disabled" aria-disabled="true">
-						            <button type="button" class="btn btn-default prev-step">Quay lại</button>
-						        </li>
-						        <li aria-hidden="false" aria-disabled="false" class="" style="">
-						            <button type="button" class="btn btn-primary btn-info-full next-step">Tiếp theo</button>
-						        </li>
-						        <li aria-hidden="true" style="display: none;">
-						            <button type="submit" class="btn btn-primary btn-info-full next-step"><i class="icon-floppy-disk mr-1"></i> Cập nhập</button>
-						        </li>
-						    </ul>
-						</div>
+                        
                     </div>
                 </section>
             </div>
@@ -404,19 +406,128 @@
             $(document).ready(function () {
 
             	// Initialize validation
-		        $('.steps-validation').validate({
+            	var form = $('.form-validate');
+		       	form.validate({
+		            ignore: 'input[type=hidden], .select2-search__field', // ignore hidden fields
+		            errorClass: 'validation-invalid-label',
+		            successClass: 'validation-valid-label',
+		            validClass: 'validation-valid-label',
+		            highlight: function(element, errorClass) {
+		                $(element).removeClass(errorClass);
+		            },
+		            unhighlight: function(element, errorClass) {
+		                $(element).removeClass(errorClass);
+		            },
+		            success: function(label) {
+		                label.addClass('validation-valid-label').text('Success.'); // remove to hide Success message
+		            },
+
+		            // Different components require proper error label placement
+		            errorPlacement: function(error, element) {
+
+		                // Unstyled checkboxes, radios
+		                if (element.parents().hasClass('form-check')) {
+		                    error.appendTo( element.parents('.form-check').parent() );
+		                }
+
+		                // Input with icons and Select2
+		                else if (element.parents().hasClass('form-group-feedback') || element.hasClass('select2-hidden-accessible')) {
+		                    error.appendTo( element.parent() );
+		                }
+
+		                // Input group, styled file input
+		                else if (element.parent().is('.uniform-uploader, .uniform-select') || element.parents().hasClass('input-group')) {
+		                    error.appendTo( element.parent().parent() );
+		                }
+
+		                // Other elements
+		                else {
+		                    error.insertAfter(element);
+		                }
+		            },
 		            rules: {
-		                basic: "required",
+		                password: {
+		                    minlength: 5
+		                },
+		                repeat_password: {
+		                    equalTo: '#password'
+		                },
+		                email: {
+		                    email: true
+		                },
+		                repeat_email: {
+		                    equalTo: '#email'
+		                },
+		                minimum_characters: {
+		                    minlength: 10
+		                },
+		                maximum_characters: {
+		                    maxlength: 10
+		                },
+		                minimum_number: {
+		                    min: 10
+		                },
+		                maximum_number: {
+		                    max: 10
+		                },
+		                number_range: {
+		                    range: [10, 20]
+		                },
+		                url: {
+		                    url: true
+		                },
+		                date: {
+		                    date: true
+		                },
+		                date_iso: {
+		                    dateISO: true
+		                },
+		                numbers: {
+		                    number: true
+		                },
+		                digits: {
+		                    digits: true
+		                },
+		                creditcard: {
+		                    creditcard: true
+		                },
+		                basic_checkbox: {
+		                    minlength: 2
+		                },
+		                styled_checkbox: {
+		                    minlength: 2
+		                },
+		                switchery_group: {
+		                    minlength: 2
+		                },
+		                switch_group: {
+		                    minlength: 2
+		                }
 		            },
 		            messages: {
-		                basic: "Vui lòng nhập basic",
+		                custom: {
+		                    required: 'This is a custom error message'
+		                },
+		                basic_checkbox: {
+		                    minlength: 'Please select at least {0} checkboxes'
+		                },
+		                styled_checkbox: {
+		                    minlength: 'Please select at least {0} checkboxes'
+		                },
+		                switchery_group: {
+		                    minlength: 'Please select at least {0} switches'
+		                },
+		                switch_group: {
+		                    minlength: 'Please select at least {0} switches'
+		                },
+		                agree: 'Please accept our policy'
 		            }
 		        });
                 //Initialize tooltips
                 $(".nav-tabs > li a[title]").tooltip();
 
                 //Wizard
-                $('a[data-toggle="tab"]').on("show.bs.tab", function (e) {
+                $('.wizard > .steps > ul > li a[data-toggle="tab"]').on("show.bs.tab", function (e) {
                     var $target = $(e.target);
                     if ($target.parent().hasClass("disabled")) {
                         return false;
@@ -424,20 +535,23 @@
                 });
                 $(".next-step").click(function (e) {
                     var $active = $(".wizard .nav-tabs li.active");
+
+                    if (!form.valid()) {
+						return false;
+                    }
+
                     $active.next().removeClass("disabled");
-                    nextTab($active);
+                    $($active).next().find('a[data-toggle="tab"]').click();
                 });
                 $(".prev-step").click(function (e) {
+                	if (!form.valid()) {
+						return false;
+                    }
                     var $active = $(".wizard .nav-tabs li.active");
-                    prevTab($active);
+                    $($active).prev().find('a[data-toggle="tab"]').click();
                 });
             });
-            function nextTab(elem) {
-                $(elem).next().find('a[data-toggle="tab"]').click();
-            }
-            function prevTab(elem) {
-                $(elem).prev().find('a[data-toggle="tab"]').click();
-            }
+           
         </script>
     </body>
 </html>
