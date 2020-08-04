@@ -1479,11 +1479,6 @@ var App = function () {
 
 
     var _component_steps_form = function() {
-        if (!$().steps) {
-            console.warn('Warning - steps.min.js is not loaded.');
-            return;
-        }
-
 
         //
         // Wizard with validation
@@ -1494,62 +1489,6 @@ var App = function () {
             console.warn('Warning - validate.min.js is not loaded.');
             return;
         }
-
-        // Show form
-        var step_form = $('.steps-validation').show();
-
-        // Initialize wizard
-        $('.steps-validation').steps({
-            headerTag: 'h6',
-            bodyTag: 'fieldset',
-            titleTemplate: '<span class="number">#index#</span> #title#',
-            labels: {
-                current: "Bước đầu:",
-                pagination: "Phân trang",
-                finish: "Kết thúc",
-                next: "Tiếp theo <i class='icon-arrow-right14' />",
-                previous: "<i class='icon-arrow-left13' /> Quay lại",
-                loading: "Loading ...",
-                finish: '<i class="icon-floppy-disk" /> Cập nhập'
-            },
-            transitionEffect: 'fade',
-            autoFocus: true,
-            // onStepChanging: function (event, currentIndex, newIndex) {
-
-            //     // Allways allow previous action even if the current form is not valid!
-            //     if (currentIndex > newIndex) {
-            //         return true;
-            //     }
-
-            //     // Needed in some cases if the user went back (clean up)
-            //     if (currentIndex < newIndex) {
-
-            //         // To remove error styles
-            //         form.find('.body:eq(' + newIndex + ') label.error').remove();
-            //         form.find('.body:eq(' + newIndex + ') .error').removeClass('error');
-            //     }
-
-            //     form.validate().settings.ignore = ':disabled,:hidden';
-            //     return form.valid();
-            // },
-            // onFinishing: function (event, currentIndex) {
-            //     form.validate().settings.ignore = ':disabled';
-            //     return form.valid();
-            // },
-            onFinished: function (event, currentIndex) {
-                if ($('#modal_form').length == 0 ) return;
-                var v_tr = $('#ban_chao_list tbody tr').length + 1;
-                $('#ban_chao_list tbody').append('<tr> <td class="text-center">'+v_tr+'</td><td>71C05150</td><td>Xe khác</td><td>2019</td><td>1,690,000</td><td>166,000</td> <td>1,856,000</td> <td align="center"><div class="list-icons"> <div class="dropdown"> <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a> <div class="dropdown-menu dropdown-menu-right"> <a class="dropdown-item" href="http://localhost/bhhk/view/pages/nhap-don.php"><i class="icon-file-plus mr-1 text-success"></i> Tạo mới đơn BH</a> <a class="dropdown-item" href="javascript:;" data-toggle="modal" data-target="#modal_form" title="Xem chi tiết"><i class="icon-file-eye mr-1 text-primary"></i> Xem chi tiết</a> <a class="dropdown-item" href="javascript:;" title="Xóa đối tượng" onclick="_xoa_dong(this);"><b><i class="icon-trash mr-1 text-danger"></i></b> Xóa đối tượng</a> </div> </div> </div></td> </tr>');
-                $('#modal_form').modal('hide');
-            },
-            onInit: function (event, currentIndex) {
-                $($.fn.dataTable.tables(true)).DataTable()
-          .columns.adjust()
-          .responsive.recalc();
-            }
-
-        });
-
 
         // Initialize validation
         var form = $('.form-validation').validate({
