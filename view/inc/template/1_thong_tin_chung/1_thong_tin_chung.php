@@ -1,4 +1,4 @@
-<fieldset>
+<fieldset class="tab-pane active show" id="step1">
     <div class="row">
         <div class="col-xl-3 col-lg-2 col-md-6">
             <?php inc('template/1_thong_tin_chung/kenh_khai_thac.php'); ?>
@@ -33,20 +33,6 @@
             <?php inc('template/1_thong_tin_chung/nguoi_thanh_toan_bao_hiem.php'); ?>
         </div>
         
-    </div>
-    <div class="row">
-        <div class="col-md-4">
-            <?php inc('template/1_thong_tin_chung/ten_chu_xe.php'); ?>
-        </div>
-        <div class="col-md-4">
-            <?php inc('template/1_thong_tin_chung/sdt_chu_xe.php'); ?>
-        </div>
-        <div class="col-md-4">
-            <?php inc('template/1_thong_tin_chung/so_cmt_chu_xe.php'); ?>
-        </div>
-        <div class="col-md-12">
-            <?php inc('template/1_thong_tin_chung/dia_chi_chu_xe.php'); ?>
-        </div>
     </div>
     <div class="row">
         <div class="col-md-3">

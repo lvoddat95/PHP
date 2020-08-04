@@ -1,4 +1,4 @@
-<fieldset>
+<fieldset class="tab-pane" id="step2">
     <div id="daili" class="row" >
         <div class="col-md-7">
             <?php inc('template/2_trung_gian_bao_hiem/dai_li.php'); ?>
