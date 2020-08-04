@@ -1672,9 +1672,14 @@ hr{
     opacity: .8;
 }
 
-.chat-header .cb-toggle>* {
+
+.cb-toggle-close{
     cursor: pointer;
-    font-weight: 600;
+}
+
+.cb-toggle-close:before{
+    content: "\f00d";
+    font-size: 18px;
 }
 
 .chat-body {

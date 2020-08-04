@@ -59,23 +59,23 @@
                                                         <div class="wizard">
                                                             <div class="steps clearfix">
                                                                 <ul class="nav nav-tabs" role="tablist">
-                                                                    <li>
-                                                                        <a href="#step1" class="active" data-toggle="tab">
+                                                                    <li class="current">
+                                                                        <a href="#step1" class="active show" data-toggle="tab">
                                                                             <span class="number">1</span> Thông tin chung
                                                                         </a>
                                                                     </li>
-                                                                    <li>
-                                                                        <a href="#step2" class="disabled" data-toggle="tab">
+                                                                    <li class="disabled">
+                                                                        <a href="#step2" data-toggle="tab">
                                                                             <span class="number">2</span> Trung gian bảo hiểm
                                                                         </a>
                                                                     </li>
-                                                                    <li>
-                                                                        <a href="#step3" class="disabled" data-toggle="tab">
+                                                                    <li class="disabled">
+                                                                        <a href="#step3" data-toggle="tab">
                                                                             <span class="number">3</span> Đối tượng bảo hiểm
                                                                         </a>
                                                                     </li>
-                                                                    <li>
-                                                                        <a href="#step4" class="disabled" data-toggle="tab">
+                                                                    <li class="disabled">
+                                                                        <a href="#step4" data-toggle="tab">
                                                                             <span class="number">4</span> Phạm vi bảo hiểm
                                                                         </a>
                                                                     </li>
@@ -84,7 +84,7 @@
                                                             <form action="#" class="form-validation clearfix">
                                                                 <!-- Bước 1 -->
                                                                 <div class="tab-content">
-                                                                    <fieldset class="tab-pane fade active show" role="tabpanel" id="step1">
+                                                                    <fieldset class="tab-pane active show" id="step1">
                                                                         <div class="row">
                                                                             <div class="col-md-4">
                                                                                 <?php inc('template/1_thong_tin_chung/kenh_khai_thac.php'); ?> 
@@ -166,12 +166,12 @@
                                                                     </fieldset>
 
                                                                     <!-- Step 2 -->
-                                                                    <fieldset class="tab-pane fade" role="tabpanel" id="step2">
+                                                                    <fieldset class="tab-pane" id="step2">
                                                                         <?php inc('template/2_trung_gian_bao_hiem/2_trung_gian_bao_hiem.php'); ?>
                                                                     </fieldset>
 
                                                                     <!-- Step 3 -->
-                                                                    <fieldset class="tab-pane fade" role="tabpanel" id="step3">
+                                                                    <fieldset class="tab-pane" id="step3">
                                                                         <div class="row">
                                                                             <div class="col-md-6">
                                                                                 <?php inc('template/3_doi_tuong_bao_hiem/PER/so_nguoi_duoc_bao_hiem.php'); ?>
@@ -225,8 +225,8 @@
                                                                             </table>
                                                                     </fieldset>
 
-                                                                     <!-- Step 4 -->
-                                                                    <fieldset class="tab-pane fade" role="tabpanel" id="step4">
+                                                                    <!-- Step 4 -->
+                                                                    <fieldset class="tab-pane" id="step4">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php'); ?>
@@ -387,18 +387,17 @@
                                                                         </div>
                                                                     </fieldset>
                                                                 </div>
-
                                                             </form>
                                                             <div class="actions clearfix">
-                                                                <ul role="menu" aria-label="Phân trang">
-                                                                    <li class="disabled" aria-disabled="true">
-                                                                        <button type="button" class="btn btn-default prev-step">Quay lại</button>
+                                                                <ul>
+                                                                    <li>
+                                                                        <button type="button" class="btn btn-default prev-step"><i class="far fa-chevron-double-left font9"></i> Quay lại</button>
                                                                     </li>
-                                                                    <li aria-hidden="false" aria-disabled="false" class="" style="">
-                                                                        <button type="button" class="btn btn-primary btn-info-full next-step">Tiếp theo</button>
+                                                                    <li>
+                                                                        <button type="button" class="btn bg-color next-step">Tiếp theo <i class="far fa-chevron-double-right font9"></i></button>
                                                                     </li>
-                                                                    <li aria-hidden="true" style="display: block;">
-                                                                        <button type="submit" class="btn btn-primary btn-info-full"><i class="icon-floppy-disk mr-1"></i> Cập nhập</button>
+                                                                    <li>
+                                                                        <button type="submit" class="btn bg-color submit-step d-none"><i class="icon-floppy-disk mr-1"></i> Cập nhập</button>
                                                                     </li>
                                                                 </ul>
                                                             </div>

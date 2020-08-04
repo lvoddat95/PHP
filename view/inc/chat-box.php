@@ -10,7 +10,7 @@
                 <span class="time">Hôm nay 09:56 AM </span>
             </div>
             <div class="cb-toggle">
-                <i class="cb-toggle-close linearicons-cross2"></i>
+                <i class="fal cb-toggle-close"></i>
             </div>
         </div>
         <div class="chat-body">

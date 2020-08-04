@@ -1541,7 +1541,13 @@ var App = function () {
                 var v_tr = $('#ban_chao_list tbody tr').length + 1;
                 $('#ban_chao_list tbody').append('<tr> <td class="text-center">'+v_tr+'</td><td>71C05150</td><td>Xe khác</td><td>2019</td><td>1,690,000</td><td>166,000</td> <td>1,856,000</td> <td align="center"><div class="list-icons"> <div class="dropdown"> <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a> <div class="dropdown-menu dropdown-menu-right"> <a class="dropdown-item" href="http://localhost/bhhk/view/pages/nhap-don.php"><i class="icon-file-plus mr-1 text-success"></i> Tạo mới đơn BH</a> <a class="dropdown-item" href="javascript:;" data-toggle="modal" data-target="#modal_form" title="Xem chi tiết"><i class="icon-file-eye mr-1 text-primary"></i> Xem chi tiết</a> <a class="dropdown-item" href="javascript:;" title="Xóa đối tượng" onclick="_xoa_dong(this);"><b><i class="icon-trash mr-1 text-danger"></i></b> Xóa đối tượng</a> </div> </div> </div></td> </tr>');
                 $('#modal_form').modal('hide');
+            },
+            onInit: function (event, currentIndex) {
+                $($.fn.dataTable.tables(true)).DataTable()
+          .columns.adjust()
+          .responsive.recalc();
             }
+
         });
 
 
@@ -1587,30 +1593,42 @@ var App = function () {
         });
 
         //Wizard
+        var li = $(".wizard .nav-tabs li");
         $('.wizard .nav-tabs li > a').on("show.bs.tab", function (e) {
             var $target = $(e.target);
-            if ($target.parent().hasClass("disabled")) {
+            if ($target.parent().hasClass("disabled") ) {
                 return false;
+            }else{
+                li.removeClass('current');
+                $target.parent().addClass('current');
+                $target.parent().parent().find('li:not(.disabled,.current)').addClass('done');
+            }
+            
+            if ( $target.parent().index() == li.length - 1 ) {
+                $('.actions').addClass('last');
+            }else{
+                $('.actions').removeClass('last');
             }
         });
 
+
         $('.next-step').on('click', function(e) {
             e.preventDefault();
-            
             var $active = $(".wizard .nav-tabs li > .active");
             if (!form.valid()) {
                 return false;
             }
-            $active.parent().next().find('a').removeClass("disabled").click();
+            $active.parent().next().removeClass("disabled").find('a').click();
         })
+
         $('.prev-step').on('click', function(e) {
             e.preventDefault();
-
             var $active = $(".wizard .nav-tabs li > .active");
             if (!form.valid()) {
                 return false;
             }
-            $active.parent().prev().find('a').click();
+            $active.parent().prev().removeClass("disabled").find('a').click();
+
         })
 
     };
@@ -1822,7 +1840,6 @@ var _component_datatable = function(p_table = '') {
     });
 
     $("a[data-toggle=\"tab\"]").on("shown.bs.tab", function (e) {
-      console.log( 'show tab' );
         $($.fn.dataTable.tables(true)).DataTable()
           .columns.adjust()
           .responsive.recalc();
