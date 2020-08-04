@@ -210,6 +210,7 @@
 	        </div>
 
 		</div>
+	</body>
 
 <?php include_once FOOTER; ?>
 
