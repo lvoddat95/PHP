@@ -34,11 +34,12 @@
 
                     <div class="page-title">
                         <div class="p-title">
-                            <p class="font-weight-semibold font-size-m mb-0"><i class="icon-certificate mr-2"></i>Danh sách khách hàng</p>
+                            <p class="font-weight-semibold font-size-m mb-0">Danh sách khách hàng</p>
                         </div>
                         <div class="p-button">
                             <a href="" class="btn mr-1"><i class="fa fa-reply mr-1"></i> Quay lại</a>
-                            <a href="<?php echo HTTP_PATH .'view/pages/nhap-khach-hang-don.php'; ?>" class="btn bg-primary btn-labeled btn-labeled-left mr-1"><b><i class="icon-plus2"></i></b> Thêm mới</a>
+                            <a href="" class="btn mr-1"><i class="fa fa-trash mr-1"></i> Xoá</a>
+                            <a href="<?php echo HTTP_PATH .'view/pages/nhap-khach-hang.php'; ?>" class="btn bg-primary btn-labeled btn-labeled-left mr-1"><b><i class="icon-plus2"></i></b> Thêm mới</a>
                         </div>
                     </div>
 

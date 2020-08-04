@@ -11,7 +11,7 @@
             </div>
             <form action="#">
                 <div class="modal-body">
-                    <fieldset class="">
+                    <fieldset>
                         <legend class="text-primary-800 font-weight-semibold d-flex align-items-end justify-content-between">
                             Thông tin chung 
                         </legend>
@@ -86,7 +86,7 @@
                         </div>
                     </fieldset>
 
-                    <fieldset class="mb-3">
+                    <fieldset>
                         <legend class="text-primary-800 font-weight-semibold">Thông tin kinh tế</legend>
                         <div class="row">
                             
