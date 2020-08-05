@@ -4632,7 +4632,7 @@ a.badge[class*=bg-]:not(.bg-transparent):not(.bg-white):not(.bg-light):hover, a.
 }
 
 .form-group{
-	margin-bottom: 12px;
+	margin-bottom: 0.625rem;
 }
 .input-group-append {
     margin-left: -2px;

@@ -8,11 +8,11 @@
                 <label>Hình thức thu phí của các công ty flower: <span class="text-danger">*</span></label>
                 <div>
                     <div class="form-check form-check-inline">
-                        <input type="radio" id="flower" class="mr-1" name="flower_name" >
+                        <input type="radio" id="flower" class="mr-1" name="radio" checked>
                         <label for="flower" class="form-check-label">Thu trực tiếp từ khách hàng</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input type="radio" id="flower2" class="mr-1" name="flower_name" >
+                        <input type="radio" id="flower2" class="mr-1" name="radio" >
                         <label for="flower2" class="form-check-label">Thu phí từ công ty bảo hiểm đứng đầu</label>
                     </div>
                 </div>

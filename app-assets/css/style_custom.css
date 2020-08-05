@@ -1115,12 +1115,12 @@ input[type=radio]:before {
 }
 
 input[type=radio]:checked {
-    border-color: #1C3FAA;
+    border-color: #4caf50;
 }
 
 input[type=radio]:checked:before {
     opacity: 1;
-    background-color: #1C3FAA;
+    background-color: #4caf50;
 }
 
 input[type=checkbox]:not(.switch) {
@@ -1156,12 +1156,8 @@ input[type=checkbox]:not(.switch):before {
 }
 
 input[type=checkbox]:not(.switch):checked {
-    --bg-opacity: 1;
-    background-color: #1C3FAA;
-    background-color: rgba(28, 63, 170, var(--bg-opacity));
-    --border-opacity: 1;
-    border-color: #1C3FAA;
-    border-color: rgba(28, 63, 170, var(--border-opacity));
+    background-color: #4caf50;
+    border-color: #4caf50;
 }
 
 input[type=checkbox]:not(.switch):checked:before {
@@ -1252,7 +1248,14 @@ hr{
 .form-group > label {
     font-weight: 500;
 }
-
+.col-form-label {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-bottom: 0;
+    font-size: inherit;
+    line-height: 18px;
+    text-align: right;
+}
 .btn-popover {
     outline: none !important;
     border: none;
