@@ -4,7 +4,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title font-weight-semibold ">Danh sách các khách hàng</h5>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <button type="button" class="btn btn-light" data-dismiss="modal"><i class="far fa-times mr-1"></i> Đóng</button>
             </div>
             <form action="#">
                 <div class="modal-body">
@@ -324,7 +324,6 @@
                         
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-light" data-dismiss="modal"><i class="far fa-times mr-1"></i>Đóng</button>
                     <button type="button" class="btn btn-light">– Xóa</button>
                     <button type="button" class="btn btn-light" data-toggle="modal" data-target="#cap_nhap_thong_tin_khach_hang">+ Thêm</button>
                     <a href="#" class="btn bg-primary btn-labeled btn-labeled-left mr-1"><b><i class="icon-checkmark4"></i></b> Chọn</a>

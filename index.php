@@ -210,8 +210,10 @@
         </div>
 
 	</div>
-	<?php include_once FOOTER; ?>
+	
 </body>
+
+<?php include_once FOOTER; ?>
 
 
 

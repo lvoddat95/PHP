@@ -4,14 +4,14 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title font-weight-semibold ">Thông tin hợp đồng xin cấp</h5>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <button type="button" class="btn btn-light" data-dismiss="modal"><i class="far fa-times mr-1"></i> Đóng</button>
             </div>
             <form action="#">
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="d-flex"><span style="width: 120px">- Ngày xin cấp:</span> 28/07/2020</div>
-                            <div class="d-flex"><span style="width: 120px">- Người xin cấp:</span> Lê Viết Đạt</div>
+                            <div class="d-flex"><span class="font-weight-semibold" style="width: 120px">- Ngày xin cấp:</span> 28/07/2020</div>
+                            <div class="d-flex"><span class="font-weight-semibold" style="width: 120px">- Người xin cấp:</span> Lê Viết Đạt</div>
                         </div>
                     </div>
                     <hr>

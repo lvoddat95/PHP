@@ -44,7 +44,8 @@
                                 <li><a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="nav-link"><span class="menu-title">Danh sách đơn</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/pages/nhap-don.php'; ?>" class="nav-link"><span class="menu-title">Nhập đơn</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/pages/xem-don.php'; ?>" class="nav-link"><span class="menu-title">Xem đơn</span></a></li>
-                                <li><a href="<?php echo HTTP_PATH .'view/pages/ban-chao/danh-sach-ban-chao.php'; ?>" class="nav-link"><span class="menu-title">Bản chào phí bảo hiểm</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/pages/ban-chao/danh-sach-ban-chao.php'; ?>" class="nav-link"><span class="menu-title">Bản chào</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/pages/don-cho-duyet.php'; ?>" class="nav-link"><span class="menu-title">Đơn chờ duyệt</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/pages/xin-cap-so-hop-dong.php'; ?>" class="nav-link"><span class="menu-title">Xin cấp số hợp đồng</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/pages/danh-sach-khach-hang.php'; ?>" class="nav-link"><span class="menu-title">Danh sách khách hàng</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/pages/login.php'; ?>" class="nav-link"><span class="menu-title">Trang Login</span></a></li>

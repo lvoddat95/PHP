@@ -271,8 +271,8 @@
                                                                                         <div class="c-item">
                                                                                             <div class="c-title">
                                                                                                 <span class="button-switch no-label">
-                                                                                                    <input type="checkbox" id="vcxe" class="switch cls_ckb" name="ckbchild1">
-                                                                                                    <label for="vcxe" data-off="Không" data-on="Có"></label>
+                                                                                                    <input type="checkbox" id="ckbchild1" class="switch cls_ckb">
+                                                                                                    <label for="ckbchild1" data-off="Không" data-on="Có"></label>
                                                                                                 </span>
                                                                                                 <a data-toggle="collapse" class="collapsed" href="#collapsible-item1">Vật chất xe</a>
                                                                                             </div>
@@ -565,16 +565,14 @@
                                                                                                             </tr>
                                                                                                         </tbody>
                                                                                                     </table>
-                                                                                                    
-                                                                                                    
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="c-item">
                                                                                             <div class="c-title">
                                                                                                 <span class="button-switch no-label">
-                                                                                                    <input type="checkbox" id="tndstn" class="switch cls_ckb" name="ckbchild2">
-                                                                                                    <label for="tndstn" data-off="Không" data-on="Có"></label>
+                                                                                                    <input type="checkbox" id="ckbchild2" class="switch cls_ckb">
+                                                                                                    <label for="ckbchild2" data-off="Không" data-on="Có"></label>
                                                                                                 </span>
                                                                                                 <a class="collapsed " data-toggle="collapse" href="#collapsible-item2">TNDS tự nguyện</a>
                                                                                             </div>
@@ -690,12 +688,12 @@
                                                                                         <div class="c-item">
                                                                                             <div class="c-title">
                                                                                                 <span class="button-switch no-label">
-                                                                                                    <input type="checkbox" id="tndsbb" class="switch cls_ckb" name="ckbchild4">
-                                                                                                    <label for="tndsbb" data-off="Không" data-on="Có"></label>
+                                                                                                    <input type="checkbox" id="ckbchild3" class="switch cls_ckb">
+                                                                                                    <label for="ckbchild3" data-off="Không" data-on="Có"></label>
                                                                                                 </span>
-                                                                                                <a class="collapsed " data-toggle="collapse" href="#collapsible-item4">TNDS bắt buộc</a>
+                                                                                                <a class="collapsed " data-toggle="collapse" href="#collapsible-item3">TNDS bắt buộc</a>
                                                                                             </div>
-                                                                                            <div id="collapsible-item4" class="collapse" datatable-collapse>
+                                                                                            <div id="collapsible-item3" class="collapse" datatable-collapse>
                                                                                                 <div class="c-body">
                                                                                                     <div class="row mb-3">
                                                                                                         <div class="col-md-4">
@@ -779,12 +777,12 @@
                                                                                         <div class="c-item">
                                                                                             <div class="c-title">
                                                                                                 <span class="button-switch no-label">
-                                                                                                    <input type="checkbox" id="tnlpx" class="switch cls_ckb" name="ckbchild3">
-                                                                                                    <label for="tnlpx" data-off="Không" data-on="Có"></label>
+                                                                                                    <input type="checkbox" id="ckbchild4" class="switch cls_ckb">
+                                                                                                    <label for="ckbchild4" data-off="Không" data-on="Có"></label>
                                                                                                 </span>
-                                                                                                <a class="collapsed " data-toggle="collapse" href="#collapsible-item3">Tai nạn lái, phụ xe và người ngồi trên xe</a>
+                                                                                                <a class="collapsed " data-toggle="collapse" href="#collapsible-item4">Tai nạn lái, phụ xe và người ngồi trên xe</a>
                                                                                             </div>
-                                                                                            <div id="collapsible-item3" class="collapse" datatable-collapse>
+                                                                                            <div id="collapsible-item4" class="collapse" datatable-collapse>
                                                                                                 <div class="c-body">
                                                                                                     <div class="row">
                                                                                                         <div class="col-md-2">
@@ -856,12 +854,12 @@
                                                                                         <div class="c-item">
                                                                                             <div class="c-title">
                                                                                                 <span class="button-switch no-label">
-                                                                                                    <input type="checkbox" id="tnlpx" class="switch cls_ckb" name="ckbchild3">
-                                                                                                    <label for="tnlpx" data-off="Không" data-on="Có"></label>
+                                                                                                    <input type="checkbox" id="ckbchild5" class="switch cls_ckb">
+                                                                                                    <label for="ckbchild5" data-off="Không" data-on="Có"></label>
                                                                                                 </span>
-                                                                                                <a class="collapsed " data-toggle="collapse" href="#collapsible-item3">TNDS của chủ xe với hàng hóa</a>
+                                                                                                <a class="collapsed " data-toggle="collapse" href="#collapsible-item5">TNDS của chủ xe với hàng hóa</a>
                                                                                             </div>
-                                                                                            <div id="collapsible-item3" class="collapse" datatable-collapse>
+                                                                                            <div id="collapsible-item5" class="collapse" datatable-collapse>
                                                                                                 <div class="c-body">
                                                                                                     <table class="table table-bordered datatable"
                                                                                                         data-paging="false"

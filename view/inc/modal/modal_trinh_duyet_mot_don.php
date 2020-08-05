@@ -5,7 +5,7 @@
             <div class="modal-header">
                 <h5 class="modal-title font-weight-semibold ">Trình duyệt đơn bảo hiểm</h5>
                 <div>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="btn btn-light" data-dismiss="modal"><i class="far fa-times mr-1"></i> Đóng</button>
                 </div>
             </div>
             <form action="#">
@@ -64,8 +64,7 @@
                    
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-light" data-dismiss="modal">Đóng</button>
-                    <button type="submit" class="btn bg-primary">Trình</button>
+                    <button type="submit" class="btn bg-primary"><i class="icon-file-check mr-1"></i>Trình duyệt</button>
                 </div>
             </form>
         </div>

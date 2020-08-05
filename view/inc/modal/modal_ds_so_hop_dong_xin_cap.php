@@ -5,6 +5,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title font-weight-semibold ">Danh sách số hợp đồng đã xin cấp</h5>
+                    <button type="button" class="btn btn-light" data-dismiss="modal"><i class="far fa-times mr-1"></i> Đóng</button>
                 </div>
 
                 <div class="modal-body">
@@ -119,17 +120,17 @@
                                 data-ordering="true"
                                 data-searching="false">
                                 <thead class="thead-light">
-                                    <th width="30px" data-orderable="false" class="text-center">#</th>
-                                    <th class="desktop">Ngày lấy</th>
-                                    <th width="10%">Số hợp đồng</th>
-                                    <th width="20%">Loại hình bảo hiểm</th>
+                                    <th width="w1p" data-orderable="false" class="text-center">#</th>
+                                    <th class="">Ngày lấy</th>
+                                    <th width="">Số hợp đồng</th>
+                                    <th width="">Loại hình bảo hiểm</th>
                                     <th class="desktop">Gói HĐ</th>
-                                    <th width="20%">Khách hàng</th>
+                                    <th width="">Khách hàng</th>
                                     <th class="desktop">Số lượng xe</th>
                                     <th>Trạng thái</th>
                                     <th class="desktop">Hạn dùng</th>
                                     <th class="desktop">Đề nghị</th>
-                                    <th class="all" width="30px" data-orderable="false">#</th>
+                                    <th class="all w1p" data-orderable="false">#</th>
                                 </thead>
                                 <tbody>
                                     <tr>
@@ -211,7 +212,6 @@
                 </div>
 
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-light" data-dismiss="modal"><i class="far fa-times mr-1"></i> Đóng</button>
                     <a href="#" data-toggle="modal" data-target="#xin_cap_hop_dong" class="btn btn-labeled btn-labeled-left mr-1"><b><i class="icon-file-check"></i></b> Xin cấp số hợp đồng</a>
                     <a href="#" class="btn bg-primary btn-labeled btn-labeled-left"><b><i class="icon-checkmark4"></i></b> Chọn</a>
                 </div>

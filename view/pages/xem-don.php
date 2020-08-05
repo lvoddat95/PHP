@@ -314,24 +314,6 @@
                                                                             <input type="text" class="form-control required input-float" name="ti_gia" placeholder="" value="1">
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-md-8">
-                                                                        <div class="form-group">
-                                                                            <label>Thời hạn bảo hiểm: <span class="text-danger">*</span></label>
-                                                                            <div class="row">
-                                                                                <div class="col-md-6 d-flex">
-                                                                                    <span style="width: 100px;">Từ</span>
-                                                                                    <input type="text" class="form-control mr-2 input-time" placeholder="Nhập giờ..." value="16:00">
-                                                                                    <input type="text" class="form-control datepicker input-date" placeholder="Nhập ngày..." value="16/06/2020">
-                                                                                </div>
-                                                                                <div class="col-md-6 d-flex">
-                                                                                    <span style="width: 100px;">Đến</span>
-                                                                                    <input type="text" class="form-control mr-2 input-time" placeholder="Nhập giờ..." value="16:00">
-                                                                                    <input type="text" class="form-control datepicker input-date" placeholder="Nhập ngày..." value="16/06/2021">
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        
-                                                                    </div>
                                                                 </div>
                                                             </fieldset>
                                                         </div>
@@ -516,111 +498,31 @@
                                                                             </select>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-md-4">
-                                                                        <div class="form-group ">
-                                                                            <label>Nguồn gốc xe: <span class="text-danger">*</span></label>
-                                                                            <div class="form-group-select">
-                                                                                <select class="form-control required" select2 name="nguon_goc">
-                                                                                    <option value="">--- Chọn nguồn gốc ---</option>
-                                                                                    <option value="1">Xe nhập khẩu</option>
-                                                                                    <option value="2" selected>Xe nội địa</option>
-                                                                                </select>
-                                                                            </div>
-                                                                        </div>
+                                                                    <div class="col-md-3">
+                                                                        <?php inc('template/3_doi_tuong_bao_hiem/MVP/f02/nguon_goc_xe.php'); ?>
                                                                     </div>
                                                                     <div class="col-md-4">
-                                                                        <div class="form-group ">
-                                                                            <div class="row">
-                                                                                <div class="col-md-6">
-                                                                                    <label>Tháng SX/ĐK lần đầu: <span class="text-danger">*</span></label>
-                                                                                    <div class="form-group-select">
-                                                                                        <select class="form-control required" select2 name="thang_sx_dk" >
-                                                                                            <option value="">--- Chọn tháng ---</option>
-                                                                                            <option id="1" name="1" value="1" selected="">1</option>
-                                                                                            <option id="2" name="2" value="2">2</option>
-                                                                                            <option id="3" name="3" value="3">3</option>
-                                                                                            <option id="4" name="4" value="4">4</option>
-                                                                                            <option id="5" name="5" value="5">5</option>
-                                                                                            <option id="6" name="6" value="6">6</option>
-                                                                                            <option id="7" name="7" value="7">7</option>
-                                                                                            <option id="8" name="8" value="8">8</option>
-                                                                                            <option id="9" name="9" value="9">9</option>
-                                                                                            <option id="10" name="10" value="10">10</option>
-                                                                                            <option id="11" name="11" value="11">11</option>
-                                                                                            <option id="12" name="12" value="12" selected>12</option>
-                                                                                        </select>
-                                                                                    </div>
-                                                                                </div>
-                
-                                                                                <div class="col-md-6">
-                                                                                    <label>Năm SX/ĐK lần đầu: <span class="text-danger">*</span></label>
-                                                                                    <div class="form-group-select">
-                                                                                        <select class="form-control required" select2 name="nam_sx_dk" >
-                                                                                            <option value="" data-select2-id="26">--- Chọn năm ---</option>
-                                                                                            <option value="2020" data-select2-id="525">2020</option>
-                                                                                            <option value="2019" data-select2-id="526">2019</option>
-                                                                                            <option value="2018" data-select2-id="527">2018</option>
-                                                                                            <option value="2017" data-select2-id="528" selected>2017</option>
-                                                                                            <option value="2016" data-select2-id="529">2016</option>
-                                                                                            <option value="2015" data-select2-id="530">2015</option>
-                                                                                            <option value="2014" data-select2-id="531">2014</option>
-                                                                                            <option value="2013" data-select2-id="532">2013</option>
-                                                                                            <option value="2012" data-select2-id="533">2012</option>
-                                                                                            <option value="2011" data-select2-id="534">2011</option>
-                                                                                            <option value="2010" data-select2-id="535">2010</option>
-                                                                                            <option value="2009" data-select2-id="536">2009</option>
-                                                                                            <option value="2008" data-select2-id="537">2008</option>
-                                                                                            <option value="2007" data-select2-id="538">2007</option>
-                                                                                            <option value="2006" data-select2-id="539">2006</option>
-                                                                                            <option value="2005" data-select2-id="540">2005</option>
-                                                                                            <option value="2004" data-select2-id="541">2004</option>
-                                                                                            <option value="2003" data-select2-id="542">2003</option>
-                                                                                            <option value="2002" data-select2-id="543">2002</option>
-                                                                                            <option value="2001" data-select2-id="544">2001</option>
-                                                                                            <option value="2000" data-select2-id="545">2000</option>
-                                                                                            <option value="1999" data-select2-id="546">1999</option>
-                                                                                            <option value="1998" data-select2-id="547">1998</option>
-                                                                                            <option value="1997" data-select2-id="548">1997</option>
-                                                                                            <option value="1996" data-select2-id="549">1996</option>
-                                                                                            <option value="1995" data-select2-id="550">1995</option>
-                                                                                            <option value="1994" data-select2-id="551">1994</option>
-                                                                                            <option value="1993" data-select2-id="552">1993</option>
-                                                                                            <option value="1992" data-select2-id="553">1992</option>
-                                                                                            <option value="1991" data-select2-id="554">1991</option>
-                                                                                            <option value="1990" data-select2-id="555">1990</option>
-                                                                                        </select>
-                                                                                    </div>
-                                                                                </div>
+                                                                        <div class="row">
+                                                                            <div class="col-md-6">
+                                                                                <?php inc('template/3_doi_tuong_bao_hiem/MVP/thang_sx.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <?php inc('template/3_doi_tuong_bao_hiem/MVP/nam_sx.php'); ?>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-4">
                                                                         <div class="row align-items-center">
-                                                                            <div class="col-md-7">
-                                                                                <div class="form-group ">
-                                                                                    <label>Biển kiểm soát: <span class="text-danger">*</span></label>
-                                                                                    <button 
-                                                                                        class="btn-popover"
-                                                                                        type="button" 
-                                                                                        data-popup="popover" 
-                                                                                        data-content="Tích chọn nếu xe không có biển kiểm soát." 
-                                                                                        data-trigger="hover" 
-                                                                                        data-placement="top"
-                                                                                        data-html="true"
-                                                                                        data-original-title="" >
-                                                                                        <i class="icon-info22"></i>
-                                                                                    </button>
-                                                                                    <input type="text" class="form-control required" name="bks" placeholder="Nhập biển kiểm soát..." value="30F05719">
-                                                                                </div>
+                                                                            <div class="col-md-6">
+                                                                                <?php inc('template/3_doi_tuong_bao_hiem/MVP/chua_co_bien.php'); ?>
                                                                             </div>
-                                                                            <div class="col-md-5">
-                                                                                <div class="float-right d-flex">
-                                                                                    <input type="checkbox" id="kocobien">
-                                                                                    <label class="ml-2 mb-0" for="kocobien"> Chưa có biển</label>
-                                                                                </div>
+                                                                            <div class="col-md-6">
+                                                                                <?php inc('template/3_doi_tuong_bao_hiem/MVP/loai_bien.php'); ?>
                                                                             </div>
                                                                         </div>
-                                                                        
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <?php inc('template/3_doi_tuong_bao_hiem/MVP/bien_kiem_soat.php'); ?>
                                                                     </div>
                                                                     <div class="col-md-4">
                                                                         <div class="form-group ">
@@ -1100,19 +1002,22 @@
                                                             <fieldset>
                                                                 <div class="row">
                                                                     <div class="col-md-12">
-                                                                        <div id="" class="collapse-group">
+                                                                        <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php'); ?>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="collapse-group">
                                                                             <div class="p-title">Phạm vi bảo hiểm:</div>
                                                                             <div class="p-body collapse show">
                                                                                 <div class="c-item">
                                                                                     <div class="c-title">
                                                                                         <span class="button-switch no-label">
-                                                                                            <input type="checkbox" id="vcxe" class="switch cls_ckb" name="ckbchild1">
-                                                                                            <label for="vcxe" data-off="Không" data-on="Có"></label>
+                                                                                            <input type="checkbox" id="ckbchild1" class="switch cls_ckb">
+                                                                                            <label for="ckbchild1" data-off="Không" data-on="Có"></label>
                                                                                         </span>
                                                                                         <a data-toggle="collapse" class="collapsed" href="#collapsible-item1">Vật chất xe</a>
                                                                                     </div>
                                         
-                                                                                    <div id="collapsible-item1" class="collapse">
+                                                                                    <div id="collapsible-item1" class="collapse" datatable-collapse>
                                                                                         <div class="c-body">
                                                                                             
                                                                                             <table class="table table-bordered datatable"
@@ -1123,15 +1028,15 @@
                                                                                             >
                                                                                                 <thead class="thead-light">
                                                                                                     <tr>
-                                                                                                        <th width="20%">Phạm vi bảo hiểm</th>
-                                                                                                        <th width="10%">Số tiền bảo hiểm</th>
-                                                                                                        <th width="5%" class="desktop">Phí (%)</th>
-                                                                                                        <th width="10%" class="desktop">Phí BH (có VAT)</th>
-                                                                                                        <th width="5%" class="desktop">VAT (%)</th>
-                                                                                                        <th width="10%" class="desktop">VAT</th>
-                                                                                                        <th width="5%" class="desktop">COM (%)</th>
-                                                                                                        <th width="10%" class="desktop">COM</th>
-                                                                                                        <th width="20%" class="desktop">Định mức</th>
+                                                                                                        <th class="desktop w20p">Quyền lợi</th>
+                                                                                                        <th class="desktop w10p">Số tiền bảo hiểm</th>
+                                                                                                        <th class="desktop w5p">Phí (%)</th>
+                                                                                                        <th class="desktop w10p">Phí BH (có VAT)</th>
+                                                                                                        <th class="desktop w5p">VAT (%)</th>
+                                                                                                        <th class="desktop w10p">VAT</th>
+                                                                                                        <th class="desktop w5p">COM (%)</th>
+                                                                                                        <th class="desktop w10p">COM</th>
+                                                                                                        <th class="desktop w20p">Định mức</th>
                                                                                                     </tr>
                                                                                                 </thead>
                                                                                                 <tbody>
@@ -1146,21 +1051,12 @@
                                                                                                         <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                         <td>
                                                                                                             <select class="form-control required " select2 name="dinh_muc" >
-                                                                                                                <option id="1A0CB825-AF10-4E71-973D-47A14076CABD" value="1A0CB825-AF10-4E71-973D-47A14076CABD"
-                                                                                                                    title="Xe cơ giới khác">Xe cơ giới khác</option>
-                                                                                                                <option id="A43D9544-9201-490D-8087-A99CC3A6D906" value="A43D9544-9201-490D-8087-A99CC3A6D906"
-                                                                                                                    title="Biển xanh, biển đỏ, biển nước ngoài">Biển xanh, biển đỏ, biển nước ngoài</option>
-                                                                                                                <option id="506CE15B-BC49-4F11-899A-7E950EC8A456" value="506CE15B-BC49-4F11-899A-7E950EC8A456"
-                                                                                                                    title="Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>15 tuổi kể từ ngày SX">Xe taxi, đầu
-                                                                                                                    kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
-                                                                                                                <option id="9A3B6724-5296-4AC1-A93F-D86E5E3439FB" value="9A3B6724-5296-4AC1-A93F-D86E5E3439FB"
-                                                                                                                    title="Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX">Xe taxi, đầu
-                                                                                                                    kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;10 tuổi kể từ ngày SX</option>
-                                                                                                                <option id="98BDBF21-0466-4BA7-8464-7455F86D7E81" value="98BDBF21-0466-4BA7-8464-7455F86D7E81"
-                                                                                                                    title="Xe cơ giới khai thác qua Ngân hàng, show room">Xe cơ giới khai thác qua Ngân hàng, show room</option>
-                                                                                                                <option id="27292D06-61D1-4EE9-8417-AEF6FADD987B" value="27292D06-61D1-4EE9-8417-AEF6FADD987B" title="Xe tải">Xe tải
-                                                                                                                </option>
-                                                                                                            
+                                                                                                                <option selected>Xe cơ giới khác</option>
+                                                                                                                <option>Biển xanh, biển đỏ, biển nước ngoài</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe cơ giới khai thác qua Ngân hàng, show room</option>
+                                                                                                                <option>Xe tải</option>
                                                                                                             </select>
                                                                                                         </td>
                                                                                                     </tr>
@@ -1175,17 +1071,15 @@
                                                                                             >
                                                                                                 <thead>
                                                                                                     <tr>
-                                                                                                        <th width="20%">
-                                                                                                            <b>II. Điều khoản sửa đổi bổ sung</b>
-                                                                                                        </th>
-                                                                                                        <th width="10%" class="desktop "></th>
-                                                                                                        <th width="5%" desktop-10></th>
-                                                                                                        <th width="10%" class="desktop "></th>
-                                                                                                        <th width="5%" class="desktop "></th>
-                                                                                                        <th width="10%" class="desktop "></th>
-                                                                                                        <th width="5%" class="desktop "></th>
-                                                                                                        <th width="10%" class="desktop "></th>
-                                                                                                        <th width="20%" class="desktop "></th>
+                                                                                                        <th class="desktop w20p"><b>II. Điều khoản sửa đổi bổ sung</b></th>
+                                                                                                        <th class="desktop w10p"></th>
+                                                                                                        <th class="desktop w5p"></th>
+                                                                                                        <th class="desktop w10p"></th>
+                                                                                                        <th class="desktop w5p"></th>
+                                                                                                        <th class="desktop w10p"></th>
+                                                                                                        <th class="desktop w5p"></th>
+                                                                                                        <th class="desktop w10p"></th>
+                                                                                                        <th class="desktop w20p"></th>
                                                                                                     </tr>
                                                                                                 </thead>
                                                                                                 <tbody>
@@ -1386,15 +1280,15 @@
                                                                                             >
                                                                                                 <thead>
                                                                                                     <tr>
-                                                                                                        <th width="20%"><b>Tổng cộng: </b></th>
-                                                                                                        <th width="10%">Số tiền bảo hiểm</th>
-                                                                                                        <th width="5%" class="desktop">Phí (%)</th>
-                                                                                                        <th width="10%" class="desktop">Phí BH (có VAT)</th>
-                                                                                                        <th width="5%" class="desktop">VAT (%)</th>
-                                                                                                        <th width="10%" class="desktop">VAT</th>
-                                                                                                        <th width="5%" class="desktop">COM (%)</th>
-                                                                                                        <th width="10%" class="desktop">COM</th>
-                                                                                                        <th width="20%" class="desktop"></th>
+                                                                                                        <th class="desktop w20p"><b>Tổng cộng: </b></th>
+                                                                                                        <th class="desktop w10p">Số tiền bảo hiểm</th>
+                                                                                                        <th class="desktop w5p">Phí (%)</th>
+                                                                                                        <th class="desktop w10p">Phí BH (có VAT)</th>
+                                                                                                        <th class="desktop w5p">VAT (%)</th>
+                                                                                                        <th class="desktop w10p">VAT</th>
+                                                                                                        <th class="desktop w5p">COM (%)</th>
+                                                                                                        <th class="desktop w10p">COM</th>
+                                                                                                        <th class="desktop w20p">Định mức</th>
                                                                                                     </tr>
                                                                                                 </thead>
                                                                                                 <tbody>
@@ -1411,20 +1305,18 @@
                                                                                                     </tr>
                                                                                                 </tbody>
                                                                                             </table>
-                                                                                            
-                                                                                            
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="c-item">
                                                                                     <div class="c-title">
                                                                                         <span class="button-switch no-label">
-                                                                                            <input type="checkbox" id="tndstn" class="switch cls_ckb" name="ckbchild2">
-                                                                                            <label for="tndstn" data-off="Không" data-on="Có"></label>
+                                                                                            <input type="checkbox" id="ckbchild2" class="switch cls_ckb">
+                                                                                            <label for="ckbchild2" data-off="Không" data-on="Có"></label>
                                                                                         </span>
                                                                                         <a class="collapsed " data-toggle="collapse" href="#collapsible-item2">TNDS tự nguyện</a>
                                                                                     </div>
-                                                                                    <div id="collapsible-item2" class="collapse">
+                                                                                    <div id="collapsible-item2" class="collapse" datatable-collapse>
                                                                                         <div class="c-body">
                                                                                             <table class="table table-bordered datatable" style="margin-bottom: 0;"
                                                                                                 data-paging="false"
@@ -1434,15 +1326,15 @@
                                                                                             >
                                                                                                 <thead class="thead-light">
                                                                                                     <tr>
-                                                                                                        <th width="15%">Quyền lợi</th>
-                                                                                                        <th width="15%">Số tiền bảo hiểm</th>
-                                                                                                        <th width="5%" class="desktop">Phí (%)</th>
-                                                                                                        <th width="10%" class="desktop">Phí BH (có VAT)</th>
-                                                                                                        <th width="5%" class="desktop">VAT (%)</th>
-                                                                                                        <th width="10%" class="desktop">VAT</th>
-                                                                                                        <th width="5%" class="desktop">COM (%)</th>
-                                                                                                        <th width="10%" class="desktop">COM</th>
-                                                                                                        <th  style="max-width: 280px;" width="20%" class="desktop">Định mức</th>
+                                                                                                        <th class="desktop w15p">Quyền lợi</th>
+                                                                                                        <th class="desktop w15p">Số tiền bảo hiểm</th>
+                                                                                                        <th class="desktop w5p">Phí (%)</th>
+                                                                                                        <th class="desktop w10p">Phí BH (có VAT)</th>
+                                                                                                        <th class="desktop w5p">VAT (%)</th>
+                                                                                                        <th class="desktop w10p">VAT</th>
+                                                                                                        <th class="desktop w5p">COM (%)</th>
+                                                                                                        <th class="desktop w10p">COM</th>
+                                                                                                        <th class="desktop w20p">Định mức</th>
                                                                                                     </tr>
                                                                                                 </thead>
                                                                                                 <tbody>
@@ -1470,21 +1362,12 @@
                                                                                                         </td>
                                                                                                         <td>
                                                                                                             <select class="form-control required " select2 name="dinh_muc" >
-                                                                                                                <option id="1A0CB825-AF10-4E71-973D-47A14076CABD" value="1A0CB825-AF10-4E71-973D-47A14076CABD"
-                                                                                                                    title="Xe cơ giới khác">Xe cơ giới khác</option>
-                                                                                                                <option id="A43D9544-9201-490D-8087-A99CC3A6D906" value="A43D9544-9201-490D-8087-A99CC3A6D906"
-                                                                                                                    title="Biển xanh, biển đỏ, biển nước ngoài">Biển xanh, biển đỏ, biển nước ngoài</option>
-                                                                                                                <option id="506CE15B-BC49-4F11-899A-7E950EC8A456" value="506CE15B-BC49-4F11-899A-7E950EC8A456"
-                                                                                                                    title="Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>15 tuổi kể từ ngày SX">Xe taxi, đầu
-                                                                                                                    kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
-                                                                                                                <option id="9A3B6724-5296-4AC1-A93F-D86E5E3439FB" value="9A3B6724-5296-4AC1-A93F-D86E5E3439FB"
-                                                                                                                    title="Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX">Xe taxi, đầu
-                                                                                                                    kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;10 tuổi kể từ ngày SX</option>
-                                                                                                                <option id="98BDBF21-0466-4BA7-8464-7455F86D7E81" value="98BDBF21-0466-4BA7-8464-7455F86D7E81"
-                                                                                                                    title="Xe cơ giới khai thác qua Ngân hàng, show room">Xe cơ giới khai thác qua Ngân hàng, show room</option>
-                                                                                                                <option id="27292D06-61D1-4EE9-8417-AEF6FADD987B" value="27292D06-61D1-4EE9-8417-AEF6FADD987B" title="Xe tải">Xe tải
-                                                                                                                </option>
-                                                                                                            
+                                                                                                                <option>Xe cơ giới khác</option>
+                                                                                                                <option>Biển xanh, biển đỏ, biển nước ngoài</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe cơ giới khai thác qua Ngân hàng, show room</option>
+                                                                                                                <option>Xe tải</option>
                                                                                                             </select>
                                                                                                         </td>
                                                                                                     </tr>
@@ -1515,21 +1398,12 @@
                                                                                                         </td>
                                                                                                         <td>
                                                                                                             <select class="form-control required " select2 name="dinh_muc" >
-                                                                                                                <option id="1A0CB825-AF10-4E71-973D-47A14076CABD" value="1A0CB825-AF10-4E71-973D-47A14076CABD"
-                                                                                                                    title="Xe cơ giới khác">Xe cơ giới khác</option>
-                                                                                                                <option id="A43D9544-9201-490D-8087-A99CC3A6D906" value="A43D9544-9201-490D-8087-A99CC3A6D906"
-                                                                                                                    title="Biển xanh, biển đỏ, biển nước ngoài">Biển xanh, biển đỏ, biển nước ngoài</option>
-                                                                                                                <option id="506CE15B-BC49-4F11-899A-7E950EC8A456" value="506CE15B-BC49-4F11-899A-7E950EC8A456"
-                                                                                                                    title="Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>15 tuổi kể từ ngày SX">Xe taxi, đầu
-                                                                                                                    kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
-                                                                                                                <option id="9A3B6724-5296-4AC1-A93F-D86E5E3439FB" value="9A3B6724-5296-4AC1-A93F-D86E5E3439FB"
-                                                                                                                    title="Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX">Xe taxi, đầu
-                                                                                                                    kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;10 tuổi kể từ ngày SX</option>
-                                                                                                                <option id="98BDBF21-0466-4BA7-8464-7455F86D7E81" value="98BDBF21-0466-4BA7-8464-7455F86D7E81"
-                                                                                                                    title="Xe cơ giới khai thác qua Ngân hàng, show room">Xe cơ giới khai thác qua Ngân hàng, show room</option>
-                                                                                                                <option id="27292D06-61D1-4EE9-8417-AEF6FADD987B" value="27292D06-61D1-4EE9-8417-AEF6FADD987B" title="Xe tải">Xe tải
-                                                                                                                </option>
-                                                                                                            
+                                                                                                                <option>Xe cơ giới khác</option>
+                                                                                                                <option>Biển xanh, biển đỏ, biển nước ngoài</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe cơ giới khai thác qua Ngân hàng, show room</option>
+                                                                                                                <option>Xe tải</option>
                                                                                                             </select>
                                                                                                         </td>
                                                                                                     </tr>
@@ -1550,102 +1424,16 @@
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
-                
+
                                                                                 <div class="c-item">
                                                                                     <div class="c-title">
                                                                                         <span class="button-switch no-label">
-                                                                                            <input type="checkbox" id="tnlpx" class="switch cls_ckb" name="ckbchild3">
-                                                                                            <label for="tnlpx" data-off="Không" data-on="Có"></label>
+                                                                                            <input type="checkbox" id="ckbchild3" class="switch cls_ckb">
+                                                                                            <label for="ckbchild3" data-off="Không" data-on="Có"></label>
                                                                                         </span>
-                                                                                        <a class="collapsed " data-toggle="collapse" href="#collapsible-item3">Tai nạn lái, phụ xe và người ngồi trên xe</a>
+                                                                                        <a class="collapsed " data-toggle="collapse" href="#collapsible-item3">TNDS bắt buộc</a>
                                                                                     </div>
-                                                                                    <div id="collapsible-item3" class="collapse">
-                                                                                        <div class="c-body">
-                                                                                            <div class="row">
-                                                                                                <div class="col-md-2">
-                                                                                                    <div class="form-group">
-                                                                                                        <label>Số người tham gia: <span class="text-danger">*</span></label>
-                                                                                                        <input type="text" class="form-control" name="so_nguoi_tham_gia" placeholder="Nhập số người tham gia..." value="0" >
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <table class="table table-bordered datatable"
-                                                                                                data-paging="false"
-                                                                                                data-info="false"
-                                                                                                data-ordering="false"
-                                                                                                data-searching="false"
-                                                                                            >
-                                                                                                <thead class="thead-light">
-                                                                                                    <tr>
-                                                                                                        <th width="15%">Quyền lợi</th>
-                                                                                                        <th width="15%">Số tiền bảo hiểm</th>
-                                                                                                        <th width="5%" class="desktop">Phí (%)</th>
-                                                                                                        <th width="10%" class="desktop">Phí BH (có VAT)</th>
-                                                                                                        <th width="5%" class="desktop">VAT (%)</th>
-                                                                                                        <th width="10%" class="desktop">VAT</th>
-                                                                                                        <th width="5%" class="desktop">COM (%)</th>
-                                                                                                        <th width="10%" class="desktop">COM</th>
-                                                                                                        <th  style="max-width: 280px;" width="20%" class="desktop">Định mức</th>
-                                                                                                    </tr>
-                                                                                                </thead>
-                                                                                                <tbody>
-                                                                                                    <tr>
-                                                                                                        <td><b>Tai nạn lái, phụ xe và người ngồi trên xe </b></td>
-                                                                                                        <td>
-                                                                                                            <input class="form-control text-right" style="display: inline-block; width: calc(100% - 65px);" type="text" value="0" >
-                                                                                                            <span style="width: 62px;">(/người/vụ)</span>
-                                                                                                        </td>
-                                                                                                        <td>
-                                                                                                            <input class="form-control text-left" style="color: red;" type="text" value="0" >
-                                                                                                        </td>
-                                                                                                        <td>
-                                                                                                            <input class="form-control text-right" type="text" value="0">
-                                                                                                        </td>
-                                                                                                        <td>
-                                                                                                            <input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="0">
-                                                                                                        </td>
-                                                                                                        <td>
-                                                                                                            <input class="form-control text-right" type="text" value="0">
-                                                                                                        </td>
-                                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0.0"></td>
-                                                                                                        <td>
-                                                                                                            <input class="form-control text-right input-money" type="text" value="0" >
-                                                                                                        </td>
-                                                                                                        <td>
-                                                                                                            <select class="form-control required " select2 name="dinh_muc" >
-                                                                                                                <option id="1A0CB825-AF10-4E71-973D-47A14076CABD" value="1A0CB825-AF10-4E71-973D-47A14076CABD"
-                                                                                                                    title="Xe cơ giới khác">Xe cơ giới khác</option>
-                                                                                                                <option id="A43D9544-9201-490D-8087-A99CC3A6D906" value="A43D9544-9201-490D-8087-A99CC3A6D906"
-                                                                                                                    title="Biển xanh, biển đỏ, biển nước ngoài">Biển xanh, biển đỏ, biển nước ngoài</option>
-                                                                                                                <option id="506CE15B-BC49-4F11-899A-7E950EC8A456" value="506CE15B-BC49-4F11-899A-7E950EC8A456"
-                                                                                                                    title="Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>15 tuổi kể từ ngày SX">Xe taxi, đầu
-                                                                                                                    kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
-                                                                                                                <option id="9A3B6724-5296-4AC1-A93F-D86E5E3439FB" value="9A3B6724-5296-4AC1-A93F-D86E5E3439FB"
-                                                                                                                    title="Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX">Xe taxi, đầu
-                                                                                                                    kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;10 tuổi kể từ ngày SX</option>
-                                                                                                                <option id="98BDBF21-0466-4BA7-8464-7455F86D7E81" value="98BDBF21-0466-4BA7-8464-7455F86D7E81"
-                                                                                                                    title="Xe cơ giới khai thác qua Ngân hàng, show room">Xe cơ giới khai thác qua Ngân hàng, show room</option>
-                                                                                                                <option id="27292D06-61D1-4EE9-8417-AEF6FADD987B" value="27292D06-61D1-4EE9-8417-AEF6FADD987B" title="Xe tải">Xe tải
-                                                                                                                </option>
-                                                                                                            
-                                                                                                            </select>
-                                                                                                        </td>
-                                                                                                    </tr>
-                                                                                                </tbody>
-                                                                                            </table>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                
-                                                                                <div class="c-item">
-                                                                                    <div class="c-title">
-                                                                                        <span class="button-switch no-label">
-                                                                                            <input type="checkbox" id="tndsbb" class="switch cls_ckb" name="ckbchild4">
-                                                                                            <label for="tndsbb" data-off="Không" data-on="Có"></label>
-                                                                                        </span>
-                                                                                        <a class="collapsed " data-toggle="collapse" href="#collapsible-item4">TNDS bắt buộc</a>
-                                                                                    </div>
-                                                                                    <div id="collapsible-item4" class="collapse">
+                                                                                    <div id="collapsible-item3" class="collapse" datatable-collapse>
                                                                                         <div class="c-body">
                                                                                             <div class="row mb-3">
                                                                                                 <div class="col-md-4">
@@ -1674,20 +1462,20 @@
                                                                                             >
                                                                                                 <thead class="thead-light">
                                                                                                     <tr>
-                                                                                                        <th width="10%">Quyền lợi</th>
-                                                                                                        <th width="20%">Số tiền bảo hiểm</th>
-                                                                                                        <th width="5%" class="desktop">Phí (%)</th>
-                                                                                                        <th width="10%" class="desktop">Phí BH (có VAT)</th>
-                                                                                                        <th width="5%" class="desktop">VAT (%)</th>
-                                                                                                        <th width="10%" class="desktop">VAT</th>
-                                                                                                        <th width="5%" class="desktop">COM (%)</th>
-                                                                                                        <th width="10%" class="desktop">COM</th>
-                                                                                                        <th  style="max-width: 280px;" width="20%" class="desktop">Định mức</th>
+                                                                                                        <th class="desktop w10p">Quyền lợi</th>
+                                                                                                        <th class="desktop w20p">Số tiền bảo hiểm</th>
+                                                                                                        <th class="desktop w5p">Phí (%)</th>
+                                                                                                        <th class="desktop w10p">Phí BH (có VAT)</th>
+                                                                                                        <th class="desktop w5p">VAT (%)</th>
+                                                                                                        <th class="desktop w10p">VAT</th>
+                                                                                                        <th class="desktop w5p">COM (%)</th>
+                                                                                                        <th class="desktop w10p">COM</th>
+                                                                                                        <th class="desktop w20p">Định mức</th>
                                                                                                     </tr>
                                                                                                 </thead>
                                                                                                 <tbody>
                                                                                                     <tr>
-                                                                                                        <td><b style="text-transform: uppercase;">TNDS bắt buộc </b></td>
+                                                                                                        <td><b>TNDS bắt buộc </b></td>
                                                                                                         <td>
                                                                                                             <b>TNDS về người: 100tr/người/vụ</b>
                                                                                                             <br>
@@ -1711,21 +1499,12 @@
                                                                                                         </td>
                                                                                                         <td>
                                                                                                             <select class="form-control required " select2 name="dinh_muc" >
-                                                                                                                <option id="1A0CB825-AF10-4E71-973D-47A14076CABD" value="1A0CB825-AF10-4E71-973D-47A14076CABD"
-                                                                                                                    title="Xe cơ giới khác">Xe cơ giới khác</option>
-                                                                                                                <option id="A43D9544-9201-490D-8087-A99CC3A6D906" value="A43D9544-9201-490D-8087-A99CC3A6D906"
-                                                                                                                    title="Biển xanh, biển đỏ, biển nước ngoài">Biển xanh, biển đỏ, biển nước ngoài</option>
-                                                                                                                <option id="506CE15B-BC49-4F11-899A-7E950EC8A456" value="506CE15B-BC49-4F11-899A-7E950EC8A456"
-                                                                                                                    title="Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>15 tuổi kể từ ngày SX">Xe taxi, đầu
-                                                                                                                    kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
-                                                                                                                <option id="9A3B6724-5296-4AC1-A93F-D86E5E3439FB" value="9A3B6724-5296-4AC1-A93F-D86E5E3439FB"
-                                                                                                                    title="Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX">Xe taxi, đầu
-                                                                                                                    kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;10 tuổi kể từ ngày SX</option>
-                                                                                                                <option id="98BDBF21-0466-4BA7-8464-7455F86D7E81" value="98BDBF21-0466-4BA7-8464-7455F86D7E81"
-                                                                                                                    title="Xe cơ giới khai thác qua Ngân hàng, show room">Xe cơ giới khai thác qua Ngân hàng, show room</option>
-                                                                                                                <option id="27292D06-61D1-4EE9-8417-AEF6FADD987B" value="27292D06-61D1-4EE9-8417-AEF6FADD987B" title="Xe tải">Xe tải
-                                                                                                                </option>
-                                                                                                            
+                                                                                                                <option>Xe cơ giới khác</option>
+                                                                                                                <option>Biển xanh, biển đỏ, biển nước ngoài</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe cơ giới khai thác qua Ngân hàng, show room</option>
+                                                                                                                <option>Xe tải</option>
                                                                                                             </select>
                                                                                                         </td>
                                                                                                     </tr>
@@ -1734,6 +1513,152 @@
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
+                
+                                                                                <div class="c-item">
+                                                                                    <div class="c-title">
+                                                                                        <span class="button-switch no-label">
+                                                                                            <input type="checkbox" id="ckbchild4" class="switch cls_ckb">
+                                                                                            <label for="ckbchild4" data-off="Không" data-on="Có"></label>
+                                                                                        </span>
+                                                                                        <a class="collapsed " data-toggle="collapse" href="#collapsible-item4">Tai nạn lái, phụ xe và người ngồi trên xe</a>
+                                                                                    </div>
+                                                                                    <div id="collapsible-item4" class="collapse" datatable-collapse>
+                                                                                        <div class="c-body">
+                                                                                            <div class="row">
+                                                                                                <div class="col-md-2">
+                                                                                                    <div class="form-group">
+                                                                                                        <label>Số người tham gia: <span class="text-danger">*</span></label>
+                                                                                                        <input type="text" class="form-control" name="so_nguoi_tham_gia" placeholder="Nhập số người tham gia..." value="0" >
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <table class="table table-bordered datatable"
+                                                                                                data-paging="false"
+                                                                                                data-info="false"
+                                                                                                data-ordering="false"
+                                                                                                data-searching="false"
+                                                                                            >
+                                                                                                <thead class="thead-light">
+                                                                                                    <tr>
+                                                                                                        <th class="desktop w15p">Quyền lợi</th>
+                                                                                                        <th class="desktop w15p">Số tiền bảo hiểm</th>
+                                                                                                        <th class="desktop w5p">Phí (%)</th>
+                                                                                                        <th class="desktop w10p">Phí BH (có VAT)</th>
+                                                                                                        <th class="desktop w5p">VAT (%)</th>
+                                                                                                        <th class="desktop w10p">VAT</th>
+                                                                                                        <th class="desktop w5p">COM (%)</th>
+                                                                                                        <th class="desktop w10p">COM</th>
+                                                                                                        <th class="desktop w20p">Định mức</th>
+                                                                                                    </tr>
+                                                                                                </thead>
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td><b>Tai nạn lái, phụ xe và người ngồi trên xe </b></td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-right" style="display: inline-block; width: calc(100% - 65px);" type="text" value="0" >
+                                                                                                            <span style="width: 62px;">(/người/vụ)</span>
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-left" style="color: red;" type="text" value="0" >
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-right" type="text" value="0">
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="0">
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-right" type="text" value="0">
+                                                                                                        </td>
+                                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0.0"></td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-right input-money" type="text" value="0" >
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <select class="form-control required " select2 name="dinh_muc" >
+                                                                                                                <option>Xe cơ giới khác</option>
+                                                                                                                <option>Biển xanh, biển đỏ, biển nước ngoài</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe cơ giới khai thác qua Ngân hàng, show room</option>
+                                                                                                                <option>Xe tải</option>
+                                                                                                            </select>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="c-item">
+                                                                                    <div class="c-title">
+                                                                                        <span class="button-switch no-label">
+                                                                                            <input type="checkbox" id="ckbchild5" class="switch cls_ckb">
+                                                                                            <label for="ckbchild5" data-off="Không" data-on="Có"></label>
+                                                                                        </span>
+                                                                                        <a class="collapsed " data-toggle="collapse" href="#collapsible-item5">TNDS của chủ xe với hàng hóa</a>
+                                                                                    </div>
+                                                                                    <div id="collapsible-item5" class="collapse" datatable-collapse>
+                                                                                        <div class="c-body">
+                                                                                            <table class="table table-bordered datatable"
+                                                                                                data-paging="false"
+                                                                                                data-info="false"
+                                                                                                data-ordering="false"
+                                                                                                data-searching="false"
+                                                                                            >
+                                                                                                <thead class="thead-light">
+                                                                                                    <tr>
+                                                                                                        <th class="desktop w15p">Quyền lợi</th>
+                                                                                                        <th class="desktop w15p">Số tiền bảo hiểm</th>
+                                                                                                        <th class="desktop w5p">Phí (%)</th>
+                                                                                                        <th class="desktop w10p">Phí BH (có VAT)</th>
+                                                                                                        <th class="desktop w5p">VAT (%)</th>
+                                                                                                        <th class="desktop w10p">VAT</th>
+                                                                                                        <th class="desktop w5p">COM (%)</th>
+                                                                                                        <th class="desktop w10p">COM</th>
+                                                                                                        <th class="desktop w20p">Định mức</th>
+                                                                                                    </tr>
+                                                                                                </thead>
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td><b>TNDS của chủ xe với hàng hóa</b></td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-right" type="text" value="0" >
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-left" style="color: red;" type="text" value="0" >
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-right" type="text" value="0">
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="0">
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-right" type="text" value="0">
+                                                                                                        </td>
+                                                                                                        <td><input class="form-control text-right input-float" type="text" placeholder="0.0"></td>
+                                                                                                        <td>
+                                                                                                            <input class="form-control text-right input-money" type="text" value="0" >
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <select class="form-control required " select2 name="dinh_muc" >
+                                                                                                                <option>Xe cơ giới khác</option>
+                                                                                                                <option>Biển xanh, biển đỏ, biển nước ngoài</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
+                                                                                                                <option>Xe cơ giới khai thác qua Ngân hàng, show room</option>
+                                                                                                                <option>Xe tải</option>
+                                                                                                            </select>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                
                                                                             </div>
                                                                         </div>
                                                                     </div>

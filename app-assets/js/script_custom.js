@@ -124,7 +124,6 @@ var on_change_kenh_khai_thac = function(p_this){
 }
 
 var on_change_hinh_thuc_khai_thac = function(p_this){
-        console.log(p_this.value)
     if(p_this.value == 'tai-bh'){
         $('#tai-bh').slideDown();
         $('#dong-bh').slideUp();
@@ -137,6 +136,51 @@ var on_change_hinh_thuc_khai_thac = function(p_this){
         $('#tai-bh, #dong-bh').slideUp();
     }
     
+}
+var on_change_trang_thai = function(p_this){
+    var v_input_value = $(p_this).val();
+    var v_page_title = $(".p-title").find('span');
+    var v_title = "";
+
+    var btn_duyet = $('.btn-duyet, .btn-duyet-dong');
+    var btn_trinh_duyet = $('.btn-trinh-duyet');
+    var btn_xoa = $('.btn-xoa');
+
+    if (v_input_value == "moi-them") {
+        v_title = "đang xử lý";
+        btn_duyet.hide();
+        btn_xoa.show();
+        btn_trinh_duyet.show();
+
+    }else if (v_input_value == "tu-choi"){
+        v_title = "từ chối";
+        btn_duyet.hide();
+        btn_xoa.show();
+        btn_trinh_duyet.show();
+
+    }else if (v_input_value == "tbh-tu-choi"){
+        v_title = "tái bảo hiểm từ chối";
+        btn_duyet.hide();
+        btn_xoa.show();
+        btn_trinh_duyet.show();
+
+    }else if (v_input_value == "chap-nhan"){
+        v_title = "chấp nhận";
+        btn_duyet.hide();
+        btn_xoa.show();
+        btn_trinh_duyet.show();
+
+    }else if (v_input_value == "cho-duyet"){
+        v_title = "chờ duyệt";
+        btn_xoa.hide();
+        btn_trinh_duyet.hide();
+        btn_duyet.show();
+    }
+
+    v_page_title.text(v_title);
+
+
+
 }
 
 var _xoa_dong = function(p_this) {

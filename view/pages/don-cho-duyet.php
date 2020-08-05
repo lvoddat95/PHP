@@ -21,8 +21,7 @@
                         <div class="top-left">
                             <div class="breadcrumb">
                                 <a href="<?php echo HTTP_PATH; ?>" class="breadcrumb-item"><i class="fad fa-home mr-1"></i>Trang chủ</a>
-                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item">F02 - Bảo hiểm ô tô</a>
-                               <span class="breadcrumb-item active">Danh sách đơn bảo hiểm</span>
+                               <span class="breadcrumb-item active">Danh sách đơn</span>
                             </div>
                             <div class="d-md-none logo-mobile">
                                 <a href="<?php echo HTTP_PATH; ?>" class="logo-text">
@@ -38,11 +37,11 @@
 
                     <div class="page-title">
                         <div class="p-title">
-                            <h1 class="font-weight-semibold font-size-m"><i class="icon-stack-text mr-2"></i>Danh sách đơn bảo hiểm</h1>
+                            <h1 class="font-weight-semibold font-size-m"><i class="icon-stack-text mr-2"></i>Đơn bảo hiểm <span>chờ duyệt</span></h1>
                         </div>
                         <div class="p-button">
                             <a href="<?php echo HTTP_PATH .'view/pages/ban-chao/danh-sach-ban-chao.php'; ?>" class="btn btn-labeled btn-labeled-left mr-1"><b><i class="icon-list3"></i></b> Danh sách bản chào</a>
-                            <a href="<?php echo HTTP_PATH .'view/pages/nhap-don.php'; ?>" class="btn bg-primary btn-labeled btn-labeled-left mr-1"><b><i class="icon-plus2"></i></b> Thêm đơn BH</a>
+                            <a href="<?php echo HTTP_PATH .'view/pages/nhap-don.php'; ?>" class="btn btn-them bg-primary btn-labeled btn-labeled-left mr-1"><b><i class="icon-plus2"></i></b> Thêm đơn BH</a>
                         </div>
                     </div>
                     
@@ -51,65 +50,6 @@
                     
                         <div class="row">
                             <div class="col-lg-12">
-                                <div class="card">
-                                    <div class="card-header header-elements-inline">
-                                        <p class="card-title font-size-s">Biểu đồ doanh thu</p>
-                                        <div class="header-elements">
-                                            <div class="list-icons">
-                                                <a class="text-default daterange-ranges font-weight-semibold cursor-pointer dropdown-toggle mr-2">
-                                                    <i class="icon-calendar3 mr-2"></i>
-                                                    <span class="select-date"></span>
-                                                </a>
-                                                <a class="list-icons-item" data-action="collapse"></a>
-                                                <a class="list-icons-item" data-action="remove"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body ">
-                                        <div class="bieu-do d-flex align-items-start justify-content-between flex-wrap">
-                                            <div class="d-flex align-items-center mb-3 mb-md-0">
-                                                <div id="tickets-status"></div>
-                                                <div class="ml-3">
-                                                    <h5 class="font-weight-semibold mb-0 font-size-s">14,327 (đơn)<span class="text-success font-size-sm font-weight-normal"><i class="icon-arrow-up12"></i> (+2.9%)</span></h5>
-                                                    <span class="badge badge-mark border-success mr-1"></span> <span class="text-muted font-size-xxs">Đơn bảo hiểm mới</span>
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-center mb-3 mb-md-0">
-                                                <a href="#" class="btn bg-transparent border-indigo-400 text-indigo-400 rounded-round border-2 btn-icon">
-                                                    <i class="icon-alarm-add"></i>
-                                                </a>
-                                                <div class="ml-3">
-                                                    <h5 class="font-weight-semibold mb-0 font-size-s">1,132 (đơn)</h5>
-                                                    <span class="text-muted font-size-xxs">Bồi thường</span>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="d-flex align-items-center mb-3 mb-sm-0">
-                                                <div id="campaign-status-pie"></div>
-                                                <div class="ml-3">
-                                                    <h5 class="font-weight-semibold mb-0 font-size-s">2,458 <span class="text-danger font-size-sm font-weight-normal"><i class="icon-arrow-down12"></i> (-4.9%)</span></h5>
-                                                    <span class="badge badge-mark border-danger mr-1"></span> <span class="text-muted font-size-xxs">Tháng 6</span>
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-center mb-3 mb-md-0">
-                                                <a href="#" class="btn bg-transparent border-indigo-400 text-indigo-400 rounded-round border-2 btn-icon">
-                                                    <i class="icon-spinner11"></i>
-                                                </a>
-                                                <div class="ml-3">
-                                                    <h5 class="font-weight-semibold mb-0 font-size-s">1,625 (đơn)</h5>
-                                                    <span class="text-muted font-size-xxs">Tái bảo hiểm</span>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <a href="#" class="btn bg-teal-400"><i class="icon-statistics mr-2"></i> In báo cáo</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                                 <div class="card card-search">
                                     <div class="card-header header-elements-inline">
                                         <p class="card-title font-size-s">
@@ -123,6 +63,21 @@
                                         </div>
                                     </div>
                                     <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group ">
+                                                    <label class="font-weight-semibold">Loại hình:</label>
+                                                    <div class="form-group-select">
+                                                        <div class="input-group">
+                                                            <span class="input-group-prepend">
+                                                                <span class="input-group-text"><i class="fa fa-swatchbook"></i></span>
+                                                            </span>
+                                                            <?php inc('template/loai_hinh.php'); ?>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="row">
                                             <div class="col-md-3 col-sm-4 col-6">
                                                 <div class="form-group ">
@@ -230,9 +185,9 @@
                                                             <span class="input-group-prepend">
                                                                 <span class="input-group-text"><i class="far fa-check-circle"></i></span>
                                                             </span>
-                                                            <select class="form-control" select2>
+                                                            <select class="form-control" select2 onchange="on_change_trang_thai(this);">
                                                                 <option value="moi-them">Mới thêm (20)</option>
-                                                                <option value="cho-duyet">Chờ duyệt(20)</option>
+                                                                <option value="cho-duyet" selected>Chờ duyệt(20)</option>
                                                                 <option value="tu-choi">Từ chối (18)</option>
                                                                 <option value="chap-nhan">Chấp nhận (30)</option>
                                                                 <option value="tbh-tu-choi">TBH Từ chối (28)</option>
@@ -258,9 +213,11 @@
                                 <div class="card">
                                     <div class="card-header header-elements-inline header-button ">
                                         <p class="card-title font-size-s">Danh sách đơn bảo hiểm</p>
-                                        <div class="header-elements p-button">
-                                            <a href="#" data-toggle="modal" data-target="#trinh_duyet_nhieu_don" class="btn btn-labeled btn-labeled-left mr-2"><b><i class="icon-file-check"></i></b> Trình duyệt</a>
-                                            <a href="" class="btn btn-labeled btn-labeled-left mr-2"><b><i class="icon-trash"></i></b> Xóa</a>
+                                        <div class="header-elements p-button" match-w>
+                                            <a href="" data-toggle="modal" data-target="#trinh_duyet_nhieu_don" class="btn btn-duyet-dong btn-labeled btn-labeled-left mr-2"><b><i class="icon-file-locked"></i></b> Duyệt & Đóng đơn</a>
+                                            <a href="" data-toggle="modal" data-target="#duyet_don" class="btn btn-duyet btn-labeled btn-labeled-left mr-2"><b><i class="icon-file-check"></i></b> Duyệt</a>
+                                            <a href="#" data-toggle="modal" data-target="#trinh_duyet_nhieu_don" class="btn btn-trinh-duyet btn-labeled btn-labeled-left mr-2" style="display: none;"><b><i class="icon-file-check"></i></b> Trình duyệt</a>
+                                            <a href="" class="btn btn-xoa btn-labeled btn-labeled-left mr-2" style="display: none;"><b><i class="icon-trash"></i></b> Xóa</a>
                                             <div class="btn-group">
                                                 <button type="button" class="btn bg-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon-printer2"></i> IN</button>
                                                 <div class="dropdown-menu dropdown-menu-right">
@@ -849,6 +806,7 @@
         <?php inc('modal/modal_lich_su_ton_that.php'); ?>
         <?php inc('modal/modal_trinh_duyet_mot_don.php'); ?>
         <?php inc('modal/modal_trinh_duyet_nhieu_don.php'); ?>
+        <?php inc('modal/modal_duyet_don.php'); ?>
 
     </body>
 

@@ -5,20 +5,6 @@ var App = function () {
     // Setup module components
     //
 
-    // Transitions
-    // -------------------------
-
-    // Disable all transitions
-    var _transitionsDisabled = function() {
-        $('body').addClass('no-transitions');
-    };
-
-    // Enable all transitions
-    var _transitionsEnabled = function() {
-        $('body').removeClass('no-transitions');
-    };
-
-
     // Sidebars
     // -------------------------
 
@@ -363,7 +349,7 @@ var App = function () {
     };
 
    
-    
+    // Tooltip tipsy
     var _component_tooltip_tipsy = function(){
         if ($('[data-tooltip="tipsy"]').length > 0) {
             if (!$().tipsy) {
@@ -401,18 +387,16 @@ var App = function () {
         }
     }
 
-
-
     // Select2
     var _component_select2 = function(p_select) {
+        if (!$().select2) {
+            console.warn('Warning - Select2 Js is not loaded.');
+        }
 
         var select = $('[select2]');
         if (p_select) select = p_select;
 
         if ($(select).length > 0) {
-            if (!$().select2) {
-                console.warn('Warning - select2.min.js is not loaded.');
-            }
             $(select).select2({ 
                 language: "vi",
                 minimumResultsForSearch: 5,
@@ -423,6 +407,10 @@ var App = function () {
     
     // Datepicker
     var _component_datepicker = function(p_datepicker){
+
+        if (!$().datepicker) {
+            return false;
+        }
 
         var datepicker = $('.datepicker');
         if (p_datepicker) datepicker = p_datepicker;
@@ -477,6 +465,11 @@ var App = function () {
     
     // Cleave js: dinh dang kieu nhap du lieu input
     var _component_input_type = function(){
+
+        if (!this.Cleave) {
+            console.warn('Warning - Cleave Js is not loaded.');
+        }
+
         $('.input-money').toArray().forEach(function (field) {
             new Cleave(field, {
                 numeral: true,
@@ -528,10 +521,12 @@ var App = function () {
         });
     }
 
+
+    // Repeater js
     var _component_repeater = function(){
         if ($('[repeater]').length > 0) {
             if (!$().repeater) {
-                console.warn('Warning - repeater js is not loaded.');
+                console.warn('Warning - Repeater Js is not loaded.');
             }
             $('[repeater]').each(function( index ) {
                 $(this).repeater({
@@ -555,49 +550,6 @@ var App = function () {
     
         }
     }
-
-    // DateRange js
-    var _component_daterange = function() {
-        if (!$().daterangepicker) {
-            console.warn('Warning - daterangepicker.js is not loaded.');
-            return;
-        }
-        // Initialize
-        $('.daterange-ranges').daterangepicker(
-            {
-                startDate: moment().subtract(29, 'days'),
-                endDate: moment(),
-                minDate: '01/01/2010',
-                maxDate:  '01/01/2020',
-                dateLimit: { days: 6000 },
-                ranges: {
-                    'Hôm nay': [moment(), moment()],
-                    'Hôm qua': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-                    '7 ngày trước': [moment().subtract(6, 'days'), moment()],
-                    'Tháng trước': [moment().subtract(29, 'days'), moment()],
-                    'Tháng này': [moment().startOf('month'), moment().endOf('month')],
-                    'Tháng sau': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-                },
-                opens: $('html').attr('dir') == 'rtl' ? 'right' : 'left',
-                applyClass: 'btn bg-color btn-block',
-                cancelClass: 'btn btn-light btn-block',
-                locale: {
-                    format: 'DD/MM/YYYY',
-                    direction: $('html').attr('dir') == 'rtl' ? 'rtl' : 'ltr',
-                    applyLabel: 'Chọn',
-                    cancelLabel: 'Xóa',
-                    startLabel: 'Ngày bắt đầu',
-                    endLabel: 'Ngày kết thúc',
-                    customRangeLabel: 'Tùy chỉnh',
-                }
-            },
-            function(start, end) {
-                $('.daterange-ranges span').html(start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY'));
-            }
-        );
-        $('.daterange-ranges span').html(moment().subtract(29, 'days').format('DD/MM/YYYY') + ' - ' + moment().format('DD/MM/YYYY'));
-    };
-
 
     // Chart
     // -------------------------
@@ -1477,59 +1429,142 @@ var App = function () {
         }
     };
 
+    // Datatable 
+    var _component_datatable = function(p_table = '') {
 
+        var table = $('.datatable');
+        if (p_table)  table = p_table;
+
+        if (!$().DataTable) {
+            console.warn('Warning - datatables.min.js is not loaded.');
+            return;
+        }
+
+        // Setting datatable defaults
+        $.extend( $.fn.dataTable.defaults, {
+            retrieve: true,
+            autoWidth: false,
+            responsive: {
+                details: {
+                    type: 'column'
+                },
+                breakpoints: [
+                    {name: 'desktop', width: Infinity},
+                    {name: 'tablet-l', width: 1183},
+                    {name: 'tablet-p', width: 975},
+                    {name: 'mobile-l', width: 559},
+                    {name: 'mobile-p', width: 303}
+                ]
+            },
+            columnDefs: [
+                {
+                    className: 'control not-desktop text-center',
+                    orderable: false,
+                    targets:   0
+                },
+            ],
+            dom: '<"datatable-header"f><"datatable-body"t><"datatable-footer"<"datatable-li"li>p>',
+            language: {
+                decimal:        "",
+                emptyTable:     "Không có dữ liệu trong bảng",
+                info:           " Tổng số _TOTAL_ bản ghi",
+                infoEmpty:      "Không có bản ghi nào",
+                infoFiltered:   "(filtered from _MAX_ total entries)",
+                infoPostFix:    "",
+                thousands:      ",",
+                lengthMenu:     " _MENU_ ",
+                loadingRecords: "Đang tải...",
+                processing:     "Đang xử lý...",
+                search:         "",
+                searchPlaceholder: 'Tìm kiếm nhanh ...',
+                zeroRecords:    "Không tìm thấy hồ sơ phù hợp",
+                paginate: {
+                    first:      "Đầu",
+                    last:       "Cuối",
+                    next:       "Sau <i class='far fa-chevron-double-right fa-xs'></i>",
+                    previous:   "<i class='far fa-chevron-double-left fa-xs'></i> Trước"
+                },
+                aria: {
+                    sortAscending:  ": kích hoạt để sắp xếp cột tăng dần",
+                    sortDescending: ": kích hoạt để sắp xếp cột giảm dần"
+                },
+                buttons: {
+                    copyTitle: 'Đã thêm vào clipboard',
+                    copyKeys: 'Nhấn ctrl hoặc <i>\u2318</i> + C để sao chép dữ liệu từ bảng vào khay nhớ tạm của bạn. Để hủy, bấm vào tin nhắn này hoặc nhấn Esc.',
+                    copySuccess: {
+                        _: 'Sao chép %d dòng ',
+                        1: 'Sao chép 1 dòng '
+                    }
+                }
+            },
+            lengthMenu: [
+                [10, 20, 50, 100, 200, 300, 400, 500, 1000, -1], 
+                [10, 20, 50, 100, 200, 300, 400, 500, 1000, "Tất cả"]
+            ],
+        });
+
+        
+        table.find('tr').each(function(){
+           var v_th = $(this).find('th').eq(0);
+           var v_td = $(this).find('td').eq(0);
+           if (!v_th.hasClass('cell')) {
+                v_th.before('<th class="cell w1p"></th>');
+            }
+            if (!v_td.hasClass('cell')) {
+                v_td.before('<td class="cell"></td>');
+            }
+        });
+
+        
+        var v_datatable = table.DataTable();
+
+        v_datatable.on( 'responsive-display', function ( e, datatable, row, showHide, update ) {
+            var v_li =  $(this).find('tbody > tr.child > td.child > ul.dtr-details > li');
+            v_li.each(function(index, li) { 
+                var v_dtr_title = $(li).find('.dtr-title');
+                var v_dtr_data = $(li).find('.dtr-data');
+
+                if (v_dtr_title.is(':empty')) {
+                    $(li).addClass('dtr-title-empty');
+                }
+
+                if (v_dtr_data.is(':empty')) {
+                    $(li).addClass('dtr-data-empty');
+                }
+
+            });
+                                   
+        });
+
+
+        $( "[datatable-collapse]" ).on("shown.bs.collapse", function() {
+            $.each($.fn.dataTable.tables(true), function(){
+                $(this).DataTable().columns.adjust().draw();
+            });
+        });
+
+        $('[datatable-modal]').on('shown.bs.modal', function(e){
+            $($.fn.dataTable.tables(true)).DataTable()
+               .columns.adjust()
+               .responsive.recalc();
+        });
+
+        $("a[data-toggle=\"tab\"]").on("shown.bs.tab", function (e) {
+            $($.fn.dataTable.tables(true)).DataTable()
+              .columns.adjust()
+              .responsive.recalc();
+        });
+      
+    };
+
+    // Steps Form
     var _component_steps_form = function() {
-
-        //
-        // Wizard with validation
-        //
 
         // Stop function if validation is missing
         if (!$().validate) {
             console.warn('Warning - validate.min.js is not loaded.');
             return;
         }
-
-        // Initialize validation
-        var form = $('.form-validation').validate({
-            ignore: 'input[type=hidden], .select2-search__field', // ignore hidden fields
-            errorClass: 'validation-invalid-label',
-            highlight: function(element, errorClass) {
-                $(element).removeClass(errorClass);
-            },
-            unhighlight: function(element, errorClass) {
-                $(element).removeClass(errorClass);
-            },
-
-            // Different components require proper error label placement
-            errorPlacement: function(error, element) {
-
-                // Unstyled checkboxes, radios
-                if (element.parents().hasClass('form-check')) {
-                    error.appendTo( element.parents('.form-check').parent() );
-                }
-
-                // Input with icons and Select2
-                else if (element.parents().hasClass('form-group-feedback') || element.hasClass('select2-hidden-accessible')) {
-                    error.appendTo( element.parent() );
-                }
-
-                // Input group, styled file input
-                else if (element.parent().is('.uniform-uploader, .uniform-select') || element.parents().hasClass('input-group')) {
-                    error.appendTo( element.parent().parent() );
-                }
-
-                // Other elements
-                else {
-                    error.insertAfter(element);
-                }
-            },
-            rules: {
-                email: {
-                    email: true
-                }
-            }
-        });
 
         //Wizard
         var li = $(".wizard .nav-tabs li");
@@ -1554,18 +1589,18 @@ var App = function () {
         $('.next-step').on('click', function(e) {
             e.preventDefault();
             var $active = $(".wizard .nav-tabs li > .active");
-            if (!form.valid()) {
-                return false;
-            }
+            // if (!form.valid()) {
+            //     return false;
+            // }
             $active.parent().next().removeClass("disabled").find('a').click();
         })
 
         $('.prev-step').on('click', function(e) {
             e.preventDefault();
             var $active = $(".wizard .nav-tabs li > .active");
-            if (!form.valid()) {
-                return false;
-            }
+            // if (!form.valid()) {
+            //     return false;
+            // }
             $active.parent().prev().removeClass("disabled").find('a').click();
 
         })
@@ -1574,19 +1609,17 @@ var App = function () {
 
 
     //
-    // Return objects assigned to module
+    // Tra ve cac object duoc gan cho module
     //
 
     return {
 
-        // Disable transitions before page is fully loaded
+        // Init truoc khi load trang
         initBeforeLoad: function() {
-            _transitionsDisabled();
         },
 
-        // Enable transitions when page is fully loaded
+        // Init sau khi load trang
         initAfterLoad: function() {
-            _transitionsEnabled();
         },
 
         // Initialize all sidebars
@@ -1613,7 +1646,6 @@ var App = function () {
             _component_steps_form(); //Khai bao truoc
             _component_tooltip();
             _component_popover();
-            _component_daterange();
             _component_repeater();
             _component_datatable();
             _component_tooltip_tipsy();
@@ -1659,132 +1691,7 @@ var App = function () {
     }
 }();
 
-// Datatable 
-var _component_datatable = function(p_table = '') {
 
-    var table = $('.datatable');
-    if (p_table)  table = p_table;
-
-    if (!$().DataTable) {
-        console.warn('Warning - datatables.min.js is not loaded.');
-        return;
-    }
-
-    // Setting datatable defaults
-    $.extend( $.fn.dataTable.defaults, {
-        autoWidth: false,
-        responsive: {
-            details: {
-                type: 'column'
-            },
-            breakpoints: [
-                {name: 'desktop', width: Infinity},
-                {name: 'tablet-l', width: 1183},
-                {name: 'tablet-p', width: 975},
-                {name: 'mobile-l', width: 559},
-                {name: 'mobile-p', width: 303}
-            ]
-        },
-        columnDefs: [
-            {
-                className: 'control not-desktop text-center',
-                orderable: false,
-                targets:   0
-            },
-        ],
-        dom: '<"datatable-header"f><"datatable-body"t><"datatable-footer"<"datatable-li"li>p>',
-        language: {
-            decimal:        "",
-            emptyTable:     "Không có dữ liệu trong bảng",
-            info:           " Tổng số _TOTAL_ bản ghi",
-            infoEmpty:      "Không có bản ghi nào",
-            infoFiltered:   "(filtered from _MAX_ total entries)",
-            infoPostFix:    "",
-            thousands:      ",",
-            lengthMenu:     " _MENU_ ",
-            loadingRecords: "Đang tải...",
-            processing:     "Đang xử lý...",
-            search:         "",
-            searchPlaceholder: 'Tìm kiếm nhanh ...',
-            zeroRecords:    "Không tìm thấy hồ sơ phù hợp",
-            paginate: {
-                first:      "Đầu",
-                last:       "Cuối",
-                next:       "Sau <i class='far fa-chevron-double-right fa-xs'></i>",
-                previous:   "<i class='far fa-chevron-double-left fa-xs'></i> Trước"
-            },
-            aria: {
-                sortAscending:  ": kích hoạt để sắp xếp cột tăng dần",
-                sortDescending: ": kích hoạt để sắp xếp cột giảm dần"
-            },
-            buttons: {
-                copyTitle: 'Đã thêm vào clipboard',
-                copyKeys: 'Nhấn ctrl hoặc <i>\u2318</i> + C để sao chép dữ liệu từ bảng vào khay nhớ tạm của bạn. Để hủy, bấm vào tin nhắn này hoặc nhấn Esc.',
-                copySuccess: {
-                    _: 'Sao chép %d dòng ',
-                    1: 'Sao chép 1 dòng '
-                }
-            }
-        },
-        lengthMenu: [
-            [10, 20, 50, 100, 200, 300, 400, 500, 1000, -1], 
-            [10, 20, 50, 100, 200, 300, 400, 500, 1000, "Tất cả"]
-        ],
-    });
-
-    
-    table.find('tr').each(function(){
-       var v_th = $(this).find('th').eq(0);
-       var v_td = $(this).find('td').eq(0);
-       if (!v_th.hasClass('cell')) {
-            v_th.before('<th class="cell w1p"></th>');
-        }
-        if (!v_td.hasClass('cell')) {
-            v_td.before('<td class="cell"></td>');
-        }
-    });
-
-    
-    var v_datatable = table.DataTable();
-
-    v_datatable.on( 'responsive-display', function ( e, datatable, row, showHide, update ) {
-        var v_li =  $(this).find('tbody > tr.child > td.child > ul.dtr-details > li');
-        v_li.each(function(index, li) { 
-            var v_dtr_title = $(li).find('.dtr-title');
-            var v_dtr_data = $(li).find('.dtr-data');
-
-            if (v_dtr_title.is(':empty')) {
-                $(li).addClass('dtr-title-empty');
-            }
-
-            if (v_dtr_data.is(':empty')) {
-                $(li).addClass('dtr-data-empty');
-            }
-
-        });
-                               
-    });
-
-
-    $( "[datatable-collapse]" ).on("shown.bs.collapse", function() {
-        $.each($.fn.dataTable.tables(true), function(){
-            $(this).DataTable().columns.adjust().draw();
-        });
-    });
-
-    $('[datatable-modal]').on('shown.bs.modal', function(e){
-        $($.fn.dataTable.tables(true)).DataTable()
-           .columns.adjust()
-           .responsive.recalc();
-    });
-
-    $("a[data-toggle=\"tab\"]").on("shown.bs.tab", function (e) {
-        $($.fn.dataTable.tables(true)).DataTable()
-          .columns.adjust()
-          .responsive.recalc();
-    });
-  
-};
 
 // Initialize module
 // ------------------------------
@@ -1793,6 +1700,9 @@ var _component_datatable = function(p_table = '') {
 document.addEventListener('DOMContentLoaded', function() {
     App.initBeforeLoad();
     App.initCore();
+
+    
+
 });
 
 // When page is fully loaded
