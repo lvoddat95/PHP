@@ -283,7 +283,7 @@
                                         >
                                             <thead class="thead-light">
                                                 <tr>
-                                                    <th data-orderable="false"><input type="checkbox" id="input-chk-all"></th>
+                                                    <th data-orderable="false" class="text-center"><input type="checkbox" id="input-chk-all"></th>
                                                     <th>Số đơn</th>
                                                     <th>Ngày cấp</th>
                                                     <th>Loại hình</th>
@@ -291,7 +291,7 @@
                                                     <th>Số tiền BH</th>
                                                     <th>Phí bảo hiểm</th>
                                                     <th>Trạng thái</th>
-                                                    <th data-orderable="false">#</th>
+                                                    <th data-orderable="false" class="text-center all">#</th>
                                                 </tr>
                                             </thead>
                                             <tbody>

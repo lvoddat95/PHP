@@ -4201,7 +4201,8 @@
 }
 @media (max-width: 1200px) {
     .datatable {
-        /*table-layout: fixed;*/
+    }
+    .dataTable thead th{
     }
 }
 /* ------------------------------------------------------------------------------

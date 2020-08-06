@@ -137,10 +137,10 @@ var on_change_hinh_thuc_khai_thac = function(p_this){
     }
     
 }
-var on_change_trang_thai = function(p_this){
+var on_change_trang_thai_don = function(p_this){
+    var v_title = "";
     var v_input_value = $(p_this).val();
     var v_page_title = $(".p-title").find('span');
-    var v_title = "";
 
     var btn_duyet = $('.btn-duyet, .btn-duyet-dong');
     var btn_trinh_duyet = $('.btn-trinh-duyet');
@@ -179,8 +179,16 @@ var on_change_trang_thai = function(p_this){
 
     v_page_title.text(v_title);
 
+}
 
-
+var on_change_trang_thai_duyet_don = function(p_this){
+    var v_input_value = $(p_this).val();
+    var v_li_do = $(p_this).closest('form').find('#tu-choi-don');
+    if (v_input_value == 'tu-choi') {
+        v_li_do.slideDown();
+    }else{
+        v_li_do.slideUp();
+    }
 }
 
 var _xoa_dong = function(p_this) {

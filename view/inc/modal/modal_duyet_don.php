@@ -10,7 +10,7 @@
             <form action="#">
                 <div class="modal-body">
                     <div class="form-group row">
-                        <label class="col-lg-3 col-form-label">Người duyệt:</label>
+                        <label class="col-lg-3 col-form-label">Cán bộ:</label>
                         <div class="col-lg-9">
                             <input class="form-control" readonly type="text" value="Lê Viết Đạt">
                         </div>
@@ -21,28 +21,28 @@
                         <div class="col-lg-9">
                             <div>
                                 <div class="form-check form-check-inline">
-                                    <input type="radio" id="radio1" class="mr-1" name="radio" checked>
+                                    <input type="radio" id="radio1" class="mr-1" name="radio" value="chap-nhan" checked onchange="on_change_trang_thai_duyet_don(this)">
                                     <label for="radio1" class="form-check-label">Chấp nhận</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input type="radio" id="radio2" class="mr-1" name="radio" >
+                                    <input type="radio" id="radio2" class="mr-1" name="radio" value="tu-choi" onchange="on_change_trang_thai_duyet_don(this)">
                                     <label for="radio2" class="form-check-label">Từ chối</label>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="form-group row">
+                    <div id="tu-choi-don" class="form-group row" style="display: none;">
                         <label class="col-lg-3 col-form-label">Lí do từ chối: <span class="text-danger">*</span></label>
                         <div class="col-lg-9">
                             <select class="form-control" select2 name="">
                                 <option>--- Chọn ---</option>
-                                <option>Lí do A</option>
-                                <option>Lí do B</option>
-                                <option>Lí do C</option>
-                                <option>Lí do D</option>
-                                <option>Lí do E</option>
-                                <option>Lí do F</option>
+                                <option>Lí do từ chối A</option>
+                                <option>Lí do từ chối B</option>
+                                <option>Lí do từ chối C</option>
+                                <option>Lí do từ chối D</option>
+                                <option>Lí do từ chối E</option>
+                                <option>Lí do từ chối F</option>
                             </select>
                         </div>
                     </div>

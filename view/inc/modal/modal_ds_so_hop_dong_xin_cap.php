@@ -41,7 +41,7 @@
                             <table class="table table-bordered table-hover datatable"  
                                 data-paging="true"
                                 data-info="true"
-                                data-ordering="true"
+                                data-ordering="false"
                                 data-searching="false">
                                 <thead class="thead-light">
                                     <th width="w1p" data-orderable="false" class="text-center">#</th>

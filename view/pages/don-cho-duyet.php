@@ -185,7 +185,7 @@
                                                             <span class="input-group-prepend">
                                                                 <span class="input-group-text"><i class="far fa-check-circle"></i></span>
                                                             </span>
-                                                            <select class="form-control" select2 onchange="on_change_trang_thai(this);">
+                                                            <select class="form-control" select2 onchange="on_change_trang_thai_don(this);">
                                                                 <option value="moi-them">Mới thêm (20)</option>
                                                                 <option value="cho-duyet" selected>Chờ duyệt(20)</option>
                                                                 <option value="tu-choi">Từ chối (18)</option>
@@ -213,8 +213,8 @@
                                 <div class="card">
                                     <div class="card-header header-elements-inline header-button ">
                                         <p class="card-title font-size-s">Danh sách đơn bảo hiểm</p>
-                                        <div class="header-elements p-button" match-w>
-                                            <a href="" data-toggle="modal" data-target="#trinh_duyet_nhieu_don" class="btn btn-duyet-dong btn-labeled btn-labeled-left mr-2"><b><i class="icon-file-locked"></i></b> Duyệt & Đóng đơn</a>
+                                        <div class="header-elements p-button">
+                                            <a href="" data-toggle="modal" data-target="#duyet_dong_don" class="btn btn-duyet-dong btn-labeled btn-labeled-left mr-2"><b><i class="icon-file-locked"></i></b> Duyệt & Đóng đơn</a>
                                             <a href="" data-toggle="modal" data-target="#duyet_don" class="btn btn-duyet btn-labeled btn-labeled-left mr-2"><b><i class="icon-file-check"></i></b> Duyệt</a>
                                             <a href="#" data-toggle="modal" data-target="#trinh_duyet_nhieu_don" class="btn btn-trinh-duyet btn-labeled btn-labeled-left mr-2" style="display: none;"><b><i class="icon-file-check"></i></b> Trình duyệt</a>
                                             <a href="" class="btn btn-xoa btn-labeled btn-labeled-left mr-2" style="display: none;"><b><i class="icon-trash"></i></b> Xóa</a>
@@ -240,7 +240,7 @@
                                         >
                                             <thead class="thead-light">
                                                 <tr>
-                                                    <th data-orderable="false"><input type="checkbox" id="input-chk-all"></th>
+                                                    <th data-orderable="false" class="text-center"><input type="checkbox" id="input-chk-all"></th>
                                                     <th>Số đơn</th>
                                                     <th>Ngày cấp</th>
                                                     <th>Loại hình</th>
@@ -807,6 +807,7 @@
         <?php inc('modal/modal_trinh_duyet_mot_don.php'); ?>
         <?php inc('modal/modal_trinh_duyet_nhieu_don.php'); ?>
         <?php inc('modal/modal_duyet_don.php'); ?>
+        <?php inc('modal/modal_duyet_dong_don.php'); ?>
 
     </body>
 

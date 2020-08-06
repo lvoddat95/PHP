@@ -1442,7 +1442,6 @@ var App = function () {
 
         // Setting datatable defaults
         $.extend( $.fn.dataTable.defaults, {
-            retrieve: true,
             autoWidth: false,
             responsive: {
                 details: {
@@ -1450,10 +1449,10 @@ var App = function () {
                 },
                 breakpoints: [
                     {name: 'desktop', width: Infinity},
-                    {name: 'tablet-l', width: 1183},
-                    {name: 'tablet-p', width: 975},
-                    {name: 'mobile-l', width: 559},
-                    {name: 'mobile-p', width: 303}
+                    {name: 'tablet-l', width: 1200},
+                    {name: 'tablet-p', width: 992},
+                    {name: 'mobile-l', width: 576},
+                    {name: 'mobile-p', width: 320}
                 ]
             },
             columnDefs: [

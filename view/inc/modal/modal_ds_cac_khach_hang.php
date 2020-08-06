@@ -131,7 +131,7 @@
                         data-page-length="10"
                         >
                         <thead class="thead-light">
-                            <th width="30px" data-orderable="false">#</th>
+                            <th width="w1p" data-orderable="false" class="text-center">#</th>
                             <th>Mã khách hàng</th>
                             <th>Tên khách hàng</th>
                             <th>Địa chỉ</th>
@@ -140,7 +140,7 @@
                         <tbody>
                             
                             <tr>
-                                <td>
+                                <td align="center">
                                     <input type="checkbox" value="" />
                                 </td>
                                 <td><div>0100000001</div></td>
@@ -149,7 +149,7 @@
                                 <td>Hoạt động</td>
                             </tr>
                             <tr>
-                                <td>
+                                <td align="center">
                                     <input type="checkbox" value="" />
                                 </td>
                                 <td><div>0100000002</div></td>
@@ -158,7 +158,7 @@
                                 <td>Hoạt động</td>
                             </tr>
                             <tr>
-                                <td>
+                                <td align="center">
                                     <input type="checkbox" value="" />
                                 </td>
                                 <td><div>0100000003</div></td>
@@ -167,7 +167,7 @@
                                 <td>Hoạt động</td>
                             </tr>
                             <tr>
-                                <td>
+                                <td align="center">
                                     <input type="checkbox" value="" />
                                 </td>
                                 <td><div>0100000004</div></td>
@@ -176,7 +176,7 @@
                                 <td>Hoạt động</td>
                             </tr>
                             <tr>
-                                <td>
+                                <td align="center">
                                     <input type="checkbox" value="" />
                                 </td>
                                 <td><div>0100000005</div></td>
@@ -185,7 +185,7 @@
                                 <td>Hoạt động</td>
                             </tr>
                             <tr>
-                                <td>
+                                <td align="center">
                                     <input type="checkbox" value="" />
                                 </td>
                                 <td><div>0100000006</div></td>
@@ -194,7 +194,7 @@
                                 <td>Hoạt động</td>
                             </tr>
                             <tr>
-                                <td>
+                                <td align="center">
                                     <input type="checkbox" value="" />
                                 </td>
                                 <td><div>0100000007</div></td>
@@ -203,7 +203,7 @@
                                 <td>Hoạt động</td>
                             </tr>
                             <tr>
-                                <td>
+                                <td align="center">
                                     <input type="checkbox" value="" />
                                 </td>
                                 <td><div>0100000008</div></td>
@@ -212,7 +212,7 @@
                                 <td>Hoạt động</td>
                             </tr>
                             <tr>
-                                <td>
+                                <td align="center">
                                     <input type="checkbox" value="" />
                                 </td>
                                 <td><div>0100000009</div></td>
@@ -221,7 +221,7 @@
                                 <td>Hoạt động</td>
                             </tr>
                             <tr>
-                                <td>
+                                <td align="center">
                                     <input type="checkbox" value="" />
                                 </td>
                                 <td><div>0100000010</div></td>
@@ -230,7 +230,7 @@
                                 <td>Hoạt động</td>
                             </tr>
                             <tr>
-                                <td>
+                                <td align="center">
                                     <input type="checkbox" value="" />
                                 </td>
                                 <td><div>0100000011</div></td>
@@ -239,7 +239,7 @@
                                 <td>Hoạt động</td>
                             </tr>
                             <tr>
-                                <td>
+                                <td align="center">
                                     <input type="checkbox" value="" />
                                 </td>
                                 <td><div>0100000012</div></td>
@@ -248,7 +248,7 @@
                                 <td>Hoạt động</td>
                             </tr>
                             <tr>
-                                <td>
+                                <td align="center">
                                     <input type="checkbox" value="" />
                                 </td>
                                 <td><div>0100000013</div></td>
@@ -257,7 +257,7 @@
                                 <td>Hoạt động</td>
                             </tr>
                             <tr>
-                                <td>
+                                <td align="center">
                                     <input type="checkbox" value="" />
                                 </td>
                                 <td><div>0100000014</div></td>
@@ -266,7 +266,7 @@
                                 <td>Hoạt động</td>
                             </tr>
                             <tr>
-                                <td>
+                                <td align="center">
                                     <input type="checkbox" value="" />
                                 </td>
                                 <td><div>0100000015</div></td>
@@ -275,7 +275,7 @@
                                 <td>Hoạt động</td>
                             </tr>
                             <tr>
-                                <td>
+                                <td align="center">
                                     <input type="checkbox" value="" />
                                 </td>
                                 <td><div>0100000016</div></td>
@@ -284,7 +284,7 @@
                                 <td>Hoạt động</td>
                             </tr>
                             <tr>
-                                <td>
+                                <td align="center">
                                     <input type="checkbox" value="" />
                                 </td>
                                 <td><div>0100000017</div></td>
@@ -293,7 +293,7 @@
                                 <td>Hoạt động</td>
                             </tr>
                             <tr>
-                                <td>
+                                <td align="center">
                                     <input type="checkbox" value="" />
                                 </td>
                                 <td><div>0100000018</div></td>
@@ -302,7 +302,7 @@
                                 <td>Hoạt động</td>
                             </tr>
                             <tr>
-                                <td>
+                                <td align="center">
                                     <input type="checkbox" value="" />
                                 </td>
                                 <td><div>0100000019</div></td>
@@ -311,7 +311,7 @@
                                 <td>Hoạt động</td>
                             </tr>
                             <tr>
-                                <td>
+                                <td align="center">
                                     <input type="checkbox" value="" />
                                 </td>
                                 <td><div>0100000020</div></td>
