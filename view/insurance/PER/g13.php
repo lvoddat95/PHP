@@ -106,39 +106,36 @@
                                                                             >
                                                                                 <thead class="thead-light">
                                                                                     <tr>
-                                                                                        <th data-orderable="false"><input type="checkbox" id="input-chk-all"></th>
-                                                                                        <th >Số đơn</th>
-                                                                                        <th >Ngày cấp</th>
-                                                                                        <th >Loại hình</th>
-                                                                                        <th >Tên khách hàng</td>
-                                                                                        <th >Số tiền BH</th>
-                                                                                        <th >Phí bảo hiểm</th>
-                                                                                        <th >Trạng thái</th>
-                                                                                        <th data-orderable="false">#</th>
+                                                                                        <th data-orderable="false" class="text-center">
+                                                                                            <input type="checkbox" id="input-chk-all">
+                                                                                        </th>
+                                                                                        <th>STT</th>
+                                                                                        <th>Số hợp đồng</th>
+                                                                                        <th>Ký hiệu</th>
+                                                                                        <th>Ấn chỉ</th>
+                                                                                        <th>Ngày cấp</th>
+                                                                                        <th>Hiệu lực: <span class="float-right">từ ngày</span></th>
+                                                                                        <th>Hiệu lực: <span class="float-right">đến ngày</span></th>
+                                                                                        <th>Chủ hộ</th>
+                                                                                        <th>Địa chỉ</th>
+                                                                                        <th>Phí bảo hiểm</th>
+                                                                                        <th>Trạng thái</th>
                                                                                     </tr>
                                                                                 </thead>
                                                                                 <tbody>
                                                                                     <tr>
-                                                                                        <td align="center"><input type="checkbox" class="input-chk"></td><td>042000910/F02.AD19/0099350</td>
-                                                                                        <td>26/05/2020</td>
-                                                                                        <td>F02</td>
-                                                                                        <td>Vũ Huy Anh</td>
-                                                                                        <td>11,820,000 VNĐ</td>
-                                                                                        <td>200,000 VNĐ</td>
-                                                                                        <td><span class="badge badge-success">Mới thêm</span></td>
-                                                                                        <td class="text-center">
-                                                                                            <div class="list-icons">
-                                                                                                <div class="dropdown">
-                                                                                                    <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
-                                                                                                    <div class="dropdown-menu dropdown-menu-right">
-                                                                                                        <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
-                                                                                                        <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
-                                                                                                        <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
-                                                                                                        <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </td>
+                                                                                        <td><input type="checkbox" class="input-chk"></td>
+                                                                                        <td><input type="text" class="form-control"/></td>
+                                                                                        <td><input type="text" class="form-control"/></td>
+                                                                                        <td><input type="text" class="form-control"/></td>
+                                                                                        <td><input type="text" class="form-control"/></td>
+                                                                                        <td><input type="text" class="form-control"/></td>
+                                                                                        <td><input type="text" class="form-control"/></td>
+                                                                                        <td><input type="text" class="form-control"/></td>
+                                                                                        <td><input type="text" class="form-control"/></td>
+                                                                                        <td><input type="text" class="form-control"/></td>
+                                                                                        <td><input type="text" class="form-control"/></td>
+                                                                                        <td><input type="text" class="form-control"/></td>
                                                                                     </tr>
                                                                                 </tbody>
                                                                             </table>
