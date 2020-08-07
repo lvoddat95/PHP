@@ -53,12 +53,6 @@ $(function(){
             });
         });
     }
-    
-
-    if ($().perfectScrollbar) {
-        $('.dropdown-scrollable').perfectScrollbar();
-        $('.nav-group-sub').perfectScrollbar();
-    }
 
     if( $('.chat-box').length > 0 ){
         

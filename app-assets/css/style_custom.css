@@ -28,7 +28,6 @@ a, area, button, input, label, select, textarea, [tabindex] {
     flex-grow: 1;
     position: relative;
     z-index: 9;
-    background: #1C3FAA;
 }
 
 .content-wrapper {
@@ -43,8 +42,6 @@ a, area, button, input, label, select, textarea, [tabindex] {
     flex-direction: column;
     position: relative;
     background-color: #F1F5F8;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
 }
 
 .content {
@@ -151,9 +148,6 @@ table .select2-container {
     font-size: 12px;
 }
 
-.sidebar-xs .sidebar {
-    border-radius: 0;
-}
 
 .sidebar-xs sidebar .nav-sidebar>.nav-item>.nav-link {
     width: 30px;

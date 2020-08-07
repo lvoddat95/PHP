@@ -21,7 +21,7 @@
                 </div>
 
                 <div class="dropdown-content-body ">
-                    <ul class="media-list dropdown-scrollable">
+                    <ul class="media-list dropdown-scrollable" scrollbar>
                         <li class="media">
                             <div class="mr-2 position-relative">
                                 <img src="<?php echo HTTP_PATH; ?>app-assets/images/placeholder.jpg" width="24" height="24"

@@ -17,7 +17,6 @@
         <!-- core stylesheet -->
         <link rel="stylesheet" type="text/css" href="<?php echo ASSET_ROOT; ?>/fonts/iconmoon/iconmoon.min.css">
         <link rel="stylesheet" type="text/css" href="<?php echo ASSET_ROOT; ?>/fonts/font-awesome/css/fontawesome.min.css">
-        <link rel="stylesheet" type="text/css" href="<?php echo ASSET_ROOT; ?>/vendors/css/perfect-scrollbar.min.css">
         <link rel="stylesheet" type="text/css" href="<?php echo ASSET_ROOT; ?>/vendors/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="<?php echo ASSET_ROOT; ?>/css/bootstrap_custom.css">
         <link rel="stylesheet" type="text/css" href="<?php echo ASSET_ROOT; ?>/css/components.css">

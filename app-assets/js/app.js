@@ -551,6 +551,18 @@ var App = function () {
         }
     }
 
+    // PerfectScrollbar js
+    var _component_perfect_scrollbar = function(){
+        if ($('[scrollbar]').length > 0) {
+            if (!this.PerfectScrollbar) {
+                console.warn('Warning - PerfectScrollbar Js is not loaded.');
+            }
+            $('[scrollbar]').each(function(){ 
+                const ps = new PerfectScrollbar($(this)[0]); 
+            });
+        }
+    }
+
     // Chart
     // -------------------------
 
@@ -1646,6 +1658,7 @@ var App = function () {
             _component_tooltip();
             _component_popover();
             _component_repeater();
+            _component_perfect_scrollbar();
             _component_datatable();
             _component_tooltip_tipsy();
             _component_select2();

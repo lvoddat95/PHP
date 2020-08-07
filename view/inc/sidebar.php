@@ -40,9 +40,10 @@
                                 <i class="fad fa-browser fa-fw"></i>
                                 <span class="menu-title"> Pages Template</span>
                             </a>
-                            <ul class="nav nav-group-sub" data-submenu-title="Pages Template">
+                            <ul class="nav nav-group-sub" scrollbar data-submenu-title="Pages Template">
                                 <li><a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="nav-link"><span class="menu-title">Danh sách đơn</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/pages/nhap-don.php'; ?>" class="nav-link"><span class="menu-title">Nhập đơn</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/pages/nhap-don2.php'; ?>" class="nav-link"><span class="menu-title">Nhập đơn 2</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/pages/xem-don.php'; ?>" class="nav-link"><span class="menu-title">Xem đơn</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/pages/ban-chao/danh-sach-ban-chao.php'; ?>" class="nav-link"><span class="menu-title">Bản chào</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/pages/don-cho-duyet.php'; ?>" class="nav-link"><span class="menu-title">Đơn chờ duyệt</span></a></li>
@@ -60,7 +61,7 @@
                                 <span class="menu-title"> Bảo hiểm xe cơ giới</span>
                             </a>
 
-                            <ul class="nav nav-group-sub" data-submenu-title="Bảo hiểm xe cơ giới">
+                            <ul class="nav nav-group-sub" scrollbar data-submenu-title="Bảo hiểm xe cơ giới">
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/MVP/f01.php'; ?>" class="nav-link"><span class="menu-title">F01 - Bảo hiểm xe máy</span></a></li>
                                 <li class="active"><a href="<?php echo HTTP_PATH .'view/insurance/MVP/f02.php'; ?>" class="nav-link"><span class="menu-title">F02 - Bảo hiểm ô tô</span></a></li>
                             </ul>
@@ -71,7 +72,7 @@
                                 <i class="fad fa-user-shield fa-fw"></i>
                                 <span class="menu-title"> Bảo hiểm con người</span>
                             </a>
-                            <ul class="nav nav-group-sub" data-submenu-title="Bảo hiểm con người">
+                            <ul class="nav nav-group-sub" scrollbar data-submenu-title="Bảo hiểm con người">
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g01.php'; ?>" class="nav-link"><span class="menu-title">G01 - Bảo hiểm sức khỏe toàn diện</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g02.php'; ?>" class="nav-link"><span class="menu-title">G02 - Bảo hiểm con người mức trách nhiệm cao (VNI Care)</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g03.php'; ?>" class="nav-link"><span class="menu-title">G03 - Bảo hiểm tai nạn con người</span></a></li>
@@ -96,7 +97,7 @@
                                 <i class="fad fa-sack-dollar fa-fw"></i>
                                 <span class="menu-title"> Bảo hiểm xe tài sản</span>
                             </a>
-                            <ul class="nav nav-group-sub" data-submenu-title="Bảo hiểm xe tài sản">
+                            <ul class="nav nav-group-sub" scrollbar data-submenu-title="Bảo hiểm xe tài sản">
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/PRO/b01.php'; ?>" class="nav-link"><span class="menu-title">B01 - Bảo hiểm hỏa hoạn và các rủi ro đặc biệt</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/PRO/b02.php'; ?>" class="nav-link"><span class="menu-title">B02 - Bảo hiểm mọi rủi ro tài sản</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/PRO/b03.php'; ?>" class="nav-link"><span class="menu-title">B03 - Bảo hiểm công trình kỹ thuật dân dụng hoàn thành</span></a></li>            
@@ -117,7 +118,7 @@
                                 <i class="fad fa-container-storage fa-fw"></i>
                                 <span class="menu-title"> Bảo hiểm hàng hóa</span>
                             </a>
-                            <ul class="nav nav-group-sub" data-submenu-title="Bảo hiểm hàng hóa">
+                            <ul class="nav nav-group-sub" scrollbar data-submenu-title="Bảo hiểm hàng hóa">
                                 <li><a href="e01.html" class="nav-link"><span class="menu-title">E01 - Bảo hiểm hàng hoá xuất nhập khẩu</span></a></li>
                                 <li><a href="e02.html" class="nav-link"><span class="menu-title">E02 - Bảo hiểm hàng hoá vận chuyển nội địa</span></a></li>
                                 <li><a href="e06.html" class="nav-link"><span class="menu-title">E06 - Bảo hiểm trách nhiệm giao nhận tổng hợp</span></a></li>
@@ -129,7 +130,7 @@
                                 <i class="fad fa-shield fa-fw"></i>
                                 <span class="menu-title"> Bảo hiểm trách nhiệm</span>
                             </a>
-                            <ul class="nav nav-group-sub" data-submenu-title="Bảo hiểm trách nhiệm">
+                            <ul class="nav nav-group-sub" scrollbar data-submenu-title="Bảo hiểm trách nhiệm">
                                 <li><a href="h01.html" class="nav-link"><span class="menu-title">H01 - Bảo hiểm trách nhiệm nghề nghiệp</span></a></li>
                                 <li><a href="h02.html" class="nav-link"><span class="menu-title">H02 - Bảo hiểm trách nhiệm sản phẩm</span></a></li>
                                 <li><a href="h03.html" class="nav-link"><span class="menu-title">H03 - Bảo hiểm trách nhiệm công cộng</span></a></li>
@@ -146,7 +147,7 @@
                                 <i class="fad fa-ship fa-fw"></i>
                                 <span class="menu-title"> Bảo hiểm tàu thuyền</span>
                             </a>
-                            <ul class="nav nav-group-sub" data-submenu-title="Bảo hiểm tàu thuyền">
+                            <ul class="nav nav-group-sub" scrollbar data-submenu-title="Bảo hiểm tàu thuyền">
                                 <li><a href="d01.html" class="nav-link"><span class="menu-title">D01 - Bảo hiểm tàu biển</span></a></li>
                                 <li><a href="d02.html" class="nav-link"><span class="menu-title">D02 - Bảo hiểm tàu sông, tàu ven biển</span></a></li>
                                 <li><a href="d03.html" class="nav-link"><span class="menu-title">D03 - Bảo hiểm tàu cá</span></a></li>
@@ -163,7 +164,7 @@
                                 <i class="fad fa-construction fa-fw"></i>
                                 <span class="menu-title"> Bảo hiểm kĩ thuật</span>
                             </a>
-                            <ul class="nav nav-group-sub" data-submenu-title="Bảo hiểm kĩ thuật">
+                            <ul class="nav nav-group-sub" scrollbar data-submenu-title="Bảo hiểm kĩ thuật">
                                 <li><a href="c01.html" class="nav-link"><span class="menu-title">C01 - Bảo hiểm mọi rủi ro trong xây dựng</span></a></li>
                                 <li><a href="c02.html" class="nav-link"><span class="menu-title">C02 - Bảo hiểm mọi rủi ro trong lắp đặt</span></a></li>
                                 <li><a href="c03.html" class="nav-link"><span class="menu-title">C03 - Bảo hiểm máy móc thiết bị của chủ thầu</span></a></li>
@@ -182,7 +183,7 @@
                                 <i class="fad fa-plane fa-fw"></i>
                                 <span class="menu-title">Bảo hiểm hàng không</span>
                             </a>
-                            <ul class="nav nav-group-sub" data-submenu-title="Bảo hiểm hàng không">
+                            <ul class="nav nav-group-sub" scrollbar data-submenu-title="Bảo hiểm hàng không">
                                 <li class="nav-item nav-item-submenu">
                                     <a href="a01.html" class="nav-link">
                                         <span class="menu-title"> A01 - Bảo hiểm thân, phụ tùng máy bay và trách nhiệm hàng không</span>
@@ -221,7 +222,7 @@
                                 <i class="fad fa-gas-pump fa-fw"></i>
                                 <span class="menu-title"> Bảo hiểm dầu khí</span>
                             </a>
-                            <ul class="nav nav-group-sub" data-submenu-title="Bảo hiểm dầu khí">
+                            <ul class="nav nav-group-sub" scrollbar data-submenu-title="Bảo hiểm dầu khí">
                                 <li><a href="" class="nav-link"><div class="menu-title">I01 - Bảo hiểm dầu khí</div></a></li>
                             </ul>
                         </li>
@@ -231,7 +232,7 @@
                                 <span class="menu-title"> Nhận tái cố định</span>
                             </a>
 
-                            <ul class="nav nav-group-sub" data-submenu-title="Nhận tái cố định">
+                            <ul class="nav nav-group-sub" scrollbar data-submenu-title="Nhận tái cố định">
                                 <li><a href="j01.html" class="nav-link"><span class="menu-title">J01 - Nhận tái cố định nhóm bảo hiểm hàng hóa</span></a></li>
                                 <li><a href="j04.html" class="nav-link"><span class="menu-title">J04 - Nhận tái cố định nhóm bảo hiểm hàng không</span></a></li>
                                 <li><a href="j05.html" class="nav-link"><span class="menu-title">J05 - Nhận tái cố định nhóm bảo hiểm tài sản</span></a></li>
