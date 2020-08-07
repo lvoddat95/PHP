@@ -14,7 +14,7 @@
 
                             <div class="login-signin">
 
-                                <div class="login-header">
+                                <div class="login-header justify-content-center">
                                     <img src="<?php echo HTTP_PATH .'app-assets/images/logo/logo3.png'; ?>" alt="VNI Logo">
                                     <h3>Đăng nhập</h3>
                                     <p>Đăng nhập vào tài khoản của bạn. Quản lý tất cả các tài khoản của bạn ở một nơi</p>
@@ -23,11 +23,19 @@
                                 <form>
 
                                     <div class="form-group">
+                                        <i class="fad fa-user"></i>
                                         <input class="form-control" type="text" placeholder="Tài khoản" name="username" autocomplete="off">
                                     </div>
 
                                     <div class="form-group">
-                                        <input class="form-control" type="password" placeholder="Mật khẩu" name="password">
+                                        <i class="fad fa-lock"></i>
+                                        <input class="form-control" type="password" placeholder="Mật khẩu" name="password" id="password">
+                                        <span class="show-pass">
+                                            <a href="javascript:;" onclick="show_password(this);" title="Xem mật khẩu">
+                                                <i class="fad fa-eye-slash"></i>
+                                                <i class="fad fa-eye"></i>
+                                            </a>
+                                        </span>
                                     </div>
 
                                     <div class="form-group d-flex flex-wrap justify-content-between align-items-center">

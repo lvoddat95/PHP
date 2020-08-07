@@ -1182,7 +1182,7 @@ input[type=checkbox]:not(.switch):before {
     border-width: 0 0.12rem 0.12rem 0;
     border-color: #fff;
     height: 9px;
-    top: 1px;
+    top: 2px;
     left: 4.5px;
     position: absolute;
     -webkit-transform: rotateZ(40deg) skewX(0deg);
@@ -1487,17 +1487,43 @@ hr {
     font-weight: 500;
 }
 
-.login-header > p {
+.show-pass i{
+    position: absolute;
+    z-index: 11;
+    right: 15px;
+    top: 13px;
+}
+
+.show-pass i:last-child{
+    display: none;
+}
+
+.show-pass .show i:first-child{
+    display: none;
+}
+
+.show-pass .show i:last-child{
+    display: block;
 }
 
 .login-signin .form-group {
+    position: relative;
     margin-bottom: 1.25rem;
+}
+
+.login-signin .form-group > i{
+    position: absolute;
+    z-index: 11;
+    left: 20px;
+    top: 12px;
+    color: #455a64;
 }
 
 .login-signin .form-control {
     font-size: 14px;
     height: 40px;
     padding: 0 20px;
+    padding-left: 40px;
     background: rgb(255 255 255 / .8);
     border: none;
     border-radius: 30px;

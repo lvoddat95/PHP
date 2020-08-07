@@ -205,6 +205,17 @@ var grid_view = function(p_this){
     $(p_this).closest('.f-right').removeClass('list').addClass('grid');
 }
 
+var show_password = function(p_this){
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+        x.type = "text";
+        $(p_this).addClass('show');
+    } else {
+        x.type = "password";
+        $(p_this).removeClass('show');
+    }
+}
+
 
 $(function(){
     var $window       = $(window);
