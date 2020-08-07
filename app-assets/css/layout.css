@@ -232,7 +232,7 @@
 .sidebar {
     background: #1C3FAA;
     width: 250px;
-    padding: 15px 7.5px;
+    padding: 15px 0;
     -webkit-transition: all ease-in-out 0.25s;
     -ms-transition: all ease-in-out 0.25s;
     transition: all ease-in-out 0.25s;
@@ -295,6 +295,10 @@
     flex-direction: column;
 }
 
+.sidebar .nav-sidebar > .nav-item{
+    position: relative;
+    padding: 0 7.5px;
+}
 .sidebar .nav-sidebar > .nav-item:not(.nav-item-divider) {
     margin-bottom: 5px;
 }

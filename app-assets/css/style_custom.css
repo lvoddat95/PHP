@@ -180,6 +180,8 @@ a.sidebar-main-toggle:hover {
     position: static;
     color: #fff;
     background: rgba(255, 255, 255, .1);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .sidebar-xs .sidebar-main-toggle>i:before {
@@ -214,9 +216,18 @@ a.sidebar-main-toggle:hover {
     -ms-transition: all ease-in-out 0.25s;
     transition: all ease-in-out 0.25s;
 }
+.sidebar-xs .sidebar .logo-img{
+    display: block;
+    text-align: center;
+    margin: auto;
+}
 
 .sidebar-xs .sidebar .logo-img img {
     width: 30px;
+}
+
+.sidebar-xs .logo-text{
+    float: none !important;
 }
 
 .logo-text {
@@ -235,8 +246,8 @@ a.sidebar-main-toggle:hover {
 }
 
 .sidebar-xs .sidebar .logo {
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
 }
 
 .sidebar-xs .sup-box, .sidebar-xs .sidebar .logo .logo-text .text {
