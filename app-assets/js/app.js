@@ -396,11 +396,11 @@ var App = function () {
         var select = $('[select2]');
         if (p_select) select = p_select;
 
-        if ($(select).length > 0) {
-            $(select).select2({ 
+        if (select.length > 0) {
+
+            select.select2({ 
                 language: "vi",
                 minimumResultsForSearch: 5,
-                width: '100%',
             });
         }
     }

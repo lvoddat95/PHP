@@ -254,7 +254,17 @@ ul.list-circle {
 .list-icons-extended>*:not(:last-child) {
 	margin-right: 0.75rem;
 }
-
+.dropdown .list-icons-item{
+    padding: 0;
+    width: 28px;
+    line-height: 26px;
+    border-radius: 4px;
+}
+.dropdown .list-icons-item:hover{
+    background-color: #F3F6F9;
+    border-color: transparent;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+}
 .list-icons-item {
 	display: inline-block;
 	line-height: 1;
@@ -971,7 +981,9 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
 	white-space: nowrap;
 	background-color: rgba(0,0,0,.1);
 }
-
+.btn:hover {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+}
 .btn-lg, .btn-group-lg>.btn {
 	height: 36px;
 	line-height: 26px;
@@ -1005,10 +1017,6 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
 .btn-danger {
     color: #fff;
     background-color: #e13131;
-}
-.bt
-.btn:not(.bg-transparent):not([class*=btn-outline]):not(.btn-light):not(.btn-link):not([class*=alpha-]):not(.fab-menu-btn):hover, .btn:not(.bg-transparent):not([class*=btn-outline]):not(.btn-light):not(.btn-link):not([class*=alpha-]):not(.fab-menu-btn):focus, .btn:not(.bg-transparent):not([class*=btn-outline]):not(.btn-light):not(.btn-link):not([class*=alpha-]):not(.fab-menu-btn).focus, .btn:not(.bg-transparent):not([class*=btn-outline]):not(.btn-light):not(.btn-link):not([class*=alpha-]):not(.fab-menu-btn):active, .btn:not(.bg-transparent):not([class*=btn-outline]):not(.btn-light):not(.btn-link):not([class*=alpha-]):not(.fab-menu-btn).active, .show>.btn:not(.bg-transparent):not([class*=btn-outline]):not(.btn-light):not(.btn-link):not([class*=alpha-]):not(.fab-menu-btn).dropdown-toggle {
-	box-shadow: 0 0 0 62.5rem rgba(0, 0, 0, 0.075) inset;
 }
 
 .btn:not(.bg-transparent):not([class*=btn-outline]):not(.btn-light):not(.btn-link):not([class*=alpha-]):not(.fab-menu-btn).disabled, .btn:not(.bg-transparent):not([class*=btn-outline]):not(.btn-light):not(.btn-link):not([class*=alpha-]):not(.fab-menu-btn):disabled {
@@ -3493,6 +3501,11 @@ a.badge[class*=bg-]:not(.bg-transparent):not(.bg-white):not(.bg-light):hover, a.
 .badge-icon {
 	padding: 4px;
 	line-height: 1;
+}
+
+.badge-icon-circle{
+	padding: 0;
+	border-radius: 50%;
 }
 
 .badge-icon>i {

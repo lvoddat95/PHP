@@ -81,7 +81,7 @@
                                         <div class="col-md-12">
                                             <form action="#" class="">
                                                 <!-- Bước 1 -->
-                                                <div class="card border-left-3 card-collapsed">
+                                                <div class="card shadow-none card-collapsed">
                                                     <div class="card-header header-elements-inline" data-action="collapse">
                                                         <h5 class="card-title font-size-s" ><i class="icon-pen2 mr-2"></i>Thông tin chung</h5>
                                                         <div class="header-elements">
@@ -322,7 +322,7 @@
                                                 <!-- End-Bước 1 -->
 
                                                 <!-- Bước 2 -->
-                                                <div class="card border-left-3 card-collapsed">
+                                                <div class="card shadow-none card-collapsed">
                                                     <div class="card-header header-elements-inline" data-action="collapse">
                                                         <h5 class="card-title font-size-s"><i class="icon-profile mr-2"></i>Đối tượng bảo hiểm</h5>
                                                         <div class="header-elements">
@@ -606,7 +606,7 @@
                                                 <!-- End-Bước 2 -->
 
                                                 <!-- Bước 3 -->
-                                                <div class="card border-left-3 card-collapsed">
+                                                <div class="card shadow-none card-collapsed">
                                                     <div class="card-header header-elements-inline" data-action="collapse">
                                                         <h5 class="card-title font-size-s"><i class="icon-repo-forked mr-2"></i>Trung gian bảo hiểm</h5>
                                                         <div class="header-elements">
@@ -986,7 +986,7 @@
                                                 <!-- End-Bước 3 -->
 
                                                 <!-- Bước 4 -->
-                                                <div class="card border-left-3 ">
+                                                <div class="card shadow-none ">
                                                     <div class="card-header header-elements-inline" data-action="collapse">
                                                         <h5 class="card-title font-size-s"><i class="icon-feed mr-2"></i>Phạm vi bảo hiểm</h5>
                                                         <div class="header-elements">

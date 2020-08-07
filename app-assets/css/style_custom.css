@@ -113,8 +113,10 @@ label {
     vertical-align: middle;
 }
 
-.btn:hover {
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+table .select2-container {
+    display: table;
+    table-layout: fixed;
+    width: 100% !important;
 }
 
 .modal-group .modal {
@@ -2561,10 +2563,6 @@ body.sidebar-mobile-main .quick-action {
 
 .box-shadow {
     box-shadow: 0 6px 13px rgba(0, 0, 0, .09);
-}
-
-.datatable td .select2-selection--single, .datatable td .select2-selection--single .select2-selection__rendered {
-    white-space: normal;
 }
 
 .alert {
