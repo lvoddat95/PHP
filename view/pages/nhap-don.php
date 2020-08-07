@@ -367,7 +367,7 @@
                                                                                                             <tr>
                                                                                                                 <td>
                                                                                                                     <div class="dkbs">
-                                                                                                                        <input class="mr-1" type="checkbox" onchange="on_change_dkbs(this)" name="" id="BS01">
+                                                                                                                        <input class="mr-1" type="checkbox"  name="" id="BS01">
                                                                                                                         <label class="mb-0" for="BS01">BS01 - Bảo hiểm thay thế mới (bảo hiểm mới thay cũ)</label>
                                                                                                                     </div>
                                                                                                                 </td>
@@ -383,7 +383,7 @@
                                                                                                             <tr>
                                                                                                                 <td>
                                                                                                                     <div class="dkbs">
-                                                                                                                        <input class="mr-1" type="checkbox" onchange="on_change_dkbs(this)" name="" id="BS02">
+                                                                                                                        <input class="mr-1" type="checkbox"  name="" id="BS02">
                                                                                                                         <label class="mb-0" for="BS02">BS02 - Bảo hiểm lựa chọn cơ sở sửa chữa chính hãng</label>
                                                                                                                     </div>
                                                                                                                 </td>
@@ -399,7 +399,7 @@
                                                                                                             <tr>
                                                                                                                 <td >
                                                                                                                     <div class="dkbs">
-                                                                                                                        <input class="mr-1" type="checkbox" onchange="on_change_dkbs(this)" name="" id="BS03">
+                                                                                                                        <input class="mr-1" type="checkbox"  name="" id="BS03">
                                                                                                                         <label class="mb-0" for="BS03">BS03 - Bảo hiểm thuê xe trong thời gian sửa chữa (bảo hiểm gián đoạn sử dụng xe)</label>
                                                                                                                     </div>
                                                                                                                 </td>
@@ -415,7 +415,7 @@
                                                                                                             <tr>
                                                                                                                 <td>
                                                                                                                     <div class="dkbs">
-                                                                                                                        <input class="mr-1" type="checkbox" onchange="on_change_dkbs(this)" name="" id="BS04">
+                                                                                                                        <input class="mr-1" type="checkbox"  name="" id="BS04">
                                                                                                                         <label class="mb-0" for="BS04">BS04 - Bảo hiểm đối với xe miễn thuế, tạm nhập, tái xuất</label>
                                                                                                                     </div>
                                                                                                                 </td>
@@ -431,7 +431,7 @@
                                                                                                             <tr>
                                                                                                                 <td>
                                                                                                                     <div class="dkbs">
-                                                                                                                        <input class="mr-1" type="checkbox" onchange="on_change_dkbs(this)" name="" id="BS05">
+                                                                                                                        <input class="mr-1" type="checkbox"  name="" id="BS05">
                                                                                                                         <label class="mb-0" for="BS05">BS05 - Bảo hiểm vật chất xe cơ giới ngoài lãnh thổ Việt Nam (Trung Quốc, Lào, Cămpuchia và Thái Lan)</label>
                                                                                                                     </div>
                                                                                                                 </td>
@@ -447,7 +447,7 @@
                                                                                                             <tr>
                                                                                                                 <td>
                                                                                                                     <div class="dkbs">
-                                                                                                                        <input class="mr-1" type="checkbox" onchange="on_change_dkbs(this)" name="" id="BS06">
+                                                                                                                        <input class="mr-1" type="checkbox"  name="" id="BS06">
                                                                                                                         <label class="mb-0" for="BS06">BS06 - Bảo hiểm tổn thất do Thủy kích</label>
                                                                                                                     </div>
                                                                                                                 </td>
@@ -463,7 +463,7 @@
                                                                                                             <tr>
                                                                                                                 <td>
                                                                                                                     <div class="dkbs">
-                                                                                                                        <input class="mr-1" type="checkbox" onchange="on_change_dkbs(this)" name="" id="BS07">
+                                                                                                                        <input class="mr-1" type="checkbox"  name="" id="BS07">
                                                                                                                         <label class="mb-0" for="BS07">BS07 - Bảo hiểm vật chất xe cơ giới lưu hành tạm thời</label>
                                                                                                                     </div>
                                                                                                                 </td>
@@ -479,7 +479,7 @@
                                                                                                             <tr>
                                                                                                                 <td>
                                                                                                                     <div class="dkbs">
-                                                                                                                        <input class="mr-1" type="checkbox" onchange="on_change_dkbs(this)" name="" id="BS08">
+                                                                                                                        <input class="mr-1" type="checkbox"  name="" id="BS08">
                                                                                                                         <label class="mb-0" for="BS08">BS08 - Bảo hiểm mất bộ phận</label>
                                                                                                                     </div>
                                                                                                                 </td>
@@ -495,7 +495,7 @@
                                                                                                             <tr>
                                                                                                                 <td>
                                                                                                                     <div class="dkbs">
-                                                                                                                        <input class="mr-1" type="checkbox" onchange="on_change_dkbs(this)" name="" id="BS09">
+                                                                                                                        <input class="mr-1" type="checkbox"  name="" id="BS09">
                                                                                                                         <label class="mb-0" for="BS09">BS09 - Bảo hiểm xe tập lái</label>
                                                                                                                     </div>
                                                                                                                 </td>
@@ -511,7 +511,7 @@
                                                                                                             <tr>
                                                                                                                 <td>
                                                                                                                     <div class="dkbs">
-                                                                                                                        <input class="mr-1" type="checkbox" onchange="on_change_dkbs(this)" name="" id="BS10">
+                                                                                                                        <input class="mr-1" type="checkbox"  name="" id="BS10">
                                                                                                                         <label class="mb-0" for="BS10">BS10 - Bảo hiểm tổn thất xảy ra trong quá trình hoạt động của thiết bị chuyên dùng</label>
                                                                                                                     </div>
                                                                                                                 </td>
@@ -527,7 +527,7 @@
                                                                                                             <tr>
                                                                                                                 <td>
                                                                                                                     <div class="dkbs">
-                                                                                                                        <input class="mr-1" type="checkbox" onchange="on_change_dkbs(this)" name="" id="BS11">
+                                                                                                                        <input class="mr-1" type="checkbox"  name="" id="BS11">
                                                                                                                         <label class="mb-0" for="BS11">BS11 - Các điều khỏan thỏa thuận bổ sung khác</label>
                                                                                                                     </div>
                                                                                                                 </td>

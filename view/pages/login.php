@@ -3,56 +3,51 @@
     
     <body>
 
-        <div class="page-content page-login">
+        <div class="page-content login-page">
 
             <div class="content-wrapper">
 
-                <div class="content d-flex justify-content-center align-items-center">
-                    <!-- Login form -->
-                    <form class="login-form" action="">
-                        <div class="card mb-0">
-                            <div class="login-top"></div>
-                            <div class="card-body">
-                                <div class="login-title">
-                                    <img class="img-fluid" src="<?php echo HTTP_PATH ?>app-assets/images/avatar2.png" alt="">
-                                    <h3>ĐĂNG NHẬP</h3>
-                                    <span>Một vài lần nhấp nữa để đăng nhập vào tài khoản của bạn. Quản lý tất cả các tài khoản thương mại điện tử của bạn ở một nơi</span>
+                <div class="content">
+
+                    <!-- Content-block -->
+                    <div class="content-block">
+
+                            <div class="login-signin">
+
+                                <div class="login-header">
+                                    <img src="<?php echo HTTP_PATH .'app-assets/images/logo/logo3.png'; ?>" alt="VNI Logo">
+                                    <h3>Đăng nhập</h3>
+                                    <p>Đăng nhập vào tài khoản của bạn. Quản lý tất cả các tài khoản của bạn ở một nơi</p>
                                 </div>
 
-                                <div class="form-group form-group-feedback form-group-feedback-left">
-                                    <input type="text" class="form-control form-control-lg border-2" placeholder="Tài khoản">
-                                    <div class="form-control-feedback">
-                                        <i class="fad fa-user text-primary"></i>
-                                    </div>
-                                </div>
+                                <form>
 
-                                <div class="form-group form-group-feedback form-group-feedback-left">
-                                    <input type="password" class="form-control form-control-lg border-2" placeholder="Mật khẩu">
-                                    <div class="form-control-feedback">
-                                        <i class="fad fa-lock text-primary"></i>
-                                    </div>
-                                </div>
-
-                                <div class="form-group d-flex align-items-center">
-                                    <div class="d-flex align-items-center">
-                                            <input type="checkbox" name="remember" id="remember">
-                                            <label class="ml-2 mb-0" for="remember">Lưu mật khẩu</label>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="Tài khoản" name="username" autocomplete="off">
                                     </div>
 
-                                    <a href="" class="ml-auto">Quên mật khẩu ?</a>
-                                </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="password" placeholder="Mật khẩu" name="password">
+                                    </div>
 
-                                <div class="form-group">
-                                    <button type="submit" class="btn bg-color btn-lg btn-block">Đăng nhập</button>
-                                </div>
+                                    <div class="form-group d-flex flex-wrap justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <input type="checkbox" id="remember"><label class="m-0 ml-2" for="remember">Ghi nhớ đăng nhập</label>
+                                        </div>
+                                        <a href="javascript:;" class="text-white">Quên mật khẩu ?</a>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <button class="btn">Đăng nhập</button>
+                                    </div>
+                                    
+                                </form>
 
                             </div>
-                        </div>
-                    </form>
-                    <!-- /login form -->
+                       
+                    </div>
+                    <!-- /Content-block -->
 
-                    <?php include_once MOBILE_NAV; ?>
-                
                 </div>
 
             </div>
@@ -60,5 +55,5 @@
         </div>
 
     </body>
-
 <?php include_once FOOTER; ?>
+<script src="<?php echo ASSET_ROOT; ?>/vendors/js/three.js"></script>

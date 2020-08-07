@@ -1161,12 +1161,11 @@ input[type=checkbox]:not(.switch) {
     vertical-align: middle;
     width: 16px;
     height: 16px;
-    border-radius: 0.2em;
+    border-radius: 4px;
     position: relative;
     cursor: pointer;
     outline: none;
-    border: 1.5px solid #ddd;
-    background: #fff;
+    border: 1px solid #ddd;
 }
 
 input[type=checkbox]:not(.switch):before {
@@ -1184,7 +1183,7 @@ input[type=checkbox]:not(.switch):before {
     border-color: #fff;
     height: 9px;
     top: 1px;
-    left: 4px;
+    left: 4.5px;
     position: absolute;
     -webkit-transform: rotateZ(40deg) skewX(0deg);
     transform: rotateZ(40deg) skewX(0deg);
@@ -1210,8 +1209,8 @@ input[type=checkbox]:not(.switch):after {
     opacity: 1;
     content: '';
     display: block;
-    left: -2px;
-    top: -2px;
+    left: -1px;
+    top: -1px;
     transition-duration: 0.3s;
     transition-property: opacity, -webkit-transform;
     transition-property: transform, opacity;
@@ -1439,68 +1438,88 @@ hr {
     font-size: 26px;
 }
 
-.page-login {
-    padding: 30px 150px;
-    background: -webkit-gradient(linear, left top, right bottom, from(#3a5da5), to(#65A8F1));
-    background: linear-gradient(to bottom right, #395da4, #65A8F1);
-}
-
-.page-login .content-wrapper {
-    background-color: transparent;
-    border-radius: 0px;
-    background-image: url(../images/bg-pattern2.png);
-    background-size: 40%;
-    background-repeat: repeat;
-    background-position: 0 0;
-    padding: 20px 70px;
-}
-
-.login-form {
-    width: 450px;
-}
-
-.login-form .form-control {
-    border-color: #ddd;
-}
-
-.login-form .form-control:hover, .login-form .form-control:focus {
-    border-color: #2196f3;
-    box-shadow: 0px 0px 5px rgba(175, 213, 255, .5);
-}
-
-.login-top {
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    padding: 0;
+/*Login*/
+.login-page {
+    background-color: #193c6d;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#003073', endColorstr='#029797');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0, #003073), color-stop(100%, #029797));
+    background-image: -webkit-linear-gradient(135deg, #003073, #029797);
+    background-image: -moz-linear-gradient(45deg, #003073, #029797);
+    background-image: -ms-linear-gradient(45deg, #003073 0, #029797 100%);
+    background-image: -o-linear-gradient(45deg, #003073, #029797);
+    background-image: linear-gradient(135deg, #003073, #029797);
     text-align: center;
-    height: 90px;
-    background: url(../images/dash-bg.png) no-repeat center center;
-    background-size: cover;
+    margin: 0px;
+    overflow: hidden;
 }
 
-.login-title {
-    text-align: center;
+.login-page > .content-wrapper {
+    position: relative;
+    z-index: 12;
+    background: transparent;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.login-page > .content-wrapper > .content {
+    padding: 30px;
+}
+
+.login-signin {
+    color: #fff;
+    max-width: 400px;
+    margin: auto;
+    font-size: 14px;
+}
+
+.login-header {
+    margin-bottom: 70px;
+}
+
+.login-header > img {
+    max-height: 75px;
     margin-bottom: 30px;
-    padding: 0 15px;
 }
 
-.login-title > img {
-    margin: -55px auto 15px;
-    max-width: 100px;
-    width: 100%;
-    display: block;
-    border: 2px solid #2f55a0;
-    border-radius: 50%;
-}
-
-.login-title > h3 {
+.login-header > h3 {
+    font-size: 24px;
     font-weight: 500;
-    margin: 0;
 }
 
-.login-title > span {
-    display: block;
-    color: #a0aec0;
+.login-header > p {
+}
+
+.login-signin .form-group {
+    margin-bottom: 1.25rem;
+}
+
+.login-signin .form-control {
+    font-size: 14px;
+    height: 40px;
+    padding: 0 20px;
+    background: rgb(255 255 255 / .8);
+    border: none;
+    border-radius: 30px;
+    font-weight: 500;
+    color: #111;
+}
+
+.login-signin .btn{
+    font-size: 14px;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 30px;
+    color: #fff;
+    background: #003575;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+#wave{
+    position: fixed;
+    top: 0;
 }
 
 .card-search:after {
