@@ -28,12 +28,12 @@
                     data-searching="false"
                     >
                     <thead class="thead-light">
-                        <th width="25%"><b>Tên công ty</b></th>
-                        <th width="15%"><b>Vai trò</b></th>
-                        <th width="10%"><b>Tỷ lệ ĐBH </b></th>
-                        <th width="10%"><b>Phí quản lý (%)</b></th>
-                        <th width="20%"><b>Thành tiền phí quản lý ĐBH</b></th>
-                        <th width=70px></th>
+                        <th class="w25p"><b>Tên công ty</b></th>
+                        <th class="w15p"><b>Vai trò</b></th>
+                        <th class="w10p"><b>Tỷ lệ ĐBH </b></th>
+                        <th><b>Phí quản lý (%)</b></th>
+                        <th><b>Thành tiền phí quản lý ĐBH</b></th>
+                        <th></th>
                     </thead>
                     <tbody data-repeater-list="dbh-cong-ty">
                         <tr data-repeater-item>
@@ -80,7 +80,7 @@
                             <td><input class="form-control" type="text" placeholder=""></td>
                             <td><input class="form-control" type="text" placeholder=""></td>
                             <td><input class="form-control input-money" type="text" placeholder=""></td>
-                            <td><input data-repeater-delete class="btn bg-danger" type="button" value="- Xóa"/></td>
+                            <td class="text-center"><input data-repeater-delete class="btn bg-danger" type="button" value="- Xóa"/></td>
                         </tr>
                     </tbody>
                 </table>

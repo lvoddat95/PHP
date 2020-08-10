@@ -56,10 +56,6 @@
                                         <p class="card-title font-size-s">Biểu đồ doanh thu</p>
                                         <div class="header-elements">
                                             <div class="list-icons">
-                                                <a class="text-default daterange-ranges font-weight-semibold cursor-pointer dropdown-toggle mr-2">
-                                                    <i class="icon-calendar3 mr-2"></i>
-                                                    <span class="select-date"></span>
-                                                </a>
                                                 <a class="list-icons-item" data-action="collapse"></a>
                                                 <a class="list-icons-item" data-action="remove"></a>
                                             </div>

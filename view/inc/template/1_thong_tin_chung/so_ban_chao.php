@@ -1,6 +1,5 @@
 <div class="form-group">
-    <label>Số bản chào: </label>
-    <button
+    <label>Số bản chào: <button
     class="btn-popover"
     type="button"
     data-popup="popover"
@@ -9,6 +8,6 @@
     data-placement="top"
     data-original-title="" >
     <i class="icon-info22"></i>
-    </button>
+    </button></label>
     <input type="text" class="form-control" name="so_ban_chao" placeholder="Nhập số bản chào...">
 </div>

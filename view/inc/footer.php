@@ -9,6 +9,7 @@
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/moment/moment-with-locales.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/jquery.tipsy.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/sweetalert2.min.js"></script>
+    <script src="<?php echo ASSET_ROOT; ?>/vendors/js/jquery.sticky-sidebar.min.js"></script>
     <!-- /CORE JS-->
     
     <!-- JS Trang-->

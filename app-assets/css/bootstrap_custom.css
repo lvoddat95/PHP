@@ -4617,7 +4617,6 @@ a.badge[class*=bg-]:not(.bg-transparent):not(.bg-white):not(.bg-light):hover, a.
 
 .form-size-sm .form-group-select select {
 	padding-right: 10px;
-	;
 }
 
 .form-size-sm .form-group-select .select-icon {
@@ -4631,6 +4630,7 @@ a.badge[class*=bg-]:not(.bg-transparent):not(.bg-white):not(.bg-light):hover, a.
     padding: 4px;
     border-radius: 4px;
     font-size: 12px;
+    text-overflow: ellipsis;
 }
 
 .form-control-lg{
@@ -4657,13 +4657,9 @@ a.badge[class*=bg-]:not(.bg-transparent):not(.bg-white):not(.bg-light):hover, a.
     transform: translateY(-50%);
 }
 
-.form-group{
-	margin-bottom: 0.625rem;
-}
 .input-group-append {
     margin-left: -2px;
 }
-
 
 .input-group-text {
     font-size: inherit;
@@ -4676,7 +4672,6 @@ a.badge[class*=bg-]:not(.bg-transparent):not(.bg-white):not(.bg-light):hover, a.
     padding: 3px 9px;
     min-width: 25px;
 }
-
 
 .font-size-xl {
 	font-size: 32px

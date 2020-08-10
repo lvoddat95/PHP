@@ -45,8 +45,7 @@ a, area, button, input, label, select, textarea, [tabindex] {
 }
 
 .content {
-    padding: 15px;
-    padding-bottom: 50px;
+    padding: 15px 15px 30px;
 }
 
 .content::after {
@@ -60,7 +59,7 @@ a, area, button, input, label, select, textarea, [tabindex] {
 
 #footer {
     position: absolute;
-    bottom: 15px;
+    bottom: 10px;
     left: 15px;
     right: 15px;
     -ms-flex-align: center;
@@ -3161,4 +3160,98 @@ body.sidebar-mobile-main .quick-action {
         z-index: 1;
     }
 
+}
+
+
+
+/*Form style*/
+
+.form-style2 .row{
+    justify-content: center;
+}
+.form-style2 .wizard{
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+.form-style2 form [class*="col-"], 
+.form-style2 form [class^=col-]{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.form-style2 form .form-group{
+    margin-bottom: 1.25rem;
+}
+.form-style2 .wizard{
+    position: relative;
+}
+.form-style2 .wizard>.steps{
+    float: left;
+    max-width: 250px;
+}
+.form-style2 .wizard>.steps ul{
+    display: block;
+    margin: 0;
+    padding-right: 25px;
+}
+.form-style2 .wizard>.steps ul>li{
+    display: block;
+    text-align: revert;
+    padding: 10px;
+    margin: 0 0 20px;
+    background-color: rgb(243 246 249 / .7);
+    border-radius: 6px;
+    position: relative;
+}
+.form-style2 .wizard>.steps ul>li:after {
+    opacity: 0;
+    left: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    content: " ";
+    height: 0;
+    width: 0;
+    border: solid transparent;
+    position: absolute;
+    border-left-color: rgb(243 246 249 / .5);
+    border-width: 10px;
+    background: transparent !important;
+}
+
+.form-style2 .wizard>.steps ul>li.current{
+    background-color: #e2e8f0;
+}
+
+.form-style2 .wizard>.steps ul>li.current:after {
+    opacity: 1;
+    border-left-color: #e2e8f0;
+}
+
+.form-style2 .wizard>.steps ul>li>a{
+    margin-top: 0;
+}
+.form-style2 .wizard>.steps ul>li:before{
+    display: none;
+}
+.form-style2 .wizard>form{
+    margin-left: 250px;
+    border-left: 1px solid #e2e8f0;
+}
+.form-style2 .wizard>.actions{
+    position: static;
+    box-shadow: none;
+    padding: 1.25rem;
+    margin-right: -10px;
+}
+
+.form-style2 .wizard>.steps .number{
+    position: static;
+    margin: 0;
+    margin-right: 5px;
+}
+.form-style2 .wizard>.steps ul>li a{
+    font-size: 14px;
+    font-weight: 500;
 }

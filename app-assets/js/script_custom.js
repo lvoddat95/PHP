@@ -55,23 +55,19 @@ $(function(){
     }
 
     if( $('.chat-box').length > 0 ){
-        
         $(".chat-circle").click(function() {    
             $(".chat").toggleClass('open');
         })
         
         $(".cb-toggle-close").click(function() {
             $(".chat").removeClass('open');
-
         })
     }
-
 
     $(".go-top").click(function () {
         $("html, body").animate({scrollTop: 0}, 500);
     });
 
-   
 
    
 });

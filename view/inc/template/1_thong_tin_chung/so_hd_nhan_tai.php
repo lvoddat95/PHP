@@ -1,6 +1,5 @@
 <div class="form-group">
-    <label>Số HĐ nhận tái: </label>
-    <button
+    <label>Số HĐ nhận tái: <button
     class="btn-popover"
     type="button"
     data-popup="popover"
@@ -9,6 +8,6 @@
     data-placement="top"
     data-original-title="" >
     <i class="icon-info22"></i>
-    </button>
+    </button></label>
     <input type="text" class="form-control" name="so_hd_nhan_tai" placeholder="Nhập số hợp đồng nhận tái...">
 </div>
