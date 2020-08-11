@@ -2633,14 +2633,13 @@ body.sidebar-mobile-main .quick-action {
 }
 
 .nav-file .nav-item-submenu>.nav-link:before {
-    content: 'round';
-    font-family: 'icomoon';
+    content: "\f105";
+    font-family: "Font Awesome 5 Pro";
     margin-right: 5px;
-    opacity: .3;
 }
 
 .nav-file .nav-item-submenu.nav-item-open>.nav-link:before {
-    content: 'feather feather-chevron-down';
+    content: "\f107";
 }
 
 .nav-file .nav-group-sub {
