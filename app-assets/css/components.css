@@ -1472,14 +1472,13 @@
 }
 
 .wizard>.steps ul>li.current .number {
-    font-size: 0;
     border-color: #1c3faa;
     background-color: #fff;
     color: #1c3faa;
 }
 
 .wizard>.steps ul>li.current .number:after {
-    content: "";
+    /*content: "";*/
     font-family: "icomoon";
     display: inline-block;
     font-size: 12px;

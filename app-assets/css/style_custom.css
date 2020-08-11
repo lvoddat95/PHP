@@ -3166,36 +3166,35 @@ body.sidebar-mobile-main .quick-action {
 
 /*Form style*/
 
-.form-style2 .row{
+.wizard-style2 .row{
     justify-content: center;
 }
-.form-style2 .wizard{
+.wizard-style2.wizard{
     max-width: 1200px;
     margin: 40px auto 0;
 }
-.form-style2 form [class*="col-"], 
-.form-style2 form [class^=col-]{
+.wizard-style2 form [class*="col-"], 
+.wizard-style2 form [class^=col-]{
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.form-style2 form .form-group{
+.wizard-style2 form .form-group{
     margin-bottom: 1.25rem;
 }
-.form-style2 .wizard{
+.wizard-style2.wizard{
     position: relative;
 }
-.form-style2 .wizard>.steps{
+.wizard-style2.wizard>.steps{
     float: left;
-    max-width: 250px;
+    max-width: 230px;
 }
-.form-style2 .wizard>.steps ul{
-    display: block;
+.wizard-style2.wizard>.steps ul{
     margin: 0;
     padding-right: 25px;
 }
-.form-style2 .wizard>.steps ul>li{
+.wizard-style2.wizard>.steps ul>li{
     display: block;
     text-align: revert;
     padding: 10px;
@@ -3204,7 +3203,8 @@ body.sidebar-mobile-main .quick-action {
     border-radius: 6px;
     position: relative;
 }
-.form-style2 .wizard>.steps ul>li:after {
+
+.wizard-style2.wizard>.steps ul>li:after {
     opacity: 0;
     left: 100%;
     top: 50%;
@@ -3220,38 +3220,90 @@ body.sidebar-mobile-main .quick-action {
     background: transparent !important;
 }
 
-.form-style2 .wizard>.steps ul>li.current{
+.wizard-style2.wizard>.steps ul>li.current{
     background-color: #e2e8f0;
 }
 
-.form-style2 .wizard>.steps ul>li.current:after {
+.wizard-style2.wizard>.steps ul>li.current:after {
     opacity: 1;
     border-left-color: #e2e8f0;
 }
 
-.form-style2 .wizard>.steps ul>li>a{
-    margin-top: 0;
-}
-.form-style2 .wizard>.steps ul>li:before{
+.wizard-style2.wizard>.steps ul>li:before{
+    content: '';
+    top: 0;
+    left: auto;
+    right: -26px;
+    width: 3px;
+    height: 100%;
     display: none;
 }
-.form-style2 .wizard>form{
-    margin-left: 250px;
+
+.wizard-style2.wizard>.steps ul>li.current:before{
+    display: block;
+}
+
+.wizard-style2.wizard>.steps ul>li>a{
+    margin-top: 0;
+}
+
+.wizard-style2.wizard>form{
+    margin-left: 230px;
     border-left: 1px solid #e2e8f0;
 }
-.form-style2 .wizard>.actions{
+.wizard-style2.wizard>.actions{
     position: static;
     box-shadow: none;
     padding: 1.25rem;
     margin-right: -10px;
 }
 
-.form-style2 .wizard>.steps .number{
+.wizard-style2.wizard>.steps .number{
+    font-size: 14px;
+    font-weight: 500;
     position: static;
     margin: 0;
     margin-right: 5px;
 }
-.form-style2 .wizard>.steps ul>li a{
+.wizard-style2.wizard>.steps ul>li a{
     font-size: 14px;
     font-weight: 500;
+}
+
+body:not(.sidebar-xs) .wizard-style2.wizard>.steps ul>li a{
+    font-size: 0;
+}
+.wizard-style2.wizard>.steps .inner-wrapper-sticky{
+    min-width: 230px;
+}
+body:not(.sidebar-xs) .wizard-style2.wizard>.steps .inner-wrapper-sticky,
+body:not(.sidebar-xs) .wizard-style2.wizard>.steps{
+    max-width: 75px;
+    min-width: auto;
+}
+body:not(.sidebar-xs) .wizard-style2.wizard>form {
+    margin-left: 74px;
+}
+.wizard-style2 .form-group{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.wizard-style2 .form-group > *:first-child{
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-bottom: 0;
+    font-size: inherit;
+    line-height: 18px;
+    text-align: right;
+    padding-right: 20px;
+}
+.wizard-style2 .form-group > *+*{
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
 }

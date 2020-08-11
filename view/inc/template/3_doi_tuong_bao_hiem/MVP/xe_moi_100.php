@@ -1,6 +1,5 @@
 <div class="form-group ">
-    <label>Xe mới 100%:  <span class="text-danger">*</span></label>
-    <button
+    <label>Xe mới 100%:  <span class="text-danger">*</span><button
     class="btn-popover"
     type="button"
     data-popup="popover"
@@ -10,7 +9,7 @@
     data-html="true"
     data-original-title="" >
     <i class="icon-info22"></i>
-    </button>
+    </button></label>
     <div class="d-flex">
         <p class="switch-title mr-3">Có phải xe mới 100% ?</p>
         <div class="button-switch">

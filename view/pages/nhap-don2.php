@@ -53,29 +53,29 @@
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <!-- Form wzard with step validation section start -->
-                                        <section id="validation" class="form-style2">
+                                        <section id="validation" class="">
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <div class="wizard ">
+                                                    <div class="wizard wizard-style2">
                                                         <div class="steps clearfix">
                                                             <ul class="nav nav-tabs" role="tablist">
                                                                 <li class="current">
-                                                                    <a href="#step1" class="active show" data-toggle="tab">
+                                                                    <a href="#step1" class="active show" data-toggle="tab" data-toggle="dropdown" data-tooltip="tipsy" original-title="Thông tin chung" data-position="right">
                                                                         <span class="number">1</span> Thông tin chung
                                                                     </a>
                                                                 </li>
                                                                 <li class="disabled">
-                                                                    <a href="#step2" data-toggle="tab">
+                                                                    <a href="#step2" data-toggle="tab" data-toggle="dropdown" data-tooltip="tipsy" original-title="Trung gian bảo hiểm" data-position="right">
                                                                         <span class="number">2</span> Trung gian bảo hiểm
                                                                     </a>
                                                                 </li>
                                                                 <li class="disabled">
-                                                                    <a href="#step3" data-toggle="tab">
+                                                                    <a href="#step3" data-toggle="tab" data-toggle="dropdown" data-tooltip="tipsy" original-title="Đối tượng bảo hiểm" data-position="right">
                                                                         <span class="number">3</span> Đối tượng bảo hiểm
                                                                     </a>
                                                                 </li>
                                                                 <li class="disabled">
-                                                                    <a href="#step4" data-toggle="tab">
+                                                                    <a href="#step4" data-toggle="tab" data-toggle="dropdown" data-tooltip="tipsy" original-title="Phạm vi bảo hiểm" data-position="right">
                                                                         <span class="number">4</span> Phạm vi bảo hiểm
                                                                     </a>
                                                                 </li>

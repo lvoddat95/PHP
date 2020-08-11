@@ -1590,18 +1590,20 @@ var App = function () {
         $('.wizard .nav-tabs li > a').on("show.bs.tab", function (e) {
             // e.preventDefault();
 
-            var href = $(this).attr('href');
-            $('html, body').animate({
-                scrollTop: $(href).offset().top
-            }, 'slow');
-
             var $target = $(e.target);
+            var href = $(this).attr('href');
+            
             if ($target.parent().hasClass("disabled") ) {
                 return false;
             }else{
                 li.removeClass('current');
                 $target.parent().addClass('current');
                 $target.parent().parent().find('li:not(.disabled,.current)').addClass('done');
+
+                $('html, body').animate({
+                    scrollTop: $(href).offset().top
+                }, 'slow');
+
             }
             
             if ( $target.parent().index() == li.length - 1 ) {
