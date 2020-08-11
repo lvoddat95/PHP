@@ -1,7 +1,6 @@
 <div class="form-group ">
-  <label>Ngân hàng thụ hưởng </label>
-  <div class="form-group-select">
-      <select class="form-control" select2 name="chi_tiet">
+     <label>Ngân hàng thụ hưởng </label>
+     <select class="form-control" select2 name="chi_tiet">
           <option value="" id="">--- Chọn ---</option>
           <option value="BANK_VN0011" title="Dầu khí Toàn Cầu(GP.Bank)">Dầu khí Toàn Cầu(GP.Bank)</option>
           <option value="BANK_VN0037" title="Ngoại Thương Việt Nam (Vietcombank)">Ngoại Thương Việt Nam (Vietcombank)</option>
@@ -89,6 +88,5 @@
           <option value="BANK_VN0003" title="Quỹ Tín dụng Nhân dân Trung ương (CCF)">Quỹ Tín dụng Nhân dân Trung ương (CCF)
           </option>
           <option value="BANK_VN0043" title="Phát triển Nhà ĐBSCL (MHB)">Phát triển Nhà ĐBSCL (MHB)</option>
-      </select>
-  </div>
+     </select>
 </div>

@@ -25,14 +25,12 @@
                         <div class="col-sm-4">
                             <div class="form-group ">
                                 <label class="mb-0">Trạng thái: </label>
-                                <div class="form-group-select">
-                                    <select class="form-control" select2 >
-                                        <option value="">--- Chọn trạng thái ---</option>
-                                        <option value="opt1">Chưa sử dụng</option>
-                                        <option value="opt2">Đã sử dụng</option>
-                                        <option value="opt3">Không dùng nữa</option>
-                                    </select>
-                                </div>
+                                <select class="form-control" select2 >
+                                    <option value="">--- Chọn trạng thái ---</option>
+                                    <option value="opt1">Chưa sử dụng</option>
+                                    <option value="opt2">Đã sử dụng</option>
+                                    <option value="opt3">Không dùng nữa</option>
+                                </select>
                             </div>
                         </div>
                     </div>

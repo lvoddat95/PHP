@@ -25,17 +25,7 @@
         background-color: #f5f5f5;
     }
 
-    .wizard-style2.wizard>.steps .inner-wrapper-sticky{
-        min-width: auto;
-    }
-    .wizard-style2.wizard>.steps{
-        float: none;
-        max-width: initial;
-    }
-    .wizard-style2.wizard>form{
-        margin: 0;
-        border: 0;
-    }
+    
 
 
 }

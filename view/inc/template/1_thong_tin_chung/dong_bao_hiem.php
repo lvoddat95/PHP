@@ -69,13 +69,11 @@
                                 </select>
                             </td>
                             <td>
-                                <div class="form-group-select">
-                                    <select class="form-control required" select2 name="nha">
-                                        <option value="">--- Chọn ---</option>
-                                        <option value="opt1">Đứng đầu</option>
-                                        <option value="opt2">Nhà đồng bảo hiểm</option>
-                                    </select>
-                                </div>
+                                <select class="form-control required" select2 name="nha">
+                                    <option value="">--- Chọn ---</option>
+                                    <option value="opt1">Đứng đầu</option>
+                                    <option value="opt2">Nhà đồng bảo hiểm</option>
+                                </select>
                             </td>
                             <td><input class="form-control" type="text" placeholder=""></td>
                             <td><input class="form-control" type="text" placeholder=""></td>

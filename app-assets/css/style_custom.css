@@ -27,7 +27,6 @@ a, area, button, input, label, select, textarea, [tabindex] {
     -ms-flex-positive: 1;
     flex-grow: 1;
     position: relative;
-    z-index: 9;
 }
 
 .content-wrapper {
@@ -1824,7 +1823,7 @@ hr {
 }
 
 .cb-toggle-close:before {
-    content: '0 0 24 24';
+    content: "\f00d";
     font-size: 18px;
 }
 
@@ -3263,15 +3262,32 @@ body.sidebar-mobile-main .quick-action {
     }
 }
 
+@media only screen and (max-width: 1199px) {
+    .wizard-style2.wizard>.steps .inner-wrapper-sticky{
+        min-width: auto;
+    }
+    .wizard-style2.wizard>.steps{
+        float: none;
+        max-width: initial;
+    }
+    .wizard-style2.wizard>form{
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+
+}
+
 .wizard-style2.wizard>form{
-    margin-left: 230px;
+    padding-left: 20px;
+    margin-left: 229px;
     border-left: 1px solid #e2e8f0;
 }
 .wizard-style2.wizard>.actions{
     position: static;
     box-shadow: none;
-    padding: 1.25rem;
-    margin-right: -10px;
+    margin: 0;
 }
 
 .inner-wrapper-sticky{
@@ -3283,7 +3299,7 @@ body:not(.sidebar-xs) .wizard-style2.wizard>.steps ul>li a{
     font-size: 0;
 }
 .wizard-style2.wizard>.steps .inner-wrapper-sticky{
-    min-width: 230px;
+    min-width: 229px;
 }
 body:not(.sidebar-xs) .wizard-style2.wizard>.steps .inner-wrapper-sticky,
 body:not(.sidebar-xs) .wizard-style2.wizard>.steps{
@@ -3310,7 +3326,6 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
         margin-bottom: 0;
         font-size: inherit;
         line-height: 18px;
-        text-align: right;
         padding-right: 20px;
     }
     .wizard-style2 .form-group > *+*{
@@ -3318,4 +3333,6 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
         flex: 0 0 75%;
         max-width: 75%;
     }
+
 }
+
