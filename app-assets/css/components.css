@@ -1359,6 +1359,8 @@
 
 .wizard {
     width: 100%;
+    max-width: 1100px;
+    margin: auto;
 }
 
 .wizard>.steps .current-info, .wizard>.content>.title {
@@ -1369,10 +1371,6 @@
     position: relative;
     width: auto;
     padding: 0;
-}
-
-.wizard>.form-validation .tab-pane {
-    padding: 0 1.25rem;
 }
 
 .wizard>.content>iframe {
@@ -1524,8 +1522,9 @@
 
 .wizard>.actions {
     position: relative;
-    text-align: right;
-    padding: 15px;
+    padding: 20px 0;
+    margin: 20px 0 0;
+    border-top: 1px solid #dddddd;
 }
 
 .wizard>.actions.last .next-step{
@@ -1536,28 +1535,11 @@
     display: block !important;
 }
 
-.wizard>.actions>ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.wizard>.actions>ul::after {
-    display: block;
-    clear: both;
-    content: "";
-}
-
-.wizard>.actions>ul>li {
-    display: inline-block;
-}
-
-.wizard>.actions>ul>li+li {
-    margin-left: 1.25rem;
+.wizard > form{
+    min-height: calc(100vh - 370px);
 }
 
 .wizard>.actions>ul {
-    float: right;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -1570,15 +1552,17 @@
 }
 
 .wizard>.actions>ul>li {
+    display: inline-block;
     float: left;
 }
 
 .wizard>.actions>ul>li+li {
+    float: right;
     margin-left: 10px;
 }
 
 .wizard>.actions>ul>li>.btn  {
-    height: 32px;
+    height: 36px;
 }
 
 

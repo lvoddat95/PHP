@@ -285,661 +285,817 @@
                                                                         </div>
                                                                         <div class="col-md-12">
                                                                             <div class="collapse-group">
-                                                                                <div class="p-title">Phạm vi bảo hiểm:</div>
-                                                                                <div class="p-body collapse show">
-                                                                                    <div class="c-item">
-                                                                                        <div class="c-title">
-                                                                                            <span class="button-switch no-label">
-                                                                                                <input type="checkbox" id="ckbchild1" class="switch cls_ckb">
-                                                                                                <label for="ckbchild1" data-off="Không" data-on="Có"></label>
-                                                                                            </span>
-                                                                                            <a data-toggle="collapse" class="collapsed" href="#collapsible-item1">Vật chất xe</a>
-                                                                                        </div>
-                                            
-                                                                                        <div id="collapsible-item1" class="collapse" datatable-collapse>
-                                                                                            <div class="c-body">
-                                                                                                
-                                                                                                <table class="table table-bordered datatable"
-                                                                                                    data-paging="false"
-                                                                                                    data-info="false"
-                                                                                                    data-ordering="false"
-                                                                                                    data-searching="false"
-                                                                                                >
-                                                                                                    <thead class="thead-light">
-                                                                                                        <tr>
-                                                                                                            <th class="desktop w20p">Quyền lợi</th>
-                                                                                                            <th class="desktop w10p">Số tiền bảo hiểm</th>
-                                                                                                            <th class="desktop w5p">Phí (%)</th>
-                                                                                                            <th class="desktop w10p">Phí BH (có VAT)</th>
-                                                                                                            <th class="desktop w5p">VAT (%)</th>
-                                                                                                            <th class="desktop w10p">VAT</th>
-                                                                                                            <th class="desktop w5p">COM (%)</th>
-                                                                                                            <th class="desktop w10p">COM</th>
-                                                                                                            <th class="desktop w20p">Định mức</th>
-                                                                                                        </tr>
-                                                                                                    </thead>
-                                                                                                    <tbody>
-                                                                                                        <tr>
-                                                                                                            <td><b>I. Vật chất xe </b></td>
-                                                                                                            <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                            <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
-                                                                                                            <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                            <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
-                                                                                                            <td><input class="form-control text-right input-money" type="text" value="0"></td>
-                                                                                                            <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
-                                                                                                            <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                            <td>
-                                                                                                                <select class="form-control required " select2 name="dinh_muc" >
-                                                                                                                    <option selected>Xe cơ giới khác</option>
-                                                                                                                    <option>Biển xanh, biển đỏ, biển nước ngoài</option>
-                                                                                                                    <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
-                                                                                                                    <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
-                                                                                                                    <option>Xe cơ giới khai thác qua Ngân hàng, show room</option>
-                                                                                                                    <option>Xe tải</option>
-                                                                                                                </select>
-                                                                                                            </td>
-                                                                                                        </tr>
-                                                                                                    </tbody>
-                                                                                                </table>
-                                                                                                <table class="table table-bordered datatable"
-                                                                                                    style="margin-top: -1px;"
-                                                                                                    data-paging="false"
-                                                                                                    data-info="false"
-                                                                                                    data-ordering="false"
-                                                                                                    data-searching="false"
-                                                                                                >
-                                                                                                    <thead>
-                                                                                                        <tr>
-                                                                                                            <th class="desktop w20p"><b>II. Điều khoản sửa đổi bổ sung</b></th>
-                                                                                                            <th class="desktop w10p"></th>
-                                                                                                            <th class="desktop w5p"></th>
-                                                                                                            <th class="desktop w10p"></th>
-                                                                                                            <th class="desktop w5p"></th>
-                                                                                                            <th class="desktop w10p"></th>
-                                                                                                            <th class="desktop w5p"></th>
-                                                                                                            <th class="desktop w10p"></th>
-                                                                                                            <th class="desktop w20p"></th>
-                                                                                                        </tr>
-                                                                                                    </thead>
-                                                                                                    <tbody>
-                                                                                                        <tr>
-                                                                                                            <td>
-                                                                                                                <div class="dkbs">
-                                                                                                                    <input class="mr-1" type="checkbox"  name="" id="BS01">
-                                                                                                                    <label class="mb-0" for="BS01">BS01 - Bảo hiểm thay thế mới (bảo hiểm mới thay cũ)</label>
-                                                                                                                </div>
-                                                                                                            </td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled value="0"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled value="0"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                        </tr>
-                                                                                                        <tr>
-                                                                                                            <td>
-                                                                                                                <div class="dkbs">
-                                                                                                                    <input class="mr-1" type="checkbox"  name="" id="BS02">
-                                                                                                                    <label class="mb-0" for="BS02">BS02 - Bảo hiểm lựa chọn cơ sở sửa chữa chính hãng</label>
-                                                                                                                </div>
-                                                                                                            </td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled value="0.16"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled value="0"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                        </tr>
-                                                                                                        <tr>
-                                                                                                            <td >
-                                                                                                                <div class="dkbs">
-                                                                                                                    <input class="mr-1" type="checkbox"  name="" id="BS03">
-                                                                                                                    <label class="mb-0" for="BS03">BS03 - Bảo hiểm thuê xe trong thời gian sửa chữa (bảo hiểm gián đoạn sử dụng xe)</label>
-                                                                                                                </div>
-                                                                                                            </td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled value="0.08"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled value="0"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                        </tr>
-                                                                                                        <tr>
-                                                                                                            <td>
-                                                                                                                <div class="dkbs">
-                                                                                                                    <input class="mr-1" type="checkbox"  name="" id="BS04">
-                                                                                                                    <label class="mb-0" for="BS04">BS04 - Bảo hiểm đối với xe miễn thuế, tạm nhập, tái xuất</label>
-                                                                                                                </div>
-                                                                                                            </td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled value="0.06"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled value="0"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                        </tr>
-                                                                                                        <tr>
-                                                                                                            <td>
-                                                                                                                <div class="dkbs">
-                                                                                                                    <input class="mr-1" type="checkbox"  name="" id="BS05">
-                                                                                                                    <label class="mb-0" for="BS05">BS05 - Bảo hiểm vật chất xe cơ giới ngoài lãnh thổ Việt Nam (Trung Quốc, Lào, Cămpuchia và Thái Lan)</label>
-                                                                                                                </div>
-                                                                                                            </td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled value="0.08"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled value="0"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                        </tr>
-                                                                                                        <tr>
-                                                                                                            <td>
-                                                                                                                <div class="dkbs">
-                                                                                                                    <input class="mr-1" type="checkbox"  name="" id="BS06">
-                                                                                                                    <label class="mb-0" for="BS06">BS06 - Bảo hiểm tổn thất do Thủy kích</label>
-                                                                                                                </div>
-                                                                                                            </td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled value="0.08"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled value="0"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                        </tr>
-                                                                                                        <tr>
-                                                                                                            <td>
-                                                                                                                <div class="dkbs">
-                                                                                                                    <input class="mr-1" type="checkbox"  name="" id="BS07">
-                                                                                                                    <label class="mb-0" for="BS07">BS07 - Bảo hiểm vật chất xe cơ giới lưu hành tạm thời</label>
-                                                                                                                </div>
-                                                                                                            </td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled value="0.08"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled value="0"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                        </tr>
-                                                                                                        <tr>
-                                                                                                            <td>
-                                                                                                                <div class="dkbs">
-                                                                                                                    <input class="mr-1" type="checkbox"  name="" id="BS08">
-                                                                                                                    <label class="mb-0" for="BS08">BS08 - Bảo hiểm mất bộ phận</label>
-                                                                                                                </div>
-                                                                                                            </td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled value="0.16"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled value="0"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                        </tr>
-                                                                                                        <tr>
-                                                                                                            <td>
-                                                                                                                <div class="dkbs">
-                                                                                                                    <input class="mr-1" type="checkbox"  name="" id="BS09">
-                                                                                                                    <label class="mb-0" for="BS09">BS09 - Bảo hiểm xe tập lái</label>
-                                                                                                                </div>
-                                                                                                            </td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled value="0.08"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled value="0"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                        </tr>
-                                                                                                        <tr>
-                                                                                                            <td>
-                                                                                                                <div class="dkbs">
-                                                                                                                    <input class="mr-1" type="checkbox"  name="" id="BS10">
-                                                                                                                    <label class="mb-0" for="BS10">BS10 - Bảo hiểm tổn thất xảy ra trong quá trình hoạt động của thiết bị chuyên dùng</label>
-                                                                                                                </div>
-                                                                                                            </td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled value="0.1"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled value="0"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                        </tr>
-                                                                                                        <tr>
-                                                                                                            <td>
-                                                                                                                <div class="dkbs">
-                                                                                                                    <input class="mr-1" type="checkbox"  name="" id="BS11">
-                                                                                                                    <label class="mb-0" for="BS11">BS11 - Các điều khỏan thỏa thuận bổ sung khác</label>
-                                                                                                                </div>
-                                                                                                            </td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled value="0.04"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled value="0"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                        </tr>
-                                                                                                        <tr>
-                                                                                                            <td></td>
-                                                                                                            <td></td>
-                                                                                                            <td align="right"><input class="form-control text-danger text-right" type="text" disabled value="0.04"></td>
-                                                                                                            <td align="right"><input class="form-control text-danger text-right" type="text" disabled value="0"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                        </tr>
-                                                                                                    </tbody>
-                                                                                                </table>
-                                                                                                <table class="table table-bordered datatable table-total" style="margin-top: -1px;"
-                                                                                                    data-paging="false"
-                                                                                                    data-info="false"
-                                                                                                    data-ordering="false"
-                                                                                                    data-searching="false"
-                                                                                                >
-                                                                                                    <thead>
-                                                                                                        <tr>
-                                                                                                            <th class="desktop w20p"><b>Tổng cộng: </b></th>
-                                                                                                            <th class="desktop w10p">Số tiền bảo hiểm</th>
-                                                                                                            <th class="desktop w5p">Phí (%)</th>
-                                                                                                            <th class="desktop w10p">Phí BH (có VAT)</th>
-                                                                                                            <th class="desktop w5p">VAT (%)</th>
-                                                                                                            <th class="desktop w10p">VAT</th>
-                                                                                                            <th class="desktop w5p">COM (%)</th>
-                                                                                                            <th class="desktop w10p">COM</th>
-                                                                                                            <th class="desktop w20p">Định mức</th>
-                                                                                                        </tr>
-                                                                                                    </thead>
-                                                                                                    <tbody>
-                                                                                                        <tr>
-                                                                                                            <td></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled readonly value="0.99"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled readonly value="10"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled readonly value="10.0"></td>
-                                                                                                            <td align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></td>
-                                                                                                            <td align="right"></td>
-                                                                                                        </tr>
-                                                                                                    </tbody>
-                                                                                                </table>
+                                                                                    <div class="p-title">Phạm vi bảo hiểm:</div>
+                                                                                    <div class="p-body collapse show">
+                                                                                        <div class="c-item">
+                                                                                            <div class="c-title">
+                                                                                                <span class="button-switch no-label">
+                                                                                                    <input type="checkbox" id="ckbchild1" class="switch cls_ckb">
+                                                                                                    <label for="ckbchild1" data-off="Không" data-on="Có"></label>
+                                                                                                </span>
+                                                                                                <a data-toggle="collapse" class="collapsed" href="#collapsible-item1">Vật chất xe</a>
                                                                                             </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="c-item">
-                                                                                        <div class="c-title">
-                                                                                            <span class="button-switch no-label">
-                                                                                                <input type="checkbox" id="ckbchild2" class="switch cls_ckb">
-                                                                                                <label for="ckbchild2" data-off="Không" data-on="Có"></label>
-                                                                                            </span>
-                                                                                            <a class="collapsed " data-toggle="collapse" href="#collapsible-item2">TNDS tự nguyện</a>
-                                                                                        </div>
-                                                                                        <div id="collapsible-item2" class="collapse" datatable-collapse>
-                                                                                            <div class="c-body">
-                                                                                                <table class="table table-bordered datatable" style="margin-bottom: 0;"
-                                                                                                    data-paging="false"
-                                                                                                    data-info="false"
-                                                                                                    data-ordering="false"
-                                                                                                    data-searching="false"
-                                                                                                >
-                                                                                                    <thead class="thead-light">
-                                                                                                        <tr>
-                                                                                                            <th class="desktop w15p">Quyền lợi</th>
-                                                                                                            <th class="desktop w15p">Số tiền bảo hiểm</th>
-                                                                                                            <th class="desktop w5p">Phí (%)</th>
-                                                                                                            <th class="desktop w10p">Phí BH (có VAT)</th>
-                                                                                                            <th class="desktop w5p">VAT (%)</th>
-                                                                                                            <th class="desktop w10p">VAT</th>
-                                                                                                            <th class="desktop w5p">COM (%)</th>
-                                                                                                            <th class="desktop w10p">COM</th>
-                                                                                                            <th class="desktop w20p">Định mức</th>
-                                                                                                        </tr>
-                                                                                                    </thead>
-                                                                                                    <tbody>
-                                                                                                        <tr>
-                                                                                                            <td><b>TNDS tự nguyện về người</b></td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-right input-money" style="display: inline-block; width: calc(100% - 65px);"  type="text"  value="0" >
-                                                                                                                <span style="width: 62px;">(/người/vụ)</span>
-                                                                                                            </td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-right input-float" style="color: red;" type="text" value="0" >
-                                                                                                            </td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-right input-money" type="text"  value="0" >
-                                                                                                            </td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-right" disabled="disabled" readonly="readonly" value="10">
-                                                                                                            </td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-right input-money" type="text"  value="0" >
-                                                                                                            </td>
-                                                                                                            <td><input class="form-control text-right input-float" type="text" placeholder="0.0"></td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-right input-money" type="text" value="0" >
-                                                                                                            </td>
-                                                                                                            <td>
-                                                                                                                <select class="form-control required " select2 name="dinh_muc" >
-                                                                                                                    <option>Xe cơ giới khác</option>
-                                                                                                                    <option>Biển xanh, biển đỏ, biển nước ngoài</option>
-                                                                                                                    <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
-                                                                                                                    <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
-                                                                                                                    <option>Xe cơ giới khai thác qua Ngân hàng, show room</option>
-                                                                                                                    <option>Xe tải</option>
-                                                                                                                </select>
-                                                                                                            </td>
-                                                                                                        </tr>
-                                                                                                        
-                                                                                                        <tr>
-                                                                                                            <td><b>TNDS tự nguyện về tài sản</b></td>
-                                                                                                            <td>
-                                                                                                                <div class="d-flex">
-                                                                                                                    <input class="form-control text-right input-money" style="display: inline-block; width: calc(100% - 65px);" type="text" value="0">
-                                                                                                                    <span style="width: 62px;"> (/vụ)</span>
-                                                                                                                </div>
-                                                                                                            </td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-right input-float" style="color: red;" type="text" value="0" >
-                                                                                                            </td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-right input-money" type="text"  value="0" >
-                                                                                                            </td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-right" disabled="disabled" readonly="readonly" value="10">
-                                                                                                            </td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-right input-money" type="text"  value="0" >
-                                                                                                            </td>
-                                                                                                            <td><input class="form-control text-right input-float" type="text" placeholder="0.0"></td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-right input-money" type="text" value="0" >
-                                                                                                            </td>
-                                                                                                            <td>
-                                                                                                                <select class="form-control required " select2 name="dinh_muc" >
-                                                                                                                    <option>Xe cơ giới khác</option>
-                                                                                                                    <option>Biển xanh, biển đỏ, biển nước ngoài</option>
-                                                                                                                    <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
-                                                                                                                    <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
-                                                                                                                    <option>Xe cơ giới khai thác qua Ngân hàng, show room</option>
-                                                                                                                    <option>Xe tải</option>
-                                                                                                                </select>
-                                                                                                            </td>
-                                                                                                        </tr>
-                                                                                                        <tr>
-                                                                                                            <td><b>Tổng cộng: </b></td>
-                                                                                                            <td align="right"><b>0</b></td>
-                                                                                                            <td align="right"><b>0</b></td>
-                                                                                                            <td align="right"><b>0</b></td>
-                                                                                                            <td align="right"></td>
-                                                                                                            <td align="right"><b>0</b></td>
-                                                                                                            <td align="right"><b>0</b></td>
-                                                                                                            <td align="right"><b>0</b></td>
-                                                                                                            <td></td>
-                                                                                                        </tr>
+                                                
+                                                                                            <div id="collapsible-item1" class="collapse" datatable-collapse>
+                                                                                                <div class="c-body">
                                                                                                     
-                                                                                                    </tbody>
-                                                                                                </table>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
+                                                                                                    <table class="table table-bordered datatable"
+                                                                                                        data-paging="false"
+                                                                                                        data-info="false"
+                                                                                                        data-ordering="false"
+                                                                                                        data-searching="false" >
+                                                                                                        <thead class="thead-light">
+                                                                                                            <tr>
+                                                                                                                <th class="w20p">Quyền lợi</th>
+                                                                                                                <th class="w10p">Số tiền bảo hiểm</th>
+                                                                                                                <th class="desktop w5p">Phí (%)</th>
+                                                                                                                <th class="desktop w10p">Phí BH (có VAT)</th>
+                                                                                                                <th class="desktop w5p">VAT (%)</th>
+                                                                                                                <th class="desktop w10p">VAT</th>
+                                                                                                                <th class="desktop w5p">COM (%)</th>
+                                                                                                                <th class="desktop w10p">COM</th>
+                                                                                                                <th class="desktop w20p">Định mức</th>
+                                                                                                            </tr>
+                                                                                                        </thead>
+                                                                                                        <tbody>
+                                                                                                            <tr>
+                                                                                                                <td><b>I. Vật chất xe </b></td>
+                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
+                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                                <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
+                                                                                                                <td><input class="form-control text-right input-money" type="text" value="0"></td>
+                                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
+                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                                <td>
+                                                                                                                    <select class="form-control required " select2 name="dinh_muc" >
+                                                                                                                        <option selected>Xe cơ giới khác</option>
+                                                                                                                        <option>Biển xanh, biển đỏ, biển nước ngoài</option>
+                                                                                                                        <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
+                                                                                                                        <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
+                                                                                                                        <option>Xe cơ giới khai thác qua Ngân hàng, show room</option>
+                                                                                                                        <option>Xe tải</option>
+                                                                                                                    </select>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </tbody>
+                                                                                                    </table>
+                                                                                                    <table class="table table-bordered datatable"
+                                                                                                        style="margin-top: -1px;"
+                                                                                                        data-paging="false"
+                                                                                                        data-info="false"
+                                                                                                        data-ordering="false"
+                                                                                                        data-searching="false" >
+                                                                                                        <thead>
+                                                                                                            <tr>
+                                                                                                                <th class="w20p"><b>II. Điều khoản sửa đổi bổ sung</b></th>
+                                                                                                                <th class="desktop w10p"></th>
+                                                                                                                <th class="w5p"></th>
+                                                                                                                <th class="desktop w10p"></th>
+                                                                                                                <th class="desktop w5p"></th>
+                                                                                                                <th class="desktop w10p"></th>
+                                                                                                                <th class="desktop w5p"></th>
+                                                                                                                <th class="desktop w10p"></th>
+                                                                                                                <th class="desktop w20p"></th>
+                                                                                                            </tr>
+                                                                                                        </thead>
+                                                                                                        <tbody>
+                                                                                                            <tr>
+                                                                                                                <td>
+                                                                                                                    <div class="dkbs">
+                                                                                                                        <input class="mr-1" type="checkbox"  name="" id="BS01">
+                                                                                                                        <label class="mb-0" for="BS01">BS01 - Bảo hiểm thay thế mới (bảo hiểm mới thay cũ)</label>
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled value="0"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled value="0"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td>
+                                                                                                                    <div class="dkbs">
+                                                                                                                        <input class="mr-1" type="checkbox"  name="" id="BS02">
+                                                                                                                        <label class="mb-0" for="BS02">BS02 - Bảo hiểm lựa chọn cơ sở sửa chữa chính hãng</label>
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled value="0.16"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled value="0"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td >
+                                                                                                                    <div class="dkbs">
+                                                                                                                        <input class="mr-1" type="checkbox"  name="" id="BS03">
+                                                                                                                        <label class="mb-0" for="BS03">BS03 - Bảo hiểm thuê xe trong thời gian sửa chữa (bảo hiểm gián đoạn sử dụng xe)</label>
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled value="0.08"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled value="0"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td>
+                                                                                                                    <div class="dkbs">
+                                                                                                                        <input class="mr-1" type="checkbox"  name="" id="BS04">
+                                                                                                                        <label class="mb-0" for="BS04">BS04 - Bảo hiểm đối với xe miễn thuế, tạm nhập, tái xuất</label>
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled value="0.06"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled value="0"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td>
+                                                                                                                    <div class="dkbs">
+                                                                                                                        <input class="mr-1" type="checkbox"  name="" id="BS05">
+                                                                                                                        <label class="mb-0" for="BS05">BS05 - Bảo hiểm vật chất xe cơ giới ngoài lãnh thổ Việt Nam (Trung Quốc, Lào, Cămpuchia và Thái Lan)</label>
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled value="0.08"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled value="0"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td>
+                                                                                                                    <div class="dkbs">
+                                                                                                                        <input class="mr-1" type="checkbox"  name="" id="BS06">
+                                                                                                                        <label class="mb-0" for="BS06">BS06 - Bảo hiểm tổn thất do Thủy kích</label>
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled value="0.08"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled value="0"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td>
+                                                                                                                    <div class="dkbs">
+                                                                                                                        <input class="mr-1" type="checkbox"  name="" id="BS07">
+                                                                                                                        <label class="mb-0" for="BS07">BS07 - Bảo hiểm vật chất xe cơ giới lưu hành tạm thời</label>
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled value="0.08"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled value="0"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td>
+                                                                                                                    <div class="dkbs">
+                                                                                                                        <input class="mr-1" type="checkbox"  name="" id="BS08">
+                                                                                                                        <label class="mb-0" for="BS08">BS08 - Bảo hiểm mất bộ phận</label>
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled value="0.16"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled value="0"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td>
+                                                                                                                    <div class="dkbs">
+                                                                                                                        <input class="mr-1" type="checkbox"  name="" id="BS09">
+                                                                                                                        <label class="mb-0" for="BS09">BS09 - Bảo hiểm xe tập lái</label>
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled value="0.08"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled value="0"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td>
+                                                                                                                    <div class="dkbs">
+                                                                                                                        <input class="mr-1" type="checkbox"  name="" id="BS10">
+                                                                                                                        <label class="mb-0" for="BS10">BS10 - Bảo hiểm tổn thất xảy ra trong quá trình hoạt động của thiết bị chuyên dùng</label>
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled value="0.1"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled value="0"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td>
+                                                                                                                    <div class="dkbs">
+                                                                                                                        <input class="mr-1" type="checkbox"  name="" id="BS11">
+                                                                                                                        <label class="mb-0" for="BS11">BS11 - Các điều khỏan thỏa thuận bổ sung khác</label>
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled value="0.04"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled value="0"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td></td>
+                                                                                                                <td></td>
+                                                                                                                <td align="right"><input class="form-control text-danger text-right" type="text" disabled value="0.04"></td>
+                                                                                                                <td align="right"><input class="form-control text-danger text-right" type="text" disabled value="0"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                            </tr>
+                                                                                                        </tbody>
+                                                                                                    </table>
+                                                                                                    <table class="table table-bordered datatable table-total" style="margin-top: -1px;"
+                                                                                                        data-paging="false"
+                                                                                                        data-info="false"
+                                                                                                        data-ordering="false"
+                                                                                                        data-searching="false" >
+                                                                                                        <thead>
+                                                                                                            <tr>
+                                                                                                                <th class="w20p"><b>Tổng cộng: </b></th>
+                                                                                                                <th class="w10p">Số tiền bảo hiểm</th>
+                                                                                                                <th class="desktop w5p">Phí (%)</th>
+                                                                                                                <th class="desktop w10p">Phí BH (có VAT)</th>
+                                                                                                                <th class="desktop w5p">VAT (%)</th>
+                                                                                                                <th class="desktop w10p">VAT</th>
+                                                                                                                <th class="desktop w5p">COM (%)</th>
+                                                                                                                <th class="desktop w10p">COM</th>
+                                                                                                                <th class="desktop w20p">Định mức</th>
+                                                                                                            </tr>
+                                                                                                        </thead>
+                                                                                                        <tbody>
+                                                                                                            <tr>
+                                                                                                                <td></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled readonly value="0.99"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled readonly value="10"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled readonly value="10.0"></td>
+                                                                                                                <td align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></td>
+                                                                                                                <td align="right"></td>
+                                                                                                            </tr>
+                                                                                                        </tbody>
+                                                                                                    </table>
 
-                                                                                    <div class="c-item">
-                                                                                        <div class="c-title">
-                                                                                            <span class="button-switch no-label">
-                                                                                                <input type="checkbox" id="ckbchild3" class="switch cls_ckb">
-                                                                                                <label for="ckbchild3" data-off="Không" data-on="Có"></label>
-                                                                                            </span>
-                                                                                            <a class="collapsed " data-toggle="collapse" href="#collapsible-item3">TNDS bắt buộc</a>
-                                                                                        </div>
-                                                                                        <div id="collapsible-item3" class="collapse" datatable-collapse>
-                                                                                            <div class="c-body">
-                                                                                                <div class="row mb-3">
-                                                                                                    <div class="col-md-4">
-                                                                                                        <label>Thời hạn bảo hiểm: <span class="text-danger">*</span></label>
-                                                                                                        <div class="d-flex mb-2">
-                                                                                                            <span style="width: 100px;">Từ</span>
-                                                                                                            <input type="time" class="form-control mr-2" step="width: 100px;">
-                                                                                                            <input type="text" class="form-control datepicker input-date" placeholder="dd/mm/yyyy">
+                                                                                                    <div class="row mt-3">
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Số tiền BH tiêu chuẩn:</label>
+                                                                                                                <input type="text" class="form-control input-float text-right" disabled readonly value="0">
+                                                                                                            </div>
                                                                                                         </div>
-                                                                                                        <div class="d-flex">
-                                                                                                            <span style="width: 100px;">Đến</span>
-                                                                                                            <input type="time" class="form-control mr-2" step="width: 100px;">
-                                                                                                            <input type="text" class="form-control datepicker input-date" placeholder="dd/mm/yyyy">
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Phí BH tiêu chuẩn (%):</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" disabled readonly value="0.0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Phí BH tiêu chuẩn (Có VAT):</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" disabled readonly value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Tỉ lệ chênh lệch:</label>
+                                                                                                                <input type="text" class="form-control input-float text-right" value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Số tiền chênh lệch:</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" value="0">
+                                                                                                            </div>
                                                                                                         </div>
                                                                                                     </div>
-                                                                                                    <div class="col-md-4">
-                                                                                                        <label>Số GCNBH: <span class="text-danger">*</span></label>
-                                                                                                        <input type="text" class="form-control" placeholder="Nhập số giấy chứng nhận...">
+                                    
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="c-item">
+                                                                                            <div class="c-title">
+                                                                                                <span class="button-switch no-label">
+                                                                                                    <input type="checkbox" id="ckbchild2" class="switch cls_ckb">
+                                                                                                    <label for="ckbchild2" data-off="Không" data-on="Có"></label>
+                                                                                                </span>
+                                                                                                <a class="collapsed " data-toggle="collapse" href="#collapsible-item2">TNDS tự nguyện</a>
+                                                                                            </div>
+                                                                                            <div id="collapsible-item2" class="collapse" datatable-collapse>
+                                                                                                <div class="c-body">
+                                                                                                    <table class="table table-bordered datatable" style="margin-bottom: 0;"
+                                                                                                        data-paging="false"
+                                                                                                        data-info="false"
+                                                                                                        data-ordering="false"
+                                                                                                        data-searching="false">
+                                                                                                        <thead class="thead-light">
+                                                                                                            <tr>
+                                                                                                                <th class="w15p">Quyền lợi</th>
+                                                                                                                <th class="w15p">Số tiền bảo hiểm</th>
+                                                                                                                <th class="desktop w5p">Phí (%)</th>
+                                                                                                                <th class="desktop w10p">Phí BH (có VAT)</th>
+                                                                                                                <th class="desktop w5p">VAT (%)</th>
+                                                                                                                <th class="desktop w10p">VAT</th>
+                                                                                                                <th class="desktop w5p">COM (%)</th>
+                                                                                                                <th class="desktop w10p">COM</th>
+                                                                                                                <th class="desktop w20p">Định mức</th>
+                                                                                                            </tr>
+                                                                                                        </thead>
+                                                                                                        <tbody>
+                                                                                                            <tr>
+                                                                                                                <td><b>TNDS tự nguyện về người</b></td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right input-money" style="display: inline-block; width: calc(100% - 65px);"  type="text"  value="0" >
+                                                                                                                    <span style="width: 62px;">(/người/vụ)</span>
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right input-float" style="color: red;" type="text" value="0" >
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right input-money" type="text"  value="0" >
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right" disabled="disabled" readonly="readonly" value="10">
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right input-money" type="text"  value="0" >
+                                                                                                                </td>
+                                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0.0"></td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right input-money" type="text" value="0" >
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <select class="form-control required " select2 name="dinh_muc" >
+                                                                                                                        <option>Xe cơ giới khác</option>
+                                                                                                                        <option>Biển xanh, biển đỏ, biển nước ngoài</option>
+                                                                                                                        <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
+                                                                                                                        <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
+                                                                                                                        <option>Xe cơ giới khai thác qua Ngân hàng, show room</option>
+                                                                                                                        <option>Xe tải</option>
+                                                                                                                    </select>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            
+                                                                                                            <tr>
+                                                                                                                <td><b>TNDS tự nguyện về tài sản</b></td>
+                                                                                                                <td>
+                                                                                                                    <div class="d-flex">
+                                                                                                                        <input class="form-control text-right input-money" style="display: inline-block; width: calc(100% - 65px);" type="text" value="0">
+                                                                                                                        <span style="width: 62px;"> (/vụ)</span>
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right input-float" style="color: red;" type="text" value="0" >
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right input-money" type="text"  value="0" >
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right" disabled="disabled" readonly="readonly" value="10">
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right input-money" type="text"  value="0" >
+                                                                                                                </td>
+                                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0.0"></td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right input-money" type="text" value="0" >
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <select class="form-control required " select2 name="dinh_muc" >
+                                                                                                                        <option>Xe cơ giới khác</option>
+                                                                                                                        <option>Biển xanh, biển đỏ, biển nước ngoài</option>
+                                                                                                                        <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
+                                                                                                                        <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
+                                                                                                                        <option>Xe cơ giới khai thác qua Ngân hàng, show room</option>
+                                                                                                                        <option>Xe tải</option>
+                                                                                                                    </select>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td><b>Tổng cộng: </b></td>
+                                                                                                                <td align="right"><b>0</b></td>
+                                                                                                                <td align="right"><b>0</b></td>
+                                                                                                                <td align="right"><b>0</b></td>
+                                                                                                                <td align="right"></td>
+                                                                                                                <td align="right"><b>0</b></td>
+                                                                                                                <td align="right"><b>0</b></td>
+                                                                                                                <td align="right"><b>0</b></td>
+                                                                                                                <td></td>
+                                                                                                            </tr>
+                                                                                                        
+                                                                                                        </tbody>
+                                                                                                    </table>
+                                                                                                    <div class="row mt-3">
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Số tiền BH tiêu chuẩn:</label>
+                                                                                                                <input type="text" class="form-control input-float text-right" disabled readonly value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Phí BH tiêu chuẩn (%):</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" disabled readonly value="0.0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Phí BH tiêu chuẩn (Có VAT):</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" disabled readonly value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Tỉ lệ chênh lệch:</label>
+                                                                                                                <input type="text" class="form-control input-float text-right" value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Số tiền chênh lệch:</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" value="0">
+                                                                                                            </div>
+                                                                                                        </div>
                                                                                                     </div>
                                                                                                 </div>
-                                                                                                <table class="table table-bordered datatable"
-                                                                                                    data-paging="false"
-                                                                                                    data-info="false"
-                                                                                                    data-ordering="false"
-                                                                                                    data-searching="false"
-                                                                                                >
-                                                                                                    <thead class="thead-light">
-                                                                                                        <tr>
-                                                                                                            <th class="desktop w10p">Quyền lợi</th>
-                                                                                                            <th class="desktop w20p">Số tiền bảo hiểm</th>
-                                                                                                            <th class="desktop w5p">Phí (%)</th>
-                                                                                                            <th class="desktop w10p">Phí BH (có VAT)</th>
-                                                                                                            <th class="desktop w5p">VAT (%)</th>
-                                                                                                            <th class="desktop w10p">VAT</th>
-                                                                                                            <th class="desktop w5p">COM (%)</th>
-                                                                                                            <th class="desktop w10p">COM</th>
-                                                                                                            <th class="desktop w20p">Định mức</th>
-                                                                                                        </tr>
-                                                                                                    </thead>
-                                                                                                    <tbody>
-                                                                                                        <tr>
-                                                                                                            <td><b>TNDS bắt buộc </b></td>
-                                                                                                            <td>
-                                                                                                                <b>TNDS về người: 100tr/người/vụ</b>
-                                                                                                                <br>
-                                                                                                                <b>TNDS về tài sản: 100tr/vụ</b>
-                                                                                                            </td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-right" style="color: red;" type="text" value="0">
-                                                                                                            </td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-right" type="text" value="100,000,000" >
-                                                                                                            </td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10" >
-                                                                                                            </td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-right" type="text"value="0" >
-                                                                                                            </td>
-                                                                                                            <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="5.0"></td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-right input-money" type="text" value="0" >
-                                                                                                            </td>
-                                                                                                            <td>
-                                                                                                                <select class="form-control required " select2 name="dinh_muc" >
-                                                                                                                    <option>Xe cơ giới khác</option>
-                                                                                                                    <option>Biển xanh, biển đỏ, biển nước ngoài</option>
-                                                                                                                    <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
-                                                                                                                    <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
-                                                                                                                    <option>Xe cơ giới khai thác qua Ngân hàng, show room</option>
-                                                                                                                    <option>Xe tải</option>
-                                                                                                                </select>
-                                                                                                            </td>
-                                                                                                        </tr>
-                                                                                                    </tbody>
-                                                                                                </table>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </div>
-                    
-                                                                                    <div class="c-item">
-                                                                                        <div class="c-title">
-                                                                                            <span class="button-switch no-label">
-                                                                                                <input type="checkbox" id="ckbchild4" class="switch cls_ckb">
-                                                                                                <label for="ckbchild4" data-off="Không" data-on="Có"></label>
-                                                                                            </span>
-                                                                                            <a class="collapsed " data-toggle="collapse" href="#collapsible-item4">Tai nạn lái, phụ xe và người ngồi trên xe</a>
-                                                                                        </div>
-                                                                                        <div id="collapsible-item4" class="collapse" datatable-collapse>
-                                                                                            <div class="c-body">
-                                                                                                <div class="row">
-                                                                                                    <div class="col-md-2">
-                                                                                                        <div class="form-group">
-                                                                                                            <label>Số người tham gia: <span class="text-danger">*</span></label>
-                                                                                                            <input type="text" class="form-control" name="so_nguoi_tham_gia" placeholder="Nhập số người tham gia..." value="0" >
+
+                                                                                        <div class="c-item">
+                                                                                            <div class="c-title">
+                                                                                                <span class="button-switch no-label">
+                                                                                                    <input type="checkbox" id="ckbchild3" class="switch cls_ckb">
+                                                                                                    <label for="ckbchild3" data-off="Không" data-on="Có"></label>
+                                                                                                </span>
+                                                                                                <a class="collapsed " data-toggle="collapse" href="#collapsible-item3">TNDS bắt buộc</a>
+                                                                                            </div>
+                                                                                            <div id="collapsible-item3" class="collapse" datatable-collapse>
+                                                                                                <div class="c-body">
+                                                                                                    <div class="row mb-3">
+                                                                                                        <div class="col-md-4">
+                                                                                                            <label>Thời hạn bảo hiểm: <span class="text-danger">*</span></label>
+                                                                                                            <div class="d-flex mb-2">
+                                                                                                                <span style="width: 100px;">Từ</span>
+                                                                                                                <input type="time" class="form-control mr-2" step="width: 100px;">
+                                                                                                                <input type="text" class="form-control datepicker input-date" placeholder="dd/mm/yyyy">
+                                                                                                            </div>
+                                                                                                            <div class="d-flex">
+                                                                                                                <span style="width: 100px;">Đến</span>
+                                                                                                                <input type="time" class="form-control mr-2" step="width: 100px;">
+                                                                                                                <input type="text" class="form-control datepicker input-date" placeholder="dd/mm/yyyy">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-4">
+                                                                                                            <label>Số GCNBH: <span class="text-danger">*</span></label>
+                                                                                                            <input type="text" class="form-control" placeholder="Nhập số giấy chứng nhận...">
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <table class="table table-bordered datatable"
+                                                                                                        data-paging="false"
+                                                                                                        data-info="false"
+                                                                                                        data-ordering="false"
+                                                                                                        data-searching="false" >
+                                                                                                        <thead class="thead-light">
+                                                                                                            <tr>
+                                                                                                                <th class="w10p">Quyền lợi</th>
+                                                                                                                <th class="w20p">Số tiền bảo hiểm</th>
+                                                                                                                <th class="desktop w5p">Phí (%)</th>
+                                                                                                                <th class="desktop w10p">Phí BH (có VAT)</th>
+                                                                                                                <th class="desktop w5p">VAT (%)</th>
+                                                                                                                <th class="desktop w10p">VAT</th>
+                                                                                                                <th class="desktop w5p">COM (%)</th>
+                                                                                                                <th class="desktop w10p">COM</th>
+                                                                                                                <th class="desktop w20p">Định mức</th>
+                                                                                                            </tr>
+                                                                                                        </thead>
+                                                                                                        <tbody>
+                                                                                                            <tr>
+                                                                                                                <td><b>TNDS bắt buộc </b></td>
+                                                                                                                <td>
+                                                                                                                    <b>TNDS về người: 100tr/người/vụ</b>
+                                                                                                                    <br>
+                                                                                                                    <b>TNDS về tài sản: 100tr/vụ</b>
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right" style="color: red;" type="text" value="0">
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right" type="text" value="100,000,000" >
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10" >
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right" type="text"value="0" >
+                                                                                                                </td>
+                                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="5.0"></td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right input-money" type="text" value="0" >
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <select class="form-control required " select2 name="dinh_muc" >
+                                                                                                                        <option>Xe cơ giới khác</option>
+                                                                                                                        <option>Biển xanh, biển đỏ, biển nước ngoài</option>
+                                                                                                                        <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
+                                                                                                                        <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
+                                                                                                                        <option>Xe cơ giới khai thác qua Ngân hàng, show room</option>
+                                                                                                                        <option>Xe tải</option>
+                                                                                                                    </select>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </tbody>
+                                                                                                    </table>
+                                                                                                    <div class="row mt-3">
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Số tiền BH tiêu chuẩn:</label>
+                                                                                                                <input type="text" class="form-control input-float text-right" disabled readonly value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Phí BH tiêu chuẩn (%):</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" disabled readonly value="0.0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Phí BH tiêu chuẩn (Có VAT):</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" disabled readonly value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Tỉ lệ chênh lệch:</label>
+                                                                                                                <input type="text" class="form-control input-float text-right" value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Số tiền chênh lệch:</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" value="0">
+                                                                                                            </div>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </div>
-                                                                                                <table class="table table-bordered datatable"
-                                                                                                    data-paging="false"
-                                                                                                    data-info="false"
-                                                                                                    data-ordering="false"
-                                                                                                    data-searching="false"
-                                                                                                >
-                                                                                                    <thead class="thead-light">
-                                                                                                        <tr>
-                                                                                                            <th class="desktop w15p">Quyền lợi</th>
-                                                                                                            <th class="desktop w15p">Số tiền bảo hiểm</th>
-                                                                                                            <th class="desktop w5p">Phí (%)</th>
-                                                                                                            <th class="desktop w10p">Phí BH (có VAT)</th>
-                                                                                                            <th class="desktop w5p">VAT (%)</th>
-                                                                                                            <th class="desktop w10p">VAT</th>
-                                                                                                            <th class="desktop w5p">COM (%)</th>
-                                                                                                            <th class="desktop w10p">COM</th>
-                                                                                                            <th class="desktop w20p">Định mức</th>
-                                                                                                        </tr>
-                                                                                                    </thead>
-                                                                                                    <tbody>
-                                                                                                        <tr>
-                                                                                                            <td><b>Tai nạn lái, phụ xe và người ngồi trên xe </b></td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-right" style="display: inline-block; width: calc(100% - 65px);" type="text" value="0" >
-                                                                                                                <span style="width: 62px;">(/người/vụ)</span>
-                                                                                                            </td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-left" style="color: red;" type="text" value="0" >
-                                                                                                            </td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-right" type="text" value="0">
-                                                                                                            </td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="0">
-                                                                                                            </td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-right" type="text" value="0">
-                                                                                                            </td>
-                                                                                                            <td><input class="form-control text-right input-float" type="text" placeholder="0.0"></td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-right input-money" type="text" value="0" >
-                                                                                                            </td>
-                                                                                                            <td>
-                                                                                                                <select class="form-control required " select2 name="dinh_muc" >
-                                                                                                                    <option>Xe cơ giới khác</option>
-                                                                                                                    <option>Biển xanh, biển đỏ, biển nước ngoài</option>
-                                                                                                                    <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
-                                                                                                                    <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
-                                                                                                                    <option>Xe cơ giới khai thác qua Ngân hàng, show room</option>
-                                                                                                                    <option>Xe tải</option>
-                                                                                                                </select>
-                                                                                                            </td>
-                                                                                                        </tr>
-                                                                                                    </tbody>
-                                                                                                </table>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </div>
+                        
+                                                                                        <div class="c-item">
+                                                                                            <div class="c-title">
+                                                                                                <span class="button-switch no-label">
+                                                                                                    <input type="checkbox" id="ckbchild4" class="switch cls_ckb">
+                                                                                                    <label for="ckbchild4" data-off="Không" data-on="Có"></label>
+                                                                                                </span>
+                                                                                                <a class="collapsed " data-toggle="collapse" href="#collapsible-item4">Tai nạn lái, phụ xe và người ngồi trên xe</a>
+                                                                                            </div>
+                                                                                            <div id="collapsible-item4" class="collapse" datatable-collapse>
+                                                                                                <div class="c-body">
+                                                                                                    <div class="row">
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Số người tham gia: <span class="text-danger">*</span></label>
+                                                                                                                <input type="text" class="form-control" name="so_nguoi_tham_gia" placeholder="Nhập số người tham gia..." value="0" >
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <table class="table table-bordered datatable"
+                                                                                                        data-paging="false"
+                                                                                                        data-info="false"
+                                                                                                        data-ordering="false"
+                                                                                                        data-searching="false" >
+                                                                                                        <thead class="thead-light">
+                                                                                                            <tr>
+                                                                                                                <th class="w15p">Quyền lợi</th>
+                                                                                                                <th class="w15p">Số tiền bảo hiểm</th>
+                                                                                                                <th class="desktop w5p">Phí (%)</th>
+                                                                                                                <th class="desktop w10p">Phí BH (có VAT)</th>
+                                                                                                                <th class="desktop w5p">VAT (%)</th>
+                                                                                                                <th class="desktop w10p">VAT</th>
+                                                                                                                <th class="desktop w5p">COM (%)</th>
+                                                                                                                <th class="desktop w10p">COM</th>
+                                                                                                                <th class="desktop w20p">Định mức</th>
+                                                                                                            </tr>
+                                                                                                        </thead>
+                                                                                                        <tbody>
+                                                                                                            <tr>
+                                                                                                                <td><b>Tai nạn lái, phụ xe và người ngồi trên xe </b></td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right" style="display: inline-block; width: calc(100% - 65px);" type="text" value="0" >
+                                                                                                                    <span style="width: 62px;">(/người/vụ)</span>
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-left" style="color: red;" type="text" value="0" >
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right" type="text" value="0">
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="0">
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right" type="text" value="0">
+                                                                                                                </td>
+                                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0.0"></td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right input-money" type="text" value="0" >
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <select class="form-control required " select2 name="dinh_muc" >
+                                                                                                                        <option>Xe cơ giới khác</option>
+                                                                                                                        <option>Biển xanh, biển đỏ, biển nước ngoài</option>
+                                                                                                                        <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
+                                                                                                                        <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
+                                                                                                                        <option>Xe cơ giới khai thác qua Ngân hàng, show room</option>
+                                                                                                                        <option>Xe tải</option>
+                                                                                                                    </select>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </tbody>
+                                                                                                    </table>
+                                                                                                    <div class="row mt-3">
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Số tiền BH tiêu chuẩn:</label>
+                                                                                                                <input type="text" class="form-control input-float text-right" disabled readonly value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Phí BH tiêu chuẩn (%):</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" disabled readonly value="0.0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Phí BH tiêu chuẩn (Có VAT):</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" disabled readonly value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Tỉ lệ chênh lệch:</label>
+                                                                                                                <input type="text" class="form-control input-float text-right" value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Số tiền chênh lệch:</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
 
-                                                                                    <div class="c-item">
-                                                                                        <div class="c-title">
-                                                                                            <span class="button-switch no-label">
-                                                                                                <input type="checkbox" id="ckbchild5" class="switch cls_ckb">
-                                                                                                <label for="ckbchild5" data-off="Không" data-on="Có"></label>
-                                                                                            </span>
-                                                                                            <a class="collapsed " data-toggle="collapse" href="#collapsible-item5">TNDS của chủ xe với hàng hóa</a>
-                                                                                        </div>
-                                                                                        <div id="collapsible-item5" class="collapse" datatable-collapse>
-                                                                                            <div class="c-body">
-                                                                                                <table class="table table-bordered datatable"
-                                                                                                    data-paging="false"
-                                                                                                    data-info="false"
-                                                                                                    data-ordering="false"
-                                                                                                    data-searching="false"
-                                                                                                >
-                                                                                                    <thead class="thead-light">
-                                                                                                        <tr>
-                                                                                                            <th class="desktop w15p">Quyền lợi</th>
-                                                                                                            <th class="desktop w15p">Số tiền bảo hiểm</th>
-                                                                                                            <th class="desktop w5p">Phí (%)</th>
-                                                                                                            <th class="desktop w10p">Phí BH (có VAT)</th>
-                                                                                                            <th class="desktop w5p">VAT (%)</th>
-                                                                                                            <th class="desktop w10p">VAT</th>
-                                                                                                            <th class="desktop w5p">COM (%)</th>
-                                                                                                            <th class="desktop w10p">COM</th>
-                                                                                                            <th class="desktop w20p">Định mức</th>
-                                                                                                        </tr>
-                                                                                                    </thead>
-                                                                                                    <tbody>
-                                                                                                        <tr>
-                                                                                                            <td><b>TNDS của chủ xe với hàng hóa</b></td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-right" type="text" value="0" >
-                                                                                                            </td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-left" style="color: red;" type="text" value="0" >
-                                                                                                            </td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-right" type="text" value="0">
-                                                                                                            </td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="0">
-                                                                                                            </td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-right" type="text" value="0">
-                                                                                                            </td>
-                                                                                                            <td><input class="form-control text-right input-float" type="text" placeholder="0.0"></td>
-                                                                                                            <td>
-                                                                                                                <input class="form-control text-right input-money" type="text" value="0" >
-                                                                                                            </td>
-                                                                                                            <td>
-                                                                                                                <select class="form-control required " select2 name="dinh_muc" >
-                                                                                                                    <option>Xe cơ giới khác</option>
-                                                                                                                    <option>Biển xanh, biển đỏ, biển nước ngoài</option>
-                                                                                                                    <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
-                                                                                                                    <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
-                                                                                                                    <option>Xe cơ giới khai thác qua Ngân hàng, show room</option>
-                                                                                                                    <option>Xe tải</option>
-                                                                                                                </select>
-                                                                                                            </td>
-                                                                                                        </tr>
-                                                                                                    </tbody>
-                                                                                                </table>
+                                                                                        <div class="c-item">
+                                                                                            <div class="c-title">
+                                                                                                <span class="button-switch no-label">
+                                                                                                    <input type="checkbox" id="ckbchild5" class="switch cls_ckb">
+                                                                                                    <label for="ckbchild5" data-off="Không" data-on="Có"></label>
+                                                                                                </span>
+                                                                                                <a class="collapsed " data-toggle="collapse" href="#collapsible-item5">TNDS của chủ xe với hàng hóa</a>
+                                                                                            </div>
+                                                                                            <div id="collapsible-item5" class="collapse" datatable-collapse>
+                                                                                                <div class="c-body">
+                                                                                                    <table class="table table-bordered datatable"
+                                                                                                        data-paging="false"
+                                                                                                        data-info="false"
+                                                                                                        data-ordering="false"
+                                                                                                        data-searching="false"
+                                                                                                        >
+                                                                                                        <thead class="thead-light">
+                                                                                                            <tr>
+                                                                                                                <th class="w15p">Quyền lợi</th>
+                                                                                                                <th class="w15p">Số tiền bảo hiểm</th>
+                                                                                                                <th class="desktop w5p">Phí (%)</th>
+                                                                                                                <th class="desktop w10p">Phí BH (có VAT)</th>
+                                                                                                                <th class="desktop w5p">VAT (%)</th>
+                                                                                                                <th class="desktop w10p">VAT</th>
+                                                                                                                <th class="desktop w5p">COM (%)</th>
+                                                                                                                <th class="desktop w10p">COM</th>
+                                                                                                                <th class="desktop w20p">Định mức</th>
+                                                                                                            </tr>
+                                                                                                        </thead>
+                                                                                                        <tbody>
+                                                                                                            <tr>
+                                                                                                                <td><b>TNDS của chủ xe với hàng hóa</b></td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right" type="text" value="0" >
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-left" style="color: red;" type="text" value="0" >
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right" type="text" value="0">
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="0">
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right" type="text" value="0">
+                                                                                                                </td>
+                                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0.0"></td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right input-money" type="text" value="0" >
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <select class="form-control required " select2 name="dinh_muc" >
+                                                                                                                        <option>Xe cơ giới khác</option>
+                                                                                                                        <option>Biển xanh, biển đỏ, biển nước ngoài</option>
+                                                                                                                        <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe&gt;15 tuổi kể từ ngày SX</option>
+                                                                                                                        <option>Xe taxi, đầu kéo, vận tải hành khách theo tuyến cố định liên tỉnh, xe>10 tuổi kể từ ngày SX</option>
+                                                                                                                        <option>Xe cơ giới khai thác qua Ngân hàng, show room</option>
+                                                                                                                        <option>Xe tải</option>
+                                                                                                                    </select>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </tbody>
+                                                                                                    </table>
+                                                                                                    <div class="row mt-3">
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Số tiền BH tiêu chuẩn:</label>
+                                                                                                                <input type="text" class="form-control input-float text-right" disabled readonly value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Phí BH tiêu chuẩn (%):</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" disabled readonly value="0.0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Phí BH tiêu chuẩn (Có VAT):</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" disabled readonly value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Tỉ lệ chênh lệch:</label>
+                                                                                                                <input type="text" class="form-control input-float text-right" value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Số tiền chênh lệch:</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
                                                                                             </div>
                                                                                         </div>
+                                                                                        
                                                                                     </div>
-                                                                                    
                                                                                 </div>
-                                                                            </div>
                                                                         </div>
                                                                     </div>
 

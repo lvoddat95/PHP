@@ -1,4 +1,5 @@
-<div class="form-group ">
+<div class="form-group">
+	<div></div>
 	<div>
 	    <input type="checkbox" id="kocobien" onchange="on_change_disable_control(this,'loai_bien,bien_kiem_soat')"> 
 	    <label class="mb-0" for="kocobien"> 
