@@ -404,13 +404,6 @@
     .list-files li{
         width: 33.3333%;
     }
-    .nav-file .nav-link {
-        padding: 5px 0;
-    }
-    .nav-file .nav-link > i {
-        font-size: 10px;
-        margin-right: 3px;
-    }
     .nav-file .nav-group-sub {
         margin-left: 13px;
     }

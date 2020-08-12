@@ -361,7 +361,7 @@ var App = function () {
                 var v_pos = $this.data('position');
     
                 // Mac dinh hien thi "top"
-                if (!v_pos){
+                if (!v_pos || v_pos == 'top' ){
                     v_gravity = 's';
                 }else if( v_pos == 'bottom' ){
                     v_gravity = 'n';
@@ -381,6 +381,7 @@ var App = function () {
     
                 $this.tipsy({
                     gravity: v_gravity,
+                    html: true 
                 });
             });
     
@@ -397,8 +398,7 @@ var App = function () {
         if (p_select) select = p_select;
 
         if (select.length > 0) {
-
-            select.select2({ 
+            $(select).select2({ 
                 language: "vi",
                 minimumResultsForSearch: 5,
             });
@@ -438,7 +438,7 @@ var App = function () {
                 this._adjustDate(target);
             }
 
-            datepicker.datepicker({
+            $(datepicker).datepicker({
                 firstDay: 1,
                 showButtonPanel: true,
                 changeMonth: true,
@@ -1492,8 +1492,8 @@ var App = function () {
                 paginate: {
                     first:      "Đầu",
                     last:       "Cuối",
-                    next:       "Sau <i class='far fa-chevron-double-right fa-xs'></i>",
-                    previous:   "<i class='far fa-chevron-double-left fa-xs'></i> Trước"
+                    next:       "Sau <i class='fa fa-chevron-right fa-xs'></i>",
+                    previous:   "<i class='fa fa-chevron-left fa-xs'></i> Trước"
                 },
                 aria: {
                     sortAscending:  ": kích hoạt để sắp xếp cột tăng dần",
@@ -1528,6 +1528,8 @@ var App = function () {
 
         
         var v_datatable = table.DataTable();
+
+        _component_select2('.dataTables_length select');
 
         v_datatable.on( 'responsive-display', function ( e, datatable, row, showHide, update ) {
             var v_li =  $(this).find('tbody > tr.child > td.child > ul.dtr-details > li');
@@ -1586,6 +1588,15 @@ var App = function () {
             });
         }
 
+        // if ( $('.wizard-style2>.actions').length > 0 ) {
+        //     $('.wizard-style2>.actions').stickySidebar({
+        //         topSpacing: 20,
+        //         bottomSpacing: 20,
+        //         containerSelector: '.wizard',
+        //         minWidth: 1199,
+        //     });
+        // }
+
         //Wizard
         var li = $(".wizard .nav-tabs li");
         $('.wizard .nav-tabs li > a').on("show.bs.tab", function (e) {
@@ -1635,6 +1646,49 @@ var App = function () {
 
     };
 
+    // Isotope
+
+    var _component_isotope = function(){
+
+        var $grid = $(".list-files").isotope({
+            itemSelector: ".file-item",
+        });
+
+        var filters = [];
+
+        $(".nav-file").on("click", ".nav-button", function (event) {
+            var $target = $(event.currentTarget);
+            $target.toggleClass("is-checked");
+            var isChecked = $target.hasClass("is-checked");
+            var filter = $target.attr("data-filter");
+            if (isChecked) {
+                addFilter(filter);
+            } else {
+                removeFilter(filter);
+            }
+            $grid.isotope({ filter: filters.join(",") });
+        });
+
+        function addFilter(filter) {
+            if (filters.indexOf(filter) == -1) {
+                filters.push(filter);
+            }
+        }
+
+        function removeFilter(filter) {
+            var index = filters.indexOf(filter);
+            if (index != -1) {
+                filters.splice(index, 1);
+            }
+        }
+
+        $('#ds_files').on('shown.bs.modal', function () {
+            $grid.isotope('layout');
+        });
+
+
+    }
+
 
     //
     // Tra ve cac object duoc gan cho module
@@ -1681,6 +1735,7 @@ var App = function () {
             _component_select2();
             _component_datepicker();
             _component_input_type();
+            _component_isotope();
         },
 
         initChart: function() {

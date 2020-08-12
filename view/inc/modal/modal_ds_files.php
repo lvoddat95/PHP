@@ -2,21 +2,41 @@
 <div id="ds_files" class="modal fade" tabindex="-1">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title font-weight-semibold ">Danh sách tệp đính kèm</h5>
+                <button type="button" class="btn btn-light" data-dismiss="modal"><i class="far fa-times mr-1"></i> Đóng</button>
+            </div>
+
             <div class="modal-body">
                 <div class="file-manager">
                     <div class="f-left">
                         <div class="f-left-wrapper">
                             <ul class="nav nav-file nav-sidebar">
-                                <li class="nav-item-header"><span>Danh sách files</span></li>
-                                <li class="nav-item nav-item-submenu nav-item-open">
-                                    <a href="#" class="nav-link"><i class="icon-folder-open3"></i><span>Tất cả</span></a> 
-                                    <ul class="nav nav-group-sub">
-                                        <li class="nav-item"> <a href="#" class="nav-link"><i class="icon-file-text2"></i><span>Tài liệu</span></a> </li>
-                                        <li class="nav-item"> <a href="#" class="nav-link"><i class="icon-file-picture"></i><span>Hình ảnh</span></a> </li>
-                                        <li class="nav-item"> <a href="#" class="nav-link"><i class="icon-file-video"></i><span>Video</span></a> </li>
-                                        <li class="nav-item"> <a href="#" class="nav-link"><i class="icon-file-music"></i><span>Âm thanh</span></a> </li>
-                                        <li class="nav-item"> <a href="#" class="nav-link"><i class="icon-file-zip"></i><span>File nén</span></a> </li>
-                                    </ul>
+                                <li class="nav-item-header"><span>Danh mục</span></li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link nav-button" data-filter=".a">
+                                        <i class="icon-checkbox-unchecked"></i><span>Tài liệu</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link nav-button" data-filter=".b">
+                                        <i class="icon-checkbox-unchecked"></i><span>Hình ảnh</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link nav-button" data-filter=".c">
+                                        <i class="icon-checkbox-unchecked"></i><span>Video</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link nav-button" data-filter=".d">
+                                        <i class="icon-checkbox-unchecked"></i><span>Âm thanh</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link nav-button" data-filter=".e">
+                                        <i class="icon-checkbox-unchecked"></i><span>File nén</span>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -32,8 +52,8 @@
                                 <button type="submit"><i class="icon-search4"></i></button>
                             </div>
                         </div>
-                        <ul class="list-files scrollbar-light">
-                            <li>
+                        <ul class="list-files">
+                            <li class="file-item a">
                                 <div class="file-wrapper">
                                     <span class="file-icon file-txt"></span>
                                     <div class="file-info">
@@ -52,7 +72,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="file-item a">
                                 <div class="file-wrapper">
                                     <span style="background-image: url(<?php echo ASSET_ROOT; ?>/images/image2.jpg) " class="file-icon"></span>
                                     <div class="file-info">
@@ -71,7 +91,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="file-item a">
                                 <div class="file-wrapper">
                                     <span class="file-icon file-audio"></span>
                                     <div class="file-info">
@@ -90,7 +110,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="file-item b">
                                 <div class="file-wrapper">
                                     <span style="background-image: url(<?php echo ASSET_ROOT; ?>/images/image.png) " class="file-icon file-txt"></span>
                                     <div class="file-info">
@@ -109,7 +129,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="file-item c">
                                 <div class="file-wrapper">
                                     <span style="background-image: url(<?php echo ASSET_ROOT; ?>/images/files/image.png)" class="file-icon file-image"></span>
                                     <div class="file-info">
@@ -128,7 +148,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="file-item d">
                                 <div class="file-wrapper">
                                     <span style="background-image: url(<?php echo ASSET_ROOT; ?>/images/image3.jpg)" class="file-icon file-image"></span>
                                     <div class="file-info">
@@ -147,7 +167,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="file-item a">
                                 <div class="file-wrapper">
                                     <span style="background-image: url(<?php echo ASSET_ROOT; ?>/images/files/excel.png)" class="file-icon file-excel"></span>
                                     <div class="file-info">
@@ -166,7 +186,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="file-item e">
                                 <div class="file-wrapper">
                                     <span style="background-image: url(<?php echo ASSET_ROOT; ?>/images/files/excel.png)" class="file-icon file-excel"></span>
                                     <div class="file-info">
@@ -185,7 +205,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="file-item a">
                                 <div class="file-wrapper">
                                     <span style="background-image: url(<?php echo ASSET_ROOT; ?>/images/files/pdf.png)" class="file-icon file-pdf"></span>
                                     <div class="file-info">
@@ -204,7 +224,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="file-item a">
                                 <div class="file-wrapper">
                                     <span style="background-image: url(<?php echo ASSET_ROOT; ?>/images/files/arc.png)" class="file-icon file-arc"></span>
                                     <div class="file-info">
@@ -223,7 +243,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="file-item b">
                                 <div class="file-wrapper">
                                     <span style="background-image: url(<?php echo ASSET_ROOT; ?>/images/files/pp.png)" class="file-icon file-pp"></span>
                                     <div class="file-info">
@@ -242,7 +262,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="file-item c">
                                 <div class="file-wrapper">
                                     <span class="file-icon file-audio"></span>
                                     <div class="file-info">
@@ -261,7 +281,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="file-item a">
                                 <div class="file-wrapper">
                                     <span class="file-icon file-audio"></span>
                                     <div class="file-info">
@@ -280,7 +300,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="file-item d">
                                 <div class="file-wrapper">
                                     <span class="file-icon file-word"></span>
                                     <div class="file-info">
@@ -299,7 +319,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="file-item a">
                                 <div class="file-wrapper">
                                     <span class="file-icon file-word"></span>
                                     <div class="file-info">
@@ -318,7 +338,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="file-item a">
                                 <div class="file-wrapper">
                                     <span class="file-icon file-txt"></span>
                                     <div class="file-info">
@@ -337,7 +357,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="file-item e">
                                 <div class="file-wrapper">
                                     <span class="file-icon file-video"></span>
                                     <div class="file-info">
@@ -356,7 +376,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="file-item a">
                                 <div class="file-wrapper">
                                     <span class="file-icon file-csv"></span>
                                     <div class="file-info">
@@ -375,7 +395,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="file-item b">
                                 <div class="file-wrapper">
                                     <span class="file-icon file-word"></span>
                                     <div class="file-info">
@@ -394,7 +414,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="file-item c">
                                 <div class="file-wrapper">
                                     <span class="file-icon file-word"></span>
                                     <div class="file-info">
@@ -413,7 +433,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="file-item d">
                                 <div class="file-wrapper">
                                     <span class="file-icon file-xps"></span>
                                     <div class="file-info">
@@ -440,9 +460,13 @@
                     </div>
                 </div>
             </div>
-            <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-light" data-dismiss="modal"><i class="far fa-times mr-1"></i>Đóng</button>
-                <a href="#" class="btn bg-primary btn-labeled btn-labeled-left mr-1"><b><i class="icon-checkmark4"></i></b> Chọn</a>
+            <div class="modal-footer justify-content-center">
+                
+                <button class="btn btn-light btn-file">
+                    <i class="far fa-upload mr-1"></i>
+                    <span class="hidden-xs">Tải lên tài liệu</span>
+                    <input type="file" class="file-input-preview" />
+                </button>
             </div>
         </div>
     </div>

@@ -1,17 +1,6 @@
 <div class="form-group ">
-    <label>
-        Mục đích sử dụng:  <span class="text-danger">*</span>
-        <button
-        class="btn-popover"
-        type="button"
-        data-popup="popover"
-        data-content="Chọn <b style='color: red;'>“Có”</b> nếu xe kinh doanh vận tải."
-        data-trigger="hover"
-        data-placement="top"
-        data-html="true"
-        data-original-title="" >
-        <i class="icon-info22"></i>
-        </button>
+    <label>Mục đích sử dụng:  <span class="text-danger">*</span>
+    <a href="#" data-tooltip="tipsy" original-title="Chọn <b style='color: red;'>“Có”</b> nếu xe kinh doanh vận tải." data-position="top"><i class="icon-info22"></i></a>
     </label>
     <div class="d-flex">
         <p class="switch-title mr-3">Có kinh doanh vận tải không ?</p>

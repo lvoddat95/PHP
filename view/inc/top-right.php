@@ -118,7 +118,7 @@
                     </ul>
                 </div>
 
-                <div class="dropdown-content-footer bg-light">
+                <div class="dropdown-content-footer">
                     <a href="#" class="text-grey mr-auto" data-popup="tooltip" title=""
                         data-original-title="Xem tất cả">Xem tất cả</a>
                     <div>
