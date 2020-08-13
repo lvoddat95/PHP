@@ -582,5 +582,14 @@
         <?php inc('modal/modal_ds_files.php'); ?>
 
     </body>
-
+    <div class="overlay">
+        <div class="loading">
+            <div class="loader">
+                <svg class="circular" viewBox="25 25 50 50">
+                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+                </svg>
+            </div>
+            <div class="loading-text color"> Vui lòng đợi trong giây lát</div>
+        </div>
+    </div>
 <?php include_once FOOTER; ?>
