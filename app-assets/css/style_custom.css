@@ -126,10 +126,6 @@ table .select2-container {
     z-index: 1050;
 }
 
-.btn.btn-light:hover {
-    background-color: #ebedf0;
-}
-
 .thead-none {
     display: none;
 }

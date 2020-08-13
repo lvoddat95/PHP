@@ -983,6 +983,10 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
 	background-color: rgba(0,0,0,.1);
 	transition: all 0.15s ease-in-out;
 }
+.btn:not(:disabled):not(.disabled):active:focus, 
+.btn:not(:disabled):not(.disabled).active:focus,
+.btn:not(:disabled):not(.disabled):active, 
+.btn:not(:disabled):not(.disabled).active,
 .btn:hover {
 	box-shadow: inset 0 -2px 0px 0px rgba(0,0,0,0.1);
 }
@@ -1035,9 +1039,14 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
 	border-color: #ddd;
 }
 
-.btn-light:hover, .btn-light:focus, .btn-light.focus, .btn-light:not([disabled]):not(.disabled):active, .btn-light:not([disabled]):not(.disabled).active, .show>.btn-light.dropdown-toggle {
+.btn-light:hover, 
+.btn-light:focus, 
+.btn-light.focus, 
+.btn-light:not([disabled]):not(.disabled):active, 
+.btn-light:not([disabled]):not(.disabled).active, 
+.show>.btn-light.dropdown-toggle {
 	color: #333;
-	background-color: #f5f5f5;
+	background-color: #ebedf0;
 	border-color: #ddd;
 }
 
@@ -1046,17 +1055,20 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
 	border-color: #ddd;
 }
 
-.btn-outline:not(:hover):not(:active):not(.active):not([aria-expanded=true]), .btn-outline.disabled, .btn-outline:disabled {
+.btn-outline:not(:hover):not(:active):not(.active):not([aria-expanded=true]), 
+.btn-outline.disabled, 
+.btn-outline:disabled {
 	background-color: transparent !important;
 }
 
-.btn-outline:not(.disabled):not(:disabled):not([class*=alpha-]):hover, .btn-outline:not(.disabled):not(:disabled):not([class*=alpha-]):not([disabled]):not(.disabled):active, .btn-outline:not(.disabled):not(:disabled):not([class*=alpha-]):not([disabled]):not(.disabled).active, .show>.btn-outline:not(.disabled):not(:disabled):not([class*=alpha-]).dropdown-toggle {
-	color: #fff !important;
-}
-
-.btn-outline.bg-white:not(.disabled):not(:disabled):hover, .btn-outline.bg-white:not(.disabled):not(:disabled):not([disabled]):not(.disabled):active, .btn-outline.bg-white:not(.disabled):not(:disabled):not([disabled]):not(.disabled).active, .show>.btn-outline.bg-white:not(.disabled):not(:disabled).dropdown-toggle {
+.btn-outline.bg-white:not(.disabled):not(:disabled):hover, 
+.btn-outline.bg-white:not(.disabled):not(:disabled):not([disabled]):not(.disabled):active,
+.btn-outline.bg-white:not(.disabled):not(:disabled):not([disabled]):not(.disabled).active, 
+.show>.btn-outline.bg-white:not(.disabled):not(:disabled).dropdown-toggle {
 	color: #333 !important;
 }
+
+
 
 .show>.btn-link.dropdown-toggle {
 	color: #0a6ebd;

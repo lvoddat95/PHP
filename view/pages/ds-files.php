@@ -55,7 +55,7 @@
                                 <div class="file-header d-flex justify-content-between">
                                     <div class="file-view">
                                         <button class="btn btn-light btn-sm" onclick="list_view(this)" title="List"><i class="icon-list2"></i></button>
-                                        <button class="btn btn-light btn-sm" onclick="grid_view(this)" title="Grid"><i class="icon-grid2"></i></button>
+                                        <button class="btn btn-light btn-sm active" onclick="grid_view(this)" title="Grid"><i class="icon-grid2"></i></button>
                                     </div>
                                     <div class="file-search">
                                         <input type="text" name="" class="form-control form-control-sm" placeholder="Tìm kiếm...">

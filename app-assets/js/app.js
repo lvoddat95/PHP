@@ -1662,31 +1662,47 @@ var App = function () {
             var isChecked = $target.hasClass("is-checked");
             var filter = $target.attr("data-filter");
             if (isChecked) {
-                addFilter(filter);
+                add_filter(filter);
             } else {
-                removeFilter(filter);
+                remove_filter(filter);
             }
             $grid.isotope({ filter: filters.join(",") });
         });
 
-        function addFilter(filter) {
+        var add_filter = (filter) =>{
             if (filters.indexOf(filter) == -1) {
                 filters.push(filter);
             }
         }
-
-        function removeFilter(filter) {
+        var remove_filter = (filter) =>{
             var index = filters.indexOf(filter);
             if (index != -1) {
                 filters.splice(index, 1);
             }
         }
 
+
         $('#ds_files').on('shown.bs.modal', function () {
             $grid.isotope('layout');
         });
 
 
+         this.list_view = (p_this) => {
+            $(p_this).closest('.f-right').removeClass('grid').addClass('list');
+            $grid.isotope('layout');
+            Array.from($('.file-view > .btn')).forEach((item, index) => {
+                if (index === 0) item.classList.add("active");
+                else item.classList.remove("active");
+            });
+        }
+         this.grid_view = (p_this) =>{
+            $(p_this).closest('.f-right').removeClass('list').addClass('grid');
+            $grid.isotope('layout');
+            Array.from($('.file-view > .btn')).forEach((item, index) => {
+                if (index === 1) item.classList.add("active");
+                else item.classList.remove("active");
+            });
+        }
     }
 
 
