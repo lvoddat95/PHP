@@ -1664,12 +1664,10 @@ var App = function () {
             },
         });
 
-
-
         var $isotope_search = $('.isotope-search').keyup( debounce( function() {
             qs_regex = new RegExp( $isotope_search.val(), 'gi' );
-            console.log($grid.data('isotope').$filteredAtoms)
             $grid.isotope();
+            console.log($grid.data('isotope').filteredItems.length)
         }) );
 
         function debounce( fn, threshold ) {
@@ -1685,7 +1683,6 @@ var App = function () {
                 timeout = setTimeout( delayed, threshold );
             };
         }
-
 
         $(".nav-file").on("click", ".nav-button", function (event) {
             var $target = $(event.currentTarget);
@@ -1712,13 +1709,11 @@ var App = function () {
             }
         }
 
-
         $('#ds_files').on('shown.bs.modal', function () {
             $grid.isotope('layout');
         });
 
-
-         this.list_view = (p_this) => {
+        this.list_view = (p_this) => {
             $(p_this).closest('.f-right').removeClass('grid').addClass('list');
             $grid.isotope('layout');
             Array.from($('.file-view > .btn')).forEach((item, index) => {
@@ -1726,7 +1721,7 @@ var App = function () {
                 else item.classList.remove("active");
             });
         }
-         this.grid_view = (p_this) =>{
+        this.grid_view = (p_this) =>{
             $(p_this).closest('.f-right').removeClass('list').addClass('grid');
             $grid.isotope('layout');
             Array.from($('.file-view > .btn')).forEach((item, index) => {

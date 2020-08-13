@@ -2803,6 +2803,15 @@ body.sidebar-mobile-main .quick-action {
 .file-xps {
     background-image: url(../images/files/xps.png);
 }
+.f-right.list .file-checkox {
+    position: static;
+    width: auto;
+    height: auto;
+}
+.f-right.list .file-checkox input{
+    top: 0;
+    left: 0;
+}
 
 .f-right.list .list-files li {
     display: block;
