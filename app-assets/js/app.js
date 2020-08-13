@@ -1650,11 +1650,42 @@ var App = function () {
 
     var _component_isotope = function(){
 
+        var filters = [];
+        var button_filter;
+        var qs_regex;
+
         var $grid = $(".list-files").isotope({
             itemSelector: ".file-item",
+            filter: function() {
+                var $this = $(this);
+                var searchResult = qs_regex ? $this.text().match( qs_regex ) : true;
+                var button_filter = button_filter ? $this.is( button_filter ) : true;
+                return searchResult && button_filter;
+            },
         });
 
-        var filters = [];
+
+
+        var $isotope_search = $('.isotope-search').keyup( debounce( function() {
+            qs_regex = new RegExp( $isotope_search.val(), 'gi' );
+            console.log($grid.data('isotope').$filteredAtoms)
+            $grid.isotope();
+        }) );
+
+        function debounce( fn, threshold ) {
+            var timeout;
+            threshold = threshold || 100;
+            return function debounced() {
+                clearTimeout( timeout );
+                var args = arguments;
+                var _this = this;
+                function delayed() {
+                    fn.apply( _this, args );
+                }
+                timeout = setTimeout( delayed, threshold );
+            };
+        }
+
 
         $(".nav-file").on("click", ".nav-button", function (event) {
             var $target = $(event.currentTarget);
