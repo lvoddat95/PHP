@@ -18,7 +18,7 @@
                         </button>
                         <div class="top-left">
                             <div class="breadcrumb">
-                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i>B03 - Bảo hiểm công trình kĩ thuật dân dụng hoàn thành</a>
+                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i>B04 - Bảo hiểm mọi rủi ro văn phòng</a>
                                 <span class="breadcrumb-item active">Cập nhập đơn</span>
                             </div>
                             <div class="d-md-none logo-mobile">
@@ -80,7 +80,7 @@
                                                                                 <?php inc('template/3_doi_tuong_bao_hiem/PRO/nhom_rui_ro.php'); ?>
                                                                             </div>
                                                                             <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/PRO/linh_vuc.php'); ?>
+                                                                                <?php inc('template/3_doi_tuong_bao_hiem/PRO/nganh_nghe_kinh_doanh.php'); ?>
                                                                             </div>
                                                                             <div class="col-md-6">
                                                                                 <div class="row">
@@ -110,6 +110,9 @@
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/thanh_toan_tai_ngan_hang.php'); ?>
                                                                             </div>
                                                                             <div class="col-md-12">
+                                                                                <div class="form-group ">
+                                                                                    <input type="checkbox" id="phamvi"><label class="mb-0 ml-1" for="phamvi">Bao gồm các phạm vi về giông bão, lũ lụt</label>
+                                                                                </div>
                                                                                 <div class="form-group">
                                                                                     <table class="table table-bordered datatable" 
                                                                                         data-paging="false"
@@ -131,7 +134,7 @@
                                                                                         </thead>
                                                                                         <tbody>
                                                                                             <tr>
-                                                                                                <td>Công trình kỹ thuật dân dụng hoàn thành</td>
+                                                                                                <td>Mọi rủi ro văn phòng</td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
@@ -242,7 +245,7 @@
                                                                                             <td class="text-right">0</td>
                                                                                         </tr>
                                                                                         <tr>
-                                                                                            <td>Công trình kỹ thuật dân dụng hoàn thành</td>
+                                                                                            <td>Mọi rủi ro văn phòng</td>
                                                                                             <td class="text-right">0</td>
                                                                                         </tr>
                                                                                        

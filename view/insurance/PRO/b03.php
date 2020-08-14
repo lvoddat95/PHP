@@ -140,7 +140,7 @@
                                                                                                 <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td>
-                                                                                                    <select class="form-control " select2 name="dinh_muc" >
+                                                                                                    <select class="form-control" select2>
                                                                                                         <option title="Bảo hiểm cháy nổ nhà tư nhân: giá trị bảo hiểm<20 tỷ">Bảo hiểm cháy nổ nhà tư nhân: giá trị bảo hiểm&lt;20 tỷ</option>
                                                                                                         <option title="Cat1-Giá trị bảo hiểm < 25 tỷ">Cat1-Giá trị bảo hiểm &lt; 25 tỷ</option>
                                                                                                         <option title="Cat1-Giá trị bảo hiểm từ 25 tỷ đến 500 tỷ">Cat1-Giá trị bảo hiểm từ 25 tỷ đến 500 tỷ</option>
