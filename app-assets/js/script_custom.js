@@ -68,10 +68,19 @@ $(function(){
         $("html, body").animate({scrollTop: 0}, 500);
     });
 
-
+    
    
 });
 
+
+
+var on_click_change_form = function(p_this){
+    var $this = $(p_this);
+    $this.toggleClass('active');
+    $this.closest('body').find('.wizard').toggleClass('wizard-style2');
+    
+    console.log(App.initComponents.test)
+}
 
 var on_change_disable_control = function(p_this, p_list){
     const arr = p_list.split(',')

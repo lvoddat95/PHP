@@ -1,15 +1,15 @@
 <fieldset class="tab-pane active show" id="step1">
     <div class="row">
-        <div class="col-xl-3 col-lg-2 col-md-6">
+        <div class="col-md-6">
             <?php inc('template/1_thong_tin_chung/kenh_khai_thac.php'); ?>
         </div>
-        <div class="col-xl-3 col-lg-2 col-md-6">
+        <div class="col-md-6">
             <?php inc('template/1_thong_tin_chung/hinh_thuc_khai_thac.php'); ?>
         </div>
-        <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="col-md-6">
             <?php inc('template/1_thong_tin_chung/so_don_bao_hiem.php'); ?>
         </div>
-        <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="col-md-6">
             <?php inc('template/1_thong_tin_chung/so_gcnbh.php'); ?>
         </div>
     </div>

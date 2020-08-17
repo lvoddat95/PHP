@@ -4606,18 +4606,6 @@ a.badge[class*=bg-]:not(.bg-transparent):not(.bg-white):not(.bg-light):hover, a.
 	border-bottom-right-radius: 4px !important;
 }
 
-.input-border-2 .input-group-prepend {
-	margin-right: -2px;
-}
-
-.input-border-2 .input-group-text, .input-border-2 .form-control {
-	border-width: 2px;
-}
-
-.input-group-prepend {
-	margin-right: -2px;
-}
-
 .form-size-sm {
 	font-size: 12px;
 }

@@ -1441,8 +1441,14 @@ var App = function () {
         }
     };
 
+    var test = function() {
+        console.log(1)
+    }
+    
     // Datatable 
     var _component_datatable = function(p_table = '') {
+
+
 
         var table = $('.datatable');
         if (p_table)  table = p_table;
@@ -1773,6 +1779,7 @@ var App = function () {
             _component_repeater();
             _component_perfect_scrollbar();
             _component_datatable();
+            test();
             _component_tooltip_tipsy();
             _component_select2();
             _component_datepicker();

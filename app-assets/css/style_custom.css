@@ -318,10 +318,14 @@ a.sidebar-main-toggle:hover {
     border-top: 0;
 }
 
-.input-group>.select2-container {
+.input-group > .select2-container{
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     width: 1% !important;
+}
+.input-group > .select2-container:last-child .select2-selection--single {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .top-left {
@@ -840,11 +844,6 @@ a.sidebar-main-toggle:hover {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.input-group .select2-selection--single {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
 .select2-selection--single:not([class*=bg-]):not([class*=border-]):hover, .select2-selection--single:not([class*=bg-]):not([class*=border-]):focus {
     border-color: #2196f3;
     box-shadow: 0px 0px 5px rgba(175, 213, 255, .5);
@@ -1110,6 +1109,8 @@ input[type=radio]:before {
     transition: all 0.2s ease-in-out;
     font-size: 14px;
     font-weight: 300;
+    line-height: 14px;
+    display: block;
 }
 
 input[type=radio]:after {
@@ -1121,7 +1122,8 @@ input[type=radio]:after {
     font-weight: 900;
     position: absolute;
     left: 3px;
-    top: 3px;
+    top: 50%;
+    transform: translateY(-50%);
     opacity: 0;
 }
 
@@ -1130,7 +1132,7 @@ input[type=radio]:checked {
 }
 
 input[type=radio]:checked:before {
-    /*content: "\f192";*/
+    /* content: "\f192"; */
 }
 input[type=radio]:checked:after {
     opacity: 1;
@@ -2087,7 +2089,9 @@ body.sidebar-mobile-main .quick-action {
     border-radius: 4px;
     cursor: pointer !important;
 }
-
+.btn-act.active{
+    transform: scale(-1);
+}
 .act-space {
     pointer-events: none;
 }
@@ -3200,8 +3204,15 @@ body.sidebar-mobile-main .quick-action {
         position: absolute;
         bottom: 0;
     }
+    .wizard:not(.wizard-style2)>.steps{
+        height: auto !important;
+    }
+    .wizard:not(.wizard-style2)>.steps .inner-wrapper-sticky{
+        position: static !important;
+    }
     .wizard-style2.wizard>.steps .inner-wrapper-sticky{
         min-width: 229px;
+        max-width: 229px;
     }
     .wizard-style2.wizard>.steps{
         float: left;
@@ -3286,7 +3297,7 @@ body.sidebar-mobile-main .quick-action {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
-    .wizard-style2 .form-group > *:first-child{
+    .wizard-style2 .form-group > *:not(.dataTables_wrapper):first-child{
         -ms-flex: 0 0 25%;
         flex: 0 0 25%;
         max-width: 25%;
