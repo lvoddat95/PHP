@@ -8,8 +8,8 @@
         <li>
             <a href="javascript:;" class="btn-act btn-change-form" onclick="on_click_change_form(this);" data-tooltip="tipsy" original-title="Form control 2" data-position="left"><i class="fad fa-bring-forward"></i></a>
         </li>
-        <li><a href="javascript:;" class="btn-act" data-tooltip="tipsy" original-title="Trình duyệt đơn" data-position="left"><i class="icon-file-check2"></i></a></li>
-        <li><a href="javascript:;" class="btn-act" data-tooltip="tipsy" original-title="Đóng đơn" data-position="left"><i class="icon-file-locked2"></i></a></li>
+        <li><a href="javascript:;" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="btn-act" data-tooltip="tipsy" original-title="Trình duyệt đơn" data-position="left"><i class="icon-file-check2"></i></a></li>
+        <li><a href="javascript:;" data-toggle="modal" data-target="#duyet_dong_don" class="btn-act" data-tooltip="tipsy" original-title="Đóng đơn" data-position="left"><i class="icon-file-locked2"></i></a></li>
         <li><a href="javascript:;" class="btn-act act-space"><i class="icon-menu"></i></a></li>
         <li><a href="javascript:;" class="btn-act chat-circle" data-tooltip="tipsy" original-title="Chat" data-position="left"><i class="icon-bubble-notification position-relative"><span class="badge">2</span></i></a></li>
         <li><a href="javascript:;" class="btn-act" data-tooltip="tipsy" original-title="Trợ giúp" data-position="left"><i class="icon-help"></i></a></li>

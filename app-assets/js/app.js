@@ -90,13 +90,13 @@ var App = function () {
             $('body').removeClass('sidebar-mobile-main');
             $('.sb-overlay').remove();
         });
-    };
 
-    $('body').on('click', '.sb-overlay', function(e) {
-        e.preventDefault();
-        $('body').removeClass('sidebar-mobile-main');
-        $(this).remove();
-    });
+        $('body').on('click', '.sb-overlay', function(e) {
+            e.preventDefault();
+            $('body').removeClass('sidebar-mobile-main');
+            $(this).remove();
+        });
+    };
 
     // Toggle component sidebar on mobile
     var _sidebarMobileComponentToggle = function() {
@@ -554,7 +554,7 @@ var App = function () {
     // PerfectScrollbar js
     var _component_perfect_scrollbar = function(){
         if ($('[scrollbar]').length > 0) {
-            if (!this.PerfectScrollbar) {
+            if (!PerfectScrollbar) {
                 console.warn('Warning - PerfectScrollbar Js is not loaded.');
             }
             $('[scrollbar]').each(function(){ 
@@ -1581,6 +1581,7 @@ var App = function () {
             console.warn('Warning - validate.min.js is not loaded.');
             return;
         }
+            console.warn('Load ok');
 
         if ( $('.wizard-style2>.steps').length > 0 ) {
             $('.wizard-style2>.steps').stickySidebar({
@@ -1644,6 +1645,11 @@ var App = function () {
     // Isotope
 
     var _component_isotope = function(){
+
+        if (!Isotope) {
+            console.warn('Warning - isotope.pkgd.min.js is not loaded.');
+            return;
+        }
 
         var filters = [];
         var button_filter;

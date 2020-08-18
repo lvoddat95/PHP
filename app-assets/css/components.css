@@ -3818,6 +3818,7 @@
 }
 
 .table thead th {
+    letter-spacing: .5px;
     padding: 10px 5px;
 }
 

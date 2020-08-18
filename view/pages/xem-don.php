@@ -1857,6 +1857,8 @@
         <?php inc('quick-action.php'); ?> 
 
         <?php inc('modal/modal_ds_so_hop_dong_xin_cap.php'); ?> 
+        <?php inc('modal/modal_trinh_duyet_mot_don.php'); ?> 
+        <?php inc('modal/modal_dong_don.php'); ?> 
         <div class="modal-group">
             <?php
                 inc('modal/modal_ds_cac_khach_hang.php'); 
