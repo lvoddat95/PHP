@@ -1441,9 +1441,6 @@ var App = function () {
         }
     };
 
-    var test = function() {
-        console.log(1)
-    }
     
     // Datatable 
     var _component_datatable = function(p_table = '') {
@@ -1594,14 +1591,6 @@ var App = function () {
             });
         }
 
-        // if ( $('.wizard-style2>.actions').length > 0 ) {
-        //     $('.wizard-style2>.actions').stickySidebar({
-        //         topSpacing: 20,
-        //         bottomSpacing: 20,
-        //         containerSelector: '.wizard',
-        //         minWidth: 1199,
-        //     });
-        // }
 
         //Wizard
         var li = $(".wizard .nav-tabs li");
@@ -1779,7 +1768,6 @@ var App = function () {
             _component_repeater();
             _component_perfect_scrollbar();
             _component_datatable();
-            test();
             _component_tooltip_tipsy();
             _component_select2();
             _component_datepicker();
