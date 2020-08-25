@@ -231,7 +231,7 @@
                                                     <div class="row">
                                                         <div class="col-md-4">
                                                             <div class="form-group">
-                                                                <label>Đơn bảo hiểm số :</label>
+                                                                <label>Đơn bảo hiểm số:</label>
                                                                 <input type="text" class="form-control" placeholder="Nhập số đơn bảo hiểm...">
                                                             </div>
                                                         </div>
@@ -252,6 +252,12 @@
                                                                     </span>
                                                                 </div>
                                                             </div> 
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <label>Số điện thoại: <span class="text-danger">*</span></label>
+                                                                <input type="text" class="form-control input-phone" placeholder="Nhập số điện thoại...">
+                                                            </div>
                                                         </div>
                                                     </div>
 
