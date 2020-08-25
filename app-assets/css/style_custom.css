@@ -44,7 +44,7 @@ a, area, button, input, label, select, textarea, [tabindex] {
 }
 
 .content {
-    padding: 15px 15px 30px;
+    padding: 15px 15px 40px;
 }
 
 .content::after {
@@ -98,10 +98,19 @@ a, area, button, input, label, select, textarea, [tabindex] {
     font-size: 14px;
 }
 
+.border-dashed{
+    border-style: dashed;
+}
+.border-silver{
+    border-color: #ccc;
+}
+
 .font-small {
     font-size: 80%;
 }
-
+.form-group {
+    margin-bottom: 1rem;
+}
 label {
     margin-bottom: 2px;
     cursor: default;
@@ -844,22 +853,15 @@ a.sidebar-main-toggle:hover {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.select2-selection--single:not([class*=bg-]):not([class*=border-]):hover, .select2-selection--single:not([class*=bg-]):not([class*=border-]):focus {
+.select2-selection--single:not([class*=bg-]):not([class*=border-]):hover, 
+.select2-selection--single:not([class*=bg-]):not([class*=border-]):focus {
     border-color: #2196f3;
-    box-shadow: 0px 0px 5px rgba(175, 213, 255, .5);
-}
-
-.select2-selection--single:not([class*=bg-]):not([class*=border-]) {
-    border-color: #e2e8f0;
+    box-shadow: 0px 0px 0px 2px rgb(175 213 255 / 50%);
 }
 
 .select2-selection--single {
     padding: 4px 0;
     border-radius: 4px;
-}
-
-.select2-selection--single .select2-selection__arrow:after {
-    margin-top: -7px;
 }
 
 .select2-selection--multiple .select2-search--inline .select2-search__field {
@@ -1087,7 +1089,7 @@ a.sidebar-main-toggle:hover {
 
 .form-control:not(.border-1):not(.border-2):not(.border-3):focus, .form-control:hover, .form-control:focus {
     border-color: #2196f3;
-    box-shadow: 0px 0px 5px rgba(175, 213, 255, .5);
+    box-shadow: 0px 0px 0px 2px rgb(175 213 255 / 50%);
 }
 
 input[type=radio], input[type=checkbox] {
@@ -1143,6 +1145,8 @@ input[type=checkbox]:not(.switch) {
     vertical-align: middle;
     width: 16px;
     height: 16px;
+    max-width: 16px !important;
+    padding: 0 !important;
     border-radius: 4px;
     position: relative;
     cursor: pointer;
@@ -1191,8 +1195,9 @@ input[type=checkbox]:not(.switch):after {
     opacity: 1;
     content: '';
     display: block;
-    left: -1px;
-    top: -1px;
+    left: 50%;
+    top: 50%;
+    margin: -8px;
     transition-duration: 0.3s;
     transition-property: opacity, -webkit-transform;
     transition-property: transform, opacity;
@@ -1213,11 +1218,13 @@ input[type=checkbox]:not(.switch):checked:after {
 }
 
 select {
-    background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 95% 50%;
-    -moz-appearance: none; 
-    -webkit-appearance: none; 
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBkPSJNMjA3LjAyOSAzODEuNDc2TDEyLjY4NiAxODcuMTMyYy05LjM3My05LjM3My05LjM3My0yNC41NjkgMC0zMy45NDFsMjIuNjY3LTIyLjY2N2M5LjM1Ny05LjM1NyAyNC41MjItOS4zNzUgMzMuOTAxLS4wNEwyMjQgMjg0LjUwNWwxNTQuNzQ1LTE1NC4wMjFjOS4zNzktOS4zMzUgMjQuNTQ0LTkuMzE3IDMzLjkwMS4wNGwyMi42NjcgMjIuNjY3YzkuMzczIDkuMzczIDkuMzczIDI0LjU2OSAwIDMzLjk0MUwyNDAuOTcxIDM4MS40NzZjLTkuMzczIDkuMzcyLTI0LjU2OSA5LjM3Mi0zMy45NDIgMHoiIHN0eWxlPSImIzEwOyAgICBmaWxsOiAjMzMzOyYjMTA7Ii8+PC9zdmc+) no-repeat 95% 50%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
     appearance: none;
     padding: 4px;
+    background-size: 8px;
+    background-position-x: calc(100% - 12px);
 }
 
 .w80 {
@@ -1507,8 +1514,11 @@ hr {
     background: rgb(255 255 255 / .8);
     border: none;
     border-radius: 30px;
-    font-weight: 500;
     color: #111;
+}
+
+.login-signin .form-control:focus{
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5) !important;
 }
 
 .login-signin .btn{
@@ -2124,17 +2134,16 @@ body.sidebar-mobile-main .quick-action {
     color: #222;
     font-weight: 500;
     background: #FAFAFA;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     transition: none;
-    border-bottom: 1px solid #ddd;
     box-shadow: rgba(0, 0, 0, 0.2) 0 5px 5px 0;
 }
 
-.tab-style .nav-tabs .nav-link.active, .tab-style .nav-tabs .nav-item.show .nav-link {
-    color: #1C3FAA;
-    background-color: #fff;
-    border: 0;
+.tab-style .nav-tabs .nav-link.active, 
+.tab-style .nav-tabs .nav-item.show .nav-link {
+    color: #ffffff;
+    background-color: #1c3faa;
     padding: 12px;
 }
 
@@ -2144,12 +2153,12 @@ body.sidebar-mobile-main .quick-action {
 }
 
 .tab-style .tab-content {
+    position: relative;
     padding: 20px;
     background: #fff;
-    border-radius: 3px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-radius: 8px;
     border: 1px solid #ddd;
+    border-top: 0;
     box-shadow: rgba(0, 0, 0, .1) 0 0 5px 0, rgba(0, 0, 0, .1) 0 0 1px 0;
 }
 
@@ -2181,11 +2190,16 @@ body.sidebar-mobile-main .quick-action {
 }
 
 .tab-style2 .tab-content {
-
-    /* padding: 20px; */
     background: #fff;
     border-radius: 6px;
 }
+.tab-claim .nav-tabs .nav-link{
+    min-width: 170px;
+}
+.tab-claim .nav-tabs .nav-link > i{
+    font-size: 20px;
+}
+
 
 .side-box.open .side-box-content {
     -webkit-transform: none;
@@ -3373,7 +3387,36 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
           animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
   stroke-linecap: round;
 }
+.loading-text{
+    font-weight: 500;
+}
+.loading-text span {
+  font-size: 18px;
+  animation-name: blink;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
 
+.loading-text span:nth-child(2) {
+  animation-delay: .2s;
+}
+
+.loading-text span:nth-child(3) {
+  animation-delay: .4s;
+}
+
+@keyframes blink {
+  0% {
+    opacity: .2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}
 @-webkit-keyframes rotate {
   100% {
     -webkit-transform: rotate(360deg);
@@ -3447,11 +3490,6 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     stroke: #ffa700;
   }
 }
-body {
-  background-color: #eee;
-}
-
-
 .overlay {
     position: fixed;
     z-index: 1002;

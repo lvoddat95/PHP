@@ -18,7 +18,7 @@
                         </button>
                         <div class="top-left">
                             <div class="breadcrumb">
-                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i>E02 - Bảo hiểm hàng hoá vận chuyển nội địa</a>
+                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i>C03 - Bảo hiểm máy móc thiết bị của chủ thầu</a>
                                 <span class="breadcrumb-item active">Cập nhập đơn</span>
                             </div>
                             <div class="d-md-none logo-mobile">
@@ -72,97 +72,26 @@
                                                                     <fieldset class="tab-pane" id="step3">
                                                                         <div class="row">
                                                                             <div class="col-md-6">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/doi_tuong_tham_gia_bao_hiem.php'); ?>
+                                                                                <?php inc('template/3_doi_tuong_bao_hiem/BI/nhom_cong_trinh_dd_gt.php'); ?>
                                                                             </div>
-                                                                            <div class="col-md-6">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/phuong_thuc_dong_goi.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/dieu_kien_bao_hiem_chinh.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/nhom_mat_hang.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/ten_phuong_tien_van_chuyen.php'); ?>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/dieu_kien_bao_hiem_mo_rong.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/gia_tri_hang_hoa.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/phuong_phap_tinh_phi.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/so_chung_thu_bao_lanh.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/so_hop_dong.php'); ?>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/ti_le_phi_chinh.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/ti_le_phu_phi.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/ti_le_phi_tau_gia.php'); ?>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/so_luong_hang.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/don_vi_tinh.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/so_chuyen.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/trong_luong.php'); ?>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/noi_giam_dinh.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/noi_ki.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/ngay_ki.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/gio_ki.php'); ?>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/ngay_di.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/noi_di.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/ngay_den.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/noi_den.php'); ?>
+                                                                             <div class="col-md-6">
+                                                                                <?php inc('template/3_doi_tuong_bao_hiem/BI/cong_trinh.php'); ?>
                                                                             </div>
                                                                         </div>
                                                                         <div class="row">
                                                                             <div class="col-md-6">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/chuyen_tai.php'); ?>
+                                                                                <?php inc('template/3_doi_tuong_bao_hiem/BI/hang_muc_bao_hiem.php'); ?>
                                                                             </div>
                                                                             <div class="col-md-6">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/van_don.php'); ?>
+                                                                                <?php inc('template/3_doi_tuong_bao_hiem/BI/rui_ro_uot.php'); ?>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-md-6">
+                                                                                <?php inc('template/3_doi_tuong_bao_hiem/BI/ten_cong_trinh_du_an.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <?php inc('template/3_doi_tuong_bao_hiem/BI/gioi_han_ve_nguoi.php'); ?>
                                                                             </div>
                                                                         </div>
                                                                     </fieldset>
@@ -170,9 +99,38 @@
                                                                     <!-- Step 4 -->
                                                                     <fieldset class="tab-pane" id="step4">
                                                                         <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php'); ?>
+                                                                        
+                                                                            <div class="col-md-9">
+                                                                                <div class="form-group">
+                                                                                    <label>Thời hạn bảo hiểm: <span class="text-danger">*</span>
+                                                                                        <i class="text-danger float-right font9 ml-3">(Bao gồm cả thời gian bảo hành)</i>
+                                                                                    </label>
+                                                                                    <div class="row">
+                                                                                        <div class="col-md-6 d-flex mb-2">
+                                                                                            <span style="width: 100px;">Từ</span>
+                                                                                            <input type="time" class="form-control mr-2 input-time" placeholder="hh:mm">
+                                                                                            <input type="text" class="form-control datepicker input-date" placeholder="dd/mm/yyyy">
+                                                                                        </div>
+                                                                                        <div class="col-md-6 d-flex">
+                                                                                            <span style="width: 100px;">Đến</span>
+                                                                                            <input type="time" class="form-control mr-2 input-time" placeholder="hh:mm">
+                                                                                            <input type="text" class="form-control datepicker input-date" placeholder="dd/mm/yyyy">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
                                                                             </div>
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group ">
+                                                                                    <label>Thời gian bảo hành: </label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="text" class="form-control input-number"placeholder="Nhập thời hạn..." value="">
+                                                                                        <span class="input-group-append">
+                                                                                            <span class="input-group-text">Tháng</span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
                                                                             <div class="col-md-6">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/thong_tin_ve_thoi_han_thanh_toan.php'); ?>
                                                                             </div>
@@ -180,6 +138,10 @@
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/thanh_toan_tai_ngan_hang.php'); ?>
                                                                             </div>
                                                                             <div class="col-md-12">
+                                                                                <div class="form-group">
+                                                                                    <input type="checkbox" id="phamvi">
+                                                                                    <label class="mb-0 ml-1" for="phamvi">Bao gồm các phạm vi về giông bão, lũ lụt</label>
+                                                                                </div>
                                                                                 <div class="form-group">
                                                                                     <table class="table table-bordered datatable" 
                                                                                         data-paging="false"
@@ -201,7 +163,7 @@
                                                                                         </thead>
                                                                                         <tbody>
                                                                                             <tr>
-                                                                                                <td>Hàng hoá vận chuyển nội địa</td>
+                                                                                                <td>Máy móc thiết bị của chủ thầu</td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
@@ -211,10 +173,26 @@
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td>
                                                                                                     <select class="form-control" select2 >
-                                                                                                        <option >Hàng đóng container (không gồm hàng nông sản); Hàng vận chuyển đường hàng không</option>
-                                                                                                        <option >Hàng đóng container khác</option>
-                                                                                                        <option >Hàng xá: hàng để trần, hàng rời, hàng nguyên chuyến</option>
-                                                                                                        <option >Hàng hóa khác</option>
+                                                                                                        <option>Giá trị bảo hiểm&lt;200 tỷ</option>
+                                                                                                        <option>Giá trị bảo hiểm từ 200 tỷ đến 1200 tỷ</option>
+                                                                                                        <option>Giá trị bảo hiểm từ 1200 trở lên</option>
+                                                                                                    </select>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>TNDS bên thứ 3</td>
+                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
+                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
+                                                                                                <td><input class="form-control text-right input-money" type="text" value="0"></td>
+                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
+                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                <td>
+                                                                                                    <select class="form-control" select2 >
+                                                                                                        <option>Giá trị bảo hiểm&lt;200 tỷ</option>
+                                                                                                        <option>Giá trị bảo hiểm từ 200 tỷ đến 1200 tỷ</option>
+                                                                                                        <option>Giá trị bảo hiểm từ 1200 trở lên</option>
                                                                                                     </select>
                                                                                                 </td>
                                                                                             </tr>
@@ -296,7 +274,11 @@
                                                                                             <td class="text-right">0</td>
                                                                                         </tr>
                                                                                         <tr>
-                                                                                            <td>Hàng hoá vận chuyển nội địa</td>
+                                                                                            <td>Máy móc thiết bị của chủ thầu</td>
+                                                                                            <td class="text-right">0</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>TNDS bên thứ 3</td>
                                                                                             <td class="text-right">0</td>
                                                                                         </tr>
                                                                                         

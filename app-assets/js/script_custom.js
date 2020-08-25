@@ -1,5 +1,5 @@
 $(function(){
-        
+
     //Sửa lỗi input select2 khi mở modal bootstrap 4
     $.fn.modal.Constructor.prototype._enforceFocus = function () {
         var that = this;
@@ -67,18 +67,14 @@ $(function(){
     $(".go-top").click(function () {
         $("html, body").animate({scrollTop: 0}, 500);
     });
-
-    
    
 });
-
 
 
 var on_click_change_form = function(p_this){
     var $this = $(p_this);
     $this.toggleClass('active');
     $this.closest('body').find('.wizard').toggleClass('wizard-style2');
-
 }
 
 var on_change_disable_control = function(p_this, p_list){

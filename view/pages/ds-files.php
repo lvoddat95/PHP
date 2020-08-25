@@ -589,7 +589,7 @@
                     <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
                 </svg>
             </div>
-            <div class="loading-text color"> Vui lòng đợi trong giây lát</div>
+            <div class="loading-text color"> Vui lòng đợi trong giây lát <span>.</span><span>.</span><span>.</span></div>
         </div>
     </div>
 <?php include_once FOOTER; ?>

@@ -1,10 +1,10 @@
 <div class="modal-group">
     <!-- Danh sách hợp đồng xin cấp -->
-    <div id="ds_so_hop_dong_xin_cap" class="modal fade" tabindex="-1" datatable-modal>
+    <div id="ds_so_ho_giam_dinh_xin_cap" class="modal fade" tabindex="-1" datatable-modal>
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title font-weight-semibold ">Danh sách số hợp đồng đã xin cấp</h5>
+                    <h5 class="modal-title font-weight-semibold ">Danh sách số hồ sơ giám định xin cấp</h5>
                     <button type="button" class="btn btn-light" data-dismiss="modal"><i class="far fa-times mr-1"></i> Đóng</button>
                 </div>
 

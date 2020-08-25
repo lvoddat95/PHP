@@ -127,6 +127,25 @@
 
                         <li class="nav-item nav-item-submenu">
                             <a href="javascript:;" class="nav-link">
+                                <i class="fad fa-construction fa-fw"></i>
+                                <span class="menu-title"> Bảo hiểm kĩ thuật</span>
+                            </a>
+                            <ul class="nav nav-group-sub" scrollbar data-submenu-title="Bảo hiểm kĩ thuật">
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/BI/c01.php'; ?>" class="nav-link"><span class="menu-title">C01 - Bảo hiểm mọi rủi ro trong xây dựng</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/BI/c02.php'; ?>" class="nav-link"><span class="menu-title">C02 - Bảo hiểm mọi rủi ro trong lắp đặt</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/BI/c03.php'; ?>" class="nav-link"><span class="menu-title">C03 - Bảo hiểm máy móc thiết bị của chủ thầu</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/BI/c04.php'; ?>" class="nav-link"><span class="menu-title">C04 - Bảo hiểm đổ vỡ máy móc</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/BI/c05.php'; ?>" class="nav-link"><span class="menu-title">C05 - Bảo hiểm mất lợi nhuận do đổ vỡ máy móc</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/BI/c06.php'; ?>" class="nav-link"><span class="menu-title">C06 - Bảo hiểm thiết bị điện tử</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/BI/c07.php'; ?>" class="nav-link"><span class="menu-title">C07 - Bảo hiểm mọi rủi ro máy móc thiết bị cho thuê</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/BI/c08.php'; ?>" class="nav-link"><span class="menu-title">C08 - Bảo hiểm nồi hơi</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/BI/c09.php'; ?>" class="nav-link"><span class="menu-title">C09 - Bảo hiểm toàn diện đối với máy móc thiết bị</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/BI/c10.php'; ?>" class="nav-link"><span class="menu-title">C10 - Bảo hiểm mọi rủi ro trong công nghiệp</span></a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item nav-item-submenu">
+                            <a href="javascript:;" class="nav-link">
                                 <i class="fad fa-shield fa-fw"></i>
                                 <span class="menu-title"> Bảo hiểm trách nhiệm</span>
                             </a>
@@ -156,25 +175,6 @@
                                 <li><a href="d06.html" class="nav-link"><span class="menu-title">D06 - Bảo hiểm trách nhiệm người sửa chữa tàu</span></a></li>
                                 <li><a href="d07.html" class="nav-link"><span class="menu-title">D07 - Bảo hiểm trách nhiệm dân sự chủ tầu viễn dương (P&amp;I mutual)</span></a></li>
                                 
-                            </ul>
-                        </li>
-
-                        <li class="nav-item nav-item-submenu">
-                            <a href="javascript:;" class="nav-link">
-                                <i class="fad fa-construction fa-fw"></i>
-                                <span class="menu-title"> Bảo hiểm kĩ thuật</span>
-                            </a>
-                            <ul class="nav nav-group-sub" scrollbar data-submenu-title="Bảo hiểm kĩ thuật">
-                                <li><a href="c01.html" class="nav-link"><span class="menu-title">C01 - Bảo hiểm mọi rủi ro trong xây dựng</span></a></li>
-                                <li><a href="c02.html" class="nav-link"><span class="menu-title">C02 - Bảo hiểm mọi rủi ro trong lắp đặt</span></a></li>
-                                <li><a href="c03.html" class="nav-link"><span class="menu-title">C03 - Bảo hiểm máy móc thiết bị của chủ thầu</span></a></li>
-                                <li><a href="c04.html" class="nav-link"><span class="menu-title">C04 - Bảo hiểm đổ vỡ máy móc</span></a></li>
-                                <li><a href="c05.html" class="nav-link"><span class="menu-title">C05 - Bảo hiểm mất lợi nhuận do đổ vỡ máy móc</span></a></li>
-                                <li><a href="c06.html" class="nav-link"><span class="menu-title">C06 - Bảo hiểm thiết bị điện tử</span></a></li>
-                                <li><a href="c07.html" class="nav-link"><span class="menu-title">C07 - Bảo hiểm mọi rủi ro máy móc thiết bị cho thuê</span></a></li>
-                                <li><a href="c08.html" class="nav-link"><span class="menu-title">C08 - Bảo hiểm nồi hơi</span></a></li>
-                                <li><a href="c09.html" class="nav-link"><span class="menu-title">C09 - Bảo hiểm toàn diện đối với máy móc thiết bị</span></a></li>
-                                <li><a href="c10.html" class="nav-link"><span class="menu-title">C10 - Bảo hiểm mọi rủi ro trong công nghiệp</span></a></li>
                             </ul>
                         </li>
 

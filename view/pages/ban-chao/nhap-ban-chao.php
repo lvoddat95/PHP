@@ -1134,6 +1134,8 @@
         <?php
             inc('modal/modal_ds_nguoi_tham_gia_bao_hiem.php'); 
         ?>
+        <?php inc('modal/modal_trinh_duyet_mot_don.php'); ?> 
+        <?php inc('modal/modal_dong_don.php'); ?> 
 
         <?php inc('chat-box.php'); ?> 
         <?php inc('quick-action.php'); ?> 

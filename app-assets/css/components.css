@@ -525,20 +525,20 @@
 }
 
 .select2-selection--single .select2-selection__arrow:after {
-    content: "";
-    font-family: "icomoon";
+    content: "\f078";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: bold;
     display: inline-block;
     position: absolute;
     top: 50%;
-    right: 0.875rem;
-    margin-top: -0.5rem;
-    font-size: 1rem;
+    transform: translateY(-50%);
+    right: 12px;
+    font-size: 9px;
     line-height: 1;
-    color: inherit;
+    color: #333;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 .select2-selection--single .select2-selection__arrow b {
     display: none;
 }

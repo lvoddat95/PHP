@@ -358,7 +358,12 @@
         <?php inc('quick-action.php'); ?> 
 
         <?php inc('modal/modal_ds_so_hop_dong_xin_cap.php'); ?> 
-        <?php inc('modal/modal_danh_muc_tai_san_bao_hiem.php'); ?> 
+        <?php inc('modal/modal_danh_muc_tai_san_bao_hiem.php'); ?>
+         
+        <div class="modal-group">
+            <?php inc('modal/modal_ds_tau_thuyen.php'); ?> 
+            <?php inc('modal/modal_cap_nhap_tau_thuyen.php'); ?> 
+        </div>
 
         <div class="modal-group">
             <?php

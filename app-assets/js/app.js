@@ -460,13 +460,12 @@ var App = function () {
             })
          
         }
-
     }
     
     // Cleave js: dinh dang kieu nhap du lieu input
     var _component_input_type = function(){
 
-        if (!this.Cleave) {
+        if (!Cleave) {
             console.warn('Warning - Cleave Js is not loaded.');
         }
 
@@ -1441,11 +1440,8 @@ var App = function () {
         }
     };
 
-    
     // Datatable 
     var _component_datatable = function(p_table = '') {
-
-
 
         var table = $('.datatable');
         if (p_table)  table = p_table;
@@ -1581,7 +1577,6 @@ var App = function () {
             console.warn('Warning - validate.min.js is not loaded.');
             return;
         }
-            console.warn('Load ok');
 
         if ( $('.wizard-style2>.steps').length > 0 ) {
             $('.wizard-style2>.steps').stickySidebar({
@@ -1730,8 +1725,7 @@ var App = function () {
                 else item.classList.remove("active");
             });
         }
-    }
-
+    };
 
     //
     // Tra ve cac object duoc gan cho module
@@ -1779,6 +1773,7 @@ var App = function () {
             _component_datepicker();
             _component_input_type();
             _component_isotope();
+
         },
 
         initChart: function() {
