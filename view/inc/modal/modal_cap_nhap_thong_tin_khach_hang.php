@@ -3,11 +3,8 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title font-weight-semibold ">Cập nhập thông tin khách hàng</h5>
-                <div class="p-button">
-                    <button type="button" class="btn btn-light" data-dismiss="modal"><i class="far fa-times mr-1"></i> Đóng</button>
-                    <button type="submit" class="btn bg-primary"><i class="fa fa-save mr-1"></i>Lưu</button>
-                </div>
+                <h5 class="modal-title ">Cập nhập thông tin khách hàng</h5>
+                <button type="button" class="close" data-dismiss="modal"><i class="fal fa-times"></i></button>
             </div>
             <form action="#">
                 <div class="modal-body">
@@ -165,7 +162,7 @@
                             <div class="col-sm-4">
                                 <div class="form-group">
                                     <label>Chi nhánh:</label>
-                                    <?php inc('template/chi_nhanh.php'); ?>
+                                    <?php inc('template/chi_nhanh.php',false); ?>
                                 </div>
                             </div>
                             <div class="col-sm-4">

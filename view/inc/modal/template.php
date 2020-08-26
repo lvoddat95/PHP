@@ -3,7 +3,7 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title font-weight-semibold ">Tiêu đề</h5>
+                <h5 class="modal-title ">Tiêu đề</h5>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <form action="#">

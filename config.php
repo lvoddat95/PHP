@@ -66,7 +66,11 @@ function get_site_url($p_dir="", $root=false)
 }
 
 
-function inc($view){
-    require_once $view;
+function inc($view,$require_once=true){
+    if ($require_once == true) {
+        require_once $view;
+    }else{
+        require $view;
+    }
 }
 

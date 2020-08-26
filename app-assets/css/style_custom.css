@@ -109,12 +109,11 @@ a, area, button, input, label, select, textarea, [tabindex] {
     font-size: 80%;
 }
 .form-group {
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
 }
 label {
-    margin-bottom: 2px;
-    cursor: default;
     vertical-align: middle;
+    margin-bottom: 3px;
 }
 
 table .select2-container {
@@ -1245,7 +1244,6 @@ select {
 
 hr {
     margin: 10px 0;
-    border-color: #e2e8f0;
 }
 
 .table th, .table td {
@@ -1307,8 +1305,9 @@ hr {
     margin-bottom: 0;
     font-size: inherit;
     line-height: 18px;
-    text-align: right;
+    /*text-align: right;*/
 }
+
 
 .btn-popover {
     outline: none !important;
@@ -2623,7 +2622,8 @@ body.sidebar-mobile-main .quick-action {
     color: #4caf50;
 }
 .nav-file .nav-link.is-checked > i:before{
-    content: "\ee63";
+    content: "\f058";
+    font-weight: bold;
 }
 
 .nav-file .nav-item-submenu>.nav-link:before {
@@ -3230,6 +3230,8 @@ body.sidebar-mobile-main .quick-action {
         float: left;
         max-width: 230px;
         will-change: min-height;
+        position: sticky;
+        top: 20px;
     }
     .wizard-style2.wizard>form{
         padding-left: 20px;
@@ -3319,7 +3321,7 @@ body.sidebar-mobile-main .quick-action {
         font-size: inherit;
         line-height: 18px;
         padding-right: 20px;
-        text-align: right;
+        /*text-align: right;*/
     }
     .wizard-style2 .form-group > *+*{
         -ms-flex: 0 0 50%;
@@ -3386,6 +3388,14 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
   -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
           animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
   stroke-linecap: round;
+}
+.loading{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 .loading-text{
     font-weight: 500;
@@ -3505,4 +3515,17 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
 }
 .loading-text{
     margin-top: 15px;
+}
+
+.tab-pane-action{
+    position: sticky;
+    top: -1px;
+    margin: -15px -20px 20px;
+    padding: 0 20px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    z-index: 11;
+}
+.tab-pane-action > .page-title{
+    padding: 8px 0;
 }

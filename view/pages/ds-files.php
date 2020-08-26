@@ -20,32 +20,32 @@
                                         <li class="nav-item-header"><span>Danh sách files</span></li>
                                          <li class="nav-item">
                                             <a href="#" class="nav-link is-checked" data-filter="*">
-                                                <i class="icon-checkbox-unchecked"></i><span>Tất cả</span>
+                                                <i class="far fa-circle"></i><span>Tất cả</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="#" class="nav-link nav-button" data-filter=".a">
-                                                <i class="icon-checkbox-unchecked"></i><span>Tài liệu</span>
+                                                <i class="far fa-circle"></i><span>Tài liệu</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="#" class="nav-link nav-button" data-filter=".b">
-                                                <i class="icon-checkbox-unchecked"></i><span>Hình ảnh</span>
+                                                <i class="far fa-circle"></i><span>Hình ảnh</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="#" class="nav-link nav-button" data-filter=".c">
-                                                <i class="icon-checkbox-unchecked"></i><span>Video</span>
+                                                <i class="far fa-circle"></i><span>Video</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="#" class="nav-link nav-button" data-filter=".d">
-                                                <i class="icon-checkbox-unchecked"></i><span>Âm thanh</span>
+                                                <i class="far fa-circle"></i><span>Âm thanh</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="#" class="nav-link nav-button" data-filter=".e">
-                                                <i class="icon-checkbox-unchecked"></i><span>File nén</span>
+                                                <i class="far fa-circle"></i><span>File nén</span>
                                             </a>
                                         </li>
                                     </ul>

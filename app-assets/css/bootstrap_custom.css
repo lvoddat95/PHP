@@ -726,15 +726,11 @@ tbody .table-border-double td, tbody .table-border-double th, tfoot .table-borde
  * ---------------------------------------------------------------------------- */
 
 legend {
-	padding-top: 0.625rem;
-	padding-bottom: 0.625rem;
-	margin-bottom: 1.25rem;
-	border-bottom: 1px solid #ddd;
-	font-size: 0.8125rem;
-}
-
-fieldset:first-child legend:first-child {
-	padding-top: 0;
+    font-size: inherit;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+	border: 0;
+    border-bottom: 1px solid #ddd;
 }
 
 select[multiple], select[size] {
@@ -4187,32 +4183,51 @@ a.badge[class*=bg-]:not(.bg-transparent):not(.bg-white):not(.bg-light):hover, a.
 .modal-title {
     font-size: 14px;
     font-weight: 500;
-    letter-spacing: normal;
+    color: #fff;
+    letter-spacing: .5px;
 }
 .modal-header {
-	background-color: #fafafa;
-    padding: 12px 15px;
+	padding: 12px 15px;
     position: relative;
-	border-top: 3px solid #2196f3;
-	-ms-align-items: center;
-	align-items: center;
+    border: 0;
+    -ms-align-items: center;
+    align-items: center;
+    background: #1c3faa;
 }
 .modal-body{
     padding: 15px;
+    box-shadow: inset 0 5px 5px -5px rgb(0 0 0 / 10%),
+	    inset 0 1px 1px -1px rgb(0 0 0 / 10%),
+	    inset 0 -1px 0 -1px rgb(0 0 0 / 10%),
+	    inset 0 -5px 0 -5px rgb(0 0 0 / 10%),
+	    inset 0 5px 0 -5px rgb(0 0 0 / 10%),
+	    inset 0 1px 0 -1px rgb(0 0 0 / 10%),
+	    inset 0 -1px 1px -1px rgb(0 0 0 / 10%),
+	    inset 0 -5px 5px -5px rgb(0 0 0 / 10%);
 }
 .modal-content {
 	border-radius: 6px;
 }
 .modal-footer {
+	border: 0;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-    padding: 12px 15px;
+    padding: 10px 15px;
 }
 
 .modal-header .close {
-	color: inherit;
+    font-size: 18px;
+    color: inherit;
+    margin-left: auto;
+    padding: 5px 8px;
+    margin-right: -10px;
+    border-radius: 4px;
+    color: #fff;
+	opacity: 1;
 }
-
+.modal-header .close:hover{
+	background: rgb(255 255 255 / 5%); 
+}
 [class*=table-responsive]+.modal-footer, .table+.modal-footer {
 	border-top-width: 1px;
 	border-top-color: #ddd;

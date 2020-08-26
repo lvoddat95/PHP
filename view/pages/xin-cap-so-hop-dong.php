@@ -263,7 +263,7 @@
                             <div class="card-footer ">
                                 <div class="p-button justify-content-end">
                                     <a href="#" data-toggle="modal" data-target="#xin_cap_hop_dong" class="btn btn-labeled btn-labeled-left mr-1"><b><i class="icon-file-check"></i></b> Xin cấp số hợp đồng</a>
-                                    <a href="#" class="btn bg-primary btn-labeled btn-labeled-left mr-1"><b><i class="icon-checkmark4"></i></b> Chọn</a>
+                                    <a href="#" class="btn bg-primary"><i class="icon-checkmark4 mr-1"></i>Chọn</a>
                                 </div>
                             </div>
                         </div>

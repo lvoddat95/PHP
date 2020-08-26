@@ -3,8 +3,8 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title font-weight-semibold ">Danh sách tệp đính kèm</h5>
-                <button type="button" class="btn btn-light" data-dismiss="modal"><i class="far fa-times mr-1"></i> Đóng</button>
+                <h5 class="modal-title ">Danh sách tệp đính kèm</h5>
+                <button type="button" class="close" data-dismiss="modal"><i class="fal fa-times"></i></button>
             </div>
 
             <div class="modal-body">
@@ -15,27 +15,27 @@
                                 <li class="nav-item-header"><span>Danh mục</span></li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link nav-button" data-filter=".a">
-                                        <i class="icon-checkbox-unchecked"></i><span>Tài liệu</span>
+                                        <i class="far fa-circle"></i><span>Tài liệu</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link nav-button" data-filter=".b">
-                                        <i class="icon-checkbox-unchecked"></i><span>Hình ảnh</span>
+                                        <i class="far fa-circle"></i><span>Hình ảnh</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link nav-button" data-filter=".c">
-                                        <i class="icon-checkbox-unchecked"></i><span>Video</span>
+                                        <i class="far fa-circle"></i><span>Video</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link nav-button" data-filter=".d">
-                                        <i class="icon-checkbox-unchecked"></i><span>Âm thanh</span>
+                                        <i class="far fa-circle"></i><span>Âm thanh</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link nav-button" data-filter=".e">
-                                        <i class="icon-checkbox-unchecked"></i><span>File nén</span>
+                                        <i class="far fa-circle"></i><span>File nén</span>
                                     </a>
                                 </li>
                             </ul>

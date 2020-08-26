@@ -1578,14 +1578,14 @@ var App = function () {
             return;
         }
 
-        if ( $('.wizard-style2>.steps').length > 0 ) {
-            $('.wizard-style2>.steps').stickySidebar({
-                topSpacing: 20,
-                bottomSpacing: 20,
-                containerSelector: '.wizard',
-                minWidth: 1199,
-            });
-        }
+        // if ( $('.wizard-style2>.steps').length > 0 ) {
+        //     $('.wizard-style2>.steps').stickySidebar({
+        //         topSpacing: 20,
+        //         bottomSpacing: 20,
+        //         containerSelector: '.wizard',
+        //         minWidth: 1199,
+        //     });
+        // }
 
 
         //Wizard

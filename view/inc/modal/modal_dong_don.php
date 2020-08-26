@@ -3,8 +3,8 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title font-weight-semibold ">Đóng đơn bảo hiểm</h5>
-                <button type="button" class="btn btn-light" data-dismiss="modal"><i class="far fa-times mr-1"></i> Đóng</button>
+                <h5 class="modal-title ">Đóng đơn bảo hiểm</h5>
+                <button type="button" class="close" data-dismiss="modal"><i class="fal fa-times"></i></button>
             </div>
 
             <form action="#">

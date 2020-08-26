@@ -3,8 +3,8 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title font-weight-semibold ">Cập nhập các điều khoản sửa đổi bổ sung</h5>
-                <button type="button" class="btn btn-light" data-dismiss="modal"><i class="far fa-times mr-1"></i> Đóng</button>
+                <h5 class="modal-title ">Cập nhập các điều khoản sửa đổi bổ sung</h5>
+                <button type="button" class="close" data-dismiss="modal"><i class="fal fa-times"></i></button>
             </div>
             <form action="#">
                 <div class="modal-body">
@@ -41,7 +41,7 @@
                    
                 </div>
                 <div class="modal-footer">
-                    <a href="#" class="btn bg-primary btn-labeled btn-labeled-left mr-1"><b><i class="icon-checkmark4"></i></b> Chọn</a>
+                    <a href="#" class="btn bg-primary"><i class="icon-checkmark4 mr-1"></i>Chọn</a>
                 </div>
             </form>
         </div>

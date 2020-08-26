@@ -3,9 +3,9 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title font-weight-semibold ">Trình duyệt đơn bảo hiểm</h5>
+                <h5 class="modal-title ">Trình duyệt đơn bảo hiểm</h5>
                 <div>
-                    <button type="button" class="btn btn-light" data-dismiss="modal"><i class="far fa-times mr-1"></i> Đóng</button>
+                    <button type="button" class="close" data-dismiss="modal"><i class="fal fa-times"></i></button>
                 </div>
             </div>
             <form action="#">
