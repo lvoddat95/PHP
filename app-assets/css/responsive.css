@@ -454,14 +454,6 @@
     .input-don .input-group-append > .btn > i{
         margin: 0 !important;
     }
-    .wizard>.steps>ul>li a {
-        padding-top: 30px;
-        margin: 20px 0;
-    }
-    .wizard>.steps>ul>li:before, 
-    .wizard>.steps>ul>li:after {
-        top: 35px;
-    }
 
     .chat-footer,
     .chat-header{
@@ -476,6 +468,12 @@
     .f-left, .f-right {
         float: none;
         width: 100%;
+    }
+    .date-to-date > .d-flex{
+        display: block !important;
+    }
+    .date-to-date > .d-flex > *:first-child{
+        margin-bottom: 15px;
     }
 
 

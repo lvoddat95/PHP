@@ -81,19 +81,22 @@
                                                 <div class="page-title">
                                                     <div class="p-title">
                                                         <p class="t-top"><i class="icon-certificate mr-2"></i>Chi tiết hồ sơ bồi thường</p>
-                                                        <span class="desc">Nhập thông tin theo từng bước. Vui lòng nhập đầy đủ thông tin vào trường bắt buộc có dấu <code>*</code>.</span>
+                                                        <span class="desc">Vui lòng nhập đầy đủ thông tin vào trường bắt buộc có dấu <code>*</code>.</span>
                                                     </div>
                                                     <div class="p-button">
                                                         <a href="" class="btn mr-1"><i class="fa fa-reply mr-1"></i> Quay lại</a>
+                                                        <a href="javascript:;" class="btn mr-1"><i class="icon-file-locked mr-1"></i> Đóng hồ sơ</a>
                                                         <a href="javascript:;" class="btn mr-1"><i class="far fa-copy mr-1"></i> Lưu &amp; Copy</a>
                                                         <a href="javascript:;" class="btn bg-primary"><i class="fa fa-save mr-1"></i> Lưu</a>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <div class="row">
-                                                <div class="offset-md-2 col-md-8">
-                                                    <?php inc('claim/1_thong_tin_chung.php'); ?>
+                                            <div class="tab-pane-form">
+                                                <div class="row">
+                                                    <div class="offset-lg-2 col-lg-8">
+                                                        <?php inc('claim/1_thong_tin_chung.php'); ?>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

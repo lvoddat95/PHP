@@ -3529,3 +3529,30 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
 .tab-pane-action > .page-title{
     padding: 8px 0;
 }
+.card-header.card-header-sticky:first-child{
+    position: sticky;
+    top: -1px;
+    background: #fff;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    z-index: 11;
+}
+.card-header-sticky > .page-title{
+    padding: 8px 0;
+}
+
+.date-to-date {
+    display: flex;
+    display: -ms-flex;
+    align-items: center;
+    -ms-align-items: center;
+    max-width: 600px;
+}
+.date-to-date > div{
+    width: 100%;
+}
+
+.date-to-date > span{
+
+}

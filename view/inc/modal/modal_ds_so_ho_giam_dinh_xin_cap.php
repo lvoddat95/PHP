@@ -1,6 +1,6 @@
 <!-- Danh sách hợp đồng xin cấp -->
 <div id="ds_so_ho_giam_dinh_xin_cap" class="modal fade" tabindex="-1" datatable-modal>
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Danh sách số hồ sơ giám định xin cấp</h5>

@@ -1809,6 +1809,16 @@ var App = function () {
             App.initDropdownSubmenu();
             App.initHeaderElementsToggle();
             App.initChart();
+        },
+
+        // Initialize Select2
+        initSelect2: function () {
+            _component_select2();
+        },
+        
+        // Initialize Datepicker
+        initDatepicker: function () {
+            _component_datepicker();
         }
     }
 }();

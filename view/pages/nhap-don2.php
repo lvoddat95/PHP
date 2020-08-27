@@ -86,16 +86,16 @@
                                                                 <!-- Bước 1 -->
                                                                 <fieldset  class="tab-pane active show" id="step1">
                                                                     <div class="row">
-                                                                        <div class="col-xl-3 col-lg-2 col-md-6">
+                                                                        <div class="col-md-6">
                                                                             <?php inc('template/1_thong_tin_chung/kenh_khai_thac.php'); ?> 
                                                                         </div>
-                                                                        <div class="col-xl-3 col-lg-2 col-md-6">
+                                                                        <div class="col-md-6">
                                                                             <?php inc('template/1_thong_tin_chung/hinh_thuc_khai_thac.php'); ?> 
                                                                         </div>
-                                                                        <div class="col-xl-3 col-lg-4 col-md-6">
+                                                                        <div class="col-md-6">
                                                                             <?php inc('template/1_thong_tin_chung/so_don_bao_hiem.php'); ?> 
                                                                         </div>
-                                                                        <div class="col-xl-3 col-lg-4 col-md-6">
+                                                                        <div class="col-md-6">
                                                                             <?php inc('template/1_thong_tin_chung/so_gcnbh.php'); ?> 
                                                                         </div>
                                                                     </div>
@@ -151,15 +151,16 @@
                                                                     </div>
 
                                                                     <div class="row">
-                                                                        <div class="col-md-6">
+                                                                        <div class="col-md-4">
                                                                             <?php inc('template/1_thong_tin_chung/loai_tien.php'); ?>
                                                                         </div>
-                                                                        <div class="col-md-6">
+                                                                        <div class="col-md-4">
                                                                             <?php inc('template/1_thong_tin_chung/ti_gia_thuc_te.php'); ?>
                                                                         </div>
+                                                                    </div>
+                                                                    <div class="row">
                                                                         <div class="col-md-12">
                                                                             <?php inc('template/1_thong_tin_chung/tai_bao_hiem.php'); ?>
-
                                                                             <?php inc('template/1_thong_tin_chung/dong_bao_hiem.php'); ?>
                                                                         </div>
                                                                     </div>
@@ -218,19 +219,25 @@
                                                                         <div class="col-md-4">
                                                                             <?php inc('template/3_doi_tuong_bao_hiem/MVP/f02/nhom_xe.php'); ?>
                                                                         </div>
-                                                                        <div class="col-md-3">
+                                                                    </div>
+
+                                                                    <div class="row">
+                                                                        <div class="col-md-4">
                                                                             <?php inc('template/3_doi_tuong_bao_hiem/MVP/f02/loai_xe.php'); ?>
                                                                         </div>
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-md-4">
                                                                             <?php inc('template/3_doi_tuong_bao_hiem/MVP/nhan_hieu.php'); ?>
                                                                         </div>
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-md-4">
                                                                             <?php inc('template/3_doi_tuong_bao_hiem/MVP/f02/so_loai.php'); ?>
                                                                         </div>
-                                                                        <div class="col-md-3">
+                                                                    </div>
+
+                                                                    <div class="row">
+                                                                        <div class="col-md-4">
                                                                             <?php inc('template/3_doi_tuong_bao_hiem/MVP/f02/nguon_goc_xe.php'); ?>
                                                                         </div>
-                                                                        <div class="col-md-4">
+                                                                        <div class="col-md-8">
                                                                             <div class="row">
                                                                                 <div class="col-md-6">
                                                                                     <?php inc('template/3_doi_tuong_bao_hiem/MVP/thang_sx.php'); ?>
@@ -240,34 +247,42 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-md-4">
-                                                                            <div class="row align-items-center">
-                                                                                <div class="col-md-6">
-                                                                                    <?php inc('template/3_doi_tuong_bao_hiem/MVP/chua_co_bien.php'); ?>
-                                                                                </div>
-                                                                                <div class="col-md-6">
-                                                                                    <?php inc('template/3_doi_tuong_bao_hiem/MVP/loai_bien.php'); ?>
-                                                                                </div>
-                                                                            </div>
+                                                                    </div>
+
+                                                                    <div class="row">
+                                                                        <div class="col-md-2 d-flex align-items-center">
+                                                                            <?php inc('template/3_doi_tuong_bao_hiem/MVP/chua_co_bien.php'); ?>
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <?php inc('template/3_doi_tuong_bao_hiem/MVP/loai_bien.php'); ?>
                                                                         </div>
                                                                         <div class="col-md-4">
                                                                             <?php inc('template/3_doi_tuong_bao_hiem/MVP/bien_kiem_soat.php'); ?>
                                                                         </div>
-                                                                        <div class="col-md-3">
+                                                                    </div>
+
+                                                                    <div class="row">
+                                                                        <div class="col-md-4">
                                                                             <?php inc('template/3_doi_tuong_bao_hiem/MVP/so_khung.php'); ?>
                                                                         </div>
-                                                                        <div class="col-md-3">
-                                                                            <?php inc('template/3_doi_tuong_bao_hiem/MVP/f02/mau_son.php'); ?>
-                                                                        </div>
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-md-4">
                                                                             <?php inc('template/3_doi_tuong_bao_hiem/MVP/so_may.php'); ?>
                                                                         </div>
-                                                                        <div class="col-md-3">
+                                                                    </div>
+
+                                                                    <div class="row">
+                                                                        <div class="col-md-4">
+                                                                            <?php inc('template/3_doi_tuong_bao_hiem/MVP/f02/mau_son.php'); ?>
+                                                                        </div>
+                                                                        <div class="col-md-4">
                                                                             <?php inc('template/3_doi_tuong_bao_hiem/MVP/f02/so_cho_ngoi.php'); ?>
                                                                         </div>
                                                                         <div class="col-md-4">
                                                                             <?php inc('template/3_doi_tuong_bao_hiem/MVP/f02/trong_tai.php'); ?>
                                                                         </div>
+                                                                    </div>
+                                                                        
+                                                                    <div class="row">
                                                                         <div class="col-md-4">
                                                                             <?php inc('template/3_doi_tuong_bao_hiem/MVP/gia_tri_xe.php'); ?>
                                                                         </div>
@@ -778,17 +793,7 @@
                                                                                                 <div class="c-body">
                                                                                                     <div class="row mb-3">
                                                                                                         <div class="col-md-4">
-                                                                                                            <label>Thời hạn bảo hiểm: <span class="text-danger">*</span></label>
-                                                                                                            <div class="d-flex mb-2">
-                                                                                                                <span style="width: 100px;">Từ</span>
-                                                                                                                <input type="time" class="form-control mr-2" step="width: 100px;">
-                                                                                                                <input type="text" class="form-control datepicker input-date" placeholder="dd/mm/yyyy">
-                                                                                                            </div>
-                                                                                                            <div class="d-flex">
-                                                                                                                <span style="width: 100px;">Đến</span>
-                                                                                                                <input type="time" class="form-control mr-2" step="width: 100px;">
-                                                                                                                <input type="text" class="form-control datepicker input-date" placeholder="dd/mm/yyyy">
-                                                                                                            </div>
+                                                                                                            <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php'); ?>
                                                                                                         </div>
                                                                                                         <div class="col-md-4">
                                                                                                             <label>Số GCNBH: <span class="text-danger">*</span></label>

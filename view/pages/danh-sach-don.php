@@ -275,8 +275,7 @@
                                             data-info="true"
                                             data-ordering="true"
                                             data-searching="false"
-                                            data-page-length="20"
-                                        >
+                                            data-page-length="20">
                                             <thead class="thead-light">
                                                 <tr>
                                                     <th data-orderable="false" class="text-center"><input type="checkbox" id="input-chk-all"></th>

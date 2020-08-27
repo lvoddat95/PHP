@@ -778,17 +778,7 @@
                                                                                             <div class="c-body">
                                                                                                 <div class="row mb-3">
                                                                                                     <div class="col-md-4">
-                                                                                                        <label>Thời hạn bảo hiểm: <span class="text-danger">*</span></label>
-                                                                                                        <div class="d-flex mb-2">
-                                                                                                            <span style="width: 100px;">Từ</span>
-                                                                                                            <input type="time" class="form-control mr-2" step="width: 100px;">
-                                                                                                            <input type="text" class="form-control datepicker input-date" placeholder="dd/mm/yyyy">
-                                                                                                        </div>
-                                                                                                        <div class="d-flex">
-                                                                                                            <span style="width: 100px;">Đến</span>
-                                                                                                            <input type="time" class="form-control mr-2" step="width: 100px;">
-                                                                                                            <input type="text" class="form-control datepicker input-date" placeholder="dd/mm/yyyy">
-                                                                                                        </div>
+                                                                                                        <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php'); ?>
                                                                                                     </div>
                                                                                                     <div class="col-md-4">
                                                                                                         <label>Số GCNBH: <span class="text-danger">*</span></label>

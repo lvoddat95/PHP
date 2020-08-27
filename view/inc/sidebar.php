@@ -41,17 +41,33 @@
                                 <span class="menu-title"> Pages Template</span>
                             </a>
                             <ul class="nav nav-group-sub" scrollbar data-submenu-title="Pages Template">
-                                <li><a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="nav-link"><span class="menu-title">Danh sách đơn</span></a></li>
-                                <li><a href="<?php echo HTTP_PATH .'view/pages/nhap-don.php'; ?>" class="nav-link"><span class="menu-title">Nhập đơn</span></a></li>
-                                <li><a href="<?php echo HTTP_PATH .'view/pages/nhap-don2.php'; ?>" class="nav-link"><span class="menu-title">Nhập đơn 2</span></a></li>
-                                <li><a href="<?php echo HTTP_PATH .'view/pages/xem-don.php'; ?>" class="nav-link"><span class="menu-title">Xem đơn</span></a></li>
-                                <li><a href="<?php echo HTTP_PATH .'view/pages/ban-chao/danh-sach-ban-chao.php'; ?>" class="nav-link"><span class="menu-title">Bản chào</span></a></li>
-                                <li><a href="<?php echo HTTP_PATH .'view/pages/don-cho-duyet.php'; ?>" class="nav-link"><span class="menu-title">Đơn chờ duyệt</span></a></li>
-                                <li><a href="<?php echo HTTP_PATH .'view/pages/xin-cap-so-hop-dong.php'; ?>" class="nav-link"><span class="menu-title">Xin cấp số hợp đồng</span></a></li>
-                                <li><a href="<?php echo HTTP_PATH .'view/pages/danh-sach-khach-hang.php'; ?>" class="nav-link"><span class="menu-title">Danh sách khách hàng</span></a></li>
+                                <li class="nav-item nav-item-submenu">
+                                    <a href="" class="nav-link">
+                                        <span class="menu-title">Bảo hiểm</span>
+                                    </a>
+                                    <ul class="nav nav-group-sub">
+                                        <li><a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="nav-link"><span class="menu-title">Danh sách đơn</span></a></li>
+                                        <li><a href="<?php echo HTTP_PATH .'view/pages/nhap-don.php'; ?>" class="nav-link"><span class="menu-title">Nhập đơn</span></a></li>
+                                        <li><a href="<?php echo HTTP_PATH .'view/pages/nhap-don2.php'; ?>" class="nav-link"><span class="menu-title">Nhập đơn 2</span></a></li>
+                                        <li><a href="<?php echo HTTP_PATH .'view/pages/xem-don.php'; ?>" class="nav-link"><span class="menu-title">Xem đơn</span></a></li>
+                                        <li><a href="<?php echo HTTP_PATH .'view/pages/ban-chao/danh-sach-ban-chao.php'; ?>" class="nav-link"><span class="menu-title">Bản chào</span></a></li>
+                                        <li><a href="<?php echo HTTP_PATH .'view/pages/don-cho-duyet.php'; ?>" class="nav-link"><span class="menu-title">Đơn chờ duyệt</span></a></li>
+                                        <li><a href="<?php echo HTTP_PATH .'view/pages/xin-cap-so-hop-dong.php'; ?>" class="nav-link"><span class="menu-title">Xin cấp số hợp đồng</span></a></li>
+                                        <li><a href="<?php echo HTTP_PATH .'view/pages/danh-sach-khach-hang.php'; ?>" class="nav-link"><span class="menu-title">Danh sách khách hàng</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item nav-item-submenu">
+                                    <a href="" class="nav-link">
+                                        <span class="menu-title">Bồi thường</span>
+                                    </a>
+                                    <ul class="nav nav-group-sub">
+                                        <!-- <li><a href="<?php echo HTTP_PATH .'view/claim/danh-sach-don.php'; ?>" class="nav-link"><span class="menu-title">Danh sách đơn</span></a></li> -->
+                                        <li><a href="<?php echo HTTP_PATH .'view/claim/nhap-don.php'; ?>" class="nav-link"><span class="menu-title">Nhập đơn</span></a></li>
+                                    </ul>
+                                </li>
+
                                 <li><a href="<?php echo HTTP_PATH .'view/pages/login.php'; ?>" class="nav-link"><span class="menu-title">Trang Login</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/pages/404.php'; ?>" class="nav-link"><span class="menu-title">Trang 404</span></a></li>
-                                
                             </ul>
                         </li>
 
