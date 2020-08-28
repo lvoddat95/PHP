@@ -3,8 +3,8 @@
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header border-0 text-center">
-                <h5 class="modal-title text-uppercase font-weight-semibold color">Lịch sử tổn thất</h5>
-                
+                <h5 class="modal-title text-uppercase font-weight-semibold">Lịch sử tổn thất</h5>
+                <button type="button" class="close" data-dismiss="modal"><i class="fal fa-times"></i></button>
             </div>
             <form action="#">
                 <div class="modal-body text-body">

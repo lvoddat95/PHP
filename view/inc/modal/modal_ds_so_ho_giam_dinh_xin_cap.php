@@ -9,7 +9,7 @@
 
             <div class="modal-body">
                 <div class="row">
-                     <div class="col-sm-6">
+                    <div class="col-sm-6">
                         <div class="form-group">
                             <label>Đơn vị: </label>
                             <?php inc('template/chi_nhanh.php',false); ?>

@@ -182,9 +182,10 @@
     <div class="col-md-4">
         <div class="form-group">
             <label>Số điện thoại: <span class="text-danger">*</span></label>
-            <input type="text" class="form-control input-phone" placeholder="Nhập số điện thoại..." value="0395013333">
+            <input type="text" class="form-control input-phone" placeholder="Nhập số điện thoại..." value="0395013333" disabled>
         </div>
     </div>
+    <div class="col-12"></div>
     <div class="col-md-8">
         <div class="form-group">
             <label>Địa chỉ: </label>
@@ -197,7 +198,7 @@
             <textarea class="form-control" placeholder="Nhập đối tượng tổn thất...">88A27218</textarea>
         </div>
     </div>
-     <div class="col-md-4">
+    <div class="col-md-4">
         <div class="form-group">
             <label>Mức độ tổn thất:</label>
             <select class="form-control" select2>
@@ -252,7 +253,7 @@
             <label>Hệ thống gara: </label>
             <select select2>
                 <option>--- Chọn ---</option>
-                <option>Trong hệ thống</option>
+                <option selected="">Trong hệ thống</option>
                 <option>Ngoài hệ thống</option>
             </select>
         </div>
@@ -331,11 +332,11 @@
         </table>
         <div class="mt-1">
             <div class="row align-items-center justify-content-end mb-1">
-                <label class="col-sm-3 col-form-label font-weight-semibold">Tổng số tiền BH:</label>
+                <label class="col-sm-3 col-form-label font-weight-semibold text-right">Tổng số tiền BH:</label>
                 <div class="col-sm-3"><input type="text" class="form-control input-money text-right text-danger font-weight-semibold" value="620,000,000" placeholder="0"></div>
             </div>
             <div class="row align-items-center justify-content-end">
-                <label class="col-sm-3 col-form-label font-weight-semibold">Tổng phí BH (trước thuế):</label>
+                <label class="col-sm-3 col-form-label font-weight-semibold text-right">Tổng phí BH (trước thuế):</label>
                 <div class="col-sm-3"><input type="text" class="form-control input-money text-right text-danger font-weight-semibold" value="10,230,000" placeholder="0"></div>
             </div>
         </div>
@@ -392,11 +393,11 @@
         </table>
         <div class="mt-1">
             <div class="row align-items-center justify-content-end mb-1">
-                <label class="col-sm-3 col-form-label font-weight-semibold">Tổng số tiền:</label>
+                <label class="col-sm-3 col-form-label font-weight-semibold text-right">Tổng số tiền:</label>
                 <div class="col-sm-3"><input type="text" class="form-control input-money text-right text-danger font-weight-semibold" value="0" placeholder="0"></div>
             </div>
             <div class="row align-items-center justify-content-end">
-                <label class="col-sm-3 col-form-label font-weight-semibold">VNI Net:</label>
+                <label class="col-sm-3 col-form-label font-weight-semibold text-right">VNI Net:</label>
                 <div class="col-sm-3"><input type="text" class="form-control input-money text-right text-danger font-weight-semibold" value="620,000,000" placeholder="0"></div>
             </div>
         </div>
@@ -433,16 +434,16 @@
             <tbody>
                 <tr>
                     <td><input type="checkbox"></td>
-                    <td><a href="s">BT3412000897.F02</a></td>
-                    <td><a href="s">3412005162/F02.BB19/0080992</a></td>
-                    <td><a href="s">Thanh toán</a></td>
-                    <td><a href="s">26/08/2020</a></td>
-                    <td><a href="s">8/2020</a></td>
-                    <td><a href="s">2,450,000</a></td>
-                    <td><a href="s">Chấp thuận</a></td>
-                    <td><a href="s">Dương Kim Hoàng</a></td>
+                    <td><a href="javascript:;" data-toggle="modal" data-target="#knbt">BT3412000897.F02</a></td>
+                    <td><a href="javascript:;" data-toggle="modal" data-target="#knbt">3412005162/F02.BB19/0080992</a></td>
+                    <td><a href="javascript:;" data-toggle="modal" data-target="#knbt">Thanh toán</a></td>
+                    <td><a href="javascript:;" data-toggle="modal" data-target="#knbt">26/08/2020</a></td>
+                    <td><a href="javascript:;" data-toggle="modal" data-target="#knbt">8/2020</a></td>
+                    <td><a href="javascript:;" data-toggle="modal" data-target="#knbt">2,450,000</a></td>
+                    <td><a href="javascript:;" data-toggle="modal" data-target="#knbt"><span class="badge badge-primary">Chấp thuận</span></a></td>
+                    <td><a href="javascript:;" data-toggle="modal" data-target="#knbt">Dương Kim Hoàng</a></td>
                     <td>
-                        <a href="s">
+                        <a href="javascript:;" data-toggle="modal" data-target="#knbt">
                         Dương Quốc Đại <br>
                         <i>duyệt ngày:26/08/2020</i>
                         </a>
@@ -451,16 +452,16 @@
                 </tr>
                 <tr>
                     <td><input type="checkbox"></td>
-                    <td><a href="s">BT3412000897.F02</a></td>
-                    <td><a href="s">3412005162/F02.BB19/0080992</a></td>
-                    <td><a href="s">Thanh toán</a></td>
-                    <td><a href="s">13/08/2020</a></td>
-                    <td><a href="s">8/2020</a></td>
-                    <td><a href="s">2,450,000</a></td>
-                    <td><a href="s">Dự phòng</a></td>
-                    <td><a href="s">Dương Kim Hoàng</a></td>
+                    <td><a href="javascript:;" data-toggle="modal" data-target="#knbt">BT3412000897.F02</a></td>
+                    <td><a href="javascript:;" data-toggle="modal" data-target="#knbt">3412005162/F02.BB19/0080992</a></td>
+                    <td><a href="javascript:;" data-toggle="modal" data-target="#knbt">Thanh toán</a></td>
+                    <td><a href="javascript:;" data-toggle="modal" data-target="#knbt">13/08/2020</a></td>
+                    <td><a href="javascript:;" data-toggle="modal" data-target="#knbt">8/2020</a></td>
+                    <td><a href="javascript:;" data-toggle="modal" data-target="#knbt">2,450,000</a></td>
+                    <td><a href="javascript:;" data-toggle="modal" data-target="#knbt"><span class="badge badge-secondary">Dự phòng</span></a></td>
+                    <td><a href="javascript:;" data-toggle="modal" data-target="#knbt">Dương Kim Hoàng</a></td>
                     <td>
-                        <a href="s">
+                        <a href="javascript:;" data-toggle="modal" data-target="#knbt">
                         Dương Quốc Đại <br>
                         <i>duyệt ngày:13/08/2020</i>
                         </a>
@@ -473,11 +474,11 @@
 
         <div class="mt-1">
             <div class="row align-items-center justify-content-end mb-1">
-                <label class="col-sm-3 col-form-label font-weight-semibold">Tổng số tiền đã thanh toán:</label>
+                <label class="col-sm-3 col-form-label font-weight-semibold text-right">Tổng số tiền đã thanh toán:</label>
                 <div class="col-sm-3"><input type="text" class="form-control input-money text-right text-danger font-weight-semibold" value="2,450,000" placeholder="0"></div>
             </div>
             <div class="row align-items-center justify-content-end">
-                <label class="col-sm-3 col-form-label font-weight-semibold">Số tiền dự phòng hiện tại:</label>
+                <label class="col-sm-3 col-form-label font-weight-semibold text-right">Số tiền dự phòng hiện tại:</label>
                 <div class="col-sm-3"><input type="text" class="form-control input-money text-right text-danger font-weight-semibold" value="2,450,000" placeholder="0"></div>
             </div>
         </div>
