@@ -157,7 +157,7 @@
                     <div class="col-md-8">
                         <div class="form-group">
                             <label>Loại hình: <span class="text-danger">*</span></label>
-                            <?php inc('template/loai_hinh_disabled.php', false); ?>
+                            <?php inc('template/loai_hinh_disabled.php'); ?>
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -285,6 +285,153 @@
                         <div class="form-group">
                             <label>Tỉ giá thực tế: <span class="text-danger">*</span></label>
                             <input type="text" class="form-control input-float text-right" placeholder="0.0" value="1" disabled>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="border-dashed border-silver mb-3">
+
+                <div class="border-group box-shadow form-group mt-2 mb-2">
+                    <div class="mb-2">
+                        <span class="text-primary-800 text-uppercase font-weight-bold"><i class="icon-info22 mr-1"></i>Tổn thất</span>
+                    </div>
+                    <div class="">
+                        <table class="table datatable" data-paging="false" data-info="false" data-ordering="false" data-searching="false">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th class="w1p text-center" data-orderable="false">#</th>
+                                    <th class="w40p">Phạm vi bảo hiểm</th>
+                                    <th class="w20p">Số tiền tổn thất (chưa VAT)</th>
+                                    <th class="w15p">VAT</th>
+                                    <th class="w20p">Tiền VAT</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center"><input type="checkbox"></td>
+                                    <td><input type="text" class="form-control" value="Vật chất xe"></td>
+                                    <td><input type="text" class="form-control input-money text-right" value="2,450,000" placeholder="0"></td>
+                                    <td><input type="text" class="form-control input-float text-right" value="10.00" placeholder="0.0"></td>
+                                    <td><input type="text" class="form-control input-money text-right" value="245,000" placeholder="0"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="row mt-1 flex-lg-row-reverse">
+                            <div class="col-lg-6">
+                                <div class="row align-items-center justify-content-end mb-1">
+                                    <label class="col-sm-6 col-form-label font-weight-semibold text-right">Tổng số tiền tổn thất thuộc VNI (Chưa VAT):</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control input-money text-right text-danger font-weight-semibold" value="2,450,000" placeholder="0">
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-end mb-1">
+                                    <label class="col-sm-6 col-form-label font-weight-semibold text-right">Thuế VAT:</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control input-money text-right text-danger font-weight-semibold" value="245,000" placeholder="0">
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-end">
+                                    <label class="col-sm-6 col-form-label font-weight-semibold text-right">Tổng số tiền tổn thất đã bao gồm thuế VAT:</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control input-money text-right text-danger font-weight-semibold" value="2,695,000" placeholder="0">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="p-1 border-1 border-dashed border-silver">
+                                    <p class="font-weight-semibold">Số tiền bồi thường TNDS chi tiết theo người và tài sản</p>
+                                    <div class="row form-group">
+                                        <label class="col-sm-3 col-form-label">Về người:</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control input-money text-right" placeholder="0">
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <label class="col-sm-3 col-form-label">Về tài sản:</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control input-money text-right" placeholder="0">
+                                        </div>
+                                    </div>
+                                    <i class="text-danger">Chú ý: Số tiền bồi thường về người + Số tiền bồi thường về tài sản = Số tiền tổn thất(Chưa VAT) của phạm vị TNDS bắt buộc</i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="border-group box-shadow form-group mt-2 mb-2">
+                    <div class="mb-2">
+                        <span class="text-primary-800 text-uppercase font-weight-bold"><i class="icon-info22 mr-1"></i>Cấu trúc tái bảo hiểm</span>
+                    </div>
+                    <div class="">
+                        <table class="table datatable" data-paging="false" data-info="false" data-ordering="false" data-searching="false">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th class="w1p text-center" data-orderable="false">STT</th>
+                                    <th class="w40p">Loại hình tái bảo hiểm</th>
+                                    <th class="w15p">Tỉ lệ tái</th>
+                                    <th class="w20p">Số tiền</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center">01</td>
+                                    <td>
+                                        <select select2>
+                                            <option>AON Benfield Asia PTE Ltd</option>
+                                        </select>
+                                    </td>
+                                    <td><input type="text" class="form-control input-float text-right" value="20.00" placeholder="0"></td>
+                                    <td><input type="text" class="form-control input-money text-right" value="0" placeholder="0"></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">02</td>
+                                    <td>
+                                        <select select2>
+                                            <option>HLAP Ltd</option>
+                                        </select>
+                                    </td>
+                                    <td><input type="text" class="form-control input-float text-right" value="10.00" placeholder="0"></td>
+                                    <td><input type="text" class="form-control input-money text-right" value="0" placeholder="0"></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">03</td>
+                                    <td>
+                                        <select select2>
+                                            <option>HLAP Ltd (Hannover Re)</option>
+                                        </select>
+                                    </td>
+                                    <td><input type="text" class="form-control input-float text-right" value="10.00" placeholder="0"></td>
+                                    <td><input type="text" class="form-control input-money text-right" value="0" placeholder="0"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="mt-1">
+                            <div class="row align-items-center justify-content-end mb-1">
+                                <label class="col-sm-3 col-form-label font-weight-semibold text-right">Tổng số tiền:</label>
+                                <div class="col-sm-3"><input type="text" class="form-control input-money text-right text-danger font-weight-semibold" value="0" placeholder="0"></div>
+                            </div>
+                            <div class="row align-items-center justify-content-end">
+                                <label class="col-sm-3 col-form-label font-weight-semibold text-right">VNI Net:</label>
+                                <div class="col-sm-3"><input type="text" class="form-control input-money text-right text-danger font-weight-semibold" value="620,000,000" placeholder="0"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Tài liệu đính kèm: <span class="text-danger">*</span></label>
+                            <div class="p-button">
+                                <button type="button" class="btn btn-light" data-toggle="modal" data-target="#ds_files">
+                                    <i class="far fa-folder-open mr-1"></i>
+                                    <span class="hidden-xs">Danh sách tài liệu</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
