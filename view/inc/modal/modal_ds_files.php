@@ -48,7 +48,7 @@
                                 <button class="btn btn-light btn-sm active" onclick="grid_view(this);return false;" title="Grid"><i class="icon-grid2"></i></button>
                             </div>
                             <div class="file-search">
-                                <input type="text" name="" class="form-control form-control-sm" placeholder="Tìm kiếm...">
+                                <input type="text" name="" class="form-control form-control-sm isotope-search" placeholder="Tìm kiếm...">
                                 <button type="submit"><i class="icon-search4"></i></button>
                             </div>
                         </div>

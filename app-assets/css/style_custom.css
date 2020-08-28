@@ -3553,6 +3553,9 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     width: 100%;
 }
 
-.date-to-date > span{
-
+.table a{
+    color: #333;
+}
+.table a:hover{
+    color: #0a6ebd;
 }

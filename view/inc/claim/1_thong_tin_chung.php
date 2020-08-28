@@ -406,8 +406,12 @@
 
 
 <div class="border-group box-shadow form-group mt-2 mb-2">
-    <div class="mb-2">
+    <div class="d-flex align-items-center justify-content-between mb-2">
         <span class="text-primary-800 text-uppercase font-weight-bold"><i class="icon-info22 mr-1"></i>Quá trình giải quyết khiếu nại bồi thường</span>
+        <div class="p-button">
+            <a href="javascript:;" class="btn bg-danger"><i class="far fa-minus"></i> Xoá</a>
+            <a href="javascript:;" class="btn bg-success"><i class="far fa-plus"></i> Thêm</a>
+        </div>
     </div>
     <div class="">
         <table class="table datatable" data-paging="false" data-info="false" data-ordering="false" data-searching="false">
@@ -429,39 +433,44 @@
             <tbody>
                 <tr>
                     <td><input type="checkbox"></td>
-                    <td>BT3412000897.F02</td>
-                    <td>3412005162/F02.BB19/0080992</td>
-                    <td>Thanh toán</td>
-                    <td>26/08/2020</td>
-                    <td>8/2020</td>
-                    <td>2,450,000</td>
-                    <td>Chấp thuận</td>
-                    <td>Dương Kim Hoàng</td>
+                    <td><a href="s">BT3412000897.F02</a></td>
+                    <td><a href="s">3412005162/F02.BB19/0080992</a></td>
+                    <td><a href="s">Thanh toán</a></td>
+                    <td><a href="s">26/08/2020</a></td>
+                    <td><a href="s">8/2020</a></td>
+                    <td><a href="s">2,450,000</a></td>
+                    <td><a href="s">Chấp thuận</a></td>
+                    <td><a href="s">Dương Kim Hoàng</a></td>
                     <td>
+                        <a href="s">
                         Dương Quốc Đại <br>
                         <i>duyệt ngày:26/08/2020</i>
+                        </a>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td><input type="checkbox"></td>
-                    <td>BT3412000897.F02</td>
-                    <td>3412005162/F02.BB19/0080992</td>
-                    <td>Thanh toán</td>
-                    <td>13/08/2020</td>
-                    <td>8/2020</td>
-                    <td>2,450,000</td>
-                    <td>Dự phòng</td>
-                    <td>Dương Kim Hoàng</td>
+                    <td><a href="s">BT3412000897.F02</a></td>
+                    <td><a href="s">3412005162/F02.BB19/0080992</a></td>
+                    <td><a href="s">Thanh toán</a></td>
+                    <td><a href="s">13/08/2020</a></td>
+                    <td><a href="s">8/2020</a></td>
+                    <td><a href="s">2,450,000</a></td>
+                    <td><a href="s">Dự phòng</a></td>
+                    <td><a href="s">Dương Kim Hoàng</a></td>
                     <td>
+                        <a href="s">
                         Dương Quốc Đại <br>
                         <i>duyệt ngày:13/08/2020</i>
+                        </a>
                     </td>
                     <td></td>
                 </tr>
                 
             </tbody>
         </table>
+
         <div class="mt-1">
             <div class="row align-items-center justify-content-end mb-1">
                 <label class="col-sm-3 col-form-label font-weight-semibold">Tổng số tiền đã thanh toán:</label>
