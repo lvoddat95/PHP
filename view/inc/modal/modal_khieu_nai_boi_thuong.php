@@ -439,9 +439,10 @@
             </div>
 
             <div class="modal-footer">
-                <a href="#" data-toggle="modal" data-target="#claim_xin_cap" class="btn"><i class="icon-file-check mr-1"></i>Xin cấp</a>
-                <a href="#" data-toggle="modal" data-target="#claim_xin_huy" class="btn"><i class="icon-file-locked mr-1"></i>Xin huỷ</a>
-                <a href="#" class="btn bg-primary"><i class="icon-checkmark4 mr-1"></i>Chọn</a>
+                <a href="#" data-toggle="modal" data-target="#claim_xin_cap" class="btn"><i class="icon-printer mr-1"></i>In yêu cầu TTBT</a>
+                <a href="#" data-toggle="modal" data-target="#claim_xin_cap" class="btn"><i class="fal fa-file-edit mr-1"></i>Cập nhập tờ trình</a>
+                <a href="#" data-toggle="modal" data-target="#claim_xin_cap" class="btn"><i class="icon-file-check mr-1"></i>Trình duyệt</a>
+                <a href="javascript:;" class="btn bg-primary"><i class="fa fa-save mr-1"></i> Lưu</a>
             </div>
         </div>
     </div>

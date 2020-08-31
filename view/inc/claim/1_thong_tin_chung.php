@@ -411,7 +411,7 @@
         <span class="text-primary-800 text-uppercase font-weight-bold"><i class="icon-info22 mr-1"></i>Quá trình giải quyết khiếu nại bồi thường</span>
         <div class="p-button">
             <a href="javascript:;" class="btn bg-danger"><i class="far fa-minus"></i> Xoá</a>
-            <a href="javascript:;" class="btn bg-success"><i class="far fa-plus"></i> Thêm</a>
+            <a href="javascript:;" class="btn bg-success" data-toggle="modal" data-target="#knbt"><i class="far fa-plus"></i> Thêm</a>
         </div>
     </div>
     <div class="">
