@@ -47,6 +47,10 @@
 }
 
 @media only screen and (max-width: 767px) {
+
+    .login-header {
+        margin-bottom: 30px;
+    }
     
     [class*=" icon-"], [class^=icon-]{
         font-size: 12px;
