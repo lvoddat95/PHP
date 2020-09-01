@@ -15,7 +15,7 @@
 	    		<!-- Header -->
                 <div class="header-top">
                     <button class="d-md-none sidebar-mobile-main-toggle" type="button">
-                        <i class="linearicons-text-align-left font-size-m font-weight-bold"></i>
+                        <i class="far fa-align-left"></i>
                     </button>
                     <div class="top-left">
                         <div class="breadcrumb">

@@ -540,7 +540,6 @@
         background: transparent !important;
     }
     .nav-item-open > .nav-group-sub {
-        padding-bottom: 10px;
         -ms-touch-action: auto;
         touch-action: auto;
         overflow: visible !important;

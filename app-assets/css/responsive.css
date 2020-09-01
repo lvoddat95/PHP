@@ -56,14 +56,14 @@
         -ms-display: flex;
         display: flex;
     }
-    .page-content{
+    .page-content:not(.login-page){
         display: block;
         background: transparent;
     }
-    .content-wrapper{
+    .page-content:not(.login-page) .content-wrapper{
         border-radius: 0px;
     }
-    .content-wrapper::before {
+    .page-content:not(.login-page) .content-wrapper::before {
         position: absolute;
         left: 0;
         right: 0;
@@ -77,7 +77,7 @@
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
     }
-    .content-wrapper::after{
+    .page-content:not(.login-page) .content-wrapper::after{
         position: absolute;
         left: 0;
         right: 0;

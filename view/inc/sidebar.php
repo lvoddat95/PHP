@@ -61,9 +61,9 @@
                                         <span class="menu-title">Bồi thường</span>
                                     </a>
                                     <ul class="nav nav-group-sub">
-                                        <!-- <li><a href="<?php echo HTTP_PATH .'view/claim/danh-sach-don.php'; ?>" class="nav-link"><span class="menu-title">Danh sách đơn</span></a></li> -->
-                                        <li><a href="<?php echo HTTP_PATH .'view/claim/xem-don.php'; ?>" class="nav-link"><span class="menu-title">Xem đơn</span></a></li>
-                                        <li><a href="<?php echo HTTP_PATH .'view/claim/nhap-don.php'; ?>" class="nav-link"><span class="menu-title">Nhập đơn</span></a></li>
+                                        <li><a href="<?php echo HTTP_PATH .'view/claim/danh-sach-ho-so.php'; ?>" class="nav-link"><span class="menu-title">Danh sách hồ sơ</span></a></li>
+                                        <li><a href="<?php echo HTTP_PATH .'view/claim/xem-ho-so.php'; ?>" class="nav-link"><span class="menu-title">Xem hồ sơ</span></a></li>
+                                        <li><a href="<?php echo HTTP_PATH .'view/claim/nhap-ho-so.php'; ?>" class="nav-link"><span class="menu-title">Nhập hồ sơ</span></a></li>
                                     </ul>
                                 </li>
 

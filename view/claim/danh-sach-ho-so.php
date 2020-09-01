@@ -22,7 +22,7 @@
                             <div class="breadcrumb">
                                 <a href="<?php echo HTTP_PATH; ?>" class="breadcrumb-item"><i class="fad fa-home mr-1"></i>Trang chủ</a>
                                 <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item">F02 - Bảo hiểm ô tô</a>
-                               <span class="breadcrumb-item active">Danh sách đơn bảo hiểm</span>
+                               <span class="breadcrumb-item active">Danh sách hồ sơ bồi thường</span>
                             </div>
                             <div class="d-md-none logo-mobile">
                                 <a href="<?php echo HTTP_PATH; ?>" class="logo-text">
@@ -38,11 +38,11 @@
 
                     <div class="page-title">
                         <div class="p-title">
-                            <h1 class="font-weight-semibold font-size-m"><i class="icon-stack-text mr-2"></i>Danh sách đơn bảo hiểm</h1>
+                            <h1 class="font-weight-semibold font-size-m"><i class="icon-stack-text mr-2"></i>Danh sách hồ sơ bồi thường</h1>
                         </div>
                         <div class="p-button">
-                            <a href="<?php echo HTTP_PATH .'view/pages/ban-chao/danh-sach-ban-chao.php'; ?>" class="btn btn-labeled btn-labeled-left mr-1"><b><i class="icon-list3"></i></b> Danh sách bản chào</a>
-                            <a href="<?php echo HTTP_PATH .'view/pages/nhap-don.php'; ?>" class="btn bg-primary btn-labeled btn-labeled-left mr-1"><b><i class="icon-plus2"></i></b> Thêm đơn BH</a>
+                            <a href="<?php echo HTTP_PATH .'view/pages/ban-chao/danh-sach-ban-chao.php'; ?>" class="btn btn-labeled btn-labeled-left mr-1"><b><i class="icon-alert"></i></b> Thông báo tổn thất</a>
+                            <a href="<?php echo HTTP_PATH .'view/claim/nhap-ho-so.php'; ?>" class="btn bg-primary btn-labeled btn-labeled-left m"><b><i class="icon-plus2 r-1"></i></b> Thêm mới</a>
                         </div>
                     </div>
                     
@@ -51,66 +51,11 @@
                     
                         <div class="row">
                             <div class="col-lg-12">
-                                <div class="card">
-                                    <div class="card-header header-elements-inline">
-                                        <p class="card-title font-size-s">Biểu đồ doanh thu</p>
-                                        <div class="header-elements">
-                                            <div class="list-icons">
-                                                <a class="list-icons-item" data-action="collapse"></a>
-                                                <a class="list-icons-item" data-action="remove"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body ">
-                                        <div class="bieu-do d-flex align-items-start justify-content-between flex-wrap">
-                                            <div class="d-flex align-items-center mb-3 mb-md-0">
-                                                <div id="tickets-status"></div>
-                                                <div class="ml-3">
-                                                    <h5 class="font-weight-semibold mb-0 font-size-s">14,327 (đơn)<span class="text-success font-size-sm font-weight-normal"><i class="icon-arrow-up12"></i> (+2.9%)</span></h5>
-                                                    <span class="badge badge-mark border-success mr-1"></span> <span class="text-muted font-size-xxs">Đơn bảo hiểm mới</span>
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-center mb-3 mb-md-0">
-                                                <a href="#" class="btn bg-transparent border-indigo-400 text-indigo-400 rounded-round border-2 btn-icon">
-                                                    <i class="icon-alarm-add"></i>
-                                                </a>
-                                                <div class="ml-3">
-                                                    <h5 class="font-weight-semibold mb-0 font-size-s">1,132 (đơn)</h5>
-                                                    <span class="text-muted font-size-xxs">Bồi thường</span>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="d-flex align-items-center mb-3 mb-sm-0">
-                                                <div id="campaign-status-pie"></div>
-                                                <div class="ml-3">
-                                                    <h5 class="font-weight-semibold mb-0 font-size-s">2,458 <span class="text-danger font-size-sm font-weight-normal"><i class="icon-arrow-down12"></i> (-4.9%)</span></h5>
-                                                    <span class="badge badge-mark border-danger mr-1"></span> <span class="text-muted font-size-xxs">Tháng 6</span>
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-center mb-3 mb-md-0">
-                                                <a href="#" class="btn bg-transparent border-indigo-400 text-indigo-400 rounded-round border-2 btn-icon">
-                                                    <i class="icon-spinner11"></i>
-                                                </a>
-                                                <div class="ml-3">
-                                                    <h5 class="font-weight-semibold mb-0 font-size-s">1,625 (đơn)</h5>
-                                                    <span class="text-muted font-size-xxs">Tái bảo hiểm</span>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <a href="#" class="btn bg-teal-400"><i class="icon-statistics mr-2"></i> In báo cáo</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                                 <div class="card card-search">
                                     <div class="card-header header-elements-inline">
                                         <p class="card-title font-size-s">
                                             <i style="width: 26px;height: 26px;line-height: 26px;font-size: 12px;" class="icon-search4 d-flex-inline align-items-center justify-content-center rounded-round bg-color mr-2"></i> 
-                                            Tìm kiếm đơn bảo hiểm
+                                            Tìm kiếm hồ sơ
                                         </p>
                                         <div class="header-elements">
                                             <div class="list-icons">
@@ -155,7 +100,7 @@
                                             </div>
                                             <div class="col-md-3 col-sm-4 col-6 ">
                                                 <div class="form-group ">
-                                                    <label class="font-weight-semibold">Cán bộ:</label>
+                                                    <label class="font-weight-semibold">Cán bộ bồi thường:</label>
                                                     <div class="form-group-select">
                                                         <div class="input-group">
                                                             <span class="input-group-prepend">
@@ -187,7 +132,18 @@
 
                                             <div class="col-md-3 col-sm-4 col-6">
                                                 <div class="form-group">
-                                                    <label class="font-weight-semibold">Số đơn:</label>
+                                                    <label class="font-weight-semibold">Số hồ sơ:</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-prepend">
+                                                            <span class="input-group-text"><i class="far fa-id-card"></i></span>
+                                                        </span>
+                                                        <input type="text" class="form-control" name="" placeholder="Nhập số hồ sơ...">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-4 col-6">
+                                                <div class="form-group">
+                                                    <label class="font-weight-semibold">Số đơn bảo hiểm:</label>
                                                     <div class="input-group">
                                                         <span class="input-group-prepend">
                                                             <span class="input-group-text"><i class="far fa-id-card"></i></span>
@@ -198,7 +154,7 @@
                                             </div>
                                             <div class="col-md-3 col-sm-4 col-6">
                                                 <div class="form-group">
-                                                    <label class="font-weight-semibold">Ngày cấp từ:</label>
+                                                    <label class="font-weight-semibold">Ngày tổn thất:</label>
                                                     <div class="input-group">
                                                         <span class="input-group-prepend">
                                                             <span class="input-group-text"><i class="far fa-calendar"></i></span>
@@ -209,12 +165,28 @@
                                             </div>
                                             <div class="col-md-3 col-sm-4 col-6">
                                                 <div class="form-group">
-                                                    <label class="font-weight-semibold">Đến ngày:</label>
+                                                    <label class="font-weight-semibold">Ngày TB tổn thất:</label>
                                                     <div class="input-group">
                                                         <span class="input-group-prepend">
                                                             <span class="input-group-text"><i class="far fa-calendar"></i></span>
                                                         </span>
                                                         <input type="text" class="form-control datepicker input-date" name="" placeholder="dd/mm/yyyy">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-4 col-6">
+                                                <div class="form-group ">
+                                                    <label class="font-weight-semibold">Tìm HSBT tại:</label>
+                                                    <div class="form-group-select">
+                                                        <div class="input-group">
+                                                            <span class="input-group-prepend">
+                                                                <span class="input-group-text"><i class="far fa-check-circle"></i></span>
+                                                            </span>
+                                                            <select class="form-control" select2>
+                                                                <option value="">Đơn vị</option>
+                                                                <option value="">Đơn vị giám định bồi thường hộ</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -227,19 +199,16 @@
                                                                 <span class="input-group-text"><i class="far fa-check-circle"></i></span>
                                                             </span>
                                                             <select class="form-control" select2>
-                                                                <option value="moi-them">Mới thêm (20)</option>
-                                                                <option value="cho-duyet">Chờ duyệt(20)</option>
-                                                                <option value="tu-choi">Từ chối (18)</option>
-                                                                <option value="chap-nhan">Chấp nhận (30)</option>
-                                                                <option value="tbh-tu-choi">TBH Từ chối (28)</option>
+                                                                <option value="dang-xu-li">Đang xử lý</option>
+                                                                <option value="da-dong">Đã đóng</option>
                                                             </select>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-
-                                            <div class="col-md-12 col-sm-4 col-6">
-                                                <div class="d-flex justify-content-end ">
+                                            <div class="col-md-3 col-sm-4 col-6">
+                                                <div class="form-group ">
+                                                    <label class="d-block">&nbsp;</label>
                                                     <div class="d-inline-block">
                                                         <button type="submit" style="letter-spacing: 1px;" class="btn text-uppercase w-100 bg-orange"><i class="icon-search4 mr-2"></i> Tìm kiếm </button>
                                                     </div>
@@ -253,7 +222,7 @@
                                 <!-- Danh sách đơn -->
                                 <div class="card">
                                     <div class="card-header header-elements-inline header-button ">
-                                        <p class="card-title font-size-s">Danh sách đơn bảo hiểm</p>
+                                        <p class="card-title font-size-s">Danh sách hồ sơ</p>
                                         <div class="header-elements p-button">
                                             <a href="#" data-toggle="modal" data-target="#trinh_duyet_nhieu_don" class="btn btn-labeled btn-labeled-left mr-2"><b><i class="icon-file-check"></i></b> Trình duyệt</a>
                                             <a href="" class="btn btn-labeled btn-labeled-left mr-2"><b><i class="icon-trash"></i></b> Xóa</a>
@@ -270,54 +239,33 @@
                                         </div>
                                     </div>
                                     <div class="card-body">
-                                        <table class="table datatable" 
+                                        <table class="table table-bordered datatable" 
                                             data-paging="true"
                                             data-info="true"
                                             data-ordering="true"
                                             data-searching="false"
-                                            data-page-length="20">
+                                            data-page-length="19">
                                             <thead class="thead-light">
                                                 <tr>
-                                                    <th data-orderable="false" class="text-center"><input type="checkbox" id="input-chk-all"></th>
-                                                    <th>Số đơn</th>
-                                                    <th>Ngày cấp</th>
-                                                    <th>Tên khách hàng</td>
-                                                    <th>Số tiền BH</th>
-                                                    <th>Phí bảo hiểm</th>
-                                                    <th>Trạng thái</th>
-                                                    <th data-orderable="false" class="text-center all">#</th>
+                                                    <th data-orderable="false" class="text-center w1p"><input type="checkbox" id="input-chk-all"></th>
+                                                    <th>Số hồ sơ</th>
+                                                    <th>Số đơn BH</th>
+                                                    <th>Tên khách hàng</th>
+                                                    <th class="w10p">Biển số xe</th>
+                                                    <th class="w10p">Ngày TT</th>
+                                                    <th class="w10p">Ngày TBTT</th>
+                                                    <th data-orderable="false" class="text-center all w1p">#</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td align="center"><input type="checkbox" class="input-chk"></td><td>042000910/F02.AD19/0099350</td>
-                                                    <td>26/05/2020</td>
-                                                    <td>Vũ Huy Anh</td>
-                                                    <td>11,820,000 VNĐ</td>
-                                                    <td>200,000 VNĐ</td>
-                                                    <td><span class="badge badge-success">Mới thêm</span></td>
-                                                    <td class="text-center">
-                                                        <div class="list-icons">
-                                                            <div class="dropdown">
-                                                                <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
-                                                                <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
-                                                                    <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                    
-                                                <tr>
-                                                    <td align="center"><input type="checkbox" class="input-chk"></td><td>61802227/F02.BB19/0102676</td>
-                                                    <td>27/05/2020</td>
-                                                    <td>CTCP Thiết Bị Và Thang Máy Messi</td>
-                                                    <td>11,820,000 VNĐ</td>
-                                                    <td>200,000 VNĐ</td>
-                                                    <td><span class="badge badge-dark">Từ chối</span></td>
+                                                    <td align="center"><input type="checkbox" class="input-chk"></td>
+                                                    <td>BT7692000057.F02</td>
+                                                    <td>7692000974/F02.E01.BB19/0118621</td>
+                                                    <td>ĐỖ TRỌNG TUẤN</td>
+                                                    <td>22A11699</td>
+                                                    <td>28/08/2020</td>
+                                                    <td>29/08/2020</td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -333,12 +281,13 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td align="center"><input type="checkbox" class="input-chk"></td><td>162003638/F02.BB19/0102394</td>
-                                                    <td>22/05/2020</td>
-                                                    <td>Công Ty CP DV Suất Ăn Hàng Không VN</td>
-                                                    <td>11,820,000 VNĐ</td>
-                                                    <td>200,000 VNĐ</td>
-                                                    <td><span class="badge badge-info">Chờ duyệt</span></td>
+                                                    <td align="center"><input type="checkbox" class="input-chk"></td>
+                                                    <td>BT7692000056.F02</td>
+                                                    <td>7692000544/F02.BB19/0118666</td>
+                                                    <td>TẠ ĐỨC VINH</td>
+                                                    <td>22A11699</td>
+                                                    <td>29/08/2020</td>
+                                                    <td>29/08/2020</td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -354,12 +303,13 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td align="center"><input type="checkbox" class="input-chk"></td><td>042000910/F02.AD19/0099350</td>
-                                                    <td>25/05/2020</td>
-                                                    <td>Trần Văn Luyện</td>
-                                                    <td>11,820,000 VNĐ</td>
-                                                    <td>200,000 VNĐ</td>
-                                                    <td><span class="badge badge-primary">Chấp nhận</span></td>
+                                                    <td align="center"><input type="checkbox" class="input-chk"></td>
+                                                    <td>BT7692000055.F02</td>
+                                                    <td>7692001669/F02.BB19/0127836</td>
+                                                    <td>NGUYỄN QUANG ĐẠO</td>
+                                                    <td>22A11699</td>
+                                                    <td>25/08/2020</td>
+                                                    <td>26/08/2020</td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -375,34 +325,13 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td align="center"><input type="checkbox" class="input-chk"></td><td>162003638/F02.BB19/0102393</td>
-                                                    <td>25/05/2020</td>
-                                                    <td>Công Ty TNHH Thành An - Hà Nội</td>
-                                                    <td>11,820,000 VNĐ</td>
-                                                    <td>200,000 VNĐ</td>
-                                                    <td><span class="badge badge-danger ">TBH Từ chối</span></td>
-                                                    <td class="text-center">
-                                                        <div class="list-icons">
-                                                            <div class="dropdown">
-                                                                <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
-                                                                <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
-                                                                    <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                
-                                                <tr>
-                                                    <td align="center"><input type="checkbox" class="input-chk"></td><td>162003644/F02.AD19/0142538</td>
-                                                    <td>16/05/2020</td>
-                                                    <td>CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ DU LỊCH ADV PRO</td>
-                                                    <td>11,820,000 VNĐ</td>
-                                                    <td>200,000 VNĐ</td>
-                                                    <td><span class="badge badge-primary">Chấp nhận</span></td>
+                                                    <td align="center"><input type="checkbox" class="input-chk"></td>
+                                                    <td>BT7692000054.F02</td>
+                                                    <td>7692001525/F02.BB19/0127949</td>
+                                                    <td>HOÀI VĂN NGUYÊN</td>
+                                                    <td>22A11699</td>
+                                                    <td>26/08/2020</td>
+                                                    <td>27/08/2020</td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -418,12 +347,13 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td align="center"><input type="checkbox" class="input-chk"></td><td>162003645/F02.BB19/0102671</td>
-                                                    <td>26/05/2020</td>
-                                                    <td>Phạm Thị Thu Huyền</td>
-                                                    <td>11,820,000 VNĐ</td>
-                                                    <td>200,000 VNĐ</td>
-                                                    <td><span class="badge badge-danger ">TBH Từ chối</span></td>
+                                                    <td align="center"><input type="checkbox" class="input-chk"></td>
+                                                    <td>BT7692000053.F02</td>
+                                                    <td>7692000250/F02.BB19/0118527</td>
+                                                    <td>TRẦN THỊ PHƯƠNG LIÊN</td>
+                                                    <td>22A11699</td>
+                                                    <td>25/08/2020</td>
+                                                    <td>26/08/2020</td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -439,12 +369,13 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td align="center"><input type="checkbox" class="input-chk"></td><td>162003627/F02.AD20/0062252</td>
-                                                    <td>18/05/2020</td>
-                                                    <td>Nguyễn Hoàng Thị Bé</td>
-                                                    <td>11,820,000 VNĐ</td>
-                                                    <td>200,000 VNĐ</td>
-                                                    <td><span class="badge badge-success">Mới thêm</span></td>
+                                                    <td align="center"><input type="checkbox" class="input-chk"></td>
+                                                    <td>BT7692000052.F02</td>
+                                                    <td>7692001592/F02.BB19/0118478</td>
+                                                    <td>LÊ ANH TÚ</td>
+                                                    <td>22A11699</td>
+                                                    <td>26/08/2020</td>
+                                                    <td>27/08/2020</td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -460,12 +391,13 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td align="center"><input type="checkbox" class="input-chk"></td><td>162000318/E02.12</td>
-                                                    <td>26/05/2020</td>
-                                                    <td>CÔNG TY CHẾ BIẾN THAN QUẢNG NINH-TKV</td>
-                                                    <td>11,820,000 VNĐ</td>
-                                                    <td>200,000 VNĐ</td>
-                                                    <td><span class="badge badge-danger ">TBH Từ chối</span></td>
+                                                    <td align="center"><input type="checkbox" class="input-chk"></td>
+                                                    <td>BT7692000051.F02</td>
+                                                    <td>7692001519/F02.BB19/0127766</td>
+                                                    <td>TRẦN BÌNH AN</td>
+                                                    <td>22A11699</td>
+                                                    <td>23/08/2020</td>
+                                                    <td>24/08/2020</td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -481,12 +413,13 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td align="center"><input type="checkbox" class="input-chk"></td><td>162003639/F02.AD20/0062459</td>
-                                                    <td>16/05/2020</td>
-                                                    <td>Đào Nguyên Tùng</td>
-                                                    <td>11,820,000 VNĐ</td>
-                                                    <td>200,000 VNĐ</td>
-                                                    <td><span class="badge badge-success">Mới thêm</span></td>
+                                                    <td align="center"><input type="checkbox" class="input-chk"></td>
+                                                    <td>BT7692000050.F02</td>
+                                                    <td>7692000812/F02.OTO19/0000905</td>
+                                                    <td>NGUYỄN NGỌC TÚ</td>
+                                                    <td>22A11699</td>
+                                                    <td>23/08/2020</td>
+                                                    <td>24/08/2020</td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -502,12 +435,13 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td align="center"><input type="checkbox" class="input-chk"></td><td>162003637/F02.AD20/0062458</td>
-                                                    <td>16/05/2020</td>
-                                                    <td>Trần Anh Dũng</td>
-                                                    <td>11,820,000 VNĐ</td>
-                                                    <td>200,000 VNĐ</td>
-                                                    <td><span class="badge badge-danger ">TBH Từ chối</span></td>
+                                                    <td align="center"><input type="checkbox" class="input-chk"></td>
+                                                    <td>BT7692000048.F02</td>
+                                                    <td>7692001419/F02.OTO19/0001205</td>
+                                                    <td>Lê Anh Duy</td>
+                                                    <td>22A11699</td>
+                                                    <td>22/08/2020</td>
+                                                    <td>22/08/2020</td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -523,12 +457,13 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td align="center"><input type="checkbox" class="input-chk"></td><td>162003602/F02.BB19/0102388</td>
-                                                    <td>26/05/2020</td>
-                                                    <td>Công Ty CP DV Và Vận Chuyển Ngọc Cường</td>
-                                                    <td>11,820,000 VNĐ</td>
-                                                    <td>200,000 VNĐ</td>
-                                                    <td><span class="badge badge-primary">Chấp nhận</span></td>
+                                                    <td align="center"><input type="checkbox" class="input-chk"></td>
+                                                    <td>BT7692000047.F02</td>
+                                                    <td>7692001624/F02.BB19/0127966</td>
+                                                    <td>NGUYỄN NGỌC TRÃI</td>
+                                                    <td>22A11699</td>
+                                                    <td>22/08/2020</td>
+                                                    <td>22/08/2020</td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -544,12 +479,13 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td align="center"><input type="checkbox" class="input-chk"></td><td>162003585/F02.BB19/0102389</td>
-                                                    <td>26/05/2020</td>
-                                                    <td>Công Ty Cổ Phần Tập Đoàn Sơn Spentes Việt Nam</td>
-                                                    <td>11,820,000 VNĐ</td>
-                                                    <td>200,000 VNĐ</td>
-                                                    <td><span class="badge badge-danger ">TBH Từ chối</span></td>
+                                                    <td align="center"><input type="checkbox" class="input-chk"></td>
+                                                    <td>BT7692000046.F02</td>
+                                                    <td>7692001244/F02.BB19/0118633</td>
+                                                    <td>ĐINH XUÂN TUYẾN</td>
+                                                    <td>22A11699</td>
+                                                    <td>16/08/2020</td>
+                                                    <td>16/08/2020</td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -565,12 +501,13 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td align="center"><input type="checkbox" class="input-chk"></td><td>162000357/E02</td>
-                                                    <td>24/05/2020</td>
-                                                    <td>Chi Nhánh Tập Đoàn Công Nghiệp Than - Khoáng Sản Việt Nam Công Ty Kho Vận Và Cảng Cẩm Phả - VINACOMIN </td>
-                                                    <td>11,820,000 VNĐ</td>
-                                                    <td>200,000 VNĐ</td>
-                                                    <td><span class="badge badge-primary">Chấp nhận</span></td>
+                                                    <td align="center"><input type="checkbox" class="input-chk"></td>
+                                                    <td>BT7692000045.F02</td>
+                                                    <td>7692000678/F02.BB19/0127906</td>
+                                                    <td>NGUYỄN ĐỨC ĐIỀU</td>
+                                                    <td>22A11699</td>
+                                                    <td>19/08/2020</td>
+                                                    <td>19/08/2020</td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -586,12 +523,13 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td align="center"><input type="checkbox" class="input-chk"></td><td>162000028/C01</td>
-                                                    <td>20/05/2020</td>
-                                                    <td>BAN QUẢN LÝ DỰ ÁN CÔNG TRÌNH THỦY LỢI NỘI ĐỒNG</td>
-                                                    <td>11,820,000 VNĐ</td>
-                                                    <td>200,000 VNĐ</td>
-                                                    <td><span class="badge badge-dark">Từ chối</span></td>
+                                                    <td align="center"><input type="checkbox" class="input-chk"></td>
+                                                    <td>BT7692000044.F02</td>
+                                                    <td>7692000955/F02.AD20/0156996</td>
+                                                    <td>HOÀNG VĂN VỸ</td>
+                                                    <td>22A11699</td>
+                                                    <td>18/08/2020</td>
+                                                    <td>18/08/2020</td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -607,12 +545,13 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td align="center"><input type="checkbox" class="input-chk"></td><td>162000024/C01</td>
-                                                    <td>22/05/2020 </td>
-                                                    <td>CÔNG TY TNHH MỘT THÀNH VIÊN KHAI THÁC CÔNG TRÌNH THUỶ LỢI BẮC HƯNG HẢI</td>
-                                                    <td>11,820,000 VNĐ</td>
-                                                    <td>200,000 VNĐ</td>
-                                                    <td><span class="badge badge-info">Chờ duyệt</span></td>
+                                                    <td align="center"><input type="checkbox" class="input-chk"></td>
+                                                    <td>BT7692000043.F02</td>
+                                                    <td>7692000491/F02.BB19/0118500</td>
+                                                    <td>NGUYỄN THỊ THANH NGA</td>
+                                                    <td>22A11699</td>
+                                                    <td>17/08/2020</td>
+                                                    <td>18/08/2020</td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -628,12 +567,13 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td align="center"><input type="checkbox" class="input-chk"></td><td>162000030/C01</td>
-                                                    <td> 22/05/2020</td>
-                                                    <td>ĐOÀN KINH TẾ - QUỐC PHÒNG 327</td>
-                                                    <td>11,820,000 VNĐ</td>
-                                                    <td>200,000 VNĐ</td>
-                                                    <td><span class="badge badge-danger ">TBH Từ chối</span></td>
+                                                    <td align="center"><input type="checkbox" class="input-chk"></td>
+                                                    <td>BT7692000042.F02</td>
+                                                    <td>7692001384/F02.BB19/0127910</td>
+                                                    <td>NGUYỄN VĂN TÁM</td>
+                                                    <td>22A11699</td>
+                                                    <td>17/08/2020</td>
+                                                    <td>18/08/2020</td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -649,12 +589,13 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td align="center"><input type="checkbox" class="input-chk"></td><td>162000031/C01 </td>
-                                                    <td>22/04/2020 </td>
-                                                    <td>BAN QUẢN LÝ DỰ ÁN DƯỜNG DỒ CHÍ MINH </td>
-                                                    <td>11,820,000 VNĐ</td>
-                                                    <td>200,000 VNĐ</td>
-                                                    <td><span class="badge badge-info">Chờ duyệt</span></td>
+                                                    <td align="center"><input type="checkbox" class="input-chk"></td>
+                                                    <td>BT7692000041.F02</td>
+                                                    <td>7692000541/F02.BB19/0118668</td>
+                                                    <td>TRẦN DOÃN QUẢNG</td>
+                                                    <td>22A11699</td>
+                                                    <td>15/08/2020</td>
+                                                    <td>17/08/2020</td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -670,12 +611,13 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td align="center"><input type="checkbox" class="input-chk"></td><td>162003248/F02.BB19/0082666</td>
-                                                    <td>20/05/2020</td>
-                                                    <td>CTY TNHH THÀNH CÔNG</td>
-                                                    <td>11,820,000 VNĐ</td>
-                                                    <td>200,000 VNĐ</td>
-                                                    <td><span class="badge badge-info">Chờ duyệt</span></td>
+                                                    <td align="center"><input type="checkbox" class="input-chk"></td>
+                                                    <td>BT7692000040.F02</td>
+                                                    <td>7692000700/F02.OTO19/0000882</td>
+                                                    <td>Nguyễn Phúc Duy</td>
+                                                    <td>22A11699</td>
+                                                    <td>15/08/2020</td>
+                                                    <td>16/08/2020</td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -691,12 +633,13 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td align="center"><input type="checkbox" class="input-chk"></td><td>162003380/F02.BB19/0102290 </td>
-                                                    <td>21/05/2020 </td>
-                                                    <td>Công Ty Cố Phần Bánh Mứt Kẹo Hoàng Minh </td>
-                                                    <td>11,820,000 VNĐ</td>
-                                                    <td>200,000 VNĐ</td>
-                                                    <td><span class="badge badge-dark">Từ chối</span></td>
+                                                    <td align="center"><input type="checkbox" class="input-chk"></td>
+                                                    <td>BT7692000039.F02</td>
+                                                    <td>7692001247/F02.BB19/0127764</td>
+                                                    <td>TRIỆU VĂN MINH</td>
+                                                    <td>22A11699</td>
+                                                    <td>15/08/2020</td>
+                                                    <td>15/08/2020</td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -712,12 +655,13 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td align="center"><input type="checkbox" class="input-chk"></td><td>162003248/F02.BB19/0082665</td>
-                                                    <td>20/05/2020 </td>
-                                                    <td>CTY TNHH THÀNH CÔNG</td>
-                                                    <td>11,820,000 VNĐ</td>
-                                                    <td>200,000 VNĐ</td>
-                                                    <td><span class="badge badge-success">Mới thêm</span></td>
+                                                    <td align="center"><input type="checkbox" class="input-chk"></td>
+                                                    <td>BT7692000038.F02</td>
+                                                    <td>7692000379/F02.BB19/0118491</td>
+                                                    <td>NGÔ VĂN TIẾN</td>
+                                                    <td>22A11699</td>
+                                                    <td>13/08/2020</td>
+                                                    <td>14/08/2020</td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -733,54 +677,13 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td align="center"><input type="checkbox" class="input-chk"></td><td>   162003369/F02.BB19/0102314</td>
-                                                    <td>21/05/2020 </td>
-                                                    <td>Nguyễn Quang Anh    </td>
-                                                    <td>11,820,000 VNĐ</td>
-                                                    <td>200,000 VNĐ</td>
-                                                    <td><span class="badge badge-success">Mới thêm</span></td>
-                                                    <td class="text-center">
-                                                        <div class="list-icons">
-                                                            <div class="dropdown">
-                                                                <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
-                                                                <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
-                                                                    <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center"><input type="checkbox" class="input-chk"></td><td>162003457/F02.BB19/0102368 </td>
-                                                    <td>22/05/2020</td>
-                                                    <td>Công Ty Unid Việt Nam</td>
-                                                    <td>11,820,000 VNĐ</td>
-                                                    <td>200,000 VNĐ</td>
-                                                    <td><span class="badge badge-danger ">TBH Từ chối</span></td>
-                                                    <td class="text-center">
-                                                        <div class="list-icons">
-                                                            <div class="dropdown">
-                                                                <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
-                                                                <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
-                                                                    <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center"><input type="checkbox" class="input-chk"></td><td>162000022/C01  </td>
-                                                    <td>13/05/2020 </td>
-                                                    <td>BAN QUẢN LÝ DỰ ÁN PHÁT TRIỂN ĐIỆN LỰC HÀ NỘI - TỔNG CÔNG TY ĐIỆN LỰC TP HÀ NỘI </td>
-                                                    <td>11,820,000 VNĐ</td>
-                                                    <td>200,000 VNĐ</td>
-                                                    <td><span class="badge badge-success">Mới thêm</span></td>
+                                                    <td align="center"><input type="checkbox" class="input-chk"></td>
+                                                    <td>BT7692000037.F02</td>
+                                                    <td>7692000164/F02.BB19/0118561</td>
+                                                    <td>PHẠM CHÍ KHANH</td>
+                                                    <td>22A11699</td>
+                                                    <td>13/08/2020</td>
+                                                    <td>13/08/2020</td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -797,6 +700,7 @@
                                                 </tr>
                                             </tbody>
                                         </table>
+
                                     </div>
                                 </div>
                                 <!-- End - Danh Sách Đơn -->
