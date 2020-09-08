@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-3">
         <div class="form-group">
             <label>Tình trạng hồ sơ: <span class="text-danger">*</span></label>
             <select select2 disabled>
@@ -11,30 +11,34 @@
 </div>
 
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-3">
         <div class="form-group">
             <label>Ngày tổn thất: <span class="text-danger">*</span></label>
             <input type="text" class="form-control input-date datepicker" placeholder="dd/mm/yyyy" value="05/08/2020">
         </div>
     </div>
-    <div class="col-md-4">
-        <div class="form-group">
-            <label>Ngày TBTT: 
-                <span class="text-danger">*</span> 
-                <a href="#" data-tooltip="tipsy" original-title="Ngày thông báo tổn thất" data-position="top"><i class="icon-info22"></i></a>
-            </label>
-            <input type="text" class="form-control input-date datepicker" placeholder="dd/mm/yyyy" value="06/08/2020">
+    <div class="col-md-12">   
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Ngày TBTT: 
+                        <span class="text-danger">*</span> 
+                        <a href="#" data-tooltip="tipsy" original-title="Ngày thông báo tổn thất" data-position="top"><i class="icon-info22"></i></a>
+                    </label>
+                    <input type="text" class="form-control input-date datepicker" placeholder="dd/mm/yyyy" value="06/08/2020">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Thời gian TBTT: 
+                        <span class="text-danger">*</span> 
+                        <a href="#" data-tooltip="tipsy" original-title="Thời gian thông báo tổn thất" data-position="top"><i class="icon-info22"></i></a>
+                    </label>
+                    <input type="text" class="form-control input-time" placeholder="hh:ss" value="09:00">
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="col-md-4">
-        <div class="form-group">
-            <label>Thời gian TBTT: 
-                <span class="text-danger">*</span> 
-                <a href="#" data-tooltip="tipsy" original-title="Thời gian thông báo tổn thất" data-position="top"><i class="icon-info22"></i></a>
-            </label>
-            <input type="text" class="form-control input-time" placeholder="hh:ss" value="09:00">
-        </div>
-    </div>
+    </div> 
 </div>
 
 <div class="row">
@@ -307,7 +311,7 @@
 
 <div class="border-group box-shadow form-group mt-2 mb-2">
     <div class="mb-2">
-        <span class="text-primary-800 text-uppercase font-weight-bold"><i class="icon-info22 mr-1"></i>Phạm vi bảo hiểm (section)</span>
+        <span class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Phạm vi bảo hiểm (section)</span>
     </div>
     <div class="">
         <table class="table datatable" data-paging="false" data-info="false" data-ordering="false" data-searching="false">
@@ -346,7 +350,7 @@
 
 <div class="border-group box-shadow form-group mt-2 mb-2">
     <div class="mb-2">
-        <span class="text-primary-800 text-uppercase font-weight-bold"><i class="icon-info22 mr-1"></i>Cấu trúc tái bảo hiểm</span>
+        <span class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Cấu trúc tái bảo hiểm</span>
     </div>
     <div class="">
         <table class="table datatable" data-paging="false" data-info="false" data-ordering="false" data-searching="false">
@@ -408,7 +412,7 @@
 
 <div class="border-group box-shadow form-group mt-2 mb-2">
     <div class="d-flex align-items-center justify-content-between mb-2">
-        <span class="text-primary-800 text-uppercase font-weight-bold"><i class="icon-info22 mr-1"></i>Quá trình giải quyết khiếu nại bồi thường</span>
+        <span class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Quá trình giải quyết khiếu nại bồi thường</span>
         <div class="p-button">
             <a href="javascript:;" class="btn bg-danger"><i class="far fa-minus"></i> Xoá</a>
             <a href="javascript:;" class="btn bg-success" data-toggle="modal" data-target="#knbt"><i class="far fa-plus"></i> Thêm</a>

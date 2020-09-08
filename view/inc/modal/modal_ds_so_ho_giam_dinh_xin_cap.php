@@ -47,14 +47,16 @@
                             data-ordering="false"
                             data-searching="false">
                             <thead class="thead-light">
-                                <th width="w1p" data-orderable="false" class="text-center">#</th>
-                                <th>Ngày lấy</th>
-                                <th>Số hồ sơ</th>
-                                <th>Số đơn BH</th>
-                                <th>Khách hàng</th>
-                                <th>Trạng thái</th>
-                                <th>Hạn dùng</th>
-                                <th>Đề nghị</th>
+                                <tr>
+                                  <th width="w1p" data-orderable="false" class="text-center">#</th>
+                                  <th>Ngày lấy</th>
+                                  <th>Số hồ sơ</th>
+                                  <th>Số đơn BH</th>
+                                  <th>Khách hàng</th>
+                                  <th>Trạng thái</th>
+                                  <th>Hạn dùng</th>
+                                  <th>Đề nghị</th>
+                                </tr>
                             </thead>
                             <tbody>
                                <tr>

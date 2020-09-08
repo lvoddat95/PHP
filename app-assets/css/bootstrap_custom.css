@@ -791,7 +791,7 @@ select[multiple] option+option, select[size] option+option {
 	margin-bottom: 0;
 }
 
-@media (max-width: 767.98px) {
+/*@media (max-width: 767.98px) {
 	.form-group [class*="col-md-"]:not([class*=col-form-label])+[class*="col-md-"] {
 		margin-top: 15px;
 	}
@@ -829,7 +829,7 @@ select[multiple] option+option, select[size] option+option {
 		text-align: left;
 	}
 }
-
+*/
 .form-check:not(.form-check-inline) {
 	margin-bottom: 0.5rem;
 }
@@ -4213,7 +4213,12 @@ a.badge[class*=bg-]:not(.bg-transparent):not(.bg-white):not(.bg-light):hover, a.
 	    inset 0 -5px 5px -5px rgb(0 0 0 / 10%);
 }
 .modal-content {
+	border: none;
 	border-radius: 6px;
+}
+.modal-dialog {
+    border-radius: 6px;
+    overflow: hidden;
 }
 .modal-footer {
 	border: 0;

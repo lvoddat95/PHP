@@ -39,15 +39,16 @@
                         </div>
                         <div class="p-button">
                             <a href="" class="btn mr-1"><i class="fa fa-reply mr-1"></i> Quay lại</a>
-                            <a href="javascript:;" class="btn mr-1"><i class="far fa-copy mr-1"></i> Lưu & Copy</a>
-                            <a href="javascript:;" class="btn bg-primary"><i class="fa fa-save mr-1"></i> Lưu</a>
+                            <a href="" class="btn mr-1"><i class="far fa-copy mr-1"></i> Lưu & Copy</a>
+                            <a href="" class="btn bg-primary"><i class="fa fa-save mr-1"></i> Lưu</a>
                         </div>
                     </div>
 
                     <!-- Content-block -->
-                    <div class="content-block card">
+                    <div class="content-block card card-body">
 
-                        
+
+
                     
                     </div>
                     <!-- /Content-block -->

@@ -18,9 +18,11 @@
                                     data-searching="false"
                                 >
                                     <thead class="thead-light">
-                                        <th width="30px"><input type="checkbox" value=""></th>
-                                        <th width="30%">Mã điều khoản</th>
-                                        <th>Tên điều khoản</th>
+                                        <tr>
+                                            <th width="30px"><input type="checkbox" value=""></th>
+                                            <th width="30%">Mã điều khoản</th>
+                                            <th>Tên điều khoản</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
                                         <tr>

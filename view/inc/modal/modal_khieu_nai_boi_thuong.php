@@ -1,6 +1,6 @@
 <!-- Chi tiết quá trình giải quyết KNBT -->
 <div id="knbt" class="modal fade" tabindex="-1" datatable-modal>
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Chi tiết quá trình giải quyết KNBT</h5>

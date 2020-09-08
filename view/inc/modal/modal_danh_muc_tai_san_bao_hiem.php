@@ -33,12 +33,14 @@
                                     data-searching="false"
                                     >
                                     <thead class="thead-light">
-                                        <th width="30px" class="text-center">#</th>
-                                        <th>Hạng mục tài sản bh</th>
-                                        <th>Số lượng</th>
-                                        <th>Đơn giá</th>
-                                        <th>Giá trị</th>
-                                        <th>Số tiền bảo hiểm</th>
+                                        <tr>
+                                            <th width="30px" class="text-center">#</th>
+                                            <th>Hạng mục tài sản bh</th>
+                                            <th>Số lượng</th>
+                                            <th>Đơn giá</th>
+                                            <th>Giá trị</th>
+                                            <th>Số tiền bảo hiểm</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
                                         <tr>

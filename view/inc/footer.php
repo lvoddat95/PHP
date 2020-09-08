@@ -11,6 +11,9 @@
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/sweetalert2.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/jquery.sticky-sidebar.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/isotope.pkgd.min.js"></script>
+    <script src="<?php echo ASSET_ROOT; ?>/vendors/js/lightgallery.min.js"></script>
+    <script src="<?php echo ASSET_ROOT; ?>/vendors/js/lightgallery-button.min.js"></script>
+    <script src="<?php echo ASSET_ROOT; ?>/vendors/js/jQuery.print.min.js"></script>
     <!-- /CORE JS-->
     
     <!-- JS Trang-->

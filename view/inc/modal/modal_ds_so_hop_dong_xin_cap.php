@@ -42,17 +42,19 @@
                                 data-ordering="false"
                                 data-searching="false">
                                 <thead class="thead-light">
-                                    <th width="w1p" data-orderable="false" class="text-center">#</th>
-                                    <th class="">Ngày lấy</th>
-                                    <th width="">Số hợp đồng</th>
-                                    <th width="">Loại hình bảo hiểm</th>
-                                    <th class="desktop">Gói HĐ</th>
-                                    <th width="">Khách hàng</th>
-                                    <th class="desktop">SL xe</th>
-                                    <th>Trạng thái</th>
-                                    <th class="desktop">Hạn dùng</th>
-                                    <th class="desktop">Đề nghị</th>
-                                    <th class="all w1p" data-orderable="false">#</th>
+                                    <tr>
+                                        <th width="w1p" data-orderable="false" class="text-center">#</th>
+                                        <th class="">Ngày lấy</th>
+                                        <th width="">Số hợp đồng</th>
+                                        <th width="">Loại hình bảo hiểm</th>
+                                        <th class="desktop">Gói HĐ</th>
+                                        <th width="">Khách hàng</th>
+                                        <th class="desktop">SL xe</th>
+                                        <th>Trạng thái</th>
+                                        <th class="desktop">Hạn dùng</th>
+                                        <th class="desktop">Đề nghị</th>
+                                        <th class="all w1p" data-orderable="false">#</th>
+                                    </tr>
                                 </thead>
                                 <tbody>
                                     <tr>

@@ -203,8 +203,61 @@ var show_password = function(p_this){
     }
 }
 
+lightGallery(
+    document.getElementById('light-gallery'), 
+    {
+        thumbnail:true,
+        selector: '.gallery-item'
+    }
+);
 
 
+$( "#light-gallery" ).sortable({
+    handle: ".img-sortable",
+});
+
+
+$('.btn-print').on('click',function(){
+    var data = $(this).data('print');
+    if (data == 'list') {
+        $("#print-container").removeAttr('class').addClass('view-list');
+    }else if (data == 'grid4'){
+        $("#print-container").removeAttr('class').addClass('view-grid4');
+    }else{
+        $("#print-container").removeAttr('class').addClass('view-grid6');
+    }
+
+    $("#print-container").print({
+        noPrintSelector : ".no-print",
+    });
+    
+})
+
+var on_change_print_select = function(p_this){
+    if (!$(p_this).is(':checked')) {
+        $(p_this).closest('li').addClass('no-print');
+    }else{
+        $(p_this).closest('li').removeClass('no-print');
+    }
+}
+
+var on_change_kich_thuoc_anh = function(p_this){
+    if ($(p_this).is(':checked')) {
+        $("#light-gallery").addClass('view-fix')
+    }else{
+        $("#light-gallery").removeClass('view-fix')
+    }
+}
+var modal_lv = 0;
+$('.modal').on('shown.bs.modal', function (e) {
+    $('.modal-backdrop:last').css('zIndex',1051+modal_lv);
+    $(e.currentTarget).css('zIndex',1052+modal_lv);
+    modal_lv++
+});
+
+$('.modal').on('hidden.bs.modal', function (e) {
+    modal_lv--
+});
 
 $(function(){
     var $window       = $(window);

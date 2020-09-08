@@ -22,7 +22,7 @@
                             <div class="breadcrumb">
                                 <a href="<?php echo HTTP_PATH; ?>" class="breadcrumb-item"><i class="fad fa-home mr-1"></i>Trang chủ</a>
                                 <a href="<?php echo HTTP_PATH .'view/claim/danh-sach-ho-so.php'; ?>" class="breadcrumb-item">F02 - Bảo hiểm ô tô</a>
-                               <span class="breadcrumb-item active">Danh sách hồ sơ bồi thường</span>
+                               <span class="breadcrumb-item active">Danh sách thông báo tổn thất</span>
                             </div>
                             <div class="d-md-none logo-mobile">
                                 <a href="<?php echo HTTP_PATH; ?>" class="logo-text">
@@ -38,11 +38,11 @@
 
                     <div class="page-title">
                         <div class="p-title">
-                            <h1 class="font-weight-semibold font-size-m"><i class="icon-stack-text mr-2"></i>Danh sách hồ sơ bồi thường</h1>
+                            <h1 class="font-weight-semibold font-size-m"><i class="icon-stack-text mr-2"></i>Danh sách thông báo tổn thất</h1>
                         </div>
                         <div class="p-button">
-                            <a href="<?php echo HTTP_PATH .'view/claim/danh-sach-ton-that.php'; ?>" class="btn btn-labeled btn-labeled-left mr-1"><b><i class="icon-alert"></i></b> Thông báo tổn thất</a>
-                            <a href="<?php echo HTTP_PATH .'view/claim/nhap-ho-so.php'; ?>" class="btn bg-primary btn-labeled btn-labeled-left m"><b><i class="icon-plus2 r-1"></i></b> Thêm mới</a>
+                            <a href="<?php echo HTTP_PATH .'view/claim/danh-sach-ho-so.php'; ?>" class="btn btn-labeled btn-labeled-left mr-1"><b><i class="icon-list3"></i></b> Hồ sơ bồi thường</a>
+                            <a href="<?php echo HTTP_PATH .'view/claim/nhap-thong-bao-ton-that.php'; ?>" class="btn bg-primary btn-labeled btn-labeled-left m"><b><i class="icon-plus2 r-1"></i></b> Thêm mới</a>
                         </div>
                     </div>
                     
@@ -55,7 +55,7 @@
                                     <div class="card-header header-elements-inline">
                                         <p class="card-title font-size-s">
                                             <i style="width: 26px;height: 26px;line-height: 26px;font-size: 12px;" class="icon-search4 d-flex-inline align-items-center justify-content-center rounded-round bg-color mr-2"></i> 
-                                            Tìm kiếm hồ sơ bồi thường
+                                            Tìm kiếm thông báo tổn thất
                                         </p>
                                         <div class="header-elements">
                                             <div class="list-icons">
@@ -221,13 +221,6 @@
 
                                 <!-- Danh sách đơn -->
                                 <div class="card">
-                                    <div class="card-header header-elements-inline header-button ">
-                                        <p class="card-title font-size-s">Danh sách hồ sơ bồi thường</p>
-                                        <div class="header-elements p-button">
-                                            <a href="#" class="btn btn-labeled btn-labeled-left mr-2"><b><i class="icon-file-locked"></i></b> Đóng hồ sơ</a>
-                                            <a href="#" class="btn btn-labeled btn-labeled-left mr-2"><b><i class="icon-trash"></i></b> Xóa hồ sơ</a>
-                                        </div>
-                                    </div>
                                     <div class="card-body">
                                         <table class="table table-bordered datatable" 
                                             data-paging="true"
@@ -261,9 +254,10 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-trash"></i> Xoá hồ sơ</a>
-                                                                    <a href="#" data-toggle="modal" data-target="#qua_trinh_xu_ly" class="dropdown-item"><i class="icon-collaboration"></i> Quá trình xử lý</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -282,9 +276,10 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-trash"></i> Xoá hồ sơ</a>
-                                                                    <a href="#" data-toggle="modal" data-target="#qua_trinh_xu_ly" class="dropdown-item"><i class="icon-collaboration"></i> Quá trình xử lý</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -303,9 +298,10 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-trash"></i> Xoá hồ sơ</a>
-                                                                    <a href="#" data-toggle="modal" data-target="#qua_trinh_xu_ly" class="dropdown-item"><i class="icon-collaboration"></i> Quá trình xử lý</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -324,9 +320,10 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-trash"></i> Xoá hồ sơ</a>
-                                                                    <a href="#" data-toggle="modal" data-target="#qua_trinh_xu_ly" class="dropdown-item"><i class="icon-collaboration"></i> Quá trình xử lý</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -345,9 +342,10 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-trash"></i> Xoá hồ sơ</a>
-                                                                    <a href="#" data-toggle="modal" data-target="#qua_trinh_xu_ly" class="dropdown-item"><i class="icon-collaboration"></i> Quá trình xử lý</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -366,9 +364,10 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-trash"></i> Xoá hồ sơ</a>
-                                                                    <a href="#" data-toggle="modal" data-target="#qua_trinh_xu_ly" class="dropdown-item"><i class="icon-collaboration"></i> Quá trình xử lý</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -387,9 +386,10 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-trash"></i> Xoá hồ sơ</a>
-                                                                    <a href="#" data-toggle="modal" data-target="#qua_trinh_xu_ly" class="dropdown-item"><i class="icon-collaboration"></i> Quá trình xử lý</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -408,9 +408,10 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-trash"></i> Xoá hồ sơ</a>
-                                                                    <a href="#" data-toggle="modal" data-target="#qua_trinh_xu_ly" class="dropdown-item"><i class="icon-collaboration"></i> Quá trình xử lý</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -429,9 +430,10 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-trash"></i> Xoá hồ sơ</a>
-                                                                    <a href="#" data-toggle="modal" data-target="#qua_trinh_xu_ly" class="dropdown-item"><i class="icon-collaboration"></i> Quá trình xử lý</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -450,9 +452,10 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-trash"></i> Xoá hồ sơ</a>
-                                                                    <a href="#" data-toggle="modal" data-target="#qua_trinh_xu_ly" class="dropdown-item"><i class="icon-collaboration"></i> Quá trình xử lý</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -471,9 +474,10 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-trash"></i> Xoá hồ sơ</a>
-                                                                    <a href="#" data-toggle="modal" data-target="#qua_trinh_xu_ly" class="dropdown-item"><i class="icon-collaboration"></i> Quá trình xử lý</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -492,9 +496,10 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-trash"></i> Xoá hồ sơ</a>
-                                                                    <a href="#" data-toggle="modal" data-target="#qua_trinh_xu_ly" class="dropdown-item"><i class="icon-collaboration"></i> Quá trình xử lý</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -513,9 +518,10 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-trash"></i> Xoá hồ sơ</a>
-                                                                    <a href="#" data-toggle="modal" data-target="#qua_trinh_xu_ly" class="dropdown-item"><i class="icon-collaboration"></i> Quá trình xử lý</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -534,9 +540,10 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-trash"></i> Xoá hồ sơ</a>
-                                                                    <a href="#" data-toggle="modal" data-target="#qua_trinh_xu_ly" class="dropdown-item"><i class="icon-collaboration"></i> Quá trình xử lý</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -555,9 +562,10 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-trash"></i> Xoá hồ sơ</a>
-                                                                    <a href="#" data-toggle="modal" data-target="#qua_trinh_xu_ly" class="dropdown-item"><i class="icon-collaboration"></i> Quá trình xử lý</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -576,9 +584,10 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-trash"></i> Xoá hồ sơ</a>
-                                                                    <a href="#" data-toggle="modal" data-target="#qua_trinh_xu_ly" class="dropdown-item"><i class="icon-collaboration"></i> Quá trình xử lý</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -597,9 +606,10 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-trash"></i> Xoá hồ sơ</a>
-                                                                    <a href="#" data-toggle="modal" data-target="#qua_trinh_xu_ly" class="dropdown-item"><i class="icon-collaboration"></i> Quá trình xử lý</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -618,9 +628,10 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-trash"></i> Xoá hồ sơ</a>
-                                                                    <a href="#" data-toggle="modal" data-target="#qua_trinh_xu_ly" class="dropdown-item"><i class="icon-collaboration"></i> Quá trình xử lý</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -639,9 +650,10 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-trash"></i> Xoá hồ sơ</a>
-                                                                    <a href="#" data-toggle="modal" data-target="#qua_trinh_xu_ly" class="dropdown-item"><i class="icon-collaboration"></i> Quá trình xử lý</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -660,9 +672,10 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
-                                                                    <a href="#" class="dropdown-item"><i class="icon-trash"></i> Xoá hồ sơ</a>
-                                                                    <a href="#" data-toggle="modal" data-target="#qua_trinh_xu_ly" class="dropdown-item"><i class="icon-collaboration"></i> Quá trình xử lý</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#trinh_duyet_mot_don" class="dropdown-item"><i class="icon-file-check"></i> Trình duyệt</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -690,9 +703,9 @@
             
         </div>
 
-        <?php inc('modal/modal_qua_trinh_xu_ly.php'); ?>
-        <?php inc('modal/modal_hinh_anh_ho_so_boi_thuong.php'); ?>
-        <?php inc('modal/modal_in_option.php'); ?>
+        <?php inc('modal/modal_lich_su_ton_that.php'); ?>
+        <?php inc('modal/modal_trinh_duyet_mot_don.php'); ?>
+        <?php inc('modal/modal_trinh_duyet_nhieu_don.php'); ?>
 
     </body>
 

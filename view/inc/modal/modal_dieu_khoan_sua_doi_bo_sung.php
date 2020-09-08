@@ -15,11 +15,13 @@
                         data-ordering="false"
                         data-searching="false" >
                         <thead class="thead-light">
-                            <th width="30px"><input type="checkbox" value=""></th>
-                            <th>Mã</th>
-                            <th>Rủi ro</th>
-                            <th>Giá trị bảo hiểm</th>
-                            <th>Phí bảo hiểm</th>
+                            <tr>
+                                <th width="30px"><input type="checkbox" value=""></th>
+                                <th>Mã</th>
+                                <th>Rủi ro</th>
+                                <th>Giá trị bảo hiểm</th>
+                                <th>Phí bảo hiểm</th>
+                            </tr>
                         </thead>
                         <tbody>
                             <tr>

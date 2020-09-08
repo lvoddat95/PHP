@@ -518,6 +518,12 @@ var App = function () {
                 phoneRegionCode: 'VN',
             });
         });
+        $('.input-bsx').toArray().forEach(function (field) {
+            new Cleave(field, {
+                blocks: [4, 5],
+                uppercase: true
+            });
+        });
     }
 
 

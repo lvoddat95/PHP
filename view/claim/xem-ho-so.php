@@ -18,8 +18,8 @@
                         </button>
                         <div class="top-left">
                             <div class="breadcrumb">
-                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i> F02 - Bảo hiểm ô tô</a>
-                                <span class="breadcrumb-item active">Hồ sơ bồi thường: 011800028/B02 </span>
+                                <a href="<?php echo HTTP_PATH .'view/claim/danh-sach-ho-so.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i> F02 - Bảo hiểm ô tô</a>
+                                <span class="breadcrumb-item active">Hồ sơ bồi thường: BT3412000897.F02 </span>
                             </div>
                             <div class="d-md-none logo-mobile">
                                 <a href="<?php echo HTTP_PATH; ?>" class="logo-text">
@@ -42,13 +42,13 @@
                                <div class="tab-claim tab-style">
                                     <ul class="nav nav-tabs">
                                         <li class="nav-item">
-                                            <a href="#claim_thong_tin_chung" class="nav-link active show" data-toggle="tab">
+                                            <a href="#claim_thong_tin_chung" class="nav-link" data-toggle="tab">
                                                 <i class="fal fa-address-card mr-1"></i>
                                                 <span>Thông tin chung</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#claim_bien_ban_giam_dinh" class="nav-link" data-toggle="tab">
+                                            <a href="#claim_bien_ban_giam_dinh" class="nav-link active show" data-toggle="tab">
                                                 <i class="fal fa-file-invoice mr-1"></i>
                                                 <span>Biên bản giám định</span>
                                             </a>
@@ -76,7 +76,7 @@
                                     <div class="clearfix"></div>
 
                                     <div class="tab-content">
-                                        <div class="tab-pane fade active show" id="claim_thong_tin_chung">
+                                        <div class="tab-pane fade" id="claim_thong_tin_chung">
                                             <div class="tab-pane-action">
                                                 <div class="page-title">
                                                     <div class="p-title">
@@ -101,8 +101,28 @@
                                             </div>
                                         </div>
 
-                                        <div class="tab-pane fade" id="claim_bien_ban_giam_dinh">
-                                            <h1>Biên bản giám định</h1>
+                                        <div class="tab-pane fade active show" id="claim_bien_ban_giam_dinh">
+                                            <div class="tab-pane-action">
+                                                <div class="page-title">
+                                                    <div class="p-title">
+                                                        <p class="t-top"><i class="icon-certificate mr-2"></i>Biên bản giám định tổn thất</p>
+                                                    </div>
+                                                    <div class="p-button">
+                                                        <a href="" class="btn mr-1"><i class="fa fa-reply mr-1"></i> Quay lại</a>
+                                                        <a href="javascript:;" class="btn mr-1" data-toggle="modal" data-target="#hinh_anh_ho_so_boi_thuong"><i class="icon-images2 mr-1"></i> Xem hình ảnh</a>
+                                                        <a href="javascript:;" class="btn mr-1" data-toggle="modal" data-target="#in_option"><i class="icon-printer2 mr-1"></i> In hình ảnh</a>
+                                                        <a href="javascript:;" class="btn bg-primary" data-toggle="modal" data-target="#in_option"><i class="icon-printer2 mr-1"></i> In biên bản giám định</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-pane-form">
+                                                <div class="row">
+                                                    <div class="offset-lg-2 col-lg-8">
+                                                        <?php inc('claim/2_bien_ban_giam_dinh.php'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <div class="tab-pane fade" id="claim_to_trinh_boi_thuong">
@@ -136,15 +156,13 @@
         <!-- /page-content -->
         
         <?php inc('modal/modal_khieu_nai_boi_thuong.php'); ?> 
-        <div class="modal-group">
-            <?php inc('modal/modal_ds_so_ho_giam_dinh_xin_cap.php'); ?>     
-            <?php inc('modal/modal_xin_cap_ho_so_giam_dinh.php'); ?> 
-            <?php inc('modal/modal_ds_don_bao_hiem.php'); ?> 
-        </div>
-        <div class="modal-group">
-            <?php inc('modal/modal_ds_cac_khach_hang.php'); ?>
-            <?php inc('modal/modal_cap_nhap_thong_tin_khach_hang.php'); ?> 
-        </div>
+        <?php inc('modal/modal_ds_so_ho_giam_dinh_xin_cap.php'); ?>     
+        <?php inc('modal/modal_xin_cap_ho_so_giam_dinh.php'); ?> 
+        <?php inc('modal/modal_ds_don_bao_hiem.php'); ?> 
+        <?php inc('modal/modal_ds_cac_khach_hang.php'); ?>
+        <?php inc('modal/modal_cap_nhap_thong_tin_khach_hang.php'); ?> 
+        <?php inc('modal/modal_hinh_anh_ho_so_boi_thuong.php'); ?> 
+        <?php inc('modal/modal_in_option.php'); ?> 
 
     </body>
 

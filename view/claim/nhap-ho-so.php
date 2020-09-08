@@ -18,7 +18,7 @@
                         </button>
                         <div class="top-left">
                             <div class="breadcrumb">
-                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i> F02 - Bảo hiểm ô tô</a>
+                                <a href="<?php echo HTTP_PATH .'view/claim/danh-sach-ho-so.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i> F02 - Bảo hiểm ô tô</a>
                                 <span class="breadcrumb-item active">Cập nhập hồ sơ bồi thường</span>
                             </div>
                             <div class="d-md-none logo-mobile">
@@ -45,7 +45,7 @@
                                     <div class="page-title">
                                         <div class="p-title">
                                             <p class="t-top"><i class="icon-certificate mr-2"></i>Câp nhập hồ sơ bồi thường</p>
-                                            <span class="desc">Nhập thông tin theo từng bước. Vui lòng nhập đầy đủ thông tin vào trường bắt buộc có dấu <code>*</code>.</span>
+                                            <span class="desc">Vui lòng nhập đầy đủ thông tin vào trường bắt buộc có dấu <code>*</code>.</span>
                                         </div>
                                         <div class="p-button">
                                             <a href="" class="btn mr-1"><i class="fa fa-reply mr-1"></i> Quay lại</a>
@@ -79,6 +79,7 @@
             <!-- /content-wrapper -->
         </div>
         <!-- /page-content -->
+        <?php inc('modal/modal_khieu_nai_boi_thuong.php'); ?> 
         <div class="modal-group">
             <?php inc('modal/modal_ds_so_ho_giam_dinh_xin_cap.php'); ?>     
             <?php inc('modal/modal_xin_cap_ho_so_giam_dinh.php'); ?> 

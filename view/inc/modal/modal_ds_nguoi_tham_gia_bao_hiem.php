@@ -61,18 +61,20 @@
                                     data-searching="false"
                                     >
                                     <thead class="thead-light">
-                                        <th width="30px">#</th>
-                                        <th>Người được BH</th>
-                                        <th>Ấn chỉ</th>
-                                        <th>Địa chỉ</th>
-                                        <th>Ngày cấp</th>
-                                        <th>Ngày thu phí</th>
-                                        <th>Hiệu lực từ ngày</th>
-                                        <th>Đến ngày</th>
-                                        <th>Số tiền BH</th>
-                                        <th>Phí BH</th>
-                                        <th>Phí bổ sung</th>
-                                        <th>Ghi chú</th>
+                                        <tr>
+                                            <th width="30px">#</th>
+                                            <th>Người được BH</th>
+                                            <th>Ấn chỉ</th>
+                                            <th>Địa chỉ</th>
+                                            <th>Ngày cấp</th>
+                                            <th>Ngày thu phí</th>
+                                            <th>Hiệu lực từ ngày</th>
+                                            <th>Đến ngày</th>
+                                            <th>Số tiền BH</th>
+                                            <th>Phí BH</th>
+                                            <th>Phí bổ sung</th>
+                                            <th>Ghi chú</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
                                         <tr>

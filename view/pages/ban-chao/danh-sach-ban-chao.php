@@ -18,7 +18,7 @@
                         </button>
                         <div class="top-left">
                             <div class="breadcrumb">
-                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="icon-steering-wheel mr-1"></i> F01 - Bảo hiểm xe máy</a>
+                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i> F01 - Bảo hiểm xe máy</a>
                                 <span class="breadcrumb-item active">Danh sách bản chào</span>
                             </div>
                             <div class="d-md-none logo-mobile">

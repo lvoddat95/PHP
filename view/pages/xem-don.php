@@ -43,7 +43,7 @@
                         </div>
                         <div class=" p-button">
                             <div class="dropdown d-inline-block mr-2">
-                                <a href="#" class="list-icons-item dropdown-toggle caret-0 btn" data-toggle="dropdown"><i class="icon-gear spinner"></i></a>
+                                <a href="#" class="list-icons-item dropdown-toggle caret-0 btn" data-toggle="dropdown"><i class="fa fa-ellipsis-v"></i></a>
                                 <div class="dropdown-menu dropdown-menu-right">
                                     <a href="#" class="dropdown-item"><i class="icon-file-check"></i>Trình duyệt</a>
                                     <a href="#" class="dropdown-item"><i class="icon-file-locked"></i>Đóng đơn</a>

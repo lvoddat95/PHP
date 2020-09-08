@@ -41,11 +41,13 @@
                                     data-ordering="true"
                                     data-searching="false" >
                                     <thead class="thead-light">
-                                        <th class="w1p" data-orderable="false">#</th>
-                                        <th>Mã tàu</th>
-                                        <th>Tên tàu</th>
-                                        <th>Thứ tự</th>
-                                        <th>Trạng thái</th>
+                                        <tr>
+                                            <th class="w1p" data-orderable="false">#</th>
+                                            <th>Mã tàu</th>
+                                            <th>Tên tàu</th>
+                                            <th>Thứ tự</th>
+                                            <th>Trạng thái</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
