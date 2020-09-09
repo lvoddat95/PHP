@@ -8530,7 +8530,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .lg-flip-ver:after { content: "\e902" }
 .group:after, .group:before { display: table; content: ""; line-height: 0 }
 .group:after { clear: both }
-.lg-outer { position: fixed; top: 0; left: 0; z-index: 1050; opacity: 0; outline: 0; -webkit-transition: opacity .15s ease 0s; -o-transition: opacity .15s ease 0s; transition: opacity .15s ease 0s }
+.lg-outer { position: fixed; top: 0; left: 0; z-index: 1052; opacity: 0; outline: 0; -webkit-transition: opacity .15s ease 0s; -o-transition: opacity .15s ease 0s; transition: opacity .15s ease 0s }
 .lg-outer * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box }
 .lg-outer.lg-visible { opacity: 1 }
 .lg-outer.lg-css3 .lg-item.lg-current, .lg-outer.lg-css3 .lg-item.lg-next-slide, .lg-outer.lg-css3 .lg-item.lg-prev-slide { -webkit-transition-duration: inherit !important; transition-duration: inherit !important; -webkit-transition-timing-function: inherit !important; transition-timing-function: inherit !important }
@@ -8550,7 +8550,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .lg-outer.lg-show-after-load .lg-item .lg-object, .lg-outer.lg-show-after-load .lg-item .lg-video-play { opacity: 0; -webkit-transition: opacity .15s ease 0s; -o-transition: opacity .15s ease 0s; transition: opacity .15s ease 0s }
 .lg-outer.lg-show-after-load .lg-item.lg-complete .lg-object, .lg-outer.lg-show-after-load .lg-item.lg-complete .lg-video-play { opacity: 1 }
 .lg-outer .lg-empty-html, .lg-outer.lg-hide-download #lg-download { display: none }
-.lg-backdrop { position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 1040; background-color: #000; opacity: 0; -webkit-transition: opacity .15s ease 0s; -o-transition: opacity .15s ease 0s; transition: opacity .15s ease 0s }
+.lg-backdrop { position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 1052; background-color: #000; opacity: 0; -webkit-transition: opacity .15s ease 0s; -o-transition: opacity .15s ease 0s; transition: opacity .15s ease 0s }
 .lg-backdrop.in { opacity: 1 }
 .lg-css3.lg-no-trans .lg-current, .lg-css3.lg-no-trans .lg-next-slide, .lg-css3.lg-no-trans .lg-prev-slide { -webkit-transition: none 0s ease 0s !important; -moz-transition: none 0s ease 0s !important; -o-transition: none 0s ease 0s !important; transition: none 0s ease 0s !important }
 .lg-css3.lg-use-css3 .lg-item, .lg-css3.lg-use-left .lg-item { -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; backface-visibility: hidden }

@@ -122,7 +122,7 @@
 		<div class="col-lg-6">
 			<div class="row form-group mb-lg-2">
 		        <label class="col-lg-4 col-form-label">Giới tính:</label>
-		        <div class="col-lg-6">
+		        <div class="col-lg-4">
 		            <select select2>
 		                <option>--- Chọn ---</option>
 		                <option selected>Nam</option>
@@ -812,7 +812,7 @@
 
 	<div class="row form-group mb-lg-2">
         <label class="col-lg-2">Thuế VAT:</label>
-        <div class="col-lg-8">
+        <div class="col-lg-2">
             <div class="input-group">
 				<input type="text" class="form-control required input-float" name="so_khung" placeholder="Nhập % VAT..." value="0">
 				<span class="input-group-append">
@@ -824,14 +824,188 @@
     <div class="row form-group mb-lg-2">
         <label class="col-lg-2">Diễn biến: <span class="text-danger">*</span></label>
         <div class="col-lg-8">
-            <textarea class="form-control" placeholder="Nhập địa điểm tai nạn...">vào khoảng 23h tôi có đi giao hàng tại làng vàng huyện vị xuyên do đường nhỏ và tối tôi quay đầu không may bị quệt vào cành cây và bị móp méo cửa bên lái</textarea>
+            <textarea class="form-control" placeholder="Nhập nội dung...">vào khoảng 23h tôi có đi giao hàng tại làng vàng huyện vị xuyên do đường nhỏ và tối tôi quay đầu không may bị quệt vào cành cây và bị móp méo cửa bên lái</textarea>
         </div>
     </div>
     <div class="row form-group mb-lg-2">
-        <label class="col-lg-2"></label>
-        <div class="col-lg-10">
-        	
+        <label class="col-lg-2">Phương án giải quyết: <span class="text-danger">*</span></label>
+        <div class="col-lg-8">
+            <textarea class="form-control" placeholder="Nhập nội dung..."></textarea>
         </div>
     </div>
-   
+    <div class="row form-group mb-lg-2">
+        <label class="col-lg-2">Tổn thất thuộc phạm vi bảo hiểm: <span class="text-danger">*</span></label>
+        <div class="col-lg-8">
+            <div class="button-switch">
+				<input type="checkbox" id="tttpv" class="switch required" name="tttpv">
+				<label for="tttpv" data-off="Không" data-on="Có"></label>
+			</div>
+        </div>
+    </div>
+    <div class="row form-group mb-lg-2">
+        <label class="col-lg-2">Lý do:</label>
+        <div class="col-lg-8">
+            <textarea class="form-control" placeholder="Nhập nội dung..."></textarea>
+        </div>
+    </div> 
+</div>
+
+<div class="form-box mb-3">
+	<p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Lích sử tổn thất</p>
+	<hr class="border-dashed border-silver mb-2">
+	<div>
+		<table class="table table-bordered datatable"  data-paging="false" data-info="false" data-ordering="false" data-searching="false">
+	        <thead class="thead-light">
+	            <tr>
+	                <th data-orderable="false" class="w1p text-center">#</th>
+	                <th>Số hồ sơ</th>
+	                <th>Số tiền</th>
+	                <th>Ngày xảy ra</th>
+	                <th>Ngày giải quyết</th>
+	            </tr>
+	        </thead>
+	        <tbody>
+	        	<tr>
+	        		<td></td>
+	        		<td></td>
+	        		<td></td>
+	        		<td></td>
+	        		<td></td>
+	        	</tr>
+	        </tbody>
+	    </table>
+		<i class="text-danger">* Chưa phát sinh</i>
+	</div>
+</div>
+
+<div class="form-box mb-3">
+	<p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Nhận xét </p>
+	<hr class="border-dashed border-silver mb-2">
+	<i class="text-danger">* (Lưu ý: Cập nhật đầy đủ thông tin để in được báo cáo giám định)</i>
+	<div class="mt-2">
+		<div class="row form-group mb-lg-2">
+	        <label class="col-lg-3">Cơ quan công an giải quyết:</label>
+	        <div class="col-lg-9">
+	            <input type="text" class="form-control" placeholder="" value="">
+	        </div>
+	    </div>
+		<div class="row form-group mb-lg-2">
+	        <label class="col-lg-3 col-form-label">Tổn thất về người:</label>
+	        <div class="col-lg-2">
+	            <input type="text" class="form-control text-right input-money" value="" placeholder="0">
+	        </div>
+	    </div>
+	    <div class="row form-group mb-lg-2">
+	        <label class="col-lg-3 col-form-label">Tổn thất về tài sản:</label>
+	        <div class="col-lg-2">
+	            <input type="text" class="form-control text-right input-money" value="" placeholder="0">
+	        </div>
+	    </div>
+	    <div class="row form-group mb-lg-2">
+	        <label class="col-lg-3 col-form-label">Giá trị xe tham giá bảo hiểm:</label>
+	        <div class="col-lg-9">
+        		<div class="d-flex w-100">
+        			<div class="form-check form-check-inline m-0 mr-2">
+                        <input type="radio" id="rd01" class="mr-1" name="id01" checked="">
+                        <label for="rd01" class="form-check-label w100">Đúng, đủ </label>
+                    </div>
+        			<div class="form-check form-check-inline m-0 flex-grow-1">
+                        <input type="radio" id="rd02" class="mr-1" name="id01">
+                        <label for="rd02" class="form-check-label ml-1 w100">Không, lý do</label>
+                        <input type="text" class="form-control w-100" value="" placeholder="">
+                    </div>
+                </div>
+	        </div>
+	    </div>
+	    <div class="row form-group mb-lg-2">
+	        <label class="col-lg-3 col-form-label">Tỷ lệ phí:</label>
+	        <div class="col-lg-9">
+        		<div class="d-flex w-100">
+        			<div class="form-check form-check-inline m-0 mr-2">
+                        <input type="radio" id="rd03" class="mr-1" name="id02" checked="">
+                        <label for="rd03" class="form-check-label w100">Đúng, đủ </label>
+                    </div>
+        			<div class="form-check form-check-inline m-0 flex-grow-1">
+                        <input type="radio" id="rd04" class="mr-1" name="id02">
+                        <label for="rd04" class="form-check-label ml-1 w100">Không, lý do</label>
+                        <input type="text" class="form-control w-100" value="" placeholder="">
+                    </div>
+                </div>
+	        </div>
+	    </div>
+	    <div class="row form-group mb-lg-2">
+	        <label class="col-lg-3 col-form-label">Ngày nộp phí:</label>
+	        <div class="col-lg-9">
+        		<div class="d-flex w-100">
+        			<div class="form-check form-check-inline m-0 mr-2">
+                        <input type="radio" id="rd10" class="mr-1" name="id03" checked="">
+                        <label for="rd10" class="form-check-label w100">Đúng, đủ </label>
+                    </div>
+        			<div class="form-check form-check-inline m-0 flex-grow-1">
+                        <input type="radio" id="rd05" class="mr-1" name="id03">
+                        <label for="rd05" class="form-check-label ml-1 w100">Không, lý do</label>
+                        <input type="text" class="form-control w-100" value="" placeholder="">
+                    </div>
+                </div>
+	        </div>
+	    </div>
+	    <div class="row form-group mb-lg-2">
+	        <label class="col-lg-3 col-form-label">Nguyên nhân tai nạn:</label>
+	        <div class="col-lg-9">
+        		<div class="d-flex w-100">
+        			<div class="form-check form-check-inline m-0 mr-2">
+                        <input type="radio" id="rd06" class="mr-1" name="id04" checked="">
+                        <label for="rd06" class="form-check-label w100">Đúng, đủ </label>
+                    </div>
+        			<div class="form-check form-check-inline m-0 flex-grow-1">
+                        <input type="radio" id="rd07" class="mr-1" name="id04">
+                        <label for="rd07" class="form-check-label ml-1 w100">Không, lý do</label>
+                        <input type="text" class="form-control w-100" value="" placeholder="">
+                    </div>
+                </div>
+	        </div>
+	    </div>
+	    <div class="row form-group mb-lg-2">
+	        <label class="col-lg-3 col-form-label">Tuân thủ của Đơn vị cấp bảo hiểm:</label>
+	        <div class="col-lg-9">
+        		<div class="d-flex w-100">
+        			<div class="form-check form-check-inline m-0 mr-2">
+                        <input type="radio" id="rd08" class="mr-1" name="id05" checked="">
+                        <label for="rd08" class="form-check-label w100">Đúng, đủ </label>
+                    </div>
+        			<div class="form-check form-check-inline m-0 flex-grow-1">
+                        <input type="radio" id="rd09" class="mr-1" name="id05">
+                        <label for="rd09" class="form-check-label ml-1 w100">Không, lý do</label>
+                        <input type="text" class="form-control w-100" value="" placeholder="">
+                    </div>
+                </div>
+	        </div>
+	    </div>
+
+	    <div class="row form-group mb-lg-2">
+	        <label class="col-lg-3">Thời gian khai báo của khách hàng:</label>
+	        <div class="col-lg-9">
+	            <input type="text" class="form-control" placeholder="" value="">
+	        </div>
+	    </div>
+
+	    <div class="row form-group mb-lg-2">
+	        <label class="col-lg-3">Nội dung khác:</label>
+	        <div class="col-lg-9">
+	            <input type="text" class="form-control" placeholder="" value="">
+	        </div>
+	    </div>
+
+	    
+	</div>
+</div>
+
+<div class="form-box mb-3">
+	<hr class="border-dashed border-silver mb-2">
+	<div class="row form-group mb-lg-2">
+        <label class="col-lg-3">ĐỀ XUẤT:</label>
+        <div class="col-lg-9">
+            <textarea class="form-control" placeholder="Nhập nội dung..."></textarea>
+        </div>
+    </div> 
 </div>

@@ -1102,8 +1102,10 @@ input[type=radio]:before {
     transition: all 0.2s ease-in-out;
     font-size: 14px;
     font-weight: 300;
-    line-height: 14px;
     display: block;
+    height: 14px;
+    width: 14px;
+    line-height: 14px;
 }
 
 input[type=radio]:after {
@@ -1118,6 +1120,9 @@ input[type=radio]:after {
     top: 50%;
     transform: translateY(-50%);
     opacity: 0;
+    height: 14px;
+    width: 14px;
+    line-height: 14px;
 }
 
 input[type=radio]:checked {
@@ -3528,7 +3533,7 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     padding: 0 20px;
     background: #fff;
     border-bottom: 1px solid #ddd;
-    z-index: 11;
+    z-index: 5;
 }
 .tab-pane-action > .page-title{
     padding: 8px 0;
@@ -3665,9 +3670,6 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     -ms-transform: scale(1.07);
     -o-transform: scale(1.07);
     transform: scale(1.07);
-}
-.print-bg{
-    -webkit-print-color-adjust: exact !important;
 }
 
 .img-box > .d-flex{
