@@ -3842,3 +3842,53 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     margin-top: 0;
     margin-bottom: 0;
 }
+
+.col-group{
+    display: flex;
+    -ms-display: flex;
+}
+.col-label{
+    float: left;
+    width: 160px;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+}
+.col-content{
+    width: calc(100% - 160px);
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+}
+.col-content-xl{
+    max-width: 730px;
+}
+.col-content-lg{
+    max-width: 530px;
+}
+.col-content-md{
+    max-width: 245px;
+}
+.col-content-sm{
+    max-width: 160px;
+}
+.col-content-xs{
+    max-width: 115px;
+}
+
+@media only screen and (max-width: 767px) {
+    .col-label{
+        width: 125px;
+    }
+    .col-content{
+        width: calc(100% - 125px);
+    }
+
+}
+@media only screen and (max-width: 567px) {
+    .col-label{
+        width: 95px;
+    }
+    .col-content{
+        width: calc(100% - 95px);
+    }
+
+}

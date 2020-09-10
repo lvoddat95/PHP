@@ -1534,8 +1534,6 @@ var App = function () {
         
         var v_datatable = table.DataTable();
 
-        _component_select2('.dataTables_length select');
-
         v_datatable.on( 'responsive-display', function ( e, datatable, row, showHide, update ) {
             var v_li =  $(this).find('tbody > tr.child > td.child > ul.dtr-details > li');
             v_li.each(function(index, li) { 
@@ -1551,6 +1549,10 @@ var App = function () {
                 }
 
             });
+            var  select2 = $(this).find('select');
+            var  datepicker = $(this).find('.datepicker');
+            _component_select2(select2);
+            // _component_datepicker('.dataTables_length .datepicker');
                                    
         });
 

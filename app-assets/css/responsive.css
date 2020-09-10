@@ -292,6 +292,9 @@
     .header-button .card-title{
         margin-bottom: 10px;
     }
+    .tab-pane-action{
+        position: static;
+    }
 
 
 
