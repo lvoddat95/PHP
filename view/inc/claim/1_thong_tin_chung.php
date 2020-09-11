@@ -243,21 +243,26 @@
     </div>
 </div>
 
-<div class="row form-group">
-    <label class="col-label col-form-label">Đối tượng tổn thất:</label>
-    <div class="col-content col-content-xl">
-        <textarea class="form-control" placeholder="Nhập đối tượng tổn thất...">88A27218</textarea>
+<div class="row">
+    <div class="col-md-6">
+        <div class="row form-group">
+            <label class="col-label col-form-label">Đối tượng tổn thất:</label>
+            <div class="col-content">
+                <textarea class="form-control" placeholder="Nhập đối tượng tổn thất...">88A27218</textarea>
+            </div>
+        </div>
     </div>
-</div>
-
-<div class="row form-group">
-    <label class="col-label col-form-label">Mức độ tổn thất:</label>
-    <div class="col-content col-content-sm">
-        <select class="form-control" select2>
-            <option value="">--- Chọn ---</option>
-            <option value="">Tổn thất toàn bộ</option>
-            <option value="">Tổn thất bộ phận</option>
-        </select>
+    <div class="col-md-4">
+        <div class="row form-group">
+            <label class="col-label col-form-label">Mức độ tổn thất:</label>
+            <div class="col-content col-content-sm">
+                <select class="form-control" select2>
+                    <option value="">--- Chọn ---</option>
+                    <option value="">Tổn thất toàn bộ</option>
+                    <option value="">Tổn thất bộ phận</option>
+                </select>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -276,17 +281,22 @@
     </div>
 </div>
 
-<div class="row form-group">
-    <label class="col-label col-form-label">Ngày tạo đơn:</label>
-    <div class="col-content col-content-sm">
-        <input type="text" class="form-control input-date datepicker" placeholder="dd/mm/yyyy" value="29/06/2020" />
-    </div>
-</div>
-
-<div class="row form-group">
-    <label class="col-label col-form-label">Ngày thanh toán phí:</label>
-    <div class="col-content col-content-sm">
-        <input type="text" class="form-control input-date datepicker" placeholder="dd/mm/yyyy"/>
+<div class="row">
+    <div class="col-md-6">
+        <div class="row form-group">
+            <label class="col-label col-form-label">Ngày tạo đơn:</label>
+            <div class="col-content col-content-sm">
+                <input type="text" class="form-control input-date datepicker" placeholder="dd/mm/yyyy" value="29/06/2020" />
+            </div>
+        </div>
+    </div>  
+    <div class="col-md-6">
+        <div class="row form-group">
+            <label class="col-label col-form-label">Ngày thanh toán phí:</label>
+            <div class="col-content col-content-sm">
+                <input type="text" class="form-control input-date datepicker" placeholder="dd/mm/yyyy"/>
+            </div>
+        </div>
     </div>
 </div>
 

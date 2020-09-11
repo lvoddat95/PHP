@@ -1222,6 +1222,23 @@ select {
     background-size: 8px;
     background-position-x: calc(100% - 12px);
 }
+.datepicker:not([type="date"]) {
+    min-width: 95px;
+    padding-right: 22px;
+    background-size: 11px;
+    background-position: center;
+    background-position-x: calc(100% - 6.5px);
+    background-repeat: no-repeat;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBkPSJNNDAwIDY0aC00OFYxMmMwLTYuNi01LjQtMTItMTItMTJoLTQwYy02LjYgMC0xMiA1LjQtMTIgMTJ2NTJIMTYwVjEyYzAtNi42LTUuNC0xMi0xMi0xMmgtNDBjLTYuNiAwLTEyIDUuNC0xMiAxMnY1Mkg0OEMyMS41IDY0IDAgODUuNSAwIDExMnYzNTJjMCAyNi41IDIxLjUgNDggNDggNDhoMzUyYzI2LjUgMCA0OC0yMS41IDQ4LTQ4VjExMmMwLTI2LjUtMjEuNS00OC00OC00OHptLTYgNDAwSDU0Yy0zLjMgMC02LTIuNy02LTZWMTYwaDM1MnYyOThjMCAzLjMtMi43IDYtNiA2eiIvPjwvc3ZnPg==');
+}
+
+.input-time{
+    max-width: 90px;
+}
+
+.input-time:not([type="time"]){
+    max-width: 60px;
+}
 
 .w80 {
     width: 80px;

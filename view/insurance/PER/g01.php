@@ -63,7 +63,84 @@
                                                             <form action="#" class="form-validation clearfix">
                                                                 <div class="tab-content">
                                                                     <!-- Bước 1 -->
-                                                                    <?php inc('template/1_thong_tin_chung/1_thong_tin_chung.php'); ?>
+                                                                    <fieldset  class="tab-pane active show" id="step1">
+                                                                        <div class="row">
+                                                                            <div class="col-md-6">
+                                                                                <?php inc('template/1_thong_tin_chung/kenh_khai_thac.php'); ?> 
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <?php inc('template/1_thong_tin_chung/hinh_thuc_khai_thac.php'); ?> 
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <?php inc('template/1_thong_tin_chung/so_don_bao_hiem.php'); ?> 
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/1_thong_tin_chung/so_tham_chieu.php'); ?> 
+                                                                            </div>
+                                                                            
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/1_thong_tin_chung/so_ban_chao.php'); ?> 
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/1_thong_tin_chung/so_hd_nhan_tai.php'); ?> 
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <?php inc('template/1_thong_tin_chung/nguoi_duoc_bao_hiem.php'); ?> 
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <?php inc('template/1_thong_tin_chung/nguoi_thanh_toan_bao_hiem.php'); ?> 
+                                                                            </div>
+                                                                            
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/1_thong_tin_chung/ten_chu_xe.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/1_thong_tin_chung/sdt_chu_xe.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/1_thong_tin_chung/so_cmt_chu_xe.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <?php inc('template/1_thong_tin_chung/dia_chi_chu_xe.php'); ?>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/1_thong_tin_chung/can_bo_khai_thac.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/1_thong_tin_chung/can_bo_cap_don.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/1_thong_tin_chung/ngay_cap.php'); ?>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/1_thong_tin_chung/loai_tien.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/1_thong_tin_chung/ti_gia_thuc_te.php'); ?>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <?php inc('template/1_thong_tin_chung/tai_bao_hiem.php'); ?>
+                                                                                <?php inc('template/1_thong_tin_chung/dong_bao_hiem.php'); ?>
+                                                                            </div>
+                                                                        </div>
+                                                                    </fieldset>
 
                                                                     <!-- Step 2 -->
                                                                     <?php inc('template/2_trung_gian_bao_hiem/2_trung_gian_bao_hiem.php'); ?>
@@ -88,15 +165,7 @@
                                                                     <!-- Step 4 -->
                                                                     <fieldset class="tab-pane" id="step4">
                                                                         <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-6">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/thong_tin_ve_thoi_han_thanh_toan.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-6">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/thanh_toan_tai_ngan_hang.php'); ?>
-                                                                            </div>
+                                                                            
                                                                             <div class="col-md-12">
                                                                                 <div class="form-group">
                                                                                     <label>Phạm vi bảo hiểm:</label>
@@ -111,7 +180,6 @@
                                                                                                 <tr>
                                                                                                     <th width="20%">Phạm vi bảo hiểm</th>
                                                                                                     <th width="10%">Số tiền bảo hiểm</th>
-                                                                                                    <th width="5%" class="desktop">Phí (%)</th>
                                                                                                     <th width="10%" class="desktop">Phí BH (có VAT)</th>
                                                                                                     <th width="5%" class="desktop">VAT (%)</th>
                                                                                                     <th width="10%" class="desktop">VAT</th>
@@ -124,7 +192,6 @@
                                                                                                 <tr>
                                                                                                     <td>1. Phạm vi A (Chết do ốm đau, bệnh tật, thai sản)</td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                    <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" value="0"></td>
@@ -139,7 +206,6 @@
                                                                                                 <tr>
                                                                                                     <td>2. Phạm vi B (Chết và thương tật thân thể do tai nạn)</td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                    <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" value="0"></td>
@@ -154,7 +220,6 @@
                                                                                                 <tr>
                                                                                                     <td>3. Phạm vi C (Ốm đau, bệnh tật, thai sản phải nằm viện hoặc phẫu thuật)</td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                    <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" value="0"></td>
@@ -169,7 +234,6 @@
                                                                                                 <tr>
                                                                                                     <th><b>Tổng cộng: </b></th>
                                                                                                     <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></th>
-                                                                                                    <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0.99"></th>
                                                                                                     <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></th>
                                                                                                     <th align="right"><input class="form-control text-right" type="text" disabled readonly value="10"></th>
                                                                                                     <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></th>
@@ -194,77 +258,32 @@
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/loai_mien_thuong.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/so_tien_mien_thuong.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/so_tien_giam_mien_thuong.php'); ?>
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/ten_rui_ro.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
+                                                                            <div class="col-md-6">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/dieu_kien_bao_hiem.php'); ?>
                                                                             </div>
-                                                                            <div class="col-md-4">
+                                                                            <div class="col-md-6">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/dieu_khoan_loai_tru.php'); ?>
                                                                             </div>
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-6">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/dia_diem_bao_hiem.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-6">
+                                                                            <div class="col-md-12">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/quy_tac_bao_hiem.php'); ?>
                                                                             </div>
                                                                         </div>
 
                                                                         <div class="row mb-3">
                                                                             <div class="col-md-12">
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/thong_tin_ve_thoi_han_thanh_toan.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/thanh_toan_tai_ngan_hang.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-12">
                                                                                 <b><label>Lịch thanh toán bảo hiểm: </label></b>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <table class="table table-bordered" style="margin: auto;">
-                                                                                    <thead class="thead-light">
-                                                                                        <tr>
-                                                                                            <th class="w70p">Quyền lợi</th>
-                                                                                            <th class="w30p text-right">Phí BH có VAT</th>
-                                                                                        </tr>
-                                                                                    </thead>
-                                                                                    <tbody>
-                                                                                        <tr>
-                                                                                            <td>Số tiền giảm miễn thường</td>
-                                                                                            <td class="text-right">0</td>
-                                                                                        </tr>
-                                                                                        
-                                                                                        <tr>
-                                                                                            <td>Phạm vi A (Chết do ốm đau, bệnh tật, thai sản)</td>
-                                                                                            <td class="text-right">0</td>
-                                                                                        </tr>
-                                                                                        
-                                                                                        <tr>
-                                                                                            <td>Phạm vi B (Chết và thương tật thân thể do tai nạn)</td>
-                                                                                            <td class="text-right">0</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Phạm vi C (Ốm đau, bệnh tật, thai sản phải nằm viện hoặc phẫu thuật)</td>
-                                                                                            <td class="text-right">0</td>
-                                                                                        </tr>
-                                                                                        <tr class="bold" style="background-color: #fff;">
-                                                                                            <td>Tổng phí BH</td>
-                                                                                            <td><input class="form-control text-right" type="text" disabled="" readonly="" value="0"></td>
-                                                                                        </tr>
-                                                                                    </tbody>
-                                                                                </table>
-                                                                            </div>
-                                                                            <div class="col-md-8">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/lich_thanh_toan.php'); ?>
                                                                             </div>
                                                                         </div>

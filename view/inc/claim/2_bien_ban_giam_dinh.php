@@ -814,8 +814,8 @@
 	<hr class="border-dashed border-silver mb-2">
 
 	<div class="row form-group mb-md-2">
-        <label class="col-lg-2">Thuế VAT:</label>
-        <div class="col-lg-2">
+        <label class="col-label col-form-label">Thuế VAT:</label>
+        <div class="col-content col-content-sm">
             <div class="input-group">
 				<input type="text" class="form-control required input-float" name="so_khung" placeholder="Nhập % VAT..." value="0">
 				<span class="input-group-append">
@@ -825,20 +825,20 @@
         </div>
     </div>
     <div class="row form-group mb-md-2">
-        <label class="col-lg-2">Diễn biến: <span class="text-danger">*</span></label>
-        <div class="col-lg-8">
+        <label class="col-label">Diễn biến: <span class="text-danger">*</span></label>
+        <div class="col-content col-content-xl">
             <textarea class="form-control" placeholder="Nhập nội dung...">vào khoảng 23h tôi có đi giao hàng tại làng vàng huyện vị xuyên do đường nhỏ và tối tôi quay đầu không may bị quệt vào cành cây và bị móp méo cửa bên lái</textarea>
         </div>
     </div>
     <div class="row form-group mb-md-2">
-        <label class="col-lg-2">Phương án giải quyết: <span class="text-danger">*</span></label>
-        <div class="col-lg-8">
+        <label class="col-label">Phương án giải quyết: <span class="text-danger">*</span></label>
+        <div class="col-content col-content-xl">
             <textarea class="form-control" placeholder="Nhập nội dung..."></textarea>
         </div>
     </div>
     <div class="row form-group mb-md-2">
-        <label class="col-lg-2">Tổn thất thuộc phạm vi bảo hiểm: <span class="text-danger">*</span></label>
-        <div class="col-lg-8">
+        <label class="col-label">Tổn thất thuộc phạm vi bảo hiểm: <span class="text-danger">*</span></label>
+        <div class="col-content col-content-xs">
             <div class="button-switch">
 				<input type="checkbox" id="tttpv" class="switch required" name="tttpv">
 				<label for="tttpv" data-off="Không" data-on="Có"></label>
@@ -846,8 +846,8 @@
         </div>
     </div>
     <div class="row form-group mb-md-2">
-        <label class="col-lg-2">Lý do:</label>
-        <div class="col-lg-8">
+        <label class="col-label">Lý do:</label>
+        <div class="col-content col-content-xl">
             <textarea class="form-control" placeholder="Nhập nội dung..."></textarea>
         </div>
     </div> 
