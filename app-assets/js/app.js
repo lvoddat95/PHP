@@ -1488,13 +1488,6 @@ var App = function () {
                     {name: 'mobile-p', width: 320}
                 ]
             },
-            columnDefs: [
-                {
-                    className: 'control not-desktop text-center',
-                    orderable: false,
-                    targets:    0
-                },
-            ],
             dom: '<"datatable-header"f><"datatable-body"t><"datatable-footer"<"datatable-li"li>p>',
             language: {
                 decimal:        "",
@@ -1537,36 +1530,26 @@ var App = function () {
 
         if (v_table) {
             v_table.each(function(){
-                var v_rowspan = $(this).data('control-rowspan');
-                var v_colspan = $(this).data('control-colspan');
-
-                var v_rowspan_html = ''
-                if (!v_rowspan == false) {
-                    v_rowspan_html = 'rowspan="'+v_rowspan+'"';
-                }else{
-                    v_rowspan_html = '';
-                }
-
-                var v_colspan_html = ''
-                if (!v_colspan == false) {
-                    v_colspan_html = 'rowspan="'+v_colspan+'"';
-                }else{
-                    v_colspan_html = '';
-                }
-
-                // var v_th = $(this).find('thead>tr>th').eq(0);
                 var v_th = $(this).find('thead>tr>*:first-child');
                 var v_td = $(this).find('tbody>tr>*:first-child');
 
-                if (!v_th.hasClass('cell')) {
+                if ( !v_th.hasClass('cell') ) {
                     v_th.before('<th class="cell w1p"></th>');
                 }
-                if (!v_td.hasClass('cell')) {
+                if ( !v_td.hasClass('cell') ) {
                     v_td.before('<td class="cell"></td>');
                 }
             });
 
-            var v_datatable = v_table.DataTable();
+            var v_datatable = v_table.DataTable({
+                columnDefs: [
+                    {
+                        className: 'w1p control not-desktop text-center',
+                        orderable: false,
+                        targets:    0
+                    },
+                ]
+            });
         } 
 
         if (v_table_control_right.length==1) {
@@ -1586,13 +1569,7 @@ var App = function () {
         }
 
         if (v_table_control_custom.length==1) {
-            var v_datatable_custom = v_table_control_custom.DataTable({
-                columnDefs: [ {
-                    className: '',
-                    orderable: false,
-                    targets:  0
-                } ]
-            } );
+            var v_datatable_custom = v_table_control_custom.DataTable();
         }
 
         v_datatable.on( 'responsive-display', function ( e, datatable, row, showHide, update ) {

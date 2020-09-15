@@ -105,21 +105,6 @@
 
                                                                         <div class="row">
                                                                             <div class="col-md-4">
-                                                                                <?php inc('template/1_thong_tin_chung/ten_chu_xe.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/1_thong_tin_chung/sdt_chu_xe.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/1_thong_tin_chung/so_cmt_chu_xe.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-12">
-                                                                                <?php inc('template/1_thong_tin_chung/dia_chi_chu_xe.php'); ?>
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="row">
-                                                                            <div class="col-md-4">
                                                                                 <?php inc('template/1_thong_tin_chung/can_bo_khai_thac.php'); ?>
                                                                             </div>
                                                                             <div class="col-md-4">
@@ -171,13 +156,14 @@
                                                                         <hr class="border-dashed border-silver mb-3">
 
                                                                         <div class="form-group">
-                                                                            <table class="table table-bordered datatable" data-control-right="true" data-paging="false" data-info="false" data-ordering="false" data-searching="false" data-control-rowspan="2">
+                                                                            <table class="table table-bordered datatable_ctrl_custom" data-control-right="true" data-paging="false" data-info="false" data-ordering="false" data-searching="false" >
                                                                                 <thead class="thead-light">
                                                                                     <tr>
+                                                                                        <th  rowspan="2" class="cell control not-desktop text-center"></th>
                                                                                         <th rowspan="2" class="w1p text-center">STT</th>
                                                                                         <th rowspan="2" >Người được BH</th>
-                                                                                        <th rowspan="2"class="none">Năm sinh</th>
-                                                                                        <th rowspan="2"class="none">Địa chỉ</th>
+                                                                                        <th rowspan="2" class="none">Năm sinh</th>
+                                                                                        <th rowspan="2" class="none">Địa chỉ</th>
                                                                                         <th rowspan="2">Hiệu lực từ ngày</th>
                                                                                         <th rowspan="2">Đến ngày</th>
                                                                                         <th rowspan="2">Số tiền BH</th>
@@ -189,16 +175,17 @@
                                                                                         <th colspan="2" class="text-center">Phạm vi C</th>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <th class="text-center">TL phí</th>
-                                                                                        <th class="text-center">Phí A</th>
-                                                                                        <th class="text-center">TL phí</th>
-                                                                                        <th class="text-center">Phí B</th>
-                                                                                        <th class="text-center">TL phí</th>
-                                                                                        <th class="text-center">Phí C</th>
+                                                                                        <th class="text-center all">TL phí</th>
+                                                                                        <th class="text-center all">Phí A</th>
+                                                                                        <th class="text-center all">TL phí</th>
+                                                                                        <th class="text-center all">Phí B</th>
+                                                                                        <th class="text-center all">TL phí</th>
+                                                                                        <th class="text-center all">Phí C</th>
                                                                                     </tr>
                                                                                 </thead>
                                                                                 <tbody>
                                                                                     <tr>
+                                                                                        <td class="cell control not-desktop text-center"></td>
                                                                                         <td class="text-center">1</td>
                                                                                         <td><input class="form-control" type="text"></td>
                                                                                         <td><input class="form-control input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
