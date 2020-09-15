@@ -159,7 +159,9 @@
                                                                             <table class="table table-bordered datatable_ctrl_custom" data-control-right="true" data-paging="false" data-info="false" data-ordering="false" data-searching="false" >
                                                                                 <thead class="thead-light">
                                                                                     <tr>
-                                                                                        <th  rowspan="2" class="cell control not-desktop text-center"></th>
+                                                                                        <th  rowspan="2" class="cell control not-desktop text-center">
+                                                                                            <i class="fa fa-ellipsis-v"></i>
+                                                                                        </th>
                                                                                         <th rowspan="2" class="w1p text-center">STT</th>
                                                                                         <th rowspan="2" >Người được BH</th>
                                                                                         <th rowspan="2" class="none">Năm sinh</th>
@@ -175,17 +177,17 @@
                                                                                         <th colspan="2" class="text-center">Phạm vi C</th>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <th class="text-center all">TL phí</th>
+                                                                                        <th class="text-center all">TL phí A</th>
                                                                                         <th class="text-center all">Phí A</th>
-                                                                                        <th class="text-center all">TL phí</th>
+                                                                                        <th class="text-center all">TL phí B</th>
                                                                                         <th class="text-center all">Phí B</th>
-                                                                                        <th class="text-center all">TL phí</th>
+                                                                                        <th class="text-center all">TL phí C</th>
                                                                                         <th class="text-center all">Phí C</th>
                                                                                     </tr>
                                                                                 </thead>
                                                                                 <tbody>
                                                                                     <tr>
-                                                                                        <td class="cell control not-desktop text-center"></td>
+                                                                                        <td class="cell control not-desktop text-center" title="Xem thêm thông tin"></td>
                                                                                         <td class="text-center">1</td>
                                                                                         <td><input class="form-control" type="text"></td>
                                                                                         <td><input class="form-control input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
@@ -314,6 +316,17 @@
                                                                         </div>
 
                                                                         <div class="row">
+                                                                            <div class="col-md-2">
+                                                                                <div class="form-group ">
+                                                                                    <label>Đơn trên phân cấp: 
+                                                                                        <a href="#" data-tooltip="tipsy" original-title="<b style='color: red;'>“Có”</b> nếu là đơn trên phân cấp." data-position="top"><i class="icon-info22"></i></a>
+                                                                                    </label>
+                                                                                    <div class="button-switch">
+                                                                                        <input type="checkbox" id="don_tren_phan_cap" checked class="switch required" name="don_tren_phan_cap" disabled>
+                                                                                        <label for="don_tren_phan_cap" data-off="Không" data-on="Có"></label>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
                                                                             <div class="col-md-3">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/tong_tien_hoa_hong_dai_li.php'); ?>
                                                                             </div>
