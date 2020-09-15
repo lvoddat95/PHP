@@ -539,10 +539,19 @@ var App = function () {
                         var v_table = $(this).closest('table');
                         var v_select = v_table.find('[select2]');
                         var v_datepicker = v_table.find('.datepicker');
+
+                        var item_level = $(this).find('.item-level');
+                        if (item_level.length > 0) {
+                            item_level.html(v_table.find('tr').length - 1)
+                        }
+
                         $(this).slideDown();
                         _component_input_type();
                         _component_datepicker(v_datepicker);
                         _component_select2(v_select);
+                        console.log($(this))
+
+                        
 
                     },
                     hide: function (deleteElement) {
@@ -1449,8 +1458,15 @@ var App = function () {
     // Datatable 
     var _component_datatable = function(p_table = '') {
 
-        var table = $('.datatable');
-        if (p_table)  table = p_table;
+        var v_table = $('.datatable');
+        var v_table_control_right = $('.datatable_ctrl_right');
+        var v_table_control_custom = $('.datatable_ctrl_custom');
+
+        if (p_table) {
+            v_table = p_table;
+            v_table_control_right = p_table;
+            v_table_control_custom = p_table;
+        }
 
         if (!$().DataTable) {
             console.warn('Warning - datatables.min.js is not loaded.');
@@ -1476,7 +1492,7 @@ var App = function () {
                 {
                     className: 'control not-desktop text-center',
                     orderable: false,
-                    targets:   0
+                    targets:    0
                 },
             ],
             dom: '<"datatable-header"f><"datatable-body"t><"datatable-footer"<"datatable-li"li>p>',
@@ -1519,20 +1535,65 @@ var App = function () {
             ],
         });
 
-        
-        table.find('tr').each(function(){
-           var v_th = $(this).find('th').eq(0);
-           var v_td = $(this).find('td').eq(0);
-           if (!v_th.hasClass('cell')) {
-                v_th.before('<th class="cell w1p"></th>');
-            }
-            if (!v_td.hasClass('cell')) {
-                v_td.before('<td class="cell"></td>');
-            }
-        });
+        if (v_table) {
+            v_table.each(function(){
+                var v_rowspan = $(this).data('control-rowspan');
+                var v_colspan = $(this).data('control-colspan');
 
-        
-        var v_datatable = table.DataTable();
+                var v_rowspan_html = ''
+                if (!v_rowspan == false) {
+                    v_rowspan_html = 'rowspan="'+v_rowspan+'"';
+                }else{
+                    v_rowspan_html = '';
+                }
+
+                var v_colspan_html = ''
+                if (!v_colspan == false) {
+                    v_colspan_html = 'rowspan="'+v_colspan+'"';
+                }else{
+                    v_colspan_html = '';
+                }
+
+                // var v_th = $(this).find('thead>tr>th').eq(0);
+                var v_th = $(this).find('thead>tr>*:first-child');
+                var v_td = $(this).find('tbody>tr>*:first-child');
+
+                if (!v_th.hasClass('cell')) {
+                    v_th.before('<th class="cell w1p"></th>');
+                }
+                if (!v_td.hasClass('cell')) {
+                    v_td.before('<td class="cell"></td>');
+                }
+            });
+
+            var v_datatable = v_table.DataTable();
+        } 
+
+        if (v_table_control_right.length==1) {
+            var v_datatable_right = v_table_control_right.DataTable({
+                responsive: {
+                    details: {
+                        type: 'column',
+                        target: -1
+                    }
+                },
+                columnDefs: [ {
+                    className: 'control',
+                    orderable: false,
+                    targets:   -1
+                } ]
+            } );
+        }
+
+        if (v_table_control_custom.length==1) {
+            var v_datatable_custom = v_table_control_custom.DataTable({
+                columnDefs: [ {
+                    className: '',
+                    orderable: false,
+                    targets:  0
+                } ]
+            } );
+        }
 
         v_datatable.on( 'responsive-display', function ( e, datatable, row, showHide, update ) {
             var v_li =  $(this).find('tbody > tr.child > td.child > ul.dtr-details > li');
@@ -1552,10 +1613,9 @@ var App = function () {
             var  select2 = $(this).find('select');
             var  datepicker = $(this).find('.datepicker');
             _component_select2(select2);
-            // _component_datepicker('.dataTables_length .datepicker');
-                                   
+            _component_datepicker(datepicker);
+            _component_input_type();
         });
-
 
         $( "[datatable-collapse]" ).on("shown.bs.collapse", function() {
             $.each($.fn.dataTable.tables(true), function(){
@@ -1585,16 +1645,6 @@ var App = function () {
             console.warn('Warning - validate.min.js is not loaded.');
             return;
         }
-
-        // if ( $('.wizard-style2>.steps').length > 0 ) {
-        //     $('.wizard-style2>.steps').stickySidebar({
-        //         topSpacing: 20,
-        //         bottomSpacing: 20,
-        //         containerSelector: '.wizard',
-        //         minWidth: 1199,
-        //     });
-        // }
-
 
         //Wizard
         var li = $(".wizard .nav-tabs li");

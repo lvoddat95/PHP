@@ -93,10 +93,8 @@
                                             </div>
 
                                             <div class="tab-pane-form">
-                                                <div class="row">
-                                                    <div class="offset-lg-2 col-lg-8">
-                                                        <?php inc('claim/1_thong_tin_chung.php'); ?>
-                                                    </div>
+                                                <div class="container">
+                                                    <?php inc('claim/1_thong_tin_chung.php'); ?>
                                                 </div>
                                             </div>
                                         </div>
@@ -117,10 +115,8 @@
                                             </div>
 
                                             <div class="tab-pane-form">
-                                                <div class="row">
-                                                    <div class="offset-xl-2 col-xl-8 offset-lg-1 col-lg-10">
-                                                        <?php inc('claim/2_bien_ban_giam_dinh.php'); ?>
-                                                    </div>
+                                                <div class="container">
+                                                    <?php inc('claim/2_bien_ban_giam_dinh.php'); ?>
                                                 </div>
                                             </div>
                                         </div>

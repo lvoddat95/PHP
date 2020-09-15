@@ -3818,7 +3818,7 @@
     outline: 0;
     position: relative;
     border-bottom-width: 1px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .table thead th {
@@ -4760,6 +4760,7 @@
     content: "\ed5e";
     font-family: "icomoon";
     display: inline-block;
+    vertical-align: middle;
     color: #4CAF50;
     font-size: 1rem;
     width: 1rem;

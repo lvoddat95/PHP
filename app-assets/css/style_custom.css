@@ -3875,14 +3875,17 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     padding-right: 0.625rem;
     padding-left: 0.625rem;
 }
+.col-content-xxl{
+    max-width: 920px;
+}
 .col-content-xl{
-    max-width: 730px;
+    max-width: 720px;
 }
 .col-content-lg{
-    max-width: 530px;
+    max-width: 520px;
 }
 .col-content-md{
-    max-width: 245px;
+    max-width: 260px;
 }
 .col-content-sm{
     max-width: 160px;
