@@ -155,7 +155,7 @@
                                                                         
                                                                         <hr class="border-dashed border-silver mb-3">
 
-                                                                        <div class="form-group">
+                                                                        <div class="form-group" datatable-repeate-row>
                                                                             <table class="table table-bordered datatable_ctrl_custom" data-control-right="true" data-paging="false" data-info="false" data-ordering="false" data-searching="false" >
                                                                                 <thead class="thead-light">
                                                                                     <tr>
@@ -163,25 +163,27 @@
                                                                                             <i class="fa fa-ellipsis-v"></i>
                                                                                         </th>
                                                                                         <th rowspan="2" class="w1p text-center">STT</th>
-                                                                                        <th rowspan="2" >Người được BH</th>
-                                                                                        <th rowspan="2" class="none">Năm sinh</th>
+                                                                                        <th rowspan="2" ><span class="text-danger">*</span> Người được BH</th>
+                                                                                        <th rowspan="2" class="none"><span class="text-danger">*</span> Năm sinh</th>
                                                                                         <th rowspan="2" class="none">Địa chỉ</th>
-                                                                                        <th rowspan="2">Hiệu lực từ ngày</th>
-                                                                                        <th rowspan="2">Đến ngày</th>
-                                                                                        <th rowspan="2">Số tiền BH</th>
-                                                                                        <th rowspan="2">Phí BH/Người</th>
+                                                                                        <th rowspan="2"><span class="text-danger">*</span> Hiệu lực từ ngày</th>
+                                                                                        <th rowspan="2"><span class="text-danger">*</span> Đến ngày</th>
+                                                                                        <th rowspan="2"><span class="text-danger">*</span> Số tiền BH</th>
+               
                                                                                         <th rowspan="2" class="none">Email/Số điện thoại</th>
-                                                                                        <th rowspan="2" class="w5p none">Tuổi</th>
+                                                                                        <th rowspan="2" class="w5p none"><span class="text-danger">*</span> Tuổi</th>
                                                                                         <th colspan="2" class="text-center">Phạm vi A</th>
                                                                                         <th colspan="2" class="text-center">Phạm vi B</th>
                                                                                         <th colspan="2" class="text-center">Phạm vi C</th>
+                                                                                        <th rowspan="2" class="w10p text-center">Tổng phí</th>
+                                                                                        <th rowspan="2" align="center">#</th>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <th class="text-center all">TL phí A</th>
+                                                                                        <th class="text-center all"><span class="text-danger">*</span> TL phí A</th>
                                                                                         <th class="text-center all">Phí A</th>
-                                                                                        <th class="text-center all">TL phí B</th>
+                                                                                        <th class="text-center all"><span class="text-danger">*</span> TL phí B</th>
                                                                                         <th class="text-center all">Phí B</th>
-                                                                                        <th class="text-center all">TL phí C</th>
+                                                                                        <th class="text-center all"><span class="text-danger">*</span> TL phí C</th>
                                                                                         <th class="text-center all">Phí C</th>
                                                                                     </tr>
                                                                                 </thead>
@@ -189,25 +191,32 @@
                                                                                     <tr>
                                                                                         <td class="cell control not-desktop text-center" title="Xem thêm thông tin"></td>
                                                                                         <td class="text-center">1</td>
-                                                                                        <td><input class="form-control" type="text"></td>
-                                                                                        <td><input class="form-control input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
+                                                                                        <td><input class="form-control" name="ndbh" type="text"></td>
+                                                                                        <td><input class="form-control input-date datepicker"placeholder="dd/mm/yyyy" type="text"></td>
                                                                                         <td><input class="form-control" type="text"></td>
                                                                                         <td><input class="form-control input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
                                                                                         <td><input class="form-control input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
 
                                                                                         <td><input class="form-control input-money text-right" placeholder="0" type="text"></td>
-                                                                                        <td><input class="form-control input-float text-right" placeholder="0" type="text"></td>
+                                       
+
                                                                                         <td><input class="form-control" type="text"></td>
-                                                                                        <td><input class="form-control" type="text"></td>
+                                                                                        <td><input class="form-control" type="text" disabled></td>
                                                                                         <td><input class="form-control input-float text-right" placeholder="0" type="text"></td>
-                                                                                        <td><input class="form-control input-money text-right" placeholder="0" type="text"></td>
+                                                                                        <td><input class="form-control input-money text-right" placeholder="0" type="text" disabled></td>
+
                                                                                         <td><input class="form-control input-float text-right" placeholder="0" type="text"></td>
-                                                                                        <td><input class="form-control input-money text-right" placeholder="0" type="text"></td>
+                                                                                        <td><input class="form-control input-money text-right" placeholder="0" type="text" disabled></td>
+
                                                                                         <td><input class="form-control input-float text-right" placeholder="0" type="text"></td>
-                                                                                        <td><input class="form-control input-money text-right" placeholder="0" type="text"></td>
+                                                                                        <td><input class="form-control input-money text-right" placeholder="0" type="text" disabled></td>
+
+                                                                                        <td><input class="form-control input-money text-right" placeholder="0" type="text" disabled></td>
+                                                                                        <td><input datatable-remove-row class="btn bg-danger" type="button" value="- Xóa"></td>
                                                                                     </tr>
                                                                                 </tbody>
                                                                             </table>
+                                                                            <div class="border p-1 text-center"><input class="btn bg-success" datatable-add-row type="button" value="+ Thêm"></div>
                                                                         </div>
 
                                                                         <div class="form-group">

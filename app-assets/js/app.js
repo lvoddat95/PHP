@@ -546,12 +546,10 @@ var App = function () {
                         }
 
                         $(this).slideDown();
+                        
                         _component_input_type();
                         _component_datepicker(v_datepicker);
                         _component_select2(v_select);
-                        console.log($(this))
-
-                        
 
                     },
                     hide: function (deleteElement) {
@@ -561,6 +559,7 @@ var App = function () {
                     }
                 });
             });
+
     
         }
     }
@@ -1462,10 +1461,20 @@ var App = function () {
         var v_table_control_right = $('.datatable_ctrl_right');
         var v_table_control_custom = $('.datatable_ctrl_custom');
 
+        v_table.each(function(){
+            var v_th = $(this).find('thead>tr>*:first-child');
+            var v_td = $(this).find('tbody>tr>*:first-child');
+
+            if ( !v_th.hasClass('cell') ) {
+                v_th.before('<th class="cell w1p"></th>');
+            }
+            if ( !v_td.hasClass('cell') ) {
+                v_td.before('<td class="cell"></td>');
+            }
+        });
+
         if (p_table) {
             v_table = p_table;
-            v_table_control_right = p_table;
-            v_table_control_custom = p_table;
         }
 
         if (!$().DataTable) {
@@ -1529,19 +1538,8 @@ var App = function () {
         });
 
         if (v_table) {
-            v_table.each(function(){
-                var v_th = $(this).find('thead>tr>*:first-child');
-                var v_td = $(this).find('tbody>tr>*:first-child');
 
-                if ( !v_th.hasClass('cell') ) {
-                    v_th.before('<th class="cell w1p"></th>');
-                }
-                if ( !v_td.hasClass('cell') ) {
-                    v_td.before('<td class="cell"></td>');
-                }
-            });
-
-            var v_datatable = v_table.DataTable({
+            var v_datatable = $(v_table).DataTable({
                 columnDefs: [
                     {
                         className: 'w1p control not-desktop text-center',
@@ -1550,6 +1548,8 @@ var App = function () {
                     },
                 ]
             });
+
+            _datatable_responsive_display(v_datatable);
         } 
 
         if (v_table_control_right.length==1) {
@@ -1570,29 +1570,53 @@ var App = function () {
 
         if (v_table_control_custom.length==1) {
             var v_datatable_custom = v_table_control_custom.DataTable();
+            _datatable_responsive_display(v_datatable_custom);
+            _datatable_add_row(v_datatable_custom);
         }
 
-        v_datatable.on( 'responsive-display', function ( e, datatable, row, showHide, update ) {
-            var v_li =  $(this).find('tbody > tr.child > td.child > ul.dtr-details > li');
-            v_li.each(function(index, li) { 
-                var v_dtr_title = $(li).find('.dtr-title');
-                var v_dtr_data = $(li).find('.dtr-data');
 
-                if (v_dtr_title.is(':empty')) {
-                    $(li).addClass('dtr-title-empty');
-                }
+        // Add row 
+        function _datatable_add_row(p_datatable){
+            $("[datatable-repeate-row]").on("click","[datatable-add-row]", function () {
+                var row_data = [];
+                $(this)
+                    .closest("[datatable-repeate-row]")
+                    .find("table > tbody > tr > td")
+                    .each(function () {
+                        row_data.push($(this).html());
+                    });
 
-                if (v_dtr_data.is(':empty')) {
-                    $(li).addClass('dtr-data-empty');
-                }
+                    console.log(row_data)
 
+                p_datatable.row.add(row_data).draw();
             });
-            var  select2 = $(this).find('select');
-            var  datepicker = $(this).find('.datepicker');
-            _component_select2(select2);
-            _component_datepicker(datepicker);
-            _component_input_type();
-        });
+        }
+
+
+        // Reponsive recall 
+        function _datatable_responsive_display(p_datatable){
+            p_datatable.on( 'responsive-display', function ( e, datatable, row, showHide, update ) {
+                var v_li =  $(this).find('tbody > tr.child > td.child > ul.dtr-details > li');
+                v_li.each(function(index, li) { 
+                    var v_dtr_title = $(li).find('.dtr-title');
+                    var v_dtr_data = $(li).find('.dtr-data');
+
+                    if (v_dtr_title.is(':empty')) {
+                        $(li).addClass('dtr-title-empty');
+                    }
+
+                    if (v_dtr_data.is(':empty')) {
+                        $(li).addClass('dtr-data-empty');
+                    }
+
+                });
+                var  select2 = $(this).find('select');
+                var  datepicker = $(this).find('.datepicker');
+                _component_select2(select2);
+                _component_datepicker(datepicker);
+                _component_input_type();
+            });
+        }
 
         $( "[datatable-collapse]" ).on("shown.bs.collapse", function() {
             $.each($.fn.dataTable.tables(true), function(){
