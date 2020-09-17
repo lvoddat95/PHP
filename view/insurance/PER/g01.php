@@ -201,7 +201,7 @@
                                                                                         <td><input class="form-control input-money text-right" placeholder="0" type="text"></td>
                                        
 
-                                                                                        <td><input class="form-control col-content-md" type="text"></td>
+                                                                                        <td><input class="form-control col-content-lg" type="text"></td>
                                                                                         <td><input class="form-control col-content-xs" type="text" disabled></td>
                                                                                         <td><input class="form-control input-float text-right" placeholder="0" type="text"></td>
                                                                                         <td><input class="form-control input-money text-right" placeholder="0" type="text" disabled></td>
