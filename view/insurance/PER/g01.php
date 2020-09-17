@@ -162,7 +162,7 @@
                                                                                         <th  rowspan="2" class="cell control not-desktop text-center">
                                                                                             <i class="fa fa-ellipsis-v"></i>
                                                                                         </th>
-                                                                                        <th rowspan="2" class="w1p text-center">STT</th>
+                                                                                        <th rowspan="2" class="w5p text-center"><input type="checkbox" class="input-chk"></th>
                                                                                         <th rowspan="2" ><span class="text-danger">*</span> Người được BH</th>
                                                                                         <th rowspan="2" class="none"><span class="text-danger">*</span> Năm sinh</th>
                                                                                         <th rowspan="2" class="none">Địa chỉ</th>
@@ -180,18 +180,18 @@
                                                                                         <th rowspan="2" class="none">Tỉ lệ phí chuẩn / Phí chuẩn</th>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <th class="text-center all"><span class="text-danger">*</span> TL phí A</th>
+                                                                                        <th class="w5p text-center all"><span class="text-danger">*</span> TL phí A</th>
                                                                                         <th class="text-center all">Phí A</th>
-                                                                                        <th class="text-center all"><span class="text-danger">*</span> TL phí B</th>
+                                                                                        <th class="w5p text-center all"><span class="text-danger">*</span> TL phí B</th>
                                                                                         <th class="text-center all">Phí B</th>
-                                                                                        <th class="text-center all"><span class="text-danger">*</span> TL phí C</th>
+                                                                                        <th class="w5p text-center all"><span class="text-danger">*</span> TL phí C</th>
                                                                                         <th class="text-center all">Phí C</th>
                                                                                     </tr>
                                                                                 </thead>
                                                                                 <tbody>
                                                                                     <tr>
                                                                                         <td class="cell control not-desktop text-center" title="Xem thêm thông tin"></td>
-                                                                                        <td class="text-center">1</td>
+                                                                                        <td class="text-center"><b>1.</b> <input type="checkbox" class="input-chk"></td></td>
                                                                                         <td><input class="form-control" type="text"></td>
                                                                                         <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
                                                                                         <td><input class="form-control col-content-lg" type="text"></td>
