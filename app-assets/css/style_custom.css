@@ -3912,3 +3912,9 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     }
 
 }
+
+
+
+.child-row-custom tr.child .dtr-title{
+    width: 170px;
+}

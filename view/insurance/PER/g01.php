@@ -156,7 +156,7 @@
                                                                         <hr class="border-dashed border-silver mb-3">
 
                                                                         <div class="form-group" datatable-repeate-row>
-                                                                            <table class="table table-bordered datatable_ctrl_custom" data-control-right="true" data-paging="false" data-info="false" data-ordering="false" data-searching="false" >
+                                                                            <table class="table table-bordered datatable-ctrl-custom child-row-custom" data-control-right="true" data-paging="false" data-info="false" data-ordering="false" data-searching="false" >
                                                                                 <thead class="thead-light">
                                                                                     <tr>
                                                                                         <th  rowspan="2" class="cell control not-desktop text-center">
@@ -176,7 +176,8 @@
                                                                                         <th colspan="2" class="text-center">Phạm vi B</th>
                                                                                         <th colspan="2" class="text-center">Phạm vi C</th>
                                                                                         <th rowspan="2" class="w10p text-center">Tổng phí</th>
-                                                                                        <th rowspan="2" align="center">#</th>
+                                                                                        <th rowspan="2"></th>
+                                                                                        <th rowspan="2" class="none">Tỉ lệ phí chuẩn / Phí chuẩn</th>
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <th class="text-center all"><span class="text-danger">*</span> TL phí A</th>
@@ -191,17 +192,17 @@
                                                                                     <tr>
                                                                                         <td class="cell control not-desktop text-center" title="Xem thêm thông tin"></td>
                                                                                         <td class="text-center">1</td>
-                                                                                        <td><input class="form-control" name="ndbh" type="text"></td>
-                                                                                        <td><input class="form-control input-date datepicker"placeholder="dd/mm/yyyy" type="text"></td>
                                                                                         <td><input class="form-control" type="text"></td>
+                                                                                        <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
+                                                                                        <td><input class="form-control col-content-lg" type="text"></td>
                                                                                         <td><input class="form-control input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
                                                                                         <td><input class="form-control input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
 
                                                                                         <td><input class="form-control input-money text-right" placeholder="0" type="text"></td>
                                        
 
-                                                                                        <td><input class="form-control" type="text"></td>
-                                                                                        <td><input class="form-control" type="text" disabled></td>
+                                                                                        <td><input class="form-control col-content-md" type="text"></td>
+                                                                                        <td><input class="form-control col-content-xs" type="text" disabled></td>
                                                                                         <td><input class="form-control input-float text-right" placeholder="0" type="text"></td>
                                                                                         <td><input class="form-control input-money text-right" placeholder="0" type="text" disabled></td>
 
@@ -212,7 +213,42 @@
                                                                                         <td><input class="form-control input-money text-right" placeholder="0" type="text" disabled></td>
 
                                                                                         <td><input class="form-control input-money text-right" placeholder="0" type="text" disabled></td>
-                                                                                        <td><input datatable-remove-row class="btn bg-danger" type="button" value="- Xóa"></td>
+
+                                                                                        <td>
+                                                                                            <input datatable-remove-row class="btn bg-danger" type="button" value="- Xóa">
+                                                                                        </td>
+
+                                                                                        <td>
+                                                                                            <table class="table table-bordered">
+                                                                                                <thead>
+                                                                                                    <tr>
+                                                                                                        <th colspan="2" class="text-center">A</th>
+                                                                                                        <th colspan="2" class="text-center">B</th>
+                                                                                                        <th colspan="2" class="text-center">C</th>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <th class="text-center "><span class="text-danger">*</span> TL phí chuẩn A</th>
+                                                                                                        <th class="text-center ">Phí chuẩn A</th>
+                                                                                                        <th class="text-center "><span class="text-danger">*</span> TL phí chuẩn B</th>
+                                                                                                        <th class="text-center ">Phí chuẩn B</th>
+                                                                                                        <th class="text-center "><span class="text-danger">*</span> TL phí chuẩn C</th>
+                                                                                                        <th class="text-center ">Phí chuẩn C</th>
+                                                                                                    </tr>
+                                                                                                </thead>
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td><input class="form-control input-float text-right" placeholder="0" type="text"></td>
+                                                                                                        <td><input class="form-control input-money text-right" placeholder="0" type="text" disabled></td>
+
+                                                                                                        <td><input class="form-control input-float text-right" placeholder="0" type="text"></td>
+                                                                                                        <td><input class="form-control input-money text-right" placeholder="0" type="text" disabled></td>
+
+                                                                                                        <td><input class="form-control input-float text-right" placeholder="0" type="text"></td>
+                                                                                                        <td><input class="form-control input-money text-right" placeholder="0" type="text" disabled></td>
+                                                                                                    </tr>
+                                                                                                </tbody>    
+                                                                                            </table>
+                                                                                        </td>
                                                                                     </tr>
                                                                                 </tbody>
                                                                             </table>
@@ -317,14 +353,28 @@
                                                                                                     <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></th>
                                                                                                     <th align="right"></th>
                                                                                                 </tr>
+
                                                                                             </tbody>
                                                                                         </table>
+                                                                                        
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-
                                                                         <div class="row">
+
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label>Tổng tỉ lệ phí chuẩn: </label>
+                                                                                    <input type="text" class="form-control input-money text-right" name="" placeholder="0" value="">
+                                                                                </div>                                                                            
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label>Tổng phí chuẩn: </label>
+                                                                                    <input type="text" class="form-control input-money text-right" name="" placeholder="0" value="">
+                                                                                </div>                                                                            
+                                                                            </div>
                                                                             <div class="col-md-2">
                                                                                 <div class="form-group ">
                                                                                     <label>Đơn trên phân cấp: 
@@ -336,6 +386,10 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
+                                                                        </div>
+
+
+                                                                        <div class="row">
                                                                             <div class="col-md-3">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/tong_tien_hoa_hong_dai_li.php'); ?>
                                                                             </div>

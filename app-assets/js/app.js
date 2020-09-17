@@ -546,7 +546,7 @@ var App = function () {
                         }
 
                         $(this).slideDown();
-                        
+
                         _component_input_type();
                         _component_datepicker(v_datepicker);
                         _component_select2(v_select);
@@ -1458,8 +1458,8 @@ var App = function () {
     var _component_datatable = function(p_table = '') {
 
         var v_table = $('.datatable');
-        var v_table_control_right = $('.datatable_ctrl_right');
-        var v_table_control_custom = $('.datatable_ctrl_custom');
+        var v_table_control_right = $('.datatable-ctrl-right');
+        var v_table_control_custom = $('.datatable-ctrl-custom');
 
         v_table.each(function(){
             var v_th = $(this).find('thead>tr>*:first-child');
@@ -1569,26 +1569,69 @@ var App = function () {
         }
 
         if (v_table_control_custom.length==1) {
-            var v_datatable_custom = v_table_control_custom.DataTable();
-            _datatable_responsive_display(v_datatable_custom);
-            _datatable_add_row(v_datatable_custom);
+            var v_datatable = v_table_control_custom.DataTable();
+            _datatable_add_row(v_datatable);
+            _datatable_remove_row(v_datatable);
+            _datatable_responsive_display(v_datatable);
         }
-
 
         // Add row 
         function _datatable_add_row(p_datatable){
             $("[datatable-repeate-row]").on("click","[datatable-add-row]", function () {
-                var row_data = [];
-                $(this)
-                    .closest("[datatable-repeate-row]")
-                    .find("table > tbody > tr > td")
-                    .each(function () {
-                        row_data.push($(this).html());
-                    });
+                var row_data = $(this).closest("[datatable-repeate-row]").find("table > tbody > tr")[0].outerHTML;
+                var row_data2 = $(this).closest("[datatable-repeate-row]").find("table > tbody > tr").clone(false);
+                p_datatable.row.add($(row_data2)[0]).draw(false);
 
-                    console.log(row_data)
+                // recall
+                _component_input_type();
+                $(row_data2).find('.datepicker').each(function(index, e) {
+                    console.log(e)
+                    $(e).removeClass('hasDatepicker')
+                    .removeData('datepicker')
+                    .removeAttr('id')
+                    .unbind();
+                    _component_datepicker($(e));
+                });
+            });
+        }
 
-                p_datatable.row.add(row_data).draw();
+        // Update original input/select on change in child row
+        function _datatable_update_formcontrol(p_table_obj, p_datatable){
+            $(p_table_obj).find('tbody').on('keyup change', '.child input, .child select, .child textarea', function(e){
+                console.log($(this).val())
+                var $el = $(this);
+                var rowIdx = $el.closest('ul').data('dtr-index');
+                var colIdx = $el.closest('li').data('dtr-index');
+                var cell = p_datatable.cell({ row: rowIdx, column: colIdx }).node();
+                $('input, select, textarea', cell).val($el.val());
+                if($el.is(':checked')){
+                    $('input', cell).prop('checked', true);
+                } else {
+                    $('input', cell).removeProp('checked');
+                }
+            });
+        }
+
+        // Remove row 
+        function _datatable_remove_row(p_datatable){
+            $("[datatable-repeate-row]").on("click","[datatable-remove-row]", function () {
+                var row = $(this).parents('tr');
+                var row_length = $(this).closest('table').find('tbody > tr').length;
+                if (row_length < 2){
+                    alert(false)
+                    return;
+                }
+
+                if (confirm("Xoa dong nay!") == true) {
+                    if ($(row).hasClass('child')) {
+                        p_datatable.row($(row).prev('tr')).remove().draw();
+                    }else{
+                        p_datatable
+                        .row($(this).parents('tr'))
+                        .remove()
+                        .draw();
+                    }
+                }
             });
         }
 
@@ -1610,8 +1653,16 @@ var App = function () {
                     }
 
                 });
-                var  select2 = $(this).find('select');
-                var  datepicker = $(this).find('.datepicker');
+
+                // recall
+                var select2 = $(this).find('select');
+                var datepicker = $(this).find('.datepicker');
+
+                datepicker.removeClass('hasDatepicker')
+                .removeData('datepicker')
+                .removeAttr('id')
+                .unbind();
+
                 _component_select2(select2);
                 _component_datepicker(datepicker);
                 _component_input_type();
@@ -1635,6 +1686,8 @@ var App = function () {
               .columns.adjust()
               .responsive.recalc();
         });
+
+        
       
     };
 
