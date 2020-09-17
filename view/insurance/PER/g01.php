@@ -373,7 +373,7 @@
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <div class="form-group">
-                                                                                    <label>Tổng tỉ lệ giảm phí: </label>
+                                                                                    <label>Tỉ lệ giảm phí: </label>
                                                                                     <input type="text" class="form-control input-money text-right" name="" placeholder="0" value="">
                                                                                 </div>                                                                            
                                                                             </div>
