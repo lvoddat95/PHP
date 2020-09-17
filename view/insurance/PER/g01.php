@@ -203,19 +203,26 @@
 
                                                                                         <td><input class="form-control col-content-lg" type="text"></td>
                                                                                         <td><input class="form-control col-content-xs" type="text" disabled></td>
-                                                                                        <td><input class="form-control input-float text-right" placeholder="0" type="text"></td>
+                                                                                        <td><input class="form-control input-float text-right" placeholder="0.0" type="text"></td>
                                                                                         <td><input class="form-control input-money text-right" placeholder="0" type="text" disabled></td>
 
-                                                                                        <td><input class="form-control input-float text-right" placeholder="0" type="text"></td>
+                                                                                        <td><input class="form-control input-float text-right" placeholder="0.0" type="text"></td>
                                                                                         <td><input class="form-control input-money text-right" placeholder="0" type="text" disabled></td>
 
-                                                                                        <td><input class="form-control input-float text-right" placeholder="0" type="text"></td>
+                                                                                        <td><input class="form-control input-float text-right" placeholder="0.0" type="text"></td>
                                                                                         <td><input class="form-control input-money text-right" placeholder="0" type="text" disabled></td>
 
                                                                                         <td><input class="form-control input-money text-right" placeholder="0" type="text" disabled></td>
 
                                                                                         <td>
-                                                                                            <input datatable-remove-row class="btn bg-danger" type="button" value="- Xóa">
+                                                                                            <div class="list-icons">
+                                                                                                <div class="dropdown">
+                                                                                                    <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
+                                                                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                                                                        <a href="#" datatable-remove-row class="dropdown-item"> <i class="icon-trash mr-1"></i> Xoá đối tượng</a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
                                                                                         </td>
 
                                                                                         <td>
@@ -237,13 +244,13 @@
                                                                                                 </thead>
                                                                                                 <tbody>
                                                                                                     <tr>
-                                                                                                        <td><input class="form-control input-float text-right" placeholder="0" type="text"></td>
+                                                                                                        <td><input class="form-control input-float text-right" placeholder="0.0" type="text"></td>
                                                                                                         <td><input class="form-control input-money text-right" placeholder="0" type="text" disabled></td>
 
-                                                                                                        <td><input class="form-control input-float text-right" placeholder="0" type="text"></td>
+                                                                                                        <td><input class="form-control input-float text-right" placeholder="0.0" type="text"></td>
                                                                                                         <td><input class="form-control input-money text-right" placeholder="0" type="text" disabled></td>
 
-                                                                                                        <td><input class="form-control input-float text-right" placeholder="0" type="text"></td>
+                                                                                                        <td><input class="form-control input-float text-right" placeholder="0.0" type="text"></td>
                                                                                                         <td><input class="form-control input-money text-right" placeholder="0" type="text" disabled></td>
                                                                                                     </tr>
                                                                                                 </tbody>    
