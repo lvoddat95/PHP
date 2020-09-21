@@ -18,7 +18,7 @@
                         </button>
                         <div class="top-left">
                             <div class="breadcrumb">
-                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i> G071 - Bảo hiểm du lịch quốc tế</a>
+                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i> G073 - Bảo hiểm người nước ngoài du lịch Việt Nam</a>
                                 <span class="breadcrumb-item active">Cập nhập đơn</span>
                             </div>
                             <div class="d-md-none logo-mobile">
@@ -151,7 +151,7 @@
                                                                         <hr class="border-dashed border-silver mb-3">
 
                                                                         <div class="form-group" repeater>
-                                                                            <table class="table table-bordered datatable child-row-sm" data-control-right="true" data-paging="false" data-info="false" data-ordering="false" data-searching="false" >
+                                                                            <table class="table table-bordered  child-row-sm" data-control-right="true" data-paging="false" data-info="false" data-ordering="false" data-searching="false" >
                                                                                 <thead class="thead-light">
                                                                                     <tr>
                                                                                         <th class="w5p all text-center"><input type="checkbox" id="input-chk-all"></th>
@@ -160,10 +160,11 @@
                                                                                         <th>Lịch trình</th>
                                                                                         <th>Ngày đi</th>
                                                                                         <th>Ngày về</th>
-                                                                                        <th>Chương trình</th>
-                                                                                        <th>Loại CT</th>
-                                                                                        <th>Giá trị BH</th>
-                                                                                        <th>Phí BH</th>
+                                                                                        <th>Độ dài chuyến đi</th>
+                                                                                        <th class="w10p">Trường hợp đặc biệt</th>
+                                                                                        <th class="w10p">Giá trị BH</th>
+                                                                                        <th class="w5p">Tỷ lệ phí/Người/Ngày</th>
+                                                                                        <th class="w10p">Phí BH</th>
                                                                                         <th></th>
                                                                                     </tr>
                                                                                     
@@ -176,9 +177,15 @@
                                                                                         <td><input class="form-control" type="text"></td>
                                                                                         <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
                                                                                         <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
-                                                                                        <td><input class="form-control" type="text"></td>
-                                                                                        <td><input class="form-control" type="text"></td>
+                                                                                        <td><input class="form-control col-content-sm input-number text-right" placeholder="0" type="text"></td>
+                                                                                        <td>
+                                                                                            <select class="form-control" select2>
+                                                                                                <option value="">Không</option>
+                                                                                                <option value="">Có</option>
+                                                                                            </select>
+                                                                                        </td>
                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text"></td>
+                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text"></td>
                                                                                         <td>
                                                                                             <div class="list-icons">
