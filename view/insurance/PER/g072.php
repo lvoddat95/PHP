@@ -151,7 +151,7 @@
                                                                         <hr class="border-dashed border-silver mb-3">
 
                                                                         <div class="form-group" repeater>
-                                                                            <table class="table table-bordered  child-row-sm" data-control-right="true" data-paging="false" data-info="false" data-ordering="false" data-searching="false" >
+                                                                            <table class="table table-bordered datatable child-row-sm" data-control-right="true" data-paging="false" data-info="false" data-ordering="false" data-searching="false" >
                                                                                 <thead class="thead-light">
                                                                                     <tr>
                                                                                         <th class="w5p all text-center"><input type="checkbox" id="input-chk-all"></th>
@@ -232,7 +232,6 @@
                                                                                                 <tr>
                                                                                                     <th width="20%">Phạm vi bảo hiểm</th>
                                                                                                     <th width="10%">Số tiền bảo hiểm</th>
-                                                                                                    <th width="5%" class="desktop">Phí (%)</th>
                                                                                                     <th width="10%" class="desktop">Phí BH (có VAT)</th>
                                                                                                     <th width="5%" class="desktop">VAT (%)</th>
                                                                                                     <th width="10%" class="desktop">VAT</th>
@@ -245,7 +244,6 @@
                                                                                                 <tr>
                                                                                                     <td>Du lịch quốc tế</td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                    <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" value="0"></td>
@@ -260,7 +258,6 @@
                                                                                                 <tr>
                                                                                                     <th><b>Tổng cộng: </b></th>
                                                                                                     <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></th>
-                                                                                                    <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0.99"></th>
                                                                                                     <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></th>
                                                                                                     <th align="right"><input class="form-control text-right" type="text" disabled readonly value="10"></th>
                                                                                                     <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></th>
