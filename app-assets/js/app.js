@@ -75,26 +75,24 @@ var App = function () {
 
     // Toggle main sidebar on mobile
     var _sidebarMobileMainToggle = function() {
+        $('.page-content').prepend('<div class="sb-overlay"></div>');
         $('.sidebar-mobile-main-toggle').on('click', function(e) {
             e.preventDefault();
             $('body').toggleClass('sidebar-mobile-main').removeClass('sidebar-mobile-secondary sidebar-mobile-right');
-            $('.page-content').prepend('<div class="sb-overlay"></div>');
-            
             if($('.sidebar-main').hasClass('sidebar-fullscreen')) {
                 $('.sidebar-main').removeClass('sidebar-fullscreen');
             }
+            
         });
 
         $('.sidebar-mobile-main-close').on('click', function(e) {
             e.preventDefault();
             $('body').removeClass('sidebar-mobile-main');
-            $('.sb-overlay').remove();
         });
 
         $('body').on('click', '.sb-overlay', function(e) {
             e.preventDefault();
             $('body').removeClass('sidebar-mobile-main');
-            $(this).remove();
         });
     };
 
@@ -535,17 +533,20 @@ var App = function () {
             }
             $('[repeater]').each(function( index ) {
                 $(this).repeater({
-                    show: function () {
-                        var v_table = $(this).closest('table');
-                        var v_select = v_table.find('[select2]');
-                        var v_datepicker = v_table.find('.datepicker');
+                    show: function (e) {
+                        var $v_clone = $(this);
+                        var v_table = $v_clone.closest('table');
+                        var v_parent = $v_clone.closest('[repeater]');
+                        var v_select = v_parent.find('[select2]');
+                        var v_datepicker = v_parent.find('.datepicker');
 
-                        var item_level = $(this).find('.item-level');
-                        if (item_level.length > 0) {
-                            item_level.html(v_table.find('tr').length - 1)
+                        if (v_table.length > 0) {
+                            if (v_table.is('.datatable, .datatable-ctrl-right, .datatable-ctrl-custom')) {
+                                v_table.DataTable().row.add($v_clone.get(0)).draw();
+                            }
                         }
 
-                        $(this).slideDown();
+                        $v_clone.slideDown();
 
                         _component_input_type();
                         _component_datepicker(v_datepicker);
@@ -1461,18 +1462,6 @@ var App = function () {
         var v_table_control_right = $('.datatable-ctrl-right');
         var v_table_control_custom = $('.datatable-ctrl-custom');
 
-        v_table.each(function(){
-            var v_th = $(this).find('thead>tr>*:first-child');
-            var v_td = $(this).find('tbody>tr>*:first-child');
-
-            if ( !v_th.hasClass('cell') ) {
-                v_th.before('<th class="cell w1p"></th>');
-            }
-            if ( !v_td.hasClass('cell') ) {
-                v_td.before('<td class="cell"></td>');
-            }
-        });
-
         if (p_table) {
             v_table = p_table;
         }
@@ -1575,66 +1564,54 @@ var App = function () {
             _datatable_responsive_display(v_datatable);
         }
 
-        // Add row 
-        function _datatable_add_row(p_datatable){
-            $("[datatable-repeate-row]").on("click","[datatable-add-row]", function () {
-                var row_data = $(this).closest("[datatable-repeate-row]").find("table > tbody > tr")[0].outerHTML;
-                var row_data2 = $(this).closest("[datatable-repeate-row]").find("table > tbody > tr").clone(false);
-                p_datatable.row.add($(row_data2)[0]).draw(false);
+        // // Add row 
+        // function _datatable_add_row(p_datatable){
+        //     $("[datatable-repeate-row]").on("click","[datatable-add-row]", function () {
+        //         var row_data = $(this).closest("[datatable-repeate-row]").find("table > tbody > tr")[0].outerHTML;
+        //         var row_data2 = $(this).closest("[datatable-repeate-row]").find("table > tbody > tr").clone(false);
+        //         p_datatable.row.add($(row_data)[0]).draw(false);
+        //     });
+        // }
 
-                // recall
-                _component_input_type();
-                $(row_data2).find('.datepicker').each(function(index, e) {
-                    console.log(e)
-                    $(e).removeClass('hasDatepicker')
-                    .removeData('datepicker')
-                    .removeAttr('id')
-                    .unbind();
-                    _component_datepicker($(e));
-                });
-            });
-        }
+        // // Update original input/select on change in child row
+        // function _datatable_update_formcontrol(p_table_obj, p_datatable){
+        //     $(p_table_obj).find('tbody').on('keyup change', '.child input, .child select, .child textarea', function(e){
+        //         console.log($(this).val())
+        //         var $el = $(this);
+        //         var rowIdx = $el.closest('ul').data('dtr-index');
+        //         var colIdx = $el.closest('li').data('dtr-index');
+        //         var cell = p_datatable.cell({ row: rowIdx, column: colIdx }).node();
+        //         $('input, select, textarea', cell).val($el.val());
+        //         if($el.is(':checked')){
+        //             $('input', cell).prop('checked', true);
+        //         } else {
+        //             $('input', cell).removeProp('checked');
+        //         }
+        //     });
+        // }
 
-        // Update original input/select on change in child row
-        function _datatable_update_formcontrol(p_table_obj, p_datatable){
-            $(p_table_obj).find('tbody').on('keyup change', '.child input, .child select, .child textarea', function(e){
-                console.log($(this).val())
-                var $el = $(this);
-                var rowIdx = $el.closest('ul').data('dtr-index');
-                var colIdx = $el.closest('li').data('dtr-index');
-                var cell = p_datatable.cell({ row: rowIdx, column: colIdx }).node();
-                $('input, select, textarea', cell).val($el.val());
-                if($el.is(':checked')){
-                    $('input', cell).prop('checked', true);
-                } else {
-                    $('input', cell).removeProp('checked');
-                }
-            });
-        }
+        // // Remove row 
+        // function _datatable_remove_row(p_datatable){
+        //     $("[datatable-repeate-row]").on("click","[datatable-remove-row]", function () {
+        //         var row = $(this).parents('tr');
+        //         var row_length = $(this).closest('table').find('tbody > tr').length;
+        //         if (row_length < 2){
+        //             alert(false)
+        //             return;
+        //         }
 
-        // Remove row 
-        function _datatable_remove_row(p_datatable){
-            $("[datatable-repeate-row]").on("click","[datatable-remove-row]", function () {
-                var row = $(this).parents('tr');
-                var row_length = $(this).closest('table').find('tbody > tr').length;
-                if (row_length < 2){
-                    alert(false)
-                    return;
-                }
-
-                if (confirm("Xoa dong nay!") == true) {
-                    if ($(row).hasClass('child')) {
-                        p_datatable.row($(row).prev('tr')).remove().draw();
-                    }else{
-                        p_datatable
-                        .row($(this).parents('tr'))
-                        .remove()
-                        .draw();
-                    }
-                }
-            });
-        }
-
+        //         if (confirm("Xoa dong nay!") == true) {
+        //             if ($(row).hasClass('child')) {
+        //                 p_datatable.row($(row).prev('tr')).remove().draw();
+        //             }else{
+        //                 p_datatable
+        //                 .row($(this).parents('tr'))
+        //                 .remove()
+        //                 .draw();
+        //             }
+        //         }
+        //     });
+        // }
 
         // Reponsive recall 
         function _datatable_responsive_display(p_datatable){
@@ -1654,14 +1631,16 @@ var App = function () {
 
                 });
 
-                // recall
+                // // recall
                 var select2 = $(this).find('select');
                 var datepicker = $(this).find('.datepicker');
 
-                datepicker.removeClass('hasDatepicker')
-                .removeData('datepicker')
-                .removeAttr('id')
-                .unbind();
+                if (datepicker.hasClass('hasDatepicker')) {
+                    datepicker.removeClass('hasDatepicker')
+                    .removeData('datepicker')
+                    .removeAttr('id')
+                    .unbind();
+                }
 
                 _component_select2(select2);
                 _component_datepicker(datepicker);
@@ -1847,6 +1826,17 @@ var App = function () {
 
         // Init truoc khi load trang
         initBeforeLoad: function() {
+            $('.datatable').each(function(){
+                var v_th = $(this).find('thead>tr>*:first-child');
+                var v_td = $(this).find('tbody>tr>*:first-child');
+
+                if ( !v_th.hasClass('cell') ) {
+                    v_th.before('<th class="cell"><i class="fa fa-ellipsis-v"></i></th>');
+                }
+                if ( !v_td.hasClass('cell') ) {
+                    v_td.before('<td class="cell"></td>');
+                }
+            });
         },
 
         // Init sau khi load trang

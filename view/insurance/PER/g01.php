@@ -72,9 +72,6 @@
                                                                             <div class="col-md-3">
                                                                                 <?php inc('template/1_thong_tin_chung/hinh_thuc_khai_thac.php'); ?> 
                                                                             </div>
-                                                                        </div>
-
-                                                                        <div class="row">
                                                                             <div class="col-md-6">
                                                                                 <?php inc('template/1_thong_tin_chung/so_don_bao_hiem.php'); ?> 
                                                                             </div>
@@ -148,21 +145,20 @@
                                                                                 </button>
                                                                             </div>
                                                                             <div class="col-sm-8">
-                                                                                <p class="mb-0 d-flex align-items-center"><span class="text-danger">Nhấn vào browser để upload dữ liệu từ excel.</span> <a href="" download="" class="text-primary">(Nhấn vào đây để tải file mẫu)</a></p>
+                                                                                <p class="mb-0 d-flex justify-content-end align-items-center"><span class="text-danger">Nhấn vào browser để upload dữ liệu từ excel.</span> <a href="" download="" class="text-primary">(Nhấn vào đây để tải file mẫu)</a></p>
                                                                             </div>
                                                                         </div>
-
                                                                         
                                                                         <hr class="border-dashed border-silver mb-3">
 
-                                                                        <div class="form-group" datatable-repeate-row>
-                                                                            <table class="table table-bordered datatable-ctrl-custom child-row-custom" data-control-right="true" data-paging="false" data-info="false" data-ordering="false" data-searching="false" >
+                                                                        <div class="form-group" repeater>
+                                                                            <table class="table table-bordered datatable child-row-sm" data-control-right="true" data-paging="false" data-info="false" data-ordering="false" data-searching="false" >
                                                                                 <thead class="thead-light">
                                                                                     <tr>
-                                                                                        <th  rowspan="2" class="cell control not-desktop text-center">
+                                                                                        <th rowspan="2" class="cell control not-desktop text-center">
                                                                                             <i class="fa fa-ellipsis-v"></i>
                                                                                         </th>
-                                                                                        <th rowspan="2" class="w5p text-center"><input type="checkbox" class="input-chk"></th>
+                                                                                        <th rowspan="2" class="w5p text-center"><input type="checkbox" id="input-chk-all"></th>
                                                                                         <th rowspan="2" ><span class="text-danger">*</span> Người được BH</th>
                                                                                         <th rowspan="2" class="none"><span class="text-danger">*</span> Năm sinh</th>
                                                                                         <th rowspan="2" class="none">Địa chỉ</th>
@@ -188,12 +184,13 @@
                                                                                         <th class="text-center all">Phí C</th>
                                                                                     </tr>
                                                                                 </thead>
-                                                                                <tbody>
-                                                                                    <tr>
+                                                                                <tbody data-repeater-list="repeater-list">
+                                                                                    <tr data-repeater-item>
                                                                                         <td class="cell control not-desktop text-center" title="Xem thêm thông tin"></td>
-                                                                                        <td class="text-center"><b>1.</b> <input type="checkbox" class="input-chk"></td></td>
+                                                                                        <td class="text-center"><b class="item-level">1.</b> <input type="checkbox" class="input-chk"></td></td>
                                                                                         <td><input class="form-control" type="text"></td>
-                                                                                        <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
+                                                                                        <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text">
+                                                                                        </td>
                                                                                         <td><input class="form-control col-content-lg" type="text"></td>
                                                                                         <td><input class="form-control input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
                                                                                         <td><input class="form-control input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
@@ -203,30 +200,31 @@
 
                                                                                         <td><input class="form-control col-content-lg" type="text"></td>
                                                                                         <td><input class="form-control col-content-xs" type="text" disabled></td>
-                                                                                        <td><input class="form-control input-float text-right" placeholder="0.0" type="text"></td>
-                                                                                        <td><input class="form-control input-money text-right" placeholder="0" type="text" disabled></td>
 
-                                                                                        <td><input class="form-control input-float text-right" placeholder="0.0" type="text"></td>
-                                                                                        <td><input class="form-control input-money text-right" placeholder="0" type="text" disabled></td>
+                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
+                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" disabled></td>
 
-                                                                                        <td><input class="form-control input-float text-right" placeholder="0.0" type="text"></td>
-                                                                                        <td><input class="form-control input-money text-right" placeholder="0" type="text" disabled></td>
+                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
+                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" disabled></td>
 
-                                                                                        <td><input class="form-control input-money text-right" placeholder="0" type="text" disabled></td>
+                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
+                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" disabled></td>
+
+                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" disabled></td>
 
                                                                                         <td>
                                                                                             <div class="list-icons">
                                                                                                 <div class="dropdown">
                                                                                                     <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                                                     <div class="dropdown-menu dropdown-menu-right">
-                                                                                                        <a href="#" datatable-remove-row class="dropdown-item"> <i class="icon-trash mr-1"></i> Xoá đối tượng</a>
+                                                                                                        <a href="#" data-repeater-delete class="dropdown-item"> <i class="icon-trash mr-1"></i> Xoá đối tượng</a>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </td>
 
                                                                                         <td>
-                                                                                            <table class="table table-bordered">
+                                                                                            <table class="table td-table table-bordered">
                                                                                                 <thead>
                                                                                                     <tr>
                                                                                                         <th colspan="2" class="text-center">A</th>
@@ -244,14 +242,14 @@
                                                                                                 </thead>
                                                                                                 <tbody>
                                                                                                     <tr>
-                                                                                                        <td><input class="form-control input-float text-right" placeholder="0.0" type="text"></td>
-                                                                                                        <td><input class="form-control input-money text-right" placeholder="0" type="text" disabled></td>
+                                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
+                                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
 
-                                                                                                        <td><input class="form-control input-float text-right" placeholder="0.0" type="text"></td>
-                                                                                                        <td><input class="form-control input-money text-right" placeholder="0" type="text" disabled></td>
+                                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
+                                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
 
-                                                                                                        <td><input class="form-control input-float text-right" placeholder="0.0" type="text"></td>
-                                                                                                        <td><input class="form-control input-money text-right" placeholder="0" type="text" disabled></td>
+                                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
+                                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
                                                                                                     </tr>
                                                                                                 </tbody>    
                                                                                             </table>
@@ -259,7 +257,7 @@
                                                                                     </tr>
                                                                                 </tbody>
                                                                             </table>
-                                                                            <div class="border p-1 text-center"><input class="btn bg-success" datatable-add-row type="button" value="+ Thêm"></div>
+                                                                            <div class="border p-1 text-center"><input class="btn bg-success" data-repeater-create type="button" value="+ Thêm"></div>
                                                                         </div>
 
                                                                         <div class="form-group">
@@ -269,8 +267,6 @@
                                                                             </div>
                                                                         </div>
 
-                                                                        
-
                                                                         <div class="row">
                                                                             <div class="col-md-4">
                                                                                 <?php inc('template/3_doi_tuong_bao_hiem/PER/chuong_trinh_bh.php'); ?>
@@ -279,6 +275,7 @@
                                                                                 <?php inc('template/3_doi_tuong_bao_hiem/PER/goi_bao_hiem.php'); ?>
                                                                             </div>
                                                                         </div>
+                                                                        
                                                                     </fieldset>
                                                                     
                                                                     <!-- Step 4 -->
@@ -430,7 +427,7 @@
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/thanh_toan_tai_ngan_hang.php'); ?>
                                                                             </div>
                                                                             <div class="col-md-12">
-                                                                                <b><label>Lịch thanh toán bảo hiểm: </label></b>
+                                                                                <span class="font-weight-semibold"><label>Lịch thanh toán bảo hiểm: </label></span>
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/lich_thanh_toan.php'); ?>
                                                                             </div>
                                                                         </div>

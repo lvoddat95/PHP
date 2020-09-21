@@ -99,7 +99,15 @@
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g04.php'; ?>" class="nav-link"><span class="menu-title">G04 - Bảo hiểm tai nạn con người của Cologne Re</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g05.php'; ?>" class="nav-link"><span class="menu-title">G05 - Bảo hiểm toàn diện học sinh</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g06.php'; ?>" class="nav-link"><span class="menu-title">G06 - Bảo hiểm du lịch trong nước</span></a></li>
-                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g07.php'; ?>" class="nav-link"><span class="menu-title">G07 - Bảo hiểm du lịch quốc tế</span></a></li>
+                                <li class="nav-item nav-item-submenu">
+                                    <a href="" class="nav-link"><span class="menu-title">G07 - Bảo hiểm du lịch quốc tế</span></a>
+                                    <ul class="nav nav-group-sub">
+                                        <a href="<?php echo HTTP_PATH .'view/insurance/PER/g07.php'; ?>" class="nav-link"><span class="menu-title">G07.1 - Du lịch quốc tế</span></a>
+                                        <a href="<?php echo HTTP_PATH .'view/insurance/PER/g072.php'; ?>" class="nav-link"><span class="menu-title">G07.2 - Người Việt Nam du lịch nước ngoài</span></a>
+                                        <a href="<?php echo HTTP_PATH .'view/insurance/PER/g073.php'; ?>" class="nav-link"><span class="menu-title">G07.3 - Người nước ngoài du lịch Việt Nam</span></a>
+                                    </ul>
+                                </li>
+
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g08.php'; ?>" class="nav-link"><span class="menu-title">G08 - Bảo hiểm sức khỏe giáo viên</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g09.php'; ?>" class="nav-link"><span class="menu-title">G09 - Bảo hiểm tai nạn đối với người lao động</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g12.php'; ?>" class="nav-link"><span class="menu-title">G12 - Bảo hiểm chăm sóc sức khỏe cá nhân White Lotus</span></a></li>
