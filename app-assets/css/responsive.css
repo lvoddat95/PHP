@@ -229,9 +229,6 @@
     .page-title > *:first-child {
         margin-bottom: 10px;
     }
-    .page-title > *:first-child *{
-        font-size: 13px;
-    }
     .page-title > *:first-child i{
         margin-right: 5px !important;
     }

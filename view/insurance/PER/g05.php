@@ -157,8 +157,8 @@
                                                                                         <th rowspan="2" class="cell control not-desktop text-center">
                                                                                             <i class="fa fa-ellipsis-v"></i>
                                                                                         </th>
-                                                                                        <th rowspan="2" class="w5p text-center"><input type="checkbox" id="input-chk-all"></th>
-                                                                                        <th rowspan="2" ><span class="text-danger">*</span> Tên học sinh</th>
+                                                                                        <th rowspan="2" class="w1p text-center"><input type="checkbox" id="input-chk-all"></th>
+                                                                                        <th rowspan="2" class="w15p"><span class="text-danger">*</span> Tên học sinh</th>
                                                                                         <th rowspan="2" class="none"><span class="text-danger">*</span> Năm sinh</th>
                                                                                         <th rowspan="2" class="none"><span class="text-danger">*</span> Tuổi</th>
                                                                                         <th rowspan="2" class="none">Giới tính</th>
@@ -170,17 +170,17 @@
                                                                                         <th colspan="2" class="text-center">Phạm vi D</th>
                                                                                         <th rowspan="2" class="w10p text-center">Phí bảo hiểm</th>
                                                                                         <th rowspan="2" class="none">Ghi chú</th>
-                                                                                        <th rowspan="2"></th>
+                                                                                        <th rowspan="2" class="w1p"></th>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <th class="w5p text-center all"><span class="text-danger">*</span> TL phí A</th>
-                                                                                        <th class="text-center all">Phí A</th>
-                                                                                        <th class="w5p text-center all"><span class="text-danger">*</span> TL phí B</th>
-                                                                                        <th class="text-center all">Phí B</th>
-                                                                                        <th class="w5p text-center all"><span class="text-danger">*</span> TL phí C</th>
-                                                                                        <th class="text-center all">Phí C</th>
-                                                                                        <th class="w5p text-center all"><span class="text-danger">*</span> TL phí D</th>
-                                                                                        <th class="text-center all">Phí D</th>
+                                                                                        <th class="w5p text-center desktop"><span class="text-danger">*</span> TL phí A</th>
+                                                                                        <th class="text-center desktop">Phí A</th>
+                                                                                        <th class="w5p text-center desktop"><span class="text-danger">*</span> TL phí B</th>
+                                                                                        <th class="text-center desktop">Phí B</th>
+                                                                                        <th class="w5p text-center desktop"><span class="text-danger">*</span> TL phí C</th>
+                                                                                        <th class="text-center desktop">Phí C</th>
+                                                                                        <th class="w5p text-center desktop"><span class="text-danger">*</span> TL phí D</th>
+                                                                                        <th class="text-center desktop">Phí D</th>
                                                                                     </tr>
                                                                                 </thead>
                                                                                 <tbody data-repeater-list="repeater-list">
@@ -211,7 +211,7 @@
 
                                                                                         <td><input class="form-control col-content-lg" type="text"></td>
 
-                                                                                        <td>
+                                                                                        <td  class="text-center">
                                                                                             <div class="list-icons">
                                                                                                 <div class="dropdown">
                                                                                                     <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>

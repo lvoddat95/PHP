@@ -156,7 +156,7 @@
                                                                                         <th rowspan="2" class="cell control not-desktop text-center">
                                                                                             <i class="fa fa-ellipsis-v"></i>
                                                                                         </th>
-                                                                                        <th rowspan="2" class="w5p text-center"><input type="checkbox" id="input-chk-all"></th>
+                                                                                        <th rowspan="2" class="w1p text-center"><input type="checkbox" id="input-chk-all"></th>
                                                                                         <th rowspan="2" ><span class="text-danger">*</span> Người được BH</th>
                                                                                         <th rowspan="2" class="none">Địa chỉ</th>
                                                                                         <th rowspan="2" class="w5p none"><span class="text-danger">*</span> Tuổi</th>
@@ -168,7 +168,7 @@
                                                                                         <th colspan="3" class="text-center">Phạm vi B</th>
                                                                                         <th colspan="3" class="text-center">Phạm vi C</th>
                                                                                         <th rowspan="2" class="w10p text-center">Tổng phí</th>
-                                                                                        <th rowspan="2"></th>
+                                                                                        <th rowspan="2" class="w1p"></th>
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <th class="text-center all"><span class="text-danger">*</span> Số tiền BH</th>
@@ -207,7 +207,7 @@
 
                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" disabled></td>
 
-                                                                                        <td>
+                                                                                        <td class="text-center">
                                                                                             <div class="list-icons">
                                                                                                 <div class="dropdown">
                                                                                                     <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>

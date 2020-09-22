@@ -3813,7 +3813,9 @@
     margin: 0;
     max-width: none;
 }
-
+.dataTable thead th.none{
+    display: none;
+}
 .dataTable thead th, .dataTable thead td {
     outline: 0;
     position: relative;

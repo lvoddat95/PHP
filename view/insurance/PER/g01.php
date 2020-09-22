@@ -158,21 +158,21 @@
                                                                                         <th rowspan="2" class="cell control not-desktop text-center">
                                                                                             <i class="fa fa-ellipsis-v"></i>
                                                                                         </th>
-                                                                                        <th rowspan="2" class="w5p text-center"><input type="checkbox" id="input-chk-all"></th>
-                                                                                        <th rowspan="2" ><span class="text-danger">*</span> Người được BH</th>
+                                                                                        <th rowspan="2" class="w1p text-center"><input type="checkbox" id="input-chk-all"></th>
+                                                                                        <th rowspan="2" class="w15p"><span class="text-danger">*</span> Người được BH</th>
                                                                                         <th rowspan="2" class="none"><span class="text-danger">*</span> Năm sinh</th>
                                                                                         <th rowspan="2" class="none">Địa chỉ</th>
                                                                                         <th rowspan="2" class="none">Email/Số điện thoại</th>
                                                                                         <th rowspan="2" class="w5p none"><span class="text-danger">*</span> Tuổi</th>
 
-                                                                                        <th rowspan="2" class="tablet"><span class="text-danger">*</span> Hiệu lực: Từ ngày</th>
-                                                                                        <th rowspan="2" class="tablet"><span class="text-danger">*</span> Hiệu lực: Đến ngày</th>
-                                                                                        <th rowspan="2" class="tablet"><span class="text-danger">*</span> Số tiền BH</th>
+                                                                                        <th rowspan="2" class="none"><span class="text-danger">*</span> Hiệu lực: Từ ngày</th>
+                                                                                        <th rowspan="2" class="none"><span class="text-danger">*</span> Hiệu lực: Đến ngày</th>
+                                                                                        <th rowspan="2" class="w10p all"><span class="text-danger">*</span> Số tiền BH</th>
                
                                                                                         <th colspan="2" class="text-center desktop">Phạm vi A</th>
                                                                                         <th colspan="2" class="text-center desktop">Phạm vi B</th>
                                                                                         <th colspan="2" class="text-center desktop">Phạm vi C</th>
-                                                                                        <th rowspan="2" class="w10p text-center">Tổng phí</th>
+                                                                                        <th rowspan="2" class="w10p not-mobile text-center">Tổng phí</th>
                                                                                         <th rowspan="2" class="all w1p"></th>
                                                                                         <th rowspan="2" class="none">Tỉ lệ phí chuẩn / Phí chuẩn</th>
                                                                                     </tr>

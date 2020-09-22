@@ -154,18 +154,18 @@
                                                                             <table class="table table-bordered datatable child-row-sm" data-control-right="true" data-paging="false" data-info="false" data-ordering="false" data-searching="false" >
                                                                                 <thead class="thead-light">
                                                                                     <tr>
-                                                                                        <th class="w5p all text-center"><input type="checkbox" id="input-chk-all"></th>
-                                                                                        <th><span class="text-danger">*</span> Người được BH</th>
+                                                                                        <th class="w1p all text-center"><input type="checkbox" id="input-chk-all"></th>
+                                                                                        <th class="w15p"><span class="text-danger">*</span> Người được BH</th>
                                                                                         <th class="none"><span class="text-danger">*</span> Năm sinh</th>
                                                                                         <th class="w5p none"><span class="text-danger">*</span> Tuổi</th>
                                                                                         <th class="none">Địa chỉ</th>
                                                                                         <th class="none">Email/Số điện thoại</th>
-                                                                                        <th><span class="text-danger">*</span> Hiệu lực từ ngày</th>
-                                                                                        <th><span class="text-danger">*</span> Đến ngày</th>
-                                                                                        <th><span class="text-danger">*</span> Số tiền BH</th>
-                                                                                        <th><span class="text-danger">*</span> Tỉ lệ phí</th>
-                                                                                        <th>Phí</th>
-                                                                                        <th></th>
+                                                                                        <th class="desktop"><span class="text-danger">*</span> Hiệu lực từ ngày</th>
+                                                                                        <th class="desktop"><span class="text-danger">*</span> Đến ngày</th>
+                                                                                        <th class="w10p"><span class="text-danger">*</span> Số tiền BH</th>
+                                                                                        <th class="w10p not-mobile"><span class="text-danger">*</span> Tỉ lệ phí</th>
+                                                                                        <th class="w15p not-mobile">Phí</th>
+                                                                                        <th class="all w1p"></th>
                                                                                     </tr>
                                                                                     
                                                                                 </thead>
@@ -185,7 +185,7 @@
                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text"></td>
                                                                                         <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" disabled></td>
-                                                                                        <td>
+                                                                                        <td class="text-center">
                                                                                             <div class="list-icons">
                                                                                                 <div class="dropdown">
                                                                                                     <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>

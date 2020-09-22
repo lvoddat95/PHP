@@ -3893,7 +3893,9 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
 .col-content-xs{
     max-width: 115px;
 }
-
+.child-row-sm tr.child .dtr-title{
+    width: 170px;
+}
 @media only screen and (max-width: 767px) {
     .col-label{
         width: 125px;
@@ -3901,20 +3903,24 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     .col-content{
         width: calc(100% - 125px);
     }
+    .dataTable tr.child .dtr-data{
+        overflow-y: scroll;
+        white-space: nowrap;
+    }
+
 
 }
 @media only screen and (max-width: 567px) {
+    .child-row-sm tr.child .dtr-title{
+        width: 120px;
+    }
     .col-label{
         width: 95px;
     }
     .col-content{
         width: calc(100% - 95px);
     }
+   
 
 }
 
-
-
-.child-row-sm tr.child .dtr-title{
-    width: 170px;
-}

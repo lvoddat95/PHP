@@ -154,18 +154,18 @@
                                                                             <table class="table table-bordered datatable child-row-sm" data-control-right="true" data-paging="false" data-info="false" data-ordering="false" data-searching="false" >
                                                                                 <thead class="thead-light">
                                                                                     <tr>
-                                                                                        <th class="w5p all text-center"><input type="checkbox" id="input-chk-all"></th>
-                                                                                        <th><span class="text-danger">*</span> Người được BH</th>
-                                                                                        <th>Địa chỉ</th>
-                                                                                        <th>Lịch trình</th>
-                                                                                        <th>Ngày đi</th>
-                                                                                        <th>Ngày về</th>
-                                                                                        <th>Độ dài chuyến đi</th>
-                                                                                        <th class="w10p">Trường hợp đặc biệt</th>
-                                                                                        <th class="w10p">Giá trị BH</th>
-                                                                                        <th class="w5p">Tỷ lệ phí/Người/Ngày</th>
+                                                                                        <th class="w1p all text-center"><input type="checkbox" id="input-chk-all"></th>
+                                                                                        <th class="w15p"><span class="text-danger">*</span> Người được BH</th>
+                                                                                        <th class="desktop">Địa chỉ</th>
+                                                                                        <th class="desktop">Lịch trình</th>
+                                                                                        <th class="desktop">Ngày đi</th>
+                                                                                        <th class="desktop">Ngày về</th>
+                                                                                        <th class="desktop">Độ dài chuyến đi</th>
+                                                                                        <th class="w10p desktop">Trường hợp đặc biệt</th>
+                                                                                        <th class="w10p not-mobile">Giá trị BH</th>
+                                                                                        <th class="w5p not-mobile">Tỷ lệ phí/Người/Ngày</th>
                                                                                         <th class="w10p">Phí BH</th>
-                                                                                        <th></th>
+                                                                                        <th class="w1p"></th>
                                                                                     </tr>
                                                                                     
                                                                                 </thead>
@@ -187,7 +187,7 @@
                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text"></td>
                                                                                         <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text"></td>
-                                                                                        <td>
+                                                                                        <td class="text-center">
                                                                                             <div class="list-icons">
                                                                                                 <div class="dropdown">
                                                                                                     <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
