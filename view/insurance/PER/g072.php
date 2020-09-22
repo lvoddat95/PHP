@@ -193,6 +193,7 @@
                                                                                                     <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                                                     <div class="dropdown-menu dropdown-menu-right">
                                                                                                         <a href="#" data-repeater-delete class="dropdown-item"> <i class="icon-trash mr-1"></i> Xoá đối tượng</a>
+                                                                                                        <a href="#"class="dropdown-item"> <i class="icon-alert mr-1"></i> Thông báo lỗi</a>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
@@ -200,13 +201,25 @@
                                                                                     </tr>
                                                                                 </tbody>
                                                                             </table>
-                                                                            <div class="border p-1 text-center"><input class="btn bg-success" data-repeater-create type="button" value="+ Thêm"></div>
+                                                                            <div class="border p-1 text-center">
+                                                                                <input class="btn bg-success" data-repeater-create type="button" value="+ Thêm">
+                                                                                <input class="btn bg-danger" type="button" value="- Xoá nhiều" disabled>
+                                                                            </div>
                                                                         </div>
 
                                                                         <div class="form-group">
                                                                             <label>Số người được bảo hiểm: <span class="text-danger">*</span></label>
                                                                             <div class="col-content-sm">
                                                                                 <input type="text" class="form-control text-right" placeholder="0">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/3_doi_tuong_bao_hiem/PER/chuong_trinh_bh.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-8">
+                                                                                <?php inc('template/3_doi_tuong_bao_hiem/PER/goi_bao_hiem.php'); ?>
                                                                             </div>
                                                                         </div>
                                                                      

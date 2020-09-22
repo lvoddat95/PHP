@@ -173,15 +173,15 @@
                                                                                         <th colspan="2" class="text-center desktop">Phạm vi B</th>
                                                                                         <th colspan="2" class="text-center desktop">Phạm vi C</th>
                                                                                         <th rowspan="2" class="w10p text-center">Tổng phí</th>
-                                                                                        <th rowspan="2" class="all w5p"></th>
+                                                                                        <th rowspan="2" class="all w1p"></th>
                                                                                         <th rowspan="2" class="none">Tỉ lệ phí chuẩn / Phí chuẩn</th>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <th class="w5p text-center desktop"><span class="text-danger">*</span> TL phí A</th>
+                                                                                        <th class="w8p text-center desktop"><span class="text-danger">*</span> TL phí A</th>
                                                                                         <th class="text-center desktop">Phí A</th>
-                                                                                        <th class="w5p text-center desktop"><span class="text-danger">*</span> TL phí B</th>
+                                                                                        <th class="w8p text-center desktop"><span class="text-danger">*</span> TL phí B</th>
                                                                                         <th class="text-center desktop">Phí B</th>
-                                                                                        <th class="w5p text-center desktop"><span class="text-danger">*</span> TL phí C</th>
+                                                                                        <th class="w8p text-center desktop"><span class="text-danger">*</span> TL phí C</th>
                                                                                         <th class="text-center desktop">Phí C</th>
                                                                                     </tr>
                                                                                 </thead>
@@ -231,12 +231,12 @@
                                                                                                         <th colspan="2" class="text-center">C</th>
                                                                                                     </tr>
                                                                                                     <tr>
-                                                                                                        <th class="text-center "><span class="text-danger">*</span> TL phí chuẩn A</th>
-                                                                                                        <th class="text-center ">Phí chuẩn A</th>
-                                                                                                        <th class="text-center "><span class="text-danger">*</span> TL phí chuẩn B</th>
-                                                                                                        <th class="text-center ">Phí chuẩn B</th>
-                                                                                                        <th class="text-center "><span class="text-danger">*</span> TL phí chuẩn C</th>
-                                                                                                        <th class="text-center ">Phí chuẩn C</th>
+                                                                                                        <th class="text-center"><span class="text-danger">*</span> TL phí chuẩn A</th>
+                                                                                                        <th class="text-center">Phí chuẩn A</th>
+                                                                                                        <th class="text-center"><span class="text-danger">*</span> TL phí chuẩn B</th>
+                                                                                                        <th class="text-center">Phí chuẩn B</th>
+                                                                                                        <th class="text-center"><span class="text-danger">*</span> TL phí chuẩn C</th>
+                                                                                                        <th class="text-center">Phí chuẩn C</th>
                                                                                                     </tr>
                                                                                                 </thead>
                                                                                                 <tbody>
