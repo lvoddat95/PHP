@@ -15,11 +15,29 @@
       }
       return false;
     };
+
+    if (!Modernizr) {
+        console.warn('Warning - Modernizr Js is not loaded.');
+        return;
+        var isTouchDevice = Modernizr.touch ||
+        (deviceAgent.match(/(iphone|ipod|ipad)/) ||
+        deviceAgent.match(/(android)/) ||
+        deviceAgent.match(/(iemobile)/) ||
+        deviceAgent.match(/iphone/i) ||
+        deviceAgent.match(/ipad/i) ||
+        deviceAgent.match(/ipod/i) ||
+        deviceAgent.match(/blackberry/i) ||
+        deviceAgent.match(/bada/i));
+    }
+
     
+
     function Tipsy(element, options) {
         this.$element = $(element);
         this.options = options;
-        this.enabled = true;
+        if (!Modernizr) {
+            this.enabled = !isTouchDevice;
+        }
         this.fixTitle();
     };
     

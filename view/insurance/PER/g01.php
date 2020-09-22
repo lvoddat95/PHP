@@ -162,26 +162,26 @@
                                                                                         <th rowspan="2" ><span class="text-danger">*</span> Người được BH</th>
                                                                                         <th rowspan="2" class="none"><span class="text-danger">*</span> Năm sinh</th>
                                                                                         <th rowspan="2" class="none">Địa chỉ</th>
-                                                                                        <th rowspan="2"><span class="text-danger">*</span> Hiệu lực từ ngày</th>
-                                                                                        <th rowspan="2"><span class="text-danger">*</span> Đến ngày</th>
-                                                                                        <th rowspan="2"><span class="text-danger">*</span> Số tiền BH</th>
+                                                                                        <th rowspan="2" class="tablet"><span class="text-danger">*</span> Hiệu lực từ ngày</th>
+                                                                                        <th rowspan="2" class="tablet"><span class="text-danger">*</span> Đến ngày</th>
+                                                                                        <th rowspan="2" class="tablet"><span class="text-danger">*</span> Số tiền BH</th>
                
                                                                                         <th rowspan="2" class="none">Email/Số điện thoại</th>
                                                                                         <th rowspan="2" class="w5p none"><span class="text-danger">*</span> Tuổi</th>
-                                                                                        <th colspan="2" class="text-center">Phạm vi A</th>
-                                                                                        <th colspan="2" class="text-center">Phạm vi B</th>
-                                                                                        <th colspan="2" class="text-center">Phạm vi C</th>
+                                                                                        <th colspan="2" class="text-center desktop">Phạm vi A</th>
+                                                                                        <th colspan="2" class="text-center desktop">Phạm vi B</th>
+                                                                                        <th colspan="2" class="text-center desktop">Phạm vi C</th>
                                                                                         <th rowspan="2" class="w10p text-center">Tổng phí</th>
-                                                                                        <th rowspan="2"></th>
+                                                                                        <th rowspan="2" class="all w5p"></th>
                                                                                         <th rowspan="2" class="none">Tỉ lệ phí chuẩn / Phí chuẩn</th>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <th class="w5p text-center all"><span class="text-danger">*</span> TL phí A</th>
-                                                                                        <th class="text-center all">Phí A</th>
-                                                                                        <th class="w5p text-center all"><span class="text-danger">*</span> TL phí B</th>
-                                                                                        <th class="text-center all">Phí B</th>
-                                                                                        <th class="w5p text-center all"><span class="text-danger">*</span> TL phí C</th>
-                                                                                        <th class="text-center all">Phí C</th>
+                                                                                        <th class="w5p text-center desktop"><span class="text-danger">*</span> TL phí A</th>
+                                                                                        <th class="text-center desktop">Phí A</th>
+                                                                                        <th class="w5p text-center desktop"><span class="text-danger">*</span> TL phí B</th>
+                                                                                        <th class="text-center desktop">Phí B</th>
+                                                                                        <th class="w5p text-center desktop"><span class="text-danger">*</span> TL phí C</th>
+                                                                                        <th class="text-center desktop">Phí C</th>
                                                                                     </tr>
                                                                                 </thead>
                                                                                 <tbody data-repeater-list="repeater-list">
@@ -212,7 +212,7 @@
 
                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" disabled></td>
 
-                                                                                        <td>
+                                                                                        <td class="text-center">
                                                                                             <div class="list-icons">
                                                                                                 <div class="dropdown">
                                                                                                     <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>

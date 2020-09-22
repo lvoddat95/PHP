@@ -444,6 +444,7 @@
         top: 5px;
         opacity: 0;
     }
+    
     .sidebar-xs .sidebar ul.nav-sidebar>li.nav-item-submenu:hover>a:after{
         opacity: 1;
     }
