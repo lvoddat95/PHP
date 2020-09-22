@@ -162,12 +162,13 @@
                                                                                         <th rowspan="2" ><span class="text-danger">*</span> Người được BH</th>
                                                                                         <th rowspan="2" class="none"><span class="text-danger">*</span> Năm sinh</th>
                                                                                         <th rowspan="2" class="none">Địa chỉ</th>
-                                                                                        <th rowspan="2" class="tablet"><span class="text-danger">*</span> Hiệu lực từ ngày</th>
-                                                                                        <th rowspan="2" class="tablet"><span class="text-danger">*</span> Đến ngày</th>
-                                                                                        <th rowspan="2" class="tablet"><span class="text-danger">*</span> Số tiền BH</th>
-               
                                                                                         <th rowspan="2" class="none">Email/Số điện thoại</th>
                                                                                         <th rowspan="2" class="w5p none"><span class="text-danger">*</span> Tuổi</th>
+
+                                                                                        <th rowspan="2" class="tablet"><span class="text-danger">*</span> Hiệu lực: Từ ngày</th>
+                                                                                        <th rowspan="2" class="tablet"><span class="text-danger">*</span> Hiệu lực: Đến ngày</th>
+                                                                                        <th rowspan="2" class="tablet"><span class="text-danger">*</span> Số tiền BH</th>
+               
                                                                                         <th colspan="2" class="text-center desktop">Phạm vi A</th>
                                                                                         <th colspan="2" class="text-center desktop">Phạm vi B</th>
                                                                                         <th colspan="2" class="text-center desktop">Phạm vi C</th>
@@ -189,17 +190,14 @@
                                                                                         <td class="cell control not-desktop text-center" title="Xem thêm thông tin"></td>
                                                                                         <td class="text-center"><b class="item-level">1.</b> <input type="checkbox" class="input-chk"></td></td>
                                                                                         <td><input class="form-control" type="text"></td>
-                                                                                        <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text">
-                                                                                        </td>
+                                                                                        <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
                                                                                         <td><input class="form-control col-content-lg" type="text"></td>
-                                                                                        <td><input class="form-control input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
-                                                                                        <td><input class="form-control input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
-
-                                                                                        <td><input class="form-control input-money text-right" placeholder="0" type="text"></td>
-                                       
-
                                                                                         <td><input class="form-control col-content-lg" type="text"></td>
                                                                                         <td><input class="form-control col-content-xs" type="text" disabled></td>
+
+                                                                                        <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
+                                                                                        <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
+                                                                                        <td><input class="form-control col-content-xs input-money text-right" placeholder="0" type="text"></td>
 
                                                                                         <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" disabled></td>
@@ -218,13 +216,14 @@
                                                                                                     <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                                                     <div class="dropdown-menu dropdown-menu-right">
                                                                                                         <a href="#" data-repeater-delete class="dropdown-item"> <i class="icon-trash mr-1"></i> Xoá đối tượng</a>
+                                                                                                        <a href="#"class="dropdown-item"> <i class="icon-alert mr-1"></i> Thông báo lỗi</a>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </td>
 
-                                                                                        <td>
-                                                                                            <table class="table td-table table-bordered">
+                                                                                        <td class="td-table-child">
+                                                                                            <table class="table table-bordered">
                                                                                                 <thead>
                                                                                                     <tr>
                                                                                                         <th colspan="2" class="text-center">A</th>
@@ -257,7 +256,10 @@
                                                                                     </tr>
                                                                                 </tbody>
                                                                             </table>
-                                                                            <div class="border p-1 text-center"><input class="btn bg-success" data-repeater-create type="button" value="+ Thêm"></div>
+                                                                            <div class="border p-1 text-center">
+                                                                                <input class="btn bg-success" data-repeater-create type="button" value="+ Thêm">
+                                                                                <input class="btn bg-danger" type="button" value="- Xoá nhiều" disabled>
+                                                                            </div>
                                                                         </div>
 
                                                                         <div class="form-group">
