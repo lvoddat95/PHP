@@ -496,10 +496,10 @@ var App = function () {
     
         $('.input-float').toArray().forEach(function (field) {
             new Cleave(field, {
-                blocks: [2, 4],
                 numeral: true,
-                delimiter: '.',
-                copyDelimiter: true,
+                numeralPositiveOnly: true,
+                numeralDecimalMark: '',
+                delimiter: ''
             });
         });
         $('.input-number').toArray().forEach(function (field) {

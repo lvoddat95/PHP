@@ -161,8 +161,8 @@
                                                                                         <th rowspan="2" class="none">Địa chỉ</th>
                                                                                         <th rowspan="2" class="w5p none"><span class="text-danger">*</span> Tuổi</th>
 
-                                                                                        <th rowspan="2"><span class="text-danger">*</span> Hiệu lực từ ngày</th>
-                                                                                        <th rowspan="2"><span class="text-danger">*</span> Đến ngày</th>
+                                                                                        <th rowspan="2" class="none"><span class="text-danger">*</span> Hiệu lực từ ngày</th>
+                                                                                        <th rowspan="2" class="none"><span class="text-danger">*</span> Đến ngày</th>
 
                                                                                         <th colspan="3" class="text-center">Phạm vi A</th>
                                                                                         <th colspan="3" class="text-center">Phạm vi B</th>
@@ -190,8 +190,8 @@
                                                                                         <td><input class="form-control col-content-lg" type="text"></td>
                                                                                         <td><input class="form-control col-content-xs" type="text" disabled></td>
 
-                                                                                        <td><input class="form-control input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
-                                                                                        <td><input class="form-control input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
+                                                                                        <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
+                                                                                        <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
 
                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text"></td>
                                                                                         <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
@@ -242,7 +242,6 @@
                                                                                 <?php inc('template/3_doi_tuong_bao_hiem/PER/goi_bao_hiem.php'); ?>
                                                                             </div>
                                                                         </div>
-                                                                     
                                                                     </fieldset>
                                                                     
                                                                     <!-- Step 4 -->
