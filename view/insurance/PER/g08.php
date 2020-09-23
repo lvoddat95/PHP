@@ -157,29 +157,31 @@
                                                                                             <i class="fa fa-ellipsis-v"></i>
                                                                                         </th>
                                                                                         <th rowspan="2" class="w1p text-center"><input type="checkbox" id="input-chk-all"></th>
-                                                                                        <th rowspan="2" ><span class="text-danger">*</span> Người được BH</th>
+                                                                                        <th rowspan="2" class="w15p"><span class="text-danger">*</span> Người được BH</th>
                                                                                         <th rowspan="2" class="none">Địa chỉ</th>
                                                                                         <th rowspan="2" class="w5p none"><span class="text-danger">*</span> Tuổi</th>
 
                                                                                         <th rowspan="2" class="none"><span class="text-danger">*</span> Hiệu lực từ ngày</th>
                                                                                         <th rowspan="2" class="none"><span class="text-danger">*</span> Đến ngày</th>
 
-                                                                                        <th colspan="3" class="text-center">Phạm vi A</th>
-                                                                                        <th colspan="3" class="text-center">Phạm vi B</th>
-                                                                                        <th colspan="3" class="text-center">Phạm vi C</th>
+                                                                                        <th colspan="3" class="text-center desktop">Phạm vi A</th>
+                                                                                        <th colspan="3" class="text-center desktop">Phạm vi B</th>
+                                                                                        <th colspan="3" class="text-center desktop">Phạm vi C</th>
                                                                                         <th rowspan="2" class="w10p text-center">Tổng phí</th>
                                                                                         <th rowspan="2" class="w1p"></th>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <th class="text-center all"><span class="text-danger">*</span> Số tiền BH</th>
-                                                                                        <th class="w5p text-center all"><span class="text-danger">*</span> TL phí</th>
-                                                                                        <th class="text-center all">Phí</th>
-                                                                                        <th class="text-center all"><span class="text-danger">*</span> Số tiền BH</th>
-                                                                                        <th class="w5p text-center all"><span class="text-danger">*</span> TL phí</th>
-                                                                                        <th class="text-center all">Phí</th>
-                                                                                        <th class="text-center all"><span class="text-danger">*</span> Số tiền B</th>
-                                                                                        <th class="w5p text-center all"><span class="text-danger">*</span> TL phí</th>
-                                                                                        <th class="text-center all">Phí</th>
+                                                                                        <th class="text-center desktop"><span class="text-danger">*</span> Số tiền BH A</th>
+                                                                                        <th class="w5p text-center desktop"><span class="text-danger">*</span> TL phí A</th>
+                                                                                        <th class="text-center desktop">Phí A</th>
+
+                                                                                        <th class="text-center desktop"><span class="text-danger">*</span> Số tiền BH B</th>
+                                                                                        <th class="w5p text-center desktop"><span class="text-danger">*</span> TL phí B</th>
+                                                                                        <th class="text-center desktop">Phí B</th>
+
+                                                                                        <th class="text-center desktop"><span class="text-danger">*</span> Số tiền C</th>
+                                                                                        <th class="w5p text-center desktop"><span class="text-danger">*</span> TL phí C</th>
+                                                                                        <th class="text-center desktop">Phí C</th>
                                                                                     </tr>
                                                                                 </thead>
                                                                                 <tbody data-repeater-list="repeater-list">
