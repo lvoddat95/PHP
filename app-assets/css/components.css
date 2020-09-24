@@ -8918,10 +8918,10 @@ body.hc-nav-open {
 .hc-offcanvas-nav .nav-link {
     position: relative;
     display: block;
-    box-sizing: border-box
+    box-sizing: border-box;
+    outline: none;
     padding: 14px 17px;
     font-size: 15px;
-    color: #fff;
     z-index: 1;
     background: rgba(0, 0, 0, 0);
     border-bottom: 1px solid #e5e5e5;
@@ -8974,6 +8974,7 @@ body.hc-nav-open {
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
     font-weight: 500;
+    outline: none;
 }
 
 .hc-offcanvas-nav li.nav-close a:hover, .hc-offcanvas-nav li.nav-back a:hover {
@@ -9001,6 +9002,7 @@ body.hc-nav-open {
     text-align: center;
     cursor: pointer;
     transition: background .2s ease;
+    outline: none;
 }
 
 .hc-offcanvas-nav li.nav-close span::before, .hc-offcanvas-nav li.nav-close span::after {
