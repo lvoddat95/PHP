@@ -102,9 +102,9 @@
                                 <li class="nav-item nav-item-submenu">
                                     <a href="" class="nav-link"><span class="menu-title">G07 - Bảo hiểm du lịch quốc tế</span></a>
                                     <ul class="nav nav-group-sub">
-                                        <a href="<?php echo HTTP_PATH .'view/insurance/PER/g07.php'; ?>" class="nav-link"><span class="menu-title">G07.1 - Du lịch quốc tế</span></a>
-                                        <a href="<?php echo HTTP_PATH .'view/insurance/PER/g072.php'; ?>" class="nav-link"><span class="menu-title">G07.2 - Người Việt Nam du lịch nước ngoài</span></a>
-                                        <a href="<?php echo HTTP_PATH .'view/insurance/PER/g073.php'; ?>" class="nav-link"><span class="menu-title">G07.3 - Người nước ngoài du lịch Việt Nam</span></a>
+                                        <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g07.php'; ?>" class="nav-link"><span class="menu-title">G07.1 - Du lịch quốc tế</span></a></li>
+                                        <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g072.php'; ?>" class="nav-link"><span class="menu-title">G07.2 - Người Việt Nam du lịch nước ngoài</span></a></li>
+                                        <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g073.php'; ?>" class="nav-link"><span class="menu-title">G07.3 - Người nước ngoài du lịch Việt Nam</span></a></li>
                                     </ul>
                                 </li>
 

@@ -8954,11 +8954,11 @@ body.hc-nav-open {
 }
 
 .hc-offcanvas-nav li:not(.custom-content) a[disabled] {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 0.2);
 }
 
 .hc-offcanvas-nav:not(.touch-device) li:not(.custom-content) a:hover {
-    background: #31679e;
+   color: rgba(0, 0, 0, 0.2);
 }
 
 .hc-offcanvas-nav ul:first-of-type>li:first-child:not(.nav-back):not(.nav-close)>.nav-item-wrapper>a {
@@ -8978,7 +8978,7 @@ body.hc-nav-open {
 }
 
 .hc-offcanvas-nav li.nav-close a:hover, .hc-offcanvas-nav li.nav-back a:hover {
-    background: rgba(255, 255, 255, .2);
+    background: rgba(0, 0, 0, .2);
 }
 
 .hc-offcanvas-nav li.nav-close:not(:first-child) a, .hc-offcanvas-nav li.nav-back:not(:first-child) a {

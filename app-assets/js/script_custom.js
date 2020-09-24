@@ -304,5 +304,4 @@ $('#main-nav').hcOffcanvasNav({
     pushContent: '.page-content',
     labelBack: 'Quay lại',
     labelClose: false
-
-  });
+});
