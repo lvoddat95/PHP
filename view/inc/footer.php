@@ -15,7 +15,7 @@
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/lightgallery.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/lightgallery-button.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/jQuery.print.min.js"></script>
-    <script src="<?php echo ASSET_ROOT; ?>/vendors/js/mmenu.js"></script>
+    <script src="<?php echo ASSET_ROOT; ?>/vendors/js/hc-offcanvas-nav.js"></script>
     <!-- /CORE JS-->
     
     <!-- JS Trang-->

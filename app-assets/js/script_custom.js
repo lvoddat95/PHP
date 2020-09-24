@@ -294,3 +294,15 @@ $(function(){
 })
 
 
+$('#main-nav').hcOffcanvasNav({
+    disableAt: 768,
+    customToggle: '.sidebar-mobile-main-toggle',
+    levelSpacing: 0,
+    navTitle: 'Danh sách Menu',
+    levelTitles: true,
+    levelTitleAsBack: true,
+    pushContent: '.page-content',
+    labelBack: 'Quay lại',
+    labelClose: false
+
+  });

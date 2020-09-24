@@ -12,7 +12,7 @@
         <i class="icon fad fa-layer-group"></i>
         <span>Ứng dụng</span>
     </a>
-    <a class="item sidebar-mobile-main-toggle" href="javascript:;">
+    <a class="item" href="javascript:;">
         <i class="icon fad fa-align-left"></i>
         <span>Menu</span>
     </a>

@@ -75,8 +75,9 @@ var App = function () {
 
     // Toggle main sidebar on mobile
     var _sidebarMobileMainToggle = function() {
-        $('.page-content').prepend('<div class="sb-overlay"></div>');
+        $('.content-wrapper').prepend('<div class="sb-overlay"></div>');
         $('.sidebar-mobile-main-toggle').on('click', function(e) {
+            return;
             e.preventDefault();
             $('body').toggleClass('sidebar-mobile-main').removeClass('sidebar-mobile-secondary sidebar-mobile-right');
             if($('.sidebar-main').hasClass('sidebar-fullscreen')) {

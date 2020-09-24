@@ -1,6 +1,6 @@
         <!-- Sidebar -->
 
-        <div class="sidebar">
+        <div id="main-nav" class="sidebar">
             <!-- Mobile Top -->
             <div class="sidebar-mobile-toggler">
         		<span>Danh sách Menu</span>
@@ -278,7 +278,7 @@
                 <!-- End-Main navigation -->
 
                 <!-- BOX -->
-                <div class="sup-box mt-5">
+                <div class="sup-box mt-5 d-none">
                     <div class="sup-up">
                         <h3>Hỗ trợ khẩn cấp</h3>
                         <p>Liên hệ ngay cho tôi !</p>
