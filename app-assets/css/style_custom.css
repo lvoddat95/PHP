@@ -3002,7 +3002,7 @@ body.sidebar-mobile-main .quick-action {
     min-height: 50px;
     position: fixed;
     z-index: 999;
-    bottom: -50px;
+    bottom: 0;
     left: 0;
     right: 0;
     background: #FFFFFF;
@@ -3014,12 +3014,18 @@ body.sidebar-mobile-main .quick-action {
     border-top: 1px solid #E1E1E1;
     padding-left: 4px;
     padding-right: 4px;
-    -webkit-transition: bottom 200ms linear 0s;
-    transition: bottom 200ms linear 0s;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-animation: none;
+    animation: none;
+    transition: opacity .1s ease,visibility .1s ease,-webkit-transform .3s ease;
+    transition: opacity .1s ease,visibility .1s ease,transform .3s ease;
+    transition: opacity .1s ease,visibility .1s ease,transform .3s ease,-webkit-transform .3s ease;
 }
 
 .mobile-bottom.show {
-    bottom: 0;
+    -webkit-transform: none;
+    transform: none;
 }
 
 .mobile-bottom > .item {
