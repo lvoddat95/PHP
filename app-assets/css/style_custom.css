@@ -2053,7 +2053,9 @@ body.sidebar-mobile-main .quick-action {
 
 .quick-action {
     position: fixed;
-    bottom: 15%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
     right: 0;
     z-index: 8;
 }
@@ -3911,7 +3913,7 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     .col-content{
         width: calc(100% - 125px);
     }
-    .dataTable tr.child .dtr-data{
+    .child-row-sm tr.child .dtr-data{
         overflow-y: scroll;
         white-space: nowrap;
     }

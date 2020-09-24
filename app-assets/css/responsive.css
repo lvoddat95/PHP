@@ -47,6 +47,9 @@
 }
 
 @media only screen and (max-width: 767px) {
+    .tipsy{
+        display: none !important;
+    }
 
     .login-header {
         margin-bottom: 30px;
@@ -228,6 +231,15 @@
     }
     .page-title > *:first-child i{
         margin-right: 5px !important;
+    }
+
+    .page-title > .p-title > p{
+        font-size: 14px;
+    }
+
+    .page-title > .p-title > span{
+        font-size: 10px;
+        line-height: normal;
     }
 
     .bieu-do > div{

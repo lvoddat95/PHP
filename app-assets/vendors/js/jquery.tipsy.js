@@ -15,29 +15,11 @@
       }
       return false;
     };
-
-    if (!Modernizr) {
-        console.warn('Warning - Modernizr Js is not loaded.');
-        return;
-        var isTouchDevice = Modernizr.touch ||
-        (deviceAgent.match(/(iphone|ipod|ipad)/) ||
-        deviceAgent.match(/(android)/) ||
-        deviceAgent.match(/(iemobile)/) ||
-        deviceAgent.match(/iphone/i) ||
-        deviceAgent.match(/ipad/i) ||
-        deviceAgent.match(/ipod/i) ||
-        deviceAgent.match(/blackberry/i) ||
-        deviceAgent.match(/bada/i));
-    }
-
     
-
     function Tipsy(element, options) {
         this.$element = $(element);
         this.options = options;
-        if (!Modernizr) {
-            this.enabled = !isTouchDevice;
-        }
+        this.enabled = true;
         this.fixTitle();
     };
     
@@ -258,19 +240,19 @@
      *        component.
      */
      $.fn.tipsy.autoBounds = function(margin, prefer) {
-		return function() {
-			var dir = {ns: prefer[0], ew: (prefer.length > 1 ? prefer[1] : false)},
-			    boundTop = $(document).scrollTop() + margin,
-			    boundLeft = $(document).scrollLeft() + margin,
-			    $this = $(this);
+        return function() {
+            var dir = {ns: prefer[0], ew: (prefer.length > 1 ? prefer[1] : false)},
+                boundTop = $(document).scrollTop() + margin,
+                boundLeft = $(document).scrollLeft() + margin,
+                $this = $(this);
 
-			if ($this.offset().top < boundTop) dir.ns = 'n';
-			if ($this.offset().left < boundLeft) dir.ew = 'w';
-			if ($(window).width() + $(document).scrollLeft() - $this.offset().left < margin) dir.ew = 'e';
-			if ($(window).height() + $(document).scrollTop() - $this.offset().top < margin) dir.ns = 's';
+            if ($this.offset().top < boundTop) dir.ns = 'n';
+            if ($this.offset().left < boundLeft) dir.ew = 'w';
+            if ($(window).width() + $(document).scrollLeft() - $this.offset().left < margin) dir.ew = 'e';
+            if ($(window).height() + $(document).scrollTop() - $this.offset().top < margin) dir.ns = 's';
 
-			return dir.ns + (dir.ew ? dir.ew : '');
-		}
-	};
+            return dir.ns + (dir.ew ? dir.ew : '');
+        }
+    };
     
 })(jQuery);

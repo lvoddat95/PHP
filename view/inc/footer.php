@@ -4,7 +4,6 @@
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/jquery-3.3.1.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/jquery-ui.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/bootstrap/bootstrap.min.js"></script>
-    <script src="<?php echo ASSET_ROOT; ?>/vendors/js/modernizr.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/equalize.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/perfect-scrollbar.jquery.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/moment/moment-with-locales.js"></script>
