@@ -298,7 +298,7 @@ $('#main-nav').hcOffcanvasNav({
     disableAt: 768,
     customToggle: '.sidebar-mobile-main-toggle',
     levelSpacing: 0,
-    navTitle: 'Danh sách Menu',
+    navTitle: 'DANH SÁCH MENU',
     levelTitles: true,
     levelTitleAsBack: true,
     pushContent: '.page-content',
