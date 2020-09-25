@@ -11,7 +11,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
     font-family: 'Roboto';
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.42857;
     color: #2d3748;
     min-height: 100vh;
@@ -851,7 +851,7 @@ a.sidebar-main-toggle:hover {
 }
 
 .select2-selection--single {
-    padding: 4px 0;
+    padding: 5px 0;
     border-radius: 4px;
 }
 
@@ -3945,4 +3945,9 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
    #mm-my-menu{
       display: none !important;
    }
+}
+
+.modal-open .modal-flex{
+    display: flex !important;
+    align-items: center;
 }

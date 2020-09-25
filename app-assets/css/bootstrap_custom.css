@@ -968,9 +968,8 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
 
 .btn {
 	position: relative;
-	font-size: 12px;
-    line-height: 18px;
-    height: 28px;
+	font-size: 14px;
+    height: 30px;
     padding-top: 4px;
     padding-bottom: 4px;
     border-radius: 4px;
@@ -1033,7 +1032,7 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
 }
 
 .btn.disabled, .btn:disabled {
-	cursor: default;
+	cursor: not-allowed;
 }
 
 .btn-light {
@@ -1157,9 +1156,8 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
     top: -1px;
     background-color: rgba(0, 0, 0, 0.15);
     display: block;
-    padding: 5px 8px;
-    line-height: 1.4;
-    height: 28px;
+    padding: 4px 8px;
+    height: 30px;
 }
 
 .btn-labeled>b>i {
@@ -4688,11 +4686,11 @@ a.badge[class*=bg-]:not(.bg-transparent):not(.bg-white):not(.bg-light):hover, a.
 }
 
 .form-control {
-    height: 28px;
+    height: 30px;
     line-height: 18px;
     padding: 4px;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 14px;
     text-overflow: ellipsis;
 }
 

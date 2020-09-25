@@ -48,7 +48,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#claim_bien_ban_giam_dinh" class="nav-link active show" data-toggle="tab">
+                                            <a href="#claim_bien_ban_giam_dinh" class="nav-link" data-toggle="tab">
                                                 <i class="fal fa-file-invoice mr-1"></i>
                                                 <span>Biên bản giám định</span>
                                             </a>
@@ -60,7 +60,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#claim_thong_bao_boi_thuong" class="nav-link" data-toggle="tab">
+                                            <a href="#claim_thong_bao_boi_thuong" class="nav-link active show" data-toggle="tab">
                                                 <i class="fal fa-bell-on mr-1"></i>
                                                 <span>Thông báo bồi thường</span>
                                             </a>
@@ -76,7 +76,7 @@
                                     <div class="clearfix"></div>
 
                                     <div class="tab-content">
-                                        <div class="tab-pane fade" id="claim_thong_tin_chung">
+                                        <div class="tab-pane" id="claim_thong_tin_chung">
                                             <div class="tab-pane-action">
                                                 <div class="page-title">
                                                     <div class="p-title">
@@ -99,7 +99,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="tab-pane fade active show" id="claim_bien_ban_giam_dinh">
+                                        <div class="tab-pane" id="claim_bien_ban_giam_dinh">
                                             <div class="tab-pane-action">
                                                 <div class="page-title">
                                                     <div class="p-title">
@@ -121,15 +121,32 @@
                                             </div>
                                         </div>
 
-                                        <div class="tab-pane fade" id="claim_to_trinh_boi_thuong">
+                                        <div class="tab-pane" id="claim_to_trinh_boi_thuong">
                                             <h1>Tờ trình bồi thường</h1>
                                         </div>
 
-                                        <div class="tab-pane fade" id="claim_thong_bao_boi_thuong">
-                                            <h1>Thông báo bồi thường</h1>
+                                        <div class="tab-pane active show" id="claim_thong_bao_boi_thuong">
+                                            <div class="tab-pane-action">
+                                                <div class="page-title">
+                                                    <div class="p-title">
+                                                        <p class="t-top"><i class="icon-certificate mr-2"></i>Thông báo bồi thường</p>
+                                                    </div>
+                                                    <div class="p-button">
+                                                        <a href="" class="btn mr-1"><i class="fa fa-reply mr-1"></i> Quay lại</a>
+                                                        <a href="javascript:;" class="btn mr-1" data-toggle="modal" data-target="#kieu_in"><i class="icon-printer2 mr-1"></i> In thông báo bồi thường</a>
+                                                        <a href="javascript:;" class="btn bg-primary"><i class="fa fa-save mr-1"></i> Lưu</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-pane-form">
+                                                <div class="container">
+                                                    <?php inc('claim/4_thong_bao_boi_thuong.php'); ?>
+                                                </div>
+                                            </div>
                                         </div>
 
-                                        <div class="tab-pane fade" id="claim_in">
+                                        <div class="tab-pane" id="claim_in">
                                             <h1>Chức năng in ấn</h1>
                                         </div>
                                     </div>
@@ -159,6 +176,7 @@
         <?php inc('modal/modal_cap_nhap_thong_tin_khach_hang.php'); ?> 
         <?php inc('modal/modal_hinh_anh_ho_so_boi_thuong.php'); ?> 
         <?php inc('modal/modal_in_option.php'); ?> 
+        <?php inc('modal/modal_kieu_in.php'); ?> 
 
     </body>
 

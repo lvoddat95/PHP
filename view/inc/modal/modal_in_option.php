@@ -1,5 +1,5 @@
 <!-- Duyệt đơn -->
-<div id="in_option" class="modal fade" tabindex="-1">
+<div id="in_option" class="modal modal-flex fade" tabindex="-1">
         <div class="modal-dialog modal-xs">
             <div class="modal-content">
                 <form action="#">
