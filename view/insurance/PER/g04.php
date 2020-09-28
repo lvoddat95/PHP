@@ -166,7 +166,7 @@
                                                                                         <th class="desktop"><span class="text-danger">*</span> Đến ngày</th>
 
                                                                                         <th class="w10p"><span class="text-danger">*</span> Số tiền BH</th>
-                                                                                        <th class="w10p desktop"><span class="text-danger">*</span> Phí chết</th>
+                                                                                        <th class="w10p desktop"><span class="text-danger">*</span> Phí tổn thất tử vong</th>
                                                                                         <th class="w10p desktop"><span class="text-danger">*</span> Phí thương tật toàn bộ vĩnh viễn</th>
                                                                                         <th class="w10p desktop"><span class="text-danger">*</span> Phí thương tật bộ phận vĩnh viễn</th>
                                                                                         <th class="w10p desktop"><span class="text-danger">*</span> Phí chi phí y tế</th>

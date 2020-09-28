@@ -914,7 +914,7 @@
                     </div>
         			<div class="form-check form-check-inline m-0 flex-grow-1">
                         <input type="radio" id="rd02" class="mr-1" name="id01">
-                        <label for="rd02" class="form-check-label ml-1 w80">Không, lý do</label>
+                        <label for="rd02" class="form-check-label ml-1 w100">Không, lý do</label>
                         <input type="text" class="form-control w-100" value="" placeholder="">
                     </div>
                 </div>
@@ -930,7 +930,7 @@
                     </div>
         			<div class="form-check form-check-inline m-0 flex-grow-1">
                         <input type="radio" id="rd04" class="mr-1" name="id02">
-                        <label for="rd04" class="form-check-label ml-1 w80">Không, lý do</label>
+                        <label for="rd04" class="form-check-label ml-1 w100">Không, lý do</label>
                         <input type="text" class="form-control w-100" value="" placeholder="">
                     </div>
                 </div>
@@ -946,7 +946,7 @@
                     </div>
         			<div class="form-check form-check-inline m-0 flex-grow-1">
                         <input type="radio" id="rd05" class="mr-1" name="id03">
-                        <label for="rd05" class="form-check-label ml-1 w80">Không, lý do</label>
+                        <label for="rd05" class="form-check-label ml-1 w100">Không, lý do</label>
                         <input type="text" class="form-control w-100" value="" placeholder="">
                     </div>
                 </div>
@@ -962,7 +962,7 @@
                     </div>
         			<div class="form-check form-check-inline m-0 flex-grow-1">
                         <input type="radio" id="rd07" class="mr-1" name="id04">
-                        <label for="rd07" class="form-check-label ml-1 w80">Không, lý do</label>
+                        <label for="rd07" class="form-check-label ml-1 w100">Không, lý do</label>
                         <input type="text" class="form-control w-100" value="" placeholder="">
                     </div>
                 </div>
@@ -978,7 +978,7 @@
                     </div>
         			<div class="form-check form-check-inline m-0 flex-grow-1">
                         <input type="radio" id="rd09" class="mr-1" name="id05">
-                        <label for="rd09" class="form-check-label ml-1 w80">Không, lý do</label>
+                        <label for="rd09" class="form-check-label ml-1 w100">Không, lý do</label>
                         <input type="text" class="form-control w-100" value="" placeholder="">
                     </div>
                 </div>

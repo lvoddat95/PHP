@@ -295,8 +295,8 @@
                                                                                                     >
                                                                                                         <thead class="thead-light">
                                                                                                             <tr>
-                                                                                                                <th class="desktop w20p">Quyền lợi</th>
-                                                                                                                <th class="desktop w10p">Số tiền bảo hiểm</th>
+                                                                                                                <th class="all w20p">Quyền lợi</th>
+                                                                                                                <th class="all w10p">Số tiền bảo hiểm</th>
                                                                                                                 <th class="desktop w5p">Phí (%)</th>
                                                                                                                 <th class="desktop w10p">Phí BH (có VAT)</th>
                                                                                                                 <th class="desktop w5p">VAT (%)</th>

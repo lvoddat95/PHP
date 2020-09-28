@@ -147,7 +147,9 @@
                                         </div>
 
                                         <div class="tab-pane" id="claim_in">
-                                            <h1>Chức năng in ấn</h1>
+                                            <div class="container">
+                                                <?php inc('claim/5_in_an.php'); ?>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

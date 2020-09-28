@@ -247,7 +247,7 @@
     <div class="col-md-6">
         <div class="row form-group">
             <label class="col-label col-form-label">Đối tượng tổn thất:</label>
-            <div class="col-content">
+            <div class="col-content col-content-md">
                 <textarea class="form-control" placeholder="Nhập đối tượng tổn thất...">88A27218</textarea>
             </div>
         </div>

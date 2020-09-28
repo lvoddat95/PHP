@@ -255,7 +255,7 @@
                                                                                             </thead>
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td>Du lịch quốc tế</td>
+                                                                                                    <td>Bảo hiểm người Việt nam du lịch nước ngoài</td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>

@@ -281,7 +281,35 @@
                                                                                             </thead>
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td>Bảo hiểm tai nạn đối với người lao động</td>
+                                                                                                    <td>Chết/Thương tật vĩnh viễn</td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                    <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" value="0"></td>
+                                                                                                    <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                    <td>
+                                                                                                        <select class="form-control " select2 name="dinh_muc" >
+                                                                                                            <option>Bảo hiểm tai nạn đối với người lao động</option>    
+                                                                                                        </select>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>Mất thu nhập</td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                    <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" value="0"></td>
+                                                                                                    <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                    <td>
+                                                                                                        <select class="form-control " select2 name="dinh_muc" >
+                                                                                                            <option>Bảo hiểm tai nạn đối với người lao động</option>    
+                                                                                                        </select>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>Chi phí Y tế</td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
