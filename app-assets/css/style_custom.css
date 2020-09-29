@@ -4015,24 +4015,29 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
 
 
 @media (min-width: 576px) {
-    .fancybox-iframe .fancybox-content{
+    .fancybox-container .fancybox-content{
         max-width: 600px;
         margin: 1.75rem auto;
     }
-    .fancybox-iframe-sm .fancybox-content{
+    .fancybox-container-sm .fancybox-content{
         max-width: 400px;
     }
 }
 
 @media (min-width: 992px) {
-    .fancybox-iframe-lg .fancybox-content, 
-    .fancybox-iframe-xl .fancybox-content{
+    .fancybox-container-lg .fancybox-content, 
+    .fancybox-container-xl .fancybox-content{
         max-width: 900px;
     }
 }
 
 @media (min-width: 1200px) {
-    .fancybox-iframe-xl .fancybox-content{
+    .fancybox-container-xl .fancybox-content{
         max-width: 1140px;
     }
+}
+
+.fancybox-slide--iframe .fancybox-content,
+.fancybox-slide--iframe .fancybox-iframe{
+    border-radius: 6px;
 }
