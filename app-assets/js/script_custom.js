@@ -203,20 +203,6 @@ var show_password = function(p_this){
     }
 }
 
-lightGallery(
-    document.getElementById('light-gallery'), 
-    {
-        thumbnail:true,
-        selector: '.gallery-item'
-    }
-);
-
-
-$( "#light-gallery" ).sortable({
-    handle: ".img-sortable",
-});
-
-
 $('.btn-print').on('click',function(){
     var data = $(this).data('print');
     if (data == 'list') {
@@ -294,14 +280,26 @@ $(function(){
 })
 
 
-$('#main-nav').hcOffcanvasNav({
-    disableAt: 768,
-    customToggle: '.sidebar-mobile-main-toggle',
-    levelSpacing: 0,
-    navTitle: 'DANH SÁCH MENU',
-    levelTitles: true,
-    levelTitleAsBack: true,
-    pushContent: '.page-content',
-    labelBack: 'Quay lại',
-    labelClose: false
+$('[data-fancybox="gallery"]').fancybox({
+    buttons : [
+        "zoom",
+        "fb",
+        // "share",
+        "slideShow",
+        "fullScreen",
+        "download",
+        "thumbs",
+        "close"
+    ],
+    thumbs : {
+        autoStart : true
+    },
+    caption : function( instance, item ) {
+        return $(this).find('figcaption').html();
+    }
 });
+
+$( "#fancybox-gallery" ).sortable({
+    handle: ".img-sortable",
+});
+

@@ -60,13 +60,13 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#claim_thong_bao_boi_thuong" class="nav-link active show" data-toggle="tab">
+                                            <a href="#claim_thong_bao_boi_thuong" class="nav-link" data-toggle="tab">
                                                 <i class="fal fa-bell-on mr-1"></i>
                                                 <span>Thông báo bồi thường</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#claim_in" class="nav-link" data-toggle="tab">
+                                            <a href="#claim_in" class="nav-link active" data-toggle="tab">
                                                 <i class="fal fa-print mr-1"></i>
                                                 <span>In ấn</span>
                                             </a>
@@ -76,7 +76,7 @@
                                     <div class="clearfix"></div>
 
                                     <div class="tab-content">
-                                        <div class="tab-pane" id="claim_thong_tin_chung">
+                                        <div class="tab-pane " id="claim_thong_tin_chung">
                                             <div class="tab-pane-action">
                                                 <div class="page-title">
                                                     <div class="p-title">
@@ -99,7 +99,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="tab-pane" id="claim_bien_ban_giam_dinh">
+                                        <div class="tab-pane " id="claim_bien_ban_giam_dinh">
                                             <div class="tab-pane-action">
                                                 <div class="page-title">
                                                     <div class="p-title">
@@ -121,11 +121,11 @@
                                             </div>
                                         </div>
 
-                                        <div class="tab-pane" id="claim_to_trinh_boi_thuong">
+                                        <div class="tab-pane " id="claim_to_trinh_boi_thuong">
                                             <h1>Tờ trình bồi thường</h1>
                                         </div>
 
-                                        <div class="tab-pane active show" id="claim_thong_bao_boi_thuong">
+                                        <div class="tab-pane " id="claim_thong_bao_boi_thuong">
                                             <div class="tab-pane-action">
                                                 <div class="page-title">
                                                     <div class="p-title">
@@ -146,7 +146,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="tab-pane" id="claim_in">
+                                        <div class="tab-pane active" id="claim_in">
                                             <div class="container">
                                                 <?php inc('claim/5_in_an.php'); ?>
                                             </div>

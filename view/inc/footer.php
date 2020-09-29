@@ -4,15 +4,13 @@
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/jquery-3.3.1.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/jquery-ui.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/bootstrap/bootstrap.min.js"></script>
-    <script src="<?php echo ASSET_ROOT; ?>/vendors/js/equalize.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/perfect-scrollbar.jquery.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/moment/moment-with-locales.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/jquery.tipsy.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/sweetalert2.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/jquery.sticky-sidebar.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/isotope.pkgd.min.js"></script>
-    <script src="<?php echo ASSET_ROOT; ?>/vendors/js/lightgallery.min.js"></script>
-    <script src="<?php echo ASSET_ROOT; ?>/vendors/js/lightgallery-button.min.js"></script>
+    <script src="<?php echo ASSET_ROOT; ?>/vendors/js/jquery.fancybox.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/jQuery.print.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/hc-offcanvas-nav.js"></script>
     <!-- /CORE JS-->

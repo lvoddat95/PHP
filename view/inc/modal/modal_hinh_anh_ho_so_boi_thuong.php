@@ -14,7 +14,7 @@
                         <i class="text-danger">* Bỏ tích tại ô màu xanh bên góc phải phía trên ảnh để loại bỏ ảnh khỏi danh sách IN *</i>
                     </div>
                     <div id="print-container">
-                        <ul id="light-gallery" class="row list-unstyled">
+                        <ul id="fancybox-gallery" class="row list-unstyled">
                             <li class="col-lg-2 col-md-3 col-sm-4 col-sm-6">
                                 <div class="img-box">
                                     <div class="d-flex align-items-center justify-content-between">
@@ -24,11 +24,17 @@
                                             <input class="form-control" type="textbox" value="6789">
                                         </div>
                                     </div>
-                                    <a href="" class="gallery-item" data-src="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau01.jpg" 
-                                data-sub-html='<ul class="list-unstyled img-info-list"> <li><span>Long:</span> <i>Không xác định</i></li> <li><span>Lat:</span> <i>Không xác định</i></li> <li><span>Đ/c:</span> <i>Không xác định</i></li> <li><span>Mô tả:</span> <i>Cập nhập tại phần mềm</i></li> </ul>'
-                                >
+                                    <a data-fancybox="gallery" href="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau01.jpg">
                                         <span class="img-view"><i class="far fa-search-plus mr-1"></i>Click xem ảnh lớn</span>
                                         <img src="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau01.jpg" alt="" class="img-fluid">
+                                        <figcaption style="display: none;">
+                                            <ul class="list-unstyled img-info-list"> 
+                                                <li><span>Long:</span> <i>Không xác định</i></li> 
+                                                <li><span>Lat:</span> <i>Không xác định</i></li> 
+                                                <li><span>Đ/c:</span> <i>Không xác định</i></li> 
+                                                <li><span>Mô tả:</span> <i>Cập nhập tại phần mềm</i></li> 
+                                            </ul>
+                                        </figcaption>
                                     </a>
                                     <div class="img-info">
                                         <ul class="list-unstyled img-info-list">
@@ -55,9 +61,7 @@
                                             <input class="form-control" type="textbox" value="6789">
                                         </div>
                                     </div>
-                                    <a href="" class="gallery-item" data-src="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau02.jpg" 
-                                data-sub-html='<ul class="list-unstyled img-info-list"> <li><span>Long:</span> <i>Không xác định</i></li> <li><span>Lat:</span> <i>Không xác định</i></li> <li><span>Đ/c:</span> <i>Không xác định</i></li> <li><span>Mô tả:</span> <i>Cập nhập tại phần mềm</i></li> </ul>'
-                                >
+                                    <a data-fancybox="gallery" href="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau02.jpg">
                                         <span class="img-view"><i class="far fa-search-plus mr-1"></i>Click xem ảnh lớn</span>
                                         <img src="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau02.jpg" alt="" class="img-fluid">
                                     </a>
@@ -86,9 +90,7 @@
                                             <input class="form-control" type="textbox" value="6789">
                                         </div>
                                     </div>
-                                    <a href="" class="gallery-item" data-src="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau03.jpg" 
-                                data-sub-html='<ul class="list-unstyled img-info-list"> <li><span>Long:</span> <i>Không xác định</i></li> <li><span>Lat:</span> <i>Không xác định</i></li> <li><span>Đ/c:</span> <i>Không xác định</i></li> <li><span>Mô tả:</span> <i>Cập nhập tại phần mềm</i></li> </ul>'
-                                >
+                                    <a data-fancybox="gallery" href="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau03.jpg">
                                         <span class="img-view"><i class="far fa-search-plus mr-1"></i>Click xem ảnh lớn</span>
                                         <img src="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau03.jpg" alt="" class="img-fluid">
                                     </a>
@@ -117,9 +119,7 @@
                                             <input class="form-control" type="textbox" value="6789">
                                         </div>
                                     </div>
-                                    <a href="" class="gallery-item" data-src="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau04.jpg" 
-                                data-sub-html='<ul class="list-unstyled img-info-list"> <li><span>Long:</span> <i>Không xác định</i></li> <li><span>Lat:</span> <i>Không xác định</i></li> <li><span>Đ/c:</span> <i>Không xác định</i></li> <li><span>Mô tả:</span> <i>Cập nhập tại phần mềm</i></li> </ul>'
-                                >
+                                    <a data-fancybox="gallery" href="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau04.jpg">
                                         <span class="img-view"><i class="far fa-search-plus mr-1"></i>Click xem ảnh lớn</span>
                                         <img src="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau04.jpg" alt="" class="img-fluid">
                                     </a>
@@ -148,9 +148,7 @@
                                             <input class="form-control" type="textbox" value="6789">
                                         </div>
                                     </div>
-                                    <a href="" class="gallery-item" data-src="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau05.jpg" 
-                                data-sub-html='<ul class="list-unstyled img-info-list"> <li><span>Long:</span> <i>Không xác định</i></li> <li><span>Lat:</span> <i>Không xác định</i></li> <li><span>Đ/c:</span> <i>Không xác định</i></li> <li><span>Mô tả:</span> <i>Cập nhập tại phần mềm</i></li> </ul>'
-                                >
+                                    <a data-fancybox="gallery" href="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau05.jpg">
                                         <span class="img-view"><i class="far fa-search-plus mr-1"></i>Click xem ảnh lớn</span>
                                         <img src="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau05.jpg" alt="" class="img-fluid">
                                     </a>
@@ -179,9 +177,7 @@
                                             <input class="form-control" type="textbox" value="6789">
                                         </div>
                                     </div>
-                                    <a href="" class="gallery-item" data-src="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau06.jpg" 
-                                data-sub-html='<ul class="list-unstyled img-info-list"> <li><span>Long:</span> <i>Không xác định</i></li> <li><span>Lat:</span> <i>Không xác định</i></li> <li><span>Đ/c:</span> <i>Không xác định</i></li> <li><span>Mô tả:</span> <i>Cập nhập tại phần mềm</i></li> </ul>'
-                                >
+                                    <a data-fancybox="gallery" href="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau06.jpg">
                                         <span class="img-view"><i class="far fa-search-plus mr-1"></i>Click xem ảnh lớn</span>
                                         <img src="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau06.jpg" alt="" class="img-fluid">
                                     </a>
@@ -210,9 +206,7 @@
                                             <input class="form-control" type="textbox" value="6789">
                                         </div>
                                     </div>
-                                    <a href="" class="gallery-item" data-src="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau07.jpg" 
-                                data-sub-html='<ul class="list-unstyled img-info-list"> <li><span>Long:</span> <i>Không xác định</i></li> <li><span>Lat:</span> <i>Không xác định</i></li> <li><span>Đ/c:</span> <i>Không xác định</i></li> <li><span>Mô tả:</span> <i>Cập nhập tại phần mềm</i></li> </ul>'
-                                >
+                                    <a data-fancybox="gallery" href="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau07.jpg">
                                         <span class="img-view"><i class="far fa-search-plus mr-1"></i>Click xem ảnh lớn</span>
                                         <img src="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau07.jpg" alt="" class="img-fluid">
                                     </a>
@@ -241,9 +235,7 @@
                                             <input class="form-control" type="textbox" value="6789">
                                         </div>
                                     </div>
-                                    <a href="" class="gallery-item" data-src="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau08.jpg" 
-                                data-sub-html='<ul class="list-unstyled img-info-list"> <li><span>Long:</span> <i>Không xác định</i></li> <li><span>Lat:</span> <i>Không xác định</i></li> <li><span>Đ/c:</span> <i>Không xác định</i></li> <li><span>Mô tả:</span> <i>Cập nhập tại phần mềm</i></li> </ul>'
-                                >
+                                    <a data-fancybox="gallery" href="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau08.jpg">
                                         <span class="img-view"><i class="far fa-search-plus mr-1"></i>Click xem ảnh lớn</span>
                                         <img src="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau08.jpg" alt="" class="img-fluid">
                                     </a>
@@ -272,9 +264,7 @@
                                             <input class="form-control" type="textbox" value="6789">
                                         </div>
                                     </div>
-                                    <a href="" class="gallery-item" data-src="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau09.jpg" 
-                                data-sub-html='<ul class="list-unstyled img-info-list"> <li><span>Long:</span> <i>Không xác định</i></li> <li><span>Lat:</span> <i>Không xác định</i></li> <li><span>Đ/c:</span> <i>Không xác định</i></li> <li><span>Mô tả:</span> <i>Cập nhập tại phần mềm</i></li> </ul>'
-                                >
+                                    <a data-fancybox="gallery" href="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau09.jpg">
                                         <span class="img-view"><i class="far fa-search-plus mr-1"></i>Click xem ảnh lớn</span>
                                         <img src="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau09.jpg" alt="" class="img-fluid">
                                     </a>
@@ -305,9 +295,7 @@
                                             <input class="form-control" type="textbox" value="6789">
                                         </div>
                                     </div>
-                                    <a href="" class="gallery-item" data-src="<?php echo HTTP_PATH; ?>app-assets/images/claim/dangki01.jpg" 
-                                data-sub-html='<ul class="list-unstyled img-info-list"> <li><span>Long:</span> <i>Không xác định</i></li> <li><span>Lat:</span> <i>Không xác định</i></li> <li><span>Đ/c:</span> <i>Không xác định</i></li> <li><span>Mô tả:</span> <i>Cập nhập tại phần mềm</i></li> </ul>'
-                                >
+                                    <a data-fancybox="gallery" href="<?php echo HTTP_PATH; ?>app-assets/images/claim/dangki01.jpg">
                                         <span class="img-view"><i class="far fa-search-plus mr-1"></i>Click xem ảnh lớn</span>
                                         <img src="<?php echo HTTP_PATH; ?>app-assets/images/claim/dangki01.jpg" alt="" class="img-fluid">
                                     </a>
@@ -336,9 +324,7 @@
                                             <input class="form-control" type="textbox" value="6789">
                                         </div>
                                     </div>
-                                    <a href="" class="gallery-item" data-src="<?php echo HTTP_PATH; ?>app-assets/images/claim/dangki02.jpg" 
-                                data-sub-html='<ul class="list-unstyled img-info-list"> <li><span>Long:</span> <i>Không xác định</i></li> <li><span>Lat:</span> <i>Không xác định</i></li> <li><span>Đ/c:</span> <i>Không xác định</i></li> <li><span>Mô tả:</span> <i>Cập nhập tại phần mềm</i></li> </ul>'
-                                >
+                                    <a data-fancybox="gallery" href="<?php echo HTTP_PATH; ?>app-assets/images/claim/dangki02.jpg">
                                         <span class="img-view"><i class="far fa-search-plus mr-1"></i>Click xem ảnh lớn</span>
                                         <img src="<?php echo HTTP_PATH; ?>app-assets/images/claim/dangki02.jpg" alt="" class="img-fluid">
                                     </a>

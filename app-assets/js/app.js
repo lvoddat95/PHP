@@ -65,6 +65,7 @@ var App = function () {
             e.preventDefault();
             $('body').toggleClass('sidebar-component-hidden');
         });
+
     };
 
 
@@ -95,6 +96,28 @@ var App = function () {
             e.preventDefault();
             $('body').removeClass('sidebar-mobile-main');
         });
+
+
+        
+        if($('#main-nav').length > 0) {
+            if (typeof hcOffcanvasNav == 'undefined') {
+                console.warn('Warning - hcOffcanvasNav Js is not loaded.');
+                return;
+            }
+            $('#main-nav').hcOffcanvasNav({
+                disableAt: 768,
+                customToggle: '.sidebar-mobile-main-toggle',
+                levelSpacing: 0,
+                navTitle: 'DANH SÁCH MENU',
+                levelTitles: true,
+                levelTitleAsBack: true,
+                pushContent: '.page-content',
+                labelBack: 'Quay lại',
+                labelClose: false
+            });
+        }
+
+
     };
 
     // Toggle component sidebar on mobile
@@ -353,6 +376,7 @@ var App = function () {
         if ($('[data-tooltip="tipsy"]').length > 0) {
             if (!$().tipsy) {
                 console.warn('Warning - Tipsy js is not loaded.');
+                return;
             }
             $('[data-tooltip="tipsy"]').each(function (index) {
                 var $this = $(this);
@@ -391,6 +415,7 @@ var App = function () {
     var _component_select2 = function(p_select) {
         if (!$().select2) {
             console.warn('Warning - Select2 Js is not loaded.');
+            return;
         }
 
         var select = $('[select2]');
@@ -464,8 +489,9 @@ var App = function () {
     // Cleave js: dinh dang kieu nhap du lieu input
     var _component_input_type = function(){
 
-        if (!Cleave) {
+        if (typeof Cleave == 'undefined') {
             console.warn('Warning - Cleave Js is not loaded.');
+            return;
         }
 
         $('.input-money').toArray().forEach(function (field) {
@@ -531,6 +557,7 @@ var App = function () {
         if ($('[repeater]').length > 0) {
             if (!$().repeater) {
                 console.warn('Warning - Repeater Js is not loaded.');
+                return;
             }
             $('[repeater]').each(function( index ) {
                 $(this).repeater({
@@ -569,8 +596,9 @@ var App = function () {
     // PerfectScrollbar js
     var _component_perfect_scrollbar = function(){
         if ($('[scrollbar]').length > 0) {
-            if (!PerfectScrollbar) {
+            if (typeof PerfectScrollbar == 'undefined') {
                 console.warn('Warning - PerfectScrollbar Js is not loaded.');
+                return;
             }
             $('[scrollbar]').each(function(){ 
                 const ps = new PerfectScrollbar($(this)[0]); 
@@ -1565,55 +1593,6 @@ var App = function () {
             _datatable_responsive_display(v_datatable);
         }
 
-        // // Add row 
-        // function _datatable_add_row(p_datatable){
-        //     $("[datatable-repeate-row]").on("click","[datatable-add-row]", function () {
-        //         var row_data = $(this).closest("[datatable-repeate-row]").find("table > tbody > tr")[0].outerHTML;
-        //         var row_data2 = $(this).closest("[datatable-repeate-row]").find("table > tbody > tr").clone(false);
-        //         p_datatable.row.add($(row_data)[0]).draw(false);
-        //     });
-        // }
-
-        // // Update original input/select on change in child row
-        // function _datatable_update_formcontrol(p_table_obj, p_datatable){
-        //     $(p_table_obj).find('tbody').on('keyup change', '.child input, .child select, .child textarea', function(e){
-        //         console.log($(this).val())
-        //         var $el = $(this);
-        //         var rowIdx = $el.closest('ul').data('dtr-index');
-        //         var colIdx = $el.closest('li').data('dtr-index');
-        //         var cell = p_datatable.cell({ row: rowIdx, column: colIdx }).node();
-        //         $('input, select, textarea', cell).val($el.val());
-        //         if($el.is(':checked')){
-        //             $('input', cell).prop('checked', true);
-        //         } else {
-        //             $('input', cell).removeProp('checked');
-        //         }
-        //     });
-        // }
-
-        // // Remove row 
-        // function _datatable_remove_row(p_datatable){
-        //     $("[datatable-repeate-row]").on("click","[datatable-remove-row]", function () {
-        //         var row = $(this).parents('tr');
-        //         var row_length = $(this).closest('table').find('tbody > tr').length;
-        //         if (row_length < 2){
-        //             alert(false)
-        //             return;
-        //         }
-
-        //         if (confirm("Xoa dong nay!") == true) {
-        //             if ($(row).hasClass('child')) {
-        //                 p_datatable.row($(row).prev('tr')).remove().draw();
-        //             }else{
-        //                 p_datatable
-        //                 .row($(this).parents('tr'))
-        //                 .remove()
-        //                 .draw();
-        //             }
-        //         }
-        //     });
-        // }
-
         // Reponsive recall 
         function _datatable_responsive_display(p_datatable){
 
@@ -1675,7 +1654,7 @@ var App = function () {
                .responsive.recalc();
         });
 
-        $("a[data-toggle=\"tab\"]").on("shown.bs.tab", function (e) {
+        $("[datatable-tab]").on("shown.bs.tab", function (e) {
             $($.fn.dataTable.tables(true)).DataTable()
               .columns.adjust()
               .responsive.recalc();
@@ -1745,7 +1724,7 @@ var App = function () {
 
     var _component_isotope = function(){
 
-        if (!Isotope) {
+        if (typeof Isotope == 'undefined') {
             console.warn('Warning - isotope.pkgd.min.js is not loaded.');
             return;
         }
