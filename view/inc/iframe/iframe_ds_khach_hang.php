@@ -1,12 +1,8 @@
 <?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?>
-    
-<div id="ds_cac_khach_hang" class="modal fade" tabindex="-1" datatable-modal>
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
+
             <div class="modal-header">
                 <h5 class="modal-title">Danh sách các khách hàng</h5>
-                <button type="button" class="close" data-dismiss="modal"><i class="fal fa-times"></i></button>
             </div>
             <form action="#">
                 <div class="modal-body">
@@ -322,10 +318,6 @@
                     <a href="#" class="btn bg-primary"><i class="icon-checkmark4 mr-1"></i>Chọn</a>
                 </div>
             </form>
-        </div>
-    </div>
-</div>
-
 
 
 <?php include_once FOOTER; ?>

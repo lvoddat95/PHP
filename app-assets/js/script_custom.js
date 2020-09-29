@@ -294,6 +294,7 @@ $('[data-fancybox="gallery"]').fancybox({
     thumbs : {
         autoStart : true
     },
+    baseClass: "",
     caption : function( instance, item ) {
         return $(this).find('figcaption').html();
     }

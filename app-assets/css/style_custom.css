@@ -14,7 +14,6 @@ body {
     font-size: 14px;
     line-height: 1.42857;
     color: #2d3748;
-    min-height: 100vh;
 }
 
 a, area, button, input, label, select, textarea, [tabindex] {
@@ -4012,4 +4011,28 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     text-transform: uppercase;
     font-weight: 500;
     margin-bottom: 7px;
+}
+
+
+@media (min-width: 576px) {
+    .fancybox-iframe .fancybox-content{
+        max-width: 600px;
+        margin: 1.75rem auto;
+    }
+    .fancybox-iframe-sm .fancybox-content{
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 992px) {
+    .fancybox-iframe-lg .fancybox-content, 
+    .fancybox-iframe-xl .fancybox-content{
+        max-width: 900px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .fancybox-iframe-xl .fancybox-content{
+        max-width: 1140px;
+    }
 }
