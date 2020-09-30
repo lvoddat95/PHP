@@ -64,6 +64,14 @@
                                     <a data-fancybox="gallery" href="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau02.jpg">
                                         <span class="img-view"><i class="far fa-search-plus mr-1"></i>Click xem ảnh lớn</span>
                                         <img src="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau02.jpg" alt="" class="img-fluid">
+                                        <figcaption style="display: none;">
+                                            <ul class="list-unstyled img-info-list"> 
+                                                <li><span>Long:</span> <i>Không xác định</i></li> 
+                                                <li><span>Lat:</span> <i>Không xác định</i></li> 
+                                                <li><span>Đ/c:</span> <i>Không xác định</i></li> 
+                                                <li><span>Mô tả:</span> <i>Cập nhập tại phần mềm</i></li> 
+                                            </ul>
+                                        </figcaption>
                                     </a>
                                     <div class="img-info">
                                         <ul class="list-unstyled img-info-list">
@@ -93,6 +101,14 @@
                                     <a data-fancybox="gallery" href="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau03.jpg">
                                         <span class="img-view"><i class="far fa-search-plus mr-1"></i>Click xem ảnh lớn</span>
                                         <img src="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau03.jpg" alt="" class="img-fluid">
+                                        <figcaption style="display: none;">
+                                            <ul class="list-unstyled img-info-list"> 
+                                                <li><span>Long:</span> <i>Không xác định</i></li> 
+                                                <li><span>Lat:</span> <i>Không xác định</i></li> 
+                                                <li><span>Đ/c:</span> <i>Không xác định</i></li> 
+                                                <li><span>Mô tả:</span> <i>Cập nhập tại phần mềm</i></li> 
+                                            </ul>
+                                        </figcaption>
                                     </a>
                                     <div class="img-info">
                                         <ul class="list-unstyled img-info-list">
@@ -122,6 +138,14 @@
                                     <a data-fancybox="gallery" href="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau04.jpg">
                                         <span class="img-view"><i class="far fa-search-plus mr-1"></i>Click xem ảnh lớn</span>
                                         <img src="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau04.jpg" alt="" class="img-fluid">
+                                        <figcaption style="display: none;">
+                                            <ul class="list-unstyled img-info-list"> 
+                                                <li><span>Long:</span> <i>Không xác định</i></li> 
+                                                <li><span>Lat:</span> <i>Không xác định</i></li> 
+                                                <li><span>Đ/c:</span> <i>Không xác định</i></li> 
+                                                <li><span>Mô tả:</span> <i>Cập nhập tại phần mềm</i></li> 
+                                            </ul>
+                                        </figcaption>
                                     </a>
                                     <div class="img-info">
                                         <ul class="list-unstyled img-info-list">
@@ -151,6 +175,14 @@
                                     <a data-fancybox="gallery" href="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau05.jpg">
                                         <span class="img-view"><i class="far fa-search-plus mr-1"></i>Click xem ảnh lớn</span>
                                         <img src="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau05.jpg" alt="" class="img-fluid">
+                                        <figcaption style="display: none;">
+                                            <ul class="list-unstyled img-info-list"> 
+                                                <li><span>Long:</span> <i>Không xác định</i></li> 
+                                                <li><span>Lat:</span> <i>Không xác định</i></li> 
+                                                <li><span>Đ/c:</span> <i>Không xác định</i></li> 
+                                                <li><span>Mô tả:</span> <i>Cập nhập tại phần mềm</i></li> 
+                                            </ul>
+                                        </figcaption>
                                     </a>
                                     <div class="img-info">
                                         <ul class="list-unstyled img-info-list">
@@ -180,6 +212,14 @@
                                     <a data-fancybox="gallery" href="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau06.jpg">
                                         <span class="img-view"><i class="far fa-search-plus mr-1"></i>Click xem ảnh lớn</span>
                                         <img src="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau06.jpg" alt="" class="img-fluid">
+                                        <figcaption style="display: none;">
+                                            <ul class="list-unstyled img-info-list"> 
+                                                <li><span>Long:</span> <i>Không xác định</i></li> 
+                                                <li><span>Lat:</span> <i>Không xác định</i></li> 
+                                                <li><span>Đ/c:</span> <i>Không xác định</i></li> 
+                                                <li><span>Mô tả:</span> <i>Cập nhập tại phần mềm</i></li> 
+                                            </ul>
+                                        </figcaption>
                                     </a>
                                     <div class="img-info">
                                         <ul class="list-unstyled img-info-list">
@@ -209,6 +249,14 @@
                                     <a data-fancybox="gallery" href="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau07.jpg">
                                         <span class="img-view"><i class="far fa-search-plus mr-1"></i>Click xem ảnh lớn</span>
                                         <img src="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau07.jpg" alt="" class="img-fluid">
+                                        <figcaption style="display: none;">
+                                            <ul class="list-unstyled img-info-list"> 
+                                                <li><span>Long:</span> <i>Không xác định</i></li> 
+                                                <li><span>Lat:</span> <i>Không xác định</i></li> 
+                                                <li><span>Đ/c:</span> <i>Không xác định</i></li> 
+                                                <li><span>Mô tả:</span> <i>Cập nhập tại phần mềm</i></li> 
+                                            </ul>
+                                        </figcaption>
                                     </a>
                                     <div class="img-info">
                                         <ul class="list-unstyled img-info-list">
@@ -238,6 +286,14 @@
                                     <a data-fancybox="gallery" href="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau08.jpg">
                                         <span class="img-view"><i class="far fa-search-plus mr-1"></i>Click xem ảnh lớn</span>
                                         <img src="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau08.jpg" alt="" class="img-fluid">
+                                        <figcaption style="display: none;">
+                                            <ul class="list-unstyled img-info-list"> 
+                                                <li><span>Long:</span> <i>Không xác định</i></li> 
+                                                <li><span>Lat:</span> <i>Không xác định</i></li> 
+                                                <li><span>Đ/c:</span> <i>Không xác định</i></li> 
+                                                <li><span>Mô tả:</span> <i>Cập nhập tại phần mềm</i></li> 
+                                            </ul>
+                                        </figcaption>
                                     </a>
                                     <div class="img-info">
                                         <ul class="list-unstyled img-info-list">
@@ -267,6 +323,14 @@
                                     <a data-fancybox="gallery" href="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau09.jpg">
                                         <span class="img-view"><i class="far fa-search-plus mr-1"></i>Click xem ảnh lớn</span>
                                         <img src="<?php echo HTTP_PATH; ?>app-assets/images/claim/can-sau09.jpg" alt="" class="img-fluid">
+                                        <figcaption style="display: none;">
+                                            <ul class="list-unstyled img-info-list"> 
+                                                <li><span>Long:</span> <i>Không xác định</i></li> 
+                                                <li><span>Lat:</span> <i>Không xác định</i></li> 
+                                                <li><span>Đ/c:</span> <i>Không xác định</i></li> 
+                                                <li><span>Mô tả:</span> <i>Cập nhập tại phần mềm</i></li> 
+                                            </ul>
+                                        </figcaption>
                                     </a>
                                     <div class="img-info">
                                         <ul class="list-unstyled img-info-list">
@@ -298,6 +362,14 @@
                                     <a data-fancybox="gallery" href="<?php echo HTTP_PATH; ?>app-assets/images/claim/dangki01.jpg">
                                         <span class="img-view"><i class="far fa-search-plus mr-1"></i>Click xem ảnh lớn</span>
                                         <img src="<?php echo HTTP_PATH; ?>app-assets/images/claim/dangki01.jpg" alt="" class="img-fluid">
+                                        <figcaption style="display: none;">
+                                            <ul class="list-unstyled img-info-list"> 
+                                                <li><span>Long:</span> <i>Không xác định</i></li> 
+                                                <li><span>Lat:</span> <i>Không xác định</i></li> 
+                                                <li><span>Đ/c:</span> <i>Không xác định</i></li> 
+                                                <li><span>Mô tả:</span> <i>Cập nhập tại phần mềm</i></li> 
+                                            </ul>
+                                        </figcaption>
                                     </a>
                                     <div class="img-info">
                                         <ul class="list-unstyled img-info-list">
@@ -327,6 +399,14 @@
                                     <a data-fancybox="gallery" href="<?php echo HTTP_PATH; ?>app-assets/images/claim/dangki02.jpg">
                                         <span class="img-view"><i class="far fa-search-plus mr-1"></i>Click xem ảnh lớn</span>
                                         <img src="<?php echo HTTP_PATH; ?>app-assets/images/claim/dangki02.jpg" alt="" class="img-fluid">
+                                        <figcaption style="display: none;">
+                                            <ul class="list-unstyled img-info-list"> 
+                                                <li><span>Long:</span> <i>Không xác định</i></li> 
+                                                <li><span>Lat:</span> <i>Không xác định</i></li> 
+                                                <li><span>Đ/c:</span> <i>Không xác định</i></li> 
+                                                <li><span>Mô tả:</span> <i>Cập nhập tại phần mềm</i></li> 
+                                            </ul>
+                                        </figcaption>
                                     </a>
                                     <div class="img-info">
                                         <ul class="list-unstyled img-info-list">

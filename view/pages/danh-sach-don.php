@@ -42,7 +42,6 @@
                         </div>
                         <div class="p-button">
                             <a href="<?php echo HTTP_PATH .'view/pages/ban-chao/danh-sach-ban-chao.php'; ?>" class="btn btn-labeled btn-labeled-left mr-1"><b><i class="icon-list3"></i></b> Danh sách bản chào</a>
-                            <a href="<?php echo HTTP_PATH .'view/pages/nhap-don.php'; ?>" class="btn bg-primary btn-labeled btn-labeled-left mr-1"><b><i class="icon-plus2"></i></b> Thêm đơn BH</a>
                         </div>
                     </div>
                     
@@ -253,12 +252,10 @@
                                 <!-- Danh sách đơn -->
                                 <div class="card">
                                     <div class="card-header header-elements-inline header-button ">
-                                        <p class="card-title font-size-s">Danh sách đơn bảo hiểm</p>
+                                        <div class="dataTables_search"></div>
                                         <div class="header-elements p-button">
-                                            <a href="#" data-toggle="modal" data-target="#trinh_duyet_nhieu_don" class="btn btn-labeled btn-labeled-left mr-2"><b><i class="icon-file-check"></i></b> Trình duyệt</a>
-                                            <a href="" class="btn btn-labeled btn-labeled-left mr-2"><b><i class="icon-trash"></i></b> Xóa</a>
                                             <div class="btn-group">
-                                                <button type="button" class="btn bg-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon-printer2"></i> IN</button>
+                                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon-printer2"></i> IN</button>
                                                 <div class="dropdown-menu dropdown-menu-right">
                                                     <a href="#" class="dropdown-item" data-tooltip="tipsy" original-title="In thông báo thu phí" data-position="left"><i class="icon-file-text2"></i> In TB thu phí</a>
                                                     <a href="#" class="dropdown-item" data-tooltip="tipsy" original-title="In thông báo hoa hồng" data-position="left"><i class="icon-cash3"></i> In TB HH</a>
@@ -267,6 +264,10 @@
                                                     <a href="#" class="dropdown-item" data-tooltip="tipsy" original-title="In tờ trình" data-position="left"><i class="icon-certificate"></i> In tờ trình</a>
                                                 </div>
                                             </div>
+                                            <a href="#" data-toggle="modal" data-target="#trinh_duyet_nhieu_don" class="btn btn-labeled btn-labeled-left mr-2"><b><i class="icon-file-check"></i></b> Trình duyệt</a>
+                                            <a href="" class="btn btn-labeled btn-labeled-left mr-2"><b><i class="icon-trash"></i></b> Xóa</a>
+                                            
+                                            <a href="<?php echo HTTP_PATH .'view/pages/nhap-don.php'; ?>" class="btn bg-primary btn-labeled btn-labeled-left mr-1"><b><i class="icon-plus2"></i></b> Thêm đơn BH</a>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -274,7 +275,7 @@
                                             data-paging="true"
                                             data-info="true"
                                             data-ordering="true"
-                                            data-searching="false"
+                                            data-searching="true"
                                             data-page-length="20">
                                             <thead class="thead-light">
                                                 <tr>

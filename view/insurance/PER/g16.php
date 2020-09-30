@@ -63,207 +63,272 @@
                                                             <form action="#" class="form-validation clearfix">
                                                                 <div class="tab-content">
                                                                     <!-- Bước 1 -->
-                                                                    <?php inc('template/1_thong_tin_chung/1_thong_tin_chung.php'); ?>
+                                                                    <fieldset  class="tab-pane active show" id="step1">
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <?php inc('template/1_thong_tin_chung/kenh_khai_thac.php'); ?> 
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <?php inc('template/1_thong_tin_chung/hinh_thuc_khai_thac.php'); ?> 
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <?php inc('template/1_thong_tin_chung/so_don_bao_hiem.php'); ?> 
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/1_thong_tin_chung/so_tham_chieu.php'); ?> 
+                                                                            </div>
+                                                                            
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/1_thong_tin_chung/so_ban_chao.php'); ?> 
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/1_thong_tin_chung/so_hd_nhan_tai.php'); ?> 
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <?php inc('template/1_thong_tin_chung/nguoi_duoc_bao_hiem.php'); ?> 
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <?php inc('template/1_thong_tin_chung/nguoi_thanh_toan_bao_hiem.php'); ?> 
+                                                                            </div>
+                                                                            
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/1_thong_tin_chung/can_bo_khai_thac.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/1_thong_tin_chung/can_bo_cap_don.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/1_thong_tin_chung/ngay_cap.php'); ?>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <?php inc('template/1_thong_tin_chung/loai_tien.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <?php inc('template/1_thong_tin_chung/ti_gia_thuc_te.php'); ?>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <?php inc('template/1_thong_tin_chung/tai_bao_hiem.php'); ?>
+                                                                                <?php inc('template/1_thong_tin_chung/dong_bao_hiem.php'); ?>
+                                                                            </div>
+                                                                        </div>
+                                                                    </fieldset>
 
                                                                     <!-- Step 2 -->
                                                                     <?php inc('template/2_trung_gian_bao_hiem/2_trung_gian_bao_hiem.php'); ?>
                                                                     
                                                                     <!-- Step 3 -->
                                                                     <fieldset class="tab-pane" id="step3">
-                                                                        <div class="row">
-                                                                            <div class="col-12 mb-1">
-                                                                                <span class="font-weight-semibold"><i class="icon-info22 mr-1"></i>Thông tin sản phẩm bảo an tín dụng</span>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <div class="form-group ">
-                                                                                    <label>Nhóm khách hàng: </label>
-                                                                                    <select class="form-control" select2 name="">
-                                                                                        <option>--- Chọn Nhóm khách hàng ---</option>
-                                                                                        <option>Khách hàng TONKIN (OCB)</option>
-                                                                                        <option>Nhóm khách hàng vay tín chấp(Bắt buộc tham gia bảo hiểm)</option>
-                                                                                        <option>Khách hàng vay thế chấp</option>
-                                                                                    </select>
+
+                                                                        <div class="block">
+                                                                            <p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Thông tin sản phẩm bảo an tín dụng</p>
+                                                                            <div class="row">
+                                                                                <div class="col-md-3">
+                                                                                    <div class="form-group ">
+                                                                                        <label>Nhóm khách hàng: </label>
+                                                                                        <select class="form-control" select2 name="">
+                                                                                            <option>--- Chọn ---</option>
+                                                                                            <option>Khách hàng TONKIN (OCB)</option>
+                                                                                            <option>Nhóm khách hàng vay tín chấp(Bắt buộc tham gia bảo hiểm)</option>
+                                                                                            <option>Khách hàng vay thế chấp</option>
+                                                                                        </select>
+                                                                                    </div>
                                                                                 </div>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <div class="form-group ">
-                                                                                    <label>Đối tượng vay: </label>
-                                                                                    <select class="form-control" select2 name="">
-                                                                                        <option>--- Chọn Đối tượng vay ---</option>
-                                                                                        <option>KH Cá nhân/Hộ gia đình</option>
-                                                                                        <option>KH DN vừa và nhỏ</option>
-                                                                                        <option>KH DN lớn</option>
-                                                                                        <option>KH DN siêu vi mô</option>
-                                                                                    </select>
+                                                                                <div class="col-md-3">
+                                                                                    <div class="form-group ">
+                                                                                        <label>Đối tượng vay: </label>
+                                                                                        <select class="form-control" select2 name="">
+                                                                                            <option>--- Chọn ---</option>
+                                                                                            <option>KH Cá nhân/Hộ gia đình</option>
+                                                                                            <option>KH DN vừa và nhỏ</option>
+                                                                                            <option>KH DN lớn</option>
+                                                                                            <option>KH DN siêu vi mô</option>
+                                                                                        </select>
+                                                                                    </div>
                                                                                 </div>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <div class="form-group ">
-                                                                                    <label>Nhóm khách hàng: </label>
-                                                                                    <select class="form-control" select2 name="">
-                                                                                       <option>--- Chọn Phân khúc ---</option>
-                                                                                       <option>Khách hàng ưu tiên</option>
-                                                                                       <option>Khách hàng trung lưu</option>
-                                                                                       <option>Khách hàng DN nhiều tiền gửi</option>
-                                                                                       <option>Khách hàng phổ thông</option>
-                                                                                       <option>Khách hàng DN vừa</option>
-                                                                                       <option>Tập đoàn,TCTY nhà nước</option>
-                                                                                       <option>KH DN lớn</option>
-                                                                                       <option>Khách hàng DN siêu lớn</option>
-                                                                                       <option>KH DN vi mô</option>
-                                                                                       <option>KH DN siêu vi mô</option>
-                                                                                   </select>
+                                                                                <div class="col-md-3">
+                                                                                    <div class="form-group ">
+                                                                                        <label>Nhóm khách hàng: </label>
+                                                                                        <select class="form-control" select2 name="">
+                                                                                           <option>--- Chọn ---</option>
+                                                                                           <option>Khách hàng ưu tiên</option>
+                                                                                           <option>Khách hàng trung lưu</option>
+                                                                                           <option>Khách hàng DN nhiều tiền gửi</option>
+                                                                                           <option>Khách hàng phổ thông</option>
+                                                                                           <option>Khách hàng DN vừa</option>
+                                                                                           <option>Tập đoàn,TCTY nhà nước</option>
+                                                                                           <option>KH DN lớn</option>
+                                                                                           <option>Khách hàng DN siêu lớn</option>
+                                                                                           <option>KH DN vi mô</option>
+                                                                                           <option>KH DN siêu vi mô</option>
+                                                                                       </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-3">
+                                                                                    <div class="form-group ">
+                                                                                        <label>Nhóm rủi ro: </label>
+                                                                                        <select class="form-control" select2 name="">
+                                                                                            <option>--- Chọn ---</option>
+                                                                                            <option value="">Nhóm 1</option>
+                                                                                            <option value="">Nhóm 2</option>
+                                                                                            <option value="">Nhóm 3</option>
+                                                                                        </select>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
 
-                                                                        <div class="row">
-                                                                            <div class="col-12 mb-1">
-                                                                                <span class="font-weight-semibold"><i class="icon-info22 mr-1"></i>Thông tin doanh nghiệp</span>
-                                                                            </div>
-                                                                            <div class="col-md-2">
-                                                                                <div class="form-group ">
-                                                                                    <label>Mã KH doanh nghiệp: </label>
-                                                                                    <input type="text" class="form-control">
+                                                                        <div class="block">
+                                                                            <p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Thông tin doanh nghiệp</p>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group ">
+                                                                                        <label>Mã KH doanh nghiệp: </label>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
                                                                                 </div>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <div class="form-group ">
-                                                                                    <label>Tên KH Doanh nghiệp: </label>
-                                                                                    <input type="text" class="form-control">
+                                                                                <div class="col-md-4">
+                                                                                    <div class="form-group ">
+                                                                                        <label>Tên KH Doanh nghiệp: </label>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
                                                                                 </div>
-                                                                            </div>
-                                                                            <div class="col-md-2">
-                                                                                <div class="form-group ">
-                                                                                    <label>Mã số thuế: </label>
-                                                                                    <input type="text" class="form-control">
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group ">
+                                                                                        <label>Mã số thuế: </label>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
                                                                                 </div>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <div class="form-group ">
-                                                                                    <label>Địa chỉ: </label>
-                                                                                    <input type="text" class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="row">
-                                                                            <div class="col-12 mb-1">
-                                                                                <span class="font-weight-semibold"><i class="icon-info22 mr-1"></i>Thông tin Hợp đồng tín dụng</span>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group ">
-                                                                                    <label>Hợp đồng tín dụng: <span class="text-danger">*</span></label>
-                                                                                    <input type="text" class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group ">
-                                                                                    <label>Số tiền vay: </label>
-                                                                                    <input type="text" class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group ">
-                                                                                    <label>Thời hạn vay: </label>
-                                                                                    <select class="form-control" select2 name="">
-                                                                                       <option id="" value="" name="">--- Chọn Thời hạn vay ---</option>
-                                                                                       <option id="1" name="1 Tháng" value="1">1 Tháng</option>
-                                                                                       <option id="2" name="2 Tháng" value="2">2 Tháng</option>
-                                                                                       <option id="3" name="3 Tháng" value="3">3 Tháng</option>
-                                                                                       <option id="4" name="4 Tháng" value="4">4 Tháng</option>
-                                                                                       <option id="5" name="5 Tháng" value="5">5 Tháng</option>
-                                                                                       <option id="6" name="6 Tháng" value="6">6 Tháng</option>
-                                                                                       <option id="7" name="7 Tháng" value="7">7 Tháng</option>
-                                                                                       <option id="8" name="8 Tháng" value="8">8 Tháng</option>
-                                                                                       <option id="9" name="9 Tháng" value="9">9 Tháng</option>
-                                                                                       <option id="10" name="10 Tháng" value="10">10 Tháng</option>
-                                                                                       <option id="11" name="11 Tháng" value="11">11 Tháng</option>
-                                                                                       <option id="12" name="12 Tháng" value="12">12 Tháng</option>
-                                                                                       <option id="13" name="13 Tháng" value="13">13 Tháng</option>
-                                                                                       <option id="14" name="14 Tháng" value="14">14 Tháng</option>
-                                                                                       <option id="15" name="15 Tháng" value="15">15 Tháng</option>
-                                                                                       <option id="16" name="16 Tháng" value="16">16 Tháng</option>
-                                                                                       <option id="17" name="17 Tháng" value="17">17 Tháng</option>
-                                                                                       <option id="18" name="18 Tháng" value="18">18 Tháng</option>
-                                                                                       <option id="19" name="19 Tháng" value="19">19 Tháng</option>
-                                                                                       <option id="20" name="20 Tháng" value="20">20 Tháng</option>
-                                                                                       <option id="21" name="21 Tháng" value="21">21 Tháng</option>
-                                                                                       <option id="22" name="22 Tháng" value="22">22 Tháng</option>
-                                                                                       <option id="23" name="23 Tháng" value="23">23 Tháng</option>
-                                                                                       <option id="24" name="24 Tháng" value="24">24 Tháng</option>
-                                                                                       <option id="25" name="25 Tháng" value="25">25 Tháng</option>
-                                                                                       <option id="26" name="26 Tháng" value="26">26 Tháng</option>
-                                                                                       <option id="27" name="27 Tháng" value="27">27 Tháng</option>
-                                                                                       <option id="28" name="28 Tháng" value="28">28 Tháng</option>
-                                                                                       <option id="29" name="29 Tháng" value="29">29 Tháng</option>
-                                                                                       <option id="30" name="30 Tháng" value="30">30 Tháng</option>
-                                                                                       <option id="31" name="31 Tháng" value="31">31 Tháng</option>
-                                                                                       <option id="32" name="32 Tháng" value="32">32 Tháng</option>
-                                                                                       <option id="33" name="33 Tháng" value="33">33 Tháng</option>
-                                                                                       <option id="34" name="34 Tháng" value="34">34 Tháng</option>
-                                                                                       <option id="35" name="35 Tháng" value="35">35 Tháng</option>
-                                                                                       <option id="36" name="36 Tháng" value="36">36 Tháng</option>
-                                                                                       <option id="48" name="4 Năm" value="48">4 Năm</option>
-                                                                                       <option id="60" name="5 Năm" value="60">5 Năm</option>
-                                                                                       <option id="72" name="6 Năm" value="72">6 Năm</option>
-                                                                                       <option id="84" name="7 Năm" value="84">7 Năm</option>
-                                                                                       <option id="96" name="8 Năm" value="96">8 Năm</option>
-                                                                                       <option id="108" name="9 Năm" value="108">9 Năm</option>
-                                                                                       <option id="120" name="10 Năm" value="120">10 Năm</option>
-                                                                                   </select>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group ">
-                                                                                    <label>Gói bảo hiểm: </label>
-                                                                                    <select class="form-control" select2 name="">
-                                                                                        <option>--- Chọn Gói BH ---</option>
-                                                                                        <option>Điều kiện A+B (Tử vong, thương tật toàn bộ vĩnh viễn do tai nạn, ốm đau, bệnh tật, thai sản)</option>
-                                                                                        <option>Điều kiện A(Tai nạn)</option>
-                                                                                    </select>
+                                                                                <div class="col-md-4">
+                                                                                    <div class="form-group ">
+                                                                                        <label>Địa chỉ: </label>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
 
-                                                                        <div class="row">
-                                                                            <div class="col-12 mb-1">
-                                                                                <span class="font-weight-semibold"><i class="icon-info22 mr-1"></i>Thông tin người thụ hưởng</span>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group">
-                                                                                    <label>Người thụ hưởng 1: </label>
-                                                                                    <input type="text" class="form-control">
+                                                                        <div class="block">
+                                                                            <p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Thông tin Hợp đồng tín dụng</p>
+                                                                            <div class="row">
+                                                                                <div class="col-md-3">
+                                                                                    <div class="form-group ">
+                                                                                        <label>Hợp đồng tín dụng: <span class="text-danger">*</span></label>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-3">
+                                                                                    <div class="form-group ">
+                                                                                        <label>Số tiền vay: </label>
+                                                                                        <input type="text" class="form-control input-money">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-3">
+                                                                                    <div class="form-group ">
+                                                                                        <label>Thời hạn vay: </label>
+                                                                                        <select class="form-control" select2 name="">
+                                                                                           <option id="" value="" name="">--- Chọn ---</option>
+                                                                                           <option id="1" name="1 Tháng" value="1">1 Tháng</option>
+                                                                                           <option id="2" name="2 Tháng" value="2">2 Tháng</option>
+                                                                                           <option id="3" name="3 Tháng" value="3">3 Tháng</option>
+                                                                                           <option id="4" name="4 Tháng" value="4">4 Tháng</option>
+                                                                                           <option id="5" name="5 Tháng" value="5">5 Tháng</option>
+                                                                                           <option id="6" name="6 Tháng" value="6">6 Tháng</option>
+                                                                                           <option id="7" name="7 Tháng" value="7">7 Tháng</option>
+                                                                                           <option id="8" name="8 Tháng" value="8">8 Tháng</option>
+                                                                                           <option id="9" name="9 Tháng" value="9">9 Tháng</option>
+                                                                                           <option id="10" name="10 Tháng" value="10">10 Tháng</option>
+                                                                                           <option id="11" name="11 Tháng" value="11">11 Tháng</option>
+                                                                                           <option id="12" name="12 Tháng" value="12">12 Tháng</option>
+                                                                                           <option id="13" name="13 Tháng" value="13">13 Tháng</option>
+                                                                                           <option id="14" name="14 Tháng" value="14">14 Tháng</option>
+                                                                                           <option id="15" name="15 Tháng" value="15">15 Tháng</option>
+                                                                                           <option id="16" name="16 Tháng" value="16">16 Tháng</option>
+                                                                                           <option id="17" name="17 Tháng" value="17">17 Tháng</option>
+                                                                                           <option id="18" name="18 Tháng" value="18">18 Tháng</option>
+                                                                                           <option id="19" name="19 Tháng" value="19">19 Tháng</option>
+                                                                                           <option id="20" name="20 Tháng" value="20">20 Tháng</option>
+                                                                                           <option id="21" name="21 Tháng" value="21">21 Tháng</option>
+                                                                                           <option id="22" name="22 Tháng" value="22">22 Tháng</option>
+                                                                                           <option id="23" name="23 Tháng" value="23">23 Tháng</option>
+                                                                                           <option id="24" name="24 Tháng" value="24">24 Tháng</option>
+                                                                                           <option id="25" name="25 Tháng" value="25">25 Tháng</option>
+                                                                                           <option id="26" name="26 Tháng" value="26">26 Tháng</option>
+                                                                                           <option id="27" name="27 Tháng" value="27">27 Tháng</option>
+                                                                                           <option id="28" name="28 Tháng" value="28">28 Tháng</option>
+                                                                                           <option id="29" name="29 Tháng" value="29">29 Tháng</option>
+                                                                                           <option id="30" name="30 Tháng" value="30">30 Tháng</option>
+                                                                                           <option id="31" name="31 Tháng" value="31">31 Tháng</option>
+                                                                                           <option id="32" name="32 Tháng" value="32">32 Tháng</option>
+                                                                                           <option id="33" name="33 Tháng" value="33">33 Tháng</option>
+                                                                                           <option id="34" name="34 Tháng" value="34">34 Tháng</option>
+                                                                                           <option id="35" name="35 Tháng" value="35">35 Tháng</option>
+                                                                                           <option id="36" name="36 Tháng" value="36">36 Tháng</option>
+                                                                                           <option id="48" name="4 Năm" value="48">4 Năm</option>
+                                                                                           <option id="60" name="5 Năm" value="60">5 Năm</option>
+                                                                                           <option id="72" name="6 Năm" value="72">6 Năm</option>
+                                                                                           <option id="84" name="7 Năm" value="84">7 Năm</option>
+                                                                                           <option id="96" name="8 Năm" value="96">8 Năm</option>
+                                                                                           <option id="108" name="9 Năm" value="108">9 Năm</option>
+                                                                                           <option id="120" name="10 Năm" value="120">10 Năm</option>
+                                                                                       </select>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="col-md-9">
-                                                                                <div class="form-group">
-                                                                                    <label>Địa chỉ: </label>
-                                                                                    <input type="text" class="form-control">
+                                                                        </div>
+
+                                                                        <div class="block">
+                                                                            <p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Thông tin người thụ hưởng</p>
+                                                                            <div class="row">
+                                                                                <div class="col-md-3">
+                                                                                    <div class="form-group">
+                                                                                        <label>Người thụ hưởng 1: </label>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
                                                                                 </div>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group ">
-                                                                                    <label>Người thụ hưởng 2: </label>
-                                                                                    <input type="text" class="form-control">
+                                                                                <div class="col-md-9">
+                                                                                    <div class="form-group">
+                                                                                        <label>Địa chỉ: </label>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
                                                                                 </div>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group ">
-                                                                                    <label>Địa chỉ: </label>
-                                                                                    <input type="text" class="form-control">
+                                                                                <div class="col-md-3">
+                                                                                    <div class="form-group ">
+                                                                                        <label>Người thụ hưởng 2: </label>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
                                                                                 </div>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group ">
-                                                                                    <label>Quan hệ: </label>
-                                                                                    <input type="text" class="form-control">
+                                                                                <div class="col-md-3">
+                                                                                    <div class="form-group ">
+                                                                                        <label>Địa chỉ: </label>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
                                                                                 </div>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group ">
-                                                                                    <label>CMTND/HC: </label>
-                                                                                    <input type="text" class="form-control">
+                                                                                <div class="col-md-3">
+                                                                                    <div class="form-group ">
+                                                                                        <label>Quan hệ: </label>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-3">
+                                                                                    <div class="form-group ">
+                                                                                        <label>CMTND/HC: </label>
+                                                                                        <input type="text" class="form-control">
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>

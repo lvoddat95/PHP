@@ -3994,6 +3994,10 @@
 
 }
 
+.dataTables_search .dataTables_filter {
+    margin-bottom: 0;
+}
+
 .dataTables_filter {
     position: relative;
     display: block;
@@ -4030,7 +4034,7 @@
 .dataTables_filter input {
     outline: 0;
     width: 12.5rem;
-    height: 28px;
+    height: 30px;
     line-height: 18px;
     padding: 4px;
     border-radius: 4px;

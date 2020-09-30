@@ -569,7 +569,7 @@ var App = function () {
                         var v_datepicker = v_parent.find('.datepicker');
 
                         if (v_table.length > 0) {
-                            if (v_table.is('.datatable, .datatable-ctrl-right, .datatable-ctrl-custom')) {
+                            if (v_table.is('.datatable')) {
                                 v_table.DataTable().row.add($v_clone.get(0)).draw();
                             }
                         }
@@ -1488,8 +1488,6 @@ var App = function () {
     var _component_datatable = function(p_table = '') {
 
         var v_table = $('.datatable');
-        var v_table_control_right = $('.datatable-ctrl-right');
-        var v_table_control_custom = $('.datatable-ctrl-custom');
 
         if (p_table) {
             v_table = p_table;
@@ -1521,7 +1519,7 @@ var App = function () {
                 emptyTable:     "Không có dữ liệu trong bảng",
                 info:           " Tổng số _TOTAL_ bản ghi",
                 infoEmpty:      "Không có bản ghi nào",
-                infoFiltered:   "(filtered from _MAX_ total entries)",
+                infoFiltered:   "(danh sách từ _MAX_ bản ghi)",
                 infoPostFix:    "",
                 thousands:      ",",
                 lengthMenu:     " _MENU_ ",
@@ -1556,7 +1554,6 @@ var App = function () {
         });
 
         if (v_table) {
-
             var v_datatable = $(v_table).DataTable({
                 columnDefs: [
                     {
@@ -1566,32 +1563,13 @@ var App = function () {
                     },
                 ]
             });
-
             _datatable_responsive_display(v_datatable);
+
+            if ($('.dataTables_search').length > 0) {
+                $('div.dataTables_filter').appendTo('.dataTables_search');
+            }
         } 
 
-        if (v_table_control_right.length==1) {
-            var v_datatable_right = v_table_control_right.DataTable({
-                responsive: {
-                    details: {
-                        type: 'column',
-                        target: -1
-                    }
-                },
-                columnDefs: [ {
-                    className: 'control',
-                    orderable: false,
-                    targets:   -1
-                } ]
-            } );
-        }
-
-        if (v_table_control_custom.length==1) {
-            var v_datatable = v_table_control_custom.DataTable();
-            _datatable_add_row(v_datatable);
-            _datatable_remove_row(v_datatable);
-            _datatable_responsive_display(v_datatable);
-        }
 
         // Reponsive recall 
         function _datatable_responsive_display(p_datatable){

@@ -318,6 +318,7 @@
                     <a href="#" class="btn bg-primary"><i class="icon-checkmark4 mr-1"></i>Chọn</a>
                 </div>
             </form>
+        <?php inc('modal/modal_cap_nhap_thong_tin_khach_hang.php'); ?> 
 
 
 <?php include_once FOOTER; ?>
