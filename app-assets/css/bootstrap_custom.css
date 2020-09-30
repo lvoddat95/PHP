@@ -757,6 +757,10 @@ select[multiple] option+option, select[size] option+option {
     border-color: #eee !important;
     box-shadow: none !important;
 }
+.switch:disabled + label{
+    cursor: not-allowed;
+    opacity: .6;
+}
 .form-control:disabled {
     cursor: not-allowed;
 }

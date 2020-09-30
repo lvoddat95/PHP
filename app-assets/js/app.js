@@ -1548,8 +1548,8 @@ var App = function () {
                 }
             },
             lengthMenu: [
-                [10, 20, 50, 100, 200, 300, 400, 500, 1000, -1], 
-                [10, 20, 50, 100, 200, 300, 400, 500, 1000, "Tất cả"]
+                [10, 20, 50, 100, 200, 300, 400, 500, 1000], 
+                [10, 20, 50, 100, 200, 300, 400, 500, 1000]
             ],
         });
 
@@ -1575,20 +1575,7 @@ var App = function () {
         function _datatable_responsive_display(p_datatable){
 
             p_datatable.on( 'responsive-display', function ( e, datatable, row, showHide, update ) {
-
-                var cell = $(this).find('tbody > tr > td');
                 var li_dtr = $(this).find('tbody > tr.child > td.child > ul.dtr-details > li');
-
-                // cell.each(function (i, e){
-                //     var td_cell_idx = $(e).index();
-                //     li_dtr.each(function (i2, e2){
-                //         console.log($(e2).attr('data-dt-column'))
-                //         if ( $(e).hasClass('td-table-child') && $(e2).attr('data-dt-column') == td_cell_idx ) {
-                //             $(e2).addClass('li-table-child')
-                //         }
-                //     });
-                // });
-
                 li_dtr.each(function(index, li) { 
                     var v_dtr_title = $(li).find('.dtr-title');
                     var v_dtr_data = $(li).find('.dtr-data');
@@ -1796,9 +1783,10 @@ var App = function () {
 
         // Init truoc khi load trang
         initBeforeLoad: function() {
-            $('.datatable').each(function(){
-                var v_th = $(this).find('thead>tr>*:first-child');
-                var v_td = $(this).find('tbody>tr>*:first-child');
+            $('.datatable').each(function(i, e){
+                console.log(e)
+                var v_th = $(this).find('thead > tr >*:first-child');
+                var v_td = $(this).find('tbody:not(.clear-first-cell) > tr >*:first-child');
 
                 if ( !v_th.hasClass('cell') ) {
                     v_th.before('<th class="cell"><i class="fa fa-ellipsis-v"></i></th>');

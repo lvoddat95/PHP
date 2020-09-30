@@ -234,6 +234,19 @@ var on_change_kich_thuoc_anh = function(p_this){
         $("#light-gallery").removeClass('view-fix')
     }
 }
+
+var on_change_loai_vay_von = function(p_this){
+    var v_input_value = $(p_this).val();
+    console.log(v_input_value)
+    if (v_input_value == "2") {
+        $(p_this).closest('td').find('#upload-excel').show();
+    }else{
+        $(p_this).closest('td').find('#upload-excel').hide();
+    }
+}
+
+
+
 var modal_lv = 0;
 $('.modal').on('shown.bs.modal', function (e) {
     $('.modal-backdrop:last').css('zIndex',1051+modal_lv);

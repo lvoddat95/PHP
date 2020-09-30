@@ -2634,13 +2634,13 @@ body.sidebar-mobile-main .quick-action {
 
 .nav-file .nav-link > i {
     margin-right: 5px;
+    font-size: 16px;
 }
 .nav-file .nav-link.is-checked > i {
     color: #4caf50;
 }
 .nav-file .nav-link.is-checked > i:before{
-    content: "\f058";
-    font-weight: bold;
+    content: "\f14a";
 }
 
 .nav-file .nav-item-submenu>.nav-link:before {
@@ -4012,6 +4012,9 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     font-weight: 500;
     margin-bottom: 7px;
 }
+.table-fixed{
+    table-layout: fixed;
+}
 
 
 @media (min-width: 576px) {
@@ -4040,4 +4043,13 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
 .fancybox-slide--iframe .fancybox-content,
 .fancybox-slide--iframe .fancybox-iframe{
     border-radius: 6px;
+}
+
+.table thead.thead-pd-0 th{
+    padding: 0;
+}
+@media (max-width: 1200px) {
+    col.desktop {
+        display: none;
+    }
 }
