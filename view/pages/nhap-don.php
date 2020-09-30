@@ -667,8 +667,8 @@
                                                                                                             <tr>
                                                                                                                 <td><b>TNDS tự nguyện về người</b></td>
                                                                                                                 <td>
-                                                                                                                    <input class="form-control text-right input-money" style="display: inline-block; width: calc(100% - 65px);"  type="text"  value="0" >
-                                                                                                                    <span style="width: 62px;">(/người/vụ)</span>
+                                                                                                                    <input class="form-control text-right input-money" type="text"  value="0" >
+                                                                                                                    <span>(/người/vụ)</span>
                                                                                                                 </td>
                                                                                                                 <td>
                                                                                                                     <input class="form-control text-right input-float" style="color: red;" type="text" value="0" >
@@ -701,10 +701,8 @@
                                                                                                             <tr>
                                                                                                                 <td><b>TNDS tự nguyện về tài sản</b></td>
                                                                                                                 <td>
-                                                                                                                    <div class="d-flex">
-                                                                                                                        <input class="form-control text-right input-money" style="display: inline-block; width: calc(100% - 65px);" type="text" value="0">
-                                                                                                                        <span style="width: 62px;"> (/vụ)</span>
-                                                                                                                    </div>
+                                                                                                                    <input class="form-control text-right input-money" type="text" value="0">
+                                                                                                                    <span> (/vụ)</span>
                                                                                                                 </td>
                                                                                                                 <td>
                                                                                                                     <input class="form-control text-right input-float" style="color: red;" type="text" value="0" >
@@ -933,8 +931,8 @@
                                                                                                             <tr>
                                                                                                                 <td><b>Tai nạn lái, phụ xe và người ngồi trên xe </b></td>
                                                                                                                 <td>
-                                                                                                                    <input class="form-control text-right" style="display: inline-block; width: calc(100% - 65px);" type="text" value="0" >
-                                                                                                                    <span style="width: 62px;">(/người/vụ)</span>
+                                                                                                                    <input class="form-control text-right" type="text" value="0" >
+                                                                                                                    <span>(/người/vụ)</span>
                                                                                                                 </td>
                                                                                                                 <td>
                                                                                                                     <input class="form-control text-left" style="color: red;" type="text" value="0" >

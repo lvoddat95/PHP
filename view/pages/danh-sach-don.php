@@ -251,7 +251,7 @@
 
                                 <!-- Danh sách đơn -->
                                 <div class="card">
-                                    <div class="card-header header-elements-inline header-button ">
+                                    <div class="card-header header-elements-inline header-button">
                                         <div class="dataTables_search"></div>
                                         <div class="header-elements p-button">
                                             <div class="btn-group">

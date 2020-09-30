@@ -4038,11 +4038,11 @@
     line-height: 18px;
     padding: 4px;
     border-radius: 4px;
-    font-size: 12px;
+    padding-left: 10px;
     padding-right: 2rem;
     color: #333;
     background-color: #fff;
-    border: 1px solid #ddd;
+    border: 0.1rem solid #ddd;
 }
 
 .dataTables_filter input::-webkit-input-placeholder {

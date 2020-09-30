@@ -1526,7 +1526,7 @@ var App = function () {
                 loadingRecords: "Đang tải...",
                 processing:     "Đang xử lý...",
                 search:         "",
-                searchPlaceholder: 'Tìm kiếm nhanh ...',
+                searchPlaceholder: 'Nhập tìm nhanh...',
                 zeroRecords:    "Không tìm thấy hồ sơ phù hợp",
                 paginate: {
                     first:      "Đầu",
