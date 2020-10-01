@@ -512,6 +512,31 @@ var App = function () {
                 copyDelimiter: true,
             });
         });
+
+        $('.input-day').toArray().forEach(function (field) {
+            new Cleave(field, {
+                date: true,
+                datePattern: ['d'],
+                copyDelimiter: true,
+            });
+        });
+
+        $('.input-month').toArray().forEach(function (field) {
+            new Cleave(field, {
+                date: true,
+                datePattern: ['m'],
+                copyDelimiter: true,
+            });
+        });
+
+        $('.input-year').toArray().forEach(function (field) {
+            new Cleave(field, {
+                date: true,
+                datePattern: ['Y'],
+                copyDelimiter: true,
+            });
+        });
+        
     
         $('.input-time').toArray().forEach(function (field) {
             new Cleave(field, {
@@ -1553,6 +1578,17 @@ var App = function () {
             ],
         });
 
+        $('.datatable').each(function(i, e){
+            var v_th = $(e).children('thead').eq(0).children('tr');
+            var v_td = $(e).children('tbody').eq(0).children('tr');
+            if ( !v_th.children().hasClass('cell') ) {
+                v_th.prepend('<th class="cell"><i class="fa fa-ellipsis-v"></i></th>');
+            }
+            if ( !v_td.children().hasClass('cell') ) {
+                v_td.prepend('<td class="cell"></td>');
+            }
+        });
+
         if (v_table) {
             var v_datatable = $(v_table).DataTable({
                 columnDefs: [
@@ -1783,18 +1819,7 @@ var App = function () {
 
         // Init truoc khi load trang
         initBeforeLoad: function() {
-            $('.datatable').each(function(i, e){
-                console.log(e)
-                var v_th = $(this).find('thead > tr >*:first-child');
-                var v_td = $(this).find('tbody:not(.clear-first-cell) > tr >*:first-child');
-
-                if ( !v_th.hasClass('cell') ) {
-                    v_th.before('<th class="cell"><i class="fa fa-ellipsis-v"></i></th>');
-                }
-                if ( !v_td.hasClass('cell') ) {
-                    v_td.before('<td class="cell"></td>');
-                }
-            });
+            
         },
 
         // Init sau khi load trang

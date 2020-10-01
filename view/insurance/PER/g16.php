@@ -386,7 +386,7 @@
                                                                                                         </select>
                                                                                                     </td>
                                                                                                     <td>
-                                                                                                        <div class="form-group col-content-lg">
+                                                                                                        <div class="col-content-lg">
                                                                                                             <div class="row">
                                                                                                                 <div class="col-6"> 
                                                                                                                     <div class="select-group">
@@ -406,17 +406,17 @@
                                                                                                                 </div>
                                                                                                             </div>
                                                                                                         </div>
-                                                                                                        <table id="table-excel" class="table table-bordered" style="display: none;">
+                                                                                                        <table id="table-excel" class="table table-bordered mt-3" style="display: none;">
                                                                                                             <thead>
                                                                                                                 <tr>
-                                                                                                                    <th>Tháng tham gia</th>
+                                                                                                                    <th class="sad">Tháng tham gia</th>
                                                                                                                     <th>Phí</th>
                                                                                                                     <th>Số tiền</th>
                                                                                                                 </tr>
                                                                                                             </thead>
-                                                                                                            <tbody>
+                                                                                                            <tbody class="ss">
                                                                                                                 <tr>
-                                                                                                                    <td><input class="form-control text-right input-number" type="text" placeholder="0"></td>
+                                                                                                                    <td><input class="form-control text-right input-month" type="text" placeholder="0"></td>
                                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                                 </tr>

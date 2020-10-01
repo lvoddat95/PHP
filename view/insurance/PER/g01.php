@@ -222,7 +222,7 @@
                                                                                             </div>
                                                                                         </td>
 
-                                                                                        <td class="td-table-child">
+                                                                                        <td>
                                                                                             <table class="table table-bordered">
                                                                                                 <thead>
                                                                                                     <tr>
