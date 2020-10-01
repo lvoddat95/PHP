@@ -414,7 +414,7 @@
                                                                                                                     </thead>
                                                                                                                     <tbody>
                                                                                                                         <tr>
-                                                                                                                            <td><input class="form-control text-right input-month" type="text" placeholder="0"></td>
+                                                                                                                            <td><input class="form-control input-month" type="text" placeholder="mm"></td>
                                                                                                                             <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                                             <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                                         </tr>
@@ -463,17 +463,17 @@
                                                                                             </colgroup>
                                                                                             <thead class="thead-none">
                                                                                                 <tr>
-                                                                                                    <th class="desktop"></th>
-                                                                                                    <th></th>
-                                                                                                    <th></th>
-                                                                                                    <th class="desktop">TL Phí (%)</th>
-                                                                                                    <th class="desktop">Phí BH (có VAT)</th>
-                                                                                                    <th class="desktop">VAT (%)</th>
-                                                                                                    <th class="desktop">VAT</th>
-                                                                                                    <th class="desktop">COM (%)</th>
-                                                                                                    <th class="desktop">COM</th>
-                                                                                                    <th class="desktop"></th>
-                                                                                                    <th class="all"></th>
+                                                                                                    <th width="3%" class="desktop"></th>
+                                                                                                    <th width="20%"></th>
+                                                                                                    <th width="10%"></th>
+                                                                                                    <th width="5%" class="desktop">TL Phí (%)</th>
+                                                                                                    <th width="10%" class="desktop">Phí BH (có VAT)</th>
+                                                                                                    <th width="5%" class="desktop">VAT (%)</th>
+                                                                                                    <th width="10%" class="desktop">VAT</th>
+                                                                                                    <th width="5%" class="desktop">COM (%)</th>
+                                                                                                    <th width="10%" class="desktop">COM</th>
+                                                                                                    <th width="20%" class="desktop"></th>
+                                                                                                    <th width="7%" class="all"></th>
                                                                                                 </tr>
                                                                                             </thead>
                                                                                             <tbody>
