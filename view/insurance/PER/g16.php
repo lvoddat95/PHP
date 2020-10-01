@@ -386,42 +386,44 @@
                                                                                                         </select>
                                                                                                     </td>
                                                                                                     <td>
-                                                                                                        <div class="col-content-lg">
-                                                                                                            <div class="row">
-                                                                                                                <div class="col-6"> 
-                                                                                                                    <div class="select-group">
-                                                                                                                        <select select2 name="loai_vay_von" class="form-control" onchange="on_change_loai_vay_von(this);">
-                                                                                                                            <option value="">--- Chọn ---</option>
-                                                                                                                            <option value="1">Số tiền vay ban đầu</option>
-                                                                                                                            <option value="2">Dư nợ giảm dần</option>
-                                                                                                                        </select>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                                <div class="col-6"> 
-                                                                                                                    <button id="upload-excel" class="btn btn-light btn-file ml-3" style="display: none;">
-                                                                                                                        <i class="far fa-upload mr-1"></i>
-                                                                                                                        <span class="hidden-xs">Import Excel</span>
-                                                                                                                        <input type="file" class="file-input-preview">
-                                                                                                                    </button>
-                                                                                                                </div>
+                                                                                                        <div class="col-content-md">
+                                                                                                            <div class="select-group">
+                                                                                                                <select select2 name="loai_vay_von" class="form-control" onchange="on_change_loai_vay_von(this);">
+                                                                                                                    <option value="">--- Chọn ---</option>
+                                                                                                                    <option value="1">Số tiền vay ban đầu</option>
+                                                                                                                    <option value="2">Dư nợ giảm dần</option>
+                                                                                                                </select>
                                                                                                             </div>
                                                                                                         </div>
-                                                                                                        <table id="table-excel" class="table table-bordered mt-3" style="display: none;">
-                                                                                                            <thead>
-                                                                                                                <tr>
-                                                                                                                    <th class="sad">Tháng tham gia</th>
-                                                                                                                    <th>Phí</th>
-                                                                                                                    <th>Số tiền</th>
-                                                                                                                </tr>
-                                                                                                            </thead>
-                                                                                                            <tbody class="ss">
-                                                                                                                <tr>
-                                                                                                                    <td><input class="form-control text-right input-month" type="text" placeholder="0"></td>
-                                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                                </tr>
-                                                                                                            </tbody>
-                                                                                                        </table>
+                                                                                                        <div id="upload-excel"  style="display: none;">
+                                                                                                            <hr class="border-dashed border-silver mb-2">
+                                                                                                            <div class="col-content-lg">
+                                                                                                                <p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Upload dữ liệu từ excel.</p>
+                                                                                                                <button class="btn btn-light btn-file">
+                                                                                                                    <i class="far fa-upload mr-1"></i>
+                                                                                                                    <span class="hidden-xs">Import Excel</span>
+                                                                                                                    <input type="file" class="file-input-preview">
+                                                                                                                </button>
+                                                                                                                <table class="table table-bordered mt-3">
+                                                                                                                    <thead>
+                                                                                                                        <tr>
+                                                                                                                            <th width="25%">Tháng tham gia</th>
+                                                                                                                            <th width="30%">Phí</th>
+                                                                                                                            <th width="30%">Số tiền</th>
+                                                                                                                        </tr>
+                                                                                                                    </thead>
+                                                                                                                    <tbody>
+                                                                                                                        <tr>
+                                                                                                                            <td><input class="form-control text-right input-month" type="text" placeholder="0"></td>
+                                                                                                                            <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                                            <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                                        </tr>
+                                                                                                                    </tbody>
+                                                                                                                </table>
+                                                                                                            </div>
+
+                                                                                                        </div>
+                                                                                                        
                                                                                                     </td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>

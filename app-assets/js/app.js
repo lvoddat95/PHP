@@ -1578,16 +1578,7 @@ var App = function () {
             ],
         });
 
-        $('.datatable').each(function(i, e){
-            var v_th = $(e).children('thead').eq(0).children('tr');
-            var v_td = $(e).children('tbody').eq(0).children('tr');
-            if ( !v_th.children().hasClass('cell') ) {
-                v_th.prepend('<th class="cell"><i class="fa fa-ellipsis-v"></i></th>');
-            }
-            if ( !v_td.children().hasClass('cell') ) {
-                v_td.prepend('<td class="cell"></td>');
-            }
-        });
+        
 
         if (v_table) {
             var v_datatable = $(v_table).DataTable({
@@ -1655,11 +1646,12 @@ var App = function () {
                .responsive.recalc();
         });
 
-        $("[datatable-tab]").on("shown.bs.tab", function (e) {
+        $("[datatable-tab], .steps > .nav-tabs").on("shown.bs.tab", function (e) {
             $($.fn.dataTable.tables(true)).DataTable()
               .columns.adjust()
               .responsive.recalc();
         });
+
       
     };
 
@@ -1819,6 +1811,19 @@ var App = function () {
 
         // Init truoc khi load trang
         initBeforeLoad: function() {
+
+            // init control responsive
+            $('.datatable').each(function(i, e){
+                var v_th = $(e).children('thead').find('tr:first-child');
+                var v_td = $(e).children('tbody').children('tr');
+
+                if ( !v_th.children().hasClass('cell') ) {
+                    v_th.prepend('<th class="cell"><i class="fa fa-ellipsis-v"></i></th>');
+                }
+                if ( !v_td.children().hasClass('cell') ) {
+                    v_td.prepend('<td class="cell"></td>');
+                }
+            });
             
         },
 
