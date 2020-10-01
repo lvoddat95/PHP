@@ -239,9 +239,9 @@ var on_change_loai_vay_von = function(p_this){
     var v_input_value = $(p_this).val();
     console.log(v_input_value)
     if (v_input_value == "2") {
-        $(p_this).closest('td').find('#upload-excel').show();
+        $(p_this).closest('tr').find('#upload-excel, #table-excel').show();
     }else{
-        $(p_this).closest('td').find('#upload-excel').hide();
+        $(p_this).closest('tr').find('#upload-excel, #table-excel').hide();
     }
 }
 

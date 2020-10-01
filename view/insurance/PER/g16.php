@@ -386,7 +386,7 @@
                                                                                                         </select>
                                                                                                     </td>
                                                                                                     <td>
-                                                                                                        <div class="col-content-lg">
+                                                                                                        <div class="form-group col-content-lg">
                                                                                                             <div class="row">
                                                                                                                 <div class="col-6"> 
                                                                                                                     <div class="select-group">
@@ -406,7 +406,7 @@
                                                                                                                 </div>
                                                                                                             </div>
                                                                                                         </div>
-                                                                                                        <table>
+                                                                                                        <table id="table-excel" class="table table-bordered" style="display: none;">
                                                                                                             <thead>
                                                                                                                 <tr>
                                                                                                                     <th>Tháng tham gia</th>
