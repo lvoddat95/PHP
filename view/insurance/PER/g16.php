@@ -66,14 +66,20 @@
                                                                     <fieldset  class="tab-pane active show" id="step1">
 
                                                                         <div class="row">
-                                                                            <div class="col-md-3">
+                                                                            <div class="col-md-4">
                                                                                 <?php inc('template/1_thong_tin_chung/kenh_khai_thac.php'); ?> 
                                                                             </div>
-                                                                            <div class="col-md-3">
+                                                                            <div class="col-md-4">
                                                                                 <?php inc('template/1_thong_tin_chung/hinh_thuc_khai_thac.php'); ?> 
                                                                             </div>
+                                                                        </div>
+
+                                                                        <div class="row">
                                                                             <div class="col-md-6">
                                                                                 <?php inc('template/1_thong_tin_chung/so_don_bao_hiem.php'); ?> 
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <?php inc('template/1_thong_tin_chung/so_gcnbh.php'); ?> 
                                                                             </div>
                                                                         </div>
 
@@ -409,7 +415,7 @@
                                                                                                                         <tr>
                                                                                                                             <th width="25%">Tháng tham gia</th>
                                                                                                                             <th width="30%">Phí</th>
-                                                                                                                            <th width="30%">Số tiền</th>
+                                                                                                                            <th width="35%">Số tiền</th>
                                                                                                                         </tr>
                                                                                                                     </thead>
                                                                                                                     <tbody>
@@ -423,7 +429,6 @@
                                                                                                             </div>
 
                                                                                                         </div>
-                                                                                                        
                                                                                                     </td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
@@ -463,17 +468,17 @@
                                                                                             </colgroup>
                                                                                             <thead class="thead-none">
                                                                                                 <tr>
-                                                                                                    <th width="3%" class="desktop"></th>
-                                                                                                    <th width="20%"></th>
-                                                                                                    <th width="10%"></th>
-                                                                                                    <th width="5%" class="desktop">TL Phí (%)</th>
-                                                                                                    <th width="10%" class="desktop">Phí BH (có VAT)</th>
-                                                                                                    <th width="5%" class="desktop">VAT (%)</th>
-                                                                                                    <th width="10%" class="desktop">VAT</th>
-                                                                                                    <th width="5%" class="desktop">COM (%)</th>
-                                                                                                    <th width="10%" class="desktop">COM</th>
-                                                                                                    <th width="20%" class="desktop"></th>
-                                                                                                    <th width="7%" class="all"></th>
+                                                                                                    <th class="desktop"></th>
+                                                                                                    <th ></th>
+                                                                                                    <th ></th>
+                                                                                                    <th class="desktop">TL Phí (%)</th>
+                                                                                                    <th class="desktop">Phí BH (có VAT)</th>
+                                                                                                    <th class="desktop">VAT (%)</th>
+                                                                                                    <th class="desktop">VAT</th>
+                                                                                                    <th class="desktop">COM (%)</th>
+                                                                                                    <th class="desktop">COM</th>
+                                                                                                    <th class="desktop"></th>
+                                                                                                    <th class="all"></th>
                                                                                                 </tr>
                                                                                             </thead>
                                                                                             <tbody>
