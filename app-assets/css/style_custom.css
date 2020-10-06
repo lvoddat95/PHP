@@ -4020,7 +4020,6 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
 @media (min-width: 576px) {
     .fancybox-container .fancybox-content{
         max-width: 600px;
-        margin: 1.75rem auto;
     }
     .fancybox-container-sm .fancybox-content{
         max-width: 400px;
@@ -4039,7 +4038,10 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
         max-width: 1140px;
     }
 }
-
+.fancybox-modabody{
+    overflow: hidden;
+    height: 100%;
+}
 .fancybox-slide--iframe .fancybox-content,
 .fancybox-slide--iframe .fancybox-iframe{
     border-radius: 6px;

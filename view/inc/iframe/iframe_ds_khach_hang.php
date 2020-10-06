@@ -5,7 +5,7 @@
                 <h5 class="modal-title">Danh sách các khách hàng</h5>
             </div>
             <form action="#">
-                <div class="modal-body">
+                <div class="modal-body fancybox-modabody">
                     <div class="form-filter mb-3">
                         <div class="row">
                             <div class="col-sm-6">
