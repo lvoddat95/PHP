@@ -285,7 +285,7 @@
                                                                     <fieldset class="tab-pane" id="step4">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php'); ?>
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php',false); ?>
                                                                             </div>
                                                                             <div class="col-md-12">
                                                                                 <div class="collapse-group">
@@ -560,7 +560,7 @@
                                                                                                         data-info="false"
                                                                                                         data-ordering="false"
                                                                                                         data-searching="false"
-                                                                                                    >
+                                                                                                        >
                                                                                                         <thead>
                                                                                                             <tr>
                                                                                                                 <th class="desktop w20p"><b>Tổng cộng: </b></th>
@@ -588,6 +588,38 @@
                                                                                                             </tr>
                                                                                                         </tbody>
                                                                                                     </table>
+                                                                                                    <div class="row mt-3">
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Số tiền BH tiêu chuẩn:</label>
+                                                                                                                <input type="text" class="form-control input-float text-right" disabled readonly value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Phí BH tiêu chuẩn (%):</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" disabled readonly value="0.0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Phí BH tiêu chuẩn (Có VAT):</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" disabled readonly value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Tỉ lệ chênh lệch:</label>
+                                                                                                                <input type="text" class="form-control input-float text-right" value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Số tiền chênh lệch:</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
@@ -606,7 +638,7 @@
                                                                                                         data-info="false"
                                                                                                         data-ordering="false"
                                                                                                         data-searching="false"
-                                                                                                    >
+                                                                                                        >
                                                                                                         <thead class="thead-light">
                                                                                                             <tr>
                                                                                                                 <th class="desktop w15p">Quyền lợi</th>
@@ -704,6 +736,38 @@
                                                                                                         
                                                                                                         </tbody>
                                                                                                     </table>
+                                                                                                    <div class="row mt-3">
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Số tiền BH tiêu chuẩn:</label>
+                                                                                                                <input type="text" class="form-control input-float text-right" disabled readonly value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Phí BH tiêu chuẩn (%):</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" disabled readonly value="0.0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Phí BH tiêu chuẩn (Có VAT):</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" disabled readonly value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Tỉ lệ chênh lệch:</label>
+                                                                                                                <input type="text" class="form-control input-float text-right" value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Số tiền chênh lệch:</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
@@ -719,8 +783,8 @@
                                                                                             <div id="collapsible-item3" class="collapse" datatable-collapse>
                                                                                                 <div class="c-body">
                                                                                                     <div class="row mb-3">
-                                                                                                        <div class="col-md-4">
-                                                                                                            <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php'); ?>
+                                                                                                        <div class="col-md-8">
+                                                                                                            <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php',false); ?>
                                                                                                         </div>
                                                                                                         <div class="col-md-4">
                                                                                                             <label>Số GCNBH: <span class="text-danger">*</span></label>
@@ -731,8 +795,7 @@
                                                                                                         data-paging="false"
                                                                                                         data-info="false"
                                                                                                         data-ordering="false"
-                                                                                                        data-searching="false"
-                                                                                                    >
+                                                                                                        data-searching="false">
                                                                                                         <thead class="thead-light">
                                                                                                             <tr>
                                                                                                                 <th class="desktop w10p">Quyền lợi</th>
@@ -783,6 +846,38 @@
                                                                                                             </tr>
                                                                                                         </tbody>
                                                                                                     </table>
+                                                                                                    <div class="row mt-3">
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Số tiền BH tiêu chuẩn:</label>
+                                                                                                                <input type="text" class="form-control input-float text-right" disabled readonly value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Phí BH tiêu chuẩn (%):</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" disabled readonly value="0.0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Phí BH tiêu chuẩn (Có VAT):</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" disabled readonly value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Tỉ lệ chênh lệch:</label>
+                                                                                                                <input type="text" class="form-control input-float text-right" value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Số tiền chênh lệch:</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
@@ -810,7 +905,7 @@
                                                                                                         data-info="false"
                                                                                                         data-ordering="false"
                                                                                                         data-searching="false"
-                                                                                                    >
+                                                                                                        >
                                                                                                         <thead class="thead-light">
                                                                                                             <tr>
                                                                                                                 <th class="desktop w15p">Quyền lợi</th>
@@ -860,6 +955,38 @@
                                                                                                             </tr>
                                                                                                         </tbody>
                                                                                                     </table>
+                                                                                                    <div class="row mt-3">
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Số tiền BH tiêu chuẩn:</label>
+                                                                                                                <input type="text" class="form-control input-float text-right" disabled readonly value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Phí BH tiêu chuẩn (%):</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" disabled readonly value="0.0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Phí BH tiêu chuẩn (Có VAT):</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" disabled readonly value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Tỉ lệ chênh lệch:</label>
+                                                                                                                <input type="text" class="form-control input-float text-right" value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Số tiền chênh lệch:</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
@@ -928,6 +1055,38 @@
                                                                                                             </tr>
                                                                                                         </tbody>
                                                                                                     </table>
+                                                                                                    <div class="row mt-3">
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Số tiền BH tiêu chuẩn:</label>
+                                                                                                                <input type="text" class="form-control input-float text-right" disabled readonly value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Phí BH tiêu chuẩn (%):</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" disabled readonly value="0.0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Phí BH tiêu chuẩn (Có VAT):</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" disabled readonly value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Tỉ lệ chênh lệch:</label>
+                                                                                                                <input type="text" class="form-control input-float text-right" value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-2">
+                                                                                                            <div class="form-group">
+                                                                                                                <label>Số tiền chênh lệch:</label>
+                                                                                                                <input type="text" class="form-control input-money text-right" value="0">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>

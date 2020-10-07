@@ -298,7 +298,7 @@
                                                                     <fieldset class="tab-pane" id="step4">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php'); ?>
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php',false); ?>
                                                                             </div>
                                                                             <div class="col-md-12">
                                                                                 <div class="collapse-group">
@@ -792,8 +792,8 @@
                                                                                             <div id="collapsible-item3" class="collapse" datatable-collapse>
                                                                                                 <div class="c-body">
                                                                                                     <div class="row mb-3">
-                                                                                                        <div class="col-md-12">
-                                                                                                            <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php'); ?>
+                                                                                                        <div class="col-md-8">
+                                                                                                            <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php', false); ?>
                                                                                                         </div>
                                                                                                         <div class="col-md-4">
                                                                                                             <label>Số GCNBH: <span class="text-danger">*</span></label>
