@@ -219,13 +219,13 @@
                                                                                         </div>
                                                                                     </div> 
                                                                                 </div>
-                                                                                <div class="col-md-2">
+                                                                                <div class="col-md-3">
                                                                                     <div class="form-group ">
                                                                                         <label>Mã số thuế: </label>
                                                                                         <input type="text" class="form-control">
                                                                                     </div>
                                                                                 </div>
-                                                                                <div class="col-md-4">
+                                                                                <div class="col-md-9">
                                                                                     <div class="form-group ">
                                                                                         <label>Địa chỉ: </label>
                                                                                         <input type="text" class="form-control">
