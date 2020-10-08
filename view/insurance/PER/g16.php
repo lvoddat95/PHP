@@ -205,10 +205,10 @@
                                                                                     <div class="form-group">
                                                                                         <label>Mã / Tên KH doanh nghiệp: <span class="text-danger">*</span></label>
                                                                                         <div class="row">
-                                                                                            <div class="col-md-4 col-sm-4">
+                                                                                            <div class="col-md-3 col-sm-4">
                                                                                                 <input type="text" class="form-control required" placeholder="Nhập mã KH doanh nghiệp...">
                                                                                             </div>
-                                                                                            <div class="col-md-8 col-sm-8">
+                                                                                            <div class="col-md-9 col-sm-8">
                                                                                                 <div class="input-group">
                                                                                                     <input type="text" class="form-control required" placeholder="Nhập tên KH Doanh nghiệp...">
                                                                                                     <span class="input-group-append">
