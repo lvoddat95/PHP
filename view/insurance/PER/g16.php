@@ -201,17 +201,23 @@
                                                                         <div class="block">
                                                                             <p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Thông tin doanh nghiệp</p>
                                                                             <div class="row">
-                                                                                <div class="col-md-2">
-                                                                                    <div class="form-group ">
-                                                                                        <label>Mã KH doanh nghiệp: </label>
-                                                                                        <input type="text" class="form-control">
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-md-4">
-                                                                                    <div class="form-group ">
-                                                                                        <label>Tên KH Doanh nghiệp: </label>
-                                                                                        <input type="text" class="form-control">
-                                                                                    </div>
+                                                                                <div class="col-md-12">
+                                                                                    <div class="form-group">
+                                                                                        <label>Mã / Tên KH doanh nghiệp: <span class="text-danger">*</span></label>
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-4 col-sm-4">
+                                                                                                <input type="text" class="form-control required" placeholder="Nhập mã KH doanh nghiệp...">
+                                                                                            </div>
+                                                                                            <div class="col-md-8 col-sm-8">
+                                                                                                <div class="input-group">
+                                                                                                    <input type="text" class="form-control required" placeholder="Nhập tên KH Doanh nghiệp...">
+                                                                                                    <span class="input-group-append">
+                                                                                                        <button type="button" class="btn bg-primary" data-fancybox="" data-base-class="fancybox-container-lg" data-type="iframe" data-src="<?php echo HTTP_PATH; ?>view/inc/iframe/iframe_ds_khach_hang.php" href="javascript:;">Chọn <i class="fad fa-user-plus ml-1"></i></button>
+                                                                                                    </span>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div> 
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <div class="form-group ">
@@ -413,9 +419,9 @@
                                                                                                                 <table class="table table-bordered mt-3">
                                                                                                                     <thead>
                                                                                                                         <tr>
-                                                                                                                            <th width="25%">Tháng tham gia</th>
-                                                                                                                            <th width="30%">Phí</th>
-                                                                                                                            <th width="35%">Số tiền</th>
+                                                                                                                            <th width="25%">Tháng</th>
+                                                                                                                            <th width="30%">Số tiền BH</th>
+                                                                                                                            <th width="35%">Phí</th>
                                                                                                                         </tr>
                                                                                                                     </thead>
                                                                                                                     <tbody>

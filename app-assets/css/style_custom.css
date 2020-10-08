@@ -4039,8 +4039,7 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     }
 }
 .fancybox-modabody{
-    overflow: hidden;
-    height: 100%;
+
 }
 .fancybox-slide--iframe .fancybox-content,
 .fancybox-slide--iframe .fancybox-iframe{
