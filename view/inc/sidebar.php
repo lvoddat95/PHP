@@ -154,7 +154,7 @@
                         </li>
 
                         <li class="nav-item nav-item-submenu">
-                            <a href="javascript:;" class="nav-link">
+                            <a href="javascript:;" class="nav-link"> 
                                 <i class="fad fa-construction fa-fw"></i>
                                 <span class="menu-title"> Bảo hiểm kĩ thuật</span>
                             </a>
