@@ -1,5 +1,5 @@
 <?php require_once '../../../config.php'; ?>
-<?php include_once HEADER; ?>
+<?php include_once HEADER; ?> 
     
     <body class="sidebar-xs">
 

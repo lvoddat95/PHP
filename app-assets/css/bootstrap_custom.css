@@ -4185,11 +4185,6 @@ a.badge[class*=bg-]:not(.bg-transparent):not(.bg-white):not(.bg-light):hover, a.
 .modal-open .modal{
 	overflow-y: hidden;
 }
-.modal.show{
-	-ms-display: flex !important;
-	display: flex !important;
-}
-
 .modal-title {
     font-size: 14px;
     font-weight: 500;
@@ -4226,7 +4221,7 @@ a.badge[class*=bg-]:not(.bg-transparent):not(.bg-white):not(.bg-light):hover, a.
 .modal-dialog {
     border-radius: 6px;
     overflow: hidden;
-    margin: auto;
+    margin: 30px auto;
 }
 .modal-footer {
 	border: 0;
