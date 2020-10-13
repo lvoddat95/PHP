@@ -1,6 +1,6 @@
 <?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?> 
-    
+     
     <body class="sidebar-xs">
 
         <div class="page-content home-page">
