@@ -187,10 +187,10 @@
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-6">
+                                                                            <div class="col-md-4">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/dia_diem_bao_hiem.php'); ?>
                                                                             </div>
-                                                                            <div class="col-md-6">
+                                                                            <div class="col-md-4">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/quy_tac_bao_hiem.php'); ?>
                                                                             </div>
                                                                         </div>

@@ -215,10 +215,10 @@
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-6">
+                                                                            <div class="col-md-4">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/tong_tien_hoa_hong_dai_li.php'); ?>
                                                                             </div>
-                                                                            <div class="col-md-6">
+                                                                            <div class="col-md-4">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/tong_tien_hoa_hong_moi_gioi.php'); ?>
                                                                             </div>
                                                                         </div>
