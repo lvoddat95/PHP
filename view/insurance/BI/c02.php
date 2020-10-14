@@ -90,7 +90,9 @@
                                                                             <div class="col-md-6">
                                                                                 <?php inc('template/3_doi_tuong_bao_hiem/BI/ten_cong_trinh_du_an.php'); ?>
                                                                             </div>
-                                                                            <div class="col-md-6">
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-md-2">
                                                                                 <?php inc('template/3_doi_tuong_bao_hiem/BI/gioi_han_ve_nguoi.php'); ?>
                                                                             </div>
                                                                         </div>
@@ -99,22 +101,24 @@
                                                                     <!-- Step 4 -->
                                                                     <fieldset class="tab-pane" id="step4">
                                                                         <div class="row">
-                                                                        
                                                                             <div class="col-md-9">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php'); ?>
                                                                             </div>
+                                                                        </div>
+                                                                        <div class="row">
                                                                             <div class="col-md-3">
                                                                                 <div class="form-group ">
                                                                                     <label>Thời gian bảo hành: </label>
                                                                                     <div class="input-group">
-                                                                                        <input type="text" class="form-control input-number"placeholder="Nhập thời hạn..." value="">
+                                                                                        <input type="text" class="form-control input-month"placeholder="Nhập thời hạn..." value="">
                                                                                         <span class="input-group-append">
                                                                                             <span class="input-group-text">Tháng</span>
                                                                                         </span>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-
+                                                                        </div>
+                                                                        <div class="row">
                                                                             <div class="col-md-6">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/thong_tin_ve_thoi_han_thanh_toan.php'); ?>
                                                                             </div>
@@ -256,41 +260,44 @@
                                                                             </div>
                                                                         </div>
 
-                                                                        <div class="row mb-3">
-                                                                            <div class="col-md-12">
-                                                                                <b><label>Lịch thanh toán bảo hiểm: </label></b>
-                                                                            </div>
+                                                                        <div class="row">
                                                                             <div class="col-md-4">
-                                                                                <table class="table table-bordered" style="margin: auto;">
-                                                                                    <thead class="thead-light">
-                                                                                        <tr>
-                                                                                            <th class="w70p">Quyền lợi</th>
-                                                                                            <th class="w30p text-right">Phí BH có VAT</th>
-                                                                                        </tr>
-                                                                                    </thead>
-                                                                                    <tbody>
-                                                                                        <tr>
-                                                                                            <td>Số tiền giảm miễn thường</td>
-                                                                                            <td class="text-right">0</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Tổn thất vật chất</td>
-                                                                                            <td class="text-right">0</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>TNDS bên thứ 3</td>
-                                                                                            <td class="text-right">0</td>
-                                                                                        </tr>
-                                                                                        
-                                                                                        <tr class="bold" style="background-color: #fff;">
-                                                                                            <td>Tổng phí BH</td>
-                                                                                            <td><input class="form-control text-right" type="text" disabled="" readonly="" value="0"></td>
-                                                                                        </tr>
-                                                                                    </tbody>
-                                                                                </table>
+                                                                                <div class="form-group">
+                                                                                    <label for="">Tổng phí (có VAT): </label>
+                                                                                    <table class="table table-bordered" style="margin: auto;">
+                                                                                        <thead class="thead-light">
+                                                                                            <tr>
+                                                                                                <th class="w65p">Quyền lợi</th>
+                                                                                                <th class="w40p text-right">Phí BH có VAT</th>
+                                                                                            </tr>
+                                                                                        </thead>
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td>Số tiền giảm miễn thường</td>
+                                                                                                <td class="text-right">0</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>Tổn thất vật chất</td>
+                                                                                                <td class="text-right">0</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>TNDS bên thứ 3</td>
+                                                                                                <td class="text-right">0</td>
+                                                                                            </tr>
+                                                                                            
+                                                                                            <tr class="bold" style="background-color: #fff;">
+                                                                                                <td>Tổng phí BH</td>
+                                                                                                <td><input class="form-control text-right" type="text" disabled="" readonly="" value="0"></td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
                                                                             </div>
                                                                             <div class="col-md-8">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/lich_thanh_toan.php'); ?>
+                                                                                <div class="form-group">
+                                                                                    <label for="">Lịch thanh toán: </label>
+                                                                                    <?php inc('template/4_pham_vi_bao_hiem/lich_thanh_toan.php'); ?>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
 
