@@ -1,10 +1,10 @@
 <!-- Xin hủy hợp đồng -->
-<div id="xin_huy_hop_dong" class="modal fade" tabindex="-1">
-    <div class="modal-dialog modal-lg">
+<div id="xin_huy_hop_dong" class="fancybox-content-lg">
+    <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title ">Xin hủy hợp đồng</h5>
-                <button type="button" class="close" data-dismiss="modal"><i class="fal fa-times"></i></button>
+                <button type="button" class="close" data-fancybox-close><i class="fal fa-times"></i></button>
             </div>
             <form action="#">
                 <div class="modal-body">

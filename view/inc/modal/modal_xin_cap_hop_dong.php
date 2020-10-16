@@ -1,10 +1,10 @@
 <!-- Xin cấp số hợp đồng-->
-<div id="xin_cap_hop_dong" class="modal fade" tabindex="-1" datatable-modal>
+<div id="xin_cap_hop_dong" style="display: none;" class="fancybox-content-lg">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title ">Thông tin hợp đồng xin cấp</h5>
-                <button type="button" class="close" data-dismiss="modal"><i class="fal fa-times"></i></button>
+                <button type="button" class="close" data-fancybox-close><i class="fal fa-times"></i></button>
             </div>
             <form action="#">
                 <div class="modal-body">
@@ -85,7 +85,7 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-light" data-dismiss="modal"> <i class="far fa-times mr-1"></i>Đóng</button>
+                    <button type="button" class="btn btn-light" data-fancybox-close> <i class="far fa-times mr-1"></i>Đóng</button>
                     <a href=":;" class="btn bg-primary btn-labeled btn-labeled-left mr-1"><b><i class="fa fa-save"></i></b> Lưu</a>
                 </div>
             </form>

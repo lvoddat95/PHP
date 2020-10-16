@@ -121,6 +121,10 @@ table .select2-container {
     width: 100% !important;
 }
 
+.select2-container{
+    z-index: 99992;
+}
+
 .modal-backdrop.fade{
     transition: none;
 }
@@ -4016,25 +4020,35 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     table-layout: fixed;
 }
 
+.fancybox-modal .fancybox-content{
+    padding: 0;
+    border-radius: 0.25rem;
+}
+
+.fancybox-container .modal-dialog {
+    overflow: hidden;
+    margin: auto;
+    max-width: 100%;
+}
 
 @media (min-width: 576px) {
-    .fancybox-container .fancybox-content{
+    .fancybox-content-lg{
         max-width: 600px;
     }
-    .fancybox-container-sm .fancybox-content{
+    .fancybox-content-sm{
         max-width: 400px;
     }
 }
 
 @media (min-width: 992px) {
-    .fancybox-container-lg .fancybox-content, 
-    .fancybox-container-xl .fancybox-content{
+    .fancybox-content-lg,
+    .fancybox-content-xl{
         max-width: 900px;
     }
 }
 
 @media (min-width: 1200px) {
-    .fancybox-container-xl .fancybox-content{
+    .fancybox-content-xl{
         max-width: 1140px;
     }
 }
@@ -4043,7 +4057,7 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
 }
 .fancybox-slide--iframe .fancybox-content,
 .fancybox-slide--iframe .fancybox-iframe{
-    border-radius: 6px;
+    border-radius: 0.25rem;
 }
 
 .table thead.thead-pd-0 th{

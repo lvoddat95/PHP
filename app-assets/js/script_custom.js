@@ -317,3 +317,18 @@ $( "#fancybox-gallery" ).sortable({
     handle: ".img-sortable",
 });
 
+var fancybox_modal = function(p_this, p_src){
+    p_this = $(p_this);
+    $.fancybox.open({
+        src : p_src,
+        btnTpl: {
+            smallBtn:"",
+        },
+        baseClass: "fancybox-modal",
+        afterLoad : function( instance, current ) {
+                $($.fn.dataTable.tables(true)).DataTable()
+                .columns.adjust()
+                .responsive.recalc();
+            }
+    });
+}

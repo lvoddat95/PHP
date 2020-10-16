@@ -4219,7 +4219,6 @@ a.badge[class*=bg-]:not(.bg-transparent):not(.bg-white):not(.bg-light):hover, a.
 	border-radius: 6px;
 }
 .modal-dialog {
-    border-radius: 6px;
     overflow: hidden;
     margin: 30px auto;
 }
