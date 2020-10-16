@@ -120,11 +120,28 @@ table .select2-container {
     table-layout: fixed;
     width: 100% !important;
 }
-
-.select2-container{
-    z-index: 99992;
+.fancybox-container{
+    z-index: 1062;
 }
-
+.fancybox-caption, 
+.fancybox-infobar, 
+.fancybox-navigation 
+.fancybox-button, 
+.fancybox-toolbar{
+    z-index: 1067;
+}
+.fancybox-stage{
+    z-index: 1064;
+}
+.fancybox-slide{
+    z-index: 1064;
+}
+.fancybox-stage{
+    z-index: 1064;
+}
+.fancybox-caption{
+    z-index: 1066;
+}
 .modal-backdrop.fade{
     transition: none;
 }
@@ -3540,6 +3557,7 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
   }
 }
 .overlay {
+    display: none;
     position: fixed;
     z-index: 1002;
     background-color: rgba(255,255,255,0.85);
@@ -3547,10 +3565,10 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     right: 0;
     bottom: 0;
     left: 0;
-        text-align: center;
-    display: flex;
+    text-align: center;
+/*    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;*/
 }
 .loading-text{
     margin-top: 15px;
@@ -4025,6 +4043,7 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
 .fancybox-modal .fancybox-content{
     padding: 0;
     border-radius: 0.25rem;
+    width: 100%;
 }
 .fancybox-container .modal-dialog {
     overflow: hidden;

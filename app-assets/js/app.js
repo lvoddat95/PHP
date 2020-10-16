@@ -1739,7 +1739,6 @@ var App = function () {
         var $isotope_search = $('.isotope-search').keyup( debounce( function() {
             qs_regex = new RegExp( $isotope_search.val(), 'gi' );
             $grid.isotope();
-            console.log($grid.data('isotope').filteredItems.length)
         }) );
 
         function debounce( fn, threshold ) {
@@ -1781,8 +1780,10 @@ var App = function () {
             }
         }
 
-        $('#ds_files').on('shown.bs.modal', function () {
-            $grid.isotope('layout');
+        $(document).on('afterShow.fb', function( e, instance, slide ) {
+            if ($(e.target).find('#ds_files').length) {
+                $grid.isotope('layout');
+            }
         });
 
         this.list_view = (p_this) => {

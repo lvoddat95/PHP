@@ -1,10 +1,10 @@
 <!-- Danh sách files -->
-<div id="ds_files" class="modal fade" tabindex="-1">
-    <div class="modal-dialog modal-lg">
+<div id="ds_files" class="modal-none fancybox-content-lg">
+    <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title ">Danh sách tệp đính kèm</h5>
-                <button type="button" class="close" data-dismiss="modal"><i class="fal fa-times"></i></button>
+                <button type="button" class="close" data-fancybox-close><i class="fal fa-times"></i></button>
             </div>
 
             <div class="modal-body">

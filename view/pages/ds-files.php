@@ -11,8 +11,30 @@
 
                 <div class="content">
 
+                    <!-- Header -->
+                    <div class="header-top">
+                        <button class="d-md-none sidebar-mobile-main-toggle" type="button">
+                            <i class="far fa-align-left"></i>
+                        </button>
+                        <div class="top-left">
+                            <div class="breadcrumb">
+                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i> F01 - Bảo hiểm xe máy</a>
+                                <span class="breadcrumb-item active">Cập nhập đơn</span>
+                            </div>
+                            <div class="d-md-none logo-mobile">
+                                <a href="<?php echo HTTP_PATH; ?>" class="logo-text">
+                                    <div class="logo-img"><img src="<?php echo HTTP_PATH .'app-assets/images/logo/logo2.png'; ?>" alt="VNI Logo"></div>
+                                    <span class="text align-middle" style="font-weight: 900;">VNI</span>
+                                </a>
+                            </div>
+                        </div>
+                        <?php include_once TOP_RIGHT; ?>
+                    </div>
+                    <!-- /Header -->
+
                     <!-- Content-block -->
-                    <div class="content-block">
+                    <div class="content-block card card-body">
+
                         <div class="file-manager">
                             <div class="f-left">
                                 <div class="f-left-wrapper">
@@ -553,6 +575,8 @@
 
                             </div>
                         </div>
+
+                    
                     </div>
                     <!-- /Content-block -->
 
@@ -564,32 +588,6 @@
             
         </div>
 
-        <?php inc('chat-box.php'); ?> 
-        <?php inc('quick-action.php'); ?> 
-
-        <?php inc('modal/modal_ds_so_hop_dong_xin_cap.php'); ?> 
-        <?php inc('modal/modal_ds_nguoi_tham_gia_bao_hiem.php'); ?> 
-
-        <div class="modal-group">
-            <?php
-                inc('modal/modal_ds_cac_khach_hang.php'); 
-                inc('modal/modal_cap_nhap_thong_tin_khach_hang.php'); 
-            ?>
-        </div>
-
-        <?php inc('modal/modal_ds_rui_ro_bao_hiem.php'); ?> 
-        <?php inc('modal/modal_ds_dieu_khoan_loai_tru.php'); ?> 
-        <?php inc('modal/modal_ds_files.php'); ?>
-
     </body>
-    <div class="overlay">
-        <div class="loading">
-            <div class="loader">
-                <svg class="circular" viewBox="25 25 50 50">
-                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
-                </svg>
-            </div>
-            <div class="loading-text color"> Vui lòng đợi trong giây lát <span>.</span><span>.</span><span>.</span></div>
-        </div>
-    </div>
+
 <?php include_once FOOTER; ?>
