@@ -1,5 +1,5 @@
 <!-- Xin hủy hợp đồng -->
-<div id="xin_huy_hop_dong" class="fancybox-content-lg">
+<div id="xin_huy_hop_dong" class="modal-none fancybox-content-lg">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

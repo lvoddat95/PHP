@@ -1,5 +1,5 @@
 <!-- Xin cấp số hợp đồng-->
-<div id="xin_cap_hop_dong" style="display: none;" class="fancybox-content-lg">
+<div id="xin_cap_hop_dong" class="modal-none fancybox-content-lg">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

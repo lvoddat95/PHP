@@ -1,5 +1,5 @@
 <!-- Danh sách hợp đồng xin cấp -->
-<div id="ds_so_hop_dong_xin_cap" style="display: none;" class="fancybox-content-lg">
+<div id="ds_so_hop_dong_xin_cap" class="modal-none fancybox-content-lg">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
