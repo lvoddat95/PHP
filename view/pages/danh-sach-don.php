@@ -124,6 +124,7 @@
                                                     <label class="font-weight-semibold">Đơn vị:</label>
                                                     <div class="form-group-select">
                                                         <div class="input-group">
+                                                            <input type="hidden" name="">
                                                             <span class="input-group-prepend">
                                                                 <span class="input-group-text"><i class="fa fa-building"></i></span>
                                                             </span>
@@ -148,6 +149,7 @@
                                                                 <option value="opt4">Phòng KD 4</option>
                                                                 <option value="opt5">Phòng KD 5</option>
                                                             </select>
+                                                            <input type="hidden" name="">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -192,6 +194,7 @@
                                                             <span class="input-group-text"><i class="far fa-id-card"></i></span>
                                                         </span>
                                                         <input type="text" class="form-control" name="" placeholder="Nhập số đơn...">
+                                                        <input type="hidden" name="">
                                                     </div>
                                                 </div>
                                             </div>

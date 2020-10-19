@@ -343,11 +343,12 @@ a.sidebar-main-toggle:hover {
     flex: 1 1 auto;
     width: 1% !important;
 }
-.input-group > .select2-container:last-child .select2-selection--single {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+.input-group > .input-group-prepend + .form-control{
+    max-width: 100%;
 }
+.input-group > .input-group-prepend + .select2-container{
 
+}
 .top-left {
     display: -ms-flexbox;
     display: flex;
@@ -1244,6 +1245,7 @@ select {
 }
 .datepicker:not([type="date"]) {
     min-width: 95px;
+    max-width: 150px;
     padding-right: 22px;
     background-size: 11px;
     background-position: center;
@@ -1253,7 +1255,7 @@ select {
 }
 
 .input-time{
-    max-width: 90px;
+    max-width: 100px;
 }
 
 .input-time:not([type="time"]){
@@ -3604,7 +3606,7 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     display: -ms-flex;
     align-items: center;
     -ms-align-items: center;
-    max-width: 600px;
+    max-width: 560px;
 }
 .date-to-date > div{
     width: 100%;
