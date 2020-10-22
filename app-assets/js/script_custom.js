@@ -245,6 +245,15 @@ var on_change_loai_vay_von = function(p_this){
     }
 }
 
+var on_change_chuyen_can_bo_thu_li = function(p_this){
+    var v_input_value = $(p_this).val();
+    if (v_input_value == "1") {
+        $('#can_bo_thu_li').slideDown('400');
+    }else{
+        $('#can_bo_thu_li').slideUp('400');
+    }
+}
+
 
 
 var modal_lv = 0;

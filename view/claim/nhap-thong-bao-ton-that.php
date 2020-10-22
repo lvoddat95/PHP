@@ -226,6 +226,32 @@
                                                     </div>
                                                 </div>    
 
+                                                <hr class="border-dashed border-silver mb-3">
+
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label>Chuyển cán bộ thụ lý</label>
+                                                            <select select2="" class="form-control" onchange="on_change_chuyen_can_bo_thu_li(this);">
+                                                                <option value="0" selected="">Tự động lựa chọn</option>
+                                                                <option value="1">Chọn trong danh sách</option>
+                                                            </select>
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group" id="can_bo_thu_li" style="display: none;">
+                                                            <label>Danh sách cán bộ thụ lý</label>
+                                                            <select select2="" class="form-control">
+                                                                <option>--- Chọn ---</option>
+                                                                <option selected="">Lê Văn A</option>
+                                                                <option>Lê Văn B</option>
+                                                                <option>Lê Văn C</option>
+                                                                <option>........</option>
+                                                            </select>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
