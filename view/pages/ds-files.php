@@ -106,7 +106,7 @@
                 serverSide: true,
 
                 ajax: {
-                    url: "http://qlbh.bhhk.vn:8088/MV/IndexJson",
+                    url: "https://qlbh.bhhk.vn:8088/MV/IndexJson",
                     type: "POST",
                     dataType: "json",
                     dataSrc: "data",
