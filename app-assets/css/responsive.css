@@ -310,10 +310,12 @@
 
 @media only screen and (max-width: 567px) {
     body{
-        font-size: 10px;
+        font-size: 12px;
     }
     .btn{
-        font-size: 10px;
+        font-size: 12px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
     .row {
         margin-right: -5px;
@@ -438,6 +440,10 @@
     }
     .f-right.list span.date, .f-right.list span.type{
         display: none;
+    }
+    .card-header.card-header-sticky:first-child{
+        position: static;
+        z-index: 0;
     }
 }
 

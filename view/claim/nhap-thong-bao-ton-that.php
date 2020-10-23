@@ -62,7 +62,7 @@
                                                             <input type="text" class="form-control required" disabled name="" placeholder="Nhập số TBTT..." value="#HSTT/20/AD/12345678">
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-4">
+                                                    <div class="col-xl-4 col-sm-6">
                                                         <div class="form-group">
                                                             <label>Số Đơn BH:</label>
                                                             <div class="input-group">
@@ -78,13 +78,13 @@
                                                 <hr class="border-dashed border-silver mb-3">
 
                                                 <div class="row">
-                                                    <div class="col-md-3">
+                                                    <div class="col-xl-3 col-sm-6">
                                                         <div class="form-group">
                                                             <label>Người thông báo:</label>
                                                             <input type="text" class="form-control" placeholder="Nhập người thông báo..." >
                                                         </div>                                                
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-xl-3 col-sm-6">
                                                         <div class="form-group">
                                                             <label>Người nhận TBTT:
                                                                 <a href="#" data-tooltip="tipsy" original-title="Cán bộ tiếp nhận thông báo tổn thất" data-position="top"><i class="icon-info22"></i></a>
@@ -109,7 +109,7 @@
                                                                     <div class="input-group">
                                                                         <input type="text" class="form-control required" placeholder="Nhập tên khách hàng...">
                                                                         <span class="input-group-append">
-                                                                            <button type="button" class="btn bg-primary" data-toggle="modal" data-target="#ds_cac_khach_hang">Chọn từ danh mục <i class="fad fa-user-plus ml-1"></i></button>
+                                                                            <button type="button" class="btn bg-primary" data-toggle="modal" data-target="#ds_cac_khach_hang">Chọn<i class="fad fa-user-plus ml-1"></i></button>
                                                                         </span>
                                                                     </div>
                                                                 </div>
@@ -119,7 +119,7 @@
                                                 </div>
 
                                                 <div class="row">
-                                                    <div class="col-md-3">
+                                                    <div class="col-xl-3 col-sm-6">
                                                         <div class="form-group">
                                                             <label>
                                                                 Họ và tên lái xe: <a href="#" data-tooltip="tipsy" original-title="Họ và tên lái xe tại thời điểm tai nạn" data-position="top"><i class="icon-info22"></i></a>
@@ -128,13 +128,13 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-12"></div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-xl-3 col-sm-4">
                                                         <div class="form-group">
                                                             <label>Biển số xe: <span class="text-danger">*</span></label>
                                                             <input type="text" class="form-control input-bsx" placeholder="XXXX XXXXX">
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-xl-3 col-sm-4">
                                                         <div class="form-group">
                                                             <label>
                                                                 Số người trên xe: <span class="text-danger">*</span>
@@ -147,7 +147,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-xl-3 col-sm-4">
                                                         <div class="form-group">
                                                             <label>
                                                                 Số lượng hàng hoá: <span class="text-danger">*</span>
@@ -163,13 +163,13 @@
                                                 </div>
 
                                                 <div class="row">
-                                                    <div class="col-md-2">
+                                                    <div class="col-xl-2 col-sm-4 col-6">
                                                         <div class="form-group">
                                                             <label>Ngày tổn thất:</label>
                                                             <input type="text" class="form-control input-date datepicker" placeholder="dd/mm/yyyy">
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-2">
+                                                    <div class="col-xl-2 col-sm-4 col-6">
                                                         <div class="form-group">
                                                             <label>Thời gian tổn thất: 
                                                                 <span class="text-danger">*</span>
@@ -180,7 +180,7 @@
                                                 </div>
 
                                                 <div class="row">
-                                                    <div class="col-md-2">
+                                                    <div class="col-xl-2 col-sm-4 col-6">
                                                         <div class="form-group">
                                                             <label>Ngày TBTT: 
                                                                 <span class="text-danger">*</span> 
@@ -189,7 +189,7 @@
                                                             <input type="text" class="form-control input-date datepicker" placeholder="dd/mm/yyyy" value="06/08/2020">
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-2">
+                                                    <div class="col-xl-2 col-sm-4 col-6">
                                                         <div class="form-group">
                                                             <label>Thời gian TBTT: 
                                                                 <span class="text-danger">*</span> 
@@ -229,7 +229,7 @@
                                                 <hr class="border-dashed border-silver mb-3">
 
                                                 <div class="row">
-                                                    <div class="col-md-3">
+                                                    <div class="col-xl-3 col-sm-6">
                                                         <div class="form-group">
                                                             <label>Chuyển cán bộ thụ lý</label>
                                                             <select select2="" class="form-control" onchange="on_change_chuyen_can_bo_thu_li(this);">
@@ -238,7 +238,7 @@
                                                             </select>
                                                         </div> 
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-xl-3 col-sm-6">
                                                         <div class="form-group" id="can_bo_thu_li" style="display: none;">
                                                             <label>Danh sách cán bộ thụ lý</label>
                                                             <select select2="" class="form-control">

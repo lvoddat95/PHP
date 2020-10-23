@@ -42,7 +42,7 @@
                                <div class="tab-claim tab-style">
                                     <ul class="nav nav-tabs">
                                         <li class="nav-item">
-                                            <a href="#claim_thong_tin_chung" class="nav-link" data-toggle="tab">
+                                            <a href="#claim_thong_tin_chung" class="nav-link active" data-toggle="tab">
                                                 <i class="fal fa-address-card mr-1"></i>
                                                 <span>Thông tin chung</span>
                                             </a>
@@ -54,7 +54,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#claim_to_trinh_boi_thuong" class="nav-link active" data-toggle="tab">
+                                            <a href="#claim_to_trinh_boi_thuong" class="nav-link" data-toggle="tab">
                                                 <i class="fal fa-file-edit mr-1"></i>
                                                 <span>Tờ trình bồi thường</span>
                                             </a>
@@ -76,7 +76,7 @@
                                     <div class="clearfix"></div>
 
                                     <div class="tab-content">
-                                        <div class="tab-pane " id="claim_thong_tin_chung">
+                                        <div class="tab-pane active" id="claim_thong_tin_chung">
                                             <div class="tab-pane-action">
                                                 <div class="page-title">
                                                     <div class="p-title">
@@ -121,7 +121,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="tab-pane active" id="claim_to_trinh_boi_thuong">
+                                        <div class="tab-pane " id="claim_to_trinh_boi_thuong">
                                             <div class="tab-pane-action">
                                                 <div class="page-title">
                                                     <div class="p-title">
