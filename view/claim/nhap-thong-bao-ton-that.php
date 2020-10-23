@@ -51,207 +51,202 @@
                                         </div>
                                     </div>
                                     <div class="card-body">
-                                        <div class="row">
-                                            <div class="offset-md-1 col-md-10">
-
-                                                
-                                                <div class="row">
-                                                    <div class="col-md-3">
-                                                        <div class="form-group">
-                                                            <label>#Số TBTT:</label>
-                                                            <input type="text" class="form-control required" disabled name="" placeholder="Nhập số TBTT..." value="#HSTT/20/AD/12345678">
-                                                        </div>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-xl-3 col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>#Số TBTT:</label>
+                                                        <input type="text" class="form-control required" disabled name="" placeholder="Nhập số TBTT..." value="#HSTT/20/AD/12345678">
                                                     </div>
-                                                    <div class="col-xl-4 col-sm-6">
-                                                        <div class="form-group">
-                                                            <label>Số Đơn BH:</label>
-                                                            <div class="input-group">
-                                                                <input type="text" class="form-control required" name="so_don_bao_hiem" placeholder="Nhập số đơn bảo hiểm...">
-                                                                <span class="input-group-append">
-                                                                    <button type="button" class="btn bg-primary"><i class="far fa-file-search mr-1"></i> Kiểm tra đơn BH</button>
-                                                                </span>
-                                                            </div>
+                                                </div>
+                                                <div class="col-xl-4 col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Số Đơn BH:</label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control required" name="so_don_bao_hiem" placeholder="Nhập số đơn bảo hiểm...">
+                                                            <span class="input-group-append">
+                                                                <button type="button" class="btn bg-primary"><i class="far fa-file-search mr-1"></i> Kiểm tra đơn BH</button>
+                                                            </span>
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </div>
 
-                                                <hr class="border-dashed border-silver mb-3">
+                                            <hr class="border-dashed border-silver mb-3">
 
-                                                <div class="row">
-                                                    <div class="col-xl-3 col-sm-6">
-                                                        <div class="form-group">
-                                                            <label>Người thông báo:</label>
-                                                            <input type="text" class="form-control" placeholder="Nhập người thông báo..." >
-                                                        </div>                                                
-                                                    </div>
-                                                    <div class="col-xl-3 col-sm-6">
-                                                        <div class="form-group">
-                                                            <label>Người nhận TBTT:
-                                                                <a href="#" data-tooltip="tipsy" original-title="Cán bộ tiếp nhận thông báo tổn thất" data-position="top"><i class="icon-info22"></i></a>
-                                                            </label>
-                                                            <select select2="" class="form-control">
-                                                                <option>--- Chọn ---</option>
-                                                                <option selected="">Lê Văn A</option>
-                                                                <option>Lê Văn B</option>
-                                                                <option>Lê Văn C</option>
-                                                                <option>........</option>
-                                                            </select>
-                                                        </div> 
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <div class="form-group">
-                                                            <label>Khách hàng:</label>
-                                                            <div class="row">
-                                                                <div class="col-md-3 col-sm-3">
-                                                                    <input type="text" class="form-control required" placeholder="Nhập mã khách hàng...">
-                                                                </div>
-                                                                <div class="col-md-9 col-sm-9">
-                                                                    <div class="input-group">
-                                                                        <input type="text" class="form-control required" placeholder="Nhập tên khách hàng...">
-                                                                        <span class="input-group-append">
-                                                                            <button type="button" class="btn bg-primary" data-toggle="modal" data-target="#ds_cac_khach_hang">Chọn<i class="fad fa-user-plus ml-1"></i></button>
-                                                                        </span>
-                                                                    </div>
+                                            <div class="row">
+                                                <div class="col-xl-3 col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Người thông báo:</label>
+                                                        <input type="text" class="form-control" placeholder="Nhập người thông báo..." >
+                                                    </div>                                                
+                                                </div>
+                                                <div class="col-xl-3 col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Người nhận TBTT:
+                                                            <a href="#" data-tooltip="tipsy" original-title="Cán bộ tiếp nhận thông báo tổn thất" data-position="top"><i class="icon-info22"></i></a>
+                                                        </label>
+                                                        <select select2="" class="form-control">
+                                                            <option>--- Chọn ---</option>
+                                                            <option selected="">Lê Văn A</option>
+                                                            <option>Lê Văn B</option>
+                                                            <option>Lê Văn C</option>
+                                                            <option>........</option>
+                                                        </select>
+                                                    </div> 
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <div class="form-group">
+                                                        <label>Khách hàng:</label>
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-sm-4">
+                                                                <input type="text" class="form-control required" placeholder="Nhập mã khách hàng...">
+                                                            </div>
+                                                            <div class="col-md-8 col-sm-8">
+                                                                <div class="input-group">
+                                                                    <input type="text" class="form-control required" placeholder="Nhập tên khách hàng...">
+                                                                    <span class="input-group-append">
+                                                                        <button type="button" class="btn bg-primary" data-toggle="modal" data-target="#ds_cac_khach_hang">Chọn<i class="fad fa-user-plus ml-1"></i></button>
+                                                                    </span>
                                                                 </div>
                                                             </div>
-                                                        </div> 
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-xl-3 col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>
+                                                            Họ và tên lái xe: <a href="#" data-tooltip="tipsy" original-title="Họ và tên lái xe tại thời điểm tai nạn" data-position="top"><i class="icon-info22"></i></a>
+                                                        </label>
+                                                        <input type="text" class="form-control" placeholder="Nhập họ tên lái xe...">
                                                     </div>
                                                 </div>
-
-                                                <div class="row">
-                                                    <div class="col-xl-3 col-sm-6">
-                                                        <div class="form-group">
-                                                            <label>
-                                                                Họ và tên lái xe: <a href="#" data-tooltip="tipsy" original-title="Họ và tên lái xe tại thời điểm tai nạn" data-position="top"><i class="icon-info22"></i></a>
-                                                            </label>
-                                                            <input type="text" class="form-control" placeholder="Nhập họ tên lái xe...">
-                                                        </div>
+                                                <div class="col-12"></div>
+                                                <div class="col-xl-3 col-sm-4">
+                                                    <div class="form-group">
+                                                        <label>Biển số xe: <span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control input-bsx" placeholder="XXXX XXXXX">
                                                     </div>
-                                                    <div class="col-12"></div>
-                                                    <div class="col-xl-3 col-sm-4">
-                                                        <div class="form-group">
-                                                            <label>Biển số xe: <span class="text-danger">*</span></label>
-                                                            <input type="text" class="form-control input-bsx" placeholder="XXXX XXXXX">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xl-3 col-sm-4">
-                                                        <div class="form-group">
-                                                            <label>
-                                                                Số người trên xe: <span class="text-danger">*</span>
-                                                            </label>
-                                                            <div class="input-group">
-                                                                <input type="text" class="form-control required input-float" placeholder="0" value="">
-                                                                <span class="input-group-append">
-                                                                    <span class="input-group-text">người</span>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xl-3 col-sm-4">
-                                                        <div class="form-group">
-                                                            <label>
-                                                                Số lượng hàng hoá: <span class="text-danger">*</span>
-                                                            </label>
-                                                            <div class="input-group">
-                                                                <input type="text" class="form-control required input-float" placeholder="0" value="">
-                                                                <span class="input-group-append">
-                                                                    <span class="input-group-text">kg</span>
-                                                                </span>
-                                                            </div>
+                                                </div>
+                                                <div class="col-xl-3 col-sm-4">
+                                                    <div class="form-group">
+                                                        <label>
+                                                            Số người trên xe: <span class="text-danger">*</span>
+                                                        </label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control required input-float" placeholder="0" value="">
+                                                            <span class="input-group-append">
+                                                                <span class="input-group-text">người</span>
+                                                            </span>
                                                         </div>
                                                     </div>
                                                 </div>
-
-                                                <div class="row">
-                                                    <div class="col-xl-2 col-sm-4 col-6">
-                                                        <div class="form-group">
-                                                            <label>Ngày tổn thất:</label>
-                                                            <input type="text" class="form-control input-date datepicker" placeholder="dd/mm/yyyy">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xl-2 col-sm-4 col-6">
-                                                        <div class="form-group">
-                                                            <label>Thời gian tổn thất: 
-                                                                <span class="text-danger">*</span>
-                                                            </label>
-                                                            <input type="text" class="form-control input-time" placeholder="hh:ss" value="09:00">
+                                                <div class="col-xl-3 col-sm-4">
+                                                    <div class="form-group">
+                                                        <label>
+                                                            Số lượng hàng hoá: <span class="text-danger">*</span>
+                                                        </label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control required input-float" placeholder="0" value="">
+                                                            <span class="input-group-append">
+                                                                <span class="input-group-text">kg</span>
+                                                            </span>
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </div>
 
-                                                <div class="row">
-                                                    <div class="col-xl-2 col-sm-4 col-6">
-                                                        <div class="form-group">
-                                                            <label>Ngày TBTT: 
-                                                                <span class="text-danger">*</span> 
-                                                                <a href="#" data-tooltip="tipsy" original-title="Ngày thông báo tổn thất" data-position="top"><i class="icon-info22"></i></a>
-                                                            </label>
-                                                            <input type="text" class="form-control input-date datepicker" placeholder="dd/mm/yyyy" value="06/08/2020">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xl-2 col-sm-4 col-6">
-                                                        <div class="form-group">
-                                                            <label>Thời gian TBTT: 
-                                                                <span class="text-danger">*</span> 
-                                                                <a href="#" data-tooltip="tipsy" original-title="Thời gian thông báo tổn thất" data-position="top"><i class="icon-info22"></i></a>
-                                                            </label>
-                                                            <input type="text" class="form-control input-time" placeholder="hh:ss" value="09:00">
-                                                        </div>
+                                            <div class="row">
+                                                <div class="col-xl-2 col-sm-4 col-6">
+                                                    <div class="form-group">
+                                                        <label>Ngày tổn thất:</label>
+                                                        <input type="text" class="form-control input-date datepicker" placeholder="dd/mm/yyyy">
                                                     </div>
                                                 </div>
-
-                                                <div class="row">
-                                                    <div class="col-md-9">
-                                                        <div class="form-group">
-                                                            <label>
-                                                                Địa điểm tổn thất: <span class="text-danger">*</span>
-                                                            </label>
-                                                            <textarea class="form-control" placeholder="Nhập địa điểm tổn thất..."></textarea>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-9">
-                                                        <div class="form-group">
-                                                            <label>Nguyên nhân tổn thất: <span class="text-danger">*</span></label>
-                                                            <textarea class="form-control" placeholder="Nhập nguyên nhân..."></textarea>
-                                                        </div>
+                                                <div class="col-xl-2 col-sm-4 col-6">
+                                                    <div class="form-group">
+                                                        <label>Thời gian tổn thất: 
+                                                            <span class="text-danger">*</span>
+                                                        </label>
+                                                        <input type="time" class="form-control input-time" placeholder="hh:ss" value="09:00">
                                                     </div>
                                                 </div>
+                                            </div>
 
-                                                <div class="row">
-                                                    <div class="col-md-9">
-                                                        <div class="form-group">
-                                                            <label>Công việc đã hướng dẫn:</label>
-                                                            <textarea class="form-control" placeholder="Nhập thông tin..."></textarea>
-                                                        </div>
-                                                    </div>
-                                                </div>    
-
-                                                <hr class="border-dashed border-silver mb-3">
-
-                                                <div class="row">
-                                                    <div class="col-xl-3 col-sm-6">
-                                                        <div class="form-group">
-                                                            <label>Chuyển cán bộ thụ lý</label>
-                                                            <select select2="" class="form-control" onchange="on_change_chuyen_can_bo_thu_li(this);">
-                                                                <option value="0" selected="">Tự động lựa chọn</option>
-                                                                <option value="1">Chọn trong danh sách</option>
-                                                            </select>
-                                                        </div> 
-                                                    </div>
-                                                    <div class="col-xl-3 col-sm-6">
-                                                        <div class="form-group" id="can_bo_thu_li" style="display: none;">
-                                                            <label>Danh sách cán bộ thụ lý</label>
-                                                            <select select2="" class="form-control">
-                                                                <option>--- Chọn ---</option>
-                                                                <option selected="">Lê Văn A</option>
-                                                                <option>Lê Văn B</option>
-                                                                <option>Lê Văn C</option>
-                                                                <option>........</option>
-                                                            </select>
-                                                        </div> 
+                                            <div class="row">
+                                                <div class="col-xl-2 col-sm-4 col-6">
+                                                    <div class="form-group">
+                                                        <label>Ngày TBTT: 
+                                                            <span class="text-danger">*</span> 
+                                                            <a href="#" data-tooltip="tipsy" original-title="Ngày thông báo tổn thất" data-position="top"><i class="icon-info22"></i></a>
+                                                        </label>
+                                                        <input type="text" class="form-control input-date datepicker" placeholder="dd/mm/yyyy" value="06/08/2020">
                                                     </div>
                                                 </div>
+                                                <div class="col-xl-2 col-sm-4 col-6">
+                                                    <div class="form-group">
+                                                        <label>Thời gian TBTT: 
+                                                            <span class="text-danger">*</span> 
+                                                            <a href="#" data-tooltip="tipsy" original-title="Thời gian thông báo tổn thất" data-position="top"><i class="icon-info22"></i></a>
+                                                        </label>
+                                                        <input type="time" class="form-control input-time" placeholder="hh:ss" value="09:00">
+                                                    </div>
+                                                </div>
+                                            </div>
 
+                                            <div class="row">
+                                                <div class="col-md-9">
+                                                    <div class="form-group">
+                                                        <label>
+                                                            Địa điểm tổn thất: <span class="text-danger">*</span>
+                                                        </label>
+                                                        <textarea class="form-control" placeholder="Nhập địa điểm tổn thất..."></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <div class="form-group">
+                                                        <label>Nguyên nhân tổn thất: <span class="text-danger">*</span></label>
+                                                        <textarea class="form-control" placeholder="Nhập nguyên nhân..."></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-9">
+                                                    <div class="form-group">
+                                                        <label>Công việc đã hướng dẫn:</label>
+                                                        <textarea class="form-control" placeholder="Nhập thông tin..."></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>    
+
+                                            <hr class="border-dashed border-silver mb-3">
+
+                                            <div class="row">
+                                                <div class="col-xl-3 col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Chuyển cán bộ thụ lý</label>
+                                                        <select select2="" class="form-control" onchange="on_change_chuyen_can_bo_thu_li(this);">
+                                                            <option value="0" selected="">Tự động lựa chọn</option>
+                                                            <option value="1">Chọn trong danh sách</option>
+                                                        </select>
+                                                    </div> 
+                                                </div>
+                                                <div class="col-xl-3 col-sm-6">
+                                                    <div class="form-group" id="can_bo_thu_li" style="display: none;">
+                                                        <label>Danh sách cán bộ thụ lý</label>
+                                                        <select select2="" class="form-control">
+                                                            <option>--- Chọn ---</option>
+                                                            <option selected="">Lê Văn A</option>
+                                                            <option>Lê Văn B</option>
+                                                            <option>Lê Văn C</option>
+                                                            <option>........</option>
+                                                        </select>
+                                                    </div> 
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

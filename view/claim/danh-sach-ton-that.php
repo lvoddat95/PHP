@@ -256,7 +256,7 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ TT</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -275,7 +275,7 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ TT</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -294,7 +294,7 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ TT</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -313,7 +313,7 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ TT</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -332,7 +332,7 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ TT</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -351,7 +351,7 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ TT</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -370,7 +370,7 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ TT</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -389,7 +389,7 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ TT</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -408,7 +408,7 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ TT</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -427,7 +427,7 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ TT</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -446,7 +446,7 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ TT</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -465,7 +465,7 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ TT</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -484,7 +484,7 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ TT</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -503,7 +503,7 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ TT</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -522,7 +522,7 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ TT</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -541,7 +541,7 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ TT</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -560,7 +560,7 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ TT</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -579,7 +579,7 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ TT</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -598,7 +598,7 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ TT</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -617,7 +617,7 @@
                                                             <div class="dropdown">
                                                                 <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ</a>
+                                                                    <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng hồ sơ TT</a>
                                                                 </div>
                                                             </div>
                                                         </div>

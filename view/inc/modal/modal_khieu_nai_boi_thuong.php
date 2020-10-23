@@ -209,15 +209,14 @@
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Mức miền thường:</label>
-                            <input type="text" class="form-control input-money text-right" placeholder="0">
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="form-group">
                             <label>Ngày thanh toán phí:</label>
                             <input type="text" class="form-control input-date datepicker" placeholder="dd/mm/yyyy">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Mức miễn thường:</label>
+                            <input type="text" class="form-control input-money text-right" placeholder="0">
                         </div>
                     </div>
                 </div>

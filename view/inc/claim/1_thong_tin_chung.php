@@ -8,10 +8,28 @@
     </div>
 </div>
 
-<div class="row form-group">
-    <label class="col-label col-form-label">Ngày tổn thất: <span class="text-danger">*</span></label>
-    <div class="col-content col-content-sm">
-        <input type="text" class="form-control input-date datepicker" placeholder="dd/mm/yyyy" value="05/08/2020">
+<div class="row">
+    <div class="col-sm-6">
+        <div class="row form-group">
+            <label class="col-label col-form-label">
+            Ngày tổn thất: 
+                <span class="text-danger">*</span> 
+            </label>
+            <div class="col-content col-content-sm">
+                <input type="text" class="form-control input-date datepicker" placeholder="dd/mm/yyyy" value="06/08/2020">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="row form-group">
+            <label class="col-label col-form-label">
+                Thời gian tổn thất: 
+                <span class="text-danger">*</span> 
+            </label>
+            <div class="col-content col-content-sm">
+                <input type="time" class="form-control input-time" placeholder="hh:ss" value="09:00">
+            </div>
+        </div>
     </div>
 </div>
 
@@ -36,7 +54,7 @@
                 <a href="#" data-tooltip="tipsy" original-title="Thời gian thông báo tổn thất" data-position="top"><i class="icon-info22"></i></a>
             </label>
             <div class="col-content col-content-sm">
-                <input type="text" class="form-control input-time" placeholder="hh:ss" value="09:00">
+                <input type="time" class="form-control input-time" placeholder="hh:ss" value="09:00">
             </div>
         </div>
     </div>
@@ -148,7 +166,7 @@
 </div>
 
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6">
         <div class="row form-group">
             <label class="col-label col-form-label">Thu hồi tài sản: <span class="text-danger">*</span></label>
             <div class="col-content col-content-xs">
@@ -159,7 +177,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-6">
         <div class="row form-group">
             <label class="col-label col-form-label">Kết quả xử lý:</label>
             <div class="col-content col-content-sm">
@@ -252,7 +270,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-6">
         <div class="row form-group">
             <label class="col-label col-form-label">Mức độ tổn thất:</label>
             <div class="col-content col-content-sm">

@@ -55,10 +55,8 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <div class="row">
-                                        <div class="offset-md-1 col-md-10">
-                                            <?php inc('claim/1_thong_tin_chung.php'); ?>
-                                        </div>
+                                    <div class="container">
+                                        <?php inc('claim/1_thong_tin_chung.php'); ?>
                                     </div>
                                 </div>
                             </div>

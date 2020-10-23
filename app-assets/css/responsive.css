@@ -301,7 +301,9 @@
     .tab-pane-action{
         position: static;
     }
-
+    .col-content.date-to-date{
+        display: block;
+    }
 
 
 
