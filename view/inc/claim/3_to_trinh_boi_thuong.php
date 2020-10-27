@@ -833,7 +833,7 @@
     	<table class="table">
     		<thead class="thead-light">
     			<tr class="header">
-		            <th class="w5p text-center">#</th>
+		            <th class="w1p text-center">#</th>
 		            <th>Hình thức tái bảo hiểm</th>
 		            <th>Tỉ lệ tái</th>
 		            <th>Số tiền</th>
@@ -870,7 +870,7 @@
     	<table class="table">
     		<thead class="thead-light">
     			<tr class="header">
-		            <th>#</th>
+		            <th class="w1p text-center">#</th>
 					<th>Số hồ sơ</th>
 					<th>Số tiền</th>
 					<th>Ngày xảy ra</th>

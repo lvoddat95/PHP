@@ -34,7 +34,7 @@
 
                     <!-- Content-block -->
                     <div class="content-block card card-body">
-                    <table class="table table-bordered table-hover " width="100%" id="data-grid">
+                    <table class="table table-bordered table-hover datatable" width="100%" id="data-grid">
                     </table>
                     
 

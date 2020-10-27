@@ -494,9 +494,12 @@ var App = function () {
             return;
         }
 
+
         $('.input-money').toArray().forEach(function (field) {
+            var v_negative = $(field).data('negative');
             new Cleave(field, {
                 numeral: true,
+                numeralnegativeOnly: !v_negative ? true : false,
                 numeralThousandsGroupStyle: 'thousand',
             });
         });
@@ -547,17 +550,19 @@ var App = function () {
         });
     
         $('.input-float').toArray().forEach(function (field) {
+            var v_negative = $(field).data('negative');
             new Cleave(field, {
                 numeral: true,
-                numeralPositiveOnly: true,
+                numeralnegativeOnly: !v_negative ? true : false,
                 numeralDecimalMark: '',
                 delimiter: ''
             });
         });
         $('.input-number').toArray().forEach(function (field) {
+            var v_negative = $(field).data('negative');
             new Cleave(field, {
                 numeral: true,
-                numeralPositiveOnly: true,
+                numeralnegativeOnly: !v_negative ? true : false,
                 numeralDecimalMark: '',
                 delimiter: ''
             });

@@ -282,7 +282,7 @@
 	<table class="table table-bordered datatable"  data-paging="false" data-info="false" data-ordering="false" data-searching="false">
         <thead class="thead-light">
             <tr>
-                <th data-orderable="false" class="w1p text-center">#</th>
+                <th data-orderable="false" class="w1p all text-center">#</th>
                 <th data-orderable="false" class="w1p text-center">STT</th>
                 <th>Danh mục hồ sơ tài liệu</th>
                 <th class="w15p">Trạng thái</th>
