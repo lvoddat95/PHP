@@ -257,16 +257,7 @@
                                     <div class="card-header header-elements-inline header-button">
                                         <div class="dataTables_search"></div>
                                         <div class="header-elements p-button">
-                                            <div class="btn-group">
-                                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon-printer2"></i> IN</button>
-                                                <div class="dropdown-menu dropdown-menu-right">
-                                                    <a href="#" class="dropdown-item" data-tooltip="tipsy" original-title="In thông báo thu phí" data-position="left"><i class="icon-file-text2"></i> In TB thu phí</a>
-                                                    <a href="#" class="dropdown-item" data-tooltip="tipsy" original-title="In thông báo hoa hồng" data-position="left"><i class="icon-cash3"></i> In TB HH</a>
-                                                    <a href="#" class="dropdown-item" data-tooltip="tipsy" original-title="In phiếu thanh toán hoa hồng" data-position="left"><i class="icon-credit-card"></i> In phiếu TT HH</a>
-                                                    <a href="#" class="dropdown-item" data-tooltip="tipsy" original-title="In mẫu in" data-position="left"><i class="icon-stack"></i> In mẫu in</a>
-                                                    <a href="#" class="dropdown-item" data-tooltip="tipsy" original-title="In tờ trình" data-position="left"><i class="icon-certificate"></i> In tờ trình</a>
-                                                </div>
-                                            </div>
+                                            <button type="button" class="btn" data-toggle="modal" data-target="#print_list"><i class="icon-printer2"></i> IN</button>
                                             <a href="#" data-toggle="modal" data-target="#trinh_duyet_nhieu_don" class="btn btn-labeled btn-labeled-left mr-2"><b><i class="icon-file-check"></i></b> Trình duyệt</a>
                                             <a href="" class="btn btn-labeled btn-labeled-left mr-2"><b><i class="icon-trash"></i></b> Xóa</a>
                                             
@@ -821,6 +812,7 @@
         </div>
 
         <?php inc('modal/modal_lich_su_ton_that.php'); ?>
+        <?php inc('modal/modal_print_list.php'); ?>
         <?php inc('modal/modal_trinh_duyet_mot_don.php'); ?>
         <?php inc('modal/modal_trinh_duyet_nhieu_don.php'); ?>
 
