@@ -300,6 +300,7 @@
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
                                                                     <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#print_list" class="dropdown-item"><i class="icon-printer2"></i> Danh sách IN</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -322,6 +323,7 @@
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
                                                                     <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#print_list" class="dropdown-item"><i class="icon-printer2"></i> Danh sách IN</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -343,6 +345,7 @@
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
                                                                     <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#print_list" class="dropdown-item"><i class="icon-printer2"></i> Danh sách IN</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -364,6 +367,7 @@
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
                                                                     <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#print_list" class="dropdown-item"><i class="icon-printer2"></i> Danh sách IN</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -385,6 +389,7 @@
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
                                                                     <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#print_list" class="dropdown-item"><i class="icon-printer2"></i> Danh sách IN</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -407,6 +412,7 @@
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
                                                                     <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#print_list" class="dropdown-item"><i class="icon-printer2"></i> Danh sách IN</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -428,6 +434,7 @@
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
                                                                     <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#print_list" class="dropdown-item"><i class="icon-printer2"></i> Danh sách IN</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -449,6 +456,7 @@
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
                                                                     <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#print_list" class="dropdown-item"><i class="icon-printer2"></i> Danh sách IN</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -470,6 +478,7 @@
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
                                                                     <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#print_list" class="dropdown-item"><i class="icon-printer2"></i> Danh sách IN</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -491,6 +500,7 @@
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
                                                                     <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#print_list" class="dropdown-item"><i class="icon-printer2"></i> Danh sách IN</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -512,6 +522,7 @@
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
                                                                     <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#print_list" class="dropdown-item"><i class="icon-printer2"></i> Danh sách IN</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -533,6 +544,7 @@
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
                                                                     <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#print_list" class="dropdown-item"><i class="icon-printer2"></i> Danh sách IN</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -554,6 +566,7 @@
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
                                                                     <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#print_list" class="dropdown-item"><i class="icon-printer2"></i> Danh sách IN</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -575,6 +588,7 @@
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
                                                                     <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#print_list" class="dropdown-item"><i class="icon-printer2"></i> Danh sách IN</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -596,6 +610,7 @@
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
                                                                     <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#print_list" class="dropdown-item"><i class="icon-printer2"></i> Danh sách IN</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -617,6 +632,7 @@
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
                                                                     <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#print_list" class="dropdown-item"><i class="icon-printer2"></i> Danh sách IN</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -638,6 +654,7 @@
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
                                                                     <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#print_list" class="dropdown-item"><i class="icon-printer2"></i> Danh sách IN</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -659,6 +676,7 @@
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
                                                                     <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#print_list" class="dropdown-item"><i class="icon-printer2"></i> Danh sách IN</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -680,6 +698,7 @@
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
                                                                     <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#print_list" class="dropdown-item"><i class="icon-printer2"></i> Danh sách IN</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -701,6 +720,7 @@
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
                                                                     <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#print_list" class="dropdown-item"><i class="icon-printer2"></i> Danh sách IN</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -722,6 +742,7 @@
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
                                                                     <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#print_list" class="dropdown-item"><i class="icon-printer2"></i> Danh sách IN</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -743,6 +764,7 @@
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
                                                                     <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#print_list" class="dropdown-item"><i class="icon-printer2"></i> Danh sách IN</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -764,6 +786,7 @@
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
                                                                     <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#print_list" class="dropdown-item"><i class="icon-printer2"></i> Danh sách IN</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -785,6 +808,7 @@
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Đóng đơn</a>
                                                                     <a href="#" class="dropdown-item"><i class="icon-file-upload"></i> Tái tục</a>
                                                                     <a href="#" data-toggle="modal" data-target="#lich_su_ton_that" class="dropdown-item"><i class="icon-file-stats"></i> Lịch sử tổn thất</a>
+                                                                    <a href="#" data-toggle="modal" data-target="#print_list" class="dropdown-item"><i class="icon-printer2"></i> Danh sách IN</a>
                                                                 </div>
                                                             </div>
                                                         </div>
