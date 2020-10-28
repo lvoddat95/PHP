@@ -3594,10 +3594,11 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     -ms-align-items: baseline;
     align-items: baseline;
 }
-.date-to-date .has-error{
+.date-to-date > [class*="has"]{
+    position: relative;
     margin-bottom: 20px;
 }
-.date-to-date .has-error .invalid-feedback {
+.date-to-date [class*="has"] .invalid-feedback {
     position: absolute;
     left: 0;
     bottom: -20px;
