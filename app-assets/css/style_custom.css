@@ -3591,6 +3591,16 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     align-items: center;
     -ms-align-items: center;
     max-width: 560px;
+    -ms-align-items: baseline;
+    align-items: baseline;
+}
+.date-to-date .has-error{
+    margin-bottom: 20px;
+}
+.date-to-date .has-error .invalid-feedback {
+    position: absolute;
+    left: 0;
+    bottom: -20px;
 }
 .date-to-date > div{
     width: 100%;
