@@ -499,7 +499,7 @@ var App = function () {
             var v_negative = $(field).data('negative');
             new Cleave(field, {
                 numeral: true,
-                numeralnegativeOnly: !v_negative ? true : false,
+                numeralPositiveOnly: !v_negative ? true : false,
                 numeralThousandsGroupStyle: 'thousand',
             });
         });
@@ -549,11 +549,11 @@ var App = function () {
             });
         });
     
-        $('.input-float').toArray().forEach(function (field) {
+        $('.input-test').toArray().forEach(function (field) {
             var v_negative = $(field).data('negative');
             new Cleave(field, {
                 numeral: true,
-                numeralnegativeOnly: !v_negative ? true : false,
+                numeralPositiveOnly: !v_negative ? true : false,
                 numeralDecimalMark: '',
                 delimiter: ''
             });
@@ -562,7 +562,7 @@ var App = function () {
             var v_negative = $(field).data('negative');
             new Cleave(field, {
                 numeral: true,
-                numeralnegativeOnly: !v_negative ? true : false,
+                numeralPositiveOnly: !v_negative ? true : false,
                 numeralDecimalMark: '',
                 delimiter: ''
             });
