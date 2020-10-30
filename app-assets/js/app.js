@@ -549,7 +549,7 @@ var App = function () {
             });
         });
     
-        $('.input-test').toArray().forEach(function (field) {
+        $('.input-float').toArray().forEach(function (field) {
             var v_negative = $(field).data('negative');
             new Cleave(field, {
                 numeral: true,
