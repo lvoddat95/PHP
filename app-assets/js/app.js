@@ -1758,7 +1758,7 @@ var App = function () {
         var $isotope_search = $('.isotope-search').keyup( debounce( function() {
             qs_regex = new RegExp( $isotope_search.val(), 'gi' );
             $grid.isotope();
-        },200) );
+        }));
 
         function debounce( fn, threshold ) {
             var timeout;
