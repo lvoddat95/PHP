@@ -508,10 +508,12 @@ var App = function () {
             if ($(field).attr('type') == 'date') {
                 return;
             }
-            new Cleave(field, {
+            var input_date =new Cleave(field, {
                 date: true,
                 delimiter: '/',
                 datePattern: ['d', 'm', 'Y'],
+                // dateMin: '2000-01-01',
+                // dateMax: '2099-01-01',
                 copyDelimiter: true,
             });
         });
@@ -606,6 +608,12 @@ var App = function () {
 
                         $v_clone.slideDown();
 
+                        if (v_datepicker.hasClass('hasDatepicker')) {
+                            v_datepicker.removeClass('hasDatepicker')
+                            .removeData('datepicker')
+                            .removeAttr('id')
+                            .unbind();
+                        }
                         _component_input_type();
                         _component_datepicker(v_datepicker);
                         _component_select2(v_select);
@@ -1689,6 +1697,12 @@ var App = function () {
                 }, 'slow');
 
             }
+
+            if ($target.parent().index() > 0) {
+                $('.actions ul li:first-child').show();
+            }else{
+                $('.actions ul li:first-child').hide();
+            }
             
             if ( $target.parent().index() == li.length - 1 ) {
                 $('.actions').addClass('last');
@@ -1735,16 +1749,16 @@ var App = function () {
             itemSelector: ".file-item",
             filter: function() {
                 var $this = $(this);
-                var searchResult = qs_regex ? $this.text().match( qs_regex ) : true;
-                var button_filter = button_filter ? $this.is( button_filter ) : true;
-                return searchResult && button_filter;
+                var searchResult = qs_regex ? $this.find('.name').text().match( qs_regex ) : true;
+                var buttonResult = button_filter ? $this.is( button_filter ) : true;
+                return searchResult && buttonResult;
             },
         });
 
         var $isotope_search = $('.isotope-search').keyup( debounce( function() {
             qs_regex = new RegExp( $isotope_search.val(), 'gi' );
             $grid.isotope();
-        }) );
+        },200) );
 
         function debounce( fn, threshold ) {
             var timeout;
@@ -1770,7 +1784,8 @@ var App = function () {
             } else {
                 remove_filter(filter);
             }
-            $grid.isotope({ filter: filters.join(",") });
+            button_filter = filters.join(",");
+            $grid.isotope();
         });
 
         var add_filter = (filter) =>{
