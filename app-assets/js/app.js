@@ -602,11 +602,10 @@ var App = function () {
 
                         if (v_table.length > 0) {
                             if (v_table.is('.datatable')) {
+
                                 v_table.DataTable().row.add($v_clone.get(0)).draw();
                             }
                         }
-
-                        $v_clone.slideDown();
 
                         if (v_datepicker.hasClass('hasDatepicker')) {
                             v_datepicker.removeClass('hasDatepicker')
@@ -614,12 +613,24 @@ var App = function () {
                             .removeAttr('id')
                             .unbind();
                         }
+                        
+                        $v_clone.slideDown();
+
+                        
                         _component_input_type();
                         _component_datepicker(v_datepicker);
                         _component_select2(v_select);
 
                     },
                     hide: function (deleteElement) {
+                        var $v_clone = $(this);
+                        var v_table = $v_clone.closest('table');
+                        if (v_table.length > 0) {
+                            if (v_table.is('.datatable')) {
+                                v_table.DataTable().row().remove($v_clone.get(0)).draw();
+                            }
+                        }
+
                         if(confirm('Xoa dong nay ?')) {
                             $(this).slideUp(deleteElement);
                         }
