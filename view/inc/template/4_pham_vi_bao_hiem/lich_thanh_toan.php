@@ -16,17 +16,17 @@
         </thead>
         <tbody data-repeater-list="so-lan-thanh-toan">
             <tr data-repeater-item style="display: none;">
-                <td><input class="form-control input-number" type="text" value="" placeholder="0"></td>
-                <td><input class="form-control datepicker input-date" type="text" placeholder="dd/mm/yyyy"></td>
-                <td><input class="form-control input-money" type="text" placeholder="0"></td>
+                <td><input class="form-control input-number" type="text" name="stt" value="" placeholder="0"></td>
+                <td><input class="form-control datepicker input-date" name="date" type="text" placeholder="dd/mm/yyyy"></td>
+                <td><input class="form-control input-money" name="money" type="text" placeholder="0"></td>
                 <td><input class="form-control input-money" type="text" placeholder="0"></td>
                 <td><input class="form-control input-money" type="text" placeholder="0"></td>
                 <td class="text-center"><input data-repeater-delete class="btn bg-danger" type="button" value="- Xóa"/></td>
             </tr>
             <tr data-repeater-item>
-                <td><input class="form-control input-number" type="text" value="1" placeholder="0"></td>
-                <td><input class="form-control datepicker input-date" type="text" placeholder="dd/mm/yyyy" value="16/06/2020"></td>
-                <td><input class="form-control input-money" type="text" placeholder="0" value="893,400"></td>
+                <td><input class="form-control input-number" type="text" name="stt" value="1" placeholder="0"></td>
+                <td><input class="form-control datepicker input-date" name="date" type="text" placeholder="dd/mm/yyyy" value="16/06/2020"></td>
+                <td><input class="form-control input-money" type="text" name="money" placeholder="0" value="893,400"></td>
                 <td><input class="form-control input-money" type="text" placeholder="0" value="79,400"></td>
                 <td><input class="form-control input-money" type="text" placeholder="0" value="814,000"></td>
                 <td class="text-center"><input data-repeater-delete class="btn bg-danger" type="button" value="- Xóa"/></td>
