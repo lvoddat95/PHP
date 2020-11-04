@@ -602,8 +602,7 @@ var App = function () {
 
                         if (v_table.length > 0) {
                             if (v_table.is('.datatable')) {
-
-                                v_table.DataTable().row.add($v_clone.get(0)).draw();
+                                v_table.DataTable().row.add($v_clone).draw(false);
                             }
                         }
 
@@ -613,34 +612,42 @@ var App = function () {
                             .removeAttr('id')
                             .unbind();
                         }
-                        
-                        $v_clone.slideDown();
 
+                        $v_clone.slideDown();
                         
                         _component_input_type();
                         _component_datepicker(v_datepicker);
                         _component_select2(v_select);
-
                     },
                     hide: function (deleteElement) {
                         var $v_clone = $(this);
                         var v_table = $v_clone.closest('table');
                         if (v_table.length > 0) {
-                            if (v_table.is('.datatable')) {
-                                v_table.DataTable().row().remove($v_clone.get(0)).draw();
+                            if (!v_table.is('.datatable')) {
+
+                                if(confirm('Xoa dong nay ?')) {
+                                    $(this).slideUp(deleteElement);
+                                }
+                                    
                             }
                         }
 
-                        if(confirm('Xoa dong nay ?')) {
-                            $(this).slideUp(deleteElement);
-                        }
+                        
                     }
                 });
+            });
+
+            $('body').on('click', '[data-repeater-delete]', function () {
+               var v_DataTable = $('[repeater]').find('table').DataTable();
+                var tableRow = v_DataTable.row($(this).parents('tr'));
+                v_DataTable.row( tableRow ).remove().draw();
             });
 
     
         }
     }
+
+
 
     // PerfectScrollbar js
     var _component_perfect_scrollbar = function(){
