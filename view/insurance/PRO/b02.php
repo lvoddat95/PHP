@@ -70,11 +70,85 @@
                                                                     
                                                                     <!-- Step 3 -->
                                                                     <fieldset class="tab-pane" id="step3">
-                                                                        <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/PRO/doi_tuong_tham_gia_bao_hiem.php'); ?>
+
+                                                                        <p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Upload thông tin danh sách tài sản</p>
+
+                                                                        <div class="row mb-3 align-items-center">
+                                                                            <div class="col-sm-4">
+                                                                                <button class="btn btn-light btn-file mr-3">
+                                                                                    <i class="far fa-upload mr-2"></i> 
+                                                                                    <span class="hidden-xs">Import file</span>
+                                                                                    <input type="file" class="file-input-preview">
+                                                                                </button>
+                                                                            </div>
+                                                                            <div class="col-sm-8">
+                                                                                <p class="mb-0 d-flex justify-content-end align-items-center"><span class="text-danger">Nhấn vào browser để upload dữ liệu từ excel.</span> <a href="" download="" class="text-primary">(Nhấn vào đây để tải file mẫu)</a></p>
                                                                             </div>
                                                                         </div>
+                                                                        
+                                                                        <hr class="border-dashed border-silver mb-3">
+
+                                                                        <div class="form-group" repeater>
+                                                                            <table class="table table-bordered datatable"  
+                                                                                data-paging="false"
+                                                                                data-info="false"
+                                                                                data-ordering="false"
+                                                                                data-searching="false"
+                                                                                >
+                                                                                <thead class="thead-light">
+                                                                                    <tr>
+                                                                                        <th class="w1p all text-center"></th>
+                                                                                        <th class="w20p">Tên hạng mục tài sản bh</th>
+                                                                                        <th class="w10p">Nhóm tài sản</th>
+                                                                                        <th class="w5p">Số lượng</th>
+                                                                                        <th class="desktop w10p">Đơn giá</th>
+                                                                                        <th class="desktop w10p">Giá trị</th>
+                                                                                        <th class="w10p">Số tiền bảo hiểm</th>
+                                                                                        <th class="all w1p"></th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody data-repeater-list="repeater-list">
+                                                                                    <tr data-repeater-item>
+                                                                                        <td class="text-center">
+                                                                                            <b class="item-level">1.</b> 
+                                                                                            <input type="checkbox" class="input-chk">
+                                                                                        </td>
+                                                                                        <td><input type="text" class="form-control" name=""></td>
+                                                                                        <td>
+                                                                                            <select class="form-control" select2>
+                                                                                                <option value="">--- Chọn ---</option>
+                                                                                                <option value="">Nhà xưởng</option>
+                                                                                                <option value="">Hàng hóa</option>
+                                                                                                <option value="">Máy móc</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                        <td><input type="text" class="form-control input-number" name=""></td>
+                                                                                        <td><input type="text" class="form-control input-money" name=""></td>
+                                                                                        <td><input type="text" class="form-control input-money" name=""></td>
+                                                                                        <td><input type="text" class="form-control input-money" name=""></td>
+                                                                                        <td><a href="#" data-repeater-delete class="btn bg-danger"> <i class="icon-trash mr-1"></i> Xoá</a></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                            <div class="border p-1 text-center">
+                                                                                <input class="btn bg-success" data-repeater-create type="button" value="+ Thêm">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group ">
+                                                                                    <label>Mã địa điểm: <span class="text-danger">*</span></label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="text" class="form-control required" name="so_don_bao_hiem" placeholder="">
+                                                                                        <span class="input-group-append">
+                                                                                            <button type="button" class="btn bg-primary" data-toggle="modal" data-target="#ds_dia_diem">Chọn</button>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
                                                                         <div class="row">
                                                                             <div class="col-md-3">
                                                                                 <?php inc('template/3_doi_tuong_bao_hiem/PRO/nhom_rui_ro.php'); ?>
@@ -82,17 +156,8 @@
                                                                             <div class="col-md-3">
                                                                                 <?php inc('template/3_doi_tuong_bao_hiem/PRO/nganh_nghe_kinh_doanh.php'); ?>
                                                                             </div>
-                                                                            <div class="col-md-6">
-                                                                                <div class="row">
-                                                                                    <div class="col-md-6">
-                                                                                        <?php inc('template/3_doi_tuong_bao_hiem/PRO/ti_le_phi.php'); ?>
-                                                                                    </div>
-                                                                                    <div class="col-md-6 d-flex align-items-end">
-                                                                                        <div class="form-group">
-                                                                                            <button type="button" class="btn bg-primary" data-toggle="modal" data-target="#danh_muc_tai_san_bao_hiem">Danh sách tài sản<i class="icon-profile ml-2"></i></button>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
+                                                                            <div class="col-md-3">
+                                                                                <?php inc('template/3_doi_tuong_bao_hiem/PRO/ti_le_phi.php'); ?>
                                                                             </div>
                                                                         </div>
                                                                     </fieldset>
@@ -102,12 +167,6 @@
                                                                         <div class="row">
                                                                             <div class="col-md-12">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-6">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/thong_tin_ve_thoi_han_thanh_toan.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-6">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/thanh_toan_tai_ngan_hang.php'); ?>
                                                                             </div>
                                                                             <div class="col-md-12">
                                                                                 <div class="form-group">
@@ -252,10 +311,10 @@
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-6">
+                                                                            <div class="col-md-3">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/tong_tien_hoa_hong_dai_li.php'); ?>
                                                                             </div>
-                                                                            <div class="col-md-6">
+                                                                            <div class="col-md-3">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/tong_tien_hoa_hong_moi_gioi.php'); ?>
                                                                             </div>
                                                                         </div>
@@ -290,6 +349,15 @@
                                                                             </div>
                                                                             <div class="col-md-6">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/quy_tac_bao_hiem.php'); ?>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-6">
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/thong_tin_ve_thoi_han_thanh_toan.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/thanh_toan_tai_ngan_hang.php'); ?>
                                                                             </div>
                                                                         </div>
 

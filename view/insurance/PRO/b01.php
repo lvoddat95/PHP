@@ -194,8 +194,19 @@
                                                                                         </thead>
                                                                                         <tbody>
                                                                                             <tr>
-                                                                                                <td>1. Cháy nổ tự nguyện</td>
+                                                                                                <td>1. Bảo hiểm cháy nổ</td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                <td></td>
+                                                                                                <td></td>
+                                                                                                <td></td>
+                                                                                                <td></td>
+                                                                                                <td></td>
+                                                                                                <td></td>
+                                                                                                <td></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td> &nbsp; a. Cháy nổ tự nguyện</td>
+                                                                                                <td></td>
                                                                                                 <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
@@ -228,8 +239,8 @@
                                                                                                 </td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <td>2. Cháy nổ bắt buộc</td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                <td> &nbsp; b. Cháy nổ bắt buộc</td>
+                                                                                                <td></td>
                                                                                                 <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
@@ -262,7 +273,7 @@
                                                                                                 </td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <td>3. Gián đoạn kinh doanh sau hỏa hoạn và các rủi ro đặc biệt</td>
+                                                                                                <td>2. Gián đoạn kinh doanh sau hỏa hoạn và các rủi ro đặc biệt</td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>

@@ -20,46 +20,35 @@
                                     <thead class="thead-light">
                                         <tr>
                                             <th width="30px"><input type="checkbox" value=""></th>
-                                            <th width="30%">Mã điều khoản</th>
                                             <th>Tên điều khoản</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td><input type="checkbox" value=""></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td>Điều khoản loại trừ chiến tranh và nội chiến</td>
                                         </tr>
                                         <tr>
                                             <td><input type="checkbox" value=""></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td>Điều khoản lại trừ rủi ro khủng bố</td>
                                         </tr>
                                         <tr>
                                             <td><input type="checkbox" value=""></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td>Điều khoản loại trừ rủi ro hạt nhân</td>
                                         </tr>
                                         <tr>
                                             <td><input type="checkbox" value=""></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td>Điều khoản loại trừ rủi ro liên quan đến công nghệ thông tin</td>
                                         </tr>
                                         <tr>
                                             <td><input type="checkbox" value=""></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td>Điều khoản cấm vận</td>
                                         </tr>
                                         <tr>
                                             <td><input type="checkbox" value=""></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td>Điều khoản loại trừ amiăng</td>
                                         </tr>
-                                        <tr>
-                                            <td><input type="checkbox" value=""></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
+                                        
                                        
                                     </tbody>
                                 </table>
