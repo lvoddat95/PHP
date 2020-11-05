@@ -56,7 +56,7 @@
                                             <select select2 class="form-control">
                                                 <option value="">--- Chọn Tỉnh / Thành phố ---</option>
 
-                                                <option value="01">Thành phố Hà Nội</option>
+                                                <option value="01">Hà Nội</option>
 
                                                 <option value="02">Tỉnh Hà Giang</option>
 
@@ -188,7 +188,7 @@
                                         <div class="form-group">
                                             <label>Quận / Huyện: </label>
                                             <select select2 class="form-control">
-                                                <option value="">--- Chọn Quận / Huyện ---</option><option value="Quận Ba Đình">Quận Ba Đình</option><option value="Huyện Ba Vì">Huyện Ba Vì</option><option value="Quận Bắc Từ Liêm">Quận Bắc Từ Liêm</option><option value="Quận Cầu Giấy">Quận Cầu Giấy</option><option value="Huyện Chương Mỹ">Huyện Chương Mỹ</option><option value="Huyện Đan Phượng">Huyện Đan Phượng</option><option value="Huyện Đông Anh">Huyện Đông Anh</option><option value="Quận Đống Đa">Quận Đống Đa</option><option value="Huyện Gia Lâm">Huyện Gia Lâm</option><option value="Quận Hà Đông">Quận Hà Đông</option><option value="Quận Hai Bà Trưng">Quận Hai Bà Trưng</option><option value="Huyện Hoài Đức">Huyện Hoài Đức</option><option value="Quận Hoàn Kiếm">Quận Hoàn Kiếm</option><option value="Quận Hoàng Mai">Quận Hoàng Mai</option><option value="Quận Long Biên">Quận Long Biên</option><option value="Huyện Mê Linh">Huyện Mê Linh</option><option value="Huyện Mỹ Đức">Huyện Mỹ Đức</option><option value="Quận Nam Từ Liêm">Quận Nam Từ Liêm</option><option value="Huyện Phú Xuyên">Huyện Phú Xuyên</option><option value="Huyện Phúc Thọ">Huyện Phúc Thọ</option><option value="Huyện Quốc Oai">Huyện Quốc Oai</option><option value="Huyện Sóc Sơn">Huyện Sóc Sơn</option><option value="Thị xã Sơn Tây">Thị xã Sơn Tây</option><option value="Quận Tây Hồ">Quận Tây Hồ</option><option value="Huyện Thạch Thất">Huyện Thạch Thất</option><option value="Huyện Thanh Oai">Huyện Thanh Oai</option><option value="Huyện Thanh Trì">Huyện Thanh Trì</option><option value="Quận Thanh Xuân">Quận Thanh Xuân</option><option value="Huyện Thường Tín">Huyện Thường Tín</option><option value="Huyện Ứng Hòa">Huyện Ứng Hòa</option>
+                                                <option value="">--- Chọn Quận / Huyện ---</option><option value="Quận Ba Đình">Quận Ba Đình</option><option value="Huyện Ba Vì">Huyện Ba Vì</option><option value="Quận Bắc Từ Liêm">Quận Bắc Từ Liêm</option><option value="Quận Cầu Giấy">Quận Cầu Giấy</option><option value="Huyện Chương Mỹ">Huyện Chương Mỹ</option><option value="Huyện Đan Phượng">Huyện Đan Phượng</option><option value="Huyện Đông Anh">Huyện Đông Anh</option><option value="Đống Đa">Đống Đa</option><option value="Huyện Gia Lâm">Huyện Gia Lâm</option><option value="Quận Hà Đông">Quận Hà Đông</option><option value="Quận Hai Bà Trưng">Quận Hai Bà Trưng</option><option value="Huyện Hoài Đức">Huyện Hoài Đức</option><option value="Quận Hoàn Kiếm">Quận Hoàn Kiếm</option><option value="Quận Hoàng Mai">Quận Hoàng Mai</option><option value="Quận Long Biên">Quận Long Biên</option><option value="Huyện Mê Linh">Huyện Mê Linh</option><option value="Huyện Mỹ Đức">Huyện Mỹ Đức</option><option value="Quận Nam Từ Liêm">Quận Nam Từ Liêm</option><option value="Huyện Phú Xuyên">Huyện Phú Xuyên</option><option value="Huyện Phúc Thọ">Huyện Phúc Thọ</option><option value="Huyện Quốc Oai">Huyện Quốc Oai</option><option value="Huyện Sóc Sơn">Huyện Sóc Sơn</option><option value="Thị xã Sơn Tây">Thị xã Sơn Tây</option><option value="Quận Tây Hồ">Quận Tây Hồ</option><option value="Huyện Thạch Thất">Huyện Thạch Thất</option><option value="Huyện Thanh Oai">Huyện Thanh Oai</option><option value="Huyện Thanh Trì">Huyện Thanh Trì</option><option value="Quận Thanh Xuân">Quận Thanh Xuân</option><option value="Huyện Thường Tín">Huyện Thường Tín</option><option value="Huyện Ứng Hòa">Huyện Ứng Hòa</option>
                                             </select>
                                         </div>
                                     </div>
@@ -235,22 +235,24 @@
                                     data-info="true"
                                     data-ordering="false"
                                     data-searching="false"
-                                    data-page-length="15" >
+                                    data-page-length="10" >
                                     <thead class="thead-light">
                                         <th width="30px" data-orderable="false">#</th>
                                         <th>Mã địa điểm</th>
                                         <th class="desktop">Địa chỉ</th>
                                         <th>Vị trí</th>
+                                        <th class="desktop">Ghi chú</th>
                                         <th data-orderable="false" class="text-center all">#</th>
                                     </thead>
                                    <tbody>
                                    		<tr>
                                    			<td><input type="checkbox" class="input-chk"></td>
 	                                   		<td>MADIADIEM</td>
-	                                   		<td>Tầng 15, Tòa nhà Geleximco, số 36, Hoàng Cầu, Quận Đống Đa, Thành Phố Hà Nội</td>
+	                                   		<td>Hoàng Cầu, Đống Đa, Hà Nội</td>
 	                                   		<td>
 	                                   			<span>Vĩ độ: 21.0183926</span> <span class="p-1">|</span> <span>Kinh độ: 105.8240567</span>
 	                                   		</td>
+                                            <td></td>
                                             <td class="text-center">
                                                 <div class="list-icons">
                                                     <div class="dropdown">
@@ -265,10 +267,11 @@
                                         <tr>
                                             <td><input type="checkbox" class="input-chk"></td>
                                             <td>MADIADIEM</td>
-                                            <td>Tầng 15, Tòa nhà Geleximco, số 36, Hoàng Cầu, Quận Đống Đa, Thành Phố Hà Nội</td>
+                                            <td>Hoàng Cầu, Đống Đa, Hà Nội</td>
                                             <td>
                                                 <span>Vĩ độ: 21.0183926</span> <span class="p-1">|</span> <span>Kinh độ: 105.8240567</span>
                                             </td>
+                                            <td></td>
                                             <td class="text-center">
                                                 <div class="list-icons">
                                                     <div class="dropdown">
@@ -283,10 +286,11 @@
                                         <tr>
                                             <td><input type="checkbox" class="input-chk"></td>
                                             <td>MADIADIEM</td>
-                                            <td>Tầng 15, Tòa nhà Geleximco, số 36, Hoàng Cầu, Quận Đống Đa, Thành Phố Hà Nội</td>
+                                            <td>Hoàng Cầu, Đống Đa, Hà Nội</td>
                                             <td>
                                                 <span>Vĩ độ: 21.0183926</span> <span class="p-1">|</span> <span>Kinh độ: 105.8240567</span>
                                             </td>
+                                            <td></td>
                                             <td class="text-center">
                                                 <div class="list-icons">
                                                     <div class="dropdown">
@@ -301,10 +305,11 @@
                                         <tr>
                                             <td><input type="checkbox" class="input-chk"></td>
                                             <td>MADIADIEM</td>
-                                            <td>Tầng 15, Tòa nhà Geleximco, số 36, Hoàng Cầu, Quận Đống Đa, Thành Phố Hà Nội</td>
+                                            <td>Hoàng Cầu, Đống Đa, Hà Nội</td>
                                             <td>
                                                 <span>Vĩ độ: 21.0183926</span> <span class="p-1">|</span> <span>Kinh độ: 105.8240567</span>
                                             </td>
+                                            <td></td>
                                             <td class="text-center">
                                                 <div class="list-icons">
                                                     <div class="dropdown">
@@ -319,10 +324,11 @@
                                         <tr>
                                             <td><input type="checkbox" class="input-chk"></td>
                                             <td>MADIADIEM</td>
-                                            <td>Tầng 15, Tòa nhà Geleximco, số 36, Hoàng Cầu, Quận Đống Đa, Thành Phố Hà Nội</td>
+                                            <td>Hoàng Cầu, Đống Đa, Hà Nội</td>
                                             <td>
                                                 <span>Vĩ độ: 21.0183926</span> <span class="p-1">|</span> <span>Kinh độ: 105.8240567</span>
                                             </td>
+                                            <td></td>
                                             <td class="text-center">
                                                 <div class="list-icons">
                                                     <div class="dropdown">
@@ -337,10 +343,11 @@
                                         <tr>
                                             <td><input type="checkbox" class="input-chk"></td>
                                             <td>MADIADIEM</td>
-                                            <td>Tầng 15, Tòa nhà Geleximco, số 36, Hoàng Cầu, Quận Đống Đa, Thành Phố Hà Nội</td>
+                                            <td>Hoàng Cầu, Đống Đa, Hà Nội</td>
                                             <td>
                                                 <span>Vĩ độ: 21.0183926</span> <span class="p-1">|</span> <span>Kinh độ: 105.8240567</span>
                                             </td>
+                                            <td></td>
                                             <td class="text-center">
                                                 <div class="list-icons">
                                                     <div class="dropdown">
@@ -355,10 +362,11 @@
                                         <tr>
                                             <td><input type="checkbox" class="input-chk"></td>
                                             <td>MADIADIEM</td>
-                                            <td>Tầng 15, Tòa nhà Geleximco, số 36, Hoàng Cầu, Quận Đống Đa, Thành Phố Hà Nội</td>
+                                            <td>Hoàng Cầu, Đống Đa, Hà Nội</td>
                                             <td>
                                                 <span>Vĩ độ: 21.0183926</span> <span class="p-1">|</span> <span>Kinh độ: 105.8240567</span>
                                             </td>
+                                            <td></td>
                                             <td class="text-center">
                                                 <div class="list-icons">
                                                     <div class="dropdown">
@@ -373,10 +381,11 @@
                                         <tr>
                                             <td><input type="checkbox" class="input-chk"></td>
                                             <td>MADIADIEM</td>
-                                            <td>Tầng 15, Tòa nhà Geleximco, số 36, Hoàng Cầu, Quận Đống Đa, Thành Phố Hà Nội</td>
+                                            <td>Hoàng Cầu, Đống Đa, Hà Nội</td>
                                             <td>
                                                 <span>Vĩ độ: 21.0183926</span> <span class="p-1">|</span> <span>Kinh độ: 105.8240567</span>
                                             </td>
+                                            <td></td>
                                             <td class="text-center">
                                                 <div class="list-icons">
                                                     <div class="dropdown">
@@ -391,10 +400,11 @@
                                         <tr>
                                             <td><input type="checkbox" class="input-chk"></td>
                                             <td>MADIADIEM</td>
-                                            <td>Tầng 15, Tòa nhà Geleximco, số 36, Hoàng Cầu, Quận Đống Đa, Thành Phố Hà Nội</td>
+                                            <td>Hoàng Cầu, Đống Đa, Hà Nội</td>
                                             <td>
                                                 <span>Vĩ độ: 21.0183926</span> <span class="p-1">|</span> <span>Kinh độ: 105.8240567</span>
                                             </td>
+                                            <td></td>
                                             <td class="text-center">
                                                 <div class="list-icons">
                                                     <div class="dropdown">
@@ -409,10 +419,11 @@
                                         <tr>
                                             <td><input type="checkbox" class="input-chk"></td>
                                             <td>MADIADIEM</td>
-                                            <td>Tầng 15, Tòa nhà Geleximco, số 36, Hoàng Cầu, Quận Đống Đa, Thành Phố Hà Nội</td>
+                                            <td>Hoàng Cầu, Đống Đa, Hà Nội</td>
                                             <td>
                                                 <span>Vĩ độ: 21.0183926</span> <span class="p-1">|</span> <span>Kinh độ: 105.8240567</span>
                                             </td>
+                                            <td></td>
                                             <td class="text-center">
                                                 <div class="list-icons">
                                                     <div class="dropdown">
@@ -427,10 +438,11 @@
                                         <tr>
                                             <td><input type="checkbox" class="input-chk"></td>
                                             <td>MADIADIEM</td>
-                                            <td>Tầng 15, Tòa nhà Geleximco, số 36, Hoàng Cầu, Quận Đống Đa, Thành Phố Hà Nội</td>
+                                            <td>Hoàng Cầu, Đống Đa, Hà Nội</td>
                                             <td>
                                                 <span>Vĩ độ: 21.0183926</span> <span class="p-1">|</span> <span>Kinh độ: 105.8240567</span>
                                             </td>
+                                            <td></td>
                                             <td class="text-center">
                                                 <div class="list-icons">
                                                     <div class="dropdown">
@@ -445,10 +457,11 @@
                                         <tr>
                                             <td><input type="checkbox" class="input-chk"></td>
                                             <td>MADIADIEM</td>
-                                            <td>Tầng 15, Tòa nhà Geleximco, số 36, Hoàng Cầu, Quận Đống Đa, Thành Phố Hà Nội</td>
+                                            <td>Hoàng Cầu, Đống Đa, Hà Nội</td>
                                             <td>
                                                 <span>Vĩ độ: 21.0183926</span> <span class="p-1">|</span> <span>Kinh độ: 105.8240567</span>
                                             </td>
+                                            <td></td>
                                             <td class="text-center">
                                                 <div class="list-icons">
                                                     <div class="dropdown">
@@ -463,10 +476,11 @@
                                         <tr>
                                             <td><input type="checkbox" class="input-chk"></td>
                                             <td>MADIADIEM</td>
-                                            <td>Tầng 15, Tòa nhà Geleximco, số 36, Hoàng Cầu, Quận Đống Đa, Thành Phố Hà Nội</td>
+                                            <td>Hoàng Cầu, Đống Đa, Hà Nội</td>
                                             <td>
                                                 <span>Vĩ độ: 21.0183926</span> <span class="p-1">|</span> <span>Kinh độ: 105.8240567</span>
                                             </td>
+                                            <td></td>
                                             <td class="text-center">
                                                 <div class="list-icons">
                                                     <div class="dropdown">
@@ -481,10 +495,11 @@
                                         <tr>
                                             <td><input type="checkbox" class="input-chk"></td>
                                             <td>MADIADIEM</td>
-                                            <td>Tầng 15, Tòa nhà Geleximco, số 36, Hoàng Cầu, Quận Đống Đa, Thành Phố Hà Nội</td>
+                                            <td>Hoàng Cầu, Đống Đa, Hà Nội</td>
                                             <td>
                                                 <span>Vĩ độ: 21.0183926</span> <span class="p-1">|</span> <span>Kinh độ: 105.8240567</span>
                                             </td>
+                                            <td></td>
                                             <td class="text-center">
                                                 <div class="list-icons">
                                                     <div class="dropdown">
@@ -499,10 +514,11 @@
                                         <tr>
                                             <td><input type="checkbox" class="input-chk"></td>
                                             <td>MADIADIEM</td>
-                                            <td>Tầng 15, Tòa nhà Geleximco, số 36, Hoàng Cầu, Quận Đống Đa, Thành Phố Hà Nội</td>
+                                            <td>Hoàng Cầu, Đống Đa, Hà Nội</td>
                                             <td>
                                                 <span>Vĩ độ: 21.0183926</span> <span class="p-1">|</span> <span>Kinh độ: 105.8240567</span>
                                             </td>
+                                            <td></td>
                                             <td class="text-center">
                                                 <div class="list-icons">
                                                     <div class="dropdown">
@@ -517,10 +533,11 @@
                                         <tr>
                                             <td><input type="checkbox" class="input-chk"></td>
                                             <td>MADIADIEM</td>
-                                            <td>Tầng 15, Tòa nhà Geleximco, số 36, Hoàng Cầu, Quận Đống Đa, Thành Phố Hà Nội</td>
+                                            <td>Hoàng Cầu, Đống Đa, Hà Nội</td>
                                             <td>
                                                 <span>Vĩ độ: 21.0183926</span> <span class="p-1">|</span> <span>Kinh độ: 105.8240567</span>
                                             </td>
+                                            <td></td>
                                             <td class="text-center">
                                                 <div class="list-icons">
                                                     <div class="dropdown">
@@ -532,6 +549,102 @@
                                                 </div>
                                             </td>
                                         </tr>
+                                        <tr>
+                                            <td><input type="checkbox" class="input-chk"></td>
+                                            <td>MADIADIEM</td>
+                                            <td>Hoàng Cầu, Đống Đa, Hà Nội</td>
+                                            <td>
+                                                <span>Vĩ độ: 21.0183926</span> <span class="p-1">|</span> <span>Kinh độ: 105.8240567</span>
+                                            </td>
+                                            <td></td>
+                                            <td class="text-center">
+                                                <div class="list-icons">
+                                                    <div class="dropdown">
+                                                        <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a href="#" data-toggle="modal" data-target="#thiet_la_han_muc" class="dropdown-item"> Thiết lập hạn mức</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" class="input-chk"></td>
+                                            <td>MADIADIEM</td>
+                                            <td>Hoàng Cầu, Đống Đa, Hà Nội</td>
+                                            <td>
+                                                <span>Vĩ độ: 21.0183926</span> <span class="p-1">|</span> <span>Kinh độ: 105.8240567</span>
+                                            </td>
+                                            <td></td>
+                                            <td class="text-center">
+                                                <div class="list-icons">
+                                                    <div class="dropdown">
+                                                        <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a href="#" data-toggle="modal" data-target="#thiet_la_han_muc" class="dropdown-item"> Thiết lập hạn mức</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" class="input-chk"></td>
+                                            <td>MADIADIEM</td>
+                                            <td>Hoàng Cầu, Đống Đa, Hà Nội</td>
+                                            <td>
+                                                <span>Vĩ độ: 21.0183926</span> <span class="p-1">|</span> <span>Kinh độ: 105.8240567</span>
+                                            </td>
+                                            <td></td>
+                                            <td class="text-center">
+                                                <div class="list-icons">
+                                                    <div class="dropdown">
+                                                        <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a href="#" data-toggle="modal" data-target="#thiet_la_han_muc" class="dropdown-item"> Thiết lập hạn mức</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" class="input-chk"></td>
+                                            <td>MADIADIEM</td>
+                                            <td>Hoàng Cầu, Đống Đa, Hà Nội</td>
+                                            <td>
+                                                <span>Vĩ độ: 21.0183926</span> <span class="p-1">|</span> <span>Kinh độ: 105.8240567</span>
+                                            </td>
+                                            <td></td>
+                                            <td class="text-center">
+                                                <div class="list-icons">
+                                                    <div class="dropdown">
+                                                        <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a href="#" data-toggle="modal" data-target="#thiet_la_han_muc" class="dropdown-item"> Thiết lập hạn mức</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" class="input-chk"></td>
+                                            <td>MADIADIEM</td>
+                                            <td>Hoàng Cầu, Đống Đa, Hà Nội</td>
+                                            <td>
+                                                <span>Vĩ độ: 21.0183926</span> <span class="p-1">|</span> <span>Kinh độ: 105.8240567</span>
+                                            </td>
+                                            <td></td>
+                                            <td class="text-center">
+                                                <div class="list-icons">
+                                                    <div class="dropdown">
+                                                        <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a href="#" data-toggle="modal" data-target="#thiet_la_han_muc" class="dropdown-item"> Thiết lập hạn mức</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
                                    		
 
                                    </tbody>
