@@ -79,6 +79,7 @@
                                                                                 <?php inc('template/1_thong_tin_chung/so_don_bao_hiem.php'); ?> 
                                                                             </div>
                                                                             <div class="col-md-6">
+                                                                                <?php $GLOBALS["gv"] = 'ebaohiem'; ?>
                                                                                 <?php inc('template/1_thong_tin_chung/so_gcnbh.php'); ?> 
                                                                             </div>
                                                                         </div>

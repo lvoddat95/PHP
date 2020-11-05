@@ -72,8 +72,15 @@
                                                                             <div class="col-md-3">
                                                                                 <?php inc('template/1_thong_tin_chung/hinh_thuc_khai_thac.php'); ?> 
                                                                             </div>
+                                                                        </div>
+
+                                                                        <div class="row">
                                                                             <div class="col-md-6">
                                                                                 <?php inc('template/1_thong_tin_chung/so_don_bao_hiem.php'); ?> 
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <?php $GLOBALS["gv"] = 'ebaohiem'; ?>
+                                                                                <?php inc('template/1_thong_tin_chung/so_gcnbh.php'); ?> 
                                                                             </div>
                                                                         </div>
 

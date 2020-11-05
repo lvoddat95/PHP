@@ -66,10 +66,17 @@ function get_site_url($p_dir="", $root=false)
 }
 
 
-function inc($view,$require_once=true){
+function inc($view,$require_once=true,$extend=''){
     if ($require_once == true) {
+        if (!empty($extend)) {
+            $GLOBALS["gv"] = $extend;
+        }
+        
         require_once $view;
     }else{
+        if (!empty($extend)) {
+            $GLOBALS["gv"] = $extend;
+        }
         require $view;
     }
 }

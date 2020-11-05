@@ -62,6 +62,7 @@
 
                                                             <form action="#" class="form-validation clearfix">
                                                                 <div class="tab-content">
+                                                                    
                                                                     <!-- Bước 1 -->
                                                                     <?php inc('template/1_thong_tin_chung/1_thong_tin_chung.php'); ?>
 
