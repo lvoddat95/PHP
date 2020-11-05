@@ -188,7 +188,7 @@
                                                                                 <tbody data-repeater-list="repeater-list">
                                                                                     <tr data-repeater-item>
                                                                                         <td class="cell control not-desktop text-center" title="Xem thêm thông tin"></td>
-                                                                                        <td class="text-center"><b class="item-level">1.</b> <input type="checkbox" class="input-chk"></td></td>
+                                                                                        <td class="text-center"><b class="item-level">1.</b> <input type="checkbox" class="input-chk"></td>
                                                                                         <td><input class="form-control" type="text"></td>
                                                                                         <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
                                                                                         <td><input class="form-control col-content-lg" type="text"></td>
