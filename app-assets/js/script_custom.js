@@ -287,6 +287,26 @@ var onblur_check_date = function(p_this){
 
 }
 
+
+var on_change_tinh_thanh_pho = function(p_this){
+    var v_input_value = $(p_this).val();
+    if( v_input_value.length > 0 ) {
+        $('#quan_huyen').removeAttr('disabled');
+    }else{
+        $('#quan_huyen').attr('disabled', 'disabled');
+        $('#phuong_xa').attr('disabled', 'disabled');
+    }
+}
+
+var on_change_quan_huyen = function(p_this){
+    var v_input_value = $(p_this).val();
+    if( v_input_value.length > 0 ) {
+        $('#phuong_xa').removeAttr('disabled');
+    }else{
+        $('#phuong_xa').attr('disabled', 'disabled');
+    }
+}
+
 $(function(){
     var $window       = $(window);
     var lastScrollTop = 0;

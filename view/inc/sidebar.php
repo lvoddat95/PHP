@@ -69,6 +69,16 @@
 
                                     </ul>
                                 </li>
+                                <li class="nav-item nav-item-submenu">
+                                    <a href="" class="nav-link">
+                                        <span class="menu-title">Địa điểm</span>
+                                    </a>
+                                    <ul class="nav nav-group-sub">
+                                        <li><a href="<?php echo HTTP_PATH .'view/pages/danh-sach-dia-diem.php'; ?>" class="nav-link"><span class="menu-title">Danh sách địa điểm</span></a></li>
+                                        <li><a href="<?php echo HTTP_PATH .'view/pages/nhap-dia-diem.php'; ?>" class="nav-link"><span class="menu-title">Nhập địa điểm</span></a></li>
+
+                                    </ul>
+                                </li>
 
                                 <li><a href="<?php echo HTTP_PATH .'view/pages/login.php'; ?>" class="nav-link"><span class="menu-title">Trang Login</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/pages/404.php'; ?>" class="nav-link"><span class="menu-title">Trang 404</span></a></li>
