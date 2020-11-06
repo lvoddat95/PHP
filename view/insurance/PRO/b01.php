@@ -99,8 +99,8 @@
                                                                                     <tr>
                                                                                         <th class="w1p all text-center"></th>
                                                                                         <th class="w20p">Tên hạng mục tài sản bh</th>
-                                                                                        <th class="w10p">Nhóm tài sản</th>
-                                                                                        <th class="w5p">Số lượng</th>
+                                                                                        <th class="desktop w10p">Nhóm tài sản</th>
+                                                                                        <th class="desktop w5p">Số lượng</th>
                                                                                         <th class="desktop w10p">Đơn giá</th>
                                                                                         <th class="desktop w10p">Giá trị</th>
                                                                                         <th class="w10p">Số tiền bảo hiểm</th>
@@ -132,6 +132,48 @@
                                                                             </table>
                                                                             <div class="border p-1 text-center">
                                                                                 <input class="btn bg-success" data-repeater-create type="button" value="+ Thêm">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="mb-3 row justify-content-end">
+                                                                            <div class="col-md-5">
+                                                                                <table class="table datatable"  
+                                                                                    data-paging="false"
+                                                                                    data-info="false"
+                                                                                    data-ordering="false"
+                                                                                    data-searching="false"
+                                                                                    >
+                                                                                    <thead class="thead-light">
+                                                                                        <tr>
+                                                                                            <th class="w10p"><i class="far fa-sigma"></i> Tổng cộng</th>
+                                                                                            <th class="desktop w10p">Giá trị</th>
+                                                                                            <th class="w10p">Số tiền bảo hiểm</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <b>Nhà xưởng</b>
+                                                                                            </td>
+                                                                                            <td><input type="text" class="form-control input-money" name=""></td>
+                                                                                            <td><input type="text" class="form-control input-money" name=""></td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <b>Hàng hóa</b>
+                                                                                            </td>
+                                                                                            <td><input type="text" class="form-control input-money" name=""></td>
+                                                                                            <td><input type="text" class="form-control input-money" name=""></td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <b>Máy móc</b>
+                                                                                            </td>
+                                                                                            <td><input type="text" class="form-control input-money" name=""></td>
+                                                                                            <td><input type="text" class="form-control input-money" name=""></td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
                                                                             </div>
                                                                         </div>
 
