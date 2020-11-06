@@ -129,8 +129,24 @@ var on_change_hinh_thuc_khai_thac = function(p_this){
     }else{
         $('#tai-bh, #dong-bh').slideUp();
     }
-    
 }
+
+var on_change_hinh_thuc_khai_thac_step4 = function(p_this){
+    if(p_this.value == 'tai-bh'){
+        $('#tai-bh').slideDown();
+        $('#dong-bh').slideUp();
+        console.log(p_this.value)
+    }else if(p_this.value == 'dong-bh'){
+        $('#tai-bh').slideUp();
+        $('#dong-bh').slideDown();
+        $('#trach-nhiem-dong-bao-hiem').slideDown();
+        $($.fn.dataTable.tables(true)).DataTable().columns.adjust().responsive.recalc();
+    }else{
+        $('#tai-bh, #dong-bh, #trach-nhiem-dong-bao-hiem').slideUp();
+    }
+}
+
+
 var on_change_trang_thai_don = function(p_this){
     var v_title = "";
     var v_input_value = $(p_this).val();
