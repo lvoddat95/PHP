@@ -251,10 +251,6 @@
                                                                                     </thead>
                                                                                     <tbody>
                                                                                         <tr>
-                                                                                            <td>Số tiền giảm miễn thường</td>
-                                                                                            <td class="text-right">0</td>
-                                                                                        </tr>
-                                                                                        <tr>
                                                                                             <td>Vườn cây cao su từ 01 đến 30 tuổi</td>
                                                                                             <td class="text-right">0</td>
                                                                                         </tr>

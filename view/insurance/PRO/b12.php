@@ -220,10 +220,6 @@
                                                                                     </thead>
                                                                                     <tbody>
                                                                                         <tr>
-                                                                                            <td>Số tiền giảm miễn thường</td>
-                                                                                            <td class="text-right">0</td>
-                                                                                        </tr>
-                                                                                        <tr>
                                                                                             <td>Bảo hiểm bảng hiệu đèn quảng cáo</td>
                                                                                             <td class="text-right">0</td>
                                                                                         </tr>

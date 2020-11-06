@@ -220,10 +220,6 @@
                                                                                     </thead>
                                                                                     <tbody>
                                                                                         <tr>
-                                                                                            <td>Số tiền giảm miễn thường</td>
-                                                                                            <td class="text-right">0</td>
-                                                                                        </tr>
-                                                                                        <tr>
                                                                                             <td>1. Hỏa hoạn, sét đánh (A) </td>
                                                                                             <td class="text-right">0</td>
                                                                                         </tr>

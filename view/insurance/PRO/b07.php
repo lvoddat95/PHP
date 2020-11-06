@@ -224,10 +224,6 @@
                                                                                     </thead>
                                                                                     <tbody>
                                                                                         <tr>
-                                                                                            <td>Số tiền giảm miễn thường</td>
-                                                                                            <td class="text-right">0</td>
-                                                                                        </tr>
-                                                                                        <tr>
                                                                                             <td>Hư hỏng hàng hóa trong kho lạnh</td>
                                                                                             <td class="text-right">0</td>
                                                                                         </tr>
