@@ -48,6 +48,10 @@
                                             <td><input type="checkbox" value=""></td>
                                             <td>Điều khoản loại trừ amiăng</td>
                                         </tr>
+                                        <tr>
+                                            <td><input type="checkbox" value=""></td>
+                                            <td>Điều khoản loại trừ khác</td>
+                                        </tr>
                                         
                                        
                                     </tbody>

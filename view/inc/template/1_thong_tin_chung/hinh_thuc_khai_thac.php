@@ -1,6 +1,6 @@
 <div class="form-group ">
     <label>Hình thức khai thác: <span class="text-danger">*</span></label>
-    <?php if (!empty($GLOBALS["g_trach_nhiem_dong_bh"]) && $GLOBALS["g_trach_nhiem_dong_bh"] == 'trach-nhiem-dong-bao-hiem') : ?>
+    <?php if (!empty($GLOBALS["trach_nhiem_dong_bao_hiem"]) && $GLOBALS["trach_nhiem_dong_bao_hiem"] == 'trach-nhiem-dong-bao-hiem') : ?>
 	    <select class="form-control required" select2 name="hinh_thuc_khai_thac" onchange="on_change_hinh_thuc_khai_thac_step4(this);">
 	        <option value="truc-tiep">Bảo hiểm trực tiếp</option>
 	        <option value="tai-bh">Nhận tái bảo hiểm</option>

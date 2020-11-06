@@ -1,5 +1,8 @@
 <?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?>
+<?php $GLOBALS["trach_nhiem_dong_bao_hiem"] = 'trach-nhiem-dong-bao-hiem'; ?>
+<?php $GLOBALS["can_bo_ki_don"] = 'hide'; ?>
+<?php $GLOBALS["dieu_kien_bao_hiem"] = 'modal'; ?>
     
     <body class="sidebar-xs">
 
@@ -200,10 +203,10 @@
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/loai_mien_thuong.php'); ?>
                                                                             </div>
                                                                             <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/so_tien_mien_thuong.php'); ?>
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/ti_le_gia_tri_ton_that.php'); ?>
                                                                             </div>
                                                                             <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/so_tien_giam_mien_thuong.php'); ?>
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/so_tien_khau_tru_toi_thieu.php'); ?>
                                                                             </div>
                                                                         </div>
 
@@ -226,6 +229,12 @@
                                                                             <div class="col-md-6">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/quy_tac_bao_hiem.php'); ?>
                                                                             </div>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-6">
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/PRO/trach_nhiem_dong_bao_hiem.php'); ?>
+                                                                            </div>  
                                                                         </div>
 
                                                                         <div class="row mb-3">
