@@ -1,6 +1,7 @@
 <?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?>
-<?php $GLOBALS["gv2"] = 'trach-nhiem-dong-bao-hiem'; ?>
+<?php $GLOBALS["g_trach_nhiem_dong_bh"] = 'trach-nhiem-dong-bao-hiem'; ?>
+<?php $GLOBALS["can_bo_ki_don"] = 'hide'; ?>
     
     <body class="sidebar-xs">
 
