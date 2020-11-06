@@ -155,28 +155,28 @@
                                                                                                 <b>Nhà xưởng</b>
                                                                                             </td>
                                                                                             <td><input type="text" class="form-control input-money" name="" placeholder="0"></td>
-                                                                                            <td><input type="text" class="form-control input-money" name="" placeholder="0">></td>
+                                                                                            <td><input type="text" class="form-control input-money" name="" placeholder="0"></td>
                                                                                         </tr>
                                                                                         <tr>
                                                                                             <td>
                                                                                                 <b>Hàng hóa</b>
                                                                                             </td>
-                                                                                            <td><input type="text" class="form-control input-money" name="" placeholder="0">></td>
-                                                                                            <td><input type="text" class="form-control input-money" name="" placeholder="0">></td>
+                                                                                            <td><input type="text" class="form-control input-money" name="" placeholder="0"></td>
+                                                                                            <td><input type="text" class="form-control input-money" name="" placeholder="0"></td>
                                                                                         </tr>
                                                                                         <tr>
                                                                                             <td>
                                                                                                 <b>Máy móc</b>
                                                                                             </td>
-                                                                                            <td><input type="text" class="form-control input-money" name="" placeholder="0">></td>
-                                                                                            <td><input type="text" class="form-control input-money" name="" placeholder="0">></td>
+                                                                                            <td><input type="text" class="form-control input-money" name="" placeholder="0"></td>
+                                                                                            <td><input type="text" class="form-control input-money" name="" placeholder="0"></td>
                                                                                         </tr>
                                                                                         <tr>
                                                                                             <td>
                                                                                                 <b><i class="far fa-sigma mr-1"></i>Tổng cộng</b>
                                                                                             </td>
-                                                                                            <td><input type="text" class="form-control input-money" name="" placeholder="0">></td>
-                                                                                            <td><input type="text" class="form-control input-money" name="" placeholder="0">></td>
+                                                                                            <td><input type="text" class="form-control input-money" name="" placeholder="0"></td>
+                                                                                            <td><input type="text" class="form-control input-money" name="" placeholder="0"></td>
                                                                                         </tr>
                                                                                     </tbody>
                                                                                 </table>
