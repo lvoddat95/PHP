@@ -72,6 +72,33 @@
                                                                     
                                                                     <!-- Step 3 -->
                                                                     <fieldset class="tab-pane" id="step3">
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group ">
+                                                                                    <label>Mã địa điểm: <span class="text-danger">*</span></label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="text" class="form-control required" name="so_don_bao_hiem" placeholder="">
+                                                                                        <span class="input-group-append">
+                                                                                            <button type="button" class="btn bg-primary" data-toggle="modal" data-target="#ds_dia_diem">Chọn</button>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <?php inc('template/3_doi_tuong_bao_hiem/PRO/nhom_rui_ro.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <?php inc('template/3_doi_tuong_bao_hiem/PRO/nganh_nghe_kinh_doanh.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <?php inc('template/3_doi_tuong_bao_hiem/PRO/ti_le_phi.php'); ?>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <hr class="border-dashed border-silver mb-3">
 
                                                                         <p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Upload thông tin danh sách tài sản</p>
 
@@ -88,8 +115,6 @@
                                                                             </div>
                                                                         </div>
                                                                         
-                                                                        <hr class="border-dashed border-silver mb-3">
-
                                                                         <div class="form-group" repeater>
                                                                             <table class="table table-bordered datatable"  
                                                                                 data-paging="false"
@@ -137,7 +162,7 @@
                                                                         </div>
 
                                                                         <div class="mb-3 row justify-content-end">
-                                                                            <div class="col-md-5">
+                                                                            <div class="col-md-7">
                                                                                 <table class="table datatable"  
                                                                                     data-paging="false"
                                                                                     data-info="false"
@@ -146,37 +171,25 @@
                                                                                     >
                                                                                     <thead class="thead-light">
                                                                                         <tr>
-                                                                                            <th class="w10p"></th>
-                                                                                            <th class="desktop w10p"><i class="far fa-sigma mr-1"></i>Giá trị</th>
-                                                                                            <th class="w10p"><i class="far fa-sigma mr-1"></i>Số tiền bảo hiểm</th>
+                                                                                            <th class="w20p all"></th>
+                                                                                            <th><b>Nhà xưởng</b></th>
+                                                                                            <th><b>Hàng hóa</b></th>
+                                                                                            <th><b>Máy móc</b></th>
+                                                                                            <th><b><i class="far fa-sigma mr-1"></i>Tổng cộng</b></th>
                                                                                         </tr>
                                                                                     </thead>
                                                                                     <tbody>
                                                                                         <tr>
-                                                                                            <td>
-                                                                                                <b>Nhà xưởng</b>
-                                                                                            </td>
+                                                                                            <td><b>Giá trị</b></td>
+                                                                                            <td><input type="text" class="form-control input-money" name="" placeholder="0"></td>
+                                                                                            <td><input type="text" class="form-control input-money" name="" placeholder="0"></td>
                                                                                             <td><input type="text" class="form-control input-money" name="" placeholder="0"></td>
                                                                                             <td><input type="text" class="form-control input-money" name="" placeholder="0"></td>
                                                                                         </tr>
                                                                                         <tr>
-                                                                                            <td>
-                                                                                                <b>Hàng hóa</b>
-                                                                                            </td>
+                                                                                            <td><b>Số tiền bảo hiểm</b></td>
                                                                                             <td><input type="text" class="form-control input-money" name="" placeholder="0"></td>
                                                                                             <td><input type="text" class="form-control input-money" name="" placeholder="0"></td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>
-                                                                                                <b>Máy móc</b>
-                                                                                            </td>
-                                                                                            <td><input type="text" class="form-control input-money" name="" placeholder="0"></td>
-                                                                                            <td><input type="text" class="form-control input-money" name="" placeholder="0"></td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>
-                                                                                                <b><i class="far fa-sigma mr-1"></i>Tổng cộng</b>
-                                                                                            </td>
                                                                                             <td><input type="text" class="form-control input-money" name="" placeholder="0"></td>
                                                                                             <td><input type="text" class="form-control input-money" name="" placeholder="0"></td>
                                                                                         </tr>
@@ -184,32 +197,7 @@
                                                                                 </table>
                                                                             </div>
                                                                         </div>
-
-                                                                        <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group ">
-                                                                                    <label>Mã địa điểm: <span class="text-danger">*</span></label>
-                                                                                    <div class="input-group">
-                                                                                        <input type="text" class="form-control required" name="so_don_bao_hiem" placeholder="">
-                                                                                        <span class="input-group-append">
-                                                                                            <button type="button" class="btn bg-primary" data-toggle="modal" data-target="#ds_dia_diem">Chọn</button>
-                                                                                        </span>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/PRO/nhom_rui_ro.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/PRO/nganh_nghe_kinh_doanh.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/PRO/ti_le_phi.php'); ?>
-                                                                            </div>
-                                                                        </div>
+                                                                        
                                                                     </fieldset>
                                                                     
                                                                     <!-- Step 4 -->
