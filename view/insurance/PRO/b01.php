@@ -247,7 +247,14 @@
 
                                                                         <div class="row">
                                                                             <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/loai_mien_thuong.php'); ?>
+                                                                                <div class="form-group ">
+                                                                                    <label>Loại miễn thường: </label>
+                                                                                    <select class="form-control" select2 disabled>
+                                                                                        <option value="">--- Chọn mức miễn thường ---</option>
+                                                                                        <option value="1" selected>Có khấu trừ</option>
+                                                                                        <option value="0">Không có khấu trừ</option>
+                                                                                    </select>
+                                                                                </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/ti_le_gia_tri_ton_that.php'); ?>

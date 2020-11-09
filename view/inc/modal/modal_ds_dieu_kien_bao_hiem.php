@@ -23,14 +23,29 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td><input type="checkbox" value=""></td>
-                                            <td>Cháy, nổ bắt buộc</td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkbox" value=""></td>
-                                            <td>Cháy, nổ tự nguyện</td>
-                                        </tr>
+                                        <?php if (!empty($GLOBALS["dieu_kien_bao_hiem_b02"]) && $GLOBALS["dieu_kien_bao_hiem_b02"] == 'b02') : ?>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>Cháy, nổ bắt buộc</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>Mọi rủi ro tài sản</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>Gián đoạn kinh doanh sau mọi rủi ro tài sản</td>
+                                            </tr>
+                                        <?php else: ?>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>Cháy, nổ bắt buộc</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>Cháy, nổ tự nguyện</td>
+                                            </tr>
+                                        <?php endif; ?>
                                         
                                     </tbody>
                                 </table>
