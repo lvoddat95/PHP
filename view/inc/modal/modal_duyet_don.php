@@ -17,6 +17,14 @@
                     </div>
 
                     <div class="form-group row">
+                        <label class="col-lg-3 col-form-label">Ngày duyệt:</label>
+                        <div class="col-lg-9">
+                            <input class="form-control datepicker input-date" type="text" value="" placeholder="dd/mm/yyyy">
+                        </div>
+                    </div>
+
+
+                    <div class="form-group row">
                         <label class="col-lg-3 col-form-label">Trạng thái: <span class="text-danger">*</span></label>
                         <div class="col-lg-9">
                             <div>
