@@ -57,30 +57,7 @@
                                                 <div class="card-content">
                                                     <div class="card-body">
                                                         <div class="wizard">
-                                                            <div class="steps clearfix">
-                                                                <ul class="nav nav-tabs" role="tablist">
-                                                                    <li class="current">
-                                                                        <a href="#step1" class="active show" data-toggle="tab">
-                                                                            <span class="number">1</span> Thông tin chung
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="disabled">
-                                                                        <a href="#step2" data-toggle="tab">
-                                                                            <span class="number">2</span> Trung gian bảo hiểm
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="disabled">
-                                                                        <a href="#step3" data-toggle="tab">
-                                                                            <span class="number">3</span> Đối tượng bảo hiểm
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="disabled">
-                                                                        <a href="#step4" data-toggle="tab">
-                                                                            <span class="number">4</span> Phạm vi bảo hiểm
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
+                                                            <?php inc('template/steps.php'); ?>
                                                             <form action="#" class="form-validation clearfix">
                                                                 <div class="tab-content">
                                                                     <!-- Bước 1 -->
@@ -92,8 +69,21 @@
                                                                             <div class="col-md-3">
                                                                                 <?php inc('template/1_thong_tin_chung/hinh_thuc_khai_thac.php'); ?> 
                                                                             </div>
-                                                                            <div class="col-md-6">
+                                                                            <div class="col-md-4">
                                                                                 <?php inc('template/1_thong_tin_chung/so_don_bao_hiem.php'); ?> 
+                                                                            </div>
+                                                                            <div class="col-md-2">
+                                                                                <div class="form-group ">
+                                                                                    <label>Đơn tái tục: <a href="#" data-tooltip="tipsy" original-title="Chọn <b style='color: red;'>“Có”</b> nếu là đơn tái tục." data-position="top"><i class="icon-info22"></i></a>
+                                                                                    </label>
+                                                                                    <div class="d-flex">
+                                                                                        <p class="switch-title mr-3">Có phải đơn tái tục ?</p>
+                                                                                        <div class="button-switch">
+                                                                                            <input type="checkbox" id="tai_bao_hiem_sw" class="switch required" name="tai_bao_hiem_sw">
+                                                                                            <label for="tai_bao_hiem_sw" data-off="Không" data-on="Có"></label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
 

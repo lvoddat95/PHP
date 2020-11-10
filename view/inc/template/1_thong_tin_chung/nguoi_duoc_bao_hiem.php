@@ -1,5 +1,9 @@
 <div class="form-group">
-	<label>Người được bảo hiểm: <span class="text-danger">*</span></label>
+    <?php if (!empty($GLOBALS["nguoi_duoc_bao_hiem"]) && $GLOBALS["nguoi_duoc_bao_hiem"] == 'label_khach_hang') : ?>
+        <label>Khách hàng: <span class="text-danger">*</span></label>
+    <?php else: ?>
+        <label>Người được bảo hiểm: <span class="text-danger">*</span></label>
+    <?php endif; ?>
 	<div class="row">
         <div class="col-md-4 col-sm-4">
             <input type="text" class="form-control required" placeholder="Nhập mã khách hàng...">

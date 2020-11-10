@@ -72,6 +72,18 @@
                                                                     <!-- Step 3 -->
                                                                     <fieldset class="tab-pane" id="step3">
                                                                         <div class="row">
+                                                                            <div class="col-md-2">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Loại TPA: <span class="text-danger">*</span></label>
+                                                                                    <select select2>
+                                                                                        <option value="">Có TPA</option>
+                                                                                        <option value="">Không TPA</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
                                                                             <div class="col-md-6">
                                                                                 <?php inc('template/3_doi_tuong_bao_hiem/PER/so_nguoi_duoc_bao_hiem.php'); ?>
                                                                             </div>

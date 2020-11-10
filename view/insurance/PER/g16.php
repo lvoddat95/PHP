@@ -72,6 +72,19 @@
                                                                             <div class="col-md-4">
                                                                                 <?php inc('template/1_thong_tin_chung/hinh_thuc_khai_thac.php'); ?> 
                                                                             </div>
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group ">
+                                                                                    <label>Đơn tái tục: <a href="#" data-tooltip="tipsy" original-title="Chọn <b style='color: red;'>“Có”</b> nếu là đơn tái tục." data-position="top"><i class="icon-info22"></i></a>
+                                                                                    </label>
+                                                                                    <div class="d-flex">
+                                                                                        <p class="switch-title mr-3">Có phải đơn tái tục ?</p>
+                                                                                        <div class="button-switch">
+                                                                                            <input type="checkbox" id="tai_bao_hiem_sw" class="switch required" name="tai_bao_hiem_sw">
+                                                                                            <label for="tai_bao_hiem_sw" data-off="Không" data-on="Có"></label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
                                                                         </div>
 
                                                                         <div class="row">

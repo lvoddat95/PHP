@@ -114,7 +114,7 @@
                             </div>
                             <div class="col-sm-4">
                                 <div class="form-group">
-                                    <label>Quốc gia: </label>
+                                    <label>Quốc tịch: </label>
                                     <select class="form-control" select2 name="">
                                         <option id="N_ANGHERI" name="Algeria" value="N_ANGHERI">Algeria</option>
                                         <option id="N_ARGENTINA" name="Argentina" value="N_ARGENTINA">Argentina</option>

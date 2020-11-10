@@ -865,6 +865,12 @@ a.sidebar-main-toggle:hover {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.select2-selection--multiple .select2-selection__choice{
+    padding: 2px 5px;
+    line-height: 20px;
+    font-size: 90%;
+}
+
 .select2-selection--single:not([class*=bg-]):not([class*=border-]):hover, 
 .select2-selection--single:not([class*=bg-]):not([class*=border-]):focus {
     border-color: #2196f3;

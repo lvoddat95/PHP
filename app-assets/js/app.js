@@ -602,7 +602,7 @@ var App = function () {
 
                         if (v_table.length > 0) {
                             if (v_table.is('.datatable')) {
-                                v_table.DataTable().row.add($v_clone.slideDown()).draw();
+                                v_table.DataTable().row.add($v_clone).draw();
                             }
                         }
 
@@ -613,21 +613,13 @@ var App = function () {
                             .unbind();
                         }
 
-                        // $v_clone.slideDown();
+                        $v_clone.slideDown();
                         
                         _component_input_type();
                         _component_datepicker(v_datepicker);
                         _component_select2(v_select);
                     },
                     hide: function (deleteElement) {
-                        var $v_clone = $(this);
-                        var v_table = $v_clone.closest('table');
-                        if (v_table.length > 0) {
-                            if (v_table.is('.datatable')) {
-                                v_table.DataTable().row().remove($(this)).draw();
-                            }
-                        }
-
                         // if(confirm('Xoa dong nay ?')) {
                             $(this).slideUp(deleteElement);
                         // }
