@@ -393,7 +393,6 @@
             ?>
         </div>
 
-        <?php inc('modal/modal_ds_dia_diem.php'); ?> 
         <?php inc('modal/modal_ds_rui_ro_bao_hiem.php'); ?> 
         <?php inc('modal/modal_ds_dieu_khoan_loai_tru.php'); ?> 
         <?php inc('modal/modal_dieu_khoan_sua_doi_bo_sung.php'); ?> 

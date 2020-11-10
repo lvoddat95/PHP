@@ -36,6 +36,11 @@
                                                 <td><input type="checkbox" value=""></td>
                                                 <td>Gián đoạn kinh doanh sau mọi rủi ro tài sản</td>
                                             </tr>
+                                        <?php elseif (!empty($GLOBALS["dieu_kien_bao_hiem_b05"]) && $GLOBALS["dieu_kien_bao_hiem_b05"] == 'b05') : ?>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>Mọi rủi ro nhà ở</td>
+                                            </tr>
                                         <?php else: ?>
                                             <tr>
                                                 <td><input type="checkbox" value=""></td>

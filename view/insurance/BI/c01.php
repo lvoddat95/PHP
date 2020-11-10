@@ -1,6 +1,6 @@
 <?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?> 
-     
+ <?php $GLOBALS["nguoi_duoc_bao_hiem"] = ''; ?>
     <body class="sidebar-xs">
 
         <div class="page-content home-page">

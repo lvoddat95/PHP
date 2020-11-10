@@ -139,6 +139,19 @@
                                                                     
                                                                     <!-- Step 3 -->
                                                                     <fieldset class="tab-pane" id="step3">
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <div class="form-group ">
+                                                                                    <label>Chương trình bảo hiểm: </label>
+                                                                                    <select class="form-control" select2>
+                                                                                        <option>--- Chọn ---</option>
+                                                                                        <option>Chương trình 1</option>
+                                                                                        <option>Chương trình 2</option>
+                                                                                        <option>Chương trình 3</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
 
                                                                         <div class="block">
                                                                             <p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Thông tin sản phẩm bảo an tín dụng</p>
@@ -349,17 +362,7 @@
                                                                     <!-- Step 4 -->
                                                                     <fieldset class="tab-pane" id="step4">
                                                                         <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <div class="form-group ">
-                                                                                    <label>Chương trình bảo hiểm: </label>
-                                                                                    <select class="form-control" select2>
-                                                                                        <option>--- Chọn ---</option>
-                                                                                        <option>Chương trình 1</option>
-                                                                                        <option>Chương trình 2</option>
-                                                                                        <option>Chương trình 3</option>
-                                                                                    </select>
-                                                                                </div>
-                                                                            </div>
+                                                                           
                                                                             <div class="col-md-12">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php'); ?>
                                                                             </div>

@@ -65,6 +65,16 @@
 
                                     <div class="row form-group">
                                         <label class="col-label col-form-label">
+                                            Loại hình: 
+                                            <span class="text-danger">*</span> 
+                                        </label>
+                                        <div class="col-content col-content-lg">
+                                            <?php inc('template/loai_hinh.php',false); ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="row form-group">
+                                        <label class="col-label col-form-label">
                                             Tỉnh / Thành phố: 
                                             <span class="text-danger">*</span> 
                                         </label>
