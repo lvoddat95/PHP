@@ -108,20 +108,14 @@
                                                                                         <th class="w1p">STT</th>
                                                                                         <th>Người được bh</th>
                                                                                         <th>Địa chỉ</th>
-                                                                                        <th class="w15p">Số tiền bảo hiểm</th>
+                                                                                        <th>Số tiền bảo hiểm</th>
                                                                                     </tr>
                                                                                 </thead>
                                                                                 <tbody>
-                                                                                    <tr>
-                                                                                        <td><b>1.</b></td>
-                                                                                        <td><input type="text" class="form-control" placeholder="" value=""></td>
-                                                                                        <td><input type="text" class="form-control" placeholder="" value=""></td>
-                                                                                        <td><input type="text" class="form-control input-money text-right" placeholder="0" value=""></td>
-                                                                                    </tr>
                                                                                 </tbody>
                                                                             </table>
                                                                             <div class="border p-1 text-center">
-                                                                                <button type="button" class="btn bg-primary" data-toggle="modal" data-target="#ds_cac_khach_hang">Chọn</button>
+                                                                                <button type="button" class="btn bg-primary" data-toggle="modal" data-target="#ds_cac_khach_hang">Chọn từ danh sách</button>
                                                                             </div>
                                                                         </div>
                                                                         
@@ -216,17 +210,17 @@
                                                                                                 <td>&nbsp;a. Về người</td>
                                                                                                 <td>
                                                                                                     <div class="">
-                                                                                                        <label style="font-size: 12px;font-weight: 500;">Số tiền / người:</label>
+                                                                                                        <label style="font-size: 12px;">Số tiền / người:</label>
                                                                                                         <input class="form-control text-right input-money" type="text" placeholder="0">
                                                                                                     </div>
                                                                                                     <hr>
                                                                                                     <div class="">
-                                                                                                        <label style="font-size: 12px;font-weight: 500;">Số người tối đa:</label>
+                                                                                                        <label style="font-size: 12px;">Số người tối đa:</label>
                                                                                                         <input class="form-control text-right input-number" type="text" placeholder="0">
                                                                                                     </div>
                                                                                                     <hr>
                                                                                                     <div class="">
-                                                                                                        <label style="font-size: 12px;font-weight: 500;">Tổng số tiền / số người tối đa:</label>
+                                                                                                        <label style="font-size: 12px;">Tổng số tiền / số người tối đa:</label>
                                                                                                         <input class="form-control text-right input-money" type="text" placeholder="0">
                                                                                                     </div>
                                                                                                 </td>
@@ -256,12 +250,12 @@
                                                                                                 <td>&nbsp;b. Về tài sản</td>
                                                                                                 <td>
                                                                                                     <div class="">
-                                                                                                        <label style="font-size: 12px;font-weight: 500;">Số tiền / vụ:</label>
+                                                                                                        <label style="font-size: 12px;">Số tiền / vụ:</label>
                                                                                                         <input class="form-control text-right input-money" type="text" placeholder="0">
                                                                                                     </div>
                                                                                                     <hr>
                                                                                                     <div class="">
-                                                                                                        <label style="font-size: 12px;font-weight: 500;">
+                                                                                                        <label style="font-size: 12px;">
                                                                                                             Tổng số tiền / tất cả các vụ: 
                                                                                                             <a href="#" data-tooltip="tipsy" original-title="Tổng số tiền / tất cả các vụ trong thời hạn của hợp đồng" data-position="top"><i class="icon-info22"></i></a>
                                                                                                         </label>
