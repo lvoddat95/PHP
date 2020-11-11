@@ -194,7 +194,7 @@
                                                                                 </div>
                                                                                 <div class="col-md-3">
                                                                                     <div class="form-group ">
-                                                                                        <label>Nhóm khách hàng: </label>
+                                                                                        <label>Phân khúc: </label>
                                                                                         <select class="form-control" select2 name="">
                                                                                            <option>--- Chọn ---</option>
                                                                                            <option>Khách hàng ưu tiên</option>
@@ -210,17 +210,7 @@
                                                                                        </select>
                                                                                     </div>
                                                                                 </div>
-                                                                                <div class="col-md-3">
-                                                                                    <div class="form-group ">
-                                                                                        <label>Nhóm rủi ro: </label>
-                                                                                        <select class="form-control" select2 name="">
-                                                                                            <option>--- Chọn ---</option>
-                                                                                            <option value="">Nhóm 1</option>
-                                                                                            <option value="">Nhóm 2</option>
-                                                                                            <option value="">Nhóm 3</option>
-                                                                                        </select>
-                                                                                    </div>
-                                                                                </div>
+                                                                               
                                                                             </div>
                                                                         </div>
 
