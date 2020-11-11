@@ -1,9 +1,5 @@
 <?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?> 
- <?php $GLOBALS["nguoi_duoc_bao_hiem"] = 'label_khach_hang'; ?>
- <?php $GLOBALS["rui_ro_uot_c01"] = 'rui_ro_uot_c01'; ?>
- <?php $GLOBALS["loai_mien_thuong_bi"] = 'repeater'; ?>
- <?php $GLOBALS["dieu_kien_bao_hiem"] = 'modal'; ?>
     <body class="sidebar-xs">
 
         <div class="page-content home-page">
@@ -21,7 +17,7 @@
                         </button>
                         <div class="top-left">
                             <div class="breadcrumb">
-                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i>C01 - Bảo hiểm mọi rủi ro trong xây dựng</a>
+                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i>D01 - Bảo hiểm tàu biển</a>
                                 <span class="breadcrumb-item active">Cập nhập đơn</span>
                             </div>
                             <div class="d-md-none logo-mobile">
@@ -151,6 +147,11 @@
 
                                                                         <div class="row">
                                                                             <div class="col-md-12">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-2">
+                                                                                        <?php inc('template/3_doi_tuong_bao_hiem/BI/gioi_han_ve_nguoi.php'); ?>
+                                                                                    </div>
+                                                                                </div>
                                                                                 <div class="form-group">
                                                                                     <table class="table table-bordered datatable" 
                                                                                         data-paging="false"
@@ -218,11 +219,6 @@
                                                                                                     <div class="">
                                                                                                         <label style="font-size: 12px;font-weight: 500;">Số tiền / người:</label>
                                                                                                         <input class="form-control text-right input-money" type="text" placeholder="0">
-                                                                                                    </div>
-                                                                                                    <hr>
-                                                                                                    <div class="">
-                                                                                                        <label style="font-size: 12px;font-weight: 500;">Số người tối đa:</label>
-                                                                                                        <input class="form-control text-right input-number" type="text" placeholder="0">
                                                                                                     </div>
                                                                                                     <hr>
                                                                                                     <div class="">

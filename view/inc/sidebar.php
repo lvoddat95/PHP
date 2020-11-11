@@ -152,18 +152,6 @@
                         </li>
 
                         <li class="nav-item nav-item-submenu">
-                            <a href="javascript:;" class="nav-link">
-                                <i class="fad fa-container-storage fa-fw"></i>
-                                <span class="menu-title"> Bảo hiểm hàng hóa</span>
-                            </a>
-                            <ul class="nav nav-group-sub" scrollbar data-submenu-title="Bảo hiểm hàng hóa">
-                                <li><a href="<?php echo HTTP_PATH .'view/insurance/COM/e01.php'; ?>" class="nav-link"><span class="menu-title">E01 - Bảo hiểm hàng hoá xuất nhập khẩu</span></a></li>
-                                <li><a href="<?php echo HTTP_PATH .'view/insurance/COM/e02.php'; ?>" class="nav-link"><span class="menu-title">E02 - Bảo hiểm hàng hoá vận chuyển nội địa</span></a></li>
-                                <li><a href="<?php echo HTTP_PATH .'view/insurance/COM/e06.php'; ?>" class="nav-link"><span class="menu-title">E06 - Bảo hiểm trách nhiệm giao nhận tổng hợp</span></a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item nav-item-submenu">
                             <a href="javascript:;" class="nav-link"> 
                                 <i class="fad fa-construction fa-fw"></i>
                                 <span class="menu-title"> Bảo hiểm kĩ thuật</span>
@@ -184,35 +172,46 @@
 
                         <li class="nav-item nav-item-submenu">
                             <a href="javascript:;" class="nav-link">
-                                <i class="fad fa-shield fa-fw"></i>
-                                <span class="menu-title"> Bảo hiểm trách nhiệm</span>
+                                <i class="fad fa-container-storage fa-fw"></i>
+                                <span class="menu-title"> Bảo hiểm hàng hóa</span>
                             </a>
-                            <ul class="nav nav-group-sub" scrollbar data-submenu-title="Bảo hiểm trách nhiệm">
-                                <li><a href="h01.html" class="nav-link"><span class="menu-title">H01 - Bảo hiểm trách nhiệm nghề nghiệp</span></a></li>
-                                <li><a href="h02.html" class="nav-link"><span class="menu-title">H02 - Bảo hiểm trách nhiệm sản phẩm</span></a></li>
-                                <li><a href="h03.html" class="nav-link"><span class="menu-title">H03 - Bảo hiểm trách nhiệm công cộng</span></a></li>
-                                <li><a href="h04.html" class="nav-link"><span class="menu-title">H04 - Bảo hiểm trách nhiệm giải thưởng (Hole in one)</span></a></li>
-                                <li><a href="h06.html" class="nav-link"><span class="menu-title">H06 - Bảo hiểm Trách nhiệm Giám đốc và Người điều hành</span></a></li>
-                                <li><a href="h07.html" class="nav-link"><span class="menu-title">H07 - Bảo hiểm toàn diện ngân hàng</span></a></li>
-                                <li><a href="h08.html" class="nav-link"><span class="menu-title">H08 - Bảo hiểm trách nhiệm hoạt động cảng</span></a></li>
+                            <ul class="nav nav-group-sub" scrollbar data-submenu-title="Bảo hiểm hàng hóa">
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/COM/e01.php'; ?>" class="nav-link"><span class="menu-title">E01 - Bảo hiểm hàng hoá xuất nhập khẩu</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/COM/e02.php'; ?>" class="nav-link"><span class="menu-title">E02 - Bảo hiểm hàng hoá vận chuyển nội địa</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/COM/e06.php'; ?>" class="nav-link"><span class="menu-title">E06 - Bảo hiểm trách nhiệm giao nhận tổng hợp</span></a></li>
                             </ul>
                         </li>
-                        
-                        
+
                         <li class="nav-item nav-item-submenu">
                             <a href="javascript:;" class="nav-link">
                                 <i class="fad fa-ship fa-fw"></i>
                                 <span class="menu-title"> Bảo hiểm tàu thuyền</span>
                             </a>
                             <ul class="nav nav-group-sub" scrollbar data-submenu-title="Bảo hiểm tàu thuyền">
-                                <li><a href="d01.html" class="nav-link"><span class="menu-title">D01 - Bảo hiểm tàu biển</span></a></li>
-                                <li><a href="d02.html" class="nav-link"><span class="menu-title">D02 - Bảo hiểm tàu sông, tàu ven biển</span></a></li>
-                                <li><a href="d03.html" class="nav-link"><span class="menu-title">D03 - Bảo hiểm tàu cá</span></a></li>
-                                <li><a href="d04.html" class="nav-link"><span class="menu-title">D04 - Bảo hiểm du thuyền</span></a></li>
-                                <li><a href="d05.html" class="nav-link"><span class="menu-title">D05 - Bảo hiểm rủi ro đóng tàu</span></a></li>
-                                <li><a href="d06.html" class="nav-link"><span class="menu-title">D06 - Bảo hiểm trách nhiệm người sửa chữa tàu</span></a></li>
-                                <li><a href="d07.html" class="nav-link"><span class="menu-title">D07 - Bảo hiểm trách nhiệm dân sự chủ tầu viễn dương (P&amp;I mutual)</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/BFSB/d01.php'; ?>" class="nav-link"><span class="menu-title">D01 - Bảo hiểm tàu biển</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/BFSB/d02.php'; ?>" class="nav-link"><span class="menu-title">D02 - Bảo hiểm tàu sông, tàu ven biển</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/BFSB/d03.php'; ?>" class="nav-link"><span class="menu-title">D03 - Bảo hiểm tàu cá</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/BFSB/d04.php'; ?>" class="nav-link"><span class="menu-title">D04 - Bảo hiểm du thuyền</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/BFSB/d05.php'; ?>" class="nav-link"><span class="menu-title">D05 - Bảo hiểm rủi ro đóng tàu</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/BFSB/d06.php'; ?>" class="nav-link"><span class="menu-title">D06 - Bảo hiểm trách nhiệm người sửa chữa tàu</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/BFSB/d07.php'; ?>" class="nav-link"><span class="menu-title">D07 - Bảo hiểm trách nhiệm dân sự chủ tầu viễn dương (P&amp;I mutual)</span></a></li>
                                 
+                            </ul>
+                        </li>
+
+                        <li class="nav-item nav-item-submenu">
+                            <a href="javascript:;" class="nav-link">
+                                <i class="fad fa-shield fa-fw"></i>
+                                <span class="menu-title"> Bảo hiểm trách nhiệm</span>
+                            </a>
+                            <ul class="nav nav-group-sub" scrollbar data-submenu-title="Bảo hiểm trách nhiệm">
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/CRL/h01.php'; ?>" class="nav-link"><span class="menu-title">H01 - Bảo hiểm trách nhiệm nghề nghiệp</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/CRL/h02.php'; ?>" class="nav-link"><span class="menu-title">H02 - Bảo hiểm trách nhiệm sản phẩm</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/CRL/h03.php'; ?>" class="nav-link"><span class="menu-title">H03 - Bảo hiểm trách nhiệm công cộng</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/CRL/h04.php'; ?>" class="nav-link"><span class="menu-title">H04 - Bảo hiểm trách nhiệm giải thưởng (Hole in one)</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/CRL/h06.php'; ?>" class="nav-link"><span class="menu-title">H06 - Bảo hiểm Trách nhiệm Giám đốc và Người điều hành</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/CRL/h07.php'; ?>" class="nav-link"><span class="menu-title">H07 - Bảo hiểm toàn diện ngân hàng</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/CRL/h08.php'; ?>" class="nav-link"><span class="menu-title">H08 - Bảo hiểm trách nhiệm hoạt động cảng</span></a></li>
                             </ul>
                         </li>
 

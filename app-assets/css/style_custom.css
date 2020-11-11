@@ -28,7 +28,13 @@ a, area, button, input, label, select, textarea, [tabindex] {
     position: relative;
 }
 
+.sidebar-xs .content-wrapper {
+    left: 50px;
+    max-width: calc(100% - 50px);
+}
 .content-wrapper {
+    left: 250px;
+    max-width: calc(100% - 250px);
     min-height: 100vh;
     display: -ms-flexbox;
     display: flex;
@@ -40,6 +46,14 @@ a, area, button, input, label, select, textarea, [tabindex] {
     flex-direction: column;
     position: relative;
     background-color: #F1F5F8;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0px;
+    z-index: 111;
 }
 
 .content {
@@ -3932,7 +3946,7 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     max-width: 260px;
 }
 .col-content-sm{
-    max-width: 160px;
+    max-width: 170px;
 }
 .col-content-xs{
     max-width: 115px;

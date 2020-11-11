@@ -10,7 +10,7 @@
                 <div class="modal-body">
                     <div class="form-group row">
                         <label class="col-lg-3 col-form-label">Mã tàu: <span class="text-danger">*</span></label>
-                        <div class="col-lg-9">
+                        <div class="col-lg-9 col-content-sm">
                             <input class="form-control" type="text" value="TAU07584">
                         </div>
                     </div>
@@ -23,7 +23,7 @@
                     <div class="form-group row">
                         <label class="col-lg-3 col-form-label">Năm đóng</label>
                         <div class="col-lg-9">
-                            <input class="form-control datepicker input-date" type="text" value="">
+                            <input class="form-control datepicker input-date" type="text" value="" placeholder="dd/mm/yyyy">
                         </div>
                     </div>
                     <div class="form-group row">
