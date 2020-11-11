@@ -316,6 +316,12 @@
                                                                                        </select>
                                                                                     </div>
                                                                                 </div>
+                                                                                <div class="col-md-3">
+                                                                                    <div class="form-group ">
+                                                                                        <label>Gói bảo hiểm: </label>
+                                                                                        <select select2><option id="" value="" name="">--- Chọn ---</option><option id="DIEU-KIEN-A-B" name="Điều kiện A+B (Tử vong, thương tật toàn bộ vĩnh viễn do tai nạn, ốm đau, bệnh tật, thai sản)" value="DIEU-KIEN-A-B">Điều kiện A+B (Tử vong, thương tật toàn bộ vĩnh viễn do tai nạn, ốm đau, bệnh tật, thai sản)</option><option id="DIEU-KIEN-A" name="Điều kiện A(Tai nạn)" value="DIEU-KIEN-A">Điều kiện A(Tai nạn)</option></select>
+                                                                                    </div>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
 
