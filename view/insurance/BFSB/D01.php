@@ -69,57 +69,243 @@
                                                                     
                                                                     <!-- Step 3 -->
                                                                     <fieldset class="tab-pane" id="step3">
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-6">
+                                                                                <div class="form-group ">
+                                                                                    <label>Tên tàu: </label>
+                                                                                    <div class="input-group">
+                                                                                        <select class="form-control" select2>
+                                                                                            <option>--- Chọn ---</option>
+                                                                                            <option>Tàu A</option>
+                                                                                            <option>Tàu C</option>
+                                                                                            <option>Tàu D</option>
+                                                                                            <option>Tàu E</option>
+                                                                                            <option>Tàu F</option>
+                                                                                        </select>
+                                                                                        <div class="input-group-append">
+                                                                                            <button type="button" class="btn bg-primary" data-toggle="modal" data-target="#ds_tau_thuyen">+ Thêm tàu</button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
                                                                         <div class="row">
                                                                             <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/PRO/ma_dia_diem.php'); ?>
+                                                                                <div class="form-group ">
+                                                                                    <label>Tên tàu: </label>
+                                                                                    <select select2>
+                                                                                        <option id="" value="" name="">--- Chọn ---</option>
+                                                                                        <option id="N_VIETNAM" name="Viet Nam" value="N_VIETNAM">Viet Nam</option>
+                                                                                        <option id="N_ANH" name="United Kingdom" value="N_ANH">United Kingdom</option>
+                                                                                        <option id="N_MY" name="United States" value="N_MY">United States</option>
+                                                                                        <option id="N_CANADA" name="Canada" value="N_CANADA">Canada</option>
+                                                                                        <option id="N_TRUNGQUOC" name="China" value="N_TRUNGQUOC">China</option>
+                                                                                        <option id="N_DUC" name="Germany" value="N_DUC">Germany</option>
+                                                                                        <option id="N_PHAP" name="France" value="N_PHAP">France</option>
+                                                                                        <option id="N_INDONEXIA" name="Indonesia" value="N_INDONEXIA">Indonesia</option>
+                                                                                        <option id="N_LAO" name="Lao PDR" value="N_LAO">Lao PDR</option>
+                                                                                        <option id="N_CAMPUCHIA" name="Cambodia" value="N_CAMPUCHIA">Cambodia</option>
+                                                                                        <option id="N_THAILAN" name="Thailand" value="N_THAILAN">Thailand</option>
+                                                                                        <option id="N_TAYBANNHA" name="Spain" value="N_TAYBANNHA">Spain</option>
+                                                                                        <option id="N_THONHIKI" name="Turkey" value="N_THONHIKI">Turkey</option>
+                                                                                        <option id="N_NHAT" name="Japan" value="N_NHAT">Japan</option>
+                                                                                        <option id="N_NGA" name="Russian Federation" value="N_NGA">Russian Federation</option>
+                                                                                        <option id="N_ITALIA" name="Italy" value="N_ITALIA">Italy</option>
+                                                                                        <option id="N_BRAZIN" name="Brazil" value="N_BRAZIN">Brazil</option>
+                                                                                        <option id="N_HANQUOC" name="Korea" value="N_HANQUOC">Korea</option>
+                                                                                        <option id="N_MALAIXIA" name="Malaysia" value="N_MALAIXIA">Malaysia</option>
+                                                                                        <option id="N_MEHICO" name="Mexico" value="N_MEHICO">Mexico</option>
+                                                                                        <option id="N_HALAN" name="Netherlands" value="N_HALAN">Netherlands</option>
+                                                                                        <option id="N_CONGGO" name="Congo" value="N_CONGGO">Congo</option>
+                                                                                        <option id="N_RUMANI" name="Romania" value="N_RUMANI">Romania</option>
+                                                                                        <option id="N_BI" name="Portugal" value="N_BI">Portugal</option>
+                                                                                        <option id="N_DANMACH" name="Denmark" value="N_DANMACH">Denmark</option>
+                                                                                        <option id="N_SEC" name="Czech Republic" value="N_SEC">Czech Republic</option>
+                                                                                        <option id="N_BRUNAY" name="Brunei Darussalam" value="N_BRUNAY">Brunei Darussalam</option>
+                                                                                        <option id="N_LIBI" name="Liberia" value="N_LIBI">Liberia</option>
+                                                                                        <option id="N_ANGHERI" name="Algeria" value="N_ANGHERI">Algeria</option>
+                                                                                        <option id="N_ARGENTINA" name="Argentina" value="N_ARGENTINA">Argentina</option>
+                                                                                        <option id="N_SINGAPO" name="Singapore" value="N_SINGAPO">Singapore</option>
+                                                                                        <option id="NORWAY" name="Norway" value="NORWAY">Norway</option>
+                                                                                        <option id="SWEDEN" name="Sweden" value="SWEDEN">Sweden</option>
+                                                                                        <option id="PH" name="Philippines" value="PH">Philippines</option>
+                                                                                        <option id="MM" name="Myanmar" value="MM">Myanmar</option>
+                                                                                        <option id="hk" name="Hong Kong" value="hk">Hong Kong</option>
+                                                                                        <option id="N_MONGOLIA" name="Mongolia" value="N_MONGOLIA">Mongolia</option>
+                                                                                        <option id="N_PANAMANIA" name="Panamania" value="N_PANAMANIA">Panamania</option>
+                                                                                        <option id="N_Oman" name="Oman" value="N_Oman">Oman</option>
+                                                                                    </select>
+                                                                                </div>
                                                                             </div>
-                                                                        </div>
+                                                                            <div class="col-md-8">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Chủ sở hữu: </label>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>  
+                                                                        
                                                                         <div class="row">
-                                                                            <div class="col-md-6">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/BI/nhom_cong_trinh_dd_gt.php'); ?>
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Năm đóng: <span class="text-danger">*</span></label>
+                                                                                    <select select2>
+                                                                                        <option>--- Chọn ---</option>
+                                                                                        <?php for ($i = 1945; $i <= 2020; $i++) {
+                                                                                            echo  '<option>'.$i.'</option>';
+                                                                                            }
+                                                                                        ?>
+                                                                                    </select>
+                                                                                </div>
                                                                             </div>
-                                                                             <div class="col-md-6">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/BI/cong_trinh.php'); ?>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <div class="col-md-6">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/BI/hang_muc_bao_hiem.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-6">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/BI/rui_ro_uot.php'); ?>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <div class="col-md-6">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/BI/ten_cong_trinh_du_an.php'); ?>
+                                                                            <div class="col-md-8">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Nơi đóng: </label>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
                                                                             </div>
                                                                         </div>
 
-                                                                        <div class="form-group">
-                                                                            <label for="">Danh sách người được bảo hiểm:</label>
-                                                                            <table class="table table-bordered datatable" datatable-tab data-paging="false" data-info="false" data-ordering="false" data-searching="false">
-                                                                                <thead>
-                                                                                    <tr>
-                                                                                        <th class="w1p">STT</th>
-                                                                                        <th>Người được bh</th>
-                                                                                        <th>Địa chỉ</th>
-                                                                                        <th class="w15p">Số tiền bảo hiểm</th>
-                                                                                    </tr>
-                                                                                </thead>
-                                                                                <tbody>
-                                                                                    <tr>
-                                                                                        <td><b>1.</b></td>
-                                                                                        <td><input type="text" class="form-control" placeholder="" value=""></td>
-                                                                                        <td><input type="text" class="form-control" placeholder="" value=""></td>
-                                                                                        <td><input type="text" class="form-control input-money text-right" placeholder="0" value=""></td>
-                                                                                    </tr>
-                                                                                </tbody>
-                                                                            </table>
-                                                                            <div class="border p-1 text-center">
-                                                                                <button type="button" class="btn bg-primary" data-toggle="modal" data-target="#ds_cac_khach_hang">Chọn</button>
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Vật liệu đóng: </label>
+                                                                                    <select select2>
+                                                                                        <option>--- Chọn ---</option>
+                                                                                        <option>Vỏ thép</option>
+                                                                                        <option>Vỏ gỗ</option>
+                                                                                        <option>Vật liệu PPC</option>
+                                                                                        <option>Vỏ nhôm</option>
+                                                                                        <option>Sợi thủy tinh</option>
+                                                                                        <option>Sợi carbon</option>
+                                                                                        <option>Vật liệu khác</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Dung tích: <span class="text-danger">*</span></label>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Trọng tải: <span class="text-danger">*</span></label>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
                                                                             </div>
                                                                         </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Loại tàu: <span class="text-danger">*</span></label>
+                                                                                    <select select2>
+                                                                                        <option>--- Chọn ---</option>
+                                                                                        <option>Tàu chở hàng tổng hợp</option>
+                                                                                        <option>Tàu chở container</option>
+                                                                                        <option>Tàu kéo</option>
+                                                                                        <option>Tàu lai dắt</option>
+                                                                                        <option>Tàu khác</option>
+                                                                                        <option>Tàu chở dầu</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Cấp tàu:</label>
+                                                                                    <select select2>
+                                                                                        <option >--- Chọn ---</option>
+                                                                                        <option>Hạn chế I</option>
+                                                                                        <option>Hạn chế II</option>
+                                                                                        <option>Hạn chế III</option>
+                                                                                        <option>Tàu SB</option>
+                                                                                        <option>Tàu sông</option>
+                                                                                        <option>Khác</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Công suất máy: </label>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-8">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Vùng hoạt động: <span class="text-danger">*</span></label>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-md-2">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Giá trị tàu: </label>
+                                                                                    <input type="text" class="form-control input-money text-right" placeholder="0">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-2">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Vỏ tàu:</label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="text" class="form-control input-float text-right" placeholder="0" value="">
+                                                                                        <span class="input-group-append">
+                                                                                            <span class="input-group-text">%</span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-2">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Máy móc:</label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="text" class="form-control input-float text-right" placeholder="0" value="">
+                                                                                        <span class="input-group-append">
+                                                                                            <span class="input-group-text">%</span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-2">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Thiết bị:</label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="text" class="form-control input-float text-right" placeholder="0" value="">
+                                                                                        <span class="input-group-append">
+                                                                                            <span class="input-group-text">%</span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-2">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Số lượng thuyền viên: </label>
+                                                                                    <input type="text" class="form-control input-number" placeholder="0">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-2">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Số IMO:</label>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-2">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Số đăng ký:</label>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        
                                                                         
                                                                     </fieldset>
                                                                     
@@ -132,26 +318,7 @@
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group ">
-                                                                                    <label>Thời gian bảo hành: </label>
-                                                                                    <div class="input-group">
-                                                                                        <input type="text" class="form-control input-month"placeholder="Nhập thời hạn..." value="">
-                                                                                        <span class="input-group-append">
-                                                                                            <span class="input-group-text">Tháng</span>
-                                                                                        </span>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <div class="row">
-                                                                                    <div class="col-md-2">
-                                                                                        <?php inc('template/3_doi_tuong_bao_hiem/BI/gioi_han_ve_nguoi.php'); ?>
-                                                                                    </div>
-                                                                                </div>
                                                                                 <div class="form-group">
                                                                                     <table class="table table-bordered datatable" 
                                                                                         data-paging="false"
@@ -173,12 +340,7 @@
                                                                                         </thead>
                                                                                         <tbody>
                                                                                             <tr>
-                                                                                                <td>
-                                                                                                    <select select2>
-                                                                                                        <option value="">Tổn thất vật chất</option>
-                                                                                                        <option value="">Tổn thất vật chất bắt buộc</option>
-                                                                                                    </select>
-                                                                                                </td>
+                                                                                                <td>1. Thân tàu</td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
@@ -188,44 +350,15 @@
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td>
                                                                                                     <select class="form-control" select2 >
-                                                                                                        <option>CTDD-Giá trị bảo hiểm ≤ 50 tỷ</option>
-                                                                                                        <option>CTDD-50 tỷ &lt; Giá trị bảo hiểm ≤ 75 tỷ</option>
-                                                                                                        <option>CTDD-75 tỷ &lt; Giá trị bảo hiểm ≤ 100 tỷ</option>
-                                                                                                        <option>CTDD-100 tỷ &lt; Giá trị bảo hiểm &lt; 650 tỷ</option>
-                                                                                                        <option>CTDD-650 tỷ ≤ Giá trị bảo hiểm &lt; 1000 tỷ</option>
-                                                                                                        <option>CTDD- 1000 tỷ ≤ Giá trị bảo hiểm ≤ 4000 tỷ</option>
-                                                                                                        <option>CTDD-Giá trị bảo hiểm lớn hơn 4000 tỷ</option>
-                                                                                                        <option>CTCNGT-Giá trị bảo hiểm &lt; 500 tỷ</option>
-                                                                                                        <option>CTCNGT-500 tỷ ≤ Giá trị bảo hiểm &lt; 1000 tỷ</option>
-                                                                                                        <option>CTCNGT-1000 tỷ ≤ Giá trị bảo hiểm ≤ 3000 tỷ</option>
-                                                                                                        <option>CTCNGT-Giá trị bảo hiểm trên 3000 tỷ</option>
+                                                                                                        <option>Tàu từ 1-15 tuổi</option>
+                                                                                                        <option >Tàu từ 16-25 tuổi</option>
+                                                                                                        <option>Trên 25 tuổi, BH tổn thất toàn bộ</option>
                                                                                                     </select>
                                                                                                 </td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <td>TNDS bên thứ 3</td>
+                                                                                                <td>2. TNDS (P and I fixed)</td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                <td></td>
-                                                                                                <td></td>
-                                                                                                <td></td>
-                                                                                                <td></td>
-                                                                                                <td></td>
-                                                                                                <td></td>
-                                                                                                <td></td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>&nbsp;a. Về người</td>
-                                                                                                <td>
-                                                                                                    <div class="">
-                                                                                                        <label style="font-size: 12px;font-weight: 500;">Số tiền / người:</label>
-                                                                                                        <input class="form-control text-right input-money" type="text" placeholder="0">
-                                                                                                    </div>
-                                                                                                    <hr>
-                                                                                                    <div class="">
-                                                                                                        <label style="font-size: 12px;font-weight: 500;">Tổng số tiền / số người tối đa:</label>
-                                                                                                        <input class="form-control text-right input-money" type="text" placeholder="0">
-                                                                                                    </div>
-                                                                                                </td>
                                                                                                 <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
@@ -234,36 +367,13 @@
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td>
                                                                                                     <select class="form-control" select2 >
-                                                                                                        <option>CTDD-Giá trị bảo hiểm ≤ 50 tỷ</option>
-                                                                                                        <option>CTDD-50 tỷ &lt; Giá trị bảo hiểm ≤ 75 tỷ</option>
-                                                                                                        <option>CTDD-75 tỷ &lt; Giá trị bảo hiểm ≤ 100 tỷ</option>
-                                                                                                        <option>CTDD-100 tỷ &lt; Giá trị bảo hiểm &lt; 650 tỷ</option>
-                                                                                                        <option>CTDD-650 tỷ ≤ Giá trị bảo hiểm &lt; 1000 tỷ</option>
-                                                                                                        <option>CTDD- 1000 tỷ ≤ Giá trị bảo hiểm ≤ 4000 tỷ</option>
-                                                                                                        <option>CTDD-Giá trị bảo hiểm lớn hơn 4000 tỷ</option>
-                                                                                                        <option>CTCNGT-Giá trị bảo hiểm &lt; 500 tỷ</option>
-                                                                                                        <option>CTCNGT-500 tỷ ≤ Giá trị bảo hiểm &lt; 1000 tỷ</option>
-                                                                                                        <option>CTCNGT-1000 tỷ ≤ Giá trị bảo hiểm ≤ 3000 tỷ</option>
-                                                                                                        <option>CTCNGT-Giá trị bảo hiểm trên 3000 tỷ</option>
+                                                                                                        <option>P and I ( phần tăng thêm so với phí hội)</option>
                                                                                                     </select>
                                                                                                 </td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <td>&nbsp;b. Về tài sản</td>
-                                                                                                <td>
-                                                                                                    <div class="">
-                                                                                                        <label style="font-size: 12px;font-weight: 500;">Số tiền / vụ:</label>
-                                                                                                        <input class="form-control text-right input-money" type="text" placeholder="0">
-                                                                                                    </div>
-                                                                                                    <hr>
-                                                                                                    <div class="">
-                                                                                                        <label style="font-size: 12px;font-weight: 500;">
-                                                                                                            Tổng số tiền / tất cả các vụ: 
-                                                                                                            <a href="#" data-tooltip="tipsy" original-title="Tổng số tiền / tất cả các vụ trong thời hạn của hợp đồng" data-position="top"><i class="icon-info22"></i></a>
-                                                                                                        </label>
-                                                                                                        <input class="form-control text-right input-money" type="text" placeholder="0">
-                                                                                                    </div>
-                                                                                                </td>
+                                                                                                <td>3. Tai nạn thuyền viên</td>
+                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
@@ -272,17 +382,7 @@
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td>
                                                                                                     <select class="form-control" select2 >
-                                                                                                        <option>CTDD-Giá trị bảo hiểm ≤ 50 tỷ</option>
-                                                                                                        <option>CTDD-50 tỷ &lt; Giá trị bảo hiểm ≤ 75 tỷ</option>
-                                                                                                        <option>CTDD-75 tỷ &lt; Giá trị bảo hiểm ≤ 100 tỷ</option>
-                                                                                                        <option>CTDD-100 tỷ &lt; Giá trị bảo hiểm &lt; 650 tỷ</option>
-                                                                                                        <option>CTDD-650 tỷ ≤ Giá trị bảo hiểm &lt; 1000 tỷ</option>
-                                                                                                        <option>CTDD- 1000 tỷ ≤ Giá trị bảo hiểm ≤ 4000 tỷ</option>
-                                                                                                        <option>CTDD-Giá trị bảo hiểm lớn hơn 4000 tỷ</option>
-                                                                                                        <option>CTCNGT-Giá trị bảo hiểm &lt; 500 tỷ</option>
-                                                                                                        <option>CTCNGT-500 tỷ ≤ Giá trị bảo hiểm &lt; 1000 tỷ</option>
-                                                                                                        <option>CTCNGT-1000 tỷ ≤ Giá trị bảo hiểm ≤ 3000 tỷ</option>
-                                                                                                        <option>CTCNGT-Giá trị bảo hiểm trên 3000 tỷ</option>
+                                                                                                        <option>Tai nạn thuyền viên</option>
                                                                                                     </select>
                                                                                                 </td>
                                                                                             </tr>
@@ -366,11 +466,15 @@
                                                                                                 <td class="text-right">0</td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <td>Tổn thất vật chất</td>
+                                                                                                <td>1. Thân tàu</td>
                                                                                                 <td class="text-right">0</td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <td>TNDS bên thứ 3</td>
+                                                                                                <td>2. TNDS (P and I fixed)</td>
+                                                                                                <td class="text-right">0</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>3. Tai nạn thuyền viên</td>
                                                                                                 <td class="text-right">0</td>
                                                                                             </tr>
                                                                                             
