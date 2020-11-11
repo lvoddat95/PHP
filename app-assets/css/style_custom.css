@@ -56,10 +56,6 @@ a, area, button, input, label, select, textarea, [tabindex] {
     z-index: 111;
 }
 
-body:not(.sidebar-xs) .sidebar{
-    overflow-y: scroll;
-}
-
 .content {
     padding: 15px 15px 40px;
 }

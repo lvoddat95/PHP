@@ -39,11 +39,11 @@ var App = function () {
         // If sidebar is resized by default
         if($('body').hasClass('sidebar-xs')) {
             revertBottomMenus();
+        }else{
+            var ps;
+            if (ps) ps.destroy();
+            ps = new PerfectScrollbar('#main-nav');
         }
-
-        var ps;
-        if (ps) ps.destroy();
-        ps = new PerfectScrollbar('#main-nav');
 
         // Toggle min sidebar class
         $('.sidebar-main-toggle').on('click', function (e) {
