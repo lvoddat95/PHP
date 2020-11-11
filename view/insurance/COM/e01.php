@@ -173,12 +173,7 @@
                                                                             <div class="col-md-12">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php'); ?>
                                                                             </div>
-                                                                            <div class="col-md-6">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/thong_tin_ve_thoi_han_thanh_toan.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-6">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/thanh_toan_tai_ngan_hang.php'); ?>
-                                                                            </div>
+                                                                            
                                                                             <div class="col-md-12">
                                                                                 <div class="form-group">
                                                                                     <table class="table table-bordered datatable" 
@@ -275,6 +270,15 @@
                                                                             </div>
                                                                             <div class="col-md-6">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/quy_tac_bao_hiem.php'); ?>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-6">
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/thong_tin_ve_thoi_han_thanh_toan.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/thanh_toan_tai_ngan_hang.php'); ?>
                                                                             </div>
                                                                         </div>
 
