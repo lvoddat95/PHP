@@ -68,6 +68,8 @@
         background: transparent;
     }
     .page-content:not(.login-page) .content-wrapper{
+        left: 0;
+        max-width: 100%;
         border-radius: 0px;
     }
     .page-content:not(.login-page) .content-wrapper::before {

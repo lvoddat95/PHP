@@ -329,7 +329,7 @@
 .sidebar ul li.nav-item>a {
     border-radius: 30px;
 }
-
+.sidebar-xs .sidebar ul li.nav-item-open > a,
 .sidebar ul li.nav-item a:not(.active):hover {
     background: rgba(255, 255, 255, .1) !important;
 }
@@ -444,7 +444,7 @@
         top: 5px;
         opacity: 0;
     }
-
+    .sidebar-xs .sidebar ul.nav-sidebar>li.nav-item-open>a:after,
     .sidebar-xs .sidebar ul.nav-sidebar>li.nav-item-submenu:hover>a:after{
         opacity: 1;
     }

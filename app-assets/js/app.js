@@ -41,11 +41,22 @@ var App = function () {
             revertBottomMenus();
         }
 
+        var ps;
+        if (ps) ps.destroy();
+        ps = new PerfectScrollbar('#main-nav');
+
         // Toggle min sidebar class
         $('.sidebar-main-toggle').on('click', function (e) {
             e.preventDefault();
+            $('body').toggleClass('sidebar-xs');
 
-            $('body').toggleClass('sidebar-xs').removeClass('sidebar-mobile-main');
+            if($('body').hasClass('sidebar-xs')) {
+                if (ps) ps.destroy();
+                ps = null;
+            }else{
+                if (ps) ps.destroy();
+                ps = new PerfectScrollbar('#main-nav');
+            }
            
             revertBottomMenus();
         });
@@ -97,8 +108,6 @@ var App = function () {
             $('body').removeClass('sidebar-mobile-main');
         });
 
-
-        
         if($('#main-nav').length > 0) {
             if (typeof hcOffcanvasNav == 'undefined') {
                 console.warn('Warning - hcOffcanvasNav Js is not loaded.');
@@ -639,8 +648,11 @@ var App = function () {
                 return;
             }
             $('[scrollbar]').each(function(){ 
-                const ps = new PerfectScrollbar($(this)[0]); 
+                const ps = new PerfectScrollbar($(this)[0],{
+                    suppressScrollX: true
+                }); 
             });
+            
         }
     }
 
