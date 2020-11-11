@@ -67,6 +67,12 @@
         <div class="col-md-3">
             <?php inc('template/1_thong_tin_chung/ngay_cap.php'); ?>
         </div>
+        
+        <?php if (!empty($GLOBALS["1_thong_tin_chung"]) && $GLOBALS["1_thong_tin_chung"] == 'ngay_ki_don') : ?>
+            <div class="col-md-3">
+                <?php inc('template/1_thong_tin_chung/ngay_ki_don.php'); ?>
+            </div>
+        <?php endif; ?>
     </div>
     <div class="row">
         <div class="col-md-3">

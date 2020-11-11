@@ -4,7 +4,9 @@
 <?php $GLOBALS["can_bo_ki_don"] = 'hide'; ?>
 <?php $GLOBALS["dieu_kien_bao_hiem"] = 'modal'; ?>
 <?php $GLOBALS["dieu_kien_bao_hiem_b05"] = 'b05'; ?>
-    
+<?php $GLOBALS["1_thong_tin_chung"] = 'ngay_ki_don'; ?>
+<?php $GLOBALS["ngay_cap"] = 'to_day'; ?>
+
     <body class="sidebar-xs">
 
         <div class="page-content home-page">
