@@ -11,7 +11,7 @@
                 <tr>
                     <th class="w20p">Tỉ lệ phí (%)</th>
                     <th class="">Số tiền bảo hiểm</th>
-                    <th class="">Phí</th>
+                    <th class="">Phí bảo hiểm</th>
                 </tr>
             </thead>
             <tbody>

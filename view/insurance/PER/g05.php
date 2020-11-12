@@ -296,7 +296,7 @@
                                                                                                     <td>1. Phạm vi A (Chết do mọi nguyên nhân)</td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                    <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
+                                                                                                    <td><input class="form-control text-right input-float" type="text" value="10"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" value="0"></td>
                                                                                                     <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
@@ -311,7 +311,7 @@
                                                                                                     <td>2. Phạm vi B (Thương tật thân thể do tai nạn)</td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                    <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
+                                                                                                    <td><input class="form-control text-right input-float" type="text" value="10"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" value="0"></td>
                                                                                                     <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
@@ -326,7 +326,7 @@
                                                                                                     <td>3. Phạm vi C (Phẫu thuật do ốm đau bệnh tật)</td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                    <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
+                                                                                                    <td><input class="form-control text-right input-float" type="text" value="10"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" value="0"></td>
                                                                                                     <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
@@ -341,7 +341,7 @@
                                                                                                     <td>4. Phạm vi D (Nằm viện do ốm đau, bệnh tật, thương tật thân thể do tai nạn)</td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                    <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
+                                                                                                    <td><input class="form-control text-right input-float" type="text" value="10"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" value="0"></td>
                                                                                                     <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>

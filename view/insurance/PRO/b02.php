@@ -6,6 +6,7 @@
 <?php $GLOBALS["dieu_kien_bao_hiem_b02"] = 'b02'; ?>
 <?php $GLOBALS["1_thong_tin_chung"] = 'ngay_ki_don'; ?>
 <?php $GLOBALS["ngay_cap"] = 'to_day'; ?>
+<?php $GLOBALS["loai_mien_thuong"] = 'repeater'; ?>
 
     <body class="sidebar-xs">
 
@@ -121,7 +122,7 @@
                                                                                                 <td></td>
                                                                                                 <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
+                                                                                                <td><input class="form-control text-right" type="text" value="10"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" value="0"></td>
                                                                                                 <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
@@ -155,7 +156,7 @@
                                                                                                 <td></td>
                                                                                                 <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
+                                                                                                <td><input class="form-control text-right input-float" type="text" value="10"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" value="0"></td>
                                                                                                 <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
@@ -189,7 +190,7 @@
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                <td><input class="form-control text-right" disabled="disabled" readonly="readonly" type="text" value="10"></td>
+                                                                                                <td><input class="form-control text-right input-float" type="text" value="10"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" value="0"></td>
                                                                                                 <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
