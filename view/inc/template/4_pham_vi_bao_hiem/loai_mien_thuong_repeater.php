@@ -29,8 +29,8 @@
                         </td>
                         <td>
                             <div class="d-flex">
-                                <input type="text" class="form-control input-money" name="" placeholder="0" value="">
-                                <select select2 data-container-css-class="bg-primary">
+                                <input type="text" class="form-control col-content-xs input-money mr-1" name="" placeholder="0" value="">
+                                <select select2 data-container-css-class="">
                                     <option value="">triệu đồng / vụ</option>
                                     <option value="">ngày làm việc</option>
                                 </select>
