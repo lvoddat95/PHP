@@ -33,26 +33,25 @@ $(function(){
     }
 
     if ($('.collapse-group').length > 0) {
-        $('.cls_ckb').each(function (index) {
-            var v_check = $(this).parent().next().hasClass('collapsed');
-            if (v_check) {
-                $(this).attr('checked', false);
-                $(this).closest('.c-item').removeClass('open');
-            } else {
-                $(this).attr('checked', true);
-                $(this).closest('.c-item').addClass('open');
-            }
+        $('.cls_ckb').each(function (index, obj) {
+            var v_type_radio = $(this).closest('.c-item.radio').find('[datatable-collapse]');
+
             $(this).change(function () {
+                $this = $(this);
                 $(this).parent().next().trigger("click");
-                var v_check = $(this).parent().next().hasClass('collapsed');
-                if (v_check) {
-                    $(this).closest('.c-item').removeClass('open');
-                } else {
-                    $(this).closest('.c-item').addClass('open');
-                }
+       
+                $( v_type_radio ).on("shown.bs.collapse", function(e) {
+                    $(e.currentTarget).parent().siblings('.c-item.radio').find('[datatable-collapse]').collapse('hide');
+                    $(e.currentTarget).parent().siblings('.c-item.radio').find('.button-switch > input').prop( "checked", false );
+                });
+
+
             });
+
         });
     }
+
+
 
     if( $('.chat-box').length > 0 ){
         $(".chat-circle").click(function() {    

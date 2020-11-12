@@ -149,10 +149,11 @@
                                                                                 <div class="collapse-group">
                                                                                     <div class="p-title">Phạm vi bảo hiểm: <a href="#" data-tooltip="tipsy" original-title="Chỉ có thể chọn Tổn thất vật chất tự nguyện hoặc Tổn thất vật chất bắt buộc" data-position="top"><i class="icon-info22"></i></a></div>
                                                                                     <div class="p-body collapse show">
-                                                                                        <div class="c-item">
+
+                                                                                        <div class="c-item radio">
                                                                                             <div class="c-title">
                                                                                                 <span class="button-switch no-label">
-                                                                                                    <input type="checkbox" id="ckbchild1" class="switch cls_ckb">
+                                                                                                    <input type="checkbox" data-type-radio id="ckbchild1" class="switch cls_ckb">
                                                                                                     <label for="ckbchild1" data-off="Không" data-on="Có"></label>
                                                                                                 </span>
                                                                                                 <a data-toggle="collapse" class="collapsed" href="#collapsible-item1">Tổn thất vật chất tự nguyện</a>
@@ -210,10 +211,11 @@
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div class="c-item">
+
+                                                                                        <div class="c-item radio">
                                                                                             <div class="c-title">
                                                                                                 <span class="button-switch no-label">
-                                                                                                    <input type="checkbox" id="ckbchild2" class="switch cls_ckb">
+                                                                                                    <input type="checkbox" data-type-radio id="ckbchild2" class="switch cls_ckb">
                                                                                                     <label for="ckbchild2" data-off="Không" data-on="Có"></label>
                                                                                                 </span>
                                                                                                 <a class="collapsed " data-toggle="collapse" href="#collapsible-item2">Tổn thất vật chất bắt buộc</a>
@@ -269,7 +271,8 @@
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div class="c-item">
+
+                                                                                        <div class="c-item ">
                                                                                             <div class="c-title">
                                                                                                 <span class="button-switch no-label">
                                                                                                     <input type="checkbox" id="ckbchild3" class="switch cls_ckb">
