@@ -147,7 +147,7 @@
                                                                         <div class="row">
                                                                             <div class="col-md-12">
                                                                                 <div class="collapse-group">
-                                                                                    <div class="p-title">Phạm vi bảo hiểm:</div>
+                                                                                    <div class="p-title">Phạm vi bảo hiểm: <a href="#" data-tooltip="tipsy" original-title="Chỉ có thể chọn Tổn thất vật chất tự nguyện hoặc Tổn thất vật chất bắt buộc" data-position="top"><i class="icon-info22"></i></a></div>
                                                                                     <div class="p-body collapse show">
                                                                                         <div class="c-item">
                                                                                             <div class="c-title">
