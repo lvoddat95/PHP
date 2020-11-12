@@ -1,4 +1,4 @@
 <div class="form-group">
-	<label>Địa điểm/lộ trình/giới hạn lãnh thổ: </label>
+	<label>Địa điểm/Lộ trình/Lãnh thổ và Tài phán: </label>
 	<textarea name="" type="time" class="form-control" placeholder="Nhập thông tin..."></textarea>
 </div>

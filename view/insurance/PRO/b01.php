@@ -3,7 +3,7 @@
 <?php $GLOBALS["trach_nhiem_dong_bao_hiem"] = 'trach-nhiem-dong-bao-hiem'; ?>
 <?php $GLOBALS["can_bo_ki_don"] = 'hide'; ?>
 <?php $GLOBALS["dieu_kien_bao_hiem"] = 'modal'; ?>
-<?php $GLOBALS["loai_mien_thuong_pro"] = 'repeater'; ?>
+<?php $GLOBALS["loai_mien_thuong"] = 'repeater'; ?>
 <?php $GLOBALS["1_thong_tin_chung"] = 'ngay_ki_don'; ?>
 <?php $GLOBALS["ngay_cap"] = 'today'; ?>
     
@@ -245,19 +245,6 @@
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/tong_tien_hoa_hong_moi_gioi.php'); ?>
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <div class="form-group ">
-                                                                                    <label>Loại miễn thường: </label>
-                                                                                    <select class="form-control" select2 disabled>
-                                                                                        <option value="">--- Chọn mức miễn thường ---</option>
-                                                                                        <option value="1" selected>Có khấu trừ</option>
-                                                                                        <option value="0">Không có khấu trừ</option>
-                                                                                    </select>
-                                                                                </div>
                                                                             </div>
                                                                         </div>
 
