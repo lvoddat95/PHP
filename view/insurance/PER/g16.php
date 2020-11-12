@@ -327,45 +327,22 @@
 
                                                                         <div class="block">
                                                                             <p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Thông tin người thụ hưởng</p>
-                                                                            <div class="row">
-                                                                                <div class="col-md-3">
-                                                                                    <div class="form-group">
-                                                                                        <label>Người thụ hưởng 1: </label>
-                                                                                        <input type="text" class="form-control">
+                                                                            <div class="form-group">
+                                                                                <label>Người được thụ hưởng: </label>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-3 col-sm-3">
+                                                                                        <input type="text" class="form-control required" placeholder="Nhập tên...">
                                                                                     </div>
-                                                                                </div>
-                                                                                <div class="col-md-9">
-                                                                                    <div class="form-group">
-                                                                                        <label>Địa chỉ: </label>
-                                                                                        <input type="text" class="form-control">
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-md-3">
-                                                                                    <div class="form-group ">
-                                                                                        <label>Người thụ hưởng 2: </label>
-                                                                                        <input type="text" class="form-control">
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-md-3">
-                                                                                    <div class="form-group ">
-                                                                                        <label>Địa chỉ: </label>
-                                                                                        <input type="text" class="form-control">
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-md-3">
-                                                                                    <div class="form-group ">
-                                                                                        <label>Quan hệ: </label>
-                                                                                        <input type="text" class="form-control">
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-md-3">
-                                                                                    <div class="form-group ">
-                                                                                        <label>CMTND/HC: </label>
-                                                                                        <input type="text" class="form-control">
+                                                                                    <div class="col-md-9 col-sm-9">
+                                                                                        <div class="input-group">
+                                                                                            <input type="text" class="form-control required" placeholder="Nhập địa chỉ..." >
+                                                                                            <span class="input-group-append">
+                                                                                                <button type="button" class="btn bg-primary" data-fancybox data-base-class="fancybox-container-lg" data-type="iframe" data-src="<?php echo HTTP_PATH; ?>view/inc/iframe/iframe_ds_khach_hang.php" href="javascript:;">Chọn</button>
+                                                                                            </span>
+                                                                                        </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                        </div>
                                                                     </fieldset>
                                                                     
                                                                     <!-- Step 4 -->

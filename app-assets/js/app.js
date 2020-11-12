@@ -35,14 +35,16 @@ var App = function () {
                 }
             });
         }
-
+        if ( $('#main-nav').length > 0 ) {
+            var ps = new PerfectScrollbar('#main-nav', {
+                wheelPropagation: true
+            });
+        }
         // If sidebar is resized by default
         if($('body').hasClass('sidebar-xs')) {
             revertBottomMenus();
-        }else{
-            var ps;
             if (ps) ps.destroy();
-            ps = new PerfectScrollbar('#main-nav');
+            ps = null;
         }
 
         // Toggle min sidebar class
@@ -55,7 +57,11 @@ var App = function () {
                 ps = null;
             }else{
                 if (ps) ps.destroy();
-                ps = new PerfectScrollbar('#main-nav');
+                if ( $('#main-nav').length > 0 ) {
+                    ps = new PerfectScrollbar('#main-nav', {
+                        wheelPropagation: true
+                    });
+                }
             }
            
             revertBottomMenus();
