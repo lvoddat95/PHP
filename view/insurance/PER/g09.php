@@ -163,7 +163,7 @@
 
                                                                         <hr class="border-dashed border-silver mb-3">
                                                                         <div class="form-group" repeater>
-                                                                            <table class="table table-bordered datatable child-row-sm" data-control-right="true" data-paging="false" data-info="false" data-ordering="false" data-searching="false" >
+                                                                            <table class="table table-sm table-bordered datatable child-row-sm" data-control-right="true" data-paging="false" data-info="false" data-ordering="false" data-searching="false" >
                                                                                 <thead class="thead-light">
                                                                                     <tr>
                                                                                         <th rowspan="2" class="cell control not-desktop text-center">
