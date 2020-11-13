@@ -144,7 +144,7 @@
                                                                     <?php inc('template/2_trung_gian_bao_hiem/2_trung_gian_bao_hiem.php'); ?>
                                                                 
                                                                     <!-- Step 3 -->
-                                                                    <fieldset class="tab-pane mlr-100" id="step3">
+                                                                    <fieldset class="tab-pane" id="step3">
 
                                                                         <p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Upload thông tin danh sách người tham gia bảo hiểm</p>
 
@@ -170,7 +170,7 @@
                                                                                             <i class="fa fa-ellipsis-v"></i>
                                                                                         </th>
                                                                                         <th rowspan="2" class="w1p text-center"><input type="checkbox" id="input-chk-all"></th>
-                                                                                        <th rowspan="2" class="w12p"><span class="text-danger">*</span> Người được BH</th>
+                                                                                        <th rowspan="2" class="w9p"><span class="text-danger">*</span> Người được BH</th>
                                                                                         <th rowspan="2" class="none"><span class="text-danger">*</span> Ngày sinh</th>
                                                                                         <th rowspan="2" class="none">Địa chỉ</th>
                                                                                         <th rowspan="2" class="none">Email/Số điện thoại</th>
