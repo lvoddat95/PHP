@@ -169,14 +169,14 @@
                                                                                     <tr>
                                                                                         <th class="w1p all text-center"><input type="checkbox" id="input-chk-all"></th>
                                                                                         <th class="w15p"><span class="text-danger">*</span> Người được BH</th>
-                                                                                        <th class="desktop">Địa chỉ</th>
-                                                                                        <th class="desktop">Lịch trình</th>
-                                                                                        <th class="desktop">Ngày đi</th>
-                                                                                        <th class="desktop">Ngày về</th>
-                                                                                        <th class="desktop">Chương trình</th>
-                                                                                        <th class="desktop">Loại CT</th>
-                                                                                        <th class="w10p not-mobile">Giá trị BH</th>
-                                                                                        <th class="w10p">Phí BH</th>
+                                                                                        <th class="none">Địa chỉ</th>
+                                                                                        <th class="desktop"><span class="text-danger">*</span> Lịch trình</th>
+                                                                                        <th class="desktop"><span class="text-danger">*</span> Ngày đi</th>
+                                                                                        <th class="desktop"><span class="text-danger">*</span> Ngày về</th>
+                                                                                        <th class="none"><span class="text-danger">*</span> Chương trình</th>
+                                                                                        <th class="none"><span class="text-danger">*</span> Loại CT</th>
+                                                                                        <th class="w10p not-mobile"><span class="text-danger">*</span> Giá trị BH</th>
+                                                                                        <th class="w10p"><span class="text-danger">*</span> Phí BH</th>
                                                                                         <th class="w1p"></th>
                                                                                     </tr>
                                                                                     
@@ -185,12 +185,38 @@
                                                                                     <tr data-repeater-item>
                                                                                         <td class="text-center"><b class="item-level">1.</b> <input type="checkbox" class="input-chk"></td></td>
                                                                                         <td><input class="form-control" type="text"></td>
-                                                                                        <td><input class="form-control" type="text"></td>
-                                                                                        <td><input class="form-control" type="text"></td>
+                                                                                        <td><input class="form-control col-content-xl" type="text"></td>
+                                                                                        <td>
+                                                                                            <div class="col-content-md">
+                                                                                                <select select2>
+                                                                                                    <option value="">--- Chọn ---</option>
+                                                                                                    <option value="">Các nước Đông Nam Á</option>
+                                                                                                    <option value="">Châu Á</option>
+                                                                                                    <option value="">Toàn cầu</option>
+                                                                                                </select>
+                                                                                            </div>
+                                                                                        </td>
                                                                                         <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
                                                                                         <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
-                                                                                        <td><input class="form-control" type="text"></td>
-                                                                                        <td><input class="form-control" type="text"></td>
+                                                                                        <td>
+                                                                                            <div class="col-content-md">
+                                                                                                <select select2>
+                                                                                                    <option value="">--- Chọn ---</option>
+                                                                                                    <option value="">Chương trình A</option>
+                                                                                                    <option value="">Chương trình B</option>
+                                                                                                    <option value="">Chương trình C</option>
+                                                                                                </select>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="col-content-md">
+                                                                                                <select select2>
+                                                                                                    <option value="">--- Chọn ---</option>
+                                                                                                    <option value="">Cá nhân</option>
+                                                                                                    <option value="">Gia đình</option>
+                                                                                                </select>
+                                                                                            </div>
+                                                                                        </td>
                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text"></td>
                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text"></td>
                                                                                         <td class="text-center">

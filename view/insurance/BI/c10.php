@@ -240,10 +240,6 @@
                                                                                         </thead>
                                                                                         <tbody>
                                                                                             <tr>
-                                                                                                <td>Số tiền giảm miễn thường</td>
-                                                                                                <td class="text-right">0</td>
-                                                                                            </tr>
-                                                                                            <tr>
                                                                                                 <td>Mọi rủi ro trong công nghiệp</td>
                                                                                                 <td class="text-right">0</td>
                                                                                             </tr>

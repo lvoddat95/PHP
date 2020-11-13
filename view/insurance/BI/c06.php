@@ -240,10 +240,6 @@
                                                                                         </thead>
                                                                                         <tbody>
                                                                                             <tr>
-                                                                                                <td>Số tiền giảm miễn thường</td>
-                                                                                                <td class="text-right">0</td>
-                                                                                            </tr>
-                                                                                            <tr>
                                                                                                 <td>Mất lợi nhuận do đổ vỡ máy móc </td>
                                                                                                 <td class="text-right">0</td>
                                                                                             </tr>

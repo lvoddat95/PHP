@@ -455,10 +455,6 @@
                                                                                         </thead>
                                                                                         <tbody>
                                                                                             <tr>
-                                                                                                <td>Số tiền giảm miễn thường</td>
-                                                                                                <td class="text-right">0</td>
-                                                                                            </tr>
-                                                                                            <tr>
                                                                                                 <td>Tổn thất vật chất</td>
                                                                                                 <td class="text-right">0</td>
                                                                                             </tr>

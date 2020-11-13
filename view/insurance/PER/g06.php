@@ -170,12 +170,12 @@
                                                                                         <th class="w1p all text-center"><input type="checkbox" id="input-chk-all"></th>
                                                                                         <th class="w15p"><span class="text-danger">*</span> Người được BH</th>
                                                                                         <th class="desktop">Địa chỉ</th>
-                                                                                        <th class="desktop">Lịch trình</th>
-                                                                                        <th class="desktop">Ngày đi</th>
-                                                                                        <th class="desktop">Ngày về</th>
-                                                                                        <th class="desktop">Độ dài chuyến đi</th>
-                                                                                        <th class="w10p not-mobile">Giá trị bảo hiểm</th>
-                                                                                        <th class="w10p not-mobile">Tỷ lệ phí/ Ngày</th>
+                                                                                        <th class="desktop"><span class="text-danger">*</span> Lịch trình</th>
+                                                                                        <th class="desktop"><span class="text-danger">*</span> Ngày đi</th>
+                                                                                        <th class="desktop"><span class="text-danger">*</span> Ngày về</th>
+                                                                                        <th class="desktop"><span class="text-danger">*</span> Độ dài chuyến đi</th>
+                                                                                        <th class="w10p not-mobile"><span class="text-danger">*</span> Giá trị bảo hiểm</th>
+                                                                                        <th class="w10p not-mobile"><span class="text-danger">*</span> Tỷ lệ phí/ Ngày</th>
                                                                                         <th class="w10p">Phí bảo hiểm/ Người</th>
                                                                                         <th class="w1p"></th>
                                                                                     </tr>

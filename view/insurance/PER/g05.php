@@ -172,11 +172,16 @@
                                                                                         </th>
                                                                                         <th rowspan="2" class="w1p text-center"><input type="checkbox" id="input-chk-all"></th>
                                                                                         <th rowspan="2" class="w15p"><span class="text-danger">*</span> Tên học sinh</th>
-                                                                                        <th rowspan="2" class="none"><span class="text-danger">*</span> Năm sinh</th>
+                                                                                        <th rowspan="2" class="none"><span class="text-danger">*</span> Ngày sinh</th>
                                                                                         <th rowspan="2" class="none"><span class="text-danger">*</span> Tuổi</th>
-                                                                                        <th rowspan="2" class="none">Giới tính</th>
-                                                                                        <th rowspan="2" class="none">Lớp</th>
-                                                                                        <th rowspan="2" class="none">Cấp học</th>
+                                                                                        <th rowspan="2" class="none"><span class="text-danger">*</span> Giới tính</th>
+                                                                                        <th rowspan="2" class="none"><span class="text-danger">*</span> Lớp</th>
+                                                                                        <th rowspan="2" class="none"><span class="text-danger">*</span> Cấp học</th>
+
+                                                                                        <th rowspan="2" class="none">Tên cha mẹ</th>
+                                                                                        <th rowspan="2" class="none"><span class="text-danger">*</span> Hiệu lực từ ngày</th>
+                                                                                        <th rowspan="2" class="none"><span class="text-danger">*</span> Đến ngày</th>
+
                                                                                         <th colspan="2" class="text-center">Phạm vi A</th>
                                                                                         <th colspan="2" class="text-center">Phạm vi B</th>
                                                                                         <th colspan="2" class="text-center">Phạm vi C</th>
@@ -206,7 +211,23 @@
                                                                                         <td><input class="form-control col-content-xs" type="text" disabled=""></td>
                                                                                         <td><input class="form-control col-content-xs" type="text"></td>
                                                                                         <td><input class="form-control col-content-xs input-number" type="text"></td>
+                                                                                        <td>
+                                                                                            <div class="col-content-sm">
+                                                                                                <select select2>
+                                                                                                    <option value="">--- Chọn ---</option>
+                                                                                                    <option value="">Mầm non</option>
+                                                                                                    <option value="">Tiểu học</option>
+                                                                                                    <option value="">THCS</option>
+                                                                                                    <option value="">THPT</option>
+                                                                                                    <option value="">TC/CĐ/ĐH/Nghề</option>
+                                                                                                    <option value="">Khác</option>
+                                                                                                </select>
+                                                                                            </div>
+                                                                                        </td>
+
                                                                                         <td><input class="form-control col-content-sm" type="text"></td>
+                                                                                        <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
+                                                                                        <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
 
                                                                                         <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text" disabled></td>
                                                                                         <td><input class="form-control input-money text-right" placeholder="0" type="text" ></td>

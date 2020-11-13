@@ -169,13 +169,13 @@
                                                                                         <th class="w10p">Ẩn chỉ</th>
                                                                                         <th class="w15p">Tên chủ hộ</th>
                                                                                         <th class="none">Địa chỉ</th>
-                                                                                        <th class="none">Sổ hộ khẩu</th>
+                                                                                        <th class="none"><span class="text-danger">*</span> Sổ hộ khẩu</th>
 
                                                                                         <th class="desktop"><span class="text-danger">*</span> Hiệu lực từ ngày</th>
                                                                                         <th class="desktop"><span class="text-danger">*</span> Đến ngày</th>
 
-                                                                                        <th class="w5p desktop">Số người</th>
-                                                                                        <th class="w10p desktop">Số tiền BH/Người</th>
+                                                                                        <th class="w5p desktop"><span class="text-danger">*</span> Số người</th>
+                                                                                        <th class="w10p desktop"><span class="text-danger">*</span> Số tiền BH/Người</th>
                                                                                         <th class="w10p desktop">Mức trách nhiệm/Hộ</th>
                                                                                         <th class="w10p">Phí bảo hiểm</th>
 

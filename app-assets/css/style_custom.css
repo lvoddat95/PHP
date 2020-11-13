@@ -4143,3 +4143,8 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
 .table-sm .select2-selection--single .select2-selection__rendered{
     font-size: 12px;
 }
+
+.mlr-100{
+    margin-left: -100px;
+    margin-right: -100px;
+}

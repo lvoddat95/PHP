@@ -169,14 +169,14 @@
                                                                                     <tr>
                                                                                         <th class="w1p all text-center"><input type="checkbox" id="input-chk-all"></th>
                                                                                         <th class="w15p"><span class="text-danger">*</span> Người được BH</th>
-                                                                                        <th class="desktop">Địa chỉ</th>
-                                                                                        <th class="desktop">Lịch trình</th>
-                                                                                        <th class="desktop">Ngày đi</th>
-                                                                                        <th class="desktop">Ngày về</th>
-                                                                                        <th class="desktop">Độ dài chuyến đi</th>
-                                                                                        <th class="w10p desktop">Trường hợp đặc biệt</th>
-                                                                                        <th class="w10p not-mobile">Giá trị BH</th>
-                                                                                        <th class="w5p not-mobile">Tỷ lệ phí/Người/Ngày</th>
+                                                                                        <th class="none">Địa chỉ</th>
+                                                                                        <th class="desktop"><span class="text-danger">*</span> Lịch trình</th>
+                                                                                        <th class="desktop"><span class="text-danger">*</span> Ngày đi</th>
+                                                                                        <th class="desktop"><span class="text-danger">*</span> Ngày về</th>
+                                                                                        <th class="desktop"><span class="text-danger">*</span> Độ dài chuyến đi</th>
+                                                                                        <th class="w10p desktop"><span class="text-danger">*</span> Trường hợp đặc biệt</th>
+                                                                                        <th class="w10p not-mobile"><span class="text-danger">*</span> Giá trị BH</th>
+                                                                                        <th class="w5p not-mobile"><span class="text-danger">*</span> Tỷ lệ phí/Người/Ngày</th>
                                                                                         <th class="w10p">Phí BH</th>
                                                                                         <th class="w1p"></th>
                                                                                     </tr>
@@ -186,7 +186,7 @@
                                                                                     <tr data-repeater-item>
                                                                                         <td class="text-center"><b class="item-level">1.</b> <input type="checkbox" class="input-chk"></td></td>
                                                                                         <td><input class="form-control" type="text"></td>
-                                                                                        <td><input class="form-control" type="text"></td>
+                                                                                        <td><input class="form-control col-content-xl" type="text"></td>
                                                                                         <td><input class="form-control" type="text"></td>
                                                                                         <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
                                                                                         <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
@@ -199,7 +199,7 @@
                                                                                         </td>
                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text"></td>
                                                                                         <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
-                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text"></td>
+                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" disabled></td>
                                                                                         <td class="text-center">
                                                                                             <div class="list-icons">
                                                                                                 <div class="dropdown">

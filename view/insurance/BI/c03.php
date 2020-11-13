@@ -272,10 +272,6 @@
                                                                                         </thead>
                                                                                         <tbody>
                                                                                             <tr>
-                                                                                                <td>Số tiền giảm miễn thường</td>
-                                                                                                <td class="text-right">0</td>
-                                                                                            </tr>
-                                                                                            <tr>
                                                                                                 <td>Máy móc thiết bị của chủ thầu</td>
                                                                                                 <td class="text-right">0</td>
                                                                                             </tr>

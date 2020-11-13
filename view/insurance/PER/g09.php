@@ -144,7 +144,7 @@
                                                                     <?php inc('template/2_trung_gian_bao_hiem/2_trung_gian_bao_hiem.php'); ?>
                                                                 
                                                                     <!-- Step 3 -->
-                                                                    <fieldset class="tab-pane" id="step3">
+                                                                    <fieldset class="tab-pane mlr-100" id="step3">
 
                                                                         <p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Upload thông tin danh sách người tham gia bảo hiểm</p>
 
@@ -170,8 +170,8 @@
                                                                                             <i class="fa fa-ellipsis-v"></i>
                                                                                         </th>
                                                                                         <th rowspan="2" class="w1p text-center"><input type="checkbox" id="input-chk-all"></th>
-                                                                                        <th rowspan="2" class="w15p"><span class="text-danger">*</span> Người được BH</th>
-                                                                                        <th rowspan="2" class="none"><span class="text-danger">*</span> Năm sinh</th>
+                                                                                        <th rowspan="2" class="w12p"><span class="text-danger">*</span> Người được BH</th>
+                                                                                        <th rowspan="2" class="none"><span class="text-danger">*</span> Ngày sinh</th>
                                                                                         <th rowspan="2" class="none">Địa chỉ</th>
                                                                                         <th rowspan="2" class="none">Email/Số điện thoại</th>
                                                                                         <th rowspan="2" class="none"><span class="text-danger">*</span> Loại nghề nghiệp (1-4)</th>
@@ -183,21 +183,21 @@
                                                                                         <th colspan="4" class="text-center desktop">Mất thu nhập</th>
                                                                                         <th colspan="2" class="text-center desktop">Chi phí y tế</th>
 
-                                                                                        <th rowspan="2" class="w10p text-center">Tổng phí</th>
+                                                                                        <th rowspan="2" class="w7p text-center">Tổng phí</th>
                                                                                         <th rowspan="2" class="w1p all"></th>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <th class="text-center desktop"><span class="text-danger">*</span> Số tiền BH</th>
+                                                                                        <th class="w7p text-center desktop"><span class="text-danger">*</span> Số tiền BH</th>
                                                                                         <th class="w5p text-center desktop"><span class="text-danger">*</span> Tỷ lệ</th>
-                                                                                        <th class="text-center desktop">Phí</th>
+                                                                                        <th class="w7p text-center desktop">Phí</th>
 
-                                                                                        <th class="text-center desktop"><span class="text-danger">*</span> Lương tháng</th>
-                                                                                        <th class="w5p text-center desktop"><span class="text-danger">*</span> Tháng lương mua BH</th>
+                                                                                        <th class="w7p text-center desktop"><span class="text-danger">*</span> Lương tháng</th>
+                                                                                        <th class="w8p text-center desktop"><span class="text-danger">*</span> Tháng lương mua BH</th>
                                                                                         <th class="w5p text-center desktop">Tỷ lệ</th>
-                                                                                        <th class="text-center desktop">Phí</th>
+                                                                                        <th class="w7p text-center desktop">Phí</th>
 
-                                                                                        <th class="w10p text-center desktop"><span class="text-danger">*</span> Số tiền BH</th>
-                                                                                        <th class="w10p text-center desktop">Phí</th>
+                                                                                        <th class="w9p text-center desktop"><span class="text-danger">*</span> Số tiền BH</th>
+                                                                                        <th class="w7p text-center desktop">Phí</th>
                                                                                     </tr>
                                                                                 </thead>
                                                                                 <tbody data-repeater-list="repeater-list">
@@ -208,7 +208,17 @@
                                                                                         <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
                                                                                         <td><input class="form-control col-content-lg" type="text"></td>
                                                                                         <td><input class="form-control col-content-lg" type="text"></td>
-                                                                                        <td><input class="form-control col-content-xs input-number" type="text" maxlength="1" placeholder="0"></td>
+                                                                                        <td>
+                                                                                            <div class="col-content-xs">
+                                                                                                <select select2>
+                                                                                                    <option value="">--- Chọn ---</option>
+                                                                                                    <option value="">1</option>
+                                                                                                    <option value="">2</option>
+                                                                                                    <option value="">3</option>
+                                                                                                    <option value="">4</option>
+                                                                                                </select>
+                                                                                            </div>
+                                                                                        </td>
 
                                                                                         <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
                                                                                         <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
@@ -218,11 +228,28 @@
                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text"></td>
 
                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text"></td>
-                                                                                        <td><input class="form-control col-content-sm input-number text-right" placeholder="0" type="text" maxlength="2"></td>
+                                                                                        <td>
+                                                                                            <select select2>
+                                                                                                <option value="">--- Chọn ---</option>
+                                                                                                <option>< 6 tháng</option>
+                                                                                                <option>12 tháng</option>
+                                                                                                <option>18 tháng</option>
+                                                                                            </select>
+                                                                                        </td>
                                                                                         <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text" disabled></td>
                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text"></td>
 
-                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text"></td>
+                                                                                        <td>
+                                                                                            <select select2>10-20-30-40-50-<100
+                                                                                                <option value="">--- Chọn ---</option>
+                                                                                                <option>10,000,000</option>
+                                                                                                <option>20,000,000</option>
+                                                                                                <option>30,000,000</option>
+                                                                                                <option>40,000,000</option>
+                                                                                                <option>50,000,000</option>
+                                                                                                <option>< 100,000,000</option>
+                                                                                            </select>
+                                                                                        </td>
                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text"></td>
 
                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" disabled></td>

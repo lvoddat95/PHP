@@ -173,7 +173,7 @@
                                                                                         </th>
                                                                                         <th rowspan="2" class="w1p text-center"><input type="checkbox" id="input-chk-all"></th>
                                                                                         <th rowspan="2" class="w15p"><span class="text-danger">*</span> Người được BH</th>
-                                                                                        <th rowspan="2" class="none"><span class="text-danger">*</span> Năm sinh</th>
+                                                                                        <th rowspan="2" class="none"><span class="text-danger">*</span> Ngày sinh</th>
                                                                                         <th rowspan="2" class="none">Địa chỉ</th>
                                                                                         <th rowspan="2" class="none">Email/Số điện thoại</th>
                                                                                         <th rowspan="2" class="w5p none"><span class="text-danger">*</span> Tuổi</th>
