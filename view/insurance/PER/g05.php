@@ -171,7 +171,7 @@
                                                                                             <i class="fa fa-ellipsis-v"></i>
                                                                                         </th>
                                                                                         <th rowspan="2" class="w1p text-center"><input type="checkbox" id="input-chk-all"></th>
-                                                                                        <th rowspan="2" class="w7p"><span class="text-danger">*</span> Tên học sinh</th>
+                                                                                        <th rowspan="2" class="w10p"><span class="text-danger">*</span> Tên học sinh</th>
                                                                                         <th rowspan="2" class="none"><span class="text-danger">*</span> Ngày sinh</th>
                                                                                         <th rowspan="2" class="none"><span class="text-danger">*</span> Tuổi</th>
                                                                                         <th rowspan="2" class="none"><span class="text-danger">*</span> Giới tính</th>
@@ -186,7 +186,7 @@
                                                                                         <th colspan="3" class="text-center">Phạm vi B</th>
                                                                                         <th colspan="3" class="text-center">Phạm vi C</th>
                                                                                         <th colspan="3" class="text-center">Phạm vi D</th>
-                                                                                        <th rowspan="2" class="w5p text-center">Phí bảo hiểm</th>
+                                                                                        <th rowspan="2" class="w5p none text-center">Phí bảo hiểm</th>
                                                                                         <th rowspan="2" class="none">Ghi chú</th>
                                                                                         <th rowspan="2" class="w1p"></th>
                                                                                     </tr>
