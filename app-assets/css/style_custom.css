@@ -4136,3 +4136,10 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
 .fancybox-is-open .fancybox-bg {
     opacity: .4;
 }
+
+.table-sm,
+.table-sm input,
+.select2-sm,
+.table-sm .select2-selection--single .select2-selection__rendered{
+    font-size: 12px;
+}

@@ -17,6 +17,7 @@
                         <td><b>1.</b></td>
                         <td>
                             <select select2>
+                                <option value="">--- Chọn ---/option>
                                 <option value="">Có khấu trừ</option>
                                 <option value="">Không có khấu trừ</option>
                             </select>

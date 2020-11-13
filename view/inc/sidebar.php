@@ -66,6 +66,7 @@
                                         <li><a href="<?php echo HTTP_PATH .'view/claim/nhap-ho-so.php'; ?>" class="nav-link"><span class="menu-title">Nhập hồ sơ</span></a></li>
                                         <li><a href="<?php echo HTTP_PATH .'view/claim/danh-sach-ton-that.php'; ?>" class="nav-link"><span class="menu-title">Danh sách tổn thất</span></a></li>
                                         <li><a href="<?php echo HTTP_PATH .'view/claim/nhap-thong-bao-ton-that.php'; ?>" class="nav-link"><span class="menu-title">Nhập tổn thất</span></a></li>
+                                        <li><a href="<?php echo HTTP_PATH .'view/claim/lap-pasc.php'; ?>" class="nav-link"><span class="menu-title">Lập PASC</span></a></li>
 
                                     </ul>
                                 </li>
