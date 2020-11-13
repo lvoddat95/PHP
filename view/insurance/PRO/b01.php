@@ -277,7 +277,7 @@
 
                                                                         <div class="row">
                                                                             <div class="col-md-6">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/PRO/trach_nhiem_dong_bao_hiem.php'); ?>
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/trach_nhiem_dong_bao_hiem.php'); ?>
                                                                             </div>  
                                                                         </div>
 
