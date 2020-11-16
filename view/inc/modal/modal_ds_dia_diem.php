@@ -1,4 +1,4 @@
-<!-- Danh sách tàu thuyền -->
+<!-- Danh sách địa điểm -->
 <div id="ds_dia_diem" class="modal fade" tabindex="-1" datatable-modal>
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -443,4 +443,4 @@
         </div>
     </div>
 </div>
-<!-- / Danh sách tàu thuyền -->
+<!-- / Danh sách địa điểm -->

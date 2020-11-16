@@ -255,7 +255,7 @@
                                     <div class="input-group">
                                         <input type="text" class="form-control required" placeholder="" value="gara lộc phát">
                                         <span class="input-group-append">
-                                            <button type="button" class="btn bg-primary" data-toggle="modal" data-target="#">Chọn</button>
+                                            <button type="button" class="btn bg-primary" data-toggle="modal" data-target="#ds_gara">Chọn</button>
                                         </span>
                                     </div>
                                 </div>

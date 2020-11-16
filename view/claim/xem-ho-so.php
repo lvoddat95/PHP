@@ -187,6 +187,7 @@
         </div>
         <!-- /page-content -->
         
+        <?php inc('modal/modal_ds_gara.php',false); ?> 
         <?php inc('modal/modal_khieu_nai_boi_thuong.php'); ?> 
         <?php inc('modal/modal_ds_so_ho_giam_dinh_xin_cap.php'); ?>     
         <?php inc('modal/modal_xin_cap_ho_so_giam_dinh.php'); ?> 

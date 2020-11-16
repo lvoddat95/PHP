@@ -4148,3 +4148,15 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     margin-left: -100px;
     margin-right: -100px;
 }
+
+.table-res{
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.table-sm{
+    min-width: 1110px;
+}
