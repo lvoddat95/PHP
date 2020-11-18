@@ -357,12 +357,28 @@ a.sidebar-main-toggle:hover {
     flex: 1 1 auto;
     width: 1% !important;
 }
+.input-group>.form-control{
+}
+.input-group > .input-group-prepend > .input-group-text{
+    border-top-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+}
 .input-group > .input-group-prepend + .form-control{
     max-width: 100%;
 }
-.input-group > .input-group-prepend + .select2-container{
-
+.input-group > .input-group-prepend + .form-control ~ .select2 .select2-selection--single{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
+.input-group>.form-control{
+    border-top-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+}
+.input-group>.form-control ~ .input-group-append > .btn{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
 .top-left {
     display: -ms-flexbox;
     display: flex;
@@ -1120,7 +1136,7 @@ a.sidebar-main-toggle:hover {
 }
 
 .form-control:not(.border-1):not(.border-2):not(.border-3):focus, .form-control:hover, .form-control:focus {
-    border-color: #2196f3;
+    border-color: #2196f3 !important;
     box-shadow: 0px 0px 0px 2px rgb(175 213 255 / 50%);
 }
 
@@ -1137,33 +1153,31 @@ input[type=radio] {
 }
 
 input[type=radio]:before {
-    content: "\f111";
+    content: "";
     font-family: "Font Awesome 5 Pro";
     color: #2196f3;
     transition: all 0.2s ease-in-out;
     font-size: 14px;
     font-weight: 300;
     display: block;
-    height: 14px;
-    width: 14px;
-    line-height: 14px;
+    height: 16px;
+    width: 16px;
+    line-height: 16px;
+    border: 1.5px solid #ddd;
+    border-radius: 50%;
 }
 
 input[type=radio]:after {
-    content: "\f111";
-    font-family: "Font Awesome 5 Pro";
-    color: #2196f3;
-    transition: all 0.2s ease-in-out;
-    font-size: 8px;
-    font-weight: 900;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #fff;
     position: absolute;
-    left: 3px;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0;
-    height: 14px;
-    width: 14px;
-    line-height: 14px;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 input[type=radio]:checked {
@@ -1171,10 +1185,19 @@ input[type=radio]:checked {
 }
 
 input[type=radio]:checked:before {
-    /* content: "\f192"; */
+    border-color: #2196f3;
 }
 input[type=radio]:checked:after {
     opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    background: #2196f3;
+}
+
+input[type=radio]:not(:checked):after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
 }
 
 input[type=checkbox]:not(.switch):not(.hc-chk) {
@@ -1266,12 +1289,12 @@ select {
 .datepicker:not([type="date"]) {
     min-width: 95px;
     max-width: 150px;
-    padding-right: 22px;
-    background-size: 11px;
-    background-position: center;
-    background-position-x: calc(100% - 6.5px);
-    background-repeat: no-repeat;
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBkPSJNNDAwIDY0aC00OFYxMmMwLTYuNi01LjQtMTItMTItMTJoLTQwYy02LjYgMC0xMiA1LjQtMTIgMTJ2NTJIMTYwVjEyYzAtNi42LTUuNC0xMi0xMi0xMmgtNDBjLTYuNiAwLTEyIDUuNC0xMiAxMnY1Mkg0OEMyMS41IDY0IDAgODUuNSAwIDExMnYzNTJjMCAyNi41IDIxLjUgNDggNDggNDhoMzUyYzI2LjUgMCA0OC0yMS41IDQ4LTQ4VjExMmMwLTI2LjUtMjEuNS00OC00OC00OHptLTYgNDAwSDU0Yy0zLjMgMC02LTIuNy02LTZWMTYwaDM1MnYyOThjMCAzLjMtMi43IDYtNiA2eiIvPjwvc3ZnPg==');
+    padding-right: 22px !important;
+    background-size: 11px !important;
+    background-position: center !important;
+    background-position-x: calc(100% - 6.5px) !important;
+    background-repeat: no-repeat !important;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBkPSJNNDAwIDY0aC00OFYxMmMwLTYuNi01LjQtMTItMTItMTJoLTQwYy02LjYgMC0xMiA1LjQtMTIgMTJ2NTJIMTYwVjEyYzAtNi42LTUuNC0xMi0xMi0xMmgtNDBjLTYuNiAwLTEyIDUuNC0xMiAxMnY1Mkg0OEMyMS41IDY0IDAgODUuNSAwIDExMnYzNTJjMCAyNi41IDIxLjUgNDggNDggNDhoMzUyYzI2LjUgMCA0OC0yMS41IDQ4LTQ4VjExMmMwLTI2LjUtMjEuNS00OC00OC00OHptLTYgNDAwSDU0Yy0zLjMgMC02LTIuNy02LTZWMTYwaDM1MnYyOThjMCAzLjMtMi43IDYtNiA2eiIvPjwvc3ZnPg==') !important;
 }
 
 .input-time{

@@ -1146,12 +1146,9 @@
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-3">
+                                                                            <div class="col-md-8">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/phan_bo_don_vi.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/ti_le_phan_bo.php'); ?>
-                                                                            </div>
+                                                                            </div>  
                                                                         </div>
 
                                                                         <div class="row mb-3">

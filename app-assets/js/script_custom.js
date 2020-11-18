@@ -124,9 +124,10 @@ var on_change_hinh_thuc_khai_thac = function(p_this){
     }else if(p_this.value == 'dong-bh'){
         $('#tai-bh').slideUp();
         $('#dong-bh').slideDown();
+        $('#trach-nhiem-dong-bao-hiem').slideDown();
         $($.fn.dataTable.tables(true)).DataTable().columns.adjust().responsive.recalc();
     }else{
-        $('#tai-bh, #dong-bh').slideUp();
+        $('#tai-bh, #dong-bh, #trach-nhiem-dong-bao-hiem').slideUp();
     }
 }
 
@@ -397,5 +398,4 @@ var fancybox_modal = function(p_this, p_src){
         }
     });
 }
-
 
