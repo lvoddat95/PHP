@@ -476,15 +476,6 @@
                                                                         <div class="row">
                                                                             <div class="col-md-3">
                                                                                 <div class="form-group">
-                                                                                    <label>Phương pháp tính số tiền bh: </label>
-                                                                                    <select select2>
-                                                                                        <option value="">Theo tổng số tiền bảo hiểm</option>
-                                                                                        <option value="">Theo số tiền bảo hiểm lớn nhất</option>
-                                                                                    </select>
-                                                                                </div>                                                                            
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group">
                                                                                     <label>Tổng phí chuẩn: </label>
                                                                                     <input type="text" class="form-control input-money text-right" name="" placeholder="0" value="">
                                                                                 </div>                                                                            
