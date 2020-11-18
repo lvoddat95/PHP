@@ -171,6 +171,8 @@
                                                                                         </th>
                                                                                         <th rowspan="2" class="w1p text-center"><input type="checkbox" id="input-chk-all"></th>
                                                                                         <th rowspan="2" class="w15p"><span class="text-danger">*</span> Người được BH</th>
+                                                                                        <th rowspan="2" class="none"><span class="text-danger">*</span> Ngày sinh</th>
+
                                                                                         <th rowspan="2" class="none">Địa chỉ</th>
                                                                                         <th rowspan="2" class="w5p none"><span class="text-danger">*</span> Tuổi</th>
 
@@ -202,6 +204,7 @@
                                                                                         <td class="cell control not-desktop text-center" title="Xem thêm thông tin"></td>
                                                                                         <td class="text-center"><b class="item-level">1.</b> <input type="checkbox" class="input-chk"></td></td>
                                                                                         <td><input class="form-control" type="text"></td>
+                                                                                        <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
                                                                                         <td><input class="form-control col-content-lg" type="text"></td>
                                                                                         <td><input class="form-control col-content-xs" type="text" disabled></td>
 
