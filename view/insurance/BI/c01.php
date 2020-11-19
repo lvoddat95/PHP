@@ -88,10 +88,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="row">
-                                                                            <div class="col-md-6">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/BI/hang_muc_bao_hiem.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-6">
+                                                                            <div class="col-md-12">
                                                                                 <?php inc('template/3_doi_tuong_bao_hiem/BI/rui_ro_uot.php'); ?>
                                                                             </div>
                                                                         </div>
@@ -107,9 +104,8 @@
                                                                                 <thead>
                                                                                     <tr>
                                                                                         <th class="w1p">STT</th>
-                                                                                        <th>Người được bh</th>
-                                                                                        <th>Địa chỉ</th>
-                                                                                        <th>Số tiền bảo hiểm</th>
+                                                                                        <th class="w25p">Người được bh</th>
+                                                                                        <th class="desktop">Địa chỉ</th>
                                                                                     </tr>
                                                                                 </thead>
                                                                                 <tbody>

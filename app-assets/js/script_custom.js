@@ -399,3 +399,22 @@ var fancybox_modal = function(p_this, p_src){
     });
 }
 
+
+var in_gcn_hssv = function(p_this){
+    p_this = $(p_this);
+    $("#print-container").print({
+        noPrintSelector : ".no-print",
+        timeout: 1500,
+        deferred: $.Deferred().done(function() { 
+        })
+    });
+}
+
+var kieu_lay_danh_sach =  function(p_this){
+    var v_input_value = $(p_this).val();
+    if (v_input_value == "2") {
+        $('#stt').hide();
+    }else{
+        $('#stt').show();
+    }
+}
