@@ -6,6 +6,7 @@
 <?php $GLOBALS["dieu_kien_bao_hiem_b05"] = 'b05'; ?>
 <?php $GLOBALS["1_thong_tin_chung"] = 'ngay_ki_don'; ?>
 <?php $GLOBALS["ngay_cap"] = 'to_day'; ?>
+<?php $GLOBALS["quy_tac_bao_hiem_b01"] = 'b05'; ?>
 
     <body class="sidebar-xs">
 

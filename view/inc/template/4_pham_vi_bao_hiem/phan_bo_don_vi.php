@@ -10,6 +10,7 @@
                 <tr>
                     <th class="w1p text-center">STT</th>
                     <th class="">Đơn vị phân bổ</th>
+                    <th class="">Cán bộ phân bổ</th>
                     <th class="w20p">Tỉ lệ phân bổ</th>
                     <th class="w1p"></th>
                 </tr>
@@ -18,6 +19,15 @@
                 <tr data-repeater-item>
                 	<td class="text-center">1</td>
                     <td><?php inc('template/chi_nhanh.php',false); ?></td>
+                    <td>
+                        <select select2>
+                            <option value="">--- Chọn ---</option>
+                            <option value="">Cán bộ A</option>
+                            <option value="">Cán bộ B</option>
+                            <option value="">Cán bộ C</option>
+                            <option value="">Cán bộ D</option>
+                        </select>
+                    </td>
                     <td><input class="form-control input-float text-right" type="text" placeholder="0" value=""></td>
                     <td class="text-center"><input data-repeater-delete class="btn bg-danger" type="button" value="- Xóa"/></td>
                 </tr>

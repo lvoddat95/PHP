@@ -22,31 +22,64 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td><input type="checkbox" value=""></td>
-                                <td>QUYTACBH</td>
-                                <td>Quy tắc bảo hiểm 01</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" value=""></td>
-                                <td>QUYTACBH</td>
-                                <td>Quy tắc bảo hiểm 02</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" value=""></td>
-                                <td>QUYTACBH</td>
-                                <td>Quy tắc bảo hiểm 03</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" value=""></td>
-                                <td>QUYTACBH</td>
-                                <td>Quy tắc bảo hiểm 04</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" value=""></td>
-                                <td>QUYTACBH</td>
-                                <td>Quy tắc bảo hiểm 05</td>
-                            </tr>
+                            <?php if (!empty($GLOBALS["quy_tac_bao_hiem_b01"]) && $GLOBALS["quy_tac_bao_hiem_b01"] == 'b01') : ?>
+                                <tr>
+                                    <td><input type="checkbox" value=""></td>
+                                    <td>MAQUYTAC</td>
+                                    <td>Quy tắc bảo hiểm Hoả hoạn và các rủi ro đặc biệt (phần thiệt hại tài sản) ban hành kèm theo Quyết định số 31/2019/QĐ-BHHK ngày 09/01/2019 của Tổng Giám đốc Tổng Công ty Cổ phần Bảo hiểm Hàng Không</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" value=""></td>
+                                    <td>MAQUYTAC</td>
+                                    <td>Quy tắc bảo hiểm hỏa hoạn và các rủi ro đặc biệt (Phần gián đoạn kinh doanh) ban hành kèm theo Quyết định số 32/2019/QĐ-BHHK ngày 09/01/2019 của Tổng Giám đốc Tổng Công ty Cổ phần Bảo hiểm Hàng Không</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" value=""></td>
+                                    <td>MAQUYTAC</td>
+                                    <td>Nghị định 23/2018/NĐ-CP ban hành ngày 23/02/2018 của Chính Phủ về bảo hiểm cháy nổ, bắt buộc</td>
+                                </tr>
+                            <?php elseif (!empty($GLOBALS["quy_tac_bao_hiem_b02"]) && $GLOBALS["quy_tac_bao_hiem_b02"] == 'b02') : ?>
+                                <tr>
+                                    <td><input type="checkbox" value=""></td>
+                                    <td>MAQUYTAC</td>
+                                    <td>Nghị định 23/2018/NĐ-CP ban hành ngày 23/02/2018 của Chính Phủ về bảo hiểm cháy nổ, bắt buộc</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" value=""></td>
+                                    <td>MAQUYTAC</td>
+                                    <td>Quy tắc bảo hiểm Mọi rủi ro tài sản ban hành kèm theo Quyết định số 33/2019/QĐ-BHHK ngày 09/01/2019 của Tổng Giám đốc Tổng Công ty Cổ phần Bảo hiểm Hàng Không</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" value=""></td>
+                                    <td>MAQUYTAC</td>
+                                    <td>Quy tắc bảo hiểm Mọi rủi ro tài sản (Phần gián đoạn kinh doanh) ban hành kèm theo Quyết định số 34/2019/QĐ-BHHK ngày 09/01/2019 của Tổng giám đốc Tổng Công ty Cổ phần Bảo hiểm Hàng Không</td>
+                                </tr>
+                            <?php elseif (!empty($GLOBALS["quy_tac_bao_hiem_b04"]) && $GLOBALS["quy_tac_bao_hiem_b04"] == 'b04') : ?>
+                                <tr>
+                                    <td><input type="checkbox" value=""></td>
+                                    <td>MAQUYTAC</td>
+                                    <td>Quy tắc bảo hiểm Mọi rủi ro văn phòng ban hành kèm theo Quyết định số 35/2019/QĐ-BHHK ngày 09/01/2019 của Tổng Giám đốc Tổng Công ty Cổ phần Bảo hiểm Hàng Không</td>
+                                </tr>
+
+                            <?php elseif (!empty($GLOBALS["quy_tac_bao_hiem_b16"]) && $GLOBALS["quy_tac_bao_hiem_b16"] == 'b16') : ?>
+                                <tr>
+                                    <td><input type="checkbox" value=""></td>
+                                    <td>MAQUYTAC</td>
+                                    <td>Quy tắc bảo hiểm Nhà tư nhân ban hành kèm theo Quyết định số 37/2019/QĐ-BHHK ngày 09/01/2019 của Tổng giám đốc Tổng Công ty  Cổ phần Bảo hiểm Hàng Không</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" value=""></td>
+                                    <td>MAQUYTAC</td>
+                                    <td>Quy tắc bảo hiểm Nhà tư nhân ban hành kèm theo Quyết định số 38/2019/QĐ-BHHK ngày 09/01/2019 của Tổng giám đốc Tổng Công ty  Cổ phần Bảo hiểm Hàng Không</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" value=""></td>
+                                    <td>MAQUYTAC</td>
+                                    <td>Quy tắc bảo hiểm Nhà tư nhân ban hành kèm theo Quyết định số 39/2019/QĐ-BHHK ngày 09/01/2019 của Tổng giám đốc Tổng Công ty  Cổ phần Bảo hiểm Hàng Không</td>
+                                </tr>
+                            <?php else: ?>
+                                
+                            <?php endif; ?>
                         </tbody>
                     </table>
                    

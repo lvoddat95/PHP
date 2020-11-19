@@ -1,10 +1,13 @@
 <?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?> 
  <?php $GLOBALS["nguoi_duoc_bao_hiem"] = 'label_khach_hang'; ?>
- <?php $GLOBALS["rui_ro_uot_c01"] = 'rui_ro_uot_c01'; ?>
+ <?php $GLOBALS["rui_ro_uot_c01"] = 'c01'; ?>
  <?php $GLOBALS["loai_mien_thuong"] = 'repeater'; ?>
  <?php $GLOBALS["dieu_kien_bao_hiem"] = 'modal'; ?>
+ <?php $GLOBALS["dieu_kien_bao_hiem_c01"] = 'c01'; ?>
  <?php $GLOBALS["trach_nhiem_dong_bao_hiem"] = 'trach-nhiem-dong-bao-hiem'; ?>
+
+
     <body class="sidebar-xs">
 
         <div class="page-content home-page">
@@ -81,7 +84,20 @@
                                                                         </div>
                                                                         <div class="row">
                                                                             <div class="col-md-6">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/BI/nhom_cong_trinh_dd_gt.php'); ?>
+                                                                                <div class="form-group ">
+                                                                                    <label>Nhóm công trình DD/GT: <span class="text-danger">*</span></label>
+                                                                                    <select class="form-control" select2>
+                                                                                        <option id="" value="" name="">--- Chọn ---</option>
+                                                                                        <option value="">Công trình dân dụng</option>
+                                                                                        <option value="">Công trình giao thông</option>
+                                                                                        <option value="">Công trình công nghiệp</option>
+                                                                                        <option value="">Công trình hạ tầng kỹ thuật</option>
+                                                                                        <option value="">Công trình thủy lợi</option>
+                                                                                        <option value="">Công trình thủy điện</option>
+                                                                                        <option value="">Công trình nông nghiệp và phát triển nông thôn</option>
+                                                                                        <option value="">Công trình khác</option>
+                                                                                    </select>
+                                                                                </div>
                                                                             </div>
                                                                              <div class="col-md-6">
                                                                                 <?php inc('template/3_doi_tuong_bao_hiem/BI/cong_trinh.php'); ?>

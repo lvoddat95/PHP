@@ -24,66 +24,131 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td><input type="checkbox" value=""></td>
-                                            <td>MA_RUI_RO</td>
-                                            <td>Cháy, nổ bắt buộc</td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkbox" value=""></td>
-                                            <td>MA_RUI_RO</td>
-                                            <td>Sét đánh trực tiếp</td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkbox" value=""></td>
-                                            <td>MA_RUI_RO</td>
-                                            <td>A: Hỏa hoạn, sét, nổ</td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkbox" value=""></td>
-                                            <td>MA_RUI_RO</td>
-                                            <td>B: Nổ</td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkbox" value=""></td>
-                                            <td>MA_RUI_RO</td>
-                                            <td>C: Máy bay và các phương tiện hàng không khác hoặc các thiết bị trên phương tiện đó rơi trúng</td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkbox" value=""></td>
-                                            <td>MA_RUI_RO</td>
-                                            <td>D: Gây rối, đình công, bế xưởng</td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkbox" value=""></td>
-                                            <td>MA_RUI_RO</td>
-                                            <td>E: Thiệt hại do hành động ác ý</td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkbox" value=""></td>
-                                            <td>MA_RUI_RO</td>
-                                            <td>F: Động đất hoặc núi lửa phun, bao gồm cả lũ lụt và nước biển dâng do hậu quả của động đất và núi lửa phun</td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkbox" value=""></td>
-                                            <td>MA_RUI_RO</td>
-                                            <td>G: Giông và bão</td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkbox" value=""></td>
-                                            <td>MA_RUI_RO</td>
-                                            <td>H: Giông, bão, lụt</td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkbox" value=""></td>
-                                            <td>MA_RUI_RO</td>
-                                            <td>I: Tràn nước từ các bể và thiết bị chứa nước hoặc đường ống dẫn nước</td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkbox" value=""></td>
-                                            <td>MA_RUI_RO</td>
-                                            <td>J: Đâm va do xe cộ hoặc súc vật</td>
-                                        </tr>
+                                        <?php if (!empty($GLOBALS["rui_ro_uot_c01"]) && $GLOBALS["rui_ro_uot_c01"] == 'c01') : ?>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>Rủi ro ướt</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>Rủi ro ngoài khơi</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>Thủy điện</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>Nhiệt điện</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>Điện mặt trời</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>Điện gió</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>Đường dây điện, trạm biến áp</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>Đê, kè sông</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>Đê, kè biển</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>Đường giao thông miền núi</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>Đường giao thông nông thôn</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>Đường giao thông trong thành phố</td>
+                                            </tr>
+                                       
+                                        <?php else: ?>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>Cháy, nổ bắt buộc</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>Sét đánh trực tiếp</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>A: Hỏa hoạn, sét, nổ</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>B: Nổ</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>C: Máy bay và các phương tiện hàng không khác hoặc các thiết bị trên phương tiện đó rơi trúng</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>D: Gây rối, đình công, bế xưởng</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>E: Thiệt hại do hành động ác ý</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>F: Động đất hoặc núi lửa phun, bao gồm cả lũ lụt và nước biển dâng do hậu quả của động đất và núi lửa phun</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>G: Giông và bão</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>H: Giông, bão, lụt</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>I: Tràn nước từ các bể và thiết bị chứa nước hoặc đường ống dẫn nước</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>J: Đâm va do xe cộ hoặc súc vật</td>
+                                            </tr>
+                                        <?php endif; ?>
+                                        
                                         
                                     </tbody>
                                 </table>

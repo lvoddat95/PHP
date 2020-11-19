@@ -1,5 +1,5 @@
 <div class="form-group ">
-    <?php if (!empty($GLOBALS["rui_ro_uot_c01"]) && $GLOBALS["rui_ro_uot_c01"] == 'rui_ro_uot_c01') : ?>
+    <?php if (!empty($GLOBALS["rui_ro_uot_c01"]) && $GLOBALS["rui_ro_uot_c01"] == 'c01') : ?>
         <label>Rủi ro đặc biệt/ướt:  <span class="text-danger">*</span></label>
         <div class="d-flex align-items-center">
             <textarea class="form-control" placeholder="Nhập rủi ro..."></textarea>
