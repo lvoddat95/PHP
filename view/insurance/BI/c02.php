@@ -6,6 +6,7 @@
 <?php $GLOBALS["dieu_kien_bao_hiem"] = 'modal'; ?>
 <?php $GLOBALS["dieu_kien_bao_hiem_c01"] = 'c01'; ?>
 <?php $GLOBALS["trach_nhiem_dong_bao_hiem"] = 'trach-nhiem-dong-bao-hiem'; ?>
+<?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
 
     <body class="sidebar-xs">
 

@@ -1,5 +1,5 @@
 <div class="form-group">
-    <label>Tài liệu đính kèm: <span class="text-danger">*</span></label>
+    <label>Tài liệu đính kèm:</label>
     <div class="p-button">
         <button class="btn btn-light btn-file mr-3">
         <i class="far fa-upload mr-1"></i>

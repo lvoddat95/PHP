@@ -8,6 +8,7 @@
 <?php $GLOBALS["ngay_cap"] = 'to_day'; ?>
 <?php $GLOBALS["loai_mien_thuong"] = 'repeater'; ?>
 <?php $GLOBALS["quy_tac_bao_hiem_b02"] = 'b02'; ?>
+<?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
 
     <body class="sidebar-xs">
 

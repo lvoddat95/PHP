@@ -4,6 +4,7 @@
 <?php $GLOBALS["can_bo_ki_don"] = 'hide'; ?>
 <?php $GLOBALS["dieu_kien_bao_hiem"] = 'modal'; ?>
 <?php $GLOBALS["quy_tac_bao_hiem_b04"] = 'b04'; ?>
+<?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
 
     <body class="sidebar-xs">
 

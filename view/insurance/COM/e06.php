@@ -1,6 +1,7 @@
 <?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?>
-    
+    <?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
+
     <body class="sidebar-xs"> 
 
         <div class="page-content home-page">

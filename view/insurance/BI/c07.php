@@ -9,6 +9,7 @@
 <?php $GLOBALS["cong_trinh"] = 'not-required'; ?>
 <?php $GLOBALS["ten_cong_trinh_du_an"] = 'not-required'; ?>
 <?php $GLOBALS["rui_ro_uot"] = 'not-required'; ?> 
+<?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
 
     <body class="sidebar-xs">
 

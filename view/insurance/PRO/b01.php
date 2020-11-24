@@ -7,7 +7,8 @@
 <?php $GLOBALS["1_thong_tin_chung"] = 'ngay_ki_don'; ?>
 <?php $GLOBALS["ngay_cap"] = 'today'; ?>
 <?php $GLOBALS["quy_tac_bao_hiem_b01"] = 'b01'; ?>
-    
+<?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
+
     <body class="sidebar-xs">
 
         <div class="page-content home-page">

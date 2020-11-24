@@ -3,6 +3,7 @@
 <?php $GLOBALS["trach_nhiem_dong_bao_hiem"] = 'trach-nhiem-dong-bao-hiem'; ?>
 <?php $GLOBALS["can_bo_ki_don"] = 'hide'; ?>
 <?php $GLOBALS["dieu_kien_bao_hiem"] = 'modal'; ?>
+<?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
 
     <body class="sidebar-xs">
 
