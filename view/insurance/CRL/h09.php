@@ -58,7 +58,7 @@
                                                     <div class="card-body">
                                                         <div class="wizard">
 
-                                                            <?php inc('template/steps.php'); ?>
+                                                            <?php inc('template/steps2.php'); ?>
 
                                                             <form action="#" class="form-validation clearfix">
                                                                 <div class="tab-content">
