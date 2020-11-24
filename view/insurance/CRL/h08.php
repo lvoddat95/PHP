@@ -1,6 +1,7 @@
 <?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?>  
-    
+<?php $GLOBALS["nganh_nghe_kinh_doanh"] = 'remove'; ?>
+
     <body class="sidebar-xs">
 
         <div class="page-content home-page">
@@ -69,7 +70,6 @@
                                                                     <?php inc('template/2_trung_gian_bao_hiem/2_trung_gian_bao_hiem.php'); ?>
                                                                     
                                                                     <!-- Step 3 -->
-                                                                    <?php inc('template/3_doi_tuong_bao_hiem/CRL/3_doi_tuong_bao_hiem.php'); ?>
                                                                     
                                                                     <!-- Step 4 -->
                                                                     <fieldset class="tab-pane" id="step4">

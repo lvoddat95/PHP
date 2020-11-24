@@ -58,7 +58,7 @@
                                                     <div class="card-body">
                                                         <div class="wizard">
 
-                                                            <?php inc('template/steps.php'); ?>
+                                                            <?php inc('template/steps2.php'); ?>
 
                                                             <form action="#" class="form-validation clearfix">
                                                                 <div class="tab-content">
@@ -180,7 +180,6 @@
                                                                     <?php inc('template/2_trung_gian_bao_hiem/2_trung_gian_bao_hiem.php'); ?>
                                                                     
                                                                     <!-- Step 3 -->
-                                                                    <?php inc('template/3_doi_tuong_bao_hiem/CRL/3_doi_tuong_bao_hiem.php'); ?>
                                                                     
                                                                     <!-- Step 4 -->
                                                                     <fieldset class="tab-pane" id="step4">
