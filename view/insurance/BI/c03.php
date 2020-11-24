@@ -1,6 +1,15 @@
 <?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?>  
-    
+<?php $GLOBALS["nguoi_duoc_bao_hiem"] = 'label_khach_hang'; ?>
+<?php $GLOBALS["rui_ro_uot_c01"] = 'c01'; ?>
+<?php $GLOBALS["loai_mien_thuong"] = 'repeater'; ?>
+<?php $GLOBALS["dieu_kien_bao_hiem"] = 'modal'; ?>
+<?php $GLOBALS["dieu_kien_bao_hiem_c01"] = 'c01'; ?>
+<?php $GLOBALS["ma_dia_diem"] = 'not-required'; ?>
+<?php $GLOBALS["cong_trinh"] = 'not-required'; ?>
+<?php $GLOBALS["ten_cong_trinh_du_an"] = 'not-required'; ?>
+<?php $GLOBALS["rui_ro_uot"] = 'not-required'; ?>
+
     <body class="sidebar-xs">
 
         <div class="page-content home-page">
@@ -71,18 +80,33 @@
                                                                     <!-- Step 3 -->
                                                                     <fieldset class="tab-pane" id="step3">
                                                                         <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <?php inc('template/3_doi_tuong_bao_hiem/PRO/ma_dia_diem.php'); ?>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
                                                                             <div class="col-md-6">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/BI/nhom_cong_trinh_dd_gt.php'); ?>
+                                                                                <div class="form-group ">
+                                                                                    <label>Nhóm công trình DD/GT: </label>
+                                                                                    <select class="form-control" select2>
+                                                                                        <option id="" value="" name="">--- Chọn ---</option>
+                                                                                        <option value="">Công trình dân dụng</option>
+                                                                                        <option value="">Công trình giao thông</option>
+                                                                                        <option value="">Công trình công nghiệp</option>
+                                                                                        <option value="">Công trình hạ tầng kỹ thuật</option>
+                                                                                        <option value="">Công trình thủy lợi</option>
+                                                                                        <option value="">Công trình thủy điện</option>
+                                                                                        <option value="">Công trình nông nghiệp và phát triển nông thôn</option>
+                                                                                        <option value="">Công trình khác</option>
+                                                                                    </select>
+                                                                                </div>
                                                                             </div>
                                                                              <div class="col-md-6">
                                                                                 <?php inc('template/3_doi_tuong_bao_hiem/BI/cong_trinh.php'); ?>
                                                                             </div>
                                                                         </div>
                                                                         <div class="row">
-                                                                            <div class="col-md-6">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/BI/hang_muc_bao_hiem.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-6">
+                                                                            <div class="col-md-12">
                                                                                 <?php inc('template/3_doi_tuong_bao_hiem/BI/rui_ro_uot.php'); ?>
                                                                             </div>
                                                                         </div>
@@ -90,23 +114,8 @@
                                                                             <div class="col-md-6">
                                                                                 <?php inc('template/3_doi_tuong_bao_hiem/BI/ten_cong_trinh_du_an.php'); ?>
                                                                             </div>
-                                                                            <div class="col-md-6">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/BI/pham_vi_hoat_dong.php'); ?>
-                                                                            </div>
                                                                         </div>
-                                                                        <div class="row">
-                                                                            <div class="col-md-2">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/BI/gioi_han_ve_nguoi.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group ">
-                                                                                    <label>&nbsp;</label>
-                                                                                    <div class="">
-                                                                                        <button type="button" class="btn bg-primary" data-toggle="modal" data-target="#ds_may_moc">Danh sách máy móc</button>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
+                                                                        
                                                                     </fieldset>
                                                                     
                                                                     <!-- Step 4 -->
@@ -116,26 +125,9 @@
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php'); ?>
                                                                             </div>
                                                                         </div>
+                                                                        
                                                                         <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group ">
-                                                                                    <label>Thời gian bảo hành: </label>
-                                                                                    <div class="input-group">
-                                                                                        <input type="text" class="form-control input-month"placeholder="Nhập thời hạn..." value="">
-                                                                                        <span class="input-group-append">
-                                                                                            <span class="input-group-text">Tháng</span>
-                                                                                        </span>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            
                                                                             <div class="col-md-12">
-                                                                                <div class="form-group">
-                                                                                    <input type="checkbox" id="phamvi">
-                                                                                    <label class="mb-0 ml-1" for="phamvi">Bao gồm các phạm vi về giông bão, lũ lụt</label>
-                                                                                </div>
                                                                                 <div class="form-group">
                                                                                     <table class="table table-bordered datatable" 
                                                                                         data-paging="false"
@@ -158,23 +150,6 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td>Máy móc thiết bị của chủ thầu</td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                <td><input class="form-control text-right input-float" type="text" value="10"></td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" value="0"></td>
-                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                <td>
-                                                                                                    <select class="form-control" select2 >
-                                                                                                        <option>Giá trị bảo hiểm&lt;200 tỷ</option>
-                                                                                                        <option>Giá trị bảo hiểm từ 200 tỷ đến 1200 tỷ</option>
-                                                                                                        <option>Giá trị bảo hiểm từ 1200 trở lên</option>
-                                                                                                    </select>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>TNDS bên thứ 3</td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
@@ -218,14 +193,8 @@
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/loai_mien_thuong.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/so_tien_mien_thuong.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/so_tien_giam_mien_thuong.php'); ?>
+                                                                            <div class="col-md-12">
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/loai_mien_thuong_repeater.php'); ?>
                                                                             </div>
                                                                         </div>
 
@@ -242,10 +211,10 @@
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-4">
+                                                                            <div class="col-md-6">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/dia_diem_bao_hiem.php'); ?>
                                                                             </div>
-                                                                            <div class="col-md-4">
+                                                                            <div class="col-md-6">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/quy_tac_bao_hiem.php'); ?>
                                                                             </div>
                                                                         </div>
@@ -262,14 +231,14 @@
                                                                             </div>  
                                                                         </div>
 
-                                                                        <div class="row">
+                                                                       <div class="row">
                                                                             <div class="col-md-6">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/thong_tin_ve_thoi_han_thanh_toan.php'); ?>
                                                                             </div>
                                                                             <div class="col-md-6">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/thanh_toan_tai_ngan_hang.php'); ?>
                                                                             </div>
-                                                                        </div>
+                                                                       </div>
 
                                                                         <div class="row">
                                                                             <div class="col-md-4">
@@ -278,17 +247,13 @@
                                                                                     <table class="table table-bordered" style="margin: auto;">
                                                                                         <thead class="thead-light">
                                                                                             <tr>
-                                                                                                <th class="w65p">Quyền lợi</th>
+                                                                                                <th class="w60p">Quyền lợi</th>
                                                                                                 <th class="w40p text-right">Phí BH có VAT</th>
                                                                                             </tr>
                                                                                         </thead>
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td>Máy móc thiết bị của chủ thầu</td>
-                                                                                                <td class="text-right">0</td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>TNDS bên thứ 3</td>
                                                                                                 <td class="text-right">0</td>
                                                                                             </tr>
                                                                                             

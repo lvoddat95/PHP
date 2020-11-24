@@ -1,11 +1,11 @@
 <?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?> 
- <?php $GLOBALS["nguoi_duoc_bao_hiem"] = 'label_khach_hang'; ?>
- <?php $GLOBALS["rui_ro_uot_c01"] = 'c01'; ?>
- <?php $GLOBALS["loai_mien_thuong"] = 'repeater'; ?>
- <?php $GLOBALS["dieu_kien_bao_hiem"] = 'modal'; ?>
- <?php $GLOBALS["dieu_kien_bao_hiem_c01"] = 'c01'; ?>
- <?php $GLOBALS["trach_nhiem_dong_bao_hiem"] = 'trach-nhiem-dong-bao-hiem'; ?>
+<?php $GLOBALS["nguoi_duoc_bao_hiem"] = 'label_khach_hang'; ?>
+<?php $GLOBALS["rui_ro_uot_c01"] = 'c01'; ?>
+<?php $GLOBALS["loai_mien_thuong"] = 'repeater'; ?>
+<?php $GLOBALS["dieu_kien_bao_hiem"] = 'modal'; ?>
+<?php $GLOBALS["dieu_kien_bao_hiem_c01"] = 'c01'; ?>
+<?php $GLOBALS["trach_nhiem_dong_bao_hiem"] = 'trach-nhiem-dong-bao-hiem'; ?>
 
 
     <body class="sidebar-xs">

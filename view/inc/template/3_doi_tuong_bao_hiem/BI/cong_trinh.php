@@ -1,5 +1,9 @@
 <div class="form-group ">
-    <label>Công trình: <span class="text-danger">*</span></label>
+    <label>Công trình: 
+        <?php if (!empty($GLOBALS["cong_trinh"]) && $GLOBALS["cong_trinh"] == 'not-required') : ?>
+        <?php else: ?>
+            <span class="text-danger">*</span></label>
+        <?php endif; ?></label>
     <select class="form-control" select2>
         <option>--- Chọn ---</option>
         <option>CAR02.04.01-Công trình dầu khí: Công trình khai thác trên biển</option>
