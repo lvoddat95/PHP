@@ -1,6 +1,6 @@
 <div class="form-group ">
     <?php if (!empty($GLOBALS["rui_ro_uot_c01"]) && $GLOBALS["rui_ro_uot_c01"] == 'c01') : ?>
-        <label>Rủi ro đặc biệt/ướt:  
+        <label>Rủi ro đặc biệt:  
             <?php if (!empty($GLOBALS["rui_ro_uot"]) && $GLOBALS["rui_ro_uot"] == 'not-required') : ?>
             <?php else: ?>
                 <span class="text-danger">*</span></label>

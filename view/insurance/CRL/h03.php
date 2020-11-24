@@ -18,7 +18,7 @@
                         </button>
                         <div class="top-left">
                             <div class="breadcrumb">
-                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i>B18 - Bảo hiểm mọi rủi ro trong công nhiệp</a>
+                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i>H03 - Bảo hiểm trách nhiệm công cộng</a>
                                 <span class="breadcrumb-item active">Cập nhập đơn</span>
                             </div>
                             <div class="d-md-none logo-mobile">
@@ -63,28 +63,124 @@
                                                             <form action="#" class="form-validation clearfix">
                                                                 <div class="tab-content">
                                                                     <!-- Bước 1 -->
-                                                                    <?php inc('template/1_thong_tin_chung/1_thong_tin_chung.php'); ?>
+                                                                    <fieldset class="tab-pane active show" id="step1">
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <?php inc('template/1_thong_tin_chung/kenh_khai_thac.php'); ?> 
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <?php inc('template/1_thong_tin_chung/hinh_thuc_khai_thac.php'); ?> 
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group ">
+                                                                                    <label>Đơn tái tục: <a href="#" data-tooltip="tipsy" original-title="Chọn <b style='color: red;'>“Có”</b> nếu là đơn tái tục." data-position="top"><i class="icon-info22"></i></a>
+                                                                                    </label>
+                                                                                    <div class="d-flex">
+                                                                                        <p class="switch-title mr-3">Có phải đơn tái tục ?</p>
+                                                                                        <div class="button-switch">
+                                                                                            <input type="checkbox" id="tai_bao_hiem_sw" class="switch required" name="tai_bao_hiem_sw">
+                                                                                            <label for="tai_bao_hiem_sw" data-off="Không" data-on="Có"></label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-md-6">
+                                                                                <?php inc('template/1_thong_tin_chung/so_don_bao_hiem.php'); ?> 
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <?php inc('template/1_thong_tin_chung/so_gcnbh.php'); ?> 
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/1_thong_tin_chung/so_tham_chieu.php'); ?>
+                                                                            </div>
+                                                                            
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/1_thong_tin_chung/so_ban_chao.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/1_thong_tin_chung/so_hd_nhan_tai.php'); ?>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <?php inc('template/1_thong_tin_chung/nganh_nghe_kinh_doanh.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <?php inc('template/1_thong_tin_chung/nguoi_duoc_bao_hiem.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <?php inc('template/1_thong_tin_chung/nguoi_thanh_toan_bao_hiem.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <div class="form-group">
+                                                                                    <label>Người được thụ hưởng: </label>
+                                                                                    <div class="row">
+                                                                                        <div class="col-md-4 col-sm-4">
+                                                                                            <input type="text" class="form-control required" placeholder="Mã người thụ hưởng...">
+                                                                                        </div>
+                                                                                        <div class="col-md-8 col-sm-8">
+                                                                                            <div class="input-group">
+                                                                                                <input type="text" class="form-control required" placeholder="Tên người thụ hưởng..." >
+                                                                                                <span class="input-group-append">
+                                                                                                    <button type="button" class="btn bg-primary" data-fancybox data-base-class="fancybox-container-lg" data-type="iframe" data-src="<?php echo HTTP_PATH; ?>view/inc/iframe/iframe_ds_khach_hang.php" href="javascript:;">Chọn</button>
+                                                                                                </span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <?php inc('template/1_thong_tin_chung/can_bo_khai_thac.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <?php inc('template/1_thong_tin_chung/can_bo_cap_don.php'); ?>
+                                                                            </div>
+
+                                                                    <!--         <?php if (!empty($GLOBALS["can_bo_ki_don"]) && $GLOBALS["can_bo_ki_don"] == 'hide') : ?>
+                                                                            <?php else: ?>
+                                                                                <div class="col-md-3">
+                                                                                    <?php inc('template/1_thong_tin_chung/can_bo_ki_don.php'); ?>
+                                                                                </div>
+                                                                            <?php endif; ?> -->
+
+                                                                            <div class="col-md-3">
+                                                                                <?php inc('template/1_thong_tin_chung/ngay_cap.php'); ?>
+                                                                            </div>
+                                                                            
+                                                                            <?php if (!empty($GLOBALS["1_thong_tin_chung"]) && $GLOBALS["1_thong_tin_chung"] == 'ngay_ki_don') : ?>
+                                                                                <div class="col-md-3">
+                                                                                    <?php inc('template/1_thong_tin_chung/ngay_ki_don.php'); ?>
+                                                                                </div>
+                                                                            <?php endif; ?>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <?php inc('template/1_thong_tin_chung/loai_tien.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <?php inc('template/1_thong_tin_chung/ti_gia_thuc_te.php'); ?>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <?php inc('template/1_thong_tin_chung/tai_bao_hiem.php'); ?>
+                                                                                <?php inc('template/1_thong_tin_chung/dong_bao_hiem.php'); ?>
+                                                                            </div>
+                                                                        </div>
+                                                                    </fieldset>
 
                                                                     <!-- Step 2 -->
                                                                     <?php inc('template/2_trung_gian_bao_hiem/2_trung_gian_bao_hiem.php'); ?>
                                                                     
                                                                     <!-- Step 3 -->
-                                                                    <fieldset class="tab-pane" id="step3">
-                                                                        <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/PRO/ma_dia_diem.php'); ?>
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/PRO/nhom_rui_ro.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/PRO/nganh_nghe_kinh_doanh.php'); ?>
-                                                                            </div>
-                                                                        </div>
-                                                                    </fieldset>
+                                                                    <?php inc('template/3_doi_tuong_bao_hiem/CRL/3_doi_tuong_bao_hiem.php'); ?>
                                                                     
                                                                     <!-- Step 4 -->
                                                                     <fieldset class="tab-pane" id="step4">
@@ -93,26 +189,9 @@
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php'); ?>
                                                                             </div>
                                                                         </div>
+                                                      
                                                                         <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group ">
-                                                                                    <label>Thời gian bảo hành: </label>
-                                                                                    <div class="input-group">
-                                                                                        <input type="text" class="form-control input-month"placeholder="Nhập thời hạn..." value="">
-                                                                                        <span class="input-group-append">
-                                                                                            <span class="input-group-text">Tháng</span>
-                                                                                        </span>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            
                                                                             <div class="col-md-12">
-                                                                                <div class="form-group">
-                                                                                    <input type="checkbox" id="phamvi">
-                                                                                    <label class="mb-0 ml-1" for="phamvi">Bao gồm các phạm vi về giông bão, lũ lụt</label>
-                                                                                </div>
                                                                                 <div class="form-group">
                                                                                     <table class="table table-bordered datatable" 
                                                                                         data-paging="false"
@@ -134,7 +213,7 @@
                                                                                         </thead>
                                                                                         <tbody>
                                                                                             <tr>
-                                                                                                <td>Mọi rủi ro trong công nghiệp</td>
+                                                                                                <td>Trách nhiệm công cộng</td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
@@ -144,28 +223,9 @@
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td>
                                                                                                     <select class="form-control" select2 >
-                                                                                                        <option id="ED2C208D-4755-4F3C-8DBA-FFBE9C705227" value="ED2C208D-4755-4F3C-8DBA-FFBE9C705227" title="Bảo hiểm cháy nổ nhà tư nhân: giá trị bảo hiểm<20 tỷ">Bảo hiểm cháy nổ nhà tư nhân: giá trị bảo hiểm&lt;20 tỷ</option>
-																									    <option id="EF8C6932-0897-4856-BDD9-C2713942F3A2" value="EF8C6932-0897-4856-BDD9-C2713942F3A2" title="Cat1-Giá trị bảo hiểm < 25 tỷ">Cat1-Giá trị bảo hiểm &lt; 25 tỷ</option>
-																									    <option id="538154E4-822B-4398-B731-E6A1D5E6C151" value="538154E4-822B-4398-B731-E6A1D5E6C151" title="Cat1-Giá trị bảo hiểm < 25 tỷ đến 500 tỷ">Cat1-Giá trị bảo hiểm &lt; 25 tỷ đến 500 tỷ</option>
-																									    <option id="87925241-D181-460B-B749-F64109902CCB" value="87925241-D181-460B-B749-F64109902CCB" title="Cat1-500 tỷ ≤ Giá trị bảo hiểm < 1000 tỷ">Cat1-500 tỷ ≤ Giá trị bảo hiểm &lt; 1000 tỷ</option>
-																									    <option id="3F8CA807-BBFC-4B90-9F73-1EFE17C26CA1" value="3F8CA807-BBFC-4B90-9F73-1EFE17C26CA1" title="Cat1-Giá trị bảo hiểm từ 1000 tỷ đến 3000 tỷ">Cat1-Giá trị bảo hiểm từ 1000 tỷ đến 3000 tỷ</option>
-																									    <option id="B778EC80-D86F-42A5-8A39-0D4335B57758" value="B778EC80-D86F-42A5-8A39-0D4335B57758" title="Cat1-Giá trị bảo hiểm trên 3000 tỷ">Cat1-Giá trị bảo hiểm trên 3000 tỷ</option>
-																									    <option id="6658139C-77FB-4F57-9CEF-5DE57AE0B9F1" value="6658139C-77FB-4F57-9CEF-5DE57AE0B9F1" title="Cat2-Giá trị bảo hiểm < 25 tỷ">Cat2-Giá trị bảo hiểm &lt; 25 tỷ</option>
-																									    <option id="44076202-4F1A-41A9-B7A9-F89AC0A55D99" value="44076202-4F1A-41A9-B7A9-F89AC0A55D99" title="Cat2-Giá trị bảo hiểm từ 25 tỷ đến 350 tỷ">Cat2-Giá trị bảo hiểm từ 25 tỷ đến 350 tỷ</option>
-																									    <option id="89A0EDA4-2F33-4DBB-BFE5-51569195AA21" value="89A0EDA4-2F33-4DBB-BFE5-51569195AA21" title="Cat2-350 tỷ ≤ Giá trị bảo hiểm < 1000 tỷ">Cat2-350 tỷ ≤ Giá trị bảo hiểm &lt; 1000 tỷ</option>
-																									    <option id="441964E2-4BBC-440B-B2A3-DC3BC614EFE7" value="441964E2-4BBC-440B-B2A3-DC3BC614EFE7" title="Cat2-Giá trị bảo hiểm từ 1000 tỷ đến 2100 tỷ">Cat2-Giá trị bảo hiểm từ 1000 tỷ đến 2100 tỷ</option>
-																									    <option id="5D6C7D6B-8228-4C68-820E-7956D53B2CDF" value="5D6C7D6B-8228-4C68-820E-7956D53B2CDF" title="Cat2-Giá trị bảo hiểm trên 2100 tỷ">Cat2-Giá trị bảo hiểm trên 2100 tỷ</option>
-																									    <option id="E0F0D8A7-89D9-4B0B-9685-4AE79EBEC58A" value="E0F0D8A7-89D9-4B0B-9685-4AE79EBEC58A" title="Cat3-Giá trị bảo hiểm <100 tỷ">Cat3-Giá trị bảo hiểm &lt;100 tỷ</option>
-																									    <option id="DA0F93D8-2AA4-444C-B186-AC7412A97CD5" value="DA0F93D8-2AA4-444C-B186-AC7412A97CD5" title="Cat3-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ">Cat3-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ</option>
-																									    <option id="28905FBD-D8CB-4E25-AD4B-26A23620E745" value="28905FBD-D8CB-4E25-AD4B-26A23620E745" title="Cat3-Giá trị bảo hiểm trên 600 tỷ">Cat3-Giá trị bảo hiểm trên 600 tỷ</option>
-																									    <option id="C81B4790-FB0C-4320-B4AF-C46E353A7631" value="C81B4790-FB0C-4320-B4AF-C46E353A7631" title="Cat4A-Giá trị bảo hiểm <100 tỷ">Cat4A-Giá trị bảo hiểm &lt;100 tỷ</option>
-																									    <option id="6DE38B57-E3F6-40A6-B073-98BA1FAE9CD0" value="6DE38B57-E3F6-40A6-B073-98BA1FAE9CD0" title="Cat4A-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ">Cat4A-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ</option>
-																									    <option id="4E8EE8B6-8ED0-44D8-A7EB-46A8198E69FE" value="4E8EE8B6-8ED0-44D8-A7EB-46A8198E69FE" title="Cat4A-Giá trị bảo hiểm trên 600 tỷ">Cat4A-Giá trị bảo hiểm trên 600 tỷ</option>
-																									    <option id="B559F85C-76FA-4BDF-9CEC-9BDD6D9020EC" value="B559F85C-76FA-4BDF-9CEC-9BDD6D9020EC" title="Cat4B-Giá trị bảo hiểm <100 tỷ">Cat4B-Giá trị bảo hiểm &lt;100 tỷ</option>
-																									    <option id="05C66F02-A21F-42E7-A849-F199053C43E5" value="05C66F02-A21F-42E7-A849-F199053C43E5" title="Cat4B-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ">Cat4B-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ</option>
-																									    <option id="A74C7D64-CD2B-47A5-9DED-2E623DD873CE" value="A74C7D64-CD2B-47A5-9DED-2E623DD873CE" title="Cat4B-Giá trị bảo hiểm trên 600 tỷ">Cat4B-Giá trị bảo hiểm trên 600 tỷ</option>
-																									    <option id="FBD142BF-22F7-4D43-B86A-993EFE342599" value="FBD142BF-22F7-4D43-B86A-993EFE342599" title="Định mức khác do Cty phê duyệt">Định mức khác do Cty phê duyệt</option>
-
+                                                                                                       <option value="">Mức trách nhiệm < 5 tỷ</option>
+                                                                                                       <option value="">Mức trách nhiệm từ 5 tỷ đến 100 tỷ</option>
+                                                                                                       <option value="">Mức trách nhiệm từ 100 tỷ trở lên</option>
                                                                                                     </select>
                                                                                                 </td>
                                                                                             </tr>
@@ -221,10 +281,10 @@
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-4">
+                                                                            <div class="col-md-6">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/dia_diem_bao_hiem.php'); ?>
                                                                             </div>
-                                                                            <div class="col-md-4">
+                                                                            <div class="col-md-6">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/quy_tac_bao_hiem.php'); ?>
                                                                             </div>
                                                                         </div>
@@ -263,7 +323,11 @@
                                                                                         </thead>
                                                                                         <tbody>
                                                                                             <tr>
-                                                                                                <td>Mọi rủi ro trong công nghiệp</td>
+                                                                                                <td>Trách nhiệm công cộng</td>
+                                                                                                <td class="text-right">0</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>Số tiền miễn thường</td>
                                                                                                 <td class="text-right">0</td>
                                                                                             </tr>
                                                                                             
@@ -332,11 +396,6 @@
         <?php inc('modal/modal_danh_muc_tai_san_bao_hiem.php'); ?>
         <?php inc('modal/modal_ds_may_moc.php'); ?>
          
-        <div class="modal-group">
-            <?php inc('modal/modal_ds_tau_thuyen.php'); ?> 
-            <?php inc('modal/modal_cap_nhap_tau_thuyen.php'); ?> 
-        </div>
-
         <div class="modal-group">
             <?php
                 inc('modal/modal_ds_cac_khach_hang.php'); 

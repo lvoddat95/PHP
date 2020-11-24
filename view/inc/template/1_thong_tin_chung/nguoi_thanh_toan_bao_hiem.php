@@ -9,7 +9,7 @@
                 <input type="text" class="form-control required" placeholder="Nhập tên khách hàng..." >
                 <span class="input-group-append">
                     <!-- <button type="button" class="btn bg-primary" data-toggle="modal" data-target="#ds_cac_khach_hang">Chọn từ danh mục <i class="fad fa-user-plus ml-1"></i></button> -->
-                    <button type="button" class="btn bg-primary" data-fancybox data-base-class="fancybox-container-xl" data-type="iframe" data-src="<?php echo HTTP_PATH; ?>view/inc/iframe/iframe_ds_khach_hang.php" href="javascript:;">Chọn từ danh mục <i class="fad fa-user-plus ml-1"></i></button>
+                    <button type="button" class="btn bg-primary" data-fancybox data-base-class="fancybox-container-xl" data-type="iframe" data-src="<?php echo HTTP_PATH; ?>view/inc/iframe/iframe_ds_khach_hang.php" href="javascript:;">Chọn</button>
                 </span>
             </div>
         </div>
