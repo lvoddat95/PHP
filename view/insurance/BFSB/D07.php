@@ -19,7 +19,7 @@
                         </button>
                         <div class="top-left">
                             <div class="breadcrumb">
-                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i>D01 - Bảo hiểm tàu biển</a>
+                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i>D07 - Bảo hiểm trách nhiệm dân sự chủ tầu viễn dương (P&I mutual)</a>
                                 <span class="breadcrumb-item active">Cập nhập đơn</span>
                             </div>
                             <div class="d-md-none logo-mobile">
@@ -295,16 +295,29 @@
                                                                             </div>
                                                                             <div class="col-md-2">
                                                                                 <div class="form-group">
-                                                                                    <label for="">Số IMO:</label>
-                                                                                    <input type="text" class="form-control">
+                                                                                    <label for="">SL thuyền trưởng: </label>
+                                                                                    <input type="text" class="form-control input-number" placeholder="0">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-2">
                                                                                 <div class="form-group">
-                                                                                    <label for="">Số đăng ký:</label>
+                                                                                    <label for="">SL sỹ quan: </label>
+                                                                                    <input type="text" class="form-control input-number" placeholder="0">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-2">
+                                                                                <div class="form-group">
+                                                                                    <label for="">SL thủy thủ: </label>
+                                                                                    <input type="text" class="form-control input-number" placeholder="0">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-2">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Số IMO:</label>
                                                                                     <input type="text" class="form-control">
                                                                                 </div>
                                                                             </div>
+                                                                            
                                                                         </div>
                                                                         <div class="row">
                                                                             <div class="col-md-9">
@@ -327,7 +340,7 @@
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <div class="form-group">
-                                                                                    <label for="">Cảng đăng ký:</label>
+                                                                                    <label for="">Số đăng ký:</label>
                                                                                     <input type="text" class="form-control">
                                                                                 </div>
                                                                             </div>
@@ -368,7 +381,7 @@
                                                                                         </thead>
                                                                                         <tbody>
                                                                                             <tr>
-                                                                                                <td>1. Thân tàu</td>
+                                                                                                <td>Trách nhiệm dân sự chủ tầu viễn dương</td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
@@ -378,42 +391,11 @@
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td>
                                                                                                     <select class="form-control" select2 >
-                                                                                                        <option>Tàu từ 1-15 tuổi</option>
-                                                                                                        <option >Tàu từ 16-25 tuổi</option>
-                                                                                                        <option>Trên 25 tuổi, BH tổn thất toàn bộ</option>
+                                                                                                        <option>Trách nhiệm dân sự chủ tầu viễn dương</option>
                                                                                                     </select>
                                                                                                 </td>
                                                                                             </tr>
-                                                                                            <tr>
-                                                                                                <td>2. TNDS (P and I fixed)</td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                <td><input class="form-control text-right input-float" type="text" value="10"></td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" value="0"></td>
-                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                <td>
-                                                                                                    <select class="form-control" select2 >
-                                                                                                        <option>P and I ( phần tăng thêm so với phí hội)</option>
-                                                                                                    </select>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>3. Tai nạn thuyền viên</td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                <td><input class="form-control text-right input-float" type="text" value="10"></td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" value="0"></td>
-                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                <td>
-                                                                                                    <select class="form-control" select2 >
-                                                                                                        <option>Tai nạn thuyền viên</option>
-                                                                                                    </select>
-                                                                                                </td>
-                                                                                            </tr>
+                                                                                            
                                                                                             <tr>
                                                                                                 <th><b>Tổng cộng: </b></th>
                                                                                                 <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></th>
@@ -494,15 +476,7 @@
                                                                                                 <td class="text-right">0</td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <td>1. Thân tàu</td>
-                                                                                                <td class="text-right">0</td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>2. TNDS (P and I fixed)</td>
-                                                                                                <td class="text-right">0</td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>3. Tai nạn thuyền viên</td>
+                                                                                                <td>Trách nhiệm dân sự chủ tầu viễn dương</td>
                                                                                                 <td class="text-right">0</td>
                                                                                             </tr>
                                                                                             

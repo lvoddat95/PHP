@@ -19,7 +19,7 @@
                         </button>
                         <div class="top-left">
                             <div class="breadcrumb">
-                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i>D01 - Bảo hiểm tàu biển</a>
+                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i>D03 - Bảo hiểm tàu cá</a>
                                 <span class="breadcrumb-item active">Cập nhập đơn</span>
                             </div>
                             <div class="d-md-none logo-mobile">
@@ -253,6 +253,12 @@
                                                                             </div>
                                                                             <div class="col-md-2">
                                                                                 <div class="form-group">
+                                                                                    <label for="">Giá trị thân tàu: </label>
+                                                                                    <input type="text" class="form-control input-money text-right" placeholder="0">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-2">
+                                                                                <div class="form-group">
                                                                                     <label for="">Vỏ tàu:</label>
                                                                                     <div class="input-group">
                                                                                         <input type="text" class="form-control input-float text-right" placeholder="0" value="">
@@ -287,6 +293,12 @@
                                                                         </div>
 
                                                                         <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Giá trị ngư lưới cụ: </label>
+                                                                                    <input type="text" class="form-control input-money text-right" placeholder="0">
+                                                                                </div>
+                                                                            </div>
                                                                             <div class="col-md-2">
                                                                                 <div class="form-group">
                                                                                     <label for="">Số lượng thuyền viên: </label>
@@ -306,6 +318,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+
                                                                         <div class="row">
                                                                             <div class="col-md-9">
                                                                                 <div class="form-group">
@@ -323,12 +336,6 @@
                                                                                         <option value="">Bảo hiểm TNDS có hàng hóa</option>
                                                                                         <option value="">Bảo hiểm TNDS không có hàng hóa</option>
                                                                                     </select>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group">
-                                                                                    <label for="">Cảng đăng ký:</label>
-                                                                                    <input type="text" class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -395,7 +402,8 @@
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td>
                                                                                                     <select class="form-control" select2 >
-                                                                                                        <option>P and I ( phần tăng thêm so với phí hội)</option>
+                                                                                                        <option>TNDS khác</option>
+                                                                                                        <option>TNDS bắt buộc của chủ tàu đối với hành khách</option>
                                                                                                     </select>
                                                                                                 </td>
                                                                                             </tr>

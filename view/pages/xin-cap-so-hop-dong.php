@@ -197,8 +197,8 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" class="dropdown-item" data-toggle="modal" data-target="#xin_gia_han_hop_dong"><i class="icon-file-plus text-success"></i> Xin gia hạn</a>
-                                                                <a href="#" class="dropdown-item" data-toggle="modal" data-target="#xin_huy_hop_dong"><i class="icon-file-minus text-danger"></i> Xin hủy</a>
+                                                                <a href="#" class="dropdown-item" onclick="fancybox_modal(this,'#xin_gia_han_hop_dong')" ><i class="icon-file-plus text-success"></i> Xin gia hạn</a>
+                                                                <a href="#" class="dropdown-item" onclick="fancybox_modal(this,'#xin_huy_hop_dong')" ><i class="icon-file-minus text-danger"></i> Xin hủy</a>
                                                                 <div class="dropdown-divider"></div>
                                                                 <a href="#" class="dropdown-item"><i class="icon-printer2"></i> In tờ trình</a>
                                                             </div>
@@ -221,8 +221,8 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" class="dropdown-item" data-toggle="modal" data-target="#xin_gia_han_hop_dong"><i class="icon-file-plus text-success"></i> Xin gia hạn</a>
-                                                                <a href="#" class="dropdown-item" data-toggle="modal" data-target="#xin_huy_hop_dong"><i class="icon-file-minus text-danger"></i> Xin hủy</a>
+                                                                <a href="#" class="dropdown-item" onclick="fancybox_modal(this,'#xin_gia_han_hop_dong')" ><i class="icon-file-plus text-success"></i> Xin gia hạn</a>
+                                                                <a href="#" class="dropdown-item" onclick="fancybox_modal(this,'#xin_huy_hop_dong')" ><i class="icon-file-minus text-danger"></i> Xin hủy</a>
                                                                 <div class="dropdown-divider"></div>
                                                                 <a href="#" class="dropdown-item"><i class="icon-printer2"></i> In tờ trình</a>
                                                             </div>
@@ -245,8 +245,8 @@
                                                         <div class="dropdown">
                                                             <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a href="#" class="dropdown-item" data-toggle="modal" data-target="#xin_gia_han_hop_dong"><i class="icon-file-plus text-success"></i> Xin gia hạn</a>
-                                                                <a href="#" class="dropdown-item" data-toggle="modal" data-target="#xin_huy_hop_dong"><i class="icon-file-minus text-danger"></i> Xin hủy</a>
+                                                                <a href="#" class="dropdown-item" onclick="fancybox_modal(this,'#xin_gia_han_hop_dong')" ><i class="icon-file-plus text-success"></i> Xin gia hạn</a>
+                                                                <a href="#" class="dropdown-item" onclick="fancybox_modal(this,'#xin_huy_hop_dong')" ><i class="icon-file-minus text-danger"></i> Xin hủy</a>
                                                                 <div class="dropdown-divider"></div>
                                                                 <a href="#" class="dropdown-item"><i class="icon-printer2"></i> In tờ trình</a>
                                                             </div>
@@ -262,7 +262,7 @@
 
                             <div class="card-footer ">
                                 <div class="p-button justify-content-end">
-                                    <a href="#" data-toggle="modal" data-target="#xin_cap_hop_dong" class="btn btn-labeled btn-labeled-left mr-1"><b><i class="icon-file-check"></i></b> Xin cấp số hợp đồng</a>
+                                    <a href="#" onclick="fancybox_modal(this,'#xin_cap_hop_dong')" class="btn btn-labeled btn-labeled-left mr-1"><b><i class="icon-file-check"></i></b> Xin cấp số hợp đồng</a>
                                     <a href="#" class="btn bg-primary"><i class="icon-checkmark4 mr-1"></i>Chọn</a>
                                 </div>
                             </div>

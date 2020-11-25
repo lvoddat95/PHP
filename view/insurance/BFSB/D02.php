@@ -19,7 +19,7 @@
                         </button>
                         <div class="top-left">
                             <div class="breadcrumb">
-                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i>D01 - Bảo hiểm tàu biển</a>
+                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i>D02 - Bảo hiểm tàu sông, tàu ven biển</a>
                                 <span class="breadcrumb-item active">Cập nhập đơn</span>
                             </div>
                             <div class="d-md-none logo-mobile">
@@ -306,6 +306,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+
                                                                         <div class="row">
                                                                             <div class="col-md-9">
                                                                                 <div class="form-group">
@@ -327,8 +328,8 @@
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <div class="form-group">
-                                                                                    <label for="">Cảng đăng ký:</label>
-                                                                                    <input type="text" class="form-control">
+                                                                                    <label for="">Ngày khởi hành:</label>
+                                                                                    <input type="text" class="form-control input-date datepicker" placeholder="dd/mm/yyyy">
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -395,7 +396,8 @@
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td>
                                                                                                     <select class="form-control" select2 >
-                                                                                                        <option>P and I ( phần tăng thêm so với phí hội)</option>
+                                                                                                        <option>TNDS khác</option>
+                                                                                                        <option>TNDS bắt buộc của chủ tàu đối với hành khách</option>
                                                                                                     </select>
                                                                                                 </td>
                                                                                             </tr>
