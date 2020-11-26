@@ -258,10 +258,7 @@
                                                                             <div class="col-md-4">
                                                                                 <div class="form-group">
                                                                                     <label>Tên rủi ro: <span class="text-danger">*</span></label>
-                                                                                    <div class="d-flex align-items-center">
-                                                                                        <textarea disabled class="form-control" placeholder="Nhập rủi ro...">Bảo hiểm cho thiệt hại hay tổn thất vật chất bất ngờ đối với những tài sản được bảo hiểm tại địa điểm được bảo hiểm bị tổn thất, phá hủy hoặc thiệt hại do bất kỳ nguyên nhân nào không bị hợp đồng bảo hiểm loại trừ phát sinh trong thời hạn bảo hiểm</textarea>
-                                                                                        <button disabled type="button" class="btn bg-primary text-nowrap ml-2" data-toggle="modal" data-target="#ds_rui_ro_bao_hiem">Chọn</button>
-                                                                                    </div>
+                                                                                    <textarea disabled class="form-control" placeholder="Nhập rủi ro...">Bảo hiểm cho thiệt hại hay tổn thất vật chất bất ngờ đối với những tài sản được bảo hiểm tại địa điểm được bảo hiểm bị tổn thất, phá hủy hoặc thiệt hại do bất kỳ nguyên nhân nào không bị hợp đồng bảo hiểm loại trừ phát sinh trong thời hạn bảo hiểm</textarea>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">

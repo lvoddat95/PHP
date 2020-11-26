@@ -6,6 +6,7 @@
 <?php $GLOBALS["quy_tac_bao_hiem_b17"] = 'b17'; ?>
 <?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
 <?php $GLOBALS["loai_mien_thuong"] = 'repeater'; ?>
+<?php $GLOBALS["rui_ro_b17"] = 'b17'; ?>
 
     <body class="sidebar-xs">
 

@@ -24,8 +24,32 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <?php if (!empty($GLOBALS["rui_ro"]) && $GLOBALS["rui_ro"] == 'rui_ro') : ?>
-                                           
+                                        <?php if (!empty($GLOBALS["rui_ro_b17"]) && $GLOBALS["rui_ro_b17"] == 'b17') : ?>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>Cháy, sét đánh, nổ</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>Máy bay rơi</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>Giông, lốc, bão</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>Lũ lụt</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_RUI_RO</td>
+                                                <td>Đình công, bạo động</td>
+                                            </tr>
                                        
                                         <?php else: ?>
                                             <tr>

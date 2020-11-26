@@ -172,7 +172,10 @@
 
                                                                         <div class="row">
                                                                             <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/ten_rui_ro.php'); ?>
+                                                                                <div class="form-group">
+                                                                                    <label>Tên rủi ro: <span class="text-danger">*</span></label>
+                                                                                    <textarea disabled class="form-control" placeholder="Nhập rủi ro..." disabled></textarea>
+                                                                                </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <div class="form-group">
