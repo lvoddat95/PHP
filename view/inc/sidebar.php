@@ -123,11 +123,7 @@
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g09.php'; ?>" class="nav-link"><span class="menu-title">G09 - Bảo hiểm tai nạn đối với người lao động</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g12.php'; ?>" class="nav-link"><span class="menu-title">G12 - Bảo hiểm chăm sóc sức khỏe cá nhân White Lotus</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g13.php'; ?>" class="nav-link"><span class="menu-title">G13 - Bảo hiểm tai nạn hộ sử dụng điện</span></a></li>
-                            <!--     <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g14.php'; ?>" class="nav-link"><span class="menu-title">G14 - Bảo hiểm tai nạn con người tại hộ gia đình do cháy chung cư, nhà riêng</span></a></li> -->
-                                <!-- <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g15.php'; ?>" class="nav-link"><span class="menu-title">G15 - Toàn Diện Hộ Gia Đình</span></a></li> -->
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g16.php'; ?>" class="nav-link"><span class="menu-title">G16 - Bảo hiểm sức khỏe người vay vốn</span></a></li>
-                                <!-- <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g17.php'; ?>" class="nav-link"><span class="menu-title">G17 - Bảo hiểm tai nạn giao thông đường bộ</span></a></li> -->
-                         <!--        <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g18.php'; ?>" class="nav-link"><span class="menu-title">G18 - Thông tư 329 - Bảo hiểm đối với người lao động thi công trên công trường</span></a></li> -->
                             </ul>
                         </li>
 
@@ -146,7 +142,6 @@
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/PRO/b08.php'; ?>" class="nav-link"><span class="menu-title">B08 - Bảo hiểm lòng trung thành</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/PRO/b09.php'; ?>" class="nav-link"><span class="menu-title">B09 - Chứng thư bảo lãnh</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/PRO/b12.php'; ?>" class="nav-link"><span class="menu-title">B12 - Bảo hiểm bảng hiệu đèn quảng cáo</span></a></li>
-                                <li><a href="<?php echo HTTP_PATH .'view/insurance/PRO/b16.php'; ?>" class="nav-link"><span class="menu-title">B16 - Bảo hiểm toàn diện nhà chung cư</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/PRO/b17.php'; ?>" class="nav-link"><span class="menu-title">B17 - Bảo hiểm vườn cây cao su</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/PRO/b18.php'; ?>" class="nav-link"><span class="menu-title">B18 - Bảo hiểm mọi rủi ro trong công nghiệp</span></a></li>
                             </ul>

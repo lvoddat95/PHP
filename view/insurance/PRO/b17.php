@@ -3,7 +3,9 @@
 <?php $GLOBALS["trach_nhiem_dong_bao_hiem"] = 'trach-nhiem-dong-bao-hiem'; ?>
 <?php $GLOBALS["can_bo_ki_don"] = 'hide'; ?>
 <?php $GLOBALS["dieu_kien_bao_hiem"] = 'modal'; ?>
+<?php $GLOBALS["quy_tac_bao_hiem_b17"] = 'b17'; ?>
 <?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
+<?php $GLOBALS["loai_mien_thuong"] = 'repeater'; ?>
 
     <body class="sidebar-xs">
 
@@ -62,30 +64,7 @@
                                                     <div class="card-body">
                                                         <div class="wizard">
 
-                                                            <div class="steps clearfix">
-                                                                <ul class="nav nav-tabs" role="tablist">
-                                                                    <li class="current">
-                                                                        <a href="#step1" class="active show" data-toggle="tab">
-                                                                            <span class="number">1</span> Thông tin chung
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="disabled">
-                                                                        <a href="#step2" data-toggle="tab">
-                                                                            <span class="number">2</span> Trung gian bảo hiểm
-                                                                        </a>
-                                                                    </li>
-                                                                   <!--  <li class="disabled">
-                                                                        <a href="#step3" data-toggle="tab">
-                                                                            <span class="number">3</span> Đối tượng bảo hiểm
-                                                                        </a>
-                                                                    </li> -->
-                                                                    <li class="disabled">
-                                                                        <a href="#step4" data-toggle="tab">
-                                                                            <span class="number">4</span> Phạm vi bảo hiểm
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
+                                                            <?php inc('template/steps2.php'); ?>
 
                                                             <form action="#" class="form-validation clearfix">
                                                                 <div class="tab-content">
@@ -94,35 +73,6 @@
 
                                                                     <!-- Step 2 -->
                                                                     <?php inc('template/2_trung_gian_bao_hiem/2_trung_gian_bao_hiem.php'); ?>
-                                                                    
-                                                                    <!-- Step 3 -->
-                                                                  <!--   <fieldset class="tab-pane" id="step3">
-                                                                        <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/PRO/doi_tuong_tham_gia_bao_hiem.php'); ?>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/PRO/nhom_rui_ro.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/PRO/nganh_nghe_kinh_doanh.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-6">
-                                                                                <div class="row">
-                                                                                    <div class="col-md-6">
-                                                                                        <?php inc('template/3_doi_tuong_bao_hiem/PRO/ti_le_phi.php'); ?>
-                                                                                    </div>
-                                                                                    <div class="col-md-6 d-flex align-items-end">
-                                                                                        <div class="form-group">
-                                                                                            <button type="button" class="btn bg-primary" data-toggle="modal" data-target="#danh_muc_tai_san_bao_hiem">Danh sách tài sản<i class="icon-profile ml-2"></i></button>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </fieldset> -->
                                                                     
                                                                     <!-- Step 4 -->
                                                                     <fieldset class="tab-pane" id="step4">
@@ -195,14 +145,8 @@
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/loai_mien_thuong.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/ti_le_gia_tri_ton_that.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/so_tien_khau_tru_toi_thieu.php'); ?>
+                                                                            <div class="col-md-12">
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/loai_mien_thuong_repeater.php'); ?>
                                                                             </div>
                                                                         </div>
 
@@ -211,7 +155,10 @@
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/ten_rui_ro.php'); ?>
                                                                             </div>
                                                                             <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/dieu_kien_bao_hiem.php'); ?>
+                                                                                <div class="form-group">
+                                                                                    <label>Điều kiện bảo hiểm: </label>
+                                                                                    <textarea class="form-control" placeholder="Nhập điều kiện bảo hiểm..." disabled="">Bảo hiểm vườn cây cao su</textarea>
+                                                                                </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/dieu_khoan_loai_tru.php'); ?>

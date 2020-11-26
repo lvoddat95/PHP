@@ -4,7 +4,8 @@
 <?php $GLOBALS["can_bo_ki_don"] = 'hide'; ?>
 <?php $GLOBALS["dieu_kien_bao_hiem"] = 'modal'; ?>
 <?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
-  
+<?php $GLOBALS["loai_mien_thuong"] = 'repeater'; ?>
+
     <body class="sidebar-xs">
 
         <div class="page-content home-page">
@@ -73,7 +74,7 @@
                                                                     <?php inc('template/2_trung_gian_bao_hiem/2_trung_gian_bao_hiem.php'); ?>
                                                                     
                                                                     <!-- Step 3 -->
-                                                                    <?php inc('template/3_doi_tuong_bao_hiem/PRO/3_doi_tuong_bao_hiem.php'); ?>
+                                                                    <?php inc('template/3_doi_tuong_bao_hiem/PRO/3_doi_tuong_bao_hiem2.php'); ?>
                                                                     
                                                                     <!-- Step 4 -->
                                                                     <fieldset class="tab-pane" id="step4">
@@ -164,14 +165,8 @@
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/loai_mien_thuong.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/ti_le_gia_tri_ton_that.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/so_tien_khau_tru_toi_thieu.php'); ?>
+                                                                            <div class="col-md-12">
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/loai_mien_thuong_repeater.php'); ?>
                                                                             </div>
                                                                         </div>
 
@@ -180,7 +175,10 @@
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/ten_rui_ro.php'); ?>
                                                                             </div>
                                                                             <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/dieu_kien_bao_hiem.php'); ?>
+                                                                                <div class="form-group">
+                                                                                    <label>Điều kiện bảo hiểm: </label>
+                                                                                    <textarea class="form-control" placeholder="Nhập điều kiện bảo hiểm..." disabled="">Chứng thư bảo lãnh</textarea>
+                                                                                </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/dieu_khoan_loai_tru.php'); ?>

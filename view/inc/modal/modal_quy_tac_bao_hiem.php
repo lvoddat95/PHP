@@ -61,6 +61,34 @@
                                     <td>Quy tắc bảo hiểm Mọi rủi ro văn phòng ban hành kèm theo Quyết định số 35/2019/QĐ-BHHK ngày 09/01/2019 của Tổng Giám đốc Tổng Công ty Cổ phần Bảo hiểm Hàng Không</td>
                                 </tr>
 
+                            <?php elseif (!empty($GLOBALS["quy_tac_bao_hiem_b06"]) && $GLOBALS["quy_tac_bao_hiem_b06"] == 'b06') : ?>
+                                <tr>
+                                    <td><input type="checkbox" value=""></td>
+                                    <td>MAQUYTAC</td>
+                                    <td>Quy tắc Bảo hiểm Mọi rủi ro về tiền Ban hành kèm theo Quyết định số 19/2019/QĐ-BHHK ngày 09/01/2019 của Tổng Giám đốc Tổng Công ty Cổ phần Bảo hiểm Hàng không</td>
+                                </tr>
+
+                            <?php elseif (!empty($GLOBALS["quy_tac_bao_hiem_b07"]) && $GLOBALS["quy_tac_bao_hiem_b07"] == 'b07') : ?>
+                                <tr>
+                                    <td><input type="checkbox" value=""></td>
+                                    <td>MAQUYTAC</td>
+                                    <td>Quy tắc Bảo hiểm hư hỏng hàng hóa trong kho lạnh Ban hành kèm theo Quyết định số 30/2019/QĐ-BHHK ngày 09/01/2019 của Tổng Giám đốc Tổng Công ty Cổ phần Bảo hiểm Hàng không</td>
+                                </tr>
+
+                            <?php elseif (!empty($GLOBALS["quy_tac_bao_hiem_b12"]) && $GLOBALS["quy_tac_bao_hiem_b12"] == 'b12') : ?>
+                                <tr>
+                                    <td><input type="checkbox" value=""></td>
+                                    <td>MAQUYTAC</td>
+                                    <td>Quy tắc Bảo hiểm bảng hiệu, đèn quảng cáo Ban hành kèm theo Quyết định số 36/2019/QĐ-BHHK ngày 09/01/2019 của Tổng Giám đốc Tổng Công ty Cổ phần Bảo hiểm Hàng không</td>
+                                </tr>
+
+                            <?php elseif (!empty($GLOBALS["quy_tac_bao_hiem_b17"]) && $GLOBALS["quy_tac_bao_hiem_b17"] == 'b17') : ?>
+                                <tr>
+                                    <td><input type="checkbox" value=""></td>
+                                    <td>MAQUYTAC</td>
+                                    <td>Quy tắc Bảo hiểm vườn cây cao su Ban hành kèm theo Quyết định số 41/2019/QĐ-BHHK ngày 09/01/2019 của Tổng Giám đốc Tổng Công ty Cổ phần Bảo hiểm Hàng không</td>
+                                </tr>
+
                             <?php elseif (!empty($GLOBALS["quy_tac_bao_hiem_b16"]) && $GLOBALS["quy_tac_bao_hiem_b16"] == 'b16') : ?>
                                 <tr>
                                     <td><input type="checkbox" value=""></td>

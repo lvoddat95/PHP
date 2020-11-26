@@ -6,7 +6,7 @@
 <?php $GLOBALS["dieu_kien_bao_hiem_b05"] = 'b05'; ?>
 <?php $GLOBALS["1_thong_tin_chung"] = 'ngay_ki_don'; ?>
 <?php $GLOBALS["ngay_cap"] = 'to_day'; ?>
-<?php $GLOBALS["quy_tac_bao_hiem_b01"] = 'b05'; ?>
+<?php $GLOBALS["quy_tac_bao_hiem_b01"] = 'b01'; ?>
 <?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
 
     <body class="sidebar-xs">
@@ -208,9 +208,6 @@
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php'); ?>
                                                                             </div>
                                                                             <div class="col-md-12">
-                                                                                <div class="form-group ">
-                                                                                    <input type="checkbox" id="phamvi"><label class="mb-0 ml-1" for="phamvi">Bao gồm các phạm vi về giông bão, lũ lụt</label>
-                                                                                </div>
                                                                                 <div class="form-group">
                                                                                     <table class="table table-bordered datatable" 
                                                                                         data-paging="false"

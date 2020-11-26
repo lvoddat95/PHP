@@ -3,7 +3,9 @@
 <?php $GLOBALS["trach_nhiem_dong_bao_hiem"] = 'trach-nhiem-dong-bao-hiem'; ?>
 <?php $GLOBALS["can_bo_ki_don"] = 'hide'; ?>
 <?php $GLOBALS["dieu_kien_bao_hiem"] = 'modal'; ?>
+<?php $GLOBALS["quy_tac_bao_hiem_b12"] = 'b12'; ?>
 <?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
+<?php $GLOBALS["loai_mien_thuong"] = 'repeater'; ?>
 
     <body class="sidebar-xs">
 
@@ -73,7 +75,7 @@
                                                                     <?php inc('template/2_trung_gian_bao_hiem/2_trung_gian_bao_hiem.php'); ?>
                                                                     
                                                                     <!-- Step 3 -->
-                                                                    <?php inc('template/3_doi_tuong_bao_hiem/PRO/3_doi_tuong_bao_hiem.php'); ?>
+                                                                    <?php inc('template/3_doi_tuong_bao_hiem/PRO/3_doi_tuong_bao_hiem2.php'); ?>
                                                                     
                                                                     <!-- Step 4 -->
                                                                     <fieldset class="tab-pane" id="step4">
@@ -81,71 +83,118 @@
                                                                             <div class="col-md-12">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php'); ?>
                                                                             </div>
+                                                                        </div>
+
+                                                                        <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <div class="form-group">
-                                                                                    <table class="table table-bordered datatable" 
-                                                                                        data-paging="false"
-                                                                                        data-info="false"
-                                                                                        data-ordering="false"
-                                                                                        data-searching="false">
-                                                                                        <thead class="thead-light">
-                                                                                            <tr>
-                                                                                                <th width="20%">Phạm vi bảo hiểm</th>
-                                                                                                <th width="10%">Số tiền bảo hiểm</th>
-                                                                                                <th width="5%" class="desktop">Phí (%)</th>
-                                                                                                <th width="10%" class="desktop">Phí BH (có VAT)</th>
-                                                                                                <th width="5%" class="desktop">VAT (%)</th>
-                                                                                                <th width="10%" class="desktop">VAT</th>
-                                                                                                <th width="5%" class="desktop">COM (%)</th>
-                                                                                                <th width="10%" class="desktop">COM</th>
-                                                                                                <th width="20%" class="desktop">Định mức</th>
-                                                                                            </tr>
-                                                                                        </thead>
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td>Bảo hiểm bảng hiệu đèn quảng cáo</td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                <td><input class="form-control text-right input-float" type="text" value="10"></td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" value="0"></td>
-                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                <td>
-                                                                                                    <select class="form-control" select2>
-                                                                                                        <option>Bảo hiểm bảng hiệu đèn quảng cáo</option>
-                                                                                                    </select>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>Trách nhiêm bên thứ 3</td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                <td><input class="form-control text-right input-float" type="text" value="10"></td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" value="0"></td>
-                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                <td>
-                                                                                                    <select class="form-control" select2>
-                                                                                                        <option>Trách nhiêm bên thứ 3</option>
-                                                                                                    </select>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <th><b>Tổng cộng: </b></th>
-                                                                                                <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></th>
-                                                                                                <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0.99"></th>
-                                                                                                <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></th>
-                                                                                                <th align="right"><input class="form-control text-right" type="text" disabled readonly value="10"></th>
-                                                                                                <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></th>
-                                                                                                <th align="right"><input class="form-control text-right" type="text" disabled readonly value="10.0"></th>
-                                                                                                <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></th>
-                                                                                                <th align="right"></th>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                            
-                                                                                    </table>
+                                                                                <div class="collapse-group">
+                                                                                    <div class="p-title">Phạm vi bảo hiểm: <a href="#" data-tooltip="tipsy" original-title="Chỉ có thể chọn Tổn thất vật chất tự nguyện hoặc Tổn thất vật chất bắt buộc" data-position="top"><i class="icon-info22"></i></a></div>
+                                                                                    <div class="p-body collapse show">
+
+                                                                                        <div class="c-item">
+                                                                                            <div class="c-title">
+                                                                                                <span class="button-switch no-label">
+                                                                                                    <input type="checkbox" id="ckbchild1" class="switch cls_ckb">
+                                                                                                    <label for="ckbchild1" data-off="Không" data-on="Có"></label>
+                                                                                                </span>
+                                                                                                <a data-toggle="collapse" class="collapsed" href="#collapsible-item1">Bảo hiểm bảng hiệu đèn quảng cáo</a>
+                                                                                            </div>
+                                                
+                                                                                            <div id="collapsible-item1" class="collapse" datatable-collapse>
+                                                                                                <div class="c-body">
+                                                                                                    <table class="table table-bordered datatable" 
+                                                                                                        data-paging="false"
+                                                                                                        data-info="false"
+                                                                                                        data-ordering="false"
+                                                                                                        data-searching="false" >
+                                                                                                        <thead class="thead-light">
+                                                                                                            <tr>
+                                                                                                                <th width="20%">Phạm vi bảo hiểm</th>
+                                                                                                                <th width="17%">Số tiền bảo hiểm</th>
+                                                                                                                <th width="5%" class="desktop">Phí (%)</th>
+                                                                                                                <th width="10%" class="desktop">Phí BH (có VAT)</th>
+                                                                                                                <th width="5%" class="desktop">VAT (%)</th>
+                                                                                                                <th width="10%" class="desktop">VAT</th>
+                                                                                                                <th width="5%" class="desktop">COM (%)</th>
+                                                                                                                <th width="10%" class="desktop">COM</th>
+                                                                                                                <th width="17%" class="desktop">Định mức</th>
+                                                                                                            </tr>
+                                                                                                        </thead>
+                                                                                                        <tbody>
+                                                                                                            <tr>
+                                                                                                                <td>Bảo hiểm bảng hiệu đèn quảng cáo</td>
+                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
+                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                                <td><input class="form-control text-right input-float" type="text" value="10"></td>
+                                                                                                                <td><input class="form-control text-right input-money" type="text" value="0"></td>
+                                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
+                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                                <td>
+                                                                                                                    <select class="form-control" select2 >
+                                                                                                                        <option>Bảo hiểm bảng hiệu đèn quảng cáo</option>
+                                                                                                                    </select>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </tbody>
+                                                                                                    </table>
+                                                                                                    
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                        <div class="c-item ">
+                                                                                            <div class="c-title">
+                                                                                                <span class="button-switch no-label">
+                                                                                                    <input type="checkbox" id="ckbchild2" class="switch cls_ckb">
+                                                                                                    <label for="ckbchild2" data-off="Không" data-on="Có"></label>
+                                                                                                </span>
+                                                                                                <a class="collapsed " data-toggle="collapse" href="#collapsible-item2">Trách nhiêm bên thứ 3</a>
+                                                                                            </div>
+                                                                                            <div id="collapsible-item2" class="collapse" datatable-collapse>
+                                                                                                <div class="c-body">
+                                                                                                    <table class="table table-bordered datatable" 
+                                                                                                        data-paging="false"
+                                                                                                        data-info="false"
+                                                                                                        data-ordering="false"
+                                                                                                        data-searching="false" >
+                                                                                                        <thead class="thead-light">
+                                                                                                            <tr>
+                                                                                                                <th width="20%">Phạm vi bảo hiểm</th>
+                                                                                                                <th width="17%">Số tiền bảo hiểm</th>
+                                                                                                                <th width="5%" class="desktop">Phí (%)</th>
+                                                                                                                <th width="10%" class="desktop">Phí BH (có VAT)</th>
+                                                                                                                <th width="5%" class="desktop">VAT (%)</th>
+                                                                                                                <th width="10%" class="desktop">VAT</th>
+                                                                                                                <th width="5%" class="desktop">COM (%)</th>
+                                                                                                                <th width="10%" class="desktop">COM</th>
+                                                                                                                <th width="17%" class="desktop">Định mức</th>
+                                                                                                            </tr>
+                                                                                                        </thead>
+                                                                                                        <tbody>
+                                                                                                            <tr>
+                                                                                                                <td>Trách nhiêm bên thứ 3</td>
+                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
+                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                                <td><input class="form-control text-right input-float" type="text" value="10"></td>
+                                                                                                                <td><input class="form-control text-right input-money" type="text" value="0"></td>
+                                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
+                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                                <td>
+                                                                                                                    <select class="form-control" select2 >
+                                                                                                                        <option>Trách nhiêm bên thứ 3</option>
+                                                                                                                    </select>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </tbody>
+                                                                                                    </table>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                      
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -160,14 +209,8 @@
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/loai_mien_thuong.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/ti_le_gia_tri_ton_that.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/so_tien_khau_tru_toi_thieu.php'); ?>
+                                                                            <div class="col-md-12">
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/loai_mien_thuong_repeater.php'); ?>
                                                                             </div>
                                                                         </div>
 
@@ -176,7 +219,10 @@
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/ten_rui_ro.php'); ?>
                                                                             </div>
                                                                             <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/dieu_kien_bao_hiem.php'); ?>
+                                                                                <div class="form-group">
+                                                                                    <label>Điều kiện bảo hiểm: </label>
+                                                                                    <textarea class="form-control" placeholder="Nhập điều kiện bảo hiểm..." disabled="">Bảo hiểm bảng hiệu, đèn quảng cáo</textarea>
+                                                                                </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/dieu_khoan_loai_tru.php'); ?>

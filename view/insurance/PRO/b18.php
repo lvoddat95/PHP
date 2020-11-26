@@ -111,10 +111,6 @@
                                                                             
                                                                             <div class="col-md-12">
                                                                                 <div class="form-group">
-                                                                                    <input type="checkbox" id="phamvi">
-                                                                                    <label class="mb-0 ml-1" for="phamvi">Bao gồm các phạm vi về giông bão, lũ lụt</label>
-                                                                                </div>
-                                                                                <div class="form-group">
                                                                                     <table class="table table-bordered datatable" 
                                                                                         data-paging="false"
                                                                                         data-info="false"
