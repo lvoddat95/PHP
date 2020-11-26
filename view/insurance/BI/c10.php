@@ -1,5 +1,8 @@
 <?php require_once '../../../config.php'; ?>
-<?php include_once HEADER; ?>  
+<?php include_once HEADER; ?>
+<?php $GLOBALS["trach_nhiem_dong_bao_hiem"] = 'trach-nhiem-dong-bao-hiem'; ?>
+<?php $GLOBALS["can_bo_ki_don"] = 'hide'; ?>
+<?php $GLOBALS["dieu_kien_bao_hiem"] = 'modal'; ?>
 <?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
 
     <body class="sidebar-xs">
@@ -19,7 +22,7 @@
                         </button>
                         <div class="top-left">
                             <div class="breadcrumb">
-                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i>C10 - Bảo hiểm mọi rủi ro trong công nhiệp</a>
+                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i>C10 - Bảo hiểm công trình kĩ thuật dân dụng hoàn thành</a>
                                 <span class="breadcrumb-item active">Cập nhập đơn</span>
                             </div>
                             <div class="d-md-none logo-mobile">
@@ -70,45 +73,21 @@
                                                                     <?php inc('template/2_trung_gian_bao_hiem/2_trung_gian_bao_hiem.php'); ?>
                                                                     
                                                                     <!-- Step 3 -->
-                                                                    <fieldset class="tab-pane" id="step3">
-                                                                        <div class="row">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/BI/nhom_rui_ro.php'); ?>
-                                                                        </div>
-                                                                    </fieldset>
+                                                                    <?php inc('template/3_doi_tuong_bao_hiem/PRO/3_doi_tuong_bao_hiem.php'); ?>
                                                                     
                                                                     <!-- Step 4 -->
                                                                     <fieldset class="tab-pane" id="step4">
-                                                                    	<div class="row">
-                                                                            <div class="col-md-9">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php'); ?>
                                                                             </div>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group ">
-                                                                                    <label>Thời gian bảo hành: </label>
-                                                                                    <div class="input-group">
-                                                                                        <input type="text" class="form-control input-month"placeholder="Nhập thời hạn..." value="">
-                                                                                        <span class="input-group-append">
-                                                                                            <span class="input-group-text">Tháng</span>
-                                                                                        </span>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            
                                                                             <div class="col-md-12">
-                                                                                <div class="form-group">
-                                                                                    <input type="checkbox" id="phamvi">
-                                                                                    <label class="mb-0 ml-1" for="phamvi">Bao gồm các phạm vi về giông bão, lũ lụt</label>
-                                                                                </div>
                                                                                 <div class="form-group">
                                                                                     <table class="table table-bordered datatable" 
                                                                                         data-paging="false"
                                                                                         data-info="false"
                                                                                         data-ordering="false"
-                                                                                        data-searching="false" >
+                                                                                        data-searching="false">
                                                                                         <thead class="thead-light">
                                                                                             <tr>
                                                                                                 <th width="20%">Phạm vi bảo hiểm</th>
@@ -124,7 +103,7 @@
                                                                                         </thead>
                                                                                         <tbody>
                                                                                             <tr>
-                                                                                                <td>Mọi rủi ro trong công nghiệp</td>
+                                                                                                <td>Công trình kỹ thuật dân dụng hoàn thành</td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
@@ -133,29 +112,27 @@
                                                                                                 <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td>
-                                                                                                    <select class="form-control" select2 >
-                                                                                                        <option id="ED2C208D-4755-4F3C-8DBA-FFBE9C705227" value="ED2C208D-4755-4F3C-8DBA-FFBE9C705227" title="Bảo hiểm cháy nổ nhà tư nhân: giá trị bảo hiểm<20 tỷ">Bảo hiểm cháy nổ nhà tư nhân: giá trị bảo hiểm&lt;20 tỷ</option>
-																									    <option id="EF8C6932-0897-4856-BDD9-C2713942F3A2" value="EF8C6932-0897-4856-BDD9-C2713942F3A2" title="Cat1-Giá trị bảo hiểm < 25 tỷ">Cat1-Giá trị bảo hiểm &lt; 25 tỷ</option>
-																									    <option id="538154E4-822B-4398-B731-E6A1D5E6C151" value="538154E4-822B-4398-B731-E6A1D5E6C151" title="Cat1-Giá trị bảo hiểm < 25 tỷ đến 500 tỷ">Cat1-Giá trị bảo hiểm &lt; 25 tỷ đến 500 tỷ</option>
-																									    <option id="87925241-D181-460B-B749-F64109902CCB" value="87925241-D181-460B-B749-F64109902CCB" title="Cat1-500 tỷ ≤ Giá trị bảo hiểm < 1000 tỷ">Cat1-500 tỷ ≤ Giá trị bảo hiểm &lt; 1000 tỷ</option>
-																									    <option id="3F8CA807-BBFC-4B90-9F73-1EFE17C26CA1" value="3F8CA807-BBFC-4B90-9F73-1EFE17C26CA1" title="Cat1-Giá trị bảo hiểm từ 1000 tỷ đến 3000 tỷ">Cat1-Giá trị bảo hiểm từ 1000 tỷ đến 3000 tỷ</option>
-																									    <option id="B778EC80-D86F-42A5-8A39-0D4335B57758" value="B778EC80-D86F-42A5-8A39-0D4335B57758" title="Cat1-Giá trị bảo hiểm trên 3000 tỷ">Cat1-Giá trị bảo hiểm trên 3000 tỷ</option>
-																									    <option id="6658139C-77FB-4F57-9CEF-5DE57AE0B9F1" value="6658139C-77FB-4F57-9CEF-5DE57AE0B9F1" title="Cat2-Giá trị bảo hiểm < 25 tỷ">Cat2-Giá trị bảo hiểm &lt; 25 tỷ</option>
-																									    <option id="44076202-4F1A-41A9-B7A9-F89AC0A55D99" value="44076202-4F1A-41A9-B7A9-F89AC0A55D99" title="Cat2-Giá trị bảo hiểm từ 25 tỷ đến 350 tỷ">Cat2-Giá trị bảo hiểm từ 25 tỷ đến 350 tỷ</option>
-																									    <option id="89A0EDA4-2F33-4DBB-BFE5-51569195AA21" value="89A0EDA4-2F33-4DBB-BFE5-51569195AA21" title="Cat2-350 tỷ ≤ Giá trị bảo hiểm < 1000 tỷ">Cat2-350 tỷ ≤ Giá trị bảo hiểm &lt; 1000 tỷ</option>
-																									    <option id="441964E2-4BBC-440B-B2A3-DC3BC614EFE7" value="441964E2-4BBC-440B-B2A3-DC3BC614EFE7" title="Cat2-Giá trị bảo hiểm từ 1000 tỷ đến 2100 tỷ">Cat2-Giá trị bảo hiểm từ 1000 tỷ đến 2100 tỷ</option>
-																									    <option id="5D6C7D6B-8228-4C68-820E-7956D53B2CDF" value="5D6C7D6B-8228-4C68-820E-7956D53B2CDF" title="Cat2-Giá trị bảo hiểm trên 2100 tỷ">Cat2-Giá trị bảo hiểm trên 2100 tỷ</option>
-																									    <option id="E0F0D8A7-89D9-4B0B-9685-4AE79EBEC58A" value="E0F0D8A7-89D9-4B0B-9685-4AE79EBEC58A" title="Cat3-Giá trị bảo hiểm <100 tỷ">Cat3-Giá trị bảo hiểm &lt;100 tỷ</option>
-																									    <option id="DA0F93D8-2AA4-444C-B186-AC7412A97CD5" value="DA0F93D8-2AA4-444C-B186-AC7412A97CD5" title="Cat3-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ">Cat3-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ</option>
-																									    <option id="28905FBD-D8CB-4E25-AD4B-26A23620E745" value="28905FBD-D8CB-4E25-AD4B-26A23620E745" title="Cat3-Giá trị bảo hiểm trên 600 tỷ">Cat3-Giá trị bảo hiểm trên 600 tỷ</option>
-																									    <option id="C81B4790-FB0C-4320-B4AF-C46E353A7631" value="C81B4790-FB0C-4320-B4AF-C46E353A7631" title="Cat4A-Giá trị bảo hiểm <100 tỷ">Cat4A-Giá trị bảo hiểm &lt;100 tỷ</option>
-																									    <option id="6DE38B57-E3F6-40A6-B073-98BA1FAE9CD0" value="6DE38B57-E3F6-40A6-B073-98BA1FAE9CD0" title="Cat4A-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ">Cat4A-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ</option>
-																									    <option id="4E8EE8B6-8ED0-44D8-A7EB-46A8198E69FE" value="4E8EE8B6-8ED0-44D8-A7EB-46A8198E69FE" title="Cat4A-Giá trị bảo hiểm trên 600 tỷ">Cat4A-Giá trị bảo hiểm trên 600 tỷ</option>
-																									    <option id="B559F85C-76FA-4BDF-9CEC-9BDD6D9020EC" value="B559F85C-76FA-4BDF-9CEC-9BDD6D9020EC" title="Cat4B-Giá trị bảo hiểm <100 tỷ">Cat4B-Giá trị bảo hiểm &lt;100 tỷ</option>
-																									    <option id="05C66F02-A21F-42E7-A849-F199053C43E5" value="05C66F02-A21F-42E7-A849-F199053C43E5" title="Cat4B-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ">Cat4B-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ</option>
-																									    <option id="A74C7D64-CD2B-47A5-9DED-2E623DD873CE" value="A74C7D64-CD2B-47A5-9DED-2E623DD873CE" title="Cat4B-Giá trị bảo hiểm trên 600 tỷ">Cat4B-Giá trị bảo hiểm trên 600 tỷ</option>
-																									    <option id="FBD142BF-22F7-4D43-B86A-993EFE342599" value="FBD142BF-22F7-4D43-B86A-993EFE342599" title="Định mức khác do Cty phê duyệt">Định mức khác do Cty phê duyệt</option>
-
+                                                                                                    <select class="form-control" select2>
+                                                                                                        <option title="Bảo hiểm cháy nổ nhà tư nhân: giá trị bảo hiểm<20 tỷ">Bảo hiểm cháy nổ nhà tư nhân: giá trị bảo hiểm&lt;20 tỷ</option>
+                                                                                                        <option title="Cat1-Giá trị bảo hiểm < 25 tỷ">Cat1-Giá trị bảo hiểm &lt; 25 tỷ</option>
+                                                                                                        <option title="Cat1-Giá trị bảo hiểm từ 25 tỷ đến 500 tỷ">Cat1-Giá trị bảo hiểm từ 25 tỷ đến 500 tỷ</option>
+                                                                                                        <option title="Cat1-500 tỷ ≤ Giá trị bảo hiểm < 1000 tỷ">Cat1-500 tỷ ≤ Giá trị bảo hiểm &lt; 1000 tỷ</option>
+                                                                                                        <option title="Cat1-Giá trị bảo hiểm từ 1000 tỷ đến 3000 tỷ">Cat1-Giá trị bảo hiểm từ 1000 tỷ đến 3000 tỷ</option>
+                                                                                                        <option title="Cat1-Giá trị bảo hiểm trên 3000 tỷ">Cat1-Giá trị bảo hiểm trên 3000 tỷ</option>
+                                                                                                        <option title="Cat2-Giá trị bảo hiểm < 25 tỷ">Cat2-Giá trị bảo hiểm &lt; 25 tỷ</option>
+                                                                                                        <option title="Cat2-Giá trị bảo hiểm từ 25 tỷ đến 350 tỷ">Cat2-Giá trị bảo hiểm từ 25 tỷ đến 350 tỷ</option>
+                                                                                                        <option title="Cat2-350 tỷ ≤ Giá trị bảo hiểm < 1000 tỷ">Cat2-350 tỷ ≤ Giá trị bảo hiểm &lt; 1000 tỷ</option>
+                                                                                                        <option title="Cat2-Giá trị bảo hiểm từ 1000 tỷ đến 2100 tỷ">Cat2-Giá trị bảo hiểm từ 1000 tỷ đến 2100 tỷ</option>
+                                                                                                        <option title="Cat2-Giá trị bảo hiểm trên 2100 tỷ">Cat2-Giá trị bảo hiểm trên 2100 tỷ</option>
+                                                                                                        <option title="Cat3-Giá trị bảo hiểm <100 tỷ">Cat3-Giá trị bảo hiểm &lt;100 tỷ</option>
+                                                                                                        <option title="Cat3-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ">Cat3-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ</option>
+                                                                                                        <option title="Cat3-Giá trị bảo hiểm trên 600 tỷ">Cat3-Giá trị bảo hiểm trên 600 tỷ</option>
+                                                                                                        <option title="Cat4A-Giá trị bảo hiểm <100 tỷ">Cat4A-Giá trị bảo hiểm &lt;100 tỷ</option>
+                                                                                                        <option title="Cat4A-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ">Cat4A-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ</option>
+                                                                                                        <option title="Cat4A-Giá trị bảo hiểm trên 600 tỷ">Cat4A-Giá trị bảo hiểm trên 600 tỷ</option>
+                                                                                                        <option title="Cat4B-Giá trị bảo hiểm <100 tỷ">Cat4B-Giá trị bảo hiểm &lt;100 tỷ</option>
+                                                                                                        <option title="Cat4B-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ">Cat4B-Giá trị bảo hiểm từ 100 tỷ đến 600 tỷ</option>
+                                                                                                        <option title="Cat4B-Giá trị bảo hiểm trên 600 tỷ">Cat4B-Giá trị bảo hiểm trên 600 tỷ</option>
                                                                                                     </select>
                                                                                                 </td>
                                                                                             </tr>
@@ -191,10 +168,10 @@
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/loai_mien_thuong.php'); ?>
                                                                             </div>
                                                                             <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/so_tien_mien_thuong.php'); ?>
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/ti_le_gia_tri_ton_that.php'); ?>
                                                                             </div>
                                                                             <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/so_tien_giam_mien_thuong.php'); ?>
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/so_tien_khau_tru_toi_thieu.php'); ?>
                                                                             </div>
                                                                         </div>
 
@@ -211,17 +188,17 @@
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-4">
+                                                                            <div class="col-md-6">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/dia_diem_bao_hiem.php'); ?>
                                                                             </div>
-                                                                            <div class="col-md-4">
+                                                                            <div class="col-md-6">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/quy_tac_bao_hiem.php'); ?>
                                                                             </div>
                                                                         </div>
 
                                                                         <div class="row">
                                                                             <div class="col-md-6">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/PRO/trach_nhiem_dong_bao_hiem.php'); ?>
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/trach_nhiem_dong_bao_hiem.php'); ?>
                                                                             </div>  
                                                                         </div>
 
@@ -240,39 +217,36 @@
                                                                             </div>
                                                                         </div>
 
-                                                                        <div class="row">
+                                                                        <div class="row mb-3">
+                                                                            <div class="col-md-12">
+                                                                                <b><label>Lịch thanh toán bảo hiểm: </label></b>
+                                                                            </div>
                                                                             <div class="col-md-4">
-                                                                                <div class="form-group">
-                                                                                    <label for="">Tổng phí (có VAT): </label>
-                                                                                    <table class="table table-bordered" style="margin: auto;">
-                                                                                        <thead class="thead-light">
-                                                                                            <tr>
-                                                                                                <th class="w65p">Quyền lợi</th>
-                                                                                                <th class="w40p text-right">Phí BH có VAT</th>
-                                                                                            </tr>
-                                                                                        </thead>
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td>Mọi rủi ro trong công nghiệp</td>
-                                                                                                <td class="text-right">0</td>
-                                                                                            </tr>
-                                                                                            
-                                                                                            <tr class="bold" style="background-color: #fff;">
-                                                                                                <td>Tổng phí BH</td>
-                                                                                                <td><input class="form-control text-right" type="text" disabled="" readonly="" value="0"></td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                    </table>
-                                                                                </div>
+                                                                                <table class="table table-bordered" style="margin: auto;">
+                                                                                    <thead class="thead-light">
+                                                                                        <tr>
+                                                                                            <th class="w70p">Quyền lợi</th>
+                                                                                            <th class="w30p text-right">Phí BH có VAT</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>Công trình kỹ thuật dân dụng hoàn thành</td>
+                                                                                            <td class="text-right">0</td>
+                                                                                        </tr>
+                                                                                       
+                                                                                        <tr class="bold" style="background-color: #fff;">
+                                                                                            <td>Tổng phí BH</td>
+                                                                                            <td><input class="form-control text-right" type="text" disabled="" readonly="" value="0"></td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
                                                                             </div>
                                                                             <div class="col-md-8">
-                                                                                <div class="form-group">
-                                                                                    <label for="">Lịch thanh toán: </label>
-                                                                                    <?php inc('template/4_pham_vi_bao_hiem/lich_thanh_toan.php'); ?>
-                                                                                </div>
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/lich_thanh_toan.php'); ?>
                                                                             </div>
                                                                         </div>
-                                                                        
+
                                                                         <div class="row">
                                                                             <div class="col-md-6">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/ghi_chu_noi_bo.php'); ?>
@@ -290,9 +264,9 @@
                                                                     </fieldset>
                                                                 </div>
                                                             </form>
-
-                                                            <?php inc('template/actions.php'); ?>
                                                             
+                                                            <?php inc('template/actions.php'); ?>
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -319,13 +293,7 @@
         <?php inc('quick-action.php'); ?> 
 
         <?php inc('modal/modal_ds_so_hop_dong_xin_cap.php'); ?> 
-        <?php inc('modal/modal_danh_muc_tai_san_bao_hiem.php'); ?>
-        <?php inc('modal/modal_ds_may_moc.php'); ?>
-         
-        <div class="modal-group">
-            <?php inc('modal/modal_ds_tau_thuyen.php'); ?> 
-            <?php inc('modal/modal_cap_nhap_tau_thuyen.php'); ?> 
-        </div>
+        <?php inc('modal/modal_danh_muc_tai_san_bao_hiem.php'); ?> 
 
         <div class="modal-group">
             <?php
@@ -343,4 +311,3 @@
 
 <?php include_once FOOTER; ?>
 
- 
