@@ -1,7 +1,8 @@
 <?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?>  
 <?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
-  
+<?php $GLOBALS["loai_mien_thuong"] = 'repeater'; ?>
+
     <body class="sidebar-xs">
 
         <div class="page-content home-page">
@@ -75,14 +76,8 @@
                                                                             <div class="col-md-3">
                                                                                 <?php inc('template/3_doi_tuong_bao_hiem/PRO/ma_dia_diem.php'); ?>
                                                                             </div>
-                                                                        </div>
-
-                                                                        <div class="row">
                                                                             <div class="col-md-3">
                                                                                 <?php inc('template/3_doi_tuong_bao_hiem/PRO/nhom_rui_ro.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/PRO/nganh_nghe_kinh_doanh.php'); ?>
                                                                             </div>
                                                                         </div>
                                                                     </fieldset>
@@ -94,19 +89,7 @@
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php'); ?>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group ">
-                                                                                    <label>Thời gian bảo hành: </label>
-                                                                                    <div class="input-group">
-                                                                                        <input type="text" class="form-control input-month"placeholder="Nhập thời hạn..." value="">
-                                                                                        <span class="input-group-append">
-                                                                                            <span class="input-group-text">Tháng</span>
-                                                                                        </span>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
+                                                                       
                                                                         <div class="row">
                                                                             
                                                                             <div class="col-md-12">
@@ -194,14 +177,8 @@
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/loai_mien_thuong.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/so_tien_mien_thuong.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/so_tien_giam_mien_thuong.php'); ?>
+                                                                            <div class="col-md-12">
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/loai_mien_thuong_repeater.php'); ?>
                                                                             </div>
                                                                         </div>
 
@@ -210,7 +187,10 @@
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/ten_rui_ro.php'); ?>
                                                                             </div>
                                                                             <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/dieu_kien_bao_hiem.php'); ?>
+                                                                                <div class="form-group">
+                                                                                    <label>Điều kiện bảo hiểm: </label>
+                                                                                    <textarea class="form-control" placeholder="Nhập điều kiện bảo hiểm..." disabled="">Mọi rủi ro trong công nghiệp</textarea>
+                                                                                </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/dieu_khoan_loai_tru.php'); ?>
@@ -218,10 +198,10 @@
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-4">
+                                                                            <div class="col-md-6">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/dia_diem_bao_hiem.php'); ?>
                                                                             </div>
-                                                                            <div class="col-md-4">
+                                                                            <div class="col-md-6">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/quy_tac_bao_hiem.php'); ?>
                                                                             </div>
                                                                         </div>
