@@ -1,6 +1,7 @@
 <?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?> 
     <?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
+    <?php $GLOBALS["ngay_di_ve"] = 'yes'; ?>
 
     <body class="sidebar-xs">
 
