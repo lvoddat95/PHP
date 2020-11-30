@@ -1,6 +1,7 @@
 <?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?>
 <?php $GLOBALS["dk_sua_doi_bo_sung"] = 'g'; ?>
+<?php $GLOBALS["dk_loai_tru"] = 'g13'; ?>
 
     <body class="sidebar-xs">
 
