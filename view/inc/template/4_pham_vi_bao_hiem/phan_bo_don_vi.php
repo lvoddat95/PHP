@@ -29,12 +29,12 @@
                         </select>
                     </td>
                     <td><input class="form-control input-float text-right" type="text" placeholder="0" value=""></td>
-                    <td><a href="javascript:;" data-repeater-delete="" class="d-flex align-items-center font-weight-bold text-danger"><i class="icon-trash mr-1"></i>XÓA</a></td>
+                    <td><a href="javascript:;" data-repeater-delete="" class="d-flex align-items-center font-weight-bold text-danger"><i class="icon-trash mr-1"></i>Xoá</a></td>
                 </tr>
             </tbody>
         </table>
         <div class="border p-1" style="margin-top: -1px;">
-            <a href="javascript:;" data-repeater-create="" class="d-flex align-items-center justify-content-center font-weight-bold text-success"><i class="far fa-plus-circle mr-1"></i>THÊM</a>
+            <a href="javascript:;" data-repeater-create="" class="d-flex align-items-center justify-content-center font-weight-bold text-success"><i class="far fa-plus-circle mr-1"></i>Xoá</a>
         </div>
     </div>
 </div>
