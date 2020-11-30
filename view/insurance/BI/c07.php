@@ -228,7 +228,7 @@
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-8">
+                                                                            <div class="col-md-12">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/phan_bo_don_vi.php'); ?>
                                                                             </div>  
                                                                         </div>
