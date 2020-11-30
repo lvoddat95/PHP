@@ -1,4 +1,4 @@
 <div class="form-group">
-	<label>Ngày đến: <span class="text-danger">*</span></label>
+	<label class="add-req">Ngày đến: </label>
 	<input type="text" class="form-control datepicker input-date" placeholder="dd/mm/yyyy">
 </div>

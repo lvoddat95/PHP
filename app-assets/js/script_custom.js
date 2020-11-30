@@ -421,8 +421,8 @@ var kieu_lay_danh_sach =  function(p_this){
 
 var on_change_ngay_di_ngay_ve = function(p_this){
     if (p_this.checked){
-        $('#ngay_di, #ngay_ve').show();
+        $('.add-req').append('<span class="text-danger">*</span>');
     }else{
-        $('#ngay_di, #ngay_ve').hide();
+        $('.add-req').find('.text-danger').remove();
     }
 }

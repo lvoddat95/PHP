@@ -1,6 +1,7 @@
 <?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?> 
     <?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
+    <?php $GLOBALS["ngay_di_ve"] = 'yes'; ?>
 
     <body class="sidebar-xs">
 
@@ -131,30 +132,55 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="row">
-                                                                            <div class="col-md-3">
+                                                                            <div class="col-md-12">
                                                                                 <?php inc('template/3_doi_tuong_bao_hiem/COM/noi_giam_dinh.php'); ?>
                                                                             </div>
-                                                                            <div class="col-md-3">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/noi_ki.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-3">
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-2">
                                                                                 <?php inc('template/3_doi_tuong_bao_hiem/COM/ngay_ki.php'); ?>
                                                                             </div>
-                                                                            <div class="col-md-3">
+                                                                            <div class="col-md-2">
                                                                                 <?php inc('template/3_doi_tuong_bao_hiem/COM/gio_ki.php'); ?>
                                                                             </div>
+                                                                            <div class="col-md-8">
+                                                                                <?php inc('template/3_doi_tuong_bao_hiem/COM/noi_ki.php'); ?>
+                                                                            </div>
                                                                         </div>
+
+                                                                        <?php if (!empty($GLOBALS["ngay_di_ve"]) && $GLOBALS["ngay_di_ve"] == 'yes') : ?>
+                                                                            <div class="row">
+                                                                                <div class="col-md-3">
+                                                                                    <div class="form-group ">
+                                                                                        <label>Ngày đi, ngày về: <a href="#" data-tooltip="tipsy" original-title="Chọn <b style='color: red;'>“Có”</b> nếu bắt buộc phải nhập ngày đi, ngày về." data-position="top"><i class="icon-info22"></i></a>
+                                                                                        </label>
+                                                                                        <div class="d-flex">
+                                                                                            <p class="switch-title mr-3">Thông tin bắt buộc ?</p>
+                                                                                            <div class="button-switch">
+                                                                                                <input type="checkbox" id="ngay_di_ngay_ve" class="switch required" name="ngay_di_ngay_ve" onchange="on_change_ngay_di_ngay_ve(this);">
+                                                                                                <label for="ngay_di_ngay_ve" data-off="Không" data-on="Có"></label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        <?php endif; ?>
+
                                                                         <div class="row">
-                                                                            <div class="col-md-3">
+                                                                            <div class="col-md-2">
                                                                                 <?php inc('template/3_doi_tuong_bao_hiem/COM/ngay_di.php'); ?>
                                                                             </div>
-                                                                            <div class="col-md-3">
+                                                                            <div class="col-md-10">
                                                                                 <?php inc('template/3_doi_tuong_bao_hiem/COM/noi_di.php'); ?>
                                                                             </div>
-                                                                            <div class="col-md-3">
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-2">
                                                                                 <?php inc('template/3_doi_tuong_bao_hiem/COM/ngay_den.php'); ?>
                                                                             </div>
-                                                                            <div class="col-md-3">
+                                                                            <div class="col-md-10">
                                                                                 <?php inc('template/3_doi_tuong_bao_hiem/COM/noi_den.php'); ?>
                                                                             </div>
                                                                         </div>

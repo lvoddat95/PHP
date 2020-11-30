@@ -1,4 +1,4 @@
 <div class="form-group">
-	<label>Nơi đến: <span class="text-danger">*</span></label>
+	<label class="add-req">Nơi đến: </label>
 	<input type="text" class="form-control" placeholder="Nhập nơi đến...">
 </div>
