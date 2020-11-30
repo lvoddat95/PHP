@@ -259,44 +259,23 @@
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-4">
+                                                                            <div class="col-md-3">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/tong_tien_hoa_hong_dai_li.php'); ?>
                                                                             </div>
-                                                                            <div class="col-md-4">
+                                                                            <div class="col-md-3">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/tong_tien_hoa_hong_moi_gioi.php'); ?>
                                                                             </div>
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/loai_mien_thuong.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/so_tien_mien_thuong.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/so_tien_giam_mien_thuong.php'); ?>
+                                                                            <div class="col-md-12">
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/loai_mien_thuong_repeater.php'); ?>
                                                                             </div>
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/ten_rui_ro.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/dieu_kien_bao_hiem.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
+                                                                            <div class="col-md-8">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/dieu_khoan_loai_tru.php'); ?>
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="row">
-                                                                            <div class="col-md-6">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/dia_diem_bao_hiem.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-6">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/quy_tac_bao_hiem.php'); ?>
                                                                             </div>
                                                                         </div>
 
@@ -320,6 +299,7 @@
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/thanh_toan_tai_ngan_hang.php'); ?>
                                                                             </div>
                                                                         </div>
+
 
                                                                         <div class="row mb-3">
                                                                             <div class="col-md-12">
