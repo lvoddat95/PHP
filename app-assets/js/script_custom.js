@@ -418,3 +418,11 @@ var kieu_lay_danh_sach =  function(p_this){
         $('#stt').show();
     }
 }
+
+var on_change_ngay_di_ngay_ve = function(p_this){
+    if (p_this.checked){
+        $('#ngay_di, #ngay_ve').show();
+    }else{
+        $('#ngay_di, #ngay_ve').hide();
+    }
+}

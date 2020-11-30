@@ -1,7 +1,6 @@
-<?php require_once '../../../config.php'; ?> 
-<?php include_once HEADER; ?>
+<?php require_once '../../../config.php'; ?>
+<?php include_once HEADER; ?> 
     <?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
-    <?php $GLOBALS["ngay_di_ve"] = 'yes'; ?>
 
     <body class="sidebar-xs">
 
@@ -20,7 +19,7 @@
                         </button>
                         <div class="top-left">
                             <div class="breadcrumb">
-                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i>E02 - Bảo hiểm hàng hoá vận chuyển nội địa</a>
+                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i>E01 - Bảo hiểm hàng hoá nhập khẩu</a>
                                 <span class="breadcrumb-item active">Cập nhập đơn</span>
                             </div>
                             <div class="d-md-none logo-mobile">
@@ -175,6 +174,7 @@
                                                                             <div class="col-md-12">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php'); ?>
                                                                             </div>
+                                                                            
                                                                             <div class="col-md-12">
                                                                                 <div class="form-group">
                                                                                     <table class="table table-bordered datatable" 
@@ -197,7 +197,7 @@
                                                                                         </thead>
                                                                                         <tbody>
                                                                                             <tr>
-                                                                                                <td>Hàng hoá vận chuyển nội địa</td>
+                                                                                                <td>Hàng hoá nhập khẩu</td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
@@ -233,23 +233,44 @@
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-3">
+                                                                            <div class="col-md-4">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/tong_tien_hoa_hong_dai_li.php'); ?>
                                                                             </div>
-                                                                            <div class="col-md-3">
+                                                                            <div class="col-md-4">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/tong_tien_hoa_hong_moi_gioi.php'); ?>
                                                                             </div>
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/loai_mien_thuong_repeater.php'); ?>
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/loai_mien_thuong.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/so_tien_mien_thuong.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/so_tien_giam_mien_thuong.php'); ?>
                                                                             </div>
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-8">
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/ten_rui_ro.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/dieu_kien_bao_hiem.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-4">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/dieu_khoan_loai_tru.php'); ?>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-6">
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/dia_diem_bao_hiem.php'); ?>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <?php inc('template/4_pham_vi_bao_hiem/quy_tac_bao_hiem.php'); ?>
                                                                             </div>
                                                                         </div>
 
@@ -292,7 +313,7 @@
                                                                                             <td class="text-right">0</td>
                                                                                         </tr>
                                                                                         <tr>
-                                                                                            <td>Hàng hoá vận chuyển nội địa</td>
+                                                                                            <td>Hàng hoá nhập khẩu</td>
                                                                                             <td class="text-right">0</td>
                                                                                         </tr>
                                                                                         

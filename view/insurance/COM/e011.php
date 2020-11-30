@@ -19,7 +19,7 @@
                         </button>
                         <div class="top-left">
                             <div class="breadcrumb">
-                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i>E01 - Bảo hiểm hàng hoá xuất nhập khẩu</a>
+                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i>E01.1 - Bảo hiểm hàng hoá xuất khẩu</a>
                                 <span class="breadcrumb-item active">Cập nhập đơn</span>
                             </div>
                             <div class="d-md-none logo-mobile">
@@ -197,7 +197,7 @@
                                                                                         </thead>
                                                                                         <tbody>
                                                                                             <tr>
-                                                                                                <td>Hàng hoá xuất nhập khẩu</td>
+                                                                                                <td>Hàng hoá xuất khẩu</td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
@@ -313,7 +313,7 @@
                                                                                             <td class="text-right">0</td>
                                                                                         </tr>
                                                                                         <tr>
-                                                                                            <td>Hàng hoá xuất nhập khẩu</td>
+                                                                                            <td>Hàng hoá xuất khẩu</td>
                                                                                             <td class="text-right">0</td>
                                                                                         </tr>
                                                                                         

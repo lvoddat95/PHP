@@ -171,7 +171,13 @@
                                 <span class="menu-title"> Bảo hiểm hàng hóa</span>
                             </a>
                             <ul class="nav nav-group-sub" scrollbar data-submenu-title="Bảo hiểm hàng hóa">
-                                <li><a href="<?php echo HTTP_PATH .'view/insurance/COM/e01.php'; ?>" class="nav-link"><span class="menu-title">E01 - Bảo hiểm hàng hoá xuất nhập khẩu</span></a></li>
+                                <li class="nav-item nav-item-submenu">
+                                    <a href="" class="nav-link"><span class="menu-title">E01 - Bảo hiểm hàng hoá xuất nhập khẩu</span></a>
+                                    <ul class="nav nav-group-sub">
+                                        <li><a href="<?php echo HTTP_PATH .'view/insurance/COM/e011.php'; ?>" class="nav-link"><span class="menu-title">E01.1 - Bảo hiểm hàng hoá xuất khẩu</span></a></li>
+                                        <li><a href="<?php echo HTTP_PATH .'view/insurance/COM/e012.php'; ?>" class="nav-link"><span class="menu-title">E01.2 - Bảo hiểm hàng hoá nhập khẩu</span></a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/COM/e02.php'; ?>" class="nav-link"><span class="menu-title">E02 - Bảo hiểm hàng hoá vận chuyển nội địa</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/COM/e06.php'; ?>" class="nav-link"><span class="menu-title">E06 - Bảo hiểm trách nhiệm giao nhận tổng hợp</span></a></li>
                             </ul>
