@@ -1,4 +1,4 @@
 <div class="form-group">
 	<label>Giờ ký: </label>
-	<input type="time" class="form-control input-time" placeholder="hh:mm">
+	<input type="text" class="form-control input-time" placeholder="hh:mm">
 </div>

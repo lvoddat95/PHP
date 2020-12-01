@@ -27,7 +27,7 @@
                 <span class="text-danger">*</span> 
             </label>
             <div class="col-content col-content-sm">
-                <input type="time" class="form-control input-time" placeholder="hh:ss" value="09:00">
+                <input type="text" class="form-control input-time" placeholder="hh:ss" value="09:00">
             </div>
         </div>
     </div>
@@ -54,7 +54,7 @@
                 <a href="#" data-tooltip="tipsy" original-title="Thời gian thông báo tổn thất" data-position="top"><i class="icon-info22"></i></a>
             </label>
             <div class="col-content col-content-sm">
-                <input type="time" class="form-control input-time" placeholder="hh:ss" value="09:00">
+                <input type="text" class="form-control input-time" placeholder="hh:ss" value="09:00">
             </div>
         </div>
     </div>
@@ -288,12 +288,12 @@
     <label class="col-label col-form-label">Thời hạn bảo hiểm: <span class="text-danger">*</span></label>
     <div class="col-content col-content-lg date-to-date">
         <div class="d-flex">
-            <input type="time" class="form-control mr-2 input-time" placeholder="hh:mm">
+            <input type="text" class="form-control mr-2 input-time" placeholder="hh:mm">
             <input type="text" class="form-control datepicker input-date" placeholder="Từ: dd/mm/yyyy">
         </div>
         <span class="ml-2 mr-2"><i class="far fa-arrow-right"></i></span>
         <div class="d-flex">
-            <input type="time" class="form-control mr-2 input-time" placeholder="hh:mm">
+            <input type="text" class="form-control mr-2 input-time" placeholder="hh:mm">
             <input type="text" class="form-control datepicker input-date" placeholder="Đến: dd/mm/yyyy">
         </div>
     </div>

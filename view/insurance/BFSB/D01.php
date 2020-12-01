@@ -310,7 +310,7 @@
                                                                             <div class="col-md-9">
                                                                                 <div class="form-group">
                                                                                     <label>Điều kiện bảo hiểm: <span class="text-danger">*</span></label>
-                                                                                    <textarea name="" type="time" class="form-control" placeholder="Nhập thông tin..."></textarea>
+                                                                                    <textarea class="form-control" placeholder="Nhập thông tin..."></textarea>
                                                                                 </div> 
                                                                             </div>
                                                                         </div>

@@ -167,7 +167,7 @@
                                                                         <hr class="border-dashed border-silver mb-3">
 
                                                                         <div class="form-group" repeater>
-                                                                            <table class="table table-bordered datatable child-row-sm" data-control-right="true" data-paging="false" data-info="false" data-ordering="false" data-searching="false" >
+                                                                            <table class="table table-sm table-bordered datatable child-row-sm" data-control-right="true" data-paging="false" data-info="false" data-ordering="false" data-searching="false" >
                                                                                 <thead class="thead-light">
                                                                                     <tr>
                                                                                         <th rowspan="2" class="cell control not-desktop text-center">
@@ -182,21 +182,26 @@
 
                                                                                         <th rowspan="2" class="none"><span class="text-danger">*</span> Hiệu lực: Từ ngày</th>
                                                                                         <th rowspan="2" class="none"><span class="text-danger">*</span> Hiệu lực: Đến ngày</th>
-                                                                                        <th rowspan="2" class="w10p all"><span class="text-danger">*</span> Số tiền BH</th>
                
-                                                                                        <th colspan="2" class="text-center desktop">Phạm vi A</th>
-                                                                                        <th colspan="2" class="text-center desktop">Phạm vi B</th>
-                                                                                        <th colspan="2" class="text-center desktop">Phạm vi C</th>
+                                                                                        <th colspan="3" class="text-center desktop">Phạm vi A</th>
+                                                                                        <th colspan="3" class="text-center desktop">Phạm vi B</th>
+                                                                                        <th colspan="3" class="text-center desktop">Phạm vi C</th>
+
                                                                                         <th rowspan="2" class="w10p not-mobile text-center">Tổng phí</th>
                                                                                         <th rowspan="2" class="all w1p"></th>
                                                                                         <th rowspan="2" class="none">Tỉ lệ phí chuẩn / Phí chuẩn</th>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <th class="w8p text-center desktop"><span class="text-danger">*</span> TL phí A</th>
+                                                                                        <th class="text-center desktop"><span class="text-danger">*</span> Số tiền BH A</th>
+                                                                                        <th class="w5p text-center "><span class="text-danger">*</span> TL phí A</th>
                                                                                         <th class="text-center desktop">Phí A</th>
-                                                                                        <th class="w8p text-center desktop"><span class="text-danger">*</span> TL phí B</th>
+
+                                                                                        <th class="text-center desktop"><span class="text-danger">*</span> Số tiền BH B</th>
+                                                                                        <th class="w5p text-center "><span class="text-danger">*</span> TL phí B</th>
                                                                                         <th class="text-center desktop">Phí B</th>
-                                                                                        <th class="w8p text-center desktop"><span class="text-danger">*</span> TL phí C</th>
+
+                                                                                        <th class="text-center desktop"><span class="text-danger">*</span> Số tiền BH C</th>
+                                                                                        <th class="w5p text-center "><span class="text-danger">*</span> TL phí C</th>
                                                                                         <th class="text-center desktop">Phí C</th>
                                                                                     </tr>
                                                                                 </thead>
@@ -212,16 +217,18 @@
 
                                                                                         <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
                                                                                         <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
-                                                                                        <td><input class="form-control col-content-xs input-money text-right" placeholder="0" type="text"></td>
 
-                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
-                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" disabled></td>
+                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
+                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text" disabled></td>
+                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
 
-                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
-                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" disabled></td>
+                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
+                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text" disabled></td>
+                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
 
-                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
-                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" disabled></td>
+                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
+                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text" disabled></td>
+                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
 
                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" disabled></td>
 

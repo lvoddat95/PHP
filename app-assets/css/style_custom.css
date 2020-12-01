@@ -3634,7 +3634,7 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     display: -ms-flex;
     align-items: center;
     -ms-align-items: center;
-    max-width: 560px;
+    max-width: 430px;
     -ms-align-items: baseline;
     align-items: baseline;
 }
@@ -4182,5 +4182,5 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
 }
 
 .table-sm{
-    min-width: 1110px;
+    /*min-width: 1110px;*/
 }
