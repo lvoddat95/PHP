@@ -2,7 +2,8 @@
 <?php include_once HEADER; ?>
 <?php $GLOBALS["dk_sua_doi_bo_sung"] = 'g'; ?>
 <?php $GLOBALS["dk_loai_tru"] = 'g03'; ?>
-  
+<?php $GLOBALS["quy_tac"] = 'remove_tra_cuu'; ?>
+
     <body class="sidebar-xs">
 
         <div class="page-content home-page">
