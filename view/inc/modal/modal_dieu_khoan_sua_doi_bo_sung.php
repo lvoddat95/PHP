@@ -29,94 +29,94 @@
                                     <td><input type="checkbox" value=""></td>
                                     <td><input type="text" class="form-control"></td>
                                     <td><input type="text" class="form-control"></td>
-                                    <td><input data-repeater-delete class="btn bg-danger" type="button" value="- Xóa"/></td>
+                                    <td><a href="javascript:;" data-repeater-delete="" class="d-flex align-items-center font-weight-bold text-danger"><i class="icon-trash mr-1"></i>Xoá</a></td>
                                 </tr>
                                 <?php if (!empty($GLOBALS["dk_sua_doi_bo_sung"]) && $GLOBALS["dk_sua_doi_bo_sung"] == 'g') : ?>
                                     <tr>
                                         <td><input type="checkbox" value=""></td>
                                         <td><input type="text" class="form-control" value=""></td>
                                         <td><input type="text" class="form-control" value=""></td>
-                                        <td><input data-repeater-delete class="btn bg-danger" type="button" value="- Xóa"/></td>
+                                        <td></td>
                                     </tr>
                                 <?php else: ?>
                                     <tr>
                                         <td><input type="checkbox" value=""></td>
                                         <td>MADIEUKHOAN</td>
                                         <td>Điều khoản về mở rộng thời hạn bảo hiểm 30 ngày với phí bảo hiểm bổ sung tính theo tỷ lệ</td>
-                                        <td><input disabled data-repeater-delete class="btn bg-danger" type="button" value="- Xóa"/></td>
+                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" value=""></td>
                                         <td>MADIEUKHOAN</td>
                                         <td>Điều khoản về Vi phạm các cam kết</td>
-                                        <td><input disabled data-repeater-delete class="btn bg-danger" type="button" value="- Xóa"/></td>
+                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" value=""></td>
                                         <td>MADIEUKHOAN</td>
                                         <td>Điều khoản quy định về thông báo tổn thất</td>
-                                        <td><input disabled data-repeater-delete class="btn bg-danger" type="button" value="- Xóa"/></td>
+                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" value=""></td>
                                         <td>MADIEUKHOAN</td>
                                         <td>Điều khoản về Không mất hiệu lực bảo hiểm</td>
-                                        <td><input disabled data-repeater-delete class="btn bg-danger" type="button" value="- Xóa"/></td>
+                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" value=""></td>
                                         <td>MADIEUKHOAN</td>
                                         <td>Điều khoản về Thanh toán bồi thường tạm ứng</td>
-                                        <td><input disabled data-repeater-delete class="btn bg-danger" type="button" value="- Xóa"/></td>
+                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" value="" checked disabled></td>
                                         <td>MADIEUKHOAN</td>
                                         <td>Điều khoản về Cam kết thanh toán phí bảo hiểm</td>
-                                        <td><input disabled data-repeater-delete class="btn bg-danger" type="button" value="- Xóa"/></td>
+                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" value="" checked disabled></td>
                                         <td>MADIEUKHOAN</td>
                                         <td>Điều khoản cam kết đảm bảo bảo vệ 24/24h</td>
-                                        <td><input disabled data-repeater-delete class="btn bg-danger" type="button" value="- Xóa"/></td>
+                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" value=""></td>
                                         <td>MADIEUKHOAN</td>
                                         <td>Điều khoản Quy định về phòng cháy chữa cháy</td>
-                                        <td><input disabled data-repeater-delete class="btn bg-danger" type="button" value="- Xóa"/></td>
+                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" value=""></td>
                                         <td>MADIEUKHOAN</td>
                                         <td>Điều khoản về Tiền tệ</td>
-                                        <td><input disabled data-repeater-delete class="btn bg-danger" type="button" value="- Xóa"/></td>
+                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" value=""></td>
                                         <td>MADIEUKHOAN</td>
                                         <td>Điều khoản về Điều chỉnh thời gian</td>
-                                        <td><input disabled data-repeater-delete class="btn bg-danger" type="button" value="- Xóa"/></td>
+                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" value=""></td>
                                         <td>MADIEUKHOAN</td>
                                         <td>Điều khoản Chỉ định giám định tổn thất</td>
-                                        <td><input disabled data-repeater-delete class="btn bg-danger" type="button" value="- Xóa"/></td>
+                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" value=""></td>
                                         <td>MADIEUKHOAN</td>
                                         <td>Điều khoản về tự động khôi phục Số tiền bảo hiểm</td>
-                                        <td><input disabled data-repeater-delete class="btn bg-danger" type="button" value="- Xóa"/></td>
+                                        <td></td>
                                     </tr>
                                 <?php endif; ?>
 
                                     
                             </tbody>
                         </table>
-                        <div class="border p-1 text-center"><input class="btn bg-success" data-repeater-create type="button" value="+ Thêm"/></div>
+                        <div class="border p-1 text-center"><a href="javascript:;" data-repeater-create="" class="d-flex align-items-center justify-content-center font-weight-bold text-success"><i class="far fa-plus-circle mr-1"></i>Thêm</a></div>
 
                     </div>
                    

@@ -9,7 +9,7 @@
             >
             <thead>
                 <tr>
-                    <th class="w20p">Tỉ lệ phí (%)</th>
+                    <th class="w20p">(%) Mức trách nhiệm</th>
                     <th class="">Số tiền bảo hiểm</th>
                     <th class="">Phí bảo hiểm</th>
                 </tr>
