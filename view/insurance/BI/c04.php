@@ -189,6 +189,60 @@
                                                                                             </div>
                                                                                         </div>
 
+                                                                                        <div class="c-item">
+                                                                                            <div class="c-title">
+                                                                                                <span class="button-switch no-label">
+                                                                                                    <input type="checkbox" id="ckbchild11" class="switch cls_ckb">
+                                                                                                    <label for="ckbchild11" data-off="Không" data-on="Có"></label>
+                                                                                                </span>
+                                                                                                <a data-toggle="collapse" class="collapsed" href="#collapsible-item11">Mất lợi nhuận do đổ vỡ máy móc</a>
+                                                                                            </div>
+                                                
+                                                                                            <div id="collapsible-item11" class="collapse" datatable-collapse>
+                                                                                                <div class="c-body">
+                                                                                                    <table class="table table-bordered datatable" 
+                                                                                                        data-paging="false"
+                                                                                                        data-info="false"
+                                                                                                        data-ordering="false"
+                                                                                                        data-searching="false" >
+                                                                                                        <thead class="thead-light">
+                                                                                                            <tr>
+                                                                                                                <th width="20%">Phạm vi bảo hiểm</th>
+                                                                                                                <th width="17%">Số tiền bảo hiểm</th>
+                                                                                                                <th width="5%" class="desktop">Phí (%)</th>
+                                                                                                                <th width="10%" class="desktop">Phí BH (có VAT)</th>
+                                                                                                                <th width="5%" class="desktop">VAT (%)</th>
+                                                                                                                <th width="10%" class="desktop">VAT</th>
+                                                                                                                <th width="5%" class="desktop">COM (%)</th>
+                                                                                                                <th width="10%" class="desktop">COM</th>
+                                                                                                                <th width="17%" class="desktop">Định mức</th>
+                                                                                                            </tr>
+                                                                                                        </thead>
+                                                                                                        <tbody>
+                                                                                                            <tr>
+                                                                                                                <td>Mất lợi nhuận do đổ vỡ máy móc</td>
+                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
+                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                                <td><input class="form-control text-right input-float" type="text" value="10"></td>
+                                                                                                                <td><input class="form-control text-right input-money" type="text" value="0"></td>
+                                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
+                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                                <td>
+                                                                                                                    <select class="form-control" select2 >
+                                                                                                                        <option>Giá trị bảo hiểm&lt;200 tỷ</option>
+                                                                                                                        <option>Giá trị bảo hiểm từ 200 tỷ đến 1200 tỷ</option>
+                                                                                                                        <option>Giá trị bảo hiểm từ 1200 trở lên</option>
+                                                                                                                    </select>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </tbody>
+                                                                                                    </table>
+                                                                                                    
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+
                                                                                         <div class="c-item ">
                                                                                             <div class="c-title">
                                                                                                 <span class="button-switch no-label">
@@ -317,6 +371,10 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td>Đổ vỡ máy móc</td>
+                                                                                                <td class="text-right">0</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>Mất lợi nhuận do đổ vỡ máy móc</td>
                                                                                                 <td class="text-right">0</td>
                                                                                             </tr>
                                                                                             <tr>

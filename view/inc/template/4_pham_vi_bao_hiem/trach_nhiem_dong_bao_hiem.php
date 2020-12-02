@@ -1,4 +1,4 @@
-<div id="trach-nhiem-dong-bao-hiem" style="display: none;">
+<!-- <div id="trach-nhiem-dong-bao-hiem" style="display: none;">
     <div class="form-group">
         <label>Trách nhiệm đồng bảo hiểm của VNI: </label>
         <table class="table table-bordered datatable"  
@@ -23,4 +23,4 @@
             </tbody>
         </table>
     </div>
-</div>
+</div> -->

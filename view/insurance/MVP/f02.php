@@ -628,7 +628,7 @@
                                                                                                         </div>
                                                                                                         <div class="col-md-2">
                                                                                                             <div class="form-group">
-                                                                                                                <label>Phí BH tiêu chuẩn (Có VAT):</label>
+                                                                                                                <label>Phí BH tiêu chuẩn(VAT):</label>
                                                                                                                 <input type="text" class="form-control input-money text-right" disabled readonly value="0">
                                                                                                             </div>
                                                                                                         </div>
@@ -774,7 +774,7 @@
                                                                                                         </div>
                                                                                                         <div class="col-md-2">
                                                                                                             <div class="form-group">
-                                                                                                                <label>Phí BH tiêu chuẩn (Có VAT):</label>
+                                                                                                                <label>Phí BH tiêu chuẩn(VAT):</label>
                                                                                                                 <input type="text" class="form-control input-money text-right" disabled readonly value="0">
                                                                                                             </div>
                                                                                                         </div>
@@ -884,7 +884,7 @@
                                                                                                         </div>
                                                                                                         <div class="col-md-2">
                                                                                                             <div class="form-group">
-                                                                                                                <label>Phí BH tiêu chuẩn (Có VAT):</label>
+                                                                                                                <label>Phí BH tiêu chuẩn(VAT):</label>
                                                                                                                 <input type="text" class="form-control input-money text-right" disabled readonly value="0">
                                                                                                             </div>
                                                                                                         </div>
@@ -992,7 +992,7 @@
                                                                                                         </div>
                                                                                                         <div class="col-md-2">
                                                                                                             <div class="form-group">
-                                                                                                                <label>Phí BH tiêu chuẩn (Có VAT):</label>
+                                                                                                                <label>Phí BH tiêu chuẩn(VAT):</label>
                                                                                                                 <input type="text" class="form-control input-money text-right" disabled readonly value="0">
                                                                                                             </div>
                                                                                                         </div>
@@ -1092,7 +1092,7 @@
                                                                                                         </div>
                                                                                                         <div class="col-md-2">
                                                                                                             <div class="form-group">
-                                                                                                                <label>Phí BH tiêu chuẩn (Có VAT):</label>
+                                                                                                                <label>Phí BH tiêu chuẩn (VAT):</label>
                                                                                                                 <input type="text" class="form-control input-money text-right" disabled readonly value="0">
                                                                                                             </div>
                                                                                                         </div>
