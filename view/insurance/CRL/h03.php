@@ -1,6 +1,8 @@
 <?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?>  
     <?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
+    <?php $GLOBALS["dk_sua_doi_bo_sung"] = 'h03'; ?>
+    <?php $GLOBALS["nganh_nghe_kinh_doanh"] = 'remove'; ?>
 
     <body class="sidebar-xs">
 
@@ -144,13 +146,6 @@
                                                                                 <?php inc('template/1_thong_tin_chung/can_bo_cap_don.php'); ?>
                                                                             </div>
 
-                                                                    <!--         <?php if (!empty($GLOBALS["can_bo_ki_don"]) && $GLOBALS["can_bo_ki_don"] == 'hide') : ?>
-                                                                            <?php else: ?>
-                                                                                <div class="col-md-3">
-                                                                                    <?php inc('template/1_thong_tin_chung/can_bo_ki_don.php'); ?>
-                                                                                </div>
-                                                                            <?php endif; ?> -->
-
                                                                             <div class="col-md-3">
                                                                                 <?php inc('template/1_thong_tin_chung/ngay_cap.php'); ?>
                                                                             </div>
@@ -270,10 +265,16 @@
 
                                                                         <div class="row">
                                                                             <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/ten_rui_ro.php'); ?>
+                                                                                <div class="form-group">
+                                                                                    <label>Tên rủi ro: <span class="text-danger">*</span></label>
+                                                                                    <textarea class="form-control" placeholder="Nhập rủi ro..." rows="4" disabled="">Bên bảo hiểm đồng ý bồi thường cho những thiệt hại về thương tật thân thể hay tài sản của các bên thứ ba mà Bên được bảo hiểm có trách nhiệm pháp lý phải thanh toán xảy ra trong thời hạn bảo hiểm do các sự cố liên quan đến hoạt động kinh doanh của Bên được bảo hiểm (kể cả chi phí khiếu kiện) ngoại trừ những điểm loại trừ đã ghi trong Đơn bảo hiểm và các điều kiện, điều khoản ghi trong phụ lục bảo hiểm đính kèm hợp đồng này.</textarea>
+                                                                                </div>
                                                                             </div>
                                                                             <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/dieu_kien_bao_hiem.php'); ?>
+                                                                                <div class="form-group">
+                                                                                    <label>Tên rủi ro: <span class="text-danger">*</span></label>
+                                                                                    <textarea class="form-control" placeholder="Nhập rủi ro..." rows="4" disabled="">Bảo hiểm trách nhiệm công cộng</textarea>
+                                                                                </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/dieu_khoan_loai_tru.php'); ?>

@@ -866,16 +866,32 @@
                                                 
                                             </tr>
 
-                                        <?php elseif (!empty($GLOBALS["dk_loai_tru"]) && $GLOBALS["dk_loai_tru"] == '') : ?>
+                                        <?php elseif (!empty($GLOBALS["dk_loai_tru"]) && $GLOBALS["dk_loai_tru"] == 'hxx') : ?>
                                             <tr>
                                                 <td><input type="checkbox" value=""></td>
                                                 <td>MA_DK_LOAI_TRU</td>
-                                                <td></td>
-                                                
+                                                <td>Điều khoản hạn chế và loại trừ cấm vận</td>
                                             </tr>
-
-  
-
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_DK_LOAI_TRU</td>
+                                                <td>Điều khoản loại trừ rủi ro chiến tranh và nội chiến</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_DK_LOAI_TRU</td>
+                                                <td>Điều khoản loại trừ rủi ro khủng bố</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_DK_LOAI_TRU</td>
+                                                <td>Điều khoản loại trừ rủi ro hạt nhân</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" value=""></td>
+                                                <td>MA_DK_LOAI_TRU</td>
+                                                <td>Điều khoản loại trừ các rủi ro liên quan đến công nghệ thông tin</td>
+                                            </tr>
 
                                         <?php else: ?>
                                             <tr>

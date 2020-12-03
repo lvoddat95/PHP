@@ -35,6 +35,124 @@
                                         <td><input type="text" class="form-control" value=""></td>
                                         <td><input type="text" class="form-control" value=""></td>
                                     </tr>
+
+                                <?php elseif (!empty($GLOBALS["dk_sua_doi_bo_sung"]) && $GLOBALS["dk_sua_doi_bo_sung"] == 'h03') : ?>
+                                    <tr>
+                                        <td><input type="checkbox" value=""></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Thông báo hủy bảo hiểm trước 30 ngày</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value=""></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Rò rỉ, ô nhiễm và nhiễm bẩn bất ngờ</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value=""></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Thay đổi và sửa chữa (giới hạn: ……..)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value=""></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Tự động mở rộng thời hạn bảo hiểm (30 ngày)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value=""></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Nổ nồi hơi</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value=""></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Vi phạm điều kiện & cam kết bảo hiểm</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value=""></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Trách nhiệm bãi đỗ xe</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value=""></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Nhà thầu độc lập</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value=""></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Trách nhiệm chéo</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value=""></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Điều khoản chuyển đổi tiền tệ</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value=""></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Thiệt hại do nước chữa cháy</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value=""></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Trách nhiệm của người thuê nhà</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value=""></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Ngộ độc thức ăn, uống</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value=""></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Trưng bày và triển lãm</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value=""></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Tài sản của nhân viên và khách</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value=""></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Mô tả sai</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value=""></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Trách nhiệm đối với xe cộ không thuộc sở hữu</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value=""></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Đèn hiệu quảng cáo</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value=""></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Trách nhiệm chủ sở hữu tài sản</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value=""></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Thang máy, thang nâng</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value=""></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Chi phí cấp cứu y tế (giới hạn: ......)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value=""></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Chất dỡ hàng hoá</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value=""></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Việc cá nhân cho giám đốc và người điều hành</td>
+                                    </tr>
+
                                 <?php else: ?>
                                     <tr>
                                         <td><input type="checkbox" value=""></td>

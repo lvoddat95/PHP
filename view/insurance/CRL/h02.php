@@ -1,6 +1,8 @@
 <?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?>  
     <?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
+    <?php $GLOBALS["dk_loai_tru"] = 'hxx'; ?>
+    <?php $GLOBALS["nganh_nghe_kinh_doanh"] = 'remove'; ?>
 
     <body class="sidebar-xs">
 
@@ -161,10 +163,16 @@
 
                                                                         <div class="row">
                                                                             <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/ten_rui_ro.php'); ?>
+                                                                                <div class="form-group">
+                                                                                    <label>Tên rủi ro: <span class="text-danger">*</span></label>
+                                                                                    <textarea class="form-control" placeholder="Nhập rủi ro..." rows="4" disabled="">Hợp đồng bảo hiểm này bồi thường cho Người được bảo hiểm các trách nhiệm pháp lý bồi thường thiệt hại đối với thương tật thân thể, chết và thiệt hại tài sản của Bên thứ ba phát sinh từ sản phẩm của Người được bảo hiểm. &#10; &#10; Hợp đồng bảo hiểm này cũng bồi thường cho Người được bảo hiểm các chi phí pháp lý phát sinh với sự đồng ý của Người bảo hiểm cho mục đích bào chữa trong các vụ khiếu kiện (trường hợp tranh chấp pháp lý được tòa án có thẩm quyền giải quyết) và án phí của bên thứ ba nếu Người được bảo hiểm thua kiện với điều kiện tất cả các chi phí này không làm tăng mức trách nhiệm của Người bảo hiểm được nêu tại Điều 7 Hợp đồng này.</textarea>
+                                                                                </div>
                                                                             </div>
                                                                             <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/dieu_kien_bao_hiem.php'); ?>
+                                                                                <div class="form-group">
+                                                                                    <label>Tên rủi ro: <span class="text-danger">*</span></label>
+                                                                                    <textarea class="form-control" placeholder="Nhập rủi ro..." rows="4" disabled="">Bảo hiểm trách nhiệm sản phẩm</textarea>
+                                                                                </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/dieu_khoan_loai_tru.php'); ?>

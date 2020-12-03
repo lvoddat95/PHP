@@ -44,9 +44,14 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12">
-            <?php inc('template/1_thong_tin_chung/nganh_nghe_kinh_doanh.php'); ?>
-        </div>
+
+        <?php if (!empty($GLOBALS["nganh_nghe_kinh_doanh"]) && $GLOBALS["nganh_nghe_kinh_doanh"] == 'remove') : ?>
+        <?php else: ?>
+            <div class="col-md-12">
+                <?php inc('template/1_thong_tin_chung/nganh_nghe_kinh_doanh.php'); ?>
+            </div>
+        <?php endif; ?> 
+        
         <div class="col-md-12">
             <?php inc('template/1_thong_tin_chung/nguoi_duoc_bao_hiem.php'); ?>
         </div>
@@ -62,13 +67,6 @@
         <div class="col-md-3">
             <?php inc('template/1_thong_tin_chung/can_bo_cap_don.php'); ?>
         </div>
-
-<!--         <?php if (!empty($GLOBALS["can_bo_ki_don"]) && $GLOBALS["can_bo_ki_don"] == 'hide') : ?>
-        <?php else: ?>
-            <div class="col-md-3">
-                <?php inc('template/1_thong_tin_chung/can_bo_ki_don.php'); ?>
-            </div>
-        <?php endif; ?> -->
 
         <div class="col-md-3">
             <?php inc('template/1_thong_tin_chung/ngay_cap.php'); ?>

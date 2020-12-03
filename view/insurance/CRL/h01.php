@@ -1,6 +1,8 @@
 <?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?>  
     <?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
+    <?php $GLOBALS["dk_loai_tru"] = 'hxx'; ?>
+    <?php $GLOBALS["nganh_nghe_kinh_doanh"] = 'remove'; ?>
 
     <body class="sidebar-xs">
 
@@ -77,6 +79,15 @@
                                                                     	<div class="row">
                                                                             <div class="col-md-9">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/thoi_han_bao_hiem.php'); ?>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Ngày hồi tố:</label>
+                                                                                    <input type="text" class="form-control input-date datepicker " placeholder="dd/mm/yyyy" id="">
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                       
@@ -160,10 +171,18 @@
 
                                                                         <div class="row">
                                                                             <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/ten_rui_ro.php'); ?>
+                                                                                <div class="form-group">
+                                                                                    <label>Tên rủi ro: <span class="text-danger">*</span></label>
+                                                                                    <textarea class="form-control" placeholder="Nhập rủi ro..." rows="4" disabled="">Người bảo hiểm sẽ bồi thường cho Người được bảo hiểm về trách nhiệm pháp lý đối với các khiếu nại đòi bồi thường đưa ra đối với Người được bảo hiểm do việc vi phạm trách nhiệm nghề nghiệp trong khi Người được bảo hiểm hoặc người thay mặt Người được bảo hiểm hành nghề chuyên môn có hành động sơ suất, sai sót hoặc  thiếu sót mà Người được bảo hiểm phạm phải hoặc bị cáo buộc là phạm phải. &#10; &#10;Người bảo hiểm đồng ý thanh toán các chi phí và phí tổn phát sinh khi có sự chấp thuận bằng văn bản của bên B trong việc chống lại hoặc giải quyết các khiếu nại được bảo hiểm theo Quy tắc bảo hiểm với điều kiện là các chi phí và phí tổn đó không vượt quá hạn mức bồi thường.
+                                                                                    </textarea>
+                                                                                </div>
                                                                             </div>
                                                                             <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/dieu_kien_bao_hiem.php'); ?>
+                                                                                <div class="form-group">
+                                                                                    <label>Tên rủi ro: <span class="text-danger">*</span></label>
+                                                                                    <textarea class="form-control" placeholder="Nhập rủi ro..." rows="4" disabled="">Bảo hiểm trách nhiệm nghề nghiệp</textarea>
+                                                                                </div>
+                                                                               
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/dieu_khoan_loai_tru.php'); ?>

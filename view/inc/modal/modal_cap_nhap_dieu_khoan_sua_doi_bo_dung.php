@@ -2,7 +2,7 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title ">Thêm mới điều khoản sửa đổi bổ sung</h5>
+                <h5 class="modal-title">Thêm mới điều khoản sửa đổi bổ sung</h5>
                 <button type="button" class="close" data-dismiss="modal"><i class="fal fa-times"></i></button>
             </div>
             <form action="#">

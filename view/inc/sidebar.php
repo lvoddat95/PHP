@@ -210,8 +210,6 @@
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/CRL/h02.php'; ?>" class="nav-link"><span class="menu-title">H02 - Bảo hiểm trách nhiệm sản phẩm</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/CRL/h03.php'; ?>" class="nav-link"><span class="menu-title">H03 - Bảo hiểm trách nhiệm công cộng</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/CRL/h04.php'; ?>" class="nav-link"><span class="menu-title">H04 - Bảo hiểm trách nhiệm giải thưởng (Hole in one)</span></a></li>
-                                <li><a href="<?php echo HTTP_PATH .'view/insurance/CRL/h06.php'; ?>" class="nav-link"><span class="menu-title">H06 - Bảo hiểm Trách nhiệm Giám đốc và Người điều hành</span></a></li>
-                                <li><a href="<?php echo HTTP_PATH .'view/insurance/CRL/h07.php'; ?>" class="nav-link"><span class="menu-title">H07 - Bảo hiểm toàn diện ngân hàng</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/CRL/h08.php'; ?>" class="nav-link"><span class="menu-title">H08 - Bảo hiểm trách nhiệm hoạt động cảng</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/CRL/h09.php'; ?>" class="nav-link"><span class="menu-title">H09 - Bảo hiểm trách nhiệm nghề nghiệp tư vấn trong đầu tư xây dựng (bắt buộc)</span></a></li>
                             </ul>

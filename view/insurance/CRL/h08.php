@@ -2,6 +2,7 @@
 <?php include_once HEADER; ?>  
 <?php $GLOBALS["nganh_nghe_kinh_doanh"] = 'remove'; ?>
 <?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
+    <?php $GLOBALS["dk_loai_tru"] = 'hxx'; ?>
 
     <body class="sidebar-xs">
 

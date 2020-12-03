@@ -1,6 +1,9 @@
 <?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?>  
     <?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
+    <?php $GLOBALS["dk_loai_tru"] = 'hxx'; ?>
+    <?php $GLOBALS["nganh_nghe_kinh_doanh"] = 'remove'; ?>
+    <?php $GLOBALS["dkbs"] = 'remove'; ?>
 
     <body class="sidebar-xs">
 
@@ -102,7 +105,7 @@
                                                                                         </thead>
                                                                                         <tbody>
                                                                                             <tr>
-                                                                                                <td>Trách nhiệm giải thưởng</td>
+                                                                                                <td>Trách nhiệm giải thưởng HIO</td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
@@ -159,14 +162,17 @@
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/ten_rui_ro.php'); ?>
+                                                                            <div class="col-md-8">
+                                                                                <div class="form-group">
+                                                                                    <label>Tên rủi ro: <span class="text-danger">*</span></label>
+                                                                                    <textarea class="form-control" placeholder="Nhập rủi ro..." rows="4" disabled="">Người bảo hiểm nhận trách nhiệm bồi thường giải thưởng Hole in one cho người được bảo hiểm cho những tổn thất phát sinh từ những nguyên nhân không bị loại trừ trong quy tắc Bảo hiểm bồi thường giải thưởng Golf “Hole in one” ban hành kèm theo Quyết định số 16/2019/QĐ-BHHK ngày 09 tháng 01 năm 2019 của Tổng Giám đốc Tổng Công ty Cổ phần Bảo hiểm Hàng không.</textarea>
+                                                                                </div>
                                                                             </div>
                                                                             <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/dieu_kien_bao_hiem.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/dieu_khoan_loai_tru.php'); ?>
+                                                                                <div class="form-group">
+                                                                                    <label>Tên rủi ro: <span class="text-danger">*</span></label>
+                                                                                    <textarea class="form-control" placeholder="Nhập rủi ro..." rows="4" disabled="">Bảo hiểm trách nhiệm giải thưởng hole in one (HIO)</textarea>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
 
@@ -213,7 +219,7 @@
                                                                                         </thead>
                                                                                         <tbody>
                                                                                             <tr>
-                                                                                                <td>Trách nhiệm giải thưởng</td>
+                                                                                                <td>Trách nhiệm giải thưởng HIO</td>
                                                                                                 <td class="text-right">0</td>
                                                                                             </tr>
                                                                                             <tr>
