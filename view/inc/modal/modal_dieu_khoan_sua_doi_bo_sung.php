@@ -21,7 +21,6 @@
                                     <th width="30px"><input type="checkbox" value=""></th>
                                     <th class="desktop w20p">Mã điều khoản</th>
                                     <th>Điểu khoản sửa đổi bổ sung</th>
-                                    <th class="w1p"></th>
                                 </tr>
                             </thead>
                             <tbody data-repeater-list="dksdbs">
@@ -29,103 +28,89 @@
                                     <td><input type="checkbox" value=""></td>
                                     <td><input type="text" class="form-control"></td>
                                     <td><input type="text" class="form-control"></td>
-                                    <td><a href="javascript:;" data-repeater-delete="" class="d-flex align-items-center font-weight-bold text-danger"><i class="icon-trash mr-1"></i>Xoá</a></td>
                                 </tr>
                                 <?php if (!empty($GLOBALS["dk_sua_doi_bo_sung"]) && $GLOBALS["dk_sua_doi_bo_sung"] == 'g') : ?>
                                     <tr>
                                         <td><input type="checkbox" value=""></td>
                                         <td><input type="text" class="form-control" value=""></td>
                                         <td><input type="text" class="form-control" value=""></td>
-                                        <td></td>
                                     </tr>
                                 <?php else: ?>
                                     <tr>
                                         <td><input type="checkbox" value=""></td>
                                         <td>MADIEUKHOAN</td>
                                         <td>Điều khoản về mở rộng thời hạn bảo hiểm 30 ngày với phí bảo hiểm bổ sung tính theo tỷ lệ</td>
-                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" value=""></td>
                                         <td>MADIEUKHOAN</td>
                                         <td>Điều khoản về Vi phạm các cam kết</td>
-                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" value=""></td>
                                         <td>MADIEUKHOAN</td>
                                         <td>Điều khoản quy định về thông báo tổn thất</td>
-                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" value=""></td>
                                         <td>MADIEUKHOAN</td>
                                         <td>Điều khoản về Không mất hiệu lực bảo hiểm</td>
-                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" value=""></td>
                                         <td>MADIEUKHOAN</td>
                                         <td>Điều khoản về Thanh toán bồi thường tạm ứng</td>
-                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" value="" checked disabled></td>
                                         <td>MADIEUKHOAN</td>
                                         <td>Điều khoản về Cam kết thanh toán phí bảo hiểm</td>
-                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" value="" checked disabled></td>
                                         <td>MADIEUKHOAN</td>
                                         <td>Điều khoản cam kết đảm bảo bảo vệ 24/24h</td>
-                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" value=""></td>
                                         <td>MADIEUKHOAN</td>
                                         <td>Điều khoản Quy định về phòng cháy chữa cháy</td>
-                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" value=""></td>
                                         <td>MADIEUKHOAN</td>
                                         <td>Điều khoản về Tiền tệ</td>
-                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" value=""></td>
                                         <td>MADIEUKHOAN</td>
                                         <td>Điều khoản về Điều chỉnh thời gian</td>
-                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" value=""></td>
                                         <td>MADIEUKHOAN</td>
                                         <td>Điều khoản Chỉ định giám định tổn thất</td>
-                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" value=""></td>
                                         <td>MADIEUKHOAN</td>
                                         <td>Điều khoản về tự động khôi phục Số tiền bảo hiểm</td>
-                                        <td></td>
                                     </tr>
                                 <?php endif; ?>
 
                                     
                             </tbody>
                         </table>
-                        <div class="border p-1 text-center"><a href="javascript:;" data-repeater-create="" class="d-flex align-items-center justify-content-center font-weight-bold text-success"><i class="far fa-plus-circle mr-1"></i>Thêm</a></div>
-
                     </div>
                    
                 </div>
                 <div class="modal-footer">
+                    <button type="button" class="btn bg-success" data-toggle="modal" data-target="#cap_nhap_dieu_khoan_sua_doi_bo_dung">+ Thêm</button>
                     <a href="#" class="btn bg-primary"><i class="icon-checkmark4 mr-1"></i>Chọn</a>
                 </div>
             </form>
         </div>
     </div>
 </div>
+<?php inc('modal/modal_cap_nhap_dieu_khoan_sua_doi_bo_dung.php'); ?>
 <!-- /  -->
