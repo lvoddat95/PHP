@@ -32,8 +32,8 @@ a, area, button, input, label, select, textarea, [tabindex] {
     left: 50px;
     max-width: calc(100% - 50px);
 }
-.full-page .sidebar-xs .content-wrapper,
-.login-page .sidebar-xs .content-wrapper {
+.full-page .content-wrapper,
+.login-page .content-wrapper {
     left: 0;
     max-width: 100%;
 }
