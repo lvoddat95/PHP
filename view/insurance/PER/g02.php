@@ -74,7 +74,7 @@
                                                                     
                                                                     <!-- Step 3 -->
                                                                     <fieldset class="tab-pane" id="step3">
-                                                                        <div class="row">
+                                               <!--                          <div class="row">
                                                                             <div class="col-md-2">
                                                                                 <div class="form-group">
                                                                                     <label for="">Loại TPA: <span class="text-danger">*</span></label>
@@ -84,13 +84,95 @@
                                                                                     </select>
                                                                                 </div>
                                                                             </div>
+                                                                        </div> -->
+
+                                                                        <div class="row">
+                                                                           <div class="col-md-12">
+                                                                                <div class="tab-claim tab-style">
+                                                                                    <ul class="nav nav-tabs">
+                                                                                        <li class="nav-item">
+                                                                                            <a href="#ds_quyen_loi" class="nav-link active show" data-toggle="tab">
+                                                                                                <i class="fal fa-file-invoice mr-1"></i>
+                                                                                                <span>Danh mục quyền lời bảo hiểm và các giới hạn phụ</span>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                        <li class="nav-item">
+                                                                                            <a href="#ds_doi_tuong" class="nav-link" data-toggle="tab">
+                                                                                                <i class="fal fa-address-card mr-1"></i>
+                                                                                                <span>Danh sách người được bảo hiểm</span>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                    <div class="clearfix"></div>
+
+                                                                                    <div class="tab-content">
+                                                                                        <div class="tab-pane active show" id="ds_quyen_loi">
+                                                                                            <p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Upload thông tin danh mục quyền lời bảo hiểm và các giới hạn phụ</p>
+
+                                                                                            <div class="row mb-3 align-items-center">
+                                                                                                <div class="col-sm-4">
+                                                                                                    <button class="btn btn-light btn-file mr-3">
+                                                                                                        <i class="far fa-upload mr-2"></i> 
+                                                                                                        <span class="hidden-xs">Import file</span>
+                                                                                                        <input type="file" class="file-input-preview">
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                                <div class="col-sm-8">
+                                                                                                    <p class="mb-0 d-flex justify-content-end align-items-center"><span class="text-danger">Nhấn vào browser để upload dữ liệu từ excel.</span> <a href="" download="" class="text-primary">(Nhấn vào đây để tải file mẫu)</a></p>
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                            <hr class="border-dashed border-silver mb-3">
+                                                                                           <table class="table table-sm">
+                                                                                                <thead>
+                                                                                                    <tr>
+                                                                                                        <th>STT</th>
+                                                                                                        <th>Mã nhóm</th>
+                                                                                                        <th>Tên nhóm</th>
+                                                                                                        <th class="none"></th>
+                                                                                                    </tr>
+                                                                                                </thead>
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td></td>
+                                                                                                        <td></td>
+                                                                                                        <td></td>
+                                                                                                        <td>
+                                                                                                            <table class="table datatable">
+                                                                                                                <thead>
+                                                                                                                    <tr>
+                                                                                                                        <th>STT</th>
+                                                                                                                        <th>Mã nhóm</th>
+                                                                                                                        <th>Tên nhóm</th>
+                                                                                                                    </tr>
+                                                                                                                </thead>
+                                                                                                                <tbody>
+                                                                                                                    <tr>
+                                                                                                                        <td></td>
+                                                                                                                        <td></td>
+                                                                                                                        <td></td>
+                                                                                                                    </tr>
+                                                                                                                </tbody>
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+
+                                                                                        <div class="tab-pane " id="ds_doi_tuong">
+                                                                                                
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-6">
-                                                                                <?php inc('template/3_doi_tuong_bao_hiem/PER/so_nguoi_duoc_bao_hiem.php'); ?>
-                                                                            </div>
+                                                                            
                                                                         </div>
+
                                                                     </fieldset>
                                                                     
                                                                     <!-- Step 4 -->

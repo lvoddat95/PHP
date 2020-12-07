@@ -1696,8 +1696,8 @@ var App = function () {
         }
 
         //Wizard
-        var li = $(".wizard .nav-tabs li");
-        $('.wizard .nav-tabs li > a').on("show.bs.tab", function (e) {
+        var li = $(".wizard > .steps > .nav-tabs > li");
+        $('.wizard > .steps > .nav-tabs > li > a').on("show.bs.tab", function (e) {
             // e.preventDefault();
 
             var $target = $(e.target);
@@ -1731,7 +1731,7 @@ var App = function () {
 
         $('.next-step').on('click', function(e) {
             e.preventDefault();
-            var $active = $(".wizard .nav-tabs li > .active");
+            var $active = $(".wizard > .steps > .nav-tabs>  li > .active");
             // if (!form.valid()) {
             //     return false;
             // }
@@ -1740,7 +1740,7 @@ var App = function () {
 
         $('.prev-step').on('click', function(e) {
             e.preventDefault();
-            var $active = $(".wizard .nav-tabs li > .active");
+            var $active = $(".wizard > .steps > .nav-tabs > li > .active");
             // if (!form.valid()) {
             //     return false;
             // }

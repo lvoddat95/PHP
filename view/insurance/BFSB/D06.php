@@ -20,7 +20,7 @@
                         <div class="top-left">
                             <div class="breadcrumb">
                                 <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i>D06 - Bảo hiểm trách nhiệm người sửa chữa tàu</a>
-                                <span class="breadcrumb-item active">Cập nhập đơn</span>
+                                <span class="breadcrumb-item active">Cập nhập đơn </span>
                             </div>
                             <div class="d-md-none logo-mobile">
                                 <a href="<?php echo HTTP_PATH; ?>" class="logo-text">
