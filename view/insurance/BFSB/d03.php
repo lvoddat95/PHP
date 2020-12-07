@@ -450,7 +450,7 @@
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-8">
+                                                                            <div class="col-md-12">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/loai_mien_thuong_repeater.php'); ?>
                                                                             </div>
                                                                         </div>

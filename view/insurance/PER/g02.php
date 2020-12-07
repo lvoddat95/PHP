@@ -123,7 +123,7 @@
                                                                                             </div>
 
                                                                                             <hr class="border-dashed border-silver mb-3">
-                                                                                           <table class="table table-sm">
+                                                                                           <table class="table table-sm table-bordered datatable child-row-sm" data-control-right="true" data-paging="false" data-info="false" data-ordering="false" data-searching="false" >
                                                                                                 <thead>
                                                                                                     <tr>
                                                                                                         <th>STT</th>
@@ -134,6 +134,7 @@
                                                                                                 </thead>
                                                                                                 <tbody>
                                                                                                     <tr>
+                                                                                                        <td class="cell control not-desktop text-center" data-tooltip="tipsy" original-title="Xem chi tiết" data-position="bottom"></td>
                                                                                                         <td></td>
                                                                                                         <td></td>
                                                                                                         <td></td>
