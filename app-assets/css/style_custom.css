@@ -2258,7 +2258,6 @@ body.sidebar-mobile-main .quick-action {
     background-color: #1C3FAA;
     border: 0;
     border-radius: 6px;
-    font-weight: 500;
 }
 
 .tab-style2 .tab-content {
@@ -2272,6 +2271,14 @@ body.sidebar-mobile-main .quick-action {
     font-size: 20px;
 }
 
+.operations{
+    display: block !important;
+}
+
+.metal-btn-remove{
+    color: #F44336;
+    cursor: pointer;
+}
 
 .side-box.open .side-box-content {
     -webkit-transform: none;
@@ -3978,6 +3985,9 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
 }
 .child-row-sm tr.child .dtr-title{
     width: 170px;
+}
+.child-row-title-none tr.child .dtr-title{
+    display: none;
 }
 @media only screen and (max-width: 767px) {
     .form-group > .col-label-300,

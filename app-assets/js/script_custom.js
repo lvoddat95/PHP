@@ -426,3 +426,4 @@ var on_change_ngay_di_ngay_ve = function(p_this){
         $('.add-req').find('.text-danger').remove();
     }
 }
+

@@ -86,7 +86,7 @@
                                                                             </div>
                                                                         </div> -->
 
-                                                                        <div class="row">
+                                                                        <div class="row mb-md-5 mb-3">
                                                                            <div class="col-md-12">
                                                                                 <div class="tab-claim tab-style">
                                                                                     <ul class="nav nav-tabs">
@@ -107,7 +107,7 @@
 
                                                                                     <div class="tab-content">
                                                                                         <div class="tab-pane active show" id="ds_quyen_loi">
-                                                                                            <p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Upload thông tin danh mục quyền lời bảo hiểm và các giới hạn phụ</p>
+                                                                                            <p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Upload thông tin danh mục quyền lợi bảo hiểm và các giới hạn phụ</p>
 
                                                                                             <div class="row mb-3 align-items-center">
                                                                                                 <div class="col-sm-4">
@@ -123,46 +123,117 @@
                                                                                             </div>
 
                                                                                             <hr class="border-dashed border-silver mb-3">
-                                                                                           <table class="table table-sm table-bordered datatable child-row-sm" data-control-right="true" data-paging="false" data-info="false" data-ordering="false" data-searching="false" >
-                                                                                                <thead>
-                                                                                                    <tr>
-                                                                                                        <th>STT</th>
-                                                                                                        <th>Mã nhóm</th>
-                                                                                                        <th>Tên nhóm</th>
-                                                                                                        <th class="none"></th>
-                                                                                                    </tr>
-                                                                                                </thead>
-                                                                                                <tbody>
-                                                                                                    <tr>
-                                                                                                        <td class="cell control not-desktop text-center" data-tooltip="tipsy" original-title="Xem chi tiết" data-position="bottom"></td>
-                                                                                                        <td></td>
-                                                                                                        <td></td>
-                                                                                                        <td></td>
-                                                                                                        <td>
-                                                                                                            <table class="table datatable">
-                                                                                                                <thead>
-                                                                                                                    <tr>
-                                                                                                                        <th>STT</th>
-                                                                                                                        <th>Mã nhóm</th>
-                                                                                                                        <th>Tên nhóm</th>
-                                                                                                                    </tr>
-                                                                                                                </thead>
-                                                                                                                <tbody>
-                                                                                                                    <tr>
-                                                                                                                        <td></td>
-                                                                                                                        <td></td>
-                                                                                                                        <td></td>
-                                                                                                                    </tr>
-                                                                                                                </tbody>
-                                                                                                            </table>
-                                                                                                        </td>
-                                                                                                    </tr>
 
-                                                                                                </tbody>
-                                                                                            </table>
+                                                                                            <div repeater>
+                                                                                               <table class="table table-bordered datatable" data-paging="false" data-info="false" data-ordering="false" data-searching="false" >
+                                                                                                    <thead>
+                                                                                                        <tr>
+                                                                                                            <th class="w1p text-center">STT</th>
+                                                                                                            <th class="w15p">Mã nhóm</th>
+                                                                                                            <th>Tên nhóm</th>
+                                                                                                            <td class="w20p text-center">Quyền lợi bảo hiểm và giới hạn phụ</td>
+                                                                                                            <th class="w1p text-center"></th>
+                                                                                                        </tr>
+                                                                                                    </thead>
+                                                                                                    <tbody data-repeater-list="repeater-parent">
+                                                                                                        <tr data-repeater-item>
+                                                                                                            <td class="text-center">1</td>
+                                                                                                            <td><input type="text" class="form-control"></td>
+                                                                                                            <td><input type="text" class="form-control"></td>
+                                                                                                            <td class="text-center">
+                                                                                                                <button type="button" class="btn btn-outline-primary text-primary bg-white" onclick="fancybox_modal(this,'#ds_quyen_loi_bh')">+ Danh sách quyền lợi <span>(0)</span></button>
+                                                                                                            </td>
+                                                                                                            <td class="text-center"><a href="javascript:;" data-repeater-delete class="btn btn-outline-danger text-danger bg-white"><i class="icon-trash"></i> Xoá</a></td>
+                                                                                                            
+                                                                                                        </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+                                                                                                <div class="p-1 text-center">
+                                                                                                    <input class="btn bg-success" data-repeater-create type="button" value="+ Thêm nhóm">
+                                                                                                </div>
+                                                                                            </div>
                                                                                         </div>
 
                                                                                         <div class="tab-pane " id="ds_doi_tuong">
+                                                                                            <p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Upload thông tin danh sách người được bảo hiểm</p>
+
+                                                                                            <div class="row mb-3 align-items-center">
+                                                                                                <div class="col-sm-4">
+                                                                                                    <button class="btn btn-light btn-file mr-3">
+                                                                                                        <i class="far fa-upload mr-2"></i> 
+                                                                                                        <span class="hidden-xs">Import file</span>
+                                                                                                        <input type="file" class="file-input-preview">
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                                <div class="col-sm-8">
+                                                                                                    <p class="mb-0 d-flex justify-content-end align-items-center"><span class="text-danger">Nhấn vào browser để upload dữ liệu từ excel.</span> <a href="" download="" class="text-primary">(Nhấn vào đây để tải file mẫu)</a></p>
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                            <hr class="border-dashed border-silver mb-3">
+
+                                                                                            <div repeater>
+                                                                                                <table class="table table-bordered datatable child-row-sm" data-control-right="true" data-paging="false" data-info="false" data-ordering="false" data-searching="false" >
+                                                                                                    <thead class="thead-light">
+                                                                                                        <tr>
+                                                                                                            <th class="w1p all text-center"><input type="checkbox" id="input-chk-all"></th>
+                                                                                                            <th class="none">Mã nhân viên</th>
+                                                                                                            <th class="w15p"><span class="text-danger">*</span> Người được BH</th>
+                                                                                                            <th class="w5p none">Giới tính</th>
+                                                                                                            <th class="w5p none">Ngày sinh</th>
+                                                                                                            <th class="none">Địa chỉ</th>
+                                                                                                            <th class="none">Email/Số điện thoại</th>
+                                                                                                            <th class="desktop"><span class="text-danger">*</span>Tuổi</th>
+                                                                                                            <th class="desktop">Đơn vị</th>
+                                                                                                            <th class="desktop">Chức vụ</th>
+                                                                                                            <th class="desktop">Phòng ban</th>
+                                                                                                            <th class="desktop"><span class="text-danger">*</span> Hiệu lực từ ngày</th>
+                                                                                                            <th class="desktop"><span class="text-danger">*</span> Đến ngày</th>
+                                                                                                            <th class="desktop"><span class="text-danger">*</span> Nhóm/Cấp</th>
+                                                                                                            <th class="all w1p"></th>
+                                                                                                        </tr>
+                                                                                                        
+                                                                                                    </thead>
+                                                                                                    <tbody data-repeater-list="repeater-list">
+                                                                                                        <tr data-repeater-item>
+                                                                                                            <td class="text-center">
+                                                                                                                <b class="item-level">1.</b> <input type="checkbox" class="input-chk">
+                                                                                                            </td>
+                                                                                                            <td><input class="form-control col-content-xs" type="text"></td>
+                                                                                                            <td><input class="form-control" type="text"></td>
+
+                                                                                                            <td><input class="form-control col-content-xs" type="text"></td>
+                                                                                                            <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
+                                                                                                            <td><input class="form-control col-content-lg" type="text"></td>
+                                                                                                            <td><input class="form-control col-content-lg" type="text"></td>
+                                                                                                            <td><input class="form-control col-content-xs" type="text"></td>
+                                                                                                            <td><input class="form-control col-content-lg" type="text"></td>
+                                                                                                            <td><input class="form-control col-content-lg" type="text"></td>
+                                                                                                            <td><input class="form-control col-content-lg" type="text"></td>
+
+                                                                                                            <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
+                                                                                                            <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
+                                                                                                            <td><input class="form-control col-content-sm" type="text"></td>
+
+                                                                                                            <td class="text-center">
+                                                                                                                <div class="list-icons">
+                                                                                                                    <div class="dropdown">
+                                                                                                                        <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
+                                                                                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                                                                                            <a href="#" data-repeater-delete class="dropdown-item"> <i class="icon-trash mr-1"></i> Xoá đối tượng</a>
+                                                                                                                            <a href="#"class="dropdown-item"> <i class="icon-alert mr-1"></i> Thông báo lỗi</a>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+                                                                                                <div class="border p-1 text-center">
+                                                                                                    <input class="btn bg-success" data-repeater-create type="button" value="+ Thêm">
+                                                                                                    <input class="btn bg-danger" type="button" value="- Xoá nhiều" disabled>
+                                                                                                </div>
+                                                                                            </div>
                                                                                                 
                                                                                         </div>
                                                                                     </div>
@@ -170,8 +241,32 @@
                                                                             </div>
                                                                         </div>
 
-                                                                        <div class="row">
-                                                                            
+                                                                        <div class="row justify-content-end">
+                                                                            <div class="col-md-6">
+                                                                                <table class="table datatable"  
+                                                                                    data-paging="false"
+                                                                                    data-info="false"
+                                                                                    data-ordering="false"
+                                                                                    data-searching="false"
+                                                                                    >
+                                                                                    <thead class="thead-light">
+                                                                                        <tr>
+                                                                                            <th class="w25p all"></th>
+                                                                                            <th class=""><b>Nhóm bảo hiểm</b></th>
+                                                                                            <th><b>Số tiền</b></th>
+                                                                                            <th class=""><b>Tỉ lệ phí (%)</b></th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td><b><i class="far fa-sigma mr-1"></i>Tổng cộng:</b></td>
+                                                                                            <td><input type="text" class="form-control input-money" name="" placeholder="0"></td>
+                                                                                            <td><input type="text" class="form-control input-money" name="" placeholder="0"></td>
+                                                                                            <td><input type="text" class="form-control input-money" name="" placeholder="0"></td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
                                                                         </div>
 
                                                                     </fieldset>
@@ -202,7 +297,6 @@
                                                                                                 <tr>
                                                                                                     <th width="20%">Phạm vi bảo hiểm</th>
                                                                                                     <th width="10%">Số tiền bảo hiểm</th>
-                                                                                                    <th width="5%" class="desktop">Phí (%)</th>
                                                                                                     <th width="10%" class="desktop">Phí BH (có VAT)</th>
                                                                                                     <th width="5%" class="desktop">VAT (%)</th>
                                                                                                     <th width="10%" class="desktop">VAT</th>
@@ -215,7 +309,6 @@
                                                                                                 <tr>
                                                                                                     <td>1. Phạm vi A (Chết, tàn tật toàn bộ vĩnh viễn do ốm đau bệnh tật)</td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                    <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right input-float" type="text" value="10"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" value="0"></td>
@@ -230,7 +323,6 @@
                                                                                                 <tr>
                                                                                                     <td>2. Phạm vi B (Tai nạn cá nhân)</td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                    <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right input-float" type="text" value="10"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" value="0"></td>
@@ -245,7 +337,6 @@
                                                                                                 <tr>
                                                                                                     <td>3. Phạm vi C (Trợ cấp nằm viện và phẫu thuật)</td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                    <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right input-float" type="text" value="10"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" value="0"></td>
@@ -260,7 +351,6 @@
                                                                                                 <tr>
                                                                                                     <td>4. Phạm vi D (Điều trị ngoại trú do ốm bệnh)</td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                    <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right input-float" type="text" value="10"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" value="0"></td>
@@ -275,7 +365,6 @@
                                                                                                 <tr>
                                                                                                     <th><b>Tổng cộng: </b></th>
                                                                                                     <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></th>
-                                                                                                    <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0.99"></th>
                                                                                                     <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></th>
                                                                                                     <th align="right"><input class="form-control text-right" type="text" disabled readonly value="10"></th>
                                                                                                     <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></th>
@@ -431,6 +520,7 @@
 
         <?php inc('modal/modal_ds_so_hop_dong_xin_cap.php'); ?> 
         <?php inc('modal/modal_ds_nguoi_tham_gia_bao_hiem.php'); ?> 
+        <?php inc('modal/modal_ds_quyen_loi_bh.php'); ?> 
 
         <div class="modal-group">
             <?php

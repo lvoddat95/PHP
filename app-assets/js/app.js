@@ -606,14 +606,16 @@ var App = function () {
                 console.warn('Warning - Repeater Js is not loaded.');
                 return;
             }
+            console.log(1);
             $('[repeater]').each(function( index ) {
-                $(this).repeater({
+                window.outerRepeater = $(this).repeater({
                     show: function (e) {
                         var $v_clone = $(this);
                         var v_table = $v_clone.closest('table');
                         var v_parent = $v_clone.closest('[repeater]');
                         var v_select = v_parent.find('[select2]');
                         var v_datepicker = v_parent.find('.datepicker');
+                        var v_clone = v_parent.find('[clone]');
 
                         if (v_table.length > 0) {
                             if (v_table.is('.datatable')) {
@@ -633,17 +635,68 @@ var App = function () {
                         _component_input_type();
                         _component_datepicker(v_datepicker);
                         _component_select2(v_select);
+                        _component_clone(v_clone);
                     },
                     hide: function (deleteElement) {
                         // if(confirm('Xoa dong nay ?')) {
                             $(this).slideUp(deleteElement);
                         // }
-                    }
+                    },
+                    repeaters: [{
+                        selector: '[child-repeater]',
+                        show: function () {
+                            $(this).slideDown();
+                        },
+                        hide: function (deleteElement) {
+                            $(this).slideUp(deleteElement);
+                        }
+                    }]
+                });
+            });
+        }
+    }
+
+    // Clone Form
+    var _component_clone = function(p_clone){
+
+        if ($('[clone]').length > 0) {
+            if (!$().repeater) {
+                console.warn('Warning - cloner Js is not loaded.');
+                return;
+            }
+
+            var clone = $('[clone]');
+            if (p_clone) clone = p_clone;
+
+            $(clone).each(function( index ) {
+                $(this).cloner({
+                    clonableContainer: '.clonable-block', // the selector to contain all clonables
+                    clonable: '.clonable',
+                    addButton: '.clonable-button-add',
+                    closeButton: '.clonable-button-close',
+                    focusableElement: ':input:visible:enabled:first', // this targets all possible input elements
+
+                    clearValueOnClone: true,
+                    removeNestedClonablesOnClone: true,
+                    limitCloneNumbers: true,
+
+                    debug: false,
+
+                    cloneName: 'clonable-clone',
+                    sourceName: 'clonable-source',
+
+                    clonableCloneNumberDecrement: 'clonable-clone-number-decrement',
+
+                    incrementName: 'clonable-increment',
+                    decrementName: 'clonable-decrement',
+
+                    beforeToggle: function (clone, index, self) {},
+                    afterToggle: function (clone, index, self) {},
                 });
             });
 
-    
         }
+
     }
 
     // PerfectScrollbar js
@@ -1651,6 +1704,7 @@ var App = function () {
                 // recall
                 var select2 = $(this).find('select');
                 var datepicker = $(this).find('.datepicker');
+                var v_clone = $(this).find('[clone]');
 
                 if (datepicker.hasClass('hasDatepicker')) {
                     datepicker.removeClass('hasDatepicker')
@@ -1662,6 +1716,7 @@ var App = function () {
                 _component_select2(select2);
                 _component_datepicker(datepicker);
                 _component_input_type();
+
             });
         }
 
@@ -1751,7 +1806,6 @@ var App = function () {
     };
 
     // Isotope
-
     var _component_isotope = function(){
 
         if (typeof Isotope == 'undefined') {
@@ -1895,6 +1949,7 @@ var App = function () {
             _component_tooltip();
             _component_popover();
             _component_repeater();
+            _component_clone();
             _component_perfect_scrollbar();
             _component_datatable();
             _component_tooltip_tipsy();

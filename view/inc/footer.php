@@ -19,6 +19,7 @@
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/select2.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/cleave.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/jquery.repeater.min.js"></script>
+    <script src="<?php echo ASSET_ROOT; ?>/vendors/js/jquery.cloner.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/form/jquery.validate.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/datatable/datatables.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/datatable/dataTables.responsive.min.js"></script>
