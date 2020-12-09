@@ -240,6 +240,10 @@
                                                                                         </thead>
                                                                                         <tbody>
                                                                                             <tr>
+                                                                                                <td>Mức trách nhiệm đồng bảo hiểm của VNI</td>
+                                                                                                <td class="text-right"><input class="form-control input-money text-right" type="text" value="0"></td>
+                                                                                            </tr>
+                                                                                            <tr>
                                                                                                 <td>Mọi rủi ro trong công nghiệp</td>
                                                                                                 <td class="text-right">0</td>
                                                                                             </tr>
