@@ -416,6 +416,10 @@
                                                                                     </thead>
                                                                                     <tbody>
                                                                                         <tr>
+                                                                                            <td>(%) Mức trách nhiệm đồng bảo hiểm VNI</td>
+                                                                                            <td class="text-right"><input class="form-control input-money text-right" type="text" value="0"></td>
+                                                                                        </tr>
+                                                                                        <tr>
                                                                                             <td>Số tiền giảm miễn thường</td>
                                                                                             <td class="text-right">0</td>
                                                                                         </tr>

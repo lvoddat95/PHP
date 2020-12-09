@@ -5,7 +5,7 @@
                 <h5 class="modal-title">Danh sách ngành nghề</h5>
             </div>
             <form action="#">
-                <div class="modal-body fancybox-modabody">
+                <div class="modal-body fancybox-modabody bg-white">
                     <div class="form-filter mb-3">
                         <div class="row">
                             <div class="col-sm-4">

@@ -174,7 +174,10 @@
                                                                             <div class="col-md-4">
                                                                                 <div class="form-group">
                                                                                     <label>Tên rủi ro: <span class="text-danger">*</span></label>
-                                                                                    <textarea disabled class="form-control" placeholder="Nhập rủi ro..." disabled></textarea>
+                                                                                    <div class="d-flex align-items-center">
+                                                                                        <textarea disabled class="form-control" placeholder="Nhập rủi ro..." disabled></textarea>
+                                                                                        <button type="button" class="btn bg-primary text-nowrap ml-2" data-toggle="modal" data-target="#ds_rui_ro_bao_hiem">Chọn</button>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">

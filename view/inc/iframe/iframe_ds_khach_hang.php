@@ -5,7 +5,7 @@
                 <h5 class="modal-title">Danh sách các khách hàng</h5>
             </div>
             <form action="#">
-                <div class="modal-body fancybox-modabody">
+                <div class="modal-body fancybox-modabody bg-white">
                     <div class="form-filter mb-3">
                         <div class="row">
                             <div class="col-sm-6">
@@ -131,7 +131,7 @@
                         <tbody>
                             <tr>
                                 <td align="center">
-                                    <input type="checkbox" value="" />
+                                    <input type="radio" name="khach_hang" value="" />
                                 </td>
                                 <td><div>0100000001</div></td>
                                 <td><div>Nguyễn Văn Anh</div></td>
@@ -140,7 +140,7 @@
                             </tr>
                             <tr>
                                 <td align="center">
-                                    <input type="checkbox" value="" />
+                                    <input type="radio" name="khach_hang" value="" />
                                 </td>
                                 <td><div>0100000002</div></td>
                                 <td><div>Phạm Thị Mai</div></td>
@@ -149,7 +149,7 @@
                             </tr>
                             <tr>
                                 <td align="center">
-                                    <input type="checkbox" value="" />
+                                    <input type="radio" name="khach_hang" value="" />
                                 </td>
                                 <td><div>0100000003</div></td>
                                 <td><div>Nguyễn Văn Sang</div></td>
@@ -158,7 +158,7 @@
                             </tr>
                             <tr>
                                 <td align="center">
-                                    <input type="checkbox" value="" />
+                                    <input type="radio" name="khach_hang" value="" />
                                 </td>
                                 <td><div>0100000004</div></td>
                                 <td><div>EVN1</div></td>
@@ -167,7 +167,7 @@
                             </tr>
                             <tr>
                                 <td align="center">
-                                    <input type="checkbox" value="" />
+                                    <input type="radio" name="khach_hang" value="" />
                                 </td>
                                 <td><div>0100000005</div></td>
                                 <td><div>EVN 1 - cty dien luc 1</div></td>
@@ -176,7 +176,7 @@
                             </tr>
                             <tr>
                                 <td align="center">
-                                    <input type="checkbox" value="" />
+                                    <input type="radio" name="khach_hang" value="" />
                                 </td>
                                 <td><div>0100000006</div></td>
                                 <td><div>Công ty A</div></td>
@@ -185,7 +185,7 @@
                             </tr>
                             <tr>
                                 <td align="center">
-                                    <input type="checkbox" value="" />
+                                    <input type="radio" name="khach_hang" value="" />
                                 </td>
                                 <td><div>0100000007</div></td>
                                 <td><div>Công ty Cổ phần XNK Tổng hợp Hà Nội</div></td>
@@ -194,7 +194,7 @@
                             </tr>
                             <tr>
                                 <td align="center">
-                                    <input type="checkbox" value="" />
+                                    <input type="radio" name="khach_hang" value="" />
                                 </td>
                                 <td><div>0100000008</div></td>
                                 <td><div>Nguyễn Văn An</div></td>
@@ -203,7 +203,7 @@
                             </tr>
                             <tr>
                                 <td align="center">
-                                    <input type="checkbox" value="" />
+                                    <input type="radio" name="khach_hang" value="" />
                                 </td>
                                 <td><div>0100000009</div></td>
                                 <td><div>Cụm cảng Hàng Không Miền Bắc</div></td>
@@ -212,7 +212,7 @@
                             </tr>
                             <tr>
                                 <td align="center">
-                                    <input type="checkbox" value="" />
+                                    <input type="radio" name="khach_hang" value="" />
                                 </td>
                                 <td><div>0100000010</div></td>
                                 <td><div>Tổng công ty cụm cảng miền Nam</div></td>
@@ -221,7 +221,7 @@
                             </tr>
                             <tr>
                                 <td align="center">
-                                    <input type="checkbox" value="" />
+                                    <input type="radio" name="khach_hang" value="" />
                                 </td>
                                 <td><div>0100000011</div></td>
                                 <td><div>Tông công ty than việt nam</div></td>
@@ -230,7 +230,7 @@
                             </tr>
                             <tr>
                                 <td align="center">
-                                    <input type="checkbox" value="" />
+                                    <input type="radio" name="khach_hang" value="" />
                                 </td>
                                 <td><div>0100000012</div></td>
                                 <td><div>Cụm cảng Miền trung</div></td>
@@ -239,7 +239,7 @@
                             </tr>
                             <tr>
                                 <td align="center">
-                                    <input type="checkbox" value="" />
+                                    <input type="radio" name="khach_hang" value="" />
                                 </td>
                                 <td><div>0100000013</div></td>
                                 <td><div>Công ty Vietjetair</div></td>
@@ -248,7 +248,7 @@
                             </tr>
                             <tr>
                                 <td align="center">
-                                    <input type="checkbox" value="" />
+                                    <input type="radio" name="khach_hang" value="" />
                                 </td>
                                 <td><div>0100000014</div></td>
                                 <td><div>Cục Hàng không</div></td>
@@ -257,7 +257,7 @@
                             </tr>
                             <tr>
                                 <td align="center">
-                                    <input type="checkbox" value="" />
+                                    <input type="radio" name="khach_hang" value="" />
                                 </td>
                                 <td><div>0100000015</div></td>
                                 <td><div>Nguyễn Văn Tiến</div></td>
@@ -266,7 +266,7 @@
                             </tr>
                             <tr>
                                 <td align="center">
-                                    <input type="checkbox" value="" />
+                                    <input type="radio" name="khach_hang" value="" />
                                 </td>
                                 <td><div>0100000016</div></td>
                                 <td><div>Công ty Xây Dựng Hà Nội</div></td>
@@ -275,7 +275,7 @@
                             </tr>
                             <tr>
                                 <td align="center">
-                                    <input type="checkbox" value="" />
+                                    <input type="radio" name="khach_hang" value="" />
                                 </td>
                                 <td><div>0100000017</div></td>
                                 <td><div>Công ty giấy Bãi Bằng</div></td>
@@ -284,7 +284,7 @@
                             </tr>
                             <tr>
                                 <td align="center">
-                                    <input type="checkbox" value="" />
+                                    <input type="radio" name="khach_hang" value="" />
                                 </td>
                                 <td><div>0100000018</div></td>
                                 <td><div>Công ty xe Bus Hà Nội</div></td>
@@ -293,7 +293,7 @@
                             </tr>
                             <tr>
                                 <td align="center">
-                                    <input type="checkbox" value="" />
+                                    <input type="radio" name="khach_hang" value="" />
                                 </td>
                                 <td><div>0100000019</div></td>
                                 <td><div>Công ty cổ phần AZ</div></td>
@@ -302,7 +302,7 @@
                             </tr>
                             <tr>
                                 <td align="center">
-                                    <input type="checkbox" value="" />
+                                    <input type="radio" name="khach_hang" value="" />
                                 </td>
                                 <td><div>0100000020</div></td>
                                 <td><div>Công ty than và khoáng sản Việt Nam</div></td>

@@ -4,7 +4,7 @@
 	<div class="modal-header">
 	    <h5 class="modal-title">Danh sách tỉ lệ thương tật</h5>
 	</div>
-	<div class="modal-body">
+	<div class="modal-body bg-white">
 		<div class="row">
 	        <div class="col-sm-4">
 	            <div class="form-group">

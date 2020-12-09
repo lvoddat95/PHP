@@ -1165,47 +1165,47 @@
                                                                                     </thead>
                                                                                     <tbody>
                                                                                         <tr>
-                                                                                            <td>(%) Mức trách nhiệm đồng bảo hiểm</td>
+                                                                                            <td>(%) Mức trách nhiệm đồng bảo hiểm VNI</td>
                                                                                             <td class="text-right"><input class="form-control input-money text-right" type="text" value="0"></td>
                                                                                         </tr>
                                                                                         <tr>
                                                                                             <td>Số tiền giảm miễn thường</td>
-                                                                                            <td class="text-right"><input class="form-control input-money text-right" type="text" value="0"></td>
+                                                                                            <td class="text-right">0</td>
                                                                                         </tr>
 
                                                                                         <tr>
                                                                                             <td>Vật chất xe </td>
-                                                                                            <td class="text-right"><input class="form-control input-money text-right" type="text" value="0"></td>
+                                                                                            <td class="text-right">0</td>
                                                                                         </tr>
                                                                                         
                                                                                         <tr>
                                                                                             <td>Điều khoản bổ sung</td>
-                                                                                            <td class="text-right"><input class="form-control input-money text-right" type="text" value="0"></td>
+                                                                                            <td class="text-right">0</td>
                                                                                         </tr>
 
                                                                                         <tr>
                                                                                             <td>TNDS tự nguyện về người</td>
-                                                                                            <td class="text-right"><input class="form-control input-money text-right" type="text" value="0"></td>
+                                                                                            <td class="text-right">0</td>
                                                                                         </tr>
                                                                                         
                                                                                         <tr>
                                                                                             <td>TNDS tự nguyện về tài sản </td>
-                                                                                            <td class="text-right"><input class="form-control input-money text-right" type="text" value="0"></td>
+                                                                                            <td class="text-right">0</td>
                                                                                         </tr>
 
                                                                                         <tr>
                                                                                             <td>TNDS bắt buộc </td>
-                                                                                            <td class="text-right"><input class="form-control input-money text-right" type="text" value="0"></td>
+                                                                                            <td class="text-right">0</td>
                                                                                         </tr>
 
                                                                                         <tr>
                                                                                             <td>Tai nạn lái, phụ xe và người ngồi trên xe </td>
-                                                                                            <td class="text-right"><input class="form-control input-money text-right" type="text" value="0"></td>
+                                                                                            <td class="text-right">0</td>
                                                                                         </tr>
 
                                                                                         <tr>
                                                                                             <td>TNDS của chủ xe với hàng hóa</td>
-                                                                                            <td class="text-right"><input class="form-control input-money text-right" type="text" value="0"></td>
+                                                                                            <td class="text-right">0</td>
                                                                                         </tr>
                                                                                         
                                                                                         <tr class="bold" style="background-color: #fff;">

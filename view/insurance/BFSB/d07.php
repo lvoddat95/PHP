@@ -1,6 +1,7 @@
 <?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?> 
 <?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
+<?php $GLOBALS["dieu_kien_bao_hiem"] = 'modal'; ?>
 
     <body class="sidebar-xs">
 
@@ -72,30 +73,15 @@
                                                                     <!-- Step 3 -->
                                                                     <fieldset class="tab-pane" id="step3">
 
-                                                                        <div class="row">
-                                                                            <div class="col-md-9">
-                                                                                <div class="form-group ">
-                                                                                    <label>Tên tàu: </label>
-                                                                                    <div class="input-group">
-                                                                                        <select class="form-control" select2>
-                                                                                            <option>--- Chọn ---</option>
-                                                                                            <option>Tàu A</option>
-                                                                                            <option>Tàu C</option>
-                                                                                            <option>Tàu D</option>
-                                                                                            <option>Tàu E</option>
-                                                                                            <option>Tàu F</option>
-                                                                                        </select>
-                                                                                        <div class="input-group-append">
-                                                                                            <button type="button" class="btn bg-primary" data-toggle="modal" data-target="#ds_tau_thuyen">+ Thêm tàu</button>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
+                                                                       <div class="form-group">
+                                                                            <label>Tên tàu: </label>
+                                                                            <?php inc('template/3_doi_tuong_bao_hiem/BFSB/ds_tau_thuyen.php'); ?>
                                                                         </div>
+
                                                                         <div class="row">
                                                                             <div class="col-md-3">
                                                                                 <div class="form-group ">
-                                                                                    <label>Quốc tịch: </label>
+                                                                                    <label>Quốc tịch tàu: </label>
                                                                                     <select select2>
                                                                                         <option id="" value="" name="">--- Chọn ---</option>
                                                                                         <option id="N_VIETNAM" name="Viet Nam" value="N_VIETNAM">Viet Nam</option>
@@ -140,7 +126,7 @@
                                                                                     </select>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="col-md-8">
+                                                                            <div class="col-md-9">
                                                                                 <div class="form-group">
                                                                                     <label for="">Chủ sở hữu: </label>
                                                                                     <input type="text" class="form-control">
@@ -161,7 +147,7 @@
                                                                                     </select>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="col-md-8">
+                                                                            <div class="col-md-9">
                                                                                 <div class="form-group">
                                                                                     <label for="">Nơi đóng: </label>
                                                                                     <input type="text" class="form-control">
@@ -244,48 +230,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group">
-                                                                                    <label for="">Giá trị tàu: </label>
-                                                                                    <input type="text" class="form-control input-money text-right" placeholder="0">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-2">
-                                                                                <div class="form-group">
-                                                                                    <label for="">Vỏ tàu:</label>
-                                                                                    <div class="input-group">
-                                                                                        <input type="text" class="form-control input-float text-right" placeholder="0" value="">
-                                                                                        <span class="input-group-append">
-                                                                                            <span class="input-group-text">%</span>
-                                                                                        </span>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-2">
-                                                                                <div class="form-group">
-                                                                                    <label for="">Máy móc:</label>
-                                                                                    <div class="input-group">
-                                                                                        <input type="text" class="form-control input-float text-right" placeholder="0" value="">
-                                                                                        <span class="input-group-append">
-                                                                                            <span class="input-group-text">%</span>
-                                                                                        </span>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-2">
-                                                                                <div class="form-group">
-                                                                                    <label for="">Thiết bị:</label>
-                                                                                    <div class="input-group">
-                                                                                        <input type="text" class="form-control input-float text-right" placeholder="0" value="">
-                                                                                        <span class="input-group-append">
-                                                                                            <span class="input-group-text">%</span>
-                                                                                        </span>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
+                       
                                                                         <div class="row">
                                                                             <div class="col-md-2">
                                                                                 <div class="form-group">
@@ -293,59 +238,63 @@
                                                                                     <input type="text" class="form-control input-number" placeholder="0">
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="col-md-2">
-                                                                                <div class="form-group">
-                                                                                    <label for="">SL thuyền trưởng: </label>
-                                                                                    <input type="text" class="form-control input-number" placeholder="0">
+                                                                            <div class="col-md-4">
+                                                                                <div class="form-group ">
+                                                                                    <label>Quốc tịch thuyền viên: </label>
+                                                                                    <select select2 multiple>
+                                                                                        <option id="" value="" name="">--- Chọn ---</option>
+                                                                                        <option id="N_VIETNAM" name="Viet Nam" value="N_VIETNAM">Viet Nam</option>
+                                                                                        <option id="N_ANH" name="United Kingdom" value="N_ANH">United Kingdom</option>
+                                                                                        <option id="N_MY" name="United States" value="N_MY">United States</option>
+                                                                                        <option id="N_CANADA" name="Canada" value="N_CANADA">Canada</option>
+                                                                                        <option id="N_TRUNGQUOC" name="China" value="N_TRUNGQUOC">China</option>
+                                                                                        <option id="N_DUC" name="Germany" value="N_DUC">Germany</option>
+                                                                                        <option id="N_PHAP" name="France" value="N_PHAP">France</option>
+                                                                                        <option id="N_INDONEXIA" name="Indonesia" value="N_INDONEXIA">Indonesia</option>
+                                                                                        <option id="N_LAO" name="Lao PDR" value="N_LAO">Lao PDR</option>
+                                                                                        <option id="N_CAMPUCHIA" name="Cambodia" value="N_CAMPUCHIA">Cambodia</option>
+                                                                                        <option id="N_THAILAN" name="Thailand" value="N_THAILAN">Thailand</option>
+                                                                                        <option id="N_TAYBANNHA" name="Spain" value="N_TAYBANNHA">Spain</option>
+                                                                                        <option id="N_THONHIKI" name="Turkey" value="N_THONHIKI">Turkey</option>
+                                                                                        <option id="N_NHAT" name="Japan" value="N_NHAT">Japan</option>
+                                                                                        <option id="N_NGA" name="Russian Federation" value="N_NGA">Russian Federation</option>
+                                                                                        <option id="N_ITALIA" name="Italy" value="N_ITALIA">Italy</option>
+                                                                                        <option id="N_BRAZIN" name="Brazil" value="N_BRAZIN">Brazil</option>
+                                                                                        <option id="N_HANQUOC" name="Korea" value="N_HANQUOC">Korea</option>
+                                                                                        <option id="N_MALAIXIA" name="Malaysia" value="N_MALAIXIA">Malaysia</option>
+                                                                                        <option id="N_MEHICO" name="Mexico" value="N_MEHICO">Mexico</option>
+                                                                                        <option id="N_HALAN" name="Netherlands" value="N_HALAN">Netherlands</option>
+                                                                                        <option id="N_CONGGO" name="Congo" value="N_CONGGO">Congo</option>
+                                                                                        <option id="N_RUMANI" name="Romania" value="N_RUMANI">Romania</option>
+                                                                                        <option id="N_BI" name="Portugal" value="N_BI">Portugal</option>
+                                                                                        <option id="N_DANMACH" name="Denmark" value="N_DANMACH">Denmark</option>
+                                                                                        <option id="N_SEC" name="Czech Republic" value="N_SEC">Czech Republic</option>
+                                                                                        <option id="N_BRUNAY" name="Brunei Darussalam" value="N_BRUNAY">Brunei Darussalam</option>
+                                                                                        <option id="N_LIBI" name="Liberia" value="N_LIBI">Liberia</option>
+                                                                                        <option id="N_ANGHERI" name="Algeria" value="N_ANGHERI">Algeria</option>
+                                                                                        <option id="N_ARGENTINA" name="Argentina" value="N_ARGENTINA">Argentina</option>
+                                                                                        <option id="N_SINGAPO" name="Singapore" value="N_SINGAPO">Singapore</option>
+                                                                                        <option id="NORWAY" name="Norway" value="NORWAY">Norway</option>
+                                                                                        <option id="SWEDEN" name="Sweden" value="SWEDEN">Sweden</option>
+                                                                                        <option id="PH" name="Philippines" value="PH">Philippines</option>
+                                                                                        <option id="MM" name="Myanmar" value="MM">Myanmar</option>
+                                                                                        <option id="hk" name="Hong Kong" value="hk">Hong Kong</option>
+                                                                                        <option id="N_MONGOLIA" name="Mongolia" value="N_MONGOLIA">Mongolia</option>
+                                                                                        <option id="N_PANAMANIA" name="Panamania" value="N_PANAMANIA">Panamania</option>
+                                                                                        <option id="N_Oman" name="Oman" value="N_Oman">Oman</option>
+                                                                                    </select>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="col-md-2">
-                                                                                <div class="form-group">
-                                                                                    <label for="">SL sỹ quan: </label>
-                                                                                    <input type="text" class="form-control input-number" placeholder="0">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-2">
-                                                                                <div class="form-group">
-                                                                                    <label for="">SL thủy thủ: </label>
-                                                                                    <input type="text" class="form-control input-number" placeholder="0">
-                                                                                </div>
-                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
                                                                             <div class="col-md-2">
                                                                                 <div class="form-group">
                                                                                     <label for="">Số IMO:</label>
                                                                                     <input type="text" class="form-control">
                                                                                 </div>
                                                                             </div>
-                                                                            
                                                                         </div>
-                                                                        <div class="row">
-                                                                            <div class="col-md-9">
-                                                                                <div class="form-group">
-                                                                                    <label>Điều kiện bảo hiểm: <span class="text-danger">*</span></label>
-                                                                                    <textarea class="form-control" placeholder="Nhập thông tin..."></textarea>
-                                                                                </div> 
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group">
-                                                                                    <label for="">Loại bảo hiểm TNDS: </label>
-                                                                                    <select select2>
-                                                                                        <option value="">--- Chọn ---</option>
-                                                                                        <option value="">Bảo hiểm TNDS có hàng hóa</option>
-                                                                                        <option value="">Bảo hiểm TNDS không có hàng hóa</option>
-                                                                                    </select>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group">
-                                                                                    <label for="">Số đăng ký:</label>
-                                                                                    <input type="text" class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
                                                                         
                                                                         
                                                                     </fieldset>

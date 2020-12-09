@@ -158,7 +158,10 @@
                                                                             <div class="col-md-4">
                                                                                 <div class="form-group">
                                                                                     <label>Điều kiện bảo hiểm: </label>
-                                                                                    <textarea class="form-control" placeholder="Nhập điều kiện bảo hiểm..." disabled="">Bảo hiểm vườn cây cao su</textarea>
+                                                                                    <div class="d-flex align-items-center">
+                                                                                        <textarea class="form-control" placeholder="Nhập điều kiện bảo hiểm..." disabled="">Bảo hiểm vườn cây cao su</textarea>
+                                                                                        <button type="button" class="btn bg-primary text-nowrap ml-2" data-toggle="modal" data-target="#ds_rui_ro_bao_hiem">Chọn</button>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">

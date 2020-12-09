@@ -1,13 +1,11 @@
-<!-- Danh sách tàu thuyền -->
-<div id="ds_tau_thuyen" class="modal-none fancybox-content-lg">
-    <div class="modal-dialog">
-        <div class="modal-content">
+<?php require_once '../../../config.php'; ?>
+<?php include_once HEADER; ?>
+
             <div class="modal-header">
-                <h5 class="modal-title ">Danh sách tàu thuyền</h5>
-                <button type="button" class="close" data-fancybox-close><i class="fal fa-times"></i></button>
+                <h5 class="modal-title">Danh sách tàu thuyền</h5>
             </div>
             <form action="#">
-                <div class="modal-body">
+                <div class="modal-body fancybox-modabody bg-white">
                     <div class="form-filter mb-3">
                         <div class="row">
                             <div class="col-md-6">
@@ -52,7 +50,7 @@
                                     <tbody>
                                         <tr>
                                             <td align="center">
-                                                <input type="checkbox" value="6103401" />
+                                                <input type="radio" name="tau_thuyen" value="6103401" />
                                             </td>
                                             <td>TAU07583</td>
                                             <td>HÙNG KHÁNH 123</td>
@@ -60,7 +58,7 @@
                                             <td>Hoạt động</td>
                                         </tr>
                                             <td align="center">
-                                                <input type="checkbox" value="6103401" />
+                                                <input type="radio" name="tau_thuyen" value="6103401" />
                                             </td>
                                             <td>TAU07582</td>
                                             <td>TORRES STRAIT V. 034W</td>
@@ -69,7 +67,7 @@
                                         </tr>
                                         <tr>
                                             <td align="center">
-                                                <input type="checkbox" value="6103173" />
+                                                <input type="radio" name="tau_thuyen" value="6103173" />
                                             </td>
                                             <td>TAU07581</td>
                                             <td>TS KOBE V. 20033N</td>
@@ -78,7 +76,7 @@
                                         </tr>
                                         <tr>
                                             <td align="center">
-                                                <input type="checkbox" value="6103122" />
+                                                <input type="radio" name="tau_thuyen" value="6103122" />
                                             </td>
                                             <td>TAU07580</td>
                                             <td>HEUNG-A AKITA V.2012S</td>
@@ -87,7 +85,7 @@
                                         </tr>
                                         <tr>
                                             <td align="center">
-                                                <input type="checkbox" value="6103048" />
+                                                <input type="radio" name="tau_thuyen" value="6103048" />
                                             </td>
                                             <td>TAU07579</td>
                                             <td>Bright Success</td>
@@ -96,7 +94,7 @@
                                         </tr>
                                         <tr>
                                             <td align="center">
-                                                <input type="checkbox" value="6103022" />
+                                                <input type="radio" name="tau_thuyen" value="6103022" />
                                             </td>
                                             <td>TAU07578</td>
                                             <td>PACIFIC EXPRESS V.2033W</td>
@@ -105,7 +103,7 @@
                                         </tr>
                                         <tr>
                                             <td align="center">
-                                                <input type="checkbox" value="6102875" />
+                                                <input type="radio" name="tau_thuyen" value="6102875" />
                                             </td>
                                             <td>TAU07577</td>
                                             <td>AG 22408</td>
@@ -114,7 +112,7 @@
                                         </tr>
                                         <tr>
                                             <td align="center">
-                                                <input type="checkbox" value="6102867" />
+                                                <input type="radio" name="tau_thuyen" value="6102867" />
                                             </td>
                                             <td>TAU07576</td>
                                             <td>BL 6625</td>
@@ -123,7 +121,7 @@
                                         </tr>
                                         <tr>
                                             <td align="center">
-                                                <input type="checkbox" value="6102865" />
+                                                <input type="radio" name="tau_thuyen" value="6102865" />
                                             </td>
                                             <td>TAU07575</td>
                                             <td>CT 09667</td>
@@ -132,7 +130,7 @@
                                         </tr>
                                         <tr>
                                             <td align="center">
-                                                <input type="checkbox" value="6102860" />
+                                                <input type="radio" name="tau_thuyen" value="6102860" />
                                             </td>
                                             <td>TAU07574</td>
                                             <td>Tàu HANSA SIEGBURG V.032N</td>
@@ -141,7 +139,7 @@
                                         </tr>
                                         <tr>
                                             <td align="center">
-                                                <input type="checkbox" value="6102772" />
+                                                <input type="radio" name="tau_thuyen" value="6102772" />
                                             </td>
                                             <td>TAU07573</td>
                                             <td>CT 09170</td>
@@ -150,7 +148,7 @@
                                         </tr>
                                         <tr>
                                             <td align="center">
-                                                <input type="checkbox" value="6102770" />
+                                                <input type="radio" name="tau_thuyen" value="6102770" />
                                             </td>
                                             <td>TAU07572</td>
                                             <td>CT08014</td>
@@ -159,7 +157,7 @@
                                         </tr>
                                         <tr>
                                             <td align="center">
-                                                <input type="checkbox" value="6102769" />
+                                                <input type="radio" name="tau_thuyen" value="6102769" />
                                             </td>
                                             <td>TAU07571</td>
                                             <td>AG 23665</td>
@@ -168,7 +166,7 @@
                                         </tr>
                                         <tr>
                                             <td align="center">
-                                                <input type="checkbox" value="6102728" />
+                                                <input type="radio" name="tau_thuyen" value="6102728" />
                                             </td>
                                             <td>TAU07570</td>
                                             <td>DT 25403</td>
@@ -177,7 +175,7 @@
                                         </tr>
                                         <tr>
                                             <td align="center">
-                                                <input type="checkbox" value="6102723" />
+                                                <input type="radio" name="tau_thuyen" value="6102723" />
                                             </td>
                                             <td>TAU07569</td>
                                             <td>CT 08310</td>
@@ -186,7 +184,7 @@
                                         </tr>
                                         <tr>
                                             <td align="center">
-                                                <input type="checkbox" value="6102716" />
+                                                <input type="radio" name="tau_thuyen" value="6102716" />
                                             </td>
                                             <td>TAU07568</td>
                                             <td>VL 15320</td>
@@ -195,7 +193,7 @@
                                         </tr>
                                         <tr>
                                             <td align="center">
-                                                <input type="checkbox" value="6102628" />
+                                                <input type="radio" name="tau_thuyen" value="6102628" />
                                             </td>
                                             <td>TAU07567</td>
                                             <td>Tàu YM INCEPTION 165S</td>
@@ -204,7 +202,7 @@
                                         </tr>
                                         <tr>
                                             <td align="center">
-                                                <input type="checkbox" value="6102602" />
+                                                <input type="radio" name="tau_thuyen" value="6102602" />
                                             </td>
                                             <td>TAU07566</td>
                                             <td>SATTHA BHUM V.H1033R</td>
@@ -213,7 +211,7 @@
                                         </tr>
                                         <tr>
                                             <td align="center">
-                                                <input type="checkbox" value="6102582" />
+                                                <input type="radio" name="tau_thuyen" value="6102582" />
                                             </td>
                                             <td>TAU07565</td>
                                             <td>AG 23588</td>
@@ -222,7 +220,7 @@
                                         </tr>
                                         <tr>
                                             <td align="center">
-                                                <input type="checkbox" value="6102475" />
+                                                <input type="radio" name="tau_thuyen" value="6102475" />
                                             </td>
                                             <td>TAU07564</td>
                                             <td>VICTORY VOYAGER V.2017E</td>
@@ -242,7 +240,8 @@
                     <a href="#" class="btn bg-primary"><i class="icon-checkmark4 mr-1"></i>Chọn</a>
                 </div>
             </form>
-        </div>
-    </div>
-</div>
-<!-- / Danh sách tàu thuyền -->
+        <?php inc('modal/modal_cap_nhap_tau_thuyen.php'); ?> 
+
+
+<?php include_once FOOTER; ?>
+
