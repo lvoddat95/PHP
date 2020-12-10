@@ -43,6 +43,11 @@
     .bieu-do > div{
         padding: 0 5px;
     }
+    .p-button {
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        overflow-y: scroll;
+    }
     
 }
 
@@ -305,6 +310,9 @@
     }
     .col-content.date-to-date{
         display: block;
+    }
+    .p-button{
+
     }
 
 
