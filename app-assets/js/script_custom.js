@@ -390,7 +390,6 @@ var fancybox_modal = function(p_this, p_src){
             smallBtn:"",
         },
         baseClass: "fancybox-modal",
-        parentEl: ".form-validation",
         afterLoad : function( instance, current ) {
             $($.fn.dataTable.tables(true)).DataTable()
             .columns.adjust()

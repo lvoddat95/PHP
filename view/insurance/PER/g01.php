@@ -462,9 +462,55 @@
                                                                             <div class="col-md-6">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/thanh_toan_tai_ngan_hang.php'); ?>
                                                                             </div>
-                                                                            <div class="col-md-12">
-                                                                                <span class="font-weight-semibold"><label>Lịch thanh toán bảo hiểm: </label></span>
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/lich_thanh_toan.php'); ?>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Tổng phí (có VAT): </label>
+                                                                                    <table class="table table-bordered" style="margin: auto;">
+                                                                                        <thead class="thead-light">
+                                                                                            <tr>
+                                                                                                <th class="w65p">Quyền lợi</th>
+                                                                                                <th class="w40p text-right">Phí BH có VAT</th>
+                                                                                            </tr>
+                                                                                        </thead>
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td>Mức trách nhiệm đồng bảo hiểm của VNI</td>
+                                                                                                <td class="text-right"><input class="form-control input-money text-right" type="text" value="0"></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>Số tiền miễn thường</td>
+                                                                                                <td class="text-right">0</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>1. Phạm vi A (Chết do ốm đau, bệnh tật, thai sản)</td>
+                                                                                                <td class="text-right">0</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>2. Phạm vi B (Chết và thương tật thân thể do tai nạn)</td>
+                                                                                                <td class="text-right">0</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>3. Phạm vi C (Ốm đau, bệnh tật, thai sản phải nằm viện hoặc phẫu thuật)</td>
+                                                                                                <td class="text-right">0</td>
+                                                                                            </tr>
+                                                                                            
+                                                                                            
+                                                                                            <tr class="bold" style="background-color: #fff;">
+                                                                                                <td>Tổng phí BH</td>
+                                                                                                <td><input class="form-control text-right" type="text" disabled="" readonly="" value="0"></td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-8">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Lịch thanh toán: </label>
+                                                                                    <?php inc('template/4_pham_vi_bao_hiem/lich_thanh_toan.php'); ?>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
 

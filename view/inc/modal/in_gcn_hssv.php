@@ -13,7 +13,7 @@
         font-family: 'Roboto', sans-serif;
     }
 
-    @media print {
+    /*@media print {*/
         *::before,
         *::after,
         *{
@@ -48,6 +48,7 @@
             margin-left: 60px;
             margin-bottom: 150px;
             overflow: hidden;
+            background-image: url('http://localhost/bhhk/app-assets/images/truoc.png') no-repeat;
         }
 
         .item:nth-child(3n + 1){
@@ -116,7 +117,7 @@
             vertical-align: top;
         }
 
-    }
+    /*}*/
     
 </style>
 <div id="print-container">

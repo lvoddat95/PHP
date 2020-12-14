@@ -8,7 +8,7 @@
 		<div class="form-filter">
 			<div class="row">
 				<div class="col-sm-3">
-                    <div class="form-group">
+                    <div class="">
                         <label>Kiểu lấy danh sách: </label>
                         <select select2 onchange="kieu_lay_danh_sach(this);">
                         	<option value="1">Nhập số thứ tự</option>
@@ -17,7 +17,7 @@
                     </div>
                 </div>
                 <div class="col-sm-3" id="stt">
-                    <div class="form-group">
+                    <div class="">
                         <label>Số thứ tự: <sup class="text-danger">(min:1 - max: 12)</sup></label>
                         <div class="date-to-date">
                         	<div class="input-group">
@@ -37,21 +37,19 @@
                     </div>
                 </div>
 				<div class="col-sm-3">
-                	<div class="form-group ">
+                	<div class="">
                 		<label>Vị trí In: <a href="#" data-tooltip="tipsy" original-title="Đặt vị trí in trên trang đầu tiên của phôi" data-position="top"><i class="icon-info22"></i></a></label>
             			<input type="text" class="form-control input-number text-right col-content-xs" placeholder="0" value="1">
             			<small>Giá trị số 1 - 9 (Mặc định: 1)</small>
                 	</div>	
                 </div>
-                <div class="col-sm-3">
-                	<div class="form-group ">
-                		<label>&nbsp;</label>
-            			<div>
-            				<a href="javascript:;" class="btn bg-primary" onclick="in_gcn_hssv(this);"><i class="icon-printer2 mr-1"></i> In giấy chứng nhận</a>
-            			</div>
-                	</div>	
-                </div>
+                	
 			</div>
+            <div class="form-group ">
+                <div>
+                    <a href="javascript:;" class="btn bg-primary" onclick="in_gcn_hssv(this);"><i class="icon-printer2 mr-1"></i> In giấy chứng nhận</a>
+                </div>
+            </div>  
 		</div>
 
         <div>
