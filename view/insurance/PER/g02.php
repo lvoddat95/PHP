@@ -93,7 +93,7 @@
                                                                                         <li class="nav-item">
                                                                                             <a href="#ds_quyen_loi" class="nav-link active show" data-toggle="tab">
                                                                                                 <i class="fal fa-file-invoice mr-1"></i>
-                                                                                                <span>Danh mục quyền lời bảo hiểm và các giới hạn phụ</span>
+                                                                                                <span>Danh mục phạm vi bảo hiểm và các giới hạn phụ</span>
                                                                                             </a>
                                                                                         </li>
                                                                                         <li class="nav-item">
@@ -107,7 +107,7 @@
 
                                                                                     <div class="tab-content">
                                                                                         <div class="tab-pane active show" id="ds_quyen_loi">
-                                                                                            <p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Upload thông tin danh mục quyền lợi bảo hiểm và các giới hạn phụ</p>
+                                                                                            <p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Upload thông tin danh mục phạm vi bảo hiểm và các giới hạn phụ</p>
 
                                                                                             <div class="row mb-3 align-items-center">
                                                                                                 <div class="col-sm-4">
@@ -131,7 +131,7 @@
                                                                                                             <th class="w1p text-center">STT</th>
                                                                                                             <th class="w15p">Mã nhóm</th>
                                                                                                             <th>Tên nhóm</th>
-                                                                                                            <td class="w20p text-center">Quyền lợi bảo hiểm và giới hạn phụ</td>
+                                                                                                            <td class="w20p text-center">Phạm vi bảo hiểm và giới hạn phụ</td>
                                                                                                             <th class="w1p text-center"></th>
                                                                                                         </tr>
                                                                                                     </thead>
@@ -141,7 +141,7 @@
                                                                                                             <td><input type="text" class="form-control"></td>
                                                                                                             <td><input type="text" class="form-control"></td>
                                                                                                             <td class="text-center">
-                                                                                                                <button type="button" class="btn btn-outline-primary text-primary bg-white" onclick="fancybox_modal(this,'#ds_quyen_loi_bh')">+ Danh sách quyền lợi <span>(0)</span></button>
+                                                                                                                <button type="button" class="btn btn-outline-primary text-primary bg-white" onclick="fancybox_modal(this,'#ds_quyen_loi_bh')">+ Danh sách phạm vi <span>(0)</span></button>
                                                                                                             </td>
                                                                                                             <td class="text-center"><a href="javascript:;" data-repeater-delete class="btn btn-outline-danger text-danger bg-white"><i class="icon-trash"></i> Xoá</a></td>
                                                                                                             
