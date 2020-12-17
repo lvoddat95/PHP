@@ -188,13 +188,16 @@
                                                                             <div class="col-md-8">
                                                                                 <div class="form-group">
                                                                                     <label>Tên rủi ro: <span class="text-danger">*</span></label>
-                                                                                    <textarea class="form-control" placeholder="Nhập rủi ro..." rows="4" disabled="">Người bảo hiểm chấp thuận bồi thường cho Người được bảo hiểm về bất kỳ khiếu nại nào chống lại Người được bảo hiểm mà được thông báo cho Người bảo hiểm trong thời gian bảo hiểm đối với những thiệt hại gây ra bởi Người được bảo hiểm trong quá trình thực hiện các công việc theo chuyên môn của mình.</textarea>
+                                                                                    <textarea class="form-control" placeholder="Nhập rủi ro..." disabled="">Người bảo hiểm chấp thuận bồi thường cho Người được bảo hiểm về bất kỳ khiếu nại nào chống lại Người được bảo hiểm mà được thông báo cho Người bảo hiểm trong thời gian bảo hiểm đối với những thiệt hại gây ra bởi Người được bảo hiểm trong quá trình thực hiện các công việc theo chuyên môn của mình.</textarea>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <div class="form-group">
-                                                                                    <label>Tên rủi ro: <span class="text-danger">*</span></label>
-                                                                                    <textarea class="form-control" placeholder="Nhập rủi ro..." rows="4" disabled="">Bảo hiểm trách nhiệm nghề nghiệp tư vấn, giám sát, thiết kế.</textarea>
+                                                                                    <label>Điều kiện bảo hiểm: <span class="text-danger">*</span></label>
+                                                                                    <div class="d-flex align-items-center">
+                                                                                    <textarea class="form-control" placeholder="Nhập rủi ro..." disabled="">Bảo hiểm trách nhiệm nghề nghiệp tư vấn, giám sát, thiết kế</textarea>
+                                                                                        <button type="button" class="btn bg-primary text-nowrap ml-2" data-toggle="modal" data-target="#ds_dieu_kien_bao_hiem" disabled>Chọn</button>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">

@@ -1,8 +1,10 @@
 <?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?>  
-<?php $GLOBALS["nganh_nghe_kinh_doanh"] = 'remove'; ?>
-<?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
+    <?php $GLOBALS["nganh_nghe_kinh_doanh"] = 'remove'; ?>
+    <?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
     <?php $GLOBALS["dk_loai_tru"] = 'hxx'; ?>
+    <?php $GLOBALS["dieu_kien_bao_hiem"] = 'modal'; ?>
+    <?php $GLOBALS["quy_tac"] = 'remove_tra_cuu'; ?>
 
     <body class="sidebar-xs">
 
@@ -176,7 +178,10 @@
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/dia_diem_bao_hiem.php'); ?>
                                                                             </div>
                                                                             <div class="col-md-6">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/quy_tac_bao_hiem.php'); ?>
+                                                                                <div class="form-group">
+                                                                                    <label>Điều khoản sửa đổi, bổ sung:</label>
+                                                                                    <textarea class="form-control" placeholder="Nhập nội dung..."></textarea>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
 

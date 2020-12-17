@@ -4,6 +4,7 @@
     <?php $GLOBALS["dk_loai_tru"] = 'hxx'; ?>
     <?php $GLOBALS["nganh_nghe_kinh_doanh"] = 'remove'; ?>
     <?php $GLOBALS["dkbs"] = 'remove'; ?>
+    <?php $GLOBALS["quy_tac"] = 'remove_tra_cuu'; ?>
 
     <body class="sidebar-xs">
 
@@ -162,26 +163,26 @@
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-8">
+                                                                            <div class="col-md-4">
                                                                                 <div class="form-group">
                                                                                     <label>Tên rủi ro: <span class="text-danger">*</span></label>
-                                                                                    <textarea class="form-control" placeholder="Nhập rủi ro..." rows="4" disabled="">Người bảo hiểm nhận trách nhiệm bồi thường giải thưởng Hole in one cho người được bảo hiểm cho những tổn thất phát sinh từ những nguyên nhân không bị loại trừ trong quy tắc Bảo hiểm bồi thường giải thưởng Golf “Hole in one” ban hành kèm theo Quyết định số 16/2019/QĐ-BHHK ngày 09 tháng 01 năm 2019 của Tổng Giám đốc Tổng Công ty Cổ phần Bảo hiểm Hàng không.</textarea>
+                                                                                    <div class="d-flex align-items-center">
+                                                                                        <textarea class="form-control" placeholder="Nhập rủi ro..." disabled="">Người bảo hiểm nhận trách nhiệm bồi thường giải thưởng Hole in one cho người được bảo hiểm cho những tổn thất phát sinh từ những nguyên nhân không bị loại trừ trong quy tắc Bảo hiểm bồi thường giải thưởng Golf “Hole in one” ban hành kèm theo Quyết định số 16/2019/QĐ-BHHK ngày 09 tháng 01 năm 2019 của Tổng Giám đốc Tổng Công ty Cổ phần Bảo hiểm Hàng không.</textarea>
+                                                                                        <button type="button" class="btn bg-primary text-nowrap ml-2" data-toggle="modal" data-target="#ds_rui_ro_bao_hiem" disabled>Chọn</button>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <div class="form-group">
-                                                                                    <label>Tên rủi ro: <span class="text-danger">*</span></label>
-                                                                                    <textarea class="form-control" placeholder="Nhập rủi ro..." rows="4" disabled="">Bảo hiểm trách nhiệm giải thưởng hole in one (HIO)</textarea>
+                                                                                    <label>Điều kiện bảo hiểm: <span class="text-danger">*</span></label>
+                                                                                    <div class="d-flex align-items-center">
+                                                                                    <textarea class="form-control" placeholder="Nhập rủi ro..." disabled="">Bảo hiểm trách nhiệm giải thưởng hole in one (HIO)</textarea>
+                                                                                        <button type="button" class="btn bg-primary text-nowrap ml-2" data-toggle="modal" data-target="#ds_dieu_kien_bao_hiem" disabled>Chọn</button>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
-                                                                        </div>
-
-                                                                        <div class="row">
-                                                                            <div class="col-md-6">
+                                                                            <div class="col-md-4">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/dia_diem_bao_hiem.php'); ?>
-                                                                            </div>
-                                                                            <div class="col-md-6">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/quy_tac_bao_hiem.php'); ?>
                                                                             </div>
                                                                         </div>
 

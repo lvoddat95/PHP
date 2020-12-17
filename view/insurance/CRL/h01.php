@@ -3,6 +3,7 @@
     <?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
     <?php $GLOBALS["dk_loai_tru"] = 'hxx'; ?>
     <?php $GLOBALS["nganh_nghe_kinh_doanh"] = 'remove'; ?>
+    <?php $GLOBALS["quy_tac"] = 'remove_tra_cuu'; ?>
 
     <body class="sidebar-xs">
 
@@ -173,16 +174,21 @@
                                                                             <div class="col-md-4">
                                                                                 <div class="form-group">
                                                                                     <label>Tên rủi ro: <span class="text-danger">*</span></label>
-                                                                                    <textarea class="form-control" placeholder="Nhập rủi ro..." rows="4" disabled="">Người bảo hiểm sẽ bồi thường cho Người được bảo hiểm về trách nhiệm pháp lý đối với các khiếu nại đòi bồi thường đưa ra đối với Người được bảo hiểm do việc vi phạm trách nhiệm nghề nghiệp trong khi Người được bảo hiểm hoặc người thay mặt Người được bảo hiểm hành nghề chuyên môn có hành động sơ suất, sai sót hoặc  thiếu sót mà Người được bảo hiểm phạm phải hoặc bị cáo buộc là phạm phải. &#10; &#10;Người bảo hiểm đồng ý thanh toán các chi phí và phí tổn phát sinh khi có sự chấp thuận bằng văn bản của bên B trong việc chống lại hoặc giải quyết các khiếu nại được bảo hiểm theo Quy tắc bảo hiểm với điều kiện là các chi phí và phí tổn đó không vượt quá hạn mức bồi thường.
-                                                                                    </textarea>
+                                                                                    <div class="d-flex align-items-center">
+                                                                                        <textarea class="form-control" placeholder="Nhập rủi ro..." disabled="">Người bảo hiểm sẽ bồi thường cho Người được bảo hiểm về trách nhiệm pháp lý đối với các khiếu nại đòi bồi thường đưa ra đối với Người được bảo hiểm do việc vi phạm trách nhiệm nghề nghiệp trong khi Người được bảo hiểm hoặc người thay mặt Người được bảo hiểm hành nghề chuyên môn có hành động sơ suất, sai sót hoặc  thiếu sót mà Người được bảo hiểm phạm phải hoặc bị cáo buộc là phạm phải. &#10; &#10;Người bảo hiểm đồng ý thanh toán các chi phí và phí tổn phát sinh khi có sự chấp thuận bằng văn bản của bên B trong việc chống lại hoặc giải quyết các khiếu nại được bảo hiểm theo Quy tắc bảo hiểm với điều kiện là các chi phí và phí tổn đó không vượt quá hạn mức bồi thường.
+                                                                                        </textarea>
+                                                                                        <button type="button" class="btn bg-primary text-nowrap ml-2" data-toggle="modal" data-target="#ds_rui_ro_bao_hiem" disabled>Chọn</button>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <div class="form-group">
-                                                                                    <label>Tên rủi ro: <span class="text-danger">*</span></label>
-                                                                                    <textarea class="form-control" placeholder="Nhập rủi ro..." rows="4" disabled="">Bảo hiểm trách nhiệm nghề nghiệp</textarea>
+                                                                                    <label>Điều kiện bảo hiểm: <span class="text-danger">*</span></label>
+                                                                                    <div class="d-flex align-items-center">
+                                                                                        <textarea class="form-control" placeholder="Nhập rủi ro..." disabled>Bảo hiểm trách nhiệm nghề nghiệp</textarea>
+                                                                                        <button type="button" class="btn bg-primary text-nowrap ml-2" data-toggle="modal" data-target="#ds_dieu_kien_bao_hiem" disabled>Chọn</button>
+                                                                                    </div>
                                                                                 </div>
-                                                                               
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/dieu_khoan_loai_tru.php'); ?>
@@ -194,7 +200,10 @@
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/dia_diem_bao_hiem.php'); ?>
                                                                             </div>
                                                                             <div class="col-md-6">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/quy_tac_bao_hiem.php'); ?>
+                                                                                <div class="form-group">
+                                                                                    <label>Điều khoản sửa đổi, bổ sung:</label>
+                                                                                    <textarea class="form-control" placeholder="Nhập nội dung..."></textarea>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
 

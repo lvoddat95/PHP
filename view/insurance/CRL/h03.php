@@ -3,6 +3,7 @@
     <?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
     <?php $GLOBALS["dk_sua_doi_bo_sung"] = 'h03'; ?>
     <?php $GLOBALS["nganh_nghe_kinh_doanh"] = 'remove'; ?>
+    <?php $GLOBALS["quy_tac"] = 'remove_tra_cuu'; ?>
 
     <body class="sidebar-xs">
 
@@ -267,13 +268,19 @@
                                                                             <div class="col-md-4">
                                                                                 <div class="form-group">
                                                                                     <label>Tên rủi ro: <span class="text-danger">*</span></label>
-                                                                                    <textarea class="form-control" placeholder="Nhập rủi ro..." rows="4" disabled="">Bên bảo hiểm đồng ý bồi thường cho những thiệt hại về thương tật thân thể hay tài sản của các bên thứ ba mà Bên được bảo hiểm có trách nhiệm pháp lý phải thanh toán xảy ra trong thời hạn bảo hiểm do các sự cố liên quan đến hoạt động kinh doanh của Bên được bảo hiểm (kể cả chi phí khiếu kiện) ngoại trừ những điểm loại trừ đã ghi trong Đơn bảo hiểm và các điều kiện, điều khoản ghi trong phụ lục bảo hiểm đính kèm hợp đồng này.</textarea>
+                                                                                    <div class="d-flex align-items-center">
+                                                                                        <textarea class="form-control" placeholder="Nhập rủi ro..." disabled="">Bên bảo hiểm đồng ý bồi thường cho những thiệt hại về thương tật thân thể hay tài sản của các bên thứ ba mà Bên được bảo hiểm có trách nhiệm pháp lý phải thanh toán xảy ra trong thời hạn bảo hiểm do các sự cố liên quan đến hoạt động kinh doanh của Bên được bảo hiểm (kể cả chi phí khiếu kiện) ngoại trừ những điểm loại trừ đã ghi trong Đơn bảo hiểm và các điều kiện, điều khoản ghi trong phụ lục bảo hiểm đính kèm hợp đồng này.</textarea>
+                                                                                        <button type="button" class="btn bg-primary text-nowrap ml-2" data-toggle="modal" data-target="#ds_rui_ro_bao_hiem" disabled>Chọn</button>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <div class="form-group">
-                                                                                    <label>Tên rủi ro: <span class="text-danger">*</span></label>
-                                                                                    <textarea class="form-control" placeholder="Nhập rủi ro..." rows="4" disabled="">Bảo hiểm trách nhiệm công cộng</textarea>
+                                                                                    <label>Điều kiện bảo hiểm: <span class="text-danger">*</span></label>
+                                                                                    <div class="d-flex align-items-center">
+                                                                                    <textarea class="form-control" placeholder="Nhập rủi ro..." disabled="">Bảo hiểm trách nhiệm công cộng</textarea>
+                                                                                        <button type="button" class="btn bg-primary text-nowrap ml-2" data-toggle="modal" data-target="#ds_dieu_kien_bao_hiem" disabled>Chọn</button>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">
@@ -286,7 +293,10 @@
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/dia_diem_bao_hiem.php'); ?>
                                                                             </div>
                                                                             <div class="col-md-6">
-                                                                                <?php inc('template/4_pham_vi_bao_hiem/quy_tac_bao_hiem.php'); ?>
+                                                                                <div class="form-group">
+                                                                                    <label>Điều khoản sửa đổi, bổ sung:</label>
+                                                                                    <textarea class="form-control" placeholder="Nhập nội dung..."></textarea>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
 
