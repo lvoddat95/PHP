@@ -21,7 +21,7 @@
                         </button>
                         <div class="top-left">
                             <div class="breadcrumb">
-                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i>D01 - Bảo hiểm tàu biển</a>
+                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i>D09 - Bảo hiểm trang thiết bị hàng hải</a>
                                 <span class="breadcrumb-item active">Cập nhập đơn </span>
                             </div>
                             <div class="d-md-none logo-mobile">
@@ -326,171 +326,6 @@
 
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <div class="collapse-group">
-                                                                                    <div class="p-title">Phạm vi bảo hiểm:</div>
-                                                                                    <div class="p-body collapse show">
-                                                                                        <div class="c-item">
-                                                                                            <div class="c-title">
-                                                                                                <span class="button-switch no-label">
-                                                                                                    <input type="checkbox" id="ckbchild1" class="switch cls_ckb">
-                                                                                                    <label for="ckbchild1" data-off="Không" data-on="Có"></label>
-                                                                                                </span>
-                                                                                                <a data-toggle="collapse" class="collapsed" href="#collapsible-item1">1. Thân tàu</a>
-                                                                                            </div>
-                                                
-                                                                                            <div id="collapsible-item1" class="collapse" datatable-collapse>
-                                                                                                <div class="c-body">
-                                                                                                   <table class="table table-bordered datatable" 
-                                                                                                        data-paging="false"
-                                                                                                        data-info="false"
-                                                                                                        data-ordering="false"
-                                                                                                        data-searching="false" >
-                                                                                                        <thead class="thead-light">
-                                                                                                            <tr>
-                                                                                                                <th width="20%">Phạm vi bảo hiểm</th>
-                                                                                                                <th width="17%">Số tiền bảo hiểm</th>
-                                                                                                                <th width="5%" class="desktop">Phí (%)</th>
-                                                                                                                <th width="10%" class="desktop">Phí BH (có VAT)</th>
-                                                                                                                <th width="5%" class="desktop">VAT (%)</th>
-                                                                                                                <th width="10%" class="desktop">VAT</th>
-                                                                                                                <th width="5%" class="desktop">COM (%)</th>
-                                                                                                                <th width="10%" class="desktop">COM</th>
-                                                                                                                <th width="17%" class="desktop">Định mức</th>
-                                                                                                            </tr>
-                                                                                                        </thead>
-                                                                                                        <tbody>
-                                                                                                            <tr>
-                                                                                                                <td>1. Thân tàu</td>
-                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
-                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                                <td><input class="form-control text-right input-float" type="text" value="10"></td>
-                                                                                                                <td><input class="form-control text-right input-money" type="text" value="0"></td>
-                                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
-                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                                <td>
-                                                                                                                    <select class="form-control" select2 >
-                                                                                                                        <option>Tàu từ 1-15 tuổi</option>
-                                                                                                                        <option >Tàu từ 16-25 tuổi</option>
-                                                                                                                        <option>Trên 25 tuổi, BH tổn thất toàn bộ</option>
-                                                                                                                    </select>
-                                                                                                                </td>
-                                                                                                            </tr>
-                                                                                                        </tbody>
-                                                                                                            
-                                                                                                    </table>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="c-item">
-                                                                                            <div class="c-title">
-                                                                                                <span class="button-switch no-label">
-                                                                                                    <input type="checkbox" id="ckbchild2" class="switch cls_ckb">
-                                                                                                    <label for="ckbchild2" data-off="Không" data-on="Có"></label>
-                                                                                                </span>
-                                                                                                <a data-toggle="collapse" class="collapsed" href="#collapsible-item2">2. TNDS (P and I fixed)</a>
-                                                                                            </div>
-                                                
-                                                                                            <div id="collapsible-item2" class="collapse" datatable-collapse>
-                                                                                                <div class="c-body">
-                                                                                                   <table class="table table-bordered datatable" 
-                                                                                                        data-paging="false"
-                                                                                                        data-info="false"
-                                                                                                        data-ordering="false"
-                                                                                                        data-searching="false" >
-                                                                                                        <thead class="thead-light">
-                                                                                                            <tr>
-                                                                                                                <th width="20%">Phạm vi bảo hiểm</th>
-                                                                                                                <th width="17%">Số tiền bảo hiểm</th>
-                                                                                                                <th width="5%" class="desktop">Phí (%)</th>
-                                                                                                                <th width="10%" class="desktop">Phí BH (có VAT)</th>
-                                                                                                                <th width="5%" class="desktop">VAT (%)</th>
-                                                                                                                <th width="10%" class="desktop">VAT</th>
-                                                                                                                <th width="5%" class="desktop">COM (%)</th>
-                                                                                                                <th width="10%" class="desktop">COM</th>
-                                                                                                                <th width="17%" class="desktop">Định mức</th>
-                                                                                                            </tr>
-                                                                                                        </thead>
-                                                                                                        <tbody>
-                                                                                                            <tr>
-                                                                                                                <td>2. TNDS (P and I fixed)</td>
-                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
-                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                                <td><input class="form-control text-right input-float" type="text" value="10"></td>
-                                                                                                                <td><input class="form-control text-right input-money" type="text" value="0"></td>
-                                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
-                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                                <td>
-                                                                                                                    <select class="form-control" select2 >
-                                                                                                                        <option>P and I ( phần tăng thêm so với phí hội)</option>
-                                                                                                                    </select>
-                                                                                                                </td>
-                                                                                                            </tr>
-                                                                                                        </tbody>
-                                                                                                            
-                                                                                                    </table>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="c-item">
-                                                                                            <div class="c-title">
-                                                                                                <span class="button-switch no-label">
-                                                                                                    <input type="checkbox" id="ckbchild3" class="switch cls_ckb">
-                                                                                                    <label for="ckbchild3" data-off="Không" data-on="Có"></label>
-                                                                                                </span>
-                                                                                                <a data-toggle="collapse" class="collapsed" href="#collapsible-item3">3. Tai nạn thuyền viên</a>
-                                                                                            </div>
-                                                
-                                                                                            <div id="collapsible-item3" class="collapse" datatable-collapse>
-                                                                                                <div class="c-body">
-                                                                                                   <table class="table table-bordered datatable" 
-                                                                                                        data-paging="false"
-                                                                                                        data-info="false"
-                                                                                                        data-ordering="false"
-                                                                                                        data-searching="false" >
-                                                                                                        <thead class="thead-light">
-                                                                                                            <tr>
-                                                                                                                <th width="20%">Phạm vi bảo hiểm</th>
-                                                                                                                <th width="17%">Số tiền bảo hiểm</th>
-                                                                                                                <th width="5%" class="desktop">Phí (%)</th>
-                                                                                                                <th width="10%" class="desktop">Phí BH (có VAT)</th>
-                                                                                                                <th width="5%" class="desktop">VAT (%)</th>
-                                                                                                                <th width="10%" class="desktop">VAT</th>
-                                                                                                                <th width="5%" class="desktop">COM (%)</th>
-                                                                                                                <th width="10%" class="desktop">COM</th>
-                                                                                                                <th width="17%" class="desktop">Định mức</th>
-                                                                                                            </tr>
-                                                                                                        </thead>
-                                                                                                        <tbody>
-                                                                                                            <tr>
-                                                                                                                <td>3. Tai nạn thuyền viên</td>
-                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
-                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                                <td><input class="form-control text-right input-float" type="text" value="10"></td>
-                                                                                                                <td><input class="form-control text-right input-money" type="text" value="0"></td>
-                                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
-                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                                <td>
-                                                                                                                    <select class="form-control" select2 >
-                                                                                                                        <option>Tai nạn thuyền viên</option>
-                                                                                                                    </select>
-                                                                                                                </td>
-                                                                                                            </tr>
-                                                                                                        </tbody>
-                                                                                                            
-                                                                                                    </table>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
                                                                                 <div class="form-group">
                                                                                     <table class="table table-bordered datatable" 
                                                                                         data-paging="false"
@@ -512,7 +347,7 @@
                                                                                         </thead>
                                                                                         <tbody>
                                                                                             <tr>
-                                                                                                <td>1. Thân tàu</td>
+                                                                                                <td>Bảo hiểm trang thiết bị hàng hải</td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
@@ -522,42 +357,11 @@
                                                                                                 <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                 <td>
                                                                                                     <select class="form-control" select2 >
-                                                                                                        <option>Tàu từ 1-15 tuổi</option>
-                                                                                                        <option >Tàu từ 16-25 tuổi</option>
-                                                                                                        <option>Trên 25 tuổi, BH tổn thất toàn bộ</option>
+                                                                                                        <option>Bảo hiểm trang thiết bị hàng hải</option>
                                                                                                     </select>
                                                                                                 </td>
                                                                                             </tr>
-                                                                                            <tr>
-                                                                                                <td>2. TNDS (P and I fixed)</td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                <td><input class="form-control text-right input-float" type="text" value="10"></td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" value="0"></td>
-                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                <td>
-                                                                                                    <select class="form-control" select2 >
-                                                                                                        <option>P and I ( phần tăng thêm so với phí hội)</option>
-                                                                                                    </select>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>3. Tai nạn thuyền viên</td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                <td><input class="form-control text-right input-float" type="text" value="10"></td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" value="0"></td>
-                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
-                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                <td>
-                                                                                                    <select class="form-control" select2 >
-                                                                                                        <option>Tai nạn thuyền viên</option>
-                                                                                                    </select>
-                                                                                                </td>
-                                                                                            </tr>
+                                                                                            
                                                                                             <tr>
                                                                                                 <th><b>Tổng cộng: </b></th>
                                                                                                 <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></th>
@@ -575,7 +379,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-
+                                                                        
                                                                         <div class="row">
                                                                             <div class="col-md-3">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/tong_tien_hoa_hong_dai_li.php'); ?>
@@ -642,15 +446,7 @@
                                                                                                 <td class="text-right">0</td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <td>1. Thân tàu</td>
-                                                                                                <td class="text-right">0</td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>2. TNDS (P and I fixed)</td>
-                                                                                                <td class="text-right">0</td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>3. Tai nạn thuyền viên</td>
+                                                                                                <td>Bảo hiểm trang thiết bị hàng hải</td>
                                                                                                 <td class="text-right">0</td>
                                                                                             </tr>
                                                                                             

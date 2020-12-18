@@ -196,7 +196,8 @@
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/BFSB/d05.php'; ?>" class="nav-link"><span class="menu-title">D05 - Bảo hiểm rủi ro đóng tàu</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/BFSB/d06.php'; ?>" class="nav-link"><span class="menu-title">D06 - Bảo hiểm trách nhiệm người sửa chữa tàu</span></a></li>
                                 <li><a href="<?php echo HTTP_PATH .'view/insurance/BFSB/d07.php'; ?>" class="nav-link"><span class="menu-title">D07 - Bảo hiểm trách nhiệm dân sự chủ tầu viễn dương (P&amp;I mutual)</span></a></li>
-                                
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/BFSB/d08.php'; ?>" class="nav-link"><span class="menu-title">D08 - Bảo hiểm bắt cóc và đòi tiền chuộc</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/insurance/BFSB/d09.php'; ?>" class="nav-link"><span class="menu-title">D09 - Bảo hiểm trang thiết bị hàng hải</span></a></li>
                             </ul>
                         </li>
 

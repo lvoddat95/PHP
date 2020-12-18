@@ -2,6 +2,7 @@
 <?php include_once HEADER; ?> 
 <?php $GLOBALS["so_gcnbh"] = 'remove'; ?>
 <?php $GLOBALS["dieu_kien_bao_hiem"] = 'modal'; ?>
+<?php $GLOBALS["ten_rui_ro"] = 'trach_nhiem_bao_hiem'; ?>
 
     <body class="sidebar-xs">
 
