@@ -13,7 +13,7 @@
         font-family: 'Roboto', sans-serif;
     }
 
-    /*@media print {*/
+    @media print {
         *::before,
         *::after,
         *{
@@ -117,7 +117,7 @@
             vertical-align: top;
         }
 
-    /*}*/
+    }
     
 </style>
 <div id="print-container">
