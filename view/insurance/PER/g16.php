@@ -179,34 +179,40 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="col-md-6">
-                                                                                <div id="upload-excel"  style="display: none;">
-                                                                                    <hr class="border-dashed border-silver mb-2">
-                                                                                    <div class="col-content-lg">
-                                                                                        <p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Upload dữ liệu từ excel.</p>
-                                                                                        <button class="btn btn-light btn-file">
-                                                                                            <i class="far fa-upload mr-1"></i>
-                                                                                            <span class="hidden-xs">Import Excel</span>
-                                                                                            <input type="file" class="file-input-preview">
-                                                                                        </button>
-                                                                                        <table class="table table-bordered mt-3">
-                                                                                            <thead>
-                                                                                                <tr>
-                                                                                                    <th width="25%">Tháng</th>
-                                                                                                    <th width="30%">Số tiền BH</th>
-                                                                                                    <th width="35%">Phí</th>
-                                                                                                </tr>
-                                                                                            </thead>
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td><input class="form-control input-month" type="text" placeholder="mm"></td>
-                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </div>
-                                                                                </div>
+                                                                        </div>
+
+                                                                        <div id="upload-excel"  style="display: none;">
+                                                                            <hr class="border-dashed border-silver mb-2">
+                                                                            <div class="form-group col-content-xl">
+                                                                                <p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Upload dữ liệu từ excel.</p>
+                                                                                <button class="btn btn-light btn-file">
+                                                                                    <i class="far fa-upload mr-1"></i>
+                                                                                    <span class="hidden-xs">Import Excel</span>
+                                                                                    <input type="file" class="file-input-preview">
+                                                                                </button>
+                                                                                <table class="table table-bordered mt-3">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th width="15%">Tháng</th>
+                                                                                            <th>Khoản dư nợ gốc</th>
+                                                                                            <th>Phí BH / Tháng điều kiện A</th>
+                                                                                            <th>Phí BH / Tháng điều kiện B</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td><input class="form-control input-month" type="text" placeholder="mm"></td>
+                                                                                            <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                            <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                            <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td colspan="2"><b>Tổng phí:</b></td>
+                                                                                            <td class="text-right">0</td>
+                                                                                            <td class="text-right">0</td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
                                                                             </div>
                                                                         </div>
 
@@ -305,13 +311,13 @@
                                                                                 </div>
                                                                                 <div class="col-md-3">
                                                                                     <div class="form-group ">
-                                                                                        <label>Số tiền vay: </label>
+                                                                                        <label>Số tiền vay: <span class="text-danger">*</span></label>
                                                                                         <input type="text" class="form-control input-money">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-md-3">
                                                                                     <div class="form-group ">
-                                                                                        <label>Thời hạn vay: </label>
+                                                                                        <label>Thời hạn vay: <span class="text-danger">*</span></label>
                                                                                         <select class="form-control" select2 name="">
                                                                                            <option id="" value="" name="">--- Chọn ---</option>
                                                                                            <option id="1" name="1 Tháng" value="1">1 Tháng</option>
@@ -384,6 +390,19 @@
                                                                                                 <button type="button" class="btn bg-primary" data-fancybox data-base-class="fancybox-container-lg" data-type="iframe" data-src="<?php echo HTTP_PATH; ?>view/inc/iframe/iframe_ds_khach_hang.php" href="javascript:;">Chọn</button>
                                                                                             </span>
                                                                                         </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-3 col-sm-3">
+                                                                                        <input type="text" class="form-control required" placeholder="Số HC/CMND">
+                                                                                    </div>
+                                                                                    <div class="col-md-3 col-sm-3">
+                                                                                        <input type="text" class="form-control required" placeholder="Quan hệ">
+                                                                                    </div>
+                                                                                    <div class="col-md-6 col-sm-6">
+                                                                                        <input type="text" class="form-control required" placeholder="Địa chỉ">
                                                                                     </div>
                                                                                 </div>
                                                                             </div>

@@ -4196,3 +4196,8 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
 .table-sm{
     /*min-width: 1110px;*/
 }
+
+.btn:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
