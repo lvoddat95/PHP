@@ -4,6 +4,7 @@
 <?php $GLOBALS["dieu_kien_bao_hiem"] = 'modal'; ?>
 <?php $GLOBALS["ten_rui_ro"] = 'trach_nhiem_bao_hiem'; ?>
 <?php $GLOBALS["dk_sua_doi_bo_sung"] = 'd'; ?>
+<?php $GLOBALS["quy_tac_bao_hiem"] = 'dxx'; ?>
 
     <body class="sidebar-xs">
 
@@ -76,14 +77,14 @@
                                                                     <fieldset class="tab-pane" id="step3">
                                                                         
                                                                         <div class="form-group">
-                                                                            <label>Tên tàu: </label>
+                                                                            <label>Tên tàu: <span class="text-danger">*</span></label>
                                                                             <?php inc('template/3_doi_tuong_bao_hiem/BFSB/ds_tau_thuyen.php'); ?>
                                                                         </div>
 
                                                                         <div class="row">
                                                                             <div class="col-md-3">
                                                                                 <div class="form-group ">
-                                                                                    <label>Quốc tịch tàu: </label>
+                                                                                    <label>Quốc tịch tàu: <span class="text-danger">*</span></label>
                                                                                     <select select2>
                                                                                         <option id="" value="" name="">--- Chọn ---</option>
                                                                                         <option id="N_VIETNAM" name="Viet Nam" value="N_VIETNAM">Viet Nam</option>
@@ -135,62 +136,23 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>  
-                                                                        
+                                              
                                                                         <div class="row">
                                                                             <div class="col-md-3">
                                                                                 <div class="form-group">
-                                                                                    <label for="">Năm đóng: <span class="text-danger">*</span></label>
-                                                                                    <select select2>
-                                                                                        <option>--- Chọn ---</option>
-                                                                                        <?php for ($i = 1945; $i <= 2020; $i++) {
-                                                                                            echo  '<option>'.$i.'</option>';
-                                                                                            }
-                                                                                        ?>
-                                                                                    </select>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-9">
-                                                                                <div class="form-group">
-                                                                                    <label for="">Nơi đóng: </label>
-                                                                                    <input type="text" class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group">
-                                                                                    <label for="">Vật liệu đóng: </label>
-                                                                                    <select select2>
-                                                                                        <option>--- Chọn ---</option>
-                                                                                        <option>Vỏ thép</option>
-                                                                                        <option>Vỏ gỗ</option>
-                                                                                        <option>Vật liệu PPC</option>
-                                                                                        <option>Vỏ nhôm</option>
-                                                                                        <option>Sợi thủy tinh</option>
-                                                                                        <option>Sợi carbon</option>
-                                                                                        <option>Vật liệu khác</option>
-                                                                                    </select>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group">
-                                                                                    <label for="">Dung tích: <span class="text-danger">*</span></label>
+                                                                                    <label for="">Dung tích:</label>
                                                                                     <input type="text" class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <div class="form-group">
-                                                                                    <label for="">Trọng tải: <span class="text-danger">*</span></label>
+                                                                                    <label for="">Trọng tải:</label>
                                                                                     <input type="text" class="form-control">
                                                                                 </div>
                                                                             </div>
-                                                                        </div>
-
-                                                                        <div class="row">
                                                                             <div class="col-md-3">
                                                                                 <div class="form-group">
-                                                                                    <label for="">Loại tàu: <span class="text-danger">*</span></label>
+                                                                                    <label for="">Loại tàu:</label>
                                                                                     <select select2>
                                                                                         <option>--- Chọn ---</option>
                                                                                         <option>Tàu chở hàng tổng hợp</option>
@@ -217,14 +179,8 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-
+                                                                        
                                                                         <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group">
-                                                                                    <label for="">Công suất máy: </label>
-                                                                                    <input type="text" class="form-control">
-                                                                                </div>
-                                                                            </div>
                                                                             <div class="col-md-9">
                                                                                 <div class="form-group">
                                                                                     <label for="">Vùng hoạt động: <span class="text-danger">*</span></label>
@@ -232,52 +188,68 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+
                                                                         <div class="row">
                                                                             <div class="col-md-3">
                                                                                 <div class="form-group">
-                                                                                    <label for="">Giá trị tàu: </label>
-                                                                                    <input type="text" class="form-control input-money text-right" placeholder="0">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-2">
-                                                                                <div class="form-group">
-                                                                                    <label for="">Vỏ tàu:</label>
+                                                                                    <label for="">Mớn nước:</label>
                                                                                     <div class="input-group">
-                                                                                        <input type="text" class="form-control input-float text-right" placeholder="0" value="">
+                                                                                        <input type="text" class="form-control input-float" placeholder="0" value="">
                                                                                         <span class="input-group-append">
-                                                                                            <span class="input-group-text">%</span>
+                                                                                            <span class="input-group-text">m (mét)</span>
                                                                                         </span>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="col-md-2">
+                                                                            <div class="col-md-3">
                                                                                 <div class="form-group">
-                                                                                    <label for="">Máy móc:</label>
+                                                                                    <label for="">Chiều cao mạn khô:</label>
                                                                                     <div class="input-group">
-                                                                                        <input type="text" class="form-control input-float text-right" placeholder="0" value="">
+                                                                                        <input type="text" class="form-control input-float" placeholder="0" value="">
                                                                                         <span class="input-group-append">
-                                                                                            <span class="input-group-text">%</span>
+                                                                                            <span class="input-group-text">m (mét)</span>
                                                                                         </span>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="col-md-2">
+                                                                            <div class="col-md-3">
                                                                                 <div class="form-group">
-                                                                                    <label for="">Thiết bị:</label>
+                                                                                    <label for="">Tốc độ tàu:</label>
                                                                                     <div class="input-group">
-                                                                                        <input type="text" class="form-control input-float text-right" placeholder="0" value="">
+                                                                                        <input type="text" class="form-control input-float" placeholder="0" value="">
                                                                                         <span class="input-group-append">
-                                                                                            <span class="input-group-text">%</span>
+                                                                                            <span class="input-group-text"> hải lý/giờ (Knots)</span>
                                                                                         </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group ">
+                                                                                    <label>Biện pháp BMP: <a href="#" data-tooltip="tipsy" original-title="Chọn <b style='color: red;'>“Có”</b> nếu có sử dụng biện pháp BMP." data-position="top"><i class="icon-info22"></i></a>
+                                                                                    </label>
+                                                                                    <div class="d-flex">
+                                                                                        <p class="switch-title mr-3">Có sử dụng biện pháp BMP không?</p>
+                                                                                        <div class="button-switch">
+                                                                                            <input type="checkbox" id="BMP" class="switch " name="BMP">
+                                                                                            <label for="BMP" data-off="Không" data-on="Có"></label>
+                                                                                        </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-
+                                                                        <div class="row">
+                                                                            <div class="col-md-9">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Hành trình: </label>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        
                                                                         <div class="row">
                                                                             <div class="col-md-2">
                                                                                 <div class="form-group">
-                                                                                    <label for="">Số lượng thuyền viên: </label>
+                                                                                    <label for="">Số lượng thuyền viên: <span class="text-danger">*</span></label>
                                                                                     <input type="text" class="form-control input-number" placeholder="0">
                                                                                 </div>
                                                                             </div>
@@ -294,25 +266,6 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group">
-                                                                                    <label for="">Loại bảo hiểm TNDS: </label>
-                                                                                    <select select2>
-                                                                                        <option value="">--- Chọn ---</option>
-                                                                                        <option value="">Bảo hiểm TNDS có hàng hóa</option>
-                                                                                        <option value="">Bảo hiểm TNDS không có hàng hóa</option>
-                                                                                    </select>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group">
-                                                                                    <label for="">Cảng đăng ký:</label>
-                                                                                    <input type="text" class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
                                                                         
                                                                         
                                                                     </fieldset>

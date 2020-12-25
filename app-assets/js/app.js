@@ -708,7 +708,7 @@ var App = function () {
             }
             $('[scrollbar]').each(function(){ 
                 const ps = new PerfectScrollbar($(this)[0],{
-                    suppressScrollX: true
+                    suppressScrollX: true,
                 }); 
             });
             

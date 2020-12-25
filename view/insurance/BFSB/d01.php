@@ -5,6 +5,7 @@
 <?php $GLOBALS["ten_rui_ro"] = 'trach_nhiem_bao_hiem'; ?>
 <?php $GLOBALS["dk_sua_doi_bo_sung"] = 'd'; ?>
 <?php $GLOBALS["dk_sua_doi_bo_sung_require"] = 'all'; ?>
+<?php $GLOBALS["quy_tac_bao_hiem"] = 'dxx'; ?>
 
     <body class="sidebar-xs">
 

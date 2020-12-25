@@ -4,6 +4,7 @@
 <?php $GLOBALS["dieu_kien_bao_hiem"] = 'modal'; ?>
 <?php $GLOBALS["ten_rui_ro"] = 'trach_nhiem_bao_hiem'; ?>
 <?php $GLOBALS["dk_sua_doi_bo_sung"] = 'd'; ?>
+<?php $GLOBALS["quy_tac_bao_hiem"] = 'd03'; ?>
 
     <body class="sidebar-xs">
 

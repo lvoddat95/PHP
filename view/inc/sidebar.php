@@ -167,7 +167,7 @@
 
                         <li class="nav-item nav-item-submenu">
                             <a href="javascript:;" class="nav-link">
-                                <i class="fad fa-box-full fa-fw"></i>
+                                <i class="fad fa-box-open fa-fw"></i>
                                 <span class="menu-title"> Bảo hiểm hàng hóa</span>
                             </a>
                             <ul class="nav nav-group-sub" scrollbar data-submenu-title="Bảo hiểm hàng hóa">
