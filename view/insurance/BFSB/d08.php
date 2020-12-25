@@ -192,7 +192,7 @@
                                                                         <div class="row">
                                                                             <div class="col-md-3">
                                                                                 <div class="form-group">
-                                                                                    <label for="">Mớn nước:</label>
+                                                                                    <label for="">Mớn nước: <span class="text-danger">*</span></label>
                                                                                     <div class="input-group">
                                                                                         <input type="text" class="form-control input-float" placeholder="0" value="">
                                                                                         <span class="input-group-append">
@@ -203,7 +203,7 @@
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <div class="form-group">
-                                                                                    <label for="">Chiều cao mạn khô:</label>
+                                                                                    <label for="">Chiều cao mạn khô: <span class="text-danger">*</span></label>
                                                                                     <div class="input-group">
                                                                                         <input type="text" class="form-control input-float" placeholder="0" value="">
                                                                                         <span class="input-group-append">

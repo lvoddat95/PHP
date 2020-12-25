@@ -63,6 +63,8 @@
 
                                                             <?php inc('template/steps.php'); ?>
 
+                                                            <a href="javascript:;" id="click">click</a>
+
                                                             <form action="#" class="form-validation clearfix">
                                                                 <div class="tab-content">
                                                                     <!-- Bước 1 -->

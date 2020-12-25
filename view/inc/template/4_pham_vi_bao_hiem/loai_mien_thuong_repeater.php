@@ -28,8 +28,10 @@
                     <input type="text" class="form-control input-float text-right" name="" placeholder="0" value="">
                 </td>
                 <td>
-                    <div class="d-flex">
-                        <input type="text" class="form-control col-content-xs input-money mr-1" name="" placeholder="0" value="">
+                    <div class="d-flex flex-wrap">
+                        <div>
+                            <input type="text" class="form-control input-money mr-1" name="" placeholder="0" value="">
+                        </div>
                         <div>
                             <select select2 data-container-css-class="">
                                 <option value="">triệu đồng / vụ</option>

@@ -1791,6 +1791,7 @@ var App = function () {
             //     return false;
             // }
             $active.parent().next().removeClass("disabled").find('a').click();
+            
         })
 
         $('.prev-step').on('click', function(e) {
@@ -1800,6 +1801,11 @@ var App = function () {
             //     return false;
             // }
             $active.parent().prev().removeClass("disabled").find('a').click();
+
+        })
+        $('#click').on('click', function(e) {
+            e.preventDefault();
+            $('[name="ngay_cap"]').addClass('ok').blur();
 
         })
 
