@@ -29,10 +29,10 @@
                 </td>
                 <td>
                     <div class="d-flex flex-wrap">
-                        <div>
-                            <input type="text" class="form-control input-money mr-1" name="" placeholder="0" value="">
+                        <div style="width: 120px;" class="mr-1">
+                            <input type="text" class="form-control input-money " name="" placeholder="0" value="">
                         </div>
-                        <div>
+                        <div style="width: calc(100% - 130px);">
                             <select select2 data-container-css-class="">
                                 <option value="">triệu đồng / vụ</option>
                                 <option value="">ngày làm việc</option>
