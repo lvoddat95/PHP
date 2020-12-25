@@ -88,7 +88,7 @@
 
                         <li class="nav-item nav-item-submenu">
                             <a href="javascript:;" class="nav-link">
-                                <i class="fad fa-peace fa-fw"></i>
+                                <i class="fad fa-car-side fa-fw"></i>
                                 <span class="menu-title"> Bảo hiểm xe cơ giới</span>
                             </a>
 
@@ -167,7 +167,7 @@
 
                         <li class="nav-item nav-item-submenu">
                             <a href="javascript:;" class="nav-link">
-                                <i class="fad fa-container-storage fa-fw"></i>
+                                <i class="fad fa-box-full fa-fw"></i>
                                 <span class="menu-title"> Bảo hiểm hàng hóa</span>
                             </a>
                             <ul class="nav nav-group-sub" scrollbar data-submenu-title="Bảo hiểm hàng hóa">
@@ -185,7 +185,7 @@
 
                         <li class="nav-item nav-item-submenu">
                             <a href="javascript:;" class="nav-link">
-                                <i class="fad fa-ship fa-fw"></i>
+                                <i class="fad fa-anchor fa-fw"></i>
                                 <span class="menu-title"> Bảo hiểm tàu thuyền</span>
                             </a>
                             <ul class="nav nav-group-sub" scrollbar data-submenu-title="Bảo hiểm tàu thuyền">

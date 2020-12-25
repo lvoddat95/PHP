@@ -1,4 +1,6 @@
 <!--  -->
+<?php $attr_checked = '';
+if (!empty($GLOBALS["dk_sua_doi_bo_sung_require"]) && $GLOBALS["dk_sua_doi_bo_sung_require"] == 'all') $attr_checked = 'checked disabled'; ?>
 <div id="dieu_khoan_sua_doi_bo_sung" class="modal fade" tabindex="-1" datatable-modal>
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -151,6 +153,78 @@
                                         <td><input type="checkbox" value=""></td>
                                         <td>MADIEUKHOAN</td>
                                         <td>Việc cá nhân cho giám đốc và người điều hành</td>
+                                    </tr>
+
+                                <?php elseif (!empty($GLOBALS["dk_sua_doi_bo_sung"]) && $GLOBALS["dk_sua_doi_bo_sung"] == 'd') : ?>
+                                    <tr>
+                                        <td><input type="checkbox" value="" <?php echo $attr_checked; ?> ></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Điều khoản bổ sung bảo hiểm hàng hóa liên quan đến ISPS</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="" <?php echo $attr_checked; ?>></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Điều khoản bổ sung bảo hiểm hàng hóa liên quan đến ISM</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="" <?php echo $attr_checked; ?>></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Điều khoản chi phí chuyển tiếp liên quan đến ISPS</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="" <?php echo $attr_checked; ?>></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Điều khoản hạn chế và loại trừ cấm vận</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="" <?php echo $attr_checked; ?>></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Điều khoản thông báo hủy bỏ, tự động chấm dứt BH của các loại rủi ro chiến tranh và hạt nhân - 01.01.1995 (sửa đổi)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="" <?php echo $attr_checked; ?>></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Điều khoản loại trừ ô nhiễm và nhiễm bẩn</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="" <?php echo $attr_checked; ?>></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Điều khoản loại trừ rủi ro chính trị, đảm bảo tài chính và rủi ro tín dụng</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="" <?php echo $attr_checked; ?>></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Điều khoản loại trừ các trách nhiệm phi hàng hải</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="" <?php echo $attr_checked; ?>></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Điều khoản về chấm dứt hành trình</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="" <?php echo $attr_checked; ?>></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Điều khoản loại trừ tin tặc</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="" <?php echo $attr_checked; ?>></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Điều khoản loại trừ rủi ro năng lượng hạt nhân</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="" <?php echo $attr_checked; ?>></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Điều khoản loại trừ nhiễm phóng xạ, vũ khí hóa học, sinh học, sinh hóa học, điện từ trường 10/11/03 (Điều khoản 370) và Mỹ và Canada SĐBS (USCAN B 29/01/04)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="" <?php echo $attr_checked; ?>></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Điều khoản chiến tranh tối cao LSW 174</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="" <?php echo $attr_checked; ?>></td>
+                                        <td>MADIEUKHOAN</td>
+                                        <td>Điều khoản loại trừ rủi ro khủng bố</td>
                                     </tr>
 
                                 <?php else: ?>

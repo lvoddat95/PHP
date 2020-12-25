@@ -30,10 +30,12 @@
                 <td>
                     <div class="d-flex">
                         <input type="text" class="form-control col-content-xs input-money mr-1" name="" placeholder="0" value="">
-                        <select select2 data-container-css-class="">
-                            <option value="">triệu đồng / vụ</option>
-                            <option value="">ngày làm việc</option>
-                        </select>
+                        <div>
+                            <select select2 data-container-css-class="">
+                                <option value="">triệu đồng / vụ</option>
+                                <option value="">ngày làm việc</option>
+                            </select>
+                        </div>
                     </div>
                 </td>
                 <td><a href="javascript:;" data-repeater-delete="" class="d-flex align-items-center font-weight-bold text-danger"><i class="icon-trash mr-1"></i>Xoá</a></td>
