@@ -442,19 +442,19 @@
                                                                             </div>  
                                                                         </div>
 
-                                                                       <div class="row">
+                                                                        <div class="row">
                                                                             <div class="col-md-6">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/thong_tin_ve_thoi_han_thanh_toan.php'); ?>
                                                                             </div>
                                                                             <div class="col-md-6">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/thanh_toan_tai_ngan_hang.php'); ?>
                                                                             </div>
-                                                                       </div>
+                                                                        </div>
 
-                                                                        <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <div class="form-group">
-                                                                                    <label for="">Tổng phí (có VAT): </label>
+                                                                        <div class="form-group">
+                                                                            <label for="">Thanh toán bảo hiểm: </label>
+                                                                            <div class="row">
+                                                                                <div class="col-md-4">
                                                                                     <table class="table table-bordered" style="margin: auto;">
                                                                                         <thead class="thead-light">
                                                                                             <tr>
@@ -464,7 +464,7 @@
                                                                                         </thead>
                                                                                         <tbody>
                                                                                             <tr>
-                                                                                                <td>Mức trách nhiệm đồng bảo hiểm của VNI</td>
+                                                                                                <td>Mức trách nhiệm của VNI</td>
                                                                                                 <td class="text-right"><input class="form-control input-money text-right" type="text" value="0"></td>
                                                                                             </tr>
                                                                                             <tr>
@@ -476,17 +476,22 @@
                                                                                                 <td class="text-right">0</td>
                                                                                             </tr>
                                                                                             
-                                                                                            <tr class="bold" style="background-color: #fff;">
-                                                                                                <td>Tổng phí BH</td>
-                                                                                                <td><input class="form-control text-right" type="text" disabled="" readonly="" value="0"></td>
+                                                                                            <tr class="font-weight-bold" style="background-color: #fff;">
+                                                                                                <td>Tổng phí BH (chưa VAT)</td>
+                                                                                                <td><input class="form-control text-right" type="text" readonly value="0"></td>
+                                                                                            </tr>
+                                                                                            <tr class="font-weight-bold" style="background-color: #fff;">
+                                                                                                <td>Tổng VAT</td>
+                                                                                                <td><input class="form-control text-right" type="text" readonly value="0"></td>
+                                                                                            </tr>
+                                                                                            <tr class="font-weight-bold" style="background-color: #fff;">
+                                                                                                <td>Tổng phí BH (có VAT)</td>
+                                                                                                <td><input class="form-control text-right" type="text" readonly value="0"></td>
                                                                                             </tr>
                                                                                         </tbody>
                                                                                     </table>
                                                                                 </div>
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                <div class="form-group">
-                                                                                    <label for="">Lịch thanh toán: </label>
+                                                                                <div class="col-md-8">
                                                                                     <?php inc('template/4_pham_vi_bao_hiem/lich_thanh_toan.php'); ?>
                                                                                 </div>
                                                                             </div>

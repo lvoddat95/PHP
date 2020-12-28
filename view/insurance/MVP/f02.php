@@ -1165,7 +1165,7 @@
                                                                                     </thead>
                                                                                     <tbody>
                                                                                         <tr>
-                                                                                            <td>Mức trách nhiệm đồng bảo hiểm của VNI</td>
+                                                                                            <td>Mức trách nhiệm của VNI</td>
                                                                                             <td class="text-right"><input class="form-control input-money text-right" type="text" value="0"></td>
                                                                                         </tr>
                                                                                         <tr>

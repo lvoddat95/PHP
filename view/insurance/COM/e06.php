@@ -214,7 +214,7 @@
 
                                                                         <div class="row mb-3">
                                                                             <div class="col-md-12">
-                                                                                <b><label>Lịch thanh toán bảo hiểm: </label></b>
+                                                                                <b><label>Thanh toán bảo hiểm: </label></b>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <table class="table table-bordered" style="margin: auto;">
@@ -226,7 +226,7 @@
                                                                                     </thead>
                                                                                     <tbody>
                                                                                         <tr>
-                                                                                            <td>Mức trách nhiệm đồng bảo hiểm của VNI</td>
+                                                                                            <td>Mức trách nhiệm của VNI</td>
                                                                                             <td class="text-right"><input class="form-control input-money text-right" type="text" value="0"></td>
                                                                                         </tr>
                                                                                         <tr>
@@ -238,9 +238,17 @@
                                                                                             <td class="text-right">0</td>
                                                                                         </tr>
                                                                                         
-                                                                                        <tr class="bold" style="background-color: #fff;">
-                                                                                            <td>Tổng phí BH</td>
-                                                                                            <td><input class="form-control text-right" type="text" disabled="" readonly="" value="0"></td>
+                                                                                        <tr class="font-weight-bold" style="background-color: #fff;">
+                                                                                            <td>Tổng phí BH (chưa VAT)</td>
+                                                                                            <td><input class="form-control text-right" type="text" readonly value="0"></td>
+                                                                                        </tr>
+                                                                                        <tr class="font-weight-bold" style="background-color: #fff;">
+                                                                                            <td>Tổng VAT</td>
+                                                                                            <td><input class="form-control text-right" type="text" readonly value="0"></td>
+                                                                                        </tr>
+                                                                                        <tr class="font-weight-bold" style="background-color: #fff;">
+                                                                                            <td>Tổng phí BH (có VAT)</td>
+                                                                                            <td><input class="form-control text-right" type="text" readonly value="0"></td>
                                                                                         </tr>
                                                                                     </tbody>
                                                                                 </table>

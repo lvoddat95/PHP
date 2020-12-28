@@ -2929,7 +2929,7 @@ body.sidebar-mobile-main .quick-action {
     width: 100%;
 }
 
-.f-right.list .file-icon {
+.f-right.list .file-wrapper > [data-fancybox="gallery"] {
     border: 1px solid #e2e8f0;
     margin: 5px 10px;
     min-width: 20px;
@@ -2940,7 +2940,15 @@ body.sidebar-mobile-main .quick-action {
     border-radius: 2px;
     backface-visibility: hidden;
 }
-
+.f-right.list .file-icon {
+    display: block;
+    width: 19px;
+    height: 19px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2px;
+    backface-visibility: hidden;
+}
 .f-right.list .file-info {
     text-align: left;
     display: -ms-inline-flexbox;
@@ -2965,7 +2973,7 @@ body.sidebar-mobile-main .quick-action {
 .f-right.list .file-wrapper .dropdown {
     left: auto;
     right: 0px;
-    top: 8px;
+    top: 2px;
 }
 .f-right.list .file-wrapper .dropdown .dropdown-toggle{
     position: relative;
