@@ -590,6 +590,7 @@
                                                                                             </tr>
                                                                                         </tbody>
                                                                                     </table>
+                                                                                </div>
                                                                                 <div class="col-md-8">
                                                                                     <?php inc('template/4_pham_vi_bao_hiem/lich_thanh_toan.php'); ?>
                                                                                 </div>

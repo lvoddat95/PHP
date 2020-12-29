@@ -387,8 +387,7 @@
             box-shadow: 0 0.25rem 2rem rgba(0, 0, 0, 0.3);
             background: #ffffff;
             border-radius: 4px;
-            padding: 0 5px;
-            padding-bottom: 10px;
+            padding: 10px 5px;
             max-height: 360px;
         }
 
@@ -401,7 +400,7 @@
             display: block;
             padding: 7px 15px;
             color: #fff;
-            margin: 0px -5px;
+            margin: -10px -5px;
             margin-bottom: 10px;
             background: rgba(28, 63, 170, 0.77);
         }
@@ -488,9 +487,11 @@
             padding-right: 0 !important;
         }
 
-        .sidebar-xs .sidebar ul li a i {
+        .sidebar-xs .sidebar ul.nav-sidebar > li > a > i {
             margin-right: 0px;
+            top: 0;
         }
+
 }
 
 @media (max-width: 767px) {
