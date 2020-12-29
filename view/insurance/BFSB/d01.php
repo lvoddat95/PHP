@@ -314,9 +314,6 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-
-                                                                        
-                                                                        
                                                                     </fieldset>
                                                                     
                                                                     <!-- Step 4 -->

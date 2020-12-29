@@ -171,16 +171,20 @@
                                                                                 <thead class="thead-light">
                                                                                     <tr>
                                                                                         <th class="w1p all text-center"><input type="checkbox" id="input-chk-all"></th>
-                                                                                        <th class="w15p"><span class="text-danger">*</span> Người được BH</th>
+                                                                                        <th class="w20p"><span class="text-danger">*</span> Người được BH</th>
                                                                                         <th class="none"><span class="text-danger">*</span> Ngày sinh</th>
                                                                                         <th class="w5p none"><span class="text-danger">*</span> Tuổi</th>
                                                                                         <th class="none">Địa chỉ</th>
                                                                                         <th class="none">Email/Số điện thoại</th>
-                                                                                        <th class="desktop"><span class="text-danger">*</span> Hiệu lực từ ngày</th>
-                                                                                        <th class="desktop"><span class="text-danger">*</span> Đến ngày</th>
+                                                                                        <th class="w10p desktop"><span class="text-danger">*</span> Hiệu lực từ ngày</th>
+                                                                                        <th class="w10p desktop"><span class="text-danger">*</span> Đến ngày</th>
+
+                                                                                        <th class="none">Tỉ lệ phí chuẩn / Phí chuẩn</th>
+
                                                                                         <th class="w10p"><span class="text-danger">*</span> Số tiền BH</th>
-                                                                                        <th class="w10p not-mobile"><span class="text-danger">*</span> Tỉ lệ phí</th>
-                                                                                        <th class="w15p not-mobile">Phí</th>
+                                                                                        <th class="w7p not-mobile"><span class="text-danger">*</span> Tỉ lệ phí</th>
+                                                                                        <th class="w10p not-mobile">Phí</th>
+
                                                                                         <th class="all w1p"></th>
                                                                                     </tr>
                                                                                     
@@ -197,6 +201,23 @@
 
                                                                                         <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
                                                                                         <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
+
+                                                                                        <td>
+                                                                                            <table class="table table-bordered col-content-lg">
+                                                                                                <thead>
+                                                                                                    <tr>
+                                                                                                        <th class="text-center"><span class="text-danger">*</span> Tỷ lệ phí chuẩn </th>
+                                                                                                        <th class="text-center">Phí chuẩn</th>
+                                                                                                    </tr>
+                                                                                                </thead>
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td><input class="form-control input-float text-right" placeholder="0.0" type="text"></td>
+                                                                                                        <td><input class="form-control input-money text-right" placeholder="0" type="text" ></td>
+                                                                                                    </tr>
+                                                                                                </tbody>    
+                                                                                            </table>
+                                                                                        </td>
 
                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text"></td>
                                                                                         <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
@@ -218,6 +239,30 @@
                                                                             <div class="border p-1 text-center">
                                                                                 <input class="btn bg-success" data-repeater-create type="button" value="+ Thêm">
                                                                                 <input class="btn bg-danger" type="button" value="- Xoá nhiều" disabled>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="mb-3 row justify-content-end">
+                                                                            <div class="col-md-4">
+                                                                                <table class="table datatable" data-paging="false" data-info="false" data-ordering="false" data-searching="false">
+                                                                                    <thead class="thead-light">
+                                                                                        <tr>
+                                                                                            <th class="w30p all"></th>
+                                                                                            <th class="desktop">Số tiền bảo hiểm</th>
+                                                                                            <th class="desktop">Phí bảo hiểm</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <b><i class="far fa-sigma mr-1"></i>Tổng cộng</b>
+                                                                                            </td>
+                                                                                            <td><input type="text" class="form-control input-money text-right font-weight-bold" value="0" placeholder="0" ></td>
+                                                                                            <td><input type="text" class="form-control input-money text-right font-weight-bold" value="0" placeholder="0" ></td>
+                                                                                        </tr>
+                                                                                        
+                                                                                    </tbody>
+                                                                                </table>
                                                                             </div>
                                                                         </div>
 

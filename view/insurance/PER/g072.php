@@ -223,6 +223,30 @@
                                                                             </div>
                                                                         </div>
 
+                                                                        <div class="mb-3 row justify-content-end">
+                                                                            <div class="col-md-4">
+                                                                                <table class="table datatable" data-paging="false" data-info="false" data-ordering="false" data-searching="false">
+                                                                                    <thead class="thead-light">
+                                                                                        <tr>
+                                                                                            <th class="w30p all"></th>
+                                                                                            <th class="desktop">Số tiền bảo hiểm</th>
+                                                                                            <th class="desktop">Phí bảo hiểm</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <b><i class="far fa-sigma mr-1"></i>Tổng cộng</b>
+                                                                                            </td>
+                                                                                            <td><input type="text" class="form-control input-money text-right font-weight-bold" value="0" placeholder="0" ></td>
+                                                                                            <td><input type="text" class="form-control input-money text-right font-weight-bold" value="0" placeholder="0" ></td>
+                                                                                        </tr>
+                                                                                        
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+
                                                                         <div class="form-group">
                                                                             <label>Số người được bảo hiểm: <span class="text-danger">*</span></label>
                                                                             <div class="col-content-sm">

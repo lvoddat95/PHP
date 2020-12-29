@@ -74,18 +74,6 @@
                                                                     
                                                                     <!-- Step 3 -->
                                                                     <fieldset class="tab-pane" id="step3">
-                                               <!--                          <div class="row">
-                                                                            <div class="col-md-2">
-                                                                                <div class="form-group">
-                                                                                    <label for="">Loại TPA: <span class="text-danger">*</span></label>
-                                                                                    <select select2>
-                                                                                        <option value="">Có TPA</option>
-                                                                                        <option value="">Không TPA</option>
-                                                                                    </select>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div> -->
-
                                                                         <div class="row mb-md-5 mb-3">
                                                                            <div class="col-md-12">
                                                                                 <div class="tab-claim tab-style">
@@ -190,6 +178,7 @@
                                                                                                             <th class="desktop"><span class="text-danger">*</span> Hiệu lực từ ngày</th>
                                                                                                             <th class="desktop"><span class="text-danger">*</span> Đến ngày</th>
                                                                                                             <th class="desktop"><span class="text-danger">*</span> Nhóm/Cấp</th>
+                                                                                                            <th class="none"><span class="text-danger">*</span> Tỉ lệ phí chuẩn / Phí chuẩn</th>
                                                                                                             <th class="all w1p"></th>
                                                                                                         </tr>
                                                                                                         
@@ -214,6 +203,44 @@
                                                                                                             <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
                                                                                                             <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
                                                                                                             <td><input class="form-control col-content-sm" type="text"></td>
+
+                                                                                                            <td>
+                                                                                                                <table class="table table-bordered">
+                                                                                                                    <thead>
+                                                                                                                        <tr>
+                                                                                                                            <th colspan="2" class="text-center">Phạm vi A</th>
+                                                                                                                            <th colspan="2" class="text-center">Phạm vi B</th>
+                                                                                                                            <th colspan="2" class="text-center">Phạm vi C</th>
+                                                                                                                            <th colspan="2" class="text-center">Phạm vi D</th>
+                                                                                                                        </tr>
+                                                                                                                        <tr>
+                                                                                                                            <th class="text-center"><span class="text-danger">*</span> TL phí chuẩn A</th>
+                                                                                                                            <th class="text-center">Phí chuẩn A</th>
+                                                                                                                            <th class="text-center"><span class="text-danger">*</span> TL phí chuẩn B</th>
+                                                                                                                            <th class="text-center">Phí chuẩn B</th>
+                                                                                                                            <th class="text-center"><span class="text-danger">*</span> TL phí chuẩn C</th>
+                                                                                                                            <th class="text-center">Phí chuẩn C</th>
+                                                                                                                            <th class="text-center"><span class="text-danger">*</span> TL phí chuẩn D</th>
+                                                                                                                            <th class="text-center">Phí chuẩn D</th>
+                                                                                                                        </tr>
+                                                                                                                    </thead>
+                                                                                                                    <tbody>
+                                                                                                                        <tr>
+                                                                                                                            <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
+                                                                                                                            <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
+
+                                                                                                                            <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
+                                                                                                                            <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
+
+                                                                                                                            <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
+                                                                                                                            <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
+
+                                                                                                                            <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
+                                                                                                                            <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
+                                                                                                                        </tr>
+                                                                                                                    </tbody>    
+                                                                                                                </table>
+                                                                                                            </td>
 
                                                                                                             <td class="text-center">
                                                                                                                 <div class="list-icons">
@@ -242,7 +269,7 @@
                                                                         </div>
 
                                                                         <div class="row justify-content-end">
-                                                                            <div class="col-md-6">
+                                                                            <div class="col-md-5">
                                                                                 <table class="table datatable"  
                                                                                     data-paging="false"
                                                                                     data-info="false"
@@ -252,21 +279,64 @@
                                                                                     <thead class="thead-light">
                                                                                         <tr>
                                                                                             <th class="w25p all"></th>
-                                                                                            <th class=""><b>Nhóm bảo hiểm</b></th>
-                                                                                            <th><b>Số tiền</b></th>
-                                                                                            <th class=""><b>Tỉ lệ phí (%)</b></th>
+                                                                                            <th class="text-center desktop"><b>Nhóm bảo hiểm</b></th>
+                                                                                            <th class="text-center desktop"><b>Số tiền</b></th>
+                                                                                            <th class="text-center desktop"><b>Tỉ lệ phí (%)</b></th>
                                                                                         </tr>
                                                                                     </thead>
                                                                                     <tbody>
                                                                                         <tr>
                                                                                             <td><b><i class="far fa-sigma mr-1"></i>Tổng cộng:</b></td>
-                                                                                            <td><input type="text" class="form-control input-money" name="" placeholder="0"></td>
-                                                                                            <td><input type="text" class="form-control input-money" name="" placeholder="0"></td>
-                                                                                            <td><input type="text" class="form-control input-money" name="" placeholder="0"></td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                            <td><input type="text" class="form-control input-float text-right" name="" placeholder="0"></td>
                                                                                         </tr>
                                                                                     </tbody>
                                                                                 </table>
                                                                             </div>
+                                                                            <div class="col-md-4">
+                                                                                <table class="table datatable" data-paging="false" data-info="false" data-ordering="false" data-searching="false">
+                                                                                    <thead class="thead-light">
+                                                                                        <tr>
+                                                                                            <th class="w30p all"></th>
+                                                                                            <th class="desktop">Số tiền bảo hiểm</th>
+                                                                                            <th class="desktop">Phí bảo hiểm</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>Phạm vi A</td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>Phạm vi B</td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>Phạm vi C</td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>Phạm vi D</td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <b><i class="far fa-sigma mr-1"></i>Tổng cộng</b>
+                                                                                                <b class="small">(A+B+C+D)</b>
+                                                                                            </td>
+                                                                                            <td><input type="text" class="form-control input-money text-right font-weight-bold" value="0" placeholder="0" ></td>
+                                                                                            <td><input type="text" class="form-control input-money text-right font-weight-bold" value="0" placeholder="0" ></td>
+                                                                                        </tr>
+                                                                                        
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                            
                                                                         </div>
 
                                                                     </fieldset>

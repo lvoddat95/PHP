@@ -63,7 +63,7 @@
                                                     <div class="card-body">
                                                         <div class="wizard">
 
-                                                            <?php inc('template/steps2.php'); ?>
+                                                            <?php inc('template/steps.php'); ?>
 
                                                             <form action="#" class="form-validation clearfix">
                                                                 <div class="tab-content">
@@ -74,6 +74,186 @@
                                                                     <?php inc('template/2_trung_gian_bao_hiem/2_trung_gian_bao_hiem.php'); ?>
                                                                     
                                                                     <!-- Step 3 -->
+                                                                    <fieldset class="tab-pane" id="step3">
+                                                                        
+                                                                        <div class="form-group">
+                                                                            <label>Tên tàu: </label>
+                                                                            <?php inc('template/3_doi_tuong_bao_hiem/BFSB/ds_tau_thuyen.php'); ?>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group ">
+                                                                                    <label>Quốc tịch tàu: </label>
+                                                                                    <select select2>
+                                                                                        <option id="" value="" name="">--- Chọn ---</option>
+                                                                                        <option id="N_VIETNAM" name="Viet Nam" value="N_VIETNAM">Viet Nam</option>
+                                                                                        <option id="N_ANH" name="United Kingdom" value="N_ANH">United Kingdom</option>
+                                                                                        <option id="N_MY" name="United States" value="N_MY">United States</option>
+                                                                                        <option id="N_CANADA" name="Canada" value="N_CANADA">Canada</option>
+                                                                                        <option id="N_TRUNGQUOC" name="China" value="N_TRUNGQUOC">China</option>
+                                                                                        <option id="N_DUC" name="Germany" value="N_DUC">Germany</option>
+                                                                                        <option id="N_PHAP" name="France" value="N_PHAP">France</option>
+                                                                                        <option id="N_INDONEXIA" name="Indonesia" value="N_INDONEXIA">Indonesia</option>
+                                                                                        <option id="N_LAO" name="Lao PDR" value="N_LAO">Lao PDR</option>
+                                                                                        <option id="N_CAMPUCHIA" name="Cambodia" value="N_CAMPUCHIA">Cambodia</option>
+                                                                                        <option id="N_THAILAN" name="Thailand" value="N_THAILAN">Thailand</option>
+                                                                                        <option id="N_TAYBANNHA" name="Spain" value="N_TAYBANNHA">Spain</option>
+                                                                                        <option id="N_THONHIKI" name="Turkey" value="N_THONHIKI">Turkey</option>
+                                                                                        <option id="N_NHAT" name="Japan" value="N_NHAT">Japan</option>
+                                                                                        <option id="N_NGA" name="Russian Federation" value="N_NGA">Russian Federation</option>
+                                                                                        <option id="N_ITALIA" name="Italy" value="N_ITALIA">Italy</option>
+                                                                                        <option id="N_BRAZIN" name="Brazil" value="N_BRAZIN">Brazil</option>
+                                                                                        <option id="N_HANQUOC" name="Korea" value="N_HANQUOC">Korea</option>
+                                                                                        <option id="N_MALAIXIA" name="Malaysia" value="N_MALAIXIA">Malaysia</option>
+                                                                                        <option id="N_MEHICO" name="Mexico" value="N_MEHICO">Mexico</option>
+                                                                                        <option id="N_HALAN" name="Netherlands" value="N_HALAN">Netherlands</option>
+                                                                                        <option id="N_CONGGO" name="Congo" value="N_CONGGO">Congo</option>
+                                                                                        <option id="N_RUMANI" name="Romania" value="N_RUMANI">Romania</option>
+                                                                                        <option id="N_BI" name="Portugal" value="N_BI">Portugal</option>
+                                                                                        <option id="N_DANMACH" name="Denmark" value="N_DANMACH">Denmark</option>
+                                                                                        <option id="N_SEC" name="Czech Republic" value="N_SEC">Czech Republic</option>
+                                                                                        <option id="N_BRUNAY" name="Brunei Darussalam" value="N_BRUNAY">Brunei Darussalam</option>
+                                                                                        <option id="N_LIBI" name="Liberia" value="N_LIBI">Liberia</option>
+                                                                                        <option id="N_ANGHERI" name="Algeria" value="N_ANGHERI">Algeria</option>
+                                                                                        <option id="N_ARGENTINA" name="Argentina" value="N_ARGENTINA">Argentina</option>
+                                                                                        <option id="N_SINGAPO" name="Singapore" value="N_SINGAPO">Singapore</option>
+                                                                                        <option id="NORWAY" name="Norway" value="NORWAY">Norway</option>
+                                                                                        <option id="SWEDEN" name="Sweden" value="SWEDEN">Sweden</option>
+                                                                                        <option id="PH" name="Philippines" value="PH">Philippines</option>
+                                                                                        <option id="MM" name="Myanmar" value="MM">Myanmar</option>
+                                                                                        <option id="hk" name="Hong Kong" value="hk">Hong Kong</option>
+                                                                                        <option id="N_MONGOLIA" name="Mongolia" value="N_MONGOLIA">Mongolia</option>
+                                                                                        <option id="N_PANAMANIA" name="Panamania" value="N_PANAMANIA">Panamania</option>
+                                                                                        <option id="N_Oman" name="Oman" value="N_Oman">Oman</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-9">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Cảng đăng kí: </label>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>  
+                                                                        
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Năm đóng: <span class="text-danger">*</span></label>
+                                                                                    <select select2>
+                                                                                        <option>--- Chọn ---</option>
+                                                                                        <?php for ($i = 1945; $i <= 2020; $i++) {
+                                                                                            echo  '<option>'.$i.'</option>';
+                                                                                            }
+                                                                                        ?>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-9">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Nơi đóng: </label>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Loại tàu: <span class="text-danger">*</span></label>
+                                                                                    <select select2>
+                                                                                        <option>--- Chọn ---</option>
+                                                                                        <option>Tàu chở hàng tổng hợp</option>
+                                                                                        <option>Tàu chở container</option>
+                                                                                        <option>Tàu kéo</option>
+                                                                                        <option>Tàu lai dắt</option>
+                                                                                        <option>Tàu khác</option>
+                                                                                        <option>Tàu chở dầu</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Vật liệu đóng: </label>
+                                                                                    <select select2>
+                                                                                        <option>--- Chọn ---</option>
+                                                                                        <option>Vỏ thép</option>
+                                                                                        <option>Vỏ gỗ</option>
+                                                                                        <option>Vật liệu PPC</option>
+                                                                                        <option>Vỏ nhôm</option>
+                                                                                        <option>Sợi thủy tinh</option>
+                                                                                        <option>Sợi carbon</option>
+                                                                                        <option>Vật liệu khác</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Chiều dài: </label>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Chiều rộng: </label>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Số IMO:</label>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Cơ quan đăng kiểm: </label>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-9">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Phạm vi hoạt động: </label>
+                                                                                    <div class="d-flex w-100">
+                                                                                        <div class="form-check form-check-inline m-0 mr-2">
+                                                                                            <input type="radio" id="rd01" class="mr-1" name="id01" checked="">
+                                                                                            <label for="rd01" class="form-check-label w80">Hạn chế</label>
+                                                                                        </div>
+                                                                                        <div class="form-check form-check-inline m-0 flex-grow-1">
+                                                                                            <input type="radio" id="rd02" class="mr-1" name="id01">
+                                                                                            <label for="rd02" class="form-check-label ml-1">Không hạn chế, Lý do</label>
+                                                                                            <input type="text" class="form-control w-100" value="" placeholder="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Giá trị tàu sửa chữa:</label>
+                                                                                    <input type="text" class="form-control input-money text-right" placeholder="0">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Mức trách nhiệm của người sửa chữa:</label>
+                                                                                    <input type="text" class="form-control input-money text-right" placeholder="0">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </fieldset>
                                                                     
                                                                     <!-- Step 4 -->
                                                                     <fieldset class="tab-pane" id="step4">

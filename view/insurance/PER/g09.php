@@ -277,6 +277,47 @@
                                                                             </div>
                                                                         </div>
 
+                                                                        <div class="mb-3 row justify-content-end">
+                                                                            <div class="col-md-4">
+                                                                                <table class="table datatable" data-paging="false" data-info="false" data-ordering="false" data-searching="false">
+                                                                                    <thead class="thead-light">
+                                                                                        <tr>
+                                                                                            <th class="w30p all"></th>
+                                                                                            <th class="desktop">Số tiền bảo hiểm</th>
+                                                                                            <th class="desktop">Phí bảo hiểm</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>1. Chết/Thương tật vĩnh viễn</td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>2. Mất thu nhập</td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>3. Chi phí y tế</td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                        </tr>
+                                                                                        
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <b><i class="far fa-sigma mr-1"></i>Tổng cộng</b>
+                                                                                                <b class="small">(1+2+3)</b>
+                                                                                            </td>
+                                                                                            <td><input type="text" class="form-control input-money text-right font-weight-bold" value="0" placeholder="0" ></td>
+                                                                                            <td><input type="text" class="form-control input-money text-right font-weight-bold" value="0" placeholder="0" ></td>
+                                                                                        </tr>
+                                                                                        
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+
                                                                         <div class="form-group">
                                                                             <label>Số người được bảo hiểm: <span class="text-danger">*</span></label>
                                                                             <div class="col-content-sm">
