@@ -2196,6 +2196,9 @@ body.sidebar-mobile-main .quick-action {
     align-items: flex-end;
     position: relative;
     overflow: hidden;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    white-space: nowrap;
 }
 
 .tab-style > .nav-tabs .nav-link {

@@ -93,16 +93,12 @@
                                                                         
                                                                         <hr class="border-dashed border-silver mb-3">
 
-                                                                        <table class="table table-sm table-bordered datatables" data-paging="false" data-info="false" data-ordering="false" data-searching="false">
+                                                                        <table class="table table-bordered datatable child-row-sm" data-paging="false" data-info="false" data-ordering="false" data-searching="false">
                                                                             <thead class="thead-light">
                                                                                 <tr>
                                                                                     <th>STT</th>
                                                                                     <th>Tên, Ký mã hiệu, quy cách (cấp hạng ) TSCĐ </th>
-                                                                                    <th class="desktop">ĐV</th>
-                                                                                    <th class="desktop">SL </th>
-                                                                                    <th class="desktop">Nhãn mác, Ký hiệu</th>
-                                                                                    <th class="desktop">Nước sx</th>
-                                                                                    <th class="desktop">Năm SD</th>
+                                                                                    <th class="none"></th>
                                                                                     <th class="desktop">Đơn giá VNĐ</th>
                                                                                     <th class="desktop">Giá trị tài sản (Giá trị mới) VNĐ </th>
                                                                                     <th>Số tiền bảo hiểm VNĐ</th>
@@ -111,16 +107,63 @@
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td>1</td>
-                                                                                    <td rowspan="2">Máy DGPS tích hợp la bàn Trimble SPS361. Gồm: Máy thu Trimble SPS361, awngten thu GPS/Beacon GA 530 L1/L2, cáp awngten loại 10m, Bộ cáp nguồn 100-240VDC, cáp nguồn AC, Bộ chuển đổi adaptor - DB26 to USB Ethernet, Power, đĩa CD phần mềm đặt cấu hình, truyền số liệu, cáp chữ Y chuyên dùng cho cáp nguồn DC và truyền dữ liệu</td>
-                                                                                    <td>1</td>
-                                                                                    <td>1</td>
-                                                                                    <td>1</td>
-                                                                                    <td>1</td>
-                                                                                    <td>1</td>
-                                                                                    <td>1</td>
-                                                                                    <td>1</td>
-                                                                                    <td>1</td>
+                                                                                    <td>Máy DGPS tích hợp la bàn Trimble SPS361. Gồm: Máy thu Trimble SPS361, awngten thu GPS/Beacon GA 530 L1/L2, cáp awngten loại 10m, Bộ cáp nguồn 100-240VDC, cáp nguồn AC, Bộ chuển đổi adaptor - DB26 to USB Ethernet, Power, đĩa CD phần mềm đặt cấu hình, 
+                                                                                    truyền số liệu, cáp chữ Y chuyên dùng cho cáp nguồn DC và truyền dữ liệu</td>
+                                                                                    <td>
+                                                                                        <table class="table table-bordered">
+                                                                                            <thead>
+                                                                                                <tr>
+                                                                                                    <th>Nhãn mác, Ký hiệu</th>
+                                                                                                    <th>ĐV</th>
+                                                                                                    <th>SL </th>
+                                                                                                    <th>Nước sx</th>
+                                                                                                    <th>Năm SD</th>
+                                                                                                </tr>
+                                                                                            </thead>
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td>5018K-67240</td>
+                                                                                                    <td>Bộ</td>
+                                                                                                    <td>1</td>
+                                                                                                    <td>Canada</td>
+                                                                                                    <td>2010</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>5018K-67240</td>
+                                                                                                    <td>Bộ</td>
+                                                                                                    <td>1</td>
+                                                                                                    <td>Canada</td>
+                                                                                                    <td>2010</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>5018K-67240</td>
+                                                                                                    <td>Bộ</td>
+                                                                                                    <td>1</td>
+                                                                                                    <td>Canada</td>
+                                                                                                    <td>2010</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>5018K-67240</td>
+                                                                                                    <td>Bộ</td>
+                                                                                                    <td>1</td>
+                                                                                                    <td>Canada</td>
+                                                                                                    <td>2010</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>5018K-67240</td>
+                                                                                                    <td>Bộ</td>
+                                                                                                    <td>1</td>
+                                                                                                    <td>Canada</td>
+                                                                                                    <td>2010</td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>    
+                                                                                    </td>
+                                                                                    <td>561.163.000</td>
+                                                                                    <td>561.163.000</td>
+                                                                                    <td>561.163.000</td>
                                                                                 </tr>
+                                                                                
                                                                             </tbody>
                                                                                 
                                                                             
