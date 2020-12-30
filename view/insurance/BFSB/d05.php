@@ -77,7 +77,7 @@
                                                                     <fieldset class="tab-pane" id="step3">
                                                                         
                                                                         <div class="form-group">
-                                                                            <label>Tên tàu (Số hiệu thân vỏ): </label>
+                                                                            <label>Tên tàu (Số hiệu thân vỏ): <span class="text-danger">*</span></label>
                                                                             <?php inc('template/3_doi_tuong_bao_hiem/BFSB/ds_tau_thuyen.php'); ?>
                                                                         </div>
 

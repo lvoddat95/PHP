@@ -77,7 +77,7 @@
                                                                     <fieldset class="tab-pane" id="step3">
                                                                         
                                                                         <div class="form-group">
-                                                                            <label>Tên tàu: </label>
+                                                                            <label>Tên tàu: <span class="text-danger">*</span></label>
                                                                             <?php inc('template/3_doi_tuong_bao_hiem/BFSB/ds_tau_thuyen.php'); ?>
                                                                         </div>
 
@@ -231,8 +231,7 @@
                                                                                         </div>
                                                                                         <div class="form-check form-check-inline m-0 flex-grow-1">
                                                                                             <input type="radio" id="rd02" class="mr-1" name="id01">
-                                                                                            <label for="rd02" class="form-check-label ml-1">Không hạn chế, Lý do</label>
-                                                                                            <input type="text" class="form-control w-100" value="" placeholder="">
+                                                                                            <label for="rd02" class="form-check-label ml-1">Không hạn chế</label>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
