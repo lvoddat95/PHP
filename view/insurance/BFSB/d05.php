@@ -129,22 +129,13 @@
                                                                                     </select>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="col-md-9">
-                                                                                <div class="form-group">
-                                                                                    <label for="">Chủ sở hữu: </label>
-                                                                                    <input type="text" class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>  
-                                                                        
-                                                                        <div class="row">
                                                                             <div class="col-md-3">
                                                                                 <div class="form-group">
                                                                                     <label for="">Số lượng tàu: <span class="text-danger">*</span></label>
                                                                                     <input type="text" class="form-control input-number" placeholder="0">
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="col-md-9">
+                                                                            <div class="col-md-6">
                                                                                 <div class="form-group">
                                                                                     <label for="">Nơi đóng: </label>
                                                                                     <input type="text" class="form-control">
