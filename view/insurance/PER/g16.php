@@ -267,6 +267,17 @@
                                                                         <div class="block">
                                                                             <p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Thông tin doanh nghiệp</p>
                                                                             <div class="row">
+                                                                                <div class="col-md-3">
+                                                                                    <div class="form-group ">
+                                                                                        <label>Nhóm rủi ro nghề nghiệp: <span class="text-danger">*</span></label>
+                                                                                        <select class="form-control" select2>
+                                                                                            <option value="">--- Chọn ---</option>
+                                                                                            <option value="">Nhóm 1</option>
+                                                                                            <option value="">Nhóm 2</option>
+                                                                                            <option value="">Nhóm 3</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
                                                                                 <div class="col-md-12">
                                                                                     <div class="form-group">
                                                                                         <label>Mã / Tên KH doanh nghiệp: <span class="text-danger">*</span></label>

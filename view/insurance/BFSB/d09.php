@@ -93,7 +93,7 @@
                                                                         
                                                                         <hr class="border-dashed border-silver mb-3">
 
-                                                                        <table class="table table-sm table-bordered datatable" data-paging="false" data-info="false" data-ordering="false" data-searching="false">
+                                                                        <table class="table table-sm table-bordered datatables" data-paging="false" data-info="false" data-ordering="false" data-searching="false">
                                                                             <thead class="thead-light">
                                                                                 <tr>
                                                                                     <th>STT</th>
@@ -109,7 +109,18 @@
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
-                                                                                
+                                                                                <tr>
+                                                                                    <td>1</td>
+                                                                                    <td rowspan="2">Máy DGPS tích hợp la bàn Trimble SPS361. Gồm: Máy thu Trimble SPS361, awngten thu GPS/Beacon GA 530 L1/L2, cáp awngten loại 10m, Bộ cáp nguồn 100-240VDC, cáp nguồn AC, Bộ chuển đổi adaptor - DB26 to USB Ethernet, Power, đĩa CD phần mềm đặt cấu hình, truyền số liệu, cáp chữ Y chuyên dùng cho cáp nguồn DC và truyền dữ liệu</td>
+                                                                                    <td>1</td>
+                                                                                    <td>1</td>
+                                                                                    <td>1</td>
+                                                                                    <td>1</td>
+                                                                                    <td>1</td>
+                                                                                    <td>1</td>
+                                                                                    <td>1</td>
+                                                                                    <td>1</td>
+                                                                                </tr>
                                                                             </tbody>
                                                                                 
                                                                             
