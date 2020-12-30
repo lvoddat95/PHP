@@ -93,81 +93,46 @@
                                                                         
                                                                         <hr class="border-dashed border-silver mb-3">
 
-                                                                        <table class="table table-bordered datatable child-row-sm" data-paging="false" data-info="false" data-ordering="false" data-searching="false">
-                                                                            <thead class="thead-light">
-                                                                                <tr>
-                                                                                    <th>STT</th>
-                                                                                    <th>Tên, Ký mã hiệu, quy cách (cấp hạng ) TSCĐ </th>
-                                                                                    <th class="none"></th>
-                                                                                    <th class="desktop">Đơn giá VNĐ</th>
-                                                                                    <th class="desktop">Giá trị tài sản (Giá trị mới) VNĐ </th>
-                                                                                    <th>Số tiền bảo hiểm VNĐ</th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td>1</td>
-                                                                                    <td>Máy DGPS tích hợp la bàn Trimble SPS361. Gồm: Máy thu Trimble SPS361, awngten thu GPS/Beacon GA 530 L1/L2, cáp awngten loại 10m, Bộ cáp nguồn 100-240VDC, cáp nguồn AC, Bộ chuển đổi adaptor - DB26 to USB Ethernet, Power, đĩa CD phần mềm đặt cấu hình, 
-                                                                                    truyền số liệu, cáp chữ Y chuyên dùng cho cáp nguồn DC và truyền dữ liệu</td>
-                                                                                    <td>
-                                                                                        <table class="table table-bordered">
-                                                                                            <thead>
-                                                                                                <tr>
-                                                                                                    <th>Nhãn mác, Ký hiệu</th>
-                                                                                                    <th>ĐV</th>
-                                                                                                    <th>SL </th>
-                                                                                                    <th>Nước sx</th>
-                                                                                                    <th>Năm SD</th>
-                                                                                                </tr>
-                                                                                            </thead>
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td>5018K-67240</td>
-                                                                                                    <td>Bộ</td>
-                                                                                                    <td>1</td>
-                                                                                                    <td>Canada</td>
-                                                                                                    <td>2010</td>
-                                                                                                </tr>
-                                                                                                <tr>
-                                                                                                    <td>5018K-67240</td>
-                                                                                                    <td>Bộ</td>
-                                                                                                    <td>1</td>
-                                                                                                    <td>Canada</td>
-                                                                                                    <td>2010</td>
-                                                                                                </tr>
-                                                                                                <tr>
-                                                                                                    <td>5018K-67240</td>
-                                                                                                    <td>Bộ</td>
-                                                                                                    <td>1</td>
-                                                                                                    <td>Canada</td>
-                                                                                                    <td>2010</td>
-                                                                                                </tr>
-                                                                                                <tr>
-                                                                                                    <td>5018K-67240</td>
-                                                                                                    <td>Bộ</td>
-                                                                                                    <td>1</td>
-                                                                                                    <td>Canada</td>
-                                                                                                    <td>2010</td>
-                                                                                                </tr>
-                                                                                                <tr>
-                                                                                                    <td>5018K-67240</td>
-                                                                                                    <td>Bộ</td>
-                                                                                                    <td>1</td>
-                                                                                                    <td>Canada</td>
-                                                                                                    <td>2010</td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>    
-                                                                                    </td>
-                                                                                    <td>561.163.000</td>
-                                                                                    <td>561.163.000</td>
-                                                                                    <td>561.163.000</td>
-                                                                                </tr>
-                                                                                
-                                                                            </tbody>
-                                                                                
-                                                                            
-                                                                        </table>
+                                                                        <div class="form-group" repeater>
+
+                                                                            <table class="table table-sm table-bordered datatables" data-paging="false" data-info="false" data-ordering="false" data-searching="false">
+                                                                                <thead class="thead-light">
+                                                                                    <tr>
+                                                                                        <th class="text-center">STT</th>
+                                                                                        <th>Tên, Ký mã hiệu, quy cách (cấp hạng ) TSCĐ </th>
+                                                                                        <th class="desktop w5p text-center">Đơn vị</th>
+                                                                                        <th class="desktop w5p text-center">Số lượng </th>
+                                                                                        <th class="desktop text-center">Nhãn mác, Ký hiệu</th>
+                                                                                        <th class="desktop text-center">Nước sx</th>
+                                                                                        <th class="desktop w5p text-center">Năm SD</th>
+                                                                                        <th class="desktop w10p">Đơn giá VNĐ</th>
+                                                                                        <th class="desktop w10p">Giá trị tài sản (Giá trị mới) VNĐ </th>
+                                                                                        <th class="w10p">Số tiền bảo hiểm VNĐ</th>
+                                                                                        <th class="all w1p"></th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody data-repeater-list="repeater-list">
+                                                                                    <tr data-repeater-item>
+                                                                                        <td class="text-center">1</td>
+                                                                                        <td><input type="text" class="form-control"></td>
+                                                                                        <td><input type="text" class="form-control text-center"></td>
+                                                                                        <td><input type="text" class="form-control text-center"></td>
+                                                                                        <td><input type="text" class="form-control text-center"></td>
+                                                                                        <td><input type="text" class="form-control text-center"></td>
+                                                                                        <td><input type="text" class="form-control input-year text-center"></td>
+                                                                                        <td><input type="text" class="form-control input-money"></td>
+                                                                                        <td><input type="text" class="form-control input-money"></td>
+                                                                                        <td><input type="text" class="form-control input-money"></td>
+                                                                                        <td class="text-center">
+                                                                                            <a href="javascript:;" data-repeater-delete="" class="d-flex align-items-center font-weight-bold text-danger"><i class="icon-trash mr-1"></i>Xoá</a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                            <div class="border p-1 text-center">
+                                                                                <input class="btn bg-success" data-repeater-create type="button" value="+ Thêm">
+                                                                            </div>
+                                                                        </div>
 
                                                                         
                                                                         
