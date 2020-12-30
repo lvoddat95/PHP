@@ -171,15 +171,16 @@
                                                                                 <thead class="thead-light">
                                                                                     <tr>
                                                                                         <th class="w1p all text-center"><input type="checkbox" id="input-chk-all"></th>
-                                                                                        <th class="w15p"><span class="text-danger">*</span> Người được BH</th>
+                                                                                        <th class="w20p"><span class="text-danger">*</span> Người được BH</th>
                                                                                         <th class="none">Địa chỉ</th>
                                                                                         <th class="desktop"><span class="text-danger">*</span> Lịch trình</th>
                                                                                         <th class="desktop"><span class="text-danger">*</span> Ngày đi</th>
                                                                                         <th class="desktop"><span class="text-danger">*</span> Ngày về</th>
                                                                                         <th class="none"><span class="text-danger">*</span> Chương trình</th>
                                                                                         <th class="none"><span class="text-danger">*</span> Loại CT</th>
-                                                                                        <th class="w10p not-mobile"><span class="text-danger">*</span> Giá trị BH</th>
-                                                                                        <th class="w10p"><span class="text-danger">*</span> Phí BH</th>
+                                                                                        <th class="w15p not-mobile"><span class="text-danger">*</span> Giá trị BH</th>
+                                                                                        <th class="w15p"><span class="text-danger">*</span> Phí BH</th>
+                                                                                        <th class="none">Tỉ lệ phí chuẩn / Phí chuẩn</th>
                                                                                         <th class="w1p"></th>
                                                                                     </tr>
                                                                                     
@@ -188,7 +189,7 @@
                                                                                     <tr data-repeater-item>
                                                                                         <td class="text-center"><b class="item-level">1.</b> <input type="checkbox" class="input-chk"></td></td>
                                                                                         <td><input class="form-control" type="text"></td>
-                                                                                        <td><input class="form-control col-content-xl" type="text"></td>
+                                                                                        <td><input class="form-control col-content-lg" type="text"></td>
                                                                                         <td>
                                                                                             <div class="col-content-md">
                                                                                                 <select select2>
@@ -222,6 +223,22 @@
                                                                                         </td>
                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text"></td>
                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text"></td>
+                                                                                        <td>
+                                                                                            <table class="table table-bordered col-content-lg">
+                                                                                                <thead>
+                                                                                                    <tr>
+                                                                                                        <th class="text-center w30p"><span class="text-danger">*</span> Tỷ lệ phí chuẩn </th>
+                                                                                                        <th class="text-center">Phí chuẩn</th>
+                                                                                                    </tr>
+                                                                                                </thead>
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td><input class="form-control input-float text-right" placeholder="0.0" type="text"></td>
+                                                                                                        <td><input class="form-control input-money text-right" placeholder="0" type="text" ></td>
+                                                                                                    </tr>
+                                                                                                </tbody>    
+                                                                                            </table>
+                                                                                        </td>
                                                                                         <td class="text-center">
                                                                                             <div class="list-icons">
                                                                                                 <div class="dropdown">

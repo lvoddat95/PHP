@@ -188,6 +188,7 @@
 
                                                                                         <th rowspan="2" class="w7p text-center">Tổng phí</th>
                                                                                         <th rowspan="2" class="w1p all"></th>
+                                                                                        <th rowspan="2" class="none">Tỉ lệ phí chuẩn / Phí chuẩn</th>
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <th class="w7p text-center desktop"><span class="text-danger">*</span> Số tiền BH</th>
@@ -267,6 +268,37 @@
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <table class="table table-bordered col-content-xl">
+                                                                                                <thead>
+                                                                                                    <tr>
+                                                                                                        <th colspan="2" class="text-center">Chết/Thương tật vĩnh viễn</th>
+                                                                                                        <th colspan="2" class="text-center">Mất thu nhập</th>
+                                                                                                        <th colspan="2" class="text-center">Chi phí y tế</th>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <th class="text-center w10p"><span class="text-danger">*</span> TL phí chuẩn</th>
+                                                                                                        <th class="text-center">Phí chuẩn</th>
+                                                                                                        <th class="text-center w10p"><span class="text-danger">*</span> TL phí chuẩn</th>
+                                                                                                        <th class="text-center">Phí chuẩn</th>
+                                                                                                        <th class="text-center w10p"><span class="text-danger">*</span> TL phí chuẩn</th>
+                                                                                                        <th class="text-center">Phí chuẩn</th>
+                                                                                                    </tr>
+                                                                                                </thead>
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
+                                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
+
+                                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
+                                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
+
+                                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
+                                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
+                                                                                                    </tr>
+                                                                                                </tbody>    
+                                                                                            </table>
                                                                                         </td>
                                                                                     </tr>
                                                                                 </tbody>

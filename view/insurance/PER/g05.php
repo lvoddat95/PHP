@@ -191,6 +191,7 @@
                                                                                         <th colspan="3" class="text-center">Phạm vi D</th>
                                                                                         <th rowspan="2" class="w5p none text-center">Phí bảo hiểm</th>
                                                                                         <th rowspan="2" class="none">Ghi chú</th>
+                                                                                        <th rowspan="2" class="none">Tỉ lệ phí chuẩn / Phí chuẩn</th>
                                                                                         <th rowspan="2" class="w1p"></th>
                                                                                     </tr>
                                                                                     <tr>
@@ -258,6 +259,43 @@
                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text"></td>
 
                                                                                         <td><input class="form-control col-content-lg" type="text"></td>
+                                                                                        <td>
+                                                                                            <table class="table table-bordered">
+                                                                                                <thead>
+                                                                                                    <tr>
+                                                                                                        <th colspan="2" class="text-center">A</th>
+                                                                                                        <th colspan="2" class="text-center">B</th>
+                                                                                                        <th colspan="2" class="text-center">C</th>
+                                                                                                        <th colspan="2" class="text-center">D</th>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <th class="text-center w10p"><span class="text-danger">*</span> TL phí chuẩn A</th>
+                                                                                                        <th class="text-center">Phí chuẩn A</th>
+                                                                                                        <th class="text-center w10p"><span class="text-danger">*</span> TL phí chuẩn B</th>
+                                                                                                        <th class="text-center">Phí chuẩn B</th>
+                                                                                                        <th class="text-center w10p"><span class="text-danger">*</span> TL phí chuẩn C</th>
+                                                                                                        <th class="text-center">Phí chuẩn C</th>
+                                                                                                        <th class="text-center w10p"><span class="text-danger">*</span> TL phí chuẩn D</th>
+                                                                                                        <th class="text-center">Phí chuẩn D</th>
+                                                                                                    </tr>
+                                                                                                </thead>
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
+                                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
+
+                                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
+                                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
+
+                                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
+                                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
+
+                                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
+                                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
+                                                                                                    </tr>
+                                                                                                </tbody>    
+                                                                                            </table>
+                                                                                        </td>
 
                                                                                         <td  class="text-center">
                                                                                             <div class="list-icons">

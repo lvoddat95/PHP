@@ -181,7 +181,8 @@
                                                                                         <th class="w10p desktop"><span class="text-danger">*</span> Số tiền BH/Người</th>
                                                                                         <th class="w10p desktop">Mức trách nhiệm/Hộ</th>
                                                                                         <th class="w10p">Phí bảo hiểm</th>
-
+                                                                                        <th class="none">Tỉ lệ phí chuẩn / Phí chuẩn</th>
+                                                                                        
                                                                                         <th class="all w1p"></th>
                                                                                     </tr>
                                                                                     
@@ -201,6 +202,22 @@
                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text"></td>
                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text"></td>
                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text"></td>
+                                                                                        <td>
+                                                                                            <table class="table table-bordered col-content-lg">
+                                                                                                <thead>
+                                                                                                    <tr>
+                                                                                                        <th class="text-center w30p"><span class="text-danger">*</span> Tỷ lệ phí chuẩn </th>
+                                                                                                        <th class="text-center">Phí chuẩn</th>
+                                                                                                    </tr>
+                                                                                                </thead>
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td><input class="form-control input-float text-right" placeholder="0.0" type="text"></td>
+                                                                                                        <td><input class="form-control input-money text-right" placeholder="0" type="text" ></td>
+                                                                                                    </tr>
+                                                                                                </tbody>    
+                                                                                            </table>
+                                                                                        </td>
 
                                                                                         <td class="text-center">
                                                                                             <div class="list-icons">

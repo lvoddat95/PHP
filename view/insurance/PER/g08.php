@@ -187,6 +187,7 @@
                                                                                         <th colspan="3" class="text-center desktop">Phạm vi C</th>
                                                                                         <th rowspan="2" class="w10p text-center">Tổng phí</th>
                                                                                         <th rowspan="2" class="w1p"></th>
+                                                                                        <th rowspan="2" class="none">Tỉ lệ phí chuẩn / Phí chuẩn</th>
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <th class="text-center desktop"><span class="text-danger">*</span> Số tiền BH A</th>
@@ -238,6 +239,38 @@
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
+                                                                                        </td>
+
+                                                                                        <td>
+                                                                                            <table class="table table-bordered col-content-xl">
+                                                                                                <thead>
+                                                                                                    <tr>
+                                                                                                        <th colspan="2" class="text-center">Phạm vi A</th>
+                                                                                                        <th colspan="2" class="text-center">Phạm vi B</th>
+                                                                                                        <th colspan="2" class="text-center">Phạm vi C</th>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <th class="text-center w10p"><span class="text-danger">*</span> TL phí chuẩn A</th>
+                                                                                                        <th class="text-center">Phí chuẩn A</th>
+                                                                                                        <th class="text-center w10p"><span class="text-danger">*</span> TL phí chuẩn B</th>
+                                                                                                        <th class="text-center">Phí chuẩn B</th>
+                                                                                                        <th class="text-center w10p"><span class="text-danger">*</span> TL phí chuẩn C</th>
+                                                                                                        <th class="text-center">Phí chuẩn C</th>
+                                                                                                    </tr>
+                                                                                                </thead>
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
+                                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
+
+                                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
+                                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
+
+                                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
+                                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
+                                                                                                    </tr>
+                                                                                                </tbody>    
+                                                                                            </table>
                                                                                         </td>
                                                                                     </tr>
                                                                                 </tbody>

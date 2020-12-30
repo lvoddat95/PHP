@@ -206,7 +206,7 @@
                                                                                             <table class="table table-bordered col-content-lg">
                                                                                                 <thead>
                                                                                                     <tr>
-                                                                                                        <th class="text-center"><span class="text-danger">*</span> Tỷ lệ phí chuẩn </th>
+                                                                                                        <th class="text-center w30p"><span class="text-danger">*</span> Tỷ lệ phí chuẩn </th>
                                                                                                         <th class="text-center">Phí chuẩn</th>
                                                                                                     </tr>
                                                                                                 </thead>

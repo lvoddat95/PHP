@@ -214,13 +214,13 @@
                                                                                                                             <th colspan="2" class="text-center">Phạm vi D</th>
                                                                                                                         </tr>
                                                                                                                         <tr>
-                                                                                                                            <th class="text-center"><span class="text-danger">*</span> TL phí chuẩn A</th>
+                                                                                                                            <th class="text-center w10p"><span class="text-danger">*</span> TL phí chuẩn A</th>
                                                                                                                             <th class="text-center">Phí chuẩn A</th>
-                                                                                                                            <th class="text-center"><span class="text-danger">*</span> TL phí chuẩn B</th>
+                                                                                                                            <th class="text-center w10p"><span class="text-danger">*</span> TL phí chuẩn B</th>
                                                                                                                             <th class="text-center">Phí chuẩn B</th>
-                                                                                                                            <th class="text-center"><span class="text-danger">*</span> TL phí chuẩn C</th>
+                                                                                                                            <th class="text-center w10p"><span class="text-danger">*</span> TL phí chuẩn C</th>
                                                                                                                             <th class="text-center">Phí chuẩn C</th>
-                                                                                                                            <th class="text-center"><span class="text-danger">*</span> TL phí chuẩn D</th>
+                                                                                                                            <th class="text-center w10p"><span class="text-danger">*</span> TL phí chuẩn D</th>
                                                                                                                             <th class="text-center">Phí chuẩn D</th>
                                                                                                                         </tr>
                                                                                                                     </thead>
