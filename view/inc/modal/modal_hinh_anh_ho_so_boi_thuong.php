@@ -13,7 +13,7 @@
                         <br>
                         <i class="text-danger">* Bỏ tích tại ô màu xanh bên góc phải phía trên ảnh để loại bỏ ảnh khỏi danh sách IN *</i>
                     </div>
-                    <div >
+                    <div id="print-claim">
                         <ul id="fancybox-gallery" class="row list-unstyled">
                             <li class="col-lg-2 col-md-3 col-sm-4 col-sm-6">
                                 <div class="img-box">

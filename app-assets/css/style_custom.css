@@ -1302,6 +1302,9 @@ select {
     background-repeat: no-repeat !important;
     background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBkPSJNNDAwIDY0aC00OFYxMmMwLTYuNi01LjQtMTItMTItMTJoLTQwYy02LjYgMC0xMiA1LjQtMTIgMTJ2NTJIMTYwVjEyYzAtNi42LTUuNC0xMi0xMi0xMmgtNDBjLTYuNiAwLTEyIDUuNC0xMiAxMnY1Mkg0OEMyMS41IDY0IDAgODUuNSAwIDExMnYzNTJjMCAyNi41IDIxLjUgNDggNDggNDhoMzUyYzI2LjUgMCA0OC0yMS41IDQ4LTQ4VjExMmMwLTI2LjUtMjEuNS00OC00OC00OHptLTYgNDAwSDU0Yy0zLjMgMC02LTIuNy02LTZWMTYwaDM1MnYyOThjMCAzLjMtMi43IDYtNiA2eiIvPjwvc3ZnPg==') !important;
 }
+.datepicker:not([type="date"])[readonly="true"]{
+    pointer-events: none;
+}
 
 .input-time{
     max-width: 100px;
@@ -3820,7 +3823,7 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
 
 
 @media print {
-    #print-container{
+    #print-claim{
         max-width: 1140px;
         width: 100%;
         padding-right: 0.625rem;
@@ -3890,14 +3893,14 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     }
 
 
-    #print-container #fancybox-gallery{
+    #print-claim #fancybox-gallery{
         list-style: none;
         padding: 0;
         display: block;
         margin-right: -0.625rem;
         margin-left: -0.625rem;
     }
-    #print-container #fancybox-gallery > li{
+    #print-claim #fancybox-gallery > li{
         float: left;
         width: 50%;
         max-width: 100%;
@@ -3907,36 +3910,36 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
         margin-bottom: 20px;
     }
 
-    #print-container .img-box > .d-flex{
+    #print-claim .img-box > .d-flex{
         display: none !important;
     }
 
-    #print-container .gallery-item{
+    #print-claim .gallery-item{
         pointer-events: none;
     }
 
-    #print-container .img-info ul{
+    #print-claim .img-info ul{
         list-style: none;
         padding: 0;
     }
-    #print-container .img-info ul li{
+    #print-claim .img-info ul li{
 
     }
-    #print-container .img-info{
+    #print-claim .img-info{
         display: none;
     }
-    #print-container .print-img-info{
+    #print-claim .print-img-info{
         display: block;
     }
-    #print-container .img-info-list{
+    #print-claim .img-info-list{
         margin-top: 10px;
     }
-    #print-container .img-info-list li span{
+    #print-claim .img-info-list li span{
         font-size: 14px;
         color: #1c3faa;
         font-weight: 400;
     }
-    #print-container .img-info-list{
+    #print-claim .img-info-list{
         text-align: center;
         font-size: 14px;
         color: #1c3faa;
