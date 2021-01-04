@@ -224,7 +224,7 @@ $('.btn-print').on('click',function(){
     if (data == 'list') {
         $("#print-claim").removeAttr('class').addClass('view-list');
     }else if (data == 'grid4'){
-        $("#print-claim").removeClass('view-list').addClass('view-grid4');
+        $("#print-claim").removeAttr('view-list').addClass('view-grid4');
     }else{
         $("#print-claim").removeAttr('class').addClass('view-grid6');
     }
