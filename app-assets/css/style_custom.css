@@ -3824,51 +3824,51 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
 
 @media print {
     #print-claim{
-        max-width: 1140px !important;
-        width: 100% !important;
-        padding-right: 0.625rem !important;
-        padding-left: 0.625rem !important;
-        margin-right: auto !important;
-        margin-left: auto !important;
+        max-width: 1140px;
+        width: 100%;
+        padding-right: 0.625rem;
+        padding-left: 0.625rem;
+        margin-right: auto;
+        margin-left: auto;
     }
     .img-box {
-        margin-bottom: 0px !important;
-        text-align: center !important;
-        box-shadow: none !important;
+        margin-bottom: 0px;
+        text-align: center;
+        box-shadow: none;
     }
     .img-box a{
-        display: block !important;
-        margin: 0 auto !important;
+        display: block;
+        margin: 0 auto;
     }
     .img-box:before{
-        display: none !important;
+        display: none;
     }
     .img-box img{
-        display: inline-block !important;
-        margin: 0 auto !important;
-        max-width: 100% !important;
-        height: auto !important;
+        display: inline-block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
         transform: none !important;
         width: auto;
     }
     .view-list .img-box img {
-        max-height: 1000px !important;
+        max-height: 1000px;
     }
 
     .view-grid4 .img-box img {
-        max-height: calc(480px - 60px) !important;
+        max-height: calc(480px - 60px);
     }
 
     .view-grid6 .img-box img {
-        max-height: calc(320px - 60px) !important;
+        max-height: calc(320px - 60px);
     }
 
     .view-grid4 > ul > li{
-        height: 480px !important;
+        height: 480px;
     }
 
     .view-grid6 > ul > li{
-        height: 320px !important;
+        height: 320px;
     }
 
 
@@ -3879,68 +3879,71 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     }
 
     .view-list .view-fix .img-box img {
-        min-height: calc(480px - 80px)!important;
-        max-height: calc(480px - 80px)!important;
+        min-height: calc(480px - 80px);
+        max-height: calc(480px - 80px);
     }
 
 
     .view-grid4 .view-fix .img-box img {
-        min-height: calc(480px - 80px)!important;
+        min-height: calc(480px - 80px);
     }
 
     .view-grid6 .view-fix .img-box img {
-        min-height: calc(320px - 80px)!important;
+        min-height: calc(320px - 80px);
     }
 
 
     #print-claim #fancybox-gallery{
-        list-style: none!important;
-        padding: 0!important;
-        display: block!important;
-        margin-right: -0.625rem!important;
-        margin-left: -0.625rem!important;
+        list-style: none;
+        padding: 0;
+        display: block;
+        margin-right: -0.625rem;
+        margin-left: -0.625rem;
     }
     #print-claim #fancybox-gallery > li{
-        float: left!important;
-        width: 50%!important;
-        max-width: 100%!important;
-        position: relative!important;
-        padding-right: 0.625rem!important;
-        padding-left: 0.625rem!important;
-        margin-bottom: 20px!important;
+        float: left;
+        width: 50%;
+        max-width: 100%;
+        position: relative;
+        padding-right: 0.625rem;
+        padding-left: 0.625rem;
+        margin-bottom: 20px;
     }
 
     #print-claim .img-box > .d-flex{
-        display: none !important!important;
+        display: none !important;
     }
 
     #print-claim .gallery-item{
-        pointer-events: none!important;
+        pointer-events: none;
     }
 
     #print-claim .img-info ul{
-        list-style: none!important;
-        padding: 0!important;
+        list-style: none;
+        padding: 0;
+    }
+    #print-claim .img-info ul li{
+
     }
     #print-claim .img-info{
-        display: none !important;
+        display: none;
     }
     #print-claim .print-img-info{
-        display: block !important;
+        display: block;
     }
     #print-claim .img-info-list{
-        margin-top: 10px!important;
+        margin-top: 10px;
     }
     #print-claim .img-info-list li span{
-        font-size: 14px!important;
-        color: #1c3faa!important;
-        font-weight: 400!important;
+        font-size: 14px;
+        color: #1c3faa;
+        font-weight: 400;
     }
     #print-claim .img-info-list{
         text-align: center;
-        font-size: 14px!important;
-        color: #1c3faa!important;
-        font-weight: 400!important;
+        font-size: 14px;
+        color: #1c3faa;
+        font-weight: 400;
     }
 
 }
