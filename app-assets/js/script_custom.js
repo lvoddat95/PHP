@@ -228,10 +228,12 @@ $('.btn-print').on('click',function(){
     }else{
         $("#print-claim").removeAttr('class').addClass('view-grid6');
     }
-
-    $("#print-claim").print({
-        noPrintSelector : ".no-print",
-    });
+    setTimeout(function(){ 
+        $("#print-claim").print({
+            noPrintSelector : ".no-print",
+        });
+    }, 500);
+        
     
 })
 
