@@ -224,15 +224,13 @@ $('.btn-print').on('click',function(){
     if (data == 'list') {
         $("#print-claim").removeAttr('class').addClass('view-list');
     }else if (data == 'grid4'){
-        $("#print-claim").removeAttr('class').addClass('view-grid4');
+        $("#print-claim").removeClass('view-list').addClass('view-grid4');
     }else{
         $("#print-claim").removeAttr('class').addClass('view-grid6');
     }
-    setTimeout(function(){ 
         $("#print-claim").print({
             noPrintSelector : ".no-print",
         });
-    }, 1000);
         
     
 })
