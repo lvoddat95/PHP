@@ -228,8 +228,9 @@ $('.btn-print').on('click',function(){
     }else{
         $("#print-claim").removeClass('view-list view-grid4').addClass('view-grid6');
     }
-        $("#print-claim").print({
+        $("#print-claim").({
             noPrintSelector : ".no-print",
+            timeout: 1500,
         });
         
     
