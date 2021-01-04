@@ -237,6 +237,14 @@ $('.btn-print').on('click',function(){
     
 })
 
+var on_change_kich_thuoc_anh = function(p_this){
+    if ($(p_this).is(':checked')) {
+        $("#fancybox-gallery").addClass('view-fix')
+    }else{
+        $("#fancybox-gallery").removeClass('view-fix')
+    }
+}
+
 var on_change_print_select = function(p_this){
     if (!$(p_this).is(':checked')) {
         $(p_this).closest('li').addClass('no-print');
@@ -245,13 +253,7 @@ var on_change_print_select = function(p_this){
     }
 }
 
-var on_change_kich_thuoc_anh = function(p_this){
-    if ($(p_this).is(':checked')) {
-        $("#light-gallery").addClass('view-fix')
-    }else{
-        $("#light-gallery").removeClass('view-fix')
-    }
-}
+
 
 var on_change_loai_vay_von = function(p_this){
     var v_input_value = $(p_this).val();
