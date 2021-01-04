@@ -222,11 +222,11 @@ var show_password = function(p_this){
 $('.btn-print').on('click',function(){
     var data = $(this).data('print');
     if (data == 'list') {
-        $("#print-claim").removeAttr('class').addClass('view-list');
+        $("#print-claim").removeClass('view-grid4 view-grid6').addClass('view-list');
     }else if (data == 'grid4'){
-        $("#print-claim").removeAttr('view-list').addClass('view-grid4');
+        $("#print-claim").removeClass('view-list view-grid6').addClass('view-grid4');
     }else{
-        $("#print-claim").removeAttr('class').addClass('view-grid6');
+        $("#print-claim").removeClass('view-list view-grid4').addClass('view-grid6');
     }
         $("#print-claim").print({
             noPrintSelector : ".no-print",
