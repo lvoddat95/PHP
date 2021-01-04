@@ -232,7 +232,7 @@ $('.btn-print').on('click',function(){
         $("#print-claim").print({
             noPrintSelector : ".no-print",
         });
-    }, 500);
+    }, 1000);
         
     
 })
