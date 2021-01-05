@@ -606,7 +606,6 @@ var App = function () {
                 console.warn('Warning - Repeater Js is not loaded.');
                 return;
             }
-            console.log(1);
             $('[repeater]').each(function( index ) {
                 window.outerRepeater = $(this).repeater({
                     show: function (e) {
@@ -616,7 +615,6 @@ var App = function () {
                         var v_select = v_parent.find('[select2]');
                         var v_datepicker = v_parent.find('.datepicker');
                         var v_clone = v_parent.find('[clone]');
-
 
                         if (v_table.length > 0) {
                             if (v_table.is('.datatable')) {
@@ -632,7 +630,7 @@ var App = function () {
                         }
 
                         $v_clone.slideDown();
-                        
+
                         _component_input_type();
                         _component_datepicker(v_datepicker);
                         _component_select2(v_select);

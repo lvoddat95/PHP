@@ -28,8 +28,8 @@
                     data-searching="false"
                     >
                     <thead class="thead-light">
-                        <th class="w25p"><b>Tên công ty</b></th>
-                        <th class="w15p"><b>Vai trò</b></th>
+                        <th class="w25p none"><b>Tên công ty</b></th>
+                        <th class="w15p none"><b>Vai trò</b></th>
                         <th class="w10p"><b>Tỷ lệ ĐBH </b></th>
                         <th><b>Phí quản lý (%)</b></th>
                         <th><b>Thành tiền phí quản lý ĐBH</b></th>
