@@ -39,6 +39,7 @@
 
 	<!-- Custom JS-->
 	<script src="<?php echo ASSET_ROOT; ?>/js/app.js"></script>
+    <script src="<?php echo ASSET_ROOT; ?>/js/acts.js"></script>
 	<script src="<?php echo ASSET_ROOT; ?>/js/script_custom.js"></script>
 	<!-- /Custom JS-->
 
