@@ -36,7 +36,7 @@
                         <th></th>
                     </thead>
                     <tbody data-repeater-list="dbh-cong-ty">
-                        <tr data-repeater-item>
+                        <tr data-repeater-item name="row">
                             <td>
                                 <select class="form-control required" select2 name="cong_ty">
                                     <option id="" value="" name="">--- Chọn công ty---</option>
@@ -77,7 +77,7 @@
                             </td>
                             <td><input class="form-control" type="text" placeholder=""></td>
                             <td><input class="form-control" type="text" placeholder=""></td>
-                            <td><input class="form-control input-money" type="text" placeholder=""></td>
+                            <td><input class="form-control input-money" name="thanh_tien" type="text" placeholder=""></td>
                             <td class="text-center"><input data-repeater-delete class="btn bg-danger" type="button" value="- Xóa"/></td>
                         </tr>
                     </tbody>

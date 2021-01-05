@@ -617,6 +617,7 @@ var App = function () {
                         var v_datepicker = v_parent.find('.datepicker');
                         var v_clone = v_parent.find('[clone]');
 
+
                         if (v_table.length > 0) {
                             if (v_table.is('.datatable')) {
                                 v_table.DataTable().row.add($v_clone).draw();
@@ -638,9 +639,20 @@ var App = function () {
                         _component_clone(v_clone);
                     },
                     hide: function (deleteElement) {
-                        // if(confirm('Xoa dong nay ?')) {
+                        var $v_clone = $(this);
+                        var v_parent = $v_clone.closest('[repeater]');
+                        var v_table = $v_clone.closest('table');
+                        var dt_tb = v_table.DataTable();
+                        var tableRow = dt_tb.row($(this));
+
+                        if(confirm('Xoa dong nay ?')) {
+                            if (v_table.length > 0) {
+                                if (v_table.is('.datatable')) {
+                                    dt_tb.row( tableRow ).remove().draw();
+                                }
+                            }
                             $(this).slideUp(deleteElement);
-                        // }
+                        }
                     },
                     repeaters: [{
                         selector: '[child-repeater]',
