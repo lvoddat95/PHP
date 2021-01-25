@@ -1,3 +1,18 @@
+
+<div class="row form-group">
+    <label class="col-label col-form-label">Số hồ sơ: <span class="text-danger">*</span></label>
+    <div class="col-content col-content-md">
+        <div class="input-group">
+            <input type="text" class="form-control required" placeholder="Nhập số hồ sơ..." value="BT3412000897.F02">
+            <span class="input-group-append">
+                <button type="button" class="btn bg-primary" data-toggle="modal" data-target="#ds_so_ho_giam_dinh_xin_cap">Lấy số</button>
+            </span>
+        </div>
+    </div>
+</div>
+
+<hr class="border-dashed border-silver mb-3">
+
 <div id="khoi-don-bao-hiem">
 
     <div class="row form-group">
@@ -265,17 +280,7 @@
 <hr class="border-dashed border-silver mb-3">
 
 <div id="khoi-ho-so">
-    <div class="row form-group">
-        <label class="col-label col-form-label">Số hồ sơ: <span class="text-danger">*</span></label>
-        <div class="col-content col-content-md">
-            <div class="input-group">
-                <input type="text" class="form-control required" placeholder="Nhập số hồ sơ..." value="BT3412000897.F02">
-                <span class="input-group-append">
-                    <button type="button" class="btn bg-primary" data-toggle="modal" data-target="#ds_so_ho_giam_dinh_xin_cap">Lấy số</button>
-                </span>
-            </div>
-        </div>
-    </div>
+    
 
     <div class="row form-group">
         <label class="col-label col-form-label">Địa điểm tai nạn: <span class="text-danger">*</span></label>
