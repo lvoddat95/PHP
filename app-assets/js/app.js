@@ -1743,7 +1743,6 @@ var App = function () {
         });
 
         $("[datatable-tab], .steps > .nav-tabs").on("shown.bs.tab", function (e) {
-            console.log(1)
             $($.fn.dataTable.tables(true)).DataTable()
               .columns.adjust()
               .responsive.recalc();
