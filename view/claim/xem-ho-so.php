@@ -54,6 +54,12 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
+                                            <a href="#claim_phuong_an_sua_chua" class="nav-link" data-toggle="tab">
+                                                <i class="fal fa-file-invoice mr-1"></i>
+                                                <span>Phương án sửa chữa</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
                                             <a href="#claim_to_trinh_boi_thuong" class="nav-link" data-toggle="tab">
                                                 <i class="fal fa-file-edit mr-1"></i>
                                                 <span>Tờ trình bồi thường</span>
@@ -84,7 +90,6 @@
                                                         <span class="desc">Vui lòng nhập đầy đủ thông tin vào trường bắt buộc có dấu <code>*</code>.</span>
                                                     </div>
                                                     <div class="p-button">
-                                                        <a href="" class="btn mr-1"><i class="fa fa-reply mr-1"></i> Quay lại</a>
                                                         <a href="javascript:;" class="btn mr-1"><i class="icon-file-locked mr-1"></i> Đóng hồ sơ</a>
                                                         <a href="javascript:;" class="btn mr-1"><i class="far fa-copy mr-1"></i> Lưu &amp; Copy</a>
                                                         <a href="javascript:;" class="btn bg-primary"><i class="fa fa-save mr-1"></i> Lưu</a>
@@ -106,7 +111,6 @@
                                                         <p class="t-top"><i class="icon-certificate mr-2"></i>Biên bản giám định tổn thất</p>
                                                     </div>
                                                     <div class="p-button">
-                                                        <a href="" class="btn mr-1"><i class="fa fa-reply mr-1"></i> Quay lại</a>
                                                         <a href="javascript:;" class="btn mr-1" data-toggle="modal" data-target="#hinh_anh_ho_so_boi_thuong"><i class="icon-images2 mr-1"></i> Xem hình ảnh</a>
                                                         <a href="javascript:;" class="btn mr-1" data-toggle="modal" data-target="#in_option"><i class="icon-printer2 mr-1"></i> In hình ảnh</a>
                                                         <a href="javascript:;" class="btn bg-primary" data-toggle="modal" data-target="#in_option"><i class="icon-printer2 mr-1"></i> In biên bản giám định</a>
@@ -121,6 +125,24 @@
                                             </div>
                                         </div>
 
+                                        <div class="tab-pane " id="claim_phuong_an_sua_chua">
+                                            <div class="tab-pane-action">
+                                                <div class="page-title">
+                                                    <div class="p-title">
+                                                        <p class="t-top"><i class="icon-certificate mr-2"></i>Phương án sửa chữa</p>
+                                                    </div>
+                                                    <div class="p-button">
+                                                        <a href="javascript:;" class="btn mr-1"><i class="icon-printer2 mr-1"></i> In bảng kê giao phụ tùng thay thế</a>
+                                                        <a href="javascript:;" class="btn bg-primary mr-1"><i class="icon-printer2 mr-1"></i> In đề xuất phương án sửa chữa </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-pane-form">
+                                                <?php inc('claim/phuong_an_sua_chua.php'); ?>
+                                            </div>
+                                        </div>
+
                                         <div class="tab-pane " id="claim_to_trinh_boi_thuong">
                                             <div class="tab-pane-action">
                                                 <div class="page-title">
@@ -128,7 +150,6 @@
                                                         <p class="t-top"><i class="icon-certificate mr-2"></i>Tờ trình bồi thường</p>
                                                     </div>
                                                     <div class="p-button">
-                                                        <a href="" class="btn mr-1"><i class="fa fa-reply mr-1"></i> Quay lại</a>
                                                         <a href="javascript:;" class="btn mr-1"><i class="icon-printer2 mr-1"></i> In tờ trình bồi thường</a>
                                                         <a href="javascript:;" class="btn bg-primary"><i class="fa fa-save mr-1"></i> Cập nhập</a>
                                                     </div>
@@ -149,7 +170,6 @@
                                                         <p class="t-top"><i class="icon-certificate mr-2"></i>Thông báo bồi thường</p>
                                                     </div>
                                                     <div class="p-button">
-                                                        <a href="" class="btn mr-1"><i class="fa fa-reply mr-1"></i> Quay lại</a>
                                                         <a href="javascript:;" class="btn mr-1" data-toggle="modal" data-target="#kieu_in"><i class="icon-printer2 mr-1"></i> In thông báo bồi thường</a>
                                                         <a href="javascript:;" class="btn bg-primary"><i class="fa fa-save mr-1"></i> Lưu</a>
                                                     </div>

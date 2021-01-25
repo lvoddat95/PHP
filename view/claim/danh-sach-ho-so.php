@@ -51,6 +51,70 @@
                     
                         <div class="row">
                             <div class="col-lg-12">
+
+                                <div class="card">
+                                    <div class="card-body ">
+                                        <div class="bieu-do d-flex align-items-start justify-content-between flex-wrap">
+                                            <div class="d-flex align-items-center mb-3 mb-md-0">
+                                                <span class="btn bg-transparent border-warning-400 text-warning-400 rounded-round border-2 btn-icon">
+                                                    <i class="fad fa-history"></i>
+                                                </span>
+                                                <div class="ml-3">
+                                                    <h5 class="font-weight-semibold mb-0 font-size-m">14,327 (đơn)</h5>
+                                                    <span class="badge badge-mark border-warning mr-1"></span> 
+                                                    <span class="text-muted font-size-s">Đang chờ duyệt PASC</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-center mb-3 mb-md-0">
+                                                <span class="btn bg-transparent border-success-400 text-success-400 rounded-round border-2 btn-icon">
+                                                    <i class="icon-file-upload"></i>
+                                                </span>
+                                                <div class="ml-3">
+                                                    <h5 class="font-weight-semibold mb-0 font-size-m">1,327 (đơn)</h5>
+                                                    <span class="badge badge-mark border-success mr-1"></span> 
+                                                    <span class="text-muted font-size-s">Chờ duyệt quá trình giải quyết</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-center mb-3 mb-md-0">
+                                                <span class="btn bg-transparent border-primary-400 text-primary-400 rounded-round border-2 btn-icon">
+                                                    <i class="icon-spinner3"></i>
+                                                </span>
+                                                <div class="ml-3">
+                                                    <h5 class="font-weight-semibold mb-0 font-size-m">427 (đơn)</h5>
+                                                    <span class="badge badge-mark border-primary mr-1"></span> 
+                                                    <span class="text-muted font-size-s">Đang xử lý</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-center mb-3 mb-md-0">
+                                                <span class="btn bg-transparent border-dark-400 text-dark-400 rounded-round border-2 btn-icon">
+                                                    <i class="icon-lock2"></i>
+                                                </span>
+                                                <div class="ml-3">
+                                                    <h5 class="font-weight-semibold mb-0 font-size-m">327 (đơn)</h5>
+                                                    <span class="badge badge-mark border-dark mr-1"></span> 
+                                                    <span class="text-muted font-size-s">Đơn đã đóng</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-center mb-3 mb-md-0">
+                                                <span class="btn bg-transparent border-danger-400 text-danger-400 rounded-round border-2 btn-icon">
+                                                    <i class="icon-arrow-up16"></i>
+                                                </span>
+                                                <div class="ml-3">
+                                                    <h5 class="font-weight-semibold mb-0 font-size-m">4,327 (đơn)</h5>
+                                                    <span class="badge badge-mark border-danger mr-1"></span> 
+                                                    <span class="text-muted font-size-s">Đơn qúa hạn</span>
+                                                </div>
+                                            </div>
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="card card-search">
                                     <div class="card-header header-elements-inline">
                                         <p class="card-title font-size-s">
@@ -64,6 +128,21 @@
                                         </div>
                                     </div>
                                     <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-6">
+                                                <div class="form-group ">
+                                                    <label class="font-weight-semibold">Loại hình bảo hiểm:</label>
+                                                    <div class="form-group-select">
+                                                        <div class="input-group">
+                                                            <span class="input-group-prepend">
+                                                                <span class="input-group-text"><i class="fa fa-building"></i></span>
+                                                            </span>
+                                                            <?php inc('template/loai_hinh.php'); ?>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="row">
                                             <div class="col-md-3 col-sm-4 col-6">
                                                 <div class="form-group ">
@@ -192,6 +271,23 @@
                                             </div>
                                             <div class="col-md-3 col-sm-4 col-6">
                                                 <div class="form-group ">
+                                                    <label class="font-weight-semibold">Hình thức giám định:</label>
+                                                    <div class="form-group-select">
+                                                        <div class="input-group">
+                                                            <span class="input-group-prepend">
+                                                                <span class="input-group-text"><i class="far fa-check-circle"></i></span>
+                                                            </span>
+                                                            <select class="form-control" select2>
+                                                                <option value="-1" data-select2-id="17">Online</option>
+                                                                <option value="4" data-select2-id="18">Offline</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-3 col-sm-4 col-6">
+                                                <div class="form-group ">
                                                     <label class="font-weight-semibold">Trạng thái:</label>
                                                     <div class="form-group-select">
                                                         <div class="input-group">
@@ -199,18 +295,19 @@
                                                                 <span class="input-group-text"><i class="far fa-check-circle"></i></span>
                                                             </span>
                                                             <select class="form-control" select2>
-                                                                <option value="dang-xu-li">Đang xử lý</option>
+                                                                <option value="da-giam-dinh">Đã giám định</option>
+                                                                <option value="dang-xu-li">Chưa giám định</option>
                                                                 <option value="da-dong">Đã đóng</option>
                                                             </select>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 col-sm-4 col-6">
-                                                <div class="form-group ">
-                                                    <label class="d-block">&nbsp;</label>
+                                            <div class="col-md-12 col-sm-4 col-6">
+                                                <div class="d-flex justify-content-end ">
                                                     <div class="d-inline-block">
-                                                        <button type="submit" style="letter-spacing: 1px;" class="btn text-uppercase w-100 bg-orange"><i class="icon-search4 mr-2"></i> Tìm kiếm </button>
+                                                        <button type="button" id="search-data" class="btn bg-primary"><i class="fa fa-filter mr-1"></i>Lọc</button>
+                                                        <button type="button" id="clear-filter" class="btn btn-light" data-dismiss="modal"><i class="icon-cross2 mr-1"></i>Hủy điều kiện lọc</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -232,7 +329,7 @@
                                         <table class="table table-bordered datatable" 
                                             data-paging="true"
                                             data-info="true"
-                                            data-ordering="true"
+                                            data-ordering="false"
                                             data-searching="false"
                                             data-page-length="19">
                                             <thead class="thead-light">
@@ -241,9 +338,12 @@
                                                     <th>Số hồ sơ</th>
                                                     <th>Số đơn BH</th>
                                                     <th>Tên khách hàng</th>
-                                                    <th class="w10p">Biển số xe</th>
-                                                    <th class="w10p">Ngày TT</th>
-                                                    <th class="w10p">Ngày TBTT</th>
+                                                    <th data-orderable="false" class="w10p">Đối tượng</th>
+                                                    <th data-orderable="false" class="w7p text-center">Số ngày tồn</th>
+                                                    <th class="w10p text-center">Ngày tổn thất</th>
+                                                    <th class="w10p text-center">Ngày thông báo</th>
+                                                    <th class="w10p">Cán bộ bồi thường</th>
+                                                    <th class="w7p text-center">Trạng thái</th>
                                                     <th data-orderable="false" class="text-center all w1p">#</th>
                                                 </tr>
                                             </thead>
@@ -254,8 +354,11 @@
                                                     <td>7692000974/F02.E01.BB19/0118621</td>
                                                     <td>ĐỖ TRỌNG TUẤN</td>
                                                     <td>22A11699</td>
-                                                    <td>28/08/2020</td>
-                                                    <td>29/08/2020</td>
+                                                    <td align="center">20</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td>Đào Xuân Hùng</td>
+                                                    <td align="center"><span class="badge badge-primary" id="">Đang xử lý</span></td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -275,8 +378,11 @@
                                                     <td>7692000544/F02.BB19/0118666</td>
                                                     <td>TẠ ĐỨC VINH</td>
                                                     <td>22A11699</td>
-                                                    <td>29/08/2020</td>
-                                                    <td>29/08/2020</td>
+                                                    <td align="center">20</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td>Đào Xuân Hùng</td>
+                                                    <td align="center"><span class="badge badge-primary" id="">Đang xử lý</span></td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -296,8 +402,11 @@
                                                     <td>7692001669/F02.BB19/0127836</td>
                                                     <td>NGUYỄN QUANG ĐẠO</td>
                                                     <td>22A11699</td>
-                                                    <td>25/08/2020</td>
-                                                    <td>26/08/2020</td>
+                                                    <td align="center">20</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td>Đào Xuân Hùng</td>
+                                                    <td align="center"><span class="badge badge-dark" id="">Đã đóng</span></td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -317,8 +426,11 @@
                                                     <td>7692001525/F02.BB19/0127949</td>
                                                     <td>HOÀI VĂN NGUYÊN</td>
                                                     <td>22A11699</td>
-                                                    <td>26/08/2020</td>
-                                                    <td>27/08/2020</td>
+                                                    <td align="center">20</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td>Đào Xuân Hùng</td>
+                                                    <td align="center"><span class="badge badge-primary" id="">Đang xử lý</span></td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -338,8 +450,11 @@
                                                     <td>7692000250/F02.BB19/0118527</td>
                                                     <td>TRẦN THỊ PHƯƠNG LIÊN</td>
                                                     <td>22A11699</td>
-                                                    <td>25/08/2020</td>
-                                                    <td>26/08/2020</td>
+                                                    <td align="center">20</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td>Đào Xuân Hùng</td>
+                                                    <td align="center"><span class="badge badge-dark" id="">Đã đóng</span></td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -359,8 +474,11 @@
                                                     <td>7692001592/F02.BB19/0118478</td>
                                                     <td>LÊ ANH TÚ</td>
                                                     <td>22A11699</td>
-                                                    <td>26/08/2020</td>
-                                                    <td>27/08/2020</td>
+                                                    <td align="center">20</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td>Đào Xuân Hùng</td>
+                                                    <td align="center"><span class="badge badge-danger " id="">Quá hạn</span></td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -380,8 +498,11 @@
                                                     <td>7692001519/F02.BB19/0127766</td>
                                                     <td>TRẦN BÌNH AN</td>
                                                     <td>22A11699</td>
-                                                    <td>23/08/2020</td>
-                                                    <td>24/08/2020</td>
+                                                    <td align="center">20</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td>Đào Xuân Hùng</td>
+                                                    <td align="center"><span class="badge badge-success" id="">Đã giám định</span></td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -401,8 +522,11 @@
                                                     <td>7692000812/F02.OTO19/0000905</td>
                                                     <td>NGUYỄN NGỌC TÚ</td>
                                                     <td>22A11699</td>
-                                                    <td>23/08/2020</td>
-                                                    <td>24/08/2020</td>
+                                                    <td align="center">20</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td>Đào Xuân Hùng</td>
+                                                    <td align="center"><span class="badge badge-success" id="">Đã giám định</span></td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -422,8 +546,11 @@
                                                     <td>7692001419/F02.OTO19/0001205</td>
                                                     <td>Lê Anh Duy</td>
                                                     <td>22A11699</td>
-                                                    <td>22/08/2020</td>
-                                                    <td>22/08/2020</td>
+                                                    <td align="center">20</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td>Đào Xuân Hùng</td>
+                                                    <td align="center"><span class="badge badge-success" id="">Đã giám định</span></td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -443,8 +570,11 @@
                                                     <td>7692001624/F02.BB19/0127966</td>
                                                     <td>NGUYỄN NGỌC TRÃI</td>
                                                     <td>22A11699</td>
-                                                    <td>22/08/2020</td>
-                                                    <td>22/08/2020</td>
+                                                    <td align="center">20</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td>Đào Xuân Hùng</td>
+                                                    <td align="center"><span class="badge badge-success" id="">Đã giám định</span></td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -464,8 +594,11 @@
                                                     <td>7692001244/F02.BB19/0118633</td>
                                                     <td>ĐINH XUÂN TUYẾN</td>
                                                     <td>22A11699</td>
-                                                    <td>16/08/2020</td>
-                                                    <td>16/08/2020</td>
+                                                    <td align="center">20</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td>Đào Xuân Hùng</td>
+                                                    <td align="center"><span class="badge badge-primary" id="">Đang xử lý</span></td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -485,8 +618,11 @@
                                                     <td>7692000678/F02.BB19/0127906</td>
                                                     <td>NGUYỄN ĐỨC ĐIỀU</td>
                                                     <td>22A11699</td>
-                                                    <td>19/08/2020</td>
-                                                    <td>19/08/2020</td>
+                                                    <td align="center">20</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td>Đào Xuân Hùng</td>
+                                                    <td align="center"><span class="badge badge-primary" id="">Đang xử lý</span></td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -506,8 +642,11 @@
                                                     <td>7692000955/F02.AD20/0156996</td>
                                                     <td>HOÀNG VĂN VỸ</td>
                                                     <td>22A11699</td>
-                                                    <td>18/08/2020</td>
-                                                    <td>18/08/2020</td>
+                                                    <td align="center">20</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td>Đào Xuân Hùng</td>
+                                                    <td align="center"><span class="badge badge-primary" id="">Đang xử lý</span></td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -527,8 +666,11 @@
                                                     <td>7692000491/F02.BB19/0118500</td>
                                                     <td>NGUYỄN THỊ THANH NGA</td>
                                                     <td>22A11699</td>
-                                                    <td>17/08/2020</td>
-                                                    <td>18/08/2020</td>
+                                                    <td align="center">20</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td>Đào Xuân Hùng</td>
+                                                    <td align="center"><span class="badge badge-primary" id="">Đang xử lý</span></td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -548,8 +690,11 @@
                                                     <td>7692001384/F02.BB19/0127910</td>
                                                     <td>NGUYỄN VĂN TÁM</td>
                                                     <td>22A11699</td>
-                                                    <td>17/08/2020</td>
-                                                    <td>18/08/2020</td>
+                                                    <td align="center">20</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td>Đào Xuân Hùng</td>
+                                                    <td align="center"><span class="badge badge-primary" id="">Đang xử lý</span></td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -569,8 +714,11 @@
                                                     <td>7692000541/F02.BB19/0118668</td>
                                                     <td>TRẦN DOÃN QUẢNG</td>
                                                     <td>22A11699</td>
-                                                    <td>15/08/2020</td>
-                                                    <td>17/08/2020</td>
+                                                    <td align="center">20</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td>Đào Xuân Hùng</td>
+                                                    <td align="center"><span class="badge badge-primary" id="">Đang xử lý</span></td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -590,8 +738,11 @@
                                                     <td>7692000700/F02.OTO19/0000882</td>
                                                     <td>Nguyễn Phúc Duy</td>
                                                     <td>22A11699</td>
-                                                    <td>15/08/2020</td>
-                                                    <td>16/08/2020</td>
+                                                    <td align="center">20</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td>Đào Xuân Hùng</td>
+                                                    <td align="center"><span class="badge badge-primary" id="">Đang xử lý</span></td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -611,8 +762,11 @@
                                                     <td>7692001247/F02.BB19/0127764</td>
                                                     <td>TRIỆU VĂN MINH</td>
                                                     <td>22A11699</td>
-                                                    <td>15/08/2020</td>
-                                                    <td>15/08/2020</td>
+                                                    <td align="center">20</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td>Đào Xuân Hùng</td>
+                                                    <td align="center"><span class="badge badge-primary" id="">Đang xử lý</span></td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -632,8 +786,11 @@
                                                     <td>7692000379/F02.BB19/0118491</td>
                                                     <td>NGÔ VĂN TIẾN</td>
                                                     <td>22A11699</td>
-                                                    <td>13/08/2020</td>
-                                                    <td>14/08/2020</td>
+                                                    <td align="center">20</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td>Đào Xuân Hùng</td>
+                                                    <td align="center"><span class="badge badge-primary" id="">Đang xử lý</span></td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">
@@ -653,8 +810,11 @@
                                                     <td>7692000164/F02.BB19/0118561</td>
                                                     <td>PHẠM CHÍ KHANH</td>
                                                     <td>22A11699</td>
-                                                    <td>13/08/2020</td>
-                                                    <td>13/08/2020</td>
+                                                    <td align="center">20</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td align="center">29/08/2020</td>
+                                                    <td>Đào Xuân Hùng</td>
+                                                    <td align="center"><span class="badge badge-primary" id="">Đang xử lý</span></td>
                                                     <td class="text-center">
                                                         <div class="list-icons">
                                                             <div class="dropdown">

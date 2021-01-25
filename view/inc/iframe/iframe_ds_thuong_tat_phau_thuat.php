@@ -5,197 +5,204 @@
 	    <h5 class="modal-title">Danh sách tỉ lệ thương tật</h5>
 	</div>
 	<div class="modal-body bg-white">
-		<div class="row">
-	        <div class="col-sm-4">
-	            <div class="form-group">
-	                <label>Nhóm bộ phận: </label>
-	                <select class="form-control" select2>
-					    <option value="">Tất cả</option>
-					    <option value="67">⦿ • Bảng tỷ lệ trả tiền phẫu thuật</option>
-					    <option value="67-68">&nbsp;&nbsp;&nbsp;&nbsp; • Não - Hệ thần kinh</option>
-					    <option value="67-68-83">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương sọ</option>
-					    <option value="67-68-84">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Não</option>
-					    <option value="67-68-85">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cột sống</option>
-					    <option value="67-69">&nbsp;&nbsp;&nbsp;&nbsp; • Mắt</option>
-					    <option value="67-69-86">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Kết mạc</option>
-					    <option value="67-69-87">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Giác mạc</option>
-					    <option value="67-69-88">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Nhãn cầu</option>
-					    <option value="67-69-89">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Thủy tinh thể</option>
-					    <option value="67-69-90">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Võng mạc</option>
-					    <option value="67-69-91">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Củng mạc</option>
-					    <option value="67-70">&nbsp;&nbsp;&nbsp;&nbsp; • Tai Mũi Họng</option>
-					    <option value="67-70-92">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Tai</option>
-					    <option value="67-70-93">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Mũi</option>
-					    <option value="67-70-94">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Họng</option>
-					    <option value="67-71">&nbsp;&nbsp;&nbsp;&nbsp; • Hệ thống nội tiết</option>
-					    <option value="67-72">&nbsp;&nbsp;&nbsp;&nbsp; • Tim và Bộ máy tuần hoàn</option>
-					    <option value="67-72-95">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Tim</option>
-					    <option value="67-72-96">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Van tim</option>
-					    <option value="67-72-97">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Động mạch chủ và các mạch máu lớn</option>
-					    <option value="67-72-98">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Động mạch vành</option>
-					    <option value="67-72-99">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Động mạch phổi</option>
-					    <option value="67-72-100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Các động mạch và tĩnh mạch</option>
-					    <option value="67-73">&nbsp;&nbsp;&nbsp;&nbsp; • Ngực - Cơ quan hô hấp</option>
-					    <option value="67-74">&nbsp;&nbsp;&nbsp;&nbsp; • Bụng - Bộ máy tiêu hóa</option>
-					    <option value="67-74-101">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Bụng</option>
-					    <option value="67-74-102">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Đường dẫn mật</option>
-					    <option value="67-74-103">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Gan</option>
-					    <option value="67-74-104">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Tụy</option>
-					    <option value="67-74-105">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Lách</option>
-					    <option value="67-74-106">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Thoát vị</option>
-					    <option value="67-74-107">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Nội soi</option>
-					    <option value="67-74-108">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Thực quản</option>
-					    <option value="67-74-109">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Dạ dày</option>
-					    <option value="67-74-110">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Ruột non</option>
-					    <option value="67-74-111">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Ruột thừa</option>
-					    <option value="67-74-112">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Trực tràng</option>
-					    <option value="67-74-113">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Hậu môn</option>
-					    <option value="67-75">&nbsp;&nbsp;&nbsp;&nbsp; • Bộ máy tiết niệu</option>
-					    <option value="67-75-114">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Thận</option>
-					    <option value="67-75-115">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Niệu quản</option>
-					    <option value="67-75-116">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Niệu đạo</option>
-					    <option value="67-75-117">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Bàng quang</option>
-					    <option value="67-76">&nbsp;&nbsp;&nbsp;&nbsp; • Các cơ quan sinh dục</option>
-					    <option value="67-76-118">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cơ quan sinh dục nữ</option>
-					    <option value="67-76-118-154">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Âm hộ và đường vào âm đạo</option>
-					    <option value="67-76-118-155">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Âm đạo</option>
-					    <option value="67-76-118-156">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cổ tử cung</option>
-					    <option value="67-76-118-157">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Thân tử cung</option>
-					    <option value="67-76-118-158">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Ống dẫn trứng</option>
-					    <option value="67-76-118-159">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Buồng trứng</option>
-					    <option value="67-76-119">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cơ quan sinh dục nam</option>
-					    <option value="67-76-119-160">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Dương vật</option>
-					    <option value="67-76-119-161">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Thừng tinh</option>
-					    <option value="67-76-119-162">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Tinh hoàn</option>
-					    <option value="67-76-119-163">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Tuyến tiền liệt</option>
-					    <option value="67-77">&nbsp;&nbsp;&nbsp;&nbsp; • Hộ sinh (Nếu có thể áp dụng)</option>
-					    <option value="67-77-120">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Đẻ thường</option>
-					    <option value="67-78">&nbsp;&nbsp;&nbsp;&nbsp; • Hệ thống cơ xương</option>
-					    <option value="67-78-121">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cắt cụt&nbsp; và tháo khớp</option>
-					    <option value="67-79">&nbsp;&nbsp;&nbsp;&nbsp; • Trật khớp</option>
-					    <option value="67-79-122">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Hàm</option>
-					    <option value="67-79-123">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Vai</option>
-					    <option value="67-79-124">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Khủyu tay</option>
-					    <option value="67-79-125">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cổ tay</option>
-					    <option value="67-79-126">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Các ngón tay</option>
-					    <option value="67-79-127">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Háng</option>
-					    <option value="67-79-128">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Khớp gối</option>
-					    <option value="67-79-129">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Bánh chè</option>
-					    <option value="67-79-130">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cổ chân</option>
-					    <option value="67-79-131">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Ngón chân</option>
-					    <option value="67-80">&nbsp;&nbsp;&nbsp;&nbsp; • Gãy xương</option>
-					    <option value="67-80-132">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Chi trên (gx)</option>
-					    <option value="67-80-132-164">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương cánh tay</option>
-					    <option value="67-80-132-165">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Khuỷu tay</option>
-					    <option value="67-80-132-166">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương quay</option>
-					    <option value="67-80-132-167">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương trụ</option>
-					    <option value="67-80-132-168">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương trụ và xương quay</option>
-					    <option value="67-80-132-169">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cổ tay</option>
-					    <option value="67-80-132-170">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Các ngón tay</option>
-					    <option value="67-80-133">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Chi dưới (gx)</option>
-					    <option value="67-80-133-171">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương đùi</option>
-					    <option value="67-80-133-172">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Bánh chè</option>
-					    <option value="67-80-133-173">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương chày</option>
-					    <option value="67-80-133-174">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương mác</option>
-					    <option value="67-80-133-175">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương chày và xương mác</option>
-					    <option value="67-80-133-176">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cổ chân&nbsp;(xương gót, xương sên, xương thuyền)</option>
-					    <option value="67-80-133-177">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Bàn chân</option>
-					    <option value="67-80-134">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Các xương khác</option>
-					    <option value="67-80-134-178">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương hàm</option>
-					    <option value="67-80-134-179">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương đòn</option>
-					    <option value="67-80-134-180">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương bả</option>
-					    <option value="67-80-134-181">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương sườn</option>
-					    <option value="67-80-134-182">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cột sống</option>
-					    <option value="67-81">&nbsp;&nbsp;&nbsp;&nbsp; • Cắt bỏ, Cố định hay sửa chữa bằng phẫu thuật</option>
-					    <option value="67-81-135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương cánh tay</option>
-					    <option value="67-81-136">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Bàn ngón tay</option>
-					    <option value="67-81-137">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương chân</option>
-					    <option value="67-81-138">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Háng</option>
-					    <option value="67-81-139">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương đùi</option>
-					    <option value="67-81-140">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Khớp gối</option>
-					    <option value="67-81-141">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cổ chân</option>
-					    <option value="67-82">&nbsp;&nbsp;&nbsp;&nbsp; • Da, Tổ chức dưới da, Hệ thống bạch huyết và vú</option>
-					    <option value="67-82-142">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Ap xe</option>
-					    <option value="67-82-143">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Tổn thương lành tính</option>
-					    <option value="67-82-144">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Tổn thương ác tính</option>
-					    <option value="67-82-145">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Nang</option>
-					    <option value="67-82-146">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Bọc hoặc nang cụm lông</option>
-					    <option value="67-82-147">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Hạch</option>
-					    <option value="67-82-148">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Hạch bạch huyết</option>
-					    <option value="67-82-149">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Móng</option>
-					    <option value="67-82-150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Các vật có chân nuôi</option>
-					    <option value="67-82-151">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Tạo hình</option>
-					    <option value="67-82-152">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Lấy chuyển hoặc xoay chuyển tổ chức</option>
-					    <option value="67-82-153">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Vú</option>
-					    <option value="65">⦿ • Bảng tỷ lệ trả tiền thương tật</option>
-					    <option value="65-184">&nbsp;&nbsp;&nbsp;&nbsp; • Thương tật toàn bộ</option>
-					    <option value="65-185">&nbsp;&nbsp;&nbsp;&nbsp; • Thương tật bộ phận</option>
-					    <option value="65-185-186">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Thương tật vĩnh viễn</option>
-					    <option value="65-185-186-265">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Chi Trên (vv)</option>
-					    <option value="65-185-186-267">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Chi Dưới (vv)</option>
-					    <option value="65-185-186-269">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cột Sống (vv)</option>
-					    <option value="65-185-186-270">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Sọ Não (vv)</option>
-					    <option value="65-185-186-272">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Lồng Ngực (vv)</option>
-					    <option value="65-185-186-274">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Bụng (vv)</option>
-					    <option value="65-185-186-276">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cơ quan tiết niệu, sinh dục (vv)</option>
-					    <option value="65-185-186-278">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Mắt (vv)</option>
-					    <option value="65-185-186-279">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Tai –Mũi – Họng (vv)</option>
-					    <option value="65-185-186-280">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Răng - Hàm - Mặt (vv)</option>
-					    <option value="65-185-186-283">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Vết Thương Phần Mềm – Bỏng (vv)</option>
-					    <option value="65-185-187">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Thương tật tạm thời</option>
-					    <option value="65-185-187-266">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Chi Trên (tt)</option>
-					    <option value="65-185-187-268">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Chi Dưới (tt)</option>
-					    <option value="65-185-187-271">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Sọ Não (tt)</option>
-					    <option value="65-185-187-273">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Lồng Ngực (tt)</option>
-					    <option value="65-185-187-275">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Bụng (tt)</option>
-					    <option value="65-185-187-277">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cơ quan tiết niệu, sinh dục (tt)</option>
-					    <option value="65-185-187-281">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Răng - Hàm - Mặt (tt)</option>
-					    <option value="65-185-187-282">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Vết Thương Phần Mềm – Bỏng (tt)</option>
-					    <option value="65-185-187-284">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cột sống (tt)</option>
-					</select>
-	            </div>
-	        </div>
-	        <div class="col-sm-4">
-	            <div class="form-group">
-	                <label>Loại hình: </label>
-	                <select class="form-control" select2>
-	                	<option value="">Tất cả</option>
-	                	<option value="">Vĩnh viễn</option>
-	                	<option value="">Tạm thời</option>
-	                	<option value="">Phẫu thuật</option>
-	                </select>
-	            </div>
-	        </div>
-	    </div>
+		<div class="mb-3">
+			<div class="row">
+		        <div class="col-sm-4">
+		            <div class="form-group">
+		                <label>Nhóm bộ phận: </label>
+		                <select class="form-control" select2>
+						    <option value="">Tất cả</option>
+						    <option value="67">⦿ • Bảng tỷ lệ trả tiền phẫu thuật</option>
+						    <option value="67-68">&nbsp;&nbsp;&nbsp;&nbsp; • Não - Hệ thần kinh</option>
+						    <option value="67-68-83">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương sọ</option>
+						    <option value="67-68-84">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Não</option>
+						    <option value="67-68-85">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cột sống</option>
+						    <option value="67-69">&nbsp;&nbsp;&nbsp;&nbsp; • Mắt</option>
+						    <option value="67-69-86">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Kết mạc</option>
+						    <option value="67-69-87">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Giác mạc</option>
+						    <option value="67-69-88">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Nhãn cầu</option>
+						    <option value="67-69-89">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Thủy tinh thể</option>
+						    <option value="67-69-90">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Võng mạc</option>
+						    <option value="67-69-91">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Củng mạc</option>
+						    <option value="67-70">&nbsp;&nbsp;&nbsp;&nbsp; • Tai Mũi Họng</option>
+						    <option value="67-70-92">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Tai</option>
+						    <option value="67-70-93">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Mũi</option>
+						    <option value="67-70-94">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Họng</option>
+						    <option value="67-71">&nbsp;&nbsp;&nbsp;&nbsp; • Hệ thống nội tiết</option>
+						    <option value="67-72">&nbsp;&nbsp;&nbsp;&nbsp; • Tim và Bộ máy tuần hoàn</option>
+						    <option value="67-72-95">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Tim</option>
+						    <option value="67-72-96">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Van tim</option>
+						    <option value="67-72-97">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Động mạch chủ và các mạch máu lớn</option>
+						    <option value="67-72-98">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Động mạch vành</option>
+						    <option value="67-72-99">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Động mạch phổi</option>
+						    <option value="67-72-100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Các động mạch và tĩnh mạch</option>
+						    <option value="67-73">&nbsp;&nbsp;&nbsp;&nbsp; • Ngực - Cơ quan hô hấp</option>
+						    <option value="67-74">&nbsp;&nbsp;&nbsp;&nbsp; • Bụng - Bộ máy tiêu hóa</option>
+						    <option value="67-74-101">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Bụng</option>
+						    <option value="67-74-102">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Đường dẫn mật</option>
+						    <option value="67-74-103">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Gan</option>
+						    <option value="67-74-104">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Tụy</option>
+						    <option value="67-74-105">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Lách</option>
+						    <option value="67-74-106">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Thoát vị</option>
+						    <option value="67-74-107">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Nội soi</option>
+						    <option value="67-74-108">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Thực quản</option>
+						    <option value="67-74-109">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Dạ dày</option>
+						    <option value="67-74-110">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Ruột non</option>
+						    <option value="67-74-111">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Ruột thừa</option>
+						    <option value="67-74-112">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Trực tràng</option>
+						    <option value="67-74-113">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Hậu môn</option>
+						    <option value="67-75">&nbsp;&nbsp;&nbsp;&nbsp; • Bộ máy tiết niệu</option>
+						    <option value="67-75-114">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Thận</option>
+						    <option value="67-75-115">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Niệu quản</option>
+						    <option value="67-75-116">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Niệu đạo</option>
+						    <option value="67-75-117">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Bàng quang</option>
+						    <option value="67-76">&nbsp;&nbsp;&nbsp;&nbsp; • Các cơ quan sinh dục</option>
+						    <option value="67-76-118">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cơ quan sinh dục nữ</option>
+						    <option value="67-76-118-154">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Âm hộ và đường vào âm đạo</option>
+						    <option value="67-76-118-155">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Âm đạo</option>
+						    <option value="67-76-118-156">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cổ tử cung</option>
+						    <option value="67-76-118-157">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Thân tử cung</option>
+						    <option value="67-76-118-158">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Ống dẫn trứng</option>
+						    <option value="67-76-118-159">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Buồng trứng</option>
+						    <option value="67-76-119">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cơ quan sinh dục nam</option>
+						    <option value="67-76-119-160">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Dương vật</option>
+						    <option value="67-76-119-161">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Thừng tinh</option>
+						    <option value="67-76-119-162">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Tinh hoàn</option>
+						    <option value="67-76-119-163">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Tuyến tiền liệt</option>
+						    <option value="67-77">&nbsp;&nbsp;&nbsp;&nbsp; • Hộ sinh (Nếu có thể áp dụng)</option>
+						    <option value="67-77-120">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Đẻ thường</option>
+						    <option value="67-78">&nbsp;&nbsp;&nbsp;&nbsp; • Hệ thống cơ xương</option>
+						    <option value="67-78-121">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cắt cụt&nbsp; và tháo khớp</option>
+						    <option value="67-79">&nbsp;&nbsp;&nbsp;&nbsp; • Trật khớp</option>
+						    <option value="67-79-122">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Hàm</option>
+						    <option value="67-79-123">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Vai</option>
+						    <option value="67-79-124">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Khủyu tay</option>
+						    <option value="67-79-125">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cổ tay</option>
+						    <option value="67-79-126">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Các ngón tay</option>
+						    <option value="67-79-127">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Háng</option>
+						    <option value="67-79-128">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Khớp gối</option>
+						    <option value="67-79-129">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Bánh chè</option>
+						    <option value="67-79-130">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cổ chân</option>
+						    <option value="67-79-131">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Ngón chân</option>
+						    <option value="67-80">&nbsp;&nbsp;&nbsp;&nbsp; • Gãy xương</option>
+						    <option value="67-80-132">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Chi trên (gx)</option>
+						    <option value="67-80-132-164">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương cánh tay</option>
+						    <option value="67-80-132-165">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Khuỷu tay</option>
+						    <option value="67-80-132-166">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương quay</option>
+						    <option value="67-80-132-167">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương trụ</option>
+						    <option value="67-80-132-168">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương trụ và xương quay</option>
+						    <option value="67-80-132-169">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cổ tay</option>
+						    <option value="67-80-132-170">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Các ngón tay</option>
+						    <option value="67-80-133">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Chi dưới (gx)</option>
+						    <option value="67-80-133-171">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương đùi</option>
+						    <option value="67-80-133-172">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Bánh chè</option>
+						    <option value="67-80-133-173">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương chày</option>
+						    <option value="67-80-133-174">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương mác</option>
+						    <option value="67-80-133-175">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương chày và xương mác</option>
+						    <option value="67-80-133-176">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cổ chân&nbsp;(xương gót, xương sên, xương thuyền)</option>
+						    <option value="67-80-133-177">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Bàn chân</option>
+						    <option value="67-80-134">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Các xương khác</option>
+						    <option value="67-80-134-178">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương hàm</option>
+						    <option value="67-80-134-179">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương đòn</option>
+						    <option value="67-80-134-180">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương bả</option>
+						    <option value="67-80-134-181">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương sườn</option>
+						    <option value="67-80-134-182">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cột sống</option>
+						    <option value="67-81">&nbsp;&nbsp;&nbsp;&nbsp; • Cắt bỏ, Cố định hay sửa chữa bằng phẫu thuật</option>
+						    <option value="67-81-135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương cánh tay</option>
+						    <option value="67-81-136">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Bàn ngón tay</option>
+						    <option value="67-81-137">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương chân</option>
+						    <option value="67-81-138">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Háng</option>
+						    <option value="67-81-139">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Xương đùi</option>
+						    <option value="67-81-140">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Khớp gối</option>
+						    <option value="67-81-141">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cổ chân</option>
+						    <option value="67-82">&nbsp;&nbsp;&nbsp;&nbsp; • Da, Tổ chức dưới da, Hệ thống bạch huyết và vú</option>
+						    <option value="67-82-142">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Ap xe</option>
+						    <option value="67-82-143">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Tổn thương lành tính</option>
+						    <option value="67-82-144">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Tổn thương ác tính</option>
+						    <option value="67-82-145">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Nang</option>
+						    <option value="67-82-146">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Bọc hoặc nang cụm lông</option>
+						    <option value="67-82-147">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Hạch</option>
+						    <option value="67-82-148">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Hạch bạch huyết</option>
+						    <option value="67-82-149">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Móng</option>
+						    <option value="67-82-150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Các vật có chân nuôi</option>
+						    <option value="67-82-151">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Tạo hình</option>
+						    <option value="67-82-152">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Lấy chuyển hoặc xoay chuyển tổ chức</option>
+						    <option value="67-82-153">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Vú</option>
+						    <option value="65">⦿ • Bảng tỷ lệ trả tiền thương tật</option>
+						    <option value="65-184">&nbsp;&nbsp;&nbsp;&nbsp; • Thương tật toàn bộ</option>
+						    <option value="65-185">&nbsp;&nbsp;&nbsp;&nbsp; • Thương tật bộ phận</option>
+						    <option value="65-185-186">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Thương tật vĩnh viễn</option>
+						    <option value="65-185-186-265">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Chi Trên (vv)</option>
+						    <option value="65-185-186-267">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Chi Dưới (vv)</option>
+						    <option value="65-185-186-269">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cột Sống (vv)</option>
+						    <option value="65-185-186-270">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Sọ Não (vv)</option>
+						    <option value="65-185-186-272">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Lồng Ngực (vv)</option>
+						    <option value="65-185-186-274">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Bụng (vv)</option>
+						    <option value="65-185-186-276">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cơ quan tiết niệu, sinh dục (vv)</option>
+						    <option value="65-185-186-278">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Mắt (vv)</option>
+						    <option value="65-185-186-279">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Tai –Mũi – Họng (vv)</option>
+						    <option value="65-185-186-280">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Răng - Hàm - Mặt (vv)</option>
+						    <option value="65-185-186-283">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Vết Thương Phần Mềm – Bỏng (vv)</option>
+						    <option value="65-185-187">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Thương tật tạm thời</option>
+						    <option value="65-185-187-266">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Chi Trên (tt)</option>
+						    <option value="65-185-187-268">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Chi Dưới (tt)</option>
+						    <option value="65-185-187-271">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Sọ Não (tt)</option>
+						    <option value="65-185-187-273">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Lồng Ngực (tt)</option>
+						    <option value="65-185-187-275">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Bụng (tt)</option>
+						    <option value="65-185-187-277">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cơ quan tiết niệu, sinh dục (tt)</option>
+						    <option value="65-185-187-281">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Răng - Hàm - Mặt (tt)</option>
+						    <option value="65-185-187-282">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Vết Thương Phần Mềm – Bỏng (tt)</option>
+						    <option value="65-185-187-284">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cột sống (tt)</option>
+						</select>
+		            </div>
+		        </div>
+		        <div class="col-sm-4">
+		            <div class="form-group">
+		                <label>Loại hình: </label>
+		                <select class="form-control" select2>
+		                	<option value="">Tất cả</option>
+		                	<option value="">Vĩnh viễn</option>
+		                	<option value="">Tạm thời</option>
+		                	<option value="">Phẫu thuật</option>
+		                </select>
+		            </div>
+		        </div>
+		    </div>
 
-	    <div class="row">
-	    	<div class="col-sm-4">
-	            <div class="form-group">
-	                <label>Tên bộ phận (Thương tật/ Phẫu thuật): </label>
-	                <input type="text" class="form-control" name="" placeholder="" value="">
-	            </div>
-	        </div>
-	        <div class="col-sm-2">
-	            <div class="form-group">
-	                <label>Tỉ lệ Min: </label>
-	                <input type="text" class="form-control input-float text-right" name="" placeholder="0" value="">
-	            </div>
-	        </div>
-	        <div class="col-sm-2">
-	            <div class="form-group">
-	                <label>Tỉ lệ Max: </label>
-	                <input type="text" class="form-control input-float text-right" name="" placeholder="0" value="">
-	            </div>
-	        </div>
-	        <div class="col-sm-4">
-	            <div class="form-group">
-	                <label>Mức trách nhiệm: </label>
-	                <input type="text" class="form-control input-money text-right" name="" placeholder="0" value="100,000,000">
-	            </div>
-	        </div>
-	    </div>
+		    <div class="row">
+		    	<div class="col-sm-4">
+		            <div class="form-group">
+		                <label>Tên bộ phận (Thương tật/ Phẫu thuật): </label>
+		                <input type="text" class="form-control" name="" placeholder="" value="">
+		            </div>
+		        </div>
+		        <div class="col-sm-2">
+		            <div class="form-group">
+		                <label>Tỉ lệ Min: </label>
+		                <input type="text" class="form-control input-float text-right" name="" placeholder="0" value="">
+		            </div>
+		        </div>
+		        <div class="col-sm-2">
+		            <div class="form-group">
+		                <label>Tỉ lệ Max: </label>
+		                <input type="text" class="form-control input-float text-right" name="" placeholder="0" value="">
+		            </div>
+		        </div>
+		        <div class="col-sm-4">
+		            <div class="form-group">
+		                <label>Mức trách nhiệm: </label>
+		                <input type="text" class="form-control input-money text-right" name="" placeholder="0" value="100,000,000">
+		            </div>
+		        </div>
 
-		<table class="table table-bordered">
+		    </div>
+		    <div class="text-right">
+	            <button type="submit" class="btn bg-primary"><i class="fa fa-filter mr-1"></i>Lọc</button>
+	            <button type="button" class="btn btn-light" data-dismiss="modal"><i class="icon-cross2 mr-1"></i>Hủy điều kiện lọc</button>
+	        </div>
+		</div>
+
+		<table class="table table-bordered datatable"  data-paging="false" data-info="false" data-ordering="false" data-searching="false">
 		    <thead class="thead-light">
 		        <tr>
 		            <th rowspan="2" width="2%" align="center">#</th>

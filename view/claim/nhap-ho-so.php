@@ -1,6 +1,8 @@
 <?php require_once '../../config.php'; ?>
 <?php include_once HEADER; ?>
-
+<?php $GLOBALS["ngay_nhan_ho_so"] = 'remove'; ?>
+<?php $GLOBALS["he_thong_gara"] = 'remove'; ?>
+<?php $GLOBALS["gara_sua_chua"] = 'remove'; ?>
     <body class="sidebar-xs">
 
         <div class="page-content">
