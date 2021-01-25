@@ -36,7 +36,7 @@
 </div>
 
 
-<div class="card border-1 border-dashed border-silver shadow-0 rounded-0 mb-2 ">
+<div class="card border-1 border-dashed border-silver shadow-0 rounded-0 mb-3 ">
     <div class="card-header header-elements-inline pl-0 pr-0" data-action="collapse">
         <p class="card-title text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Thông tin xe giám định</p>
         <div class="header-elements">
@@ -110,13 +110,9 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="row form-group mb-sm-2">
-                            <label class="col-label col-form-label">Giới tính:</label>
-                            <div class="col-content col-content-xs">
-                                <select select2 class="form-control">
-                                    <option>--- Chọn ---</option>
-                                    <option selected>Nam</option>
-                                    <option>Nữ</option>
-                                </select>
+                            <label class="col-label col-form-label">Tên lái xe:</label>
+                            <div class="col-content col-content-md"> 
+                                <input type="text" class="form-control" value="Nguyễn Văn Đạt">
                             </div>
                         </div>
                     </div>
@@ -133,9 +129,13 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="row form-group mb-sm-2">
-                            <label class="col-label col-form-label">Tên lái xe:</label>
-                            <div class="col-content col-content-md"> 
-                                <input type="text" class="form-control" value="Nguyễn Văn Đạt">
+                            <label class="col-label col-form-label">Giới tính:</label>
+                            <div class="col-content col-content-xs">
+                                <select select2 class="form-control">
+                                    <option>--- Chọn ---</option>
+                                    <option selected>Nam</option>
+                                    <option>Nữ</option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -208,30 +208,24 @@
                     </div>
                 </div>
 
-                <hr class="border-dashed border-silver mb-2">
-
-                <div class="row form-group mb-md-2">
-                    <label class="col-label col-form-label">Chuyên viên bồi thường: <span class="text-danger">*</span></label>
-                    <div class="col-content col-content-md">
-                        <select select2 class="form-control">
-                            <option>--- Chọn ---</option>
-                            <option>Lê Văn A</option>
-                            <option>Lê Văn B</option>
-                            <option>Lê Văn C</option>
-                            <option>........</option>
-                        </select>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
 </div>
 
 
-
-
-
+<div class="row form-group mb-md-3">
+    <label class="col-label col-form-label">Chuyên viên bồi thường: <span class="text-danger">*</span></label>
+    <div class="col-content col-content-md">
+        <select select2 class="form-control">
+            <option>--- Chọn ---</option>
+            <option>Lê Văn A</option>
+            <option>Lê Văn B</option>
+            <option>Lê Văn C</option>
+            <option>........</option>
+        </select>
+    </div>
+</div>
 
 <div class="form-box mb-3">
 	<p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Danh sách người tham gia giám định</p>
@@ -699,34 +693,6 @@
             <textarea class="form-control" placeholder="Nhập nội dung..."></textarea>
         </div>
     </div> 
-</div>
-
-<div class="form-box mb-3">
-	<p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Lích sử tổn thất</p>
-	<hr class="border-dashed border-silver mb-2">
-	<div>
-		<table class="table table-bordered datatable"  data-paging="false" data-info="false" data-ordering="false" data-searching="false">
-	        <thead class="thead-light">
-	            <tr>
-	                <th data-orderable="false" class="w1p all text-center">#</th>
-	                <th>Số hồ sơ</th>
-	                <th>Số tiền</th>
-	                <th>Ngày xảy ra</th>
-	                <th>Ngày giải quyết</th>
-	            </tr>
-	        </thead>
-	        <tbody>
-	        	<tr>
-	        		<td></td>
-	        		<td></td>
-	        		<td></td>
-	        		<td></td>
-	        		<td></td>
-	        	</tr>
-	        </tbody>
-	    </table>
-		<i class="text-danger">* Chưa phát sinh</i>
-	</div>
 </div>
 
 <div class="form-box mb-3">

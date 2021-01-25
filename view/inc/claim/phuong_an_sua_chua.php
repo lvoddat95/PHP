@@ -1,4 +1,4 @@
-<div class="tab-style" datatable-tab>
+<div class="tab-style">
     <ul class="nav nav-tabs">
         <li class="nav-item"><a href="#modal_tab1" class="nav-link text-center active show" data-toggle="tab">Thông tin giám định</a></li>
         <li class="nav-item"><a href="#modal_tab2" class="nav-link text-center " data-toggle="tab">Thông tin xe</a></li>
@@ -424,7 +424,7 @@
                         <div class="form-group row">
                             <label class="col-md-8 col-form-label font-weight-normal">- Chi phí cứu hộ(5):</label>
                             <div class="col-md-4 col-content-sm">
-                                <input class="form-control input-money text-right text-danger" type="text" value="0" placeholder="0">
+                                <input class="form-control input-money text-right" type="text" value="0" placeholder="0">
                             </div>
                         </div>
                         <div class="form-group row">
@@ -453,12 +453,6 @@
                             </div>
                         </div>
                         
-                        <div class="form-group row">
-                            <label class="col-md-8 col-form-label">- Tổng chi bồi thường ước tính(10)-(9):</label>
-                            <div class="col-md-4 col-content-sm">
-                                <input class="form-control input-money text-right text-danger font-weight-bold" type="text" value="0" placeholder="0">
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -725,10 +719,10 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
                     </tr>
                 </tbody>
             </table>
