@@ -269,7 +269,7 @@
                                             data-paging="true"
                                             data-info="true"
                                             data-ordering="true"
-                                            data-searching="true"
+                                            data-searching="false"
                                             data-page-length="20">
                                             <thead class="thead-light">
                                                 <tr>

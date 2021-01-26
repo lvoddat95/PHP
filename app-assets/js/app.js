@@ -1620,6 +1620,7 @@ var App = function () {
         // Setting datatable defaults
         $.extend( $.fn.dataTable.defaults, {
             autoWidth: false,
+            processing: true,
             responsive: {
                 details: {
                     type: 'column'
@@ -1632,7 +1633,7 @@ var App = function () {
                     {name: 'mobile-p', width: 320}
                 ]
             },
-            dom: '<"datatable-header"f><"datatable-body"t><"datatable-footer"<"datatable-li"li>p>',
+            dom: '<"datatable-header"fr><"datatable-body"t><"datatable-footer"<"datatable-li"li>p>',
             language: {
                 decimal:        "",
                 emptyTable:     "Không có dữ liệu trong bảng",
@@ -1643,7 +1644,7 @@ var App = function () {
                 thousands:      ",",
                 lengthMenu:     " _MENU_ ",
                 loadingRecords: "Đang tải...",
-                processing:     "Đang xử lý...",
+                processing:     "<i class='fas fa-spinner fa-pulse'></i> Đang xử lý...",
                 search:         "",
                 searchPlaceholder: 'Nhập tìm nhanh...',
                 zeroRecords:    "Không tìm thấy hồ sơ phù hợp",

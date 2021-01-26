@@ -270,8 +270,8 @@
     position: relative;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: start;
-    align-items: flex-start;
+    -ms-flex-align: center;
+    align-items: center;
     padding: 8px 15px;
     padding-right: 20px !important;
     color: #fff;
