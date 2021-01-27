@@ -1240,7 +1240,7 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
 	cursor: pointer;
 	margin-bottom: 0;
     border-radius: 4px;
-    padding: 6px 10px;
+    padding: 6px;
 	transition: background-color ease-in-out 0.15s, color ease-in-out 0.15s;
 }
 
