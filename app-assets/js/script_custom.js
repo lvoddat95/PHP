@@ -185,10 +185,10 @@ var fancybox_modal = function(p_this, p_src){
         },
         baseClass: "fancybox-modal",
         afterLoad : function( instance, current ) {
-            $($.fn.dataTable.tables(true)).DataTable()
-            .columns.adjust()
-            .responsive.recalc();
-            $(".list-files").isotope('layout');
+            // $($.fn.dataTable.tables(true)).DataTable()
+            // .columns.adjust()
+            // .responsive.recalc();
+            // $(".list-files").isotope('layout');
         }
     });
 }

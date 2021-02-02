@@ -238,6 +238,7 @@
                                                                                                 <div class="dropdown">
                                                                                                     <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
                                                                                                     <div class="dropdown-menu dropdown-menu-right">
+                                                                                                        <a href="#" class="dropdown-item" onclick="fancybox_modal(this,'#gxx_sua_doi_bo_sung')"> <i class="icon-pencil7 mr-1"></i> Sửa đổi bổ sung</a>
                                                                                                         <a href="#" data-repeater-delete class="dropdown-item"> <i class="icon-trash mr-1"></i> Xoá đối tượng</a>
                                                                                                         <a href="#"class="dropdown-item"> <i class="icon-alert mr-1"></i> Thông báo lỗi</a>
                                                                                                     </div>
@@ -600,6 +601,7 @@
         <?php inc('quick-action.php'); ?> 
 
         <?php inc('modal/modal_ds_so_hop_dong_xin_cap.php'); ?> 
+        <?php inc('modal/modal_gxx_sua_doi_bo_sung.php'); ?> 
         <?php inc('modal/modal_ds_nguoi_tham_gia_bao_hiem.php'); ?> 
 
         <div class="modal-group">
