@@ -15,7 +15,7 @@
 		    <option>2.6 Hàng chở rời khác</option>
 		</select>
 		<div class="input-group-append">
-			<button type="button" class="btn bg-primary" data-toggle="modal" data-target="#ds_tau_thuyen">+ Thêm phương tiện</button>
+			<button type="button" class="btn bg-primary" data-fancybox data-base-class="fancybox-container-lg" data-type="iframe" data-src="<?php echo HTTP_PATH; ?>view/inc/iframe/iframe_ds_tau_thuyen.php" href="javascript:;">+ Thêm phương tiện</button>
 		</div>
 	</div>
 </div>
