@@ -257,7 +257,6 @@
                                                                                                     </tbody>
                                                                                                 </table>
                                                                                                 <div class="border p-1 text-center">
-                                                                                                    <input class="btn bg-success" data-repeater-create type="button" value="+ Thêm">
                                                                                                     <input class="btn bg-danger" type="button" value="- Xoá nhiều" disabled>
                                                                                                 </div>
                                                                                             </div>

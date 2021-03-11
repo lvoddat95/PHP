@@ -1,9 +1,6 @@
 <?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?>
-<?php $GLOBALS["dk_sua_doi_bo_sung"] = 'g'; ?>
-<?php $GLOBALS["dk_loai_tru"] = 'g05'; ?>
-<?php $GLOBALS["quy_tac"] = 'remove_tra_cuu'; ?>
-
+    
     <body class="sidebar-xs">
 
         <div class="page-content home-page">
@@ -21,7 +18,7 @@
                         </button>
                         <div class="top-left">
                             <div class="breadcrumb">
-                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i> G05 - Bảo hiểm toàn diện học sinh</a>
+                                <a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fa fa-reply mr-1"></i> G01 - Bảo hiểm sức khỏe toàn diện</a>
                                 <span class="breadcrumb-item active">Cập nhập đơn</span>
                             </div>
                             <div class="d-md-none logo-mobile">
@@ -37,7 +34,7 @@
 
                     <div class="page-title">
                         <div class="p-title">
-                            <p class="font-weight-semibold font-size-m mb-0"><i class="icon-certificate mr-2"></i>Thêm mới đơn bảo hiểm</p>
+                            <p class="font-weight-semibold font-size-m mb-0"><i class="icon-pen2 mr-2"></i>Sửa đổi bổ sung đơn bảo hiểm</p>
                             <span class="text-muted d-block font-size-xs">Nhập thông tin theo từng bước. Vui lòng nhập đầy đủ thông tin vào trường bắt buộc có dấu <code>*</code>.</span>
                         </div>
                         <div class="p-button">
@@ -67,6 +64,43 @@
                                                                 <div class="tab-content">
                                                                     <!-- Bước 1 -->
                                                                     <fieldset  class="tab-pane active show" id="step1">
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label>Loại sửa đổi: <span class="text-danger">*</span></label>
+                                                                                    <select class="form-control required" select2 name="">
+                                                                                        <option>--- Chọn ---</option>
+                                                                                        <optio>Giảm phí do điểu khoản No Claim Bonus</option>
+                                                                                        <optio>Thay đổi phạm vi, thời hạn</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label>Hình thức sửa đổi: <span class="text-danger">*</span></label>
+                                                                                    <select class="form-control required" select2 name="" onchange="sua_doi_bo_sung_gxx(this);">
+                                                                                        <option>--- Chọn ---</option>
+                                                                                        <option value="DON_GIAN">1. Chỉ thay đổi các thông tin thông thường</option>
+                                                                                        <option value="TANG_PHI_BH">2. Tăng phí BH (Không thay đổi giá trị BH)</option>
+                                                                                        <option value="GIAM_PHI_BH">3. Giảm phí BH (Không thay đổi giá trị BH)</option>
+                                                                                        <option value="TANG_GIA_TRI_BH">4. Tăng giá trị BH (Tăng phí BH)</option>
+                                                                                        <option value="GIAM_GIA_TRI_BH">5. Giảm giá trị BH (Giảm phí BH)</option>
+                                                                                        <option value="THAY_DOI_NGUOI_DUOC_BH" >8. Thay đổi người được bảo hiểm</option>
+                                                                                        <option value="THAY_DOI_DAI_LY_MOI_GIOI" >7. Thay đổi đại lý, môi giới</option>
+                                                                                        <option value="THAY_DOI_CAU_TRUC_TBH" >6. Thay đổi cấu trúc TBH</option>
+                                                                                        <option value="THAY_DOI_THOI_HAN_BH" >9. Thay đổi thời hạn bảo hiểm</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-8">
+                                                                                <div class="form-group">
+                                                                                    <label>Lí do sửa đổi: <span class="text-danger">*</span></label>
+                                                                                    <textarea class="form-control" placeholder="Nhập nội dung..."></textarea>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
                                                                         <div class="row">
                                                                             <div class="col-md-3">
                                                                                 <?php inc('template/1_thong_tin_chung/kenh_khai_thac.php'); ?> 
@@ -145,54 +179,70 @@
 
                                                                     <!-- Step 2 -->
                                                                     <?php inc('template/2_trung_gian_bao_hiem/2_trung_gian_bao_hiem.php'); ?>
-                                                                
+                                                                    
                                                                     <!-- Step 3 -->
                                                                     <fieldset class="tab-pane" id="step3">
 
-                                                                        <p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Upload thông tin danh sách người tham gia bảo hiểm</p>
-
-                                                                        <div class="row mb-3 align-items-center">
-                                                                            <div class="col-sm-4">
-                                                                                <button class="btn btn-light btn-file mr-3">
-                                                                                    <i class="far fa-upload mr-2"></i> 
-                                                                                    <span class="hidden-xs">Import file</span>
-                                                                                    <input type="file" class="file-input-preview">
-                                                                                </button>
-                                                                            </div>
-                                                                            <div class="col-sm-8">
-                                                                                <p class="mb-0 d-flex justify-content-end align-items-center"><span class="text-danger">Nhấn vào browser để upload dữ liệu từ excel.</span> <a href="" download="" class="text-primary">(Nhấn vào đây để tải file mẫu)</a></p>
+                                                                        <div class="form-group">
+                                                                            <label class="font-weight-semibold">Tìm kiếm theo:</label>
+                                                                            <div class="">
+                                                                                <div class="form-check form-check-inline m-0 mr-4">
+                                                                                    <input type="radio" id="rd01" class="mr-1" name="id01" checked="" value="hoten" onchange="tim_kiem_gxx(this)">
+                                                                                    <label for="rd01" class="form-check-label">Họ tên</label>
+                                                                                </div>
+                                                                                <div class="form-check form-check-inline m-0 flex-grow-1">
+                                                                                    <input type="radio" id="rd02" class="mr-1" name="id01" value="namsinh" onchange="tim_kiem_gxx(this)">
+                                                                                    <label for="rd02" class="form-check-label ml-1">Năm sinh</label>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
-                                                                        
-                                                                        <hr class="border-dashed border-silver mb-3">
+                                                                        <div class="row">
+                                                                            <div class="col-md-3" id="hoten">
+                                                                                <div class="form-group">
+                                                                                    <label class="font-weight-semibold">Tên người được BH:</label>
+                                                                                    <input type="text" class="form-control" name="" placeholder="Nhập tên...">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-2" id="namsinh" style="display: none;">
+                                                                                <div class="form-group">
+                                                                                    <label class="font-weight-semibold">Năm sinh:</label>
+                                                                                    <input type="text" class="form-control input-date datepicker" name="" placeholder="dd/mm/yyyy">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-2">
+                                                                                <div class="form-group">
+                                                                                    <label class="font-weight-semibold">&nbsp;</label>
+                                                                                    <div>
+                                                                                        <button type="submit" style="letter-spacing: 1px;" class="btn text-uppercase bg-orange"><i class="icon-search4 mr-1"></i> Tìm kiếm </button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
 
-                                                                        <div class="form-group" repeater>
-                                                                            <table class="table table-sm table-bordered datatable child-row-sm" data-control-right="true" data-paging="false" data-info="false" data-ordering="false" data-searching="false" >
+                                                                        <div class="form-group mb-3" >
+                                                                            <table class="table table-bordered table-hover datatable child-row-sm" data-control-right="true" data-paging="true" data-info="false" data-ordering="false" data-searching="false">
                                                                                 <thead class="thead-light">
                                                                                     <tr>
                                                                                         <th rowspan="2" class="cell control not-desktop text-center">
                                                                                             <i class="fa fa-ellipsis-v"></i>
                                                                                         </th>
                                                                                         <th rowspan="2" class="w1p text-center"><input type="checkbox" id="input-chk-all"></th>
-                                                                                        <th rowspan="2" class="w10p"><span class="text-danger">*</span> Tên học sinh</th>
+                                                                                        <th rowspan="2" class="w15p"><span class="text-danger">*</span> Người được BH</th>
                                                                                         <th rowspan="2" class="none"><span class="text-danger">*</span> Ngày sinh</th>
-                                                                                        <th rowspan="2" class="none"><span class="text-danger">*</span> Tuổi</th>
-                                                                                        <th rowspan="2" class="none"><span class="text-danger">*</span> Giới tính</th>
-                                                                                        <th rowspan="2" class="none"><span class="text-danger">*</span> Lớp</th>
-                                                                                        <th rowspan="2" class="none"><span class="text-danger">*</span> Cấp học</th>
+                                                                                        <th rowspan="2" class="none">Địa chỉ</th>
+                                                                                        <th rowspan="2" class="none">Email/Số điện thoại</th>
+                                                                                        <th rowspan="2" class="w5p none"><span class="text-danger">*</span> Tuổi</th>
 
-                                                                                        <th rowspan="2" class="none">Tên cha mẹ</th>
-                                                                                        <th rowspan="2" class="none"><span class="text-danger">*</span> Hiệu lực từ ngày</th>
-                                                                                        <th rowspan="2" class="none"><span class="text-danger">*</span> Đến ngày</th>
+                                                                                        <th rowspan="2" class="none"><span class="text-danger">*</span> Hiệu lực: Từ ngày</th>
+                                                                                        <th rowspan="2" class="none"><span class="text-danger">*</span> Hiệu lực: Đến ngày</th>
+               
+                                                                                        <th colspan="3" class="text-center desktop">Phạm vi A</th>
+                                                                                        <th colspan="3" class="text-center desktop">Phạm vi B</th>
+                                                                                        <th colspan="3" class="text-center desktop">Phạm vi C</th>
 
-                                                                                        <th colspan="3" class="text-center">Phạm vi A</th>
-                                                                                        <th colspan="3" class="text-center">Phạm vi B</th>
-                                                                                        <th colspan="3" class="text-center">Phạm vi C</th>
-                                                                                        <th colspan="3" class="text-center">Phạm vi D</th>
-                                                                                        <th rowspan="2" class="w5p none text-center">Phí bảo hiểm</th>
-                                                                                        <th rowspan="2" class="none">Ghi chú</th>
+                                                                                        <th rowspan="2" class="w10p not-mobile text-center">Tổng phí</th>
+                                                                                        <th rowspan="2" class="all w1p"></th>
                                                                                         <th rowspan="2" class="none">Tỉ lệ phí chuẩn / Phí chuẩn</th>
-                                                                                        <th rowspan="2" class="w1p"></th>
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <th class="text-center desktop"><span class="text-danger">*</span> Số tiền BH A</th>
@@ -206,59 +256,47 @@
                                                                                         <th class="text-center desktop"><span class="text-danger">*</span> Số tiền BH C</th>
                                                                                         <th class="w5p text-center "><span class="text-danger">*</span> TL phí C</th>
                                                                                         <th class="text-center desktop">Phí C</th>
-
-                                                                                        <th class="text-center desktop"><span class="text-danger">*</span> Số tiền BH D</th>
-                                                                                        <th class="w5p text-center "><span class="text-danger">*</span> TL phí D</th>
-                                                                                        <th class="text-center desktop">Phí D</th>
                                                                                     </tr>
                                                                                 </thead>
-                                                                                <tbody data-repeater-list="repeater-list">
-                                                                                    <tr data-repeater-item="">
+                                                                                <tbody >
+                                                                                    <tr >
                                                                                         <td class="cell control not-desktop text-center" title="Xem thêm thông tin"></td>
                                                                                         <td class="text-center"><b class="item-level">1.</b> <input type="checkbox" class="input-chk"></td>
-                                                                                        <td><input class="form-control" type="text"></td>
-                                                                                        <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text">
-                                                                                        </td>
-                                                                                        <td><input class="form-control col-content-xs" type="text" disabled=""></td>
-                                                                                        <td><input class="form-control col-content-xs" type="text"></td>
-                                                                                        <td><input class="form-control col-content-xs input-number" type="text"></td>
-                                                                                        <td>
-                                                                                            <div class="col-content-sm">
-                                                                                                <select select2>
-                                                                                                    <option value="">--- Chọn ---</option>
-                                                                                                    <option value="">Mầm non</option>
-                                                                                                    <option value="">Tiểu học</option>
-                                                                                                    <option value="">THCS</option>
-                                                                                                    <option value="">THPT</option>
-                                                                                                    <option value="">TC/CĐ/ĐH/Nghề</option>
-                                                                                                    <option value="">Khác</option>
-                                                                                                </select>
+                                                                                        <td><input type="text" class="form-control" value="TRẦN BÉ NHỎ"></td>
+                                                                                        <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text" value="20/12/1991"></td>
+                                                                                        <td><input class="form-control col-content-lg" type="text" value="53/5 Trần Hưng Đạo, P. Mỹ Thạnh, Tp. Long Xuyên, An Giang"></td>
+                                                                                        <td><input class="form-control col-content-lg" type="text" value=""></td>
+                                                                                        <td><input class="form-control col-content-xs" type="text" disabled value="30"></td>
+
+                                                                                        <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text" value="04/03/2021"></td>
+                                                                                        <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text" value="04/03/2022"></td>
+
+                                                                                        <td align="center"><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" value="686,666,666"></td>
+                                                                                        <td align="center"><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text" disabled value="0.95"></td>
+                                                                                        <td align="center"><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" value="6,523,333"></td>
+
+                                                                                        <td align="center"><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" value="686,666,666"></td>
+                                                                                        <td align="center"><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text" disabled value="0.95"></td>
+                                                                                        <td align="center"><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" value="6,523,333"></td>
+
+                                                                                        <td align="center"><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" value="686,666,666"></td>
+                                                                                        <td align="center"><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text" disabled value="0.95"></td>
+                                                                                        <td align="center"><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" value="6,523,333"></td>
+                                                                                      
+
+                                                                                        <td align="center">19,570,000</td>
+
+                                                                                        <td class="text-center">
+                                                                                            <div class="list-icons">
+                                                                                                <div class="dropdown">
+                                                                                                    <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
+                                                                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                                                                        <a href="#" class="dropdown-item" onclick="fancybox_modal(this,'#gxx_sua_doi_bo_sung')"> <i class="icon-trash mr-1"></i> Sửa đổi bổ sung xoá</a>
+                                                                                                    </div>
+                                                                                                </div>
                                                                                             </div>
                                                                                         </td>
 
-                                                                                        <td><input class="form-control col-content-sm" type="text"></td>
-                                                                                        <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
-                                                                                        <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
-
-                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
-                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.15" type="text" disabled></td>
-                                                                                        <td><input class="form-control input-money text-right" placeholder="0" type="text" ></td>
-
-                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
-                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text" disabled></td>
-                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
-
-                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
-                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text" disabled></td>
-                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
-
-                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
-                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text" disabled></td>
-                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
-
-                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text"></td>
-
-                                                                                        <td><input class="form-control col-content-lg" type="text"></td>
                                                                                         <td>
                                                                                             <table class="table table-bordered">
                                                                                                 <thead>
@@ -266,7 +304,6 @@
                                                                                                         <th colspan="2" class="text-center">A</th>
                                                                                                         <th colspan="2" class="text-center">B</th>
                                                                                                         <th colspan="2" class="text-center">C</th>
-                                                                                                        <th colspan="2" class="text-center">D</th>
                                                                                                     </tr>
                                                                                                     <tr>
                                                                                                         <th class="text-center w10p"><span class="text-danger">*</span> TL phí chuẩn A</th>
@@ -275,8 +312,6 @@
                                                                                                         <th class="text-center">Phí chuẩn B</th>
                                                                                                         <th class="text-center w10p"><span class="text-danger">*</span> TL phí chuẩn C</th>
                                                                                                         <th class="text-center">Phí chuẩn C</th>
-                                                                                                        <th class="text-center w10p"><span class="text-danger">*</span> TL phí chuẩn D</th>
-                                                                                                        <th class="text-center">Phí chuẩn D</th>
                                                                                                     </tr>
                                                                                                 </thead>
                                                                                                 <tbody>
@@ -289,32 +324,17 @@
 
                                                                                                         <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
                                                                                                         <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
-
-                                                                                                        <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
-                                                                                                        <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
                                                                                                     </tr>
                                                                                                 </tbody>    
                                                                                             </table>
                                                                                         </td>
-
-                                                                                        <td  class="text-center">
-                                                                                            <div class="list-icons">
-                                                                                                <div class="dropdown">
-                                                                                                    <a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-gear"></i></a>
-                                                                                                    <div class="dropdown-menu dropdown-menu-right">
-                                                                                                        <a href="#" data-repeater-delete="" class="dropdown-item"> <i class="icon-trash mr-1"></i> Xoá đối tượng</a>
-                                                                                                        <a href="#"class="dropdown-item"> <i class="icon-alert mr-1"></i> Thông báo lỗi</a>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </td>
                                                                                     </tr>
 
+                                                                                    
+                                                                                    
                                                                                 </tbody>
                                                                             </table>
-                                                                            <div class="border p-1 text-center">
-                                                                                <input class="btn bg-danger" type="button" value="- Xoá nhiều" disabled>
-                                                                            </div>
+
                                                                         </div>
 
                                                                         <div class="mb-3 row justify-content-end">
@@ -323,38 +343,33 @@
                                                                                     <thead class="thead-light">
                                                                                         <tr>
                                                                                             <th class="w30p all"></th>
-                                                                                            <th class="desktop">Số tiền bảo hiểm</th>
-                                                                                            <th class="desktop">Phí bảo hiểm</th>
+                                                                                            <th class="desktop text-right">Số tiền bảo hiểm</th>
+                                                                                            <th class="desktop text-right">Phí bảo hiểm</th>
                                                                                         </tr>
                                                                                     </thead>
                                                                                     <tbody>
                                                                                         <tr>
                                                                                             <td>Phạm vi A</td>
-                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
-                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                            <td align="right"><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" value="686,666,666"></td>
+                                                                                            <td align="right"><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" value="6,523,333"></td>
                                                                                         </tr>
                                                                                         <tr>
                                                                                             <td>Phạm vi B</td>
-                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
-                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                            <td align="right"><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" value="686,666,666"></td>
+                                                                                            <td align="right"><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" value="6,523,333"></td>
                                                                                         </tr>
                                                                                         <tr>
                                                                                             <td>Phạm vi C</td>
-                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
-                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Phạm vi D</td>
-                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
-                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                            <td align="right"><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" value="686,666,666"></td>
+                                                                                            <td align="right"><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" value="6,523,333"></td>
                                                                                         </tr>
                                                                                         <tr>
                                                                                             <td>
                                                                                                 <b><i class="far fa-sigma mr-1"></i>Tổng cộng</b>
-                                                                                                <b class="small">(A+B+C+D)</b>
+                                                                                                <b class="small">(A+B+C)</b>
                                                                                             </td>
-                                                                                            <td><input type="text" class="form-control input-money text-right font-weight-bold" value="0" placeholder="0" ></td>
-                                                                                            <td><input type="text" class="form-control input-money text-right font-weight-bold" value="0" placeholder="0" ></td>
+                                                                                            <td align="right"><b>2,059,999,998</b></td>
+                                                                                            <td align="right"><b>19,569,999</b></td>
                                                                                         </tr>
                                                                                         
                                                                                     </tbody>
@@ -377,7 +392,7 @@
                                                                                 <?php inc('template/3_doi_tuong_bao_hiem/PER/goi_bao_hiem.php'); ?>
                                                                             </div>
                                                                         </div>
-                                                                     
+                                                                        
                                                                     </fieldset>
                                                                     
                                                                     <!-- Step 4 -->
@@ -410,7 +425,7 @@
                                                                                             </thead>
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td>1. Phạm vi A (Chết do mọi nguyên nhân)</td>
+                                                                                                    <td>1. Phạm vi A (Chết do ốm đau, bệnh tật, thai sản)</td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right input-float" type="text" value="10"></td>
@@ -419,13 +434,12 @@
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td>
                                                                                                         <select class="form-control " select2 name="dinh_muc" >
-                                                                                                            <option>Nhóm học sinh cấp 3 trở lên</option>    
-                                                                                                            <option>Nhóm học sinh cấp 2 trở xuống</option>    
+                                                                                                            <option>Bảo hiểm sức khỏe</option>
                                                                                                         </select>
                                                                                                     </td>
                                                                                                 </tr>
                                                                                                 <tr>
-                                                                                                    <td>2. Phạm vi B (Thương tật thân thể do tai nạn)</td>
+                                                                                                    <td>2. Phạm vi B (Chết và thương tật thân thể do tai nạn)</td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right input-float" type="text" value="10"></td>
@@ -434,13 +448,12 @@
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td>
                                                                                                         <select class="form-control " select2 name="dinh_muc" >
-                                                                                                            <option>Nhóm học sinh cấp 3 trở lên</option>    
-                                                                                                            <option>Nhóm học sinh cấp 2 trở xuống</option>    
+                                                                                                            <option>Bảo hiểm sức khỏe</option>                                                   
                                                                                                         </select>
                                                                                                     </td>
                                                                                                 </tr>
                                                                                                 <tr>
-                                                                                                    <td>3. Phạm vi C (Phẫu thuật do ốm đau bệnh tật)</td>
+                                                                                                    <td>3. Phạm vi C (Ốm đau, bệnh tật, thai sản phải nằm viện hoặc phẫu thuật)</td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right input-float" type="text" value="10"></td>
@@ -449,23 +462,7 @@
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td>
                                                                                                         <select class="form-control " select2 name="dinh_muc" >
-                                                                                                            <option>Nhóm học sinh cấp 3 trở lên</option>    
-                                                                                                            <option>Nhóm học sinh cấp 2 trở xuống</option>    
-                                                                                                        </select>
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                                <tr>
-                                                                                                    <td>4. Phạm vi D (Nằm viện do ốm đau, bệnh tật, thương tật thân thể do tai nạn)</td>
-                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                    <td><input class="form-control text-right input-float" type="text" value="10"></td>
-                                                                                                    <td><input class="form-control text-right input-money" type="text" value="0"></td>
-                                                                                                    <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
-                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                    <td>
-                                                                                                        <select class="form-control " select2 name="dinh_muc" >
-                                                                                                            <option>Nhóm học sinh cấp 3 trở lên</option>    
-                                                                                                            <option>Nhóm học sinh cấp 2 trở xuống</option>    
+                                                                                                            <option>Bảo hiểm sức khỏe</option>
                                                                                                         </select>
                                                                                                     </td>
                                                                                                 </tr>
@@ -479,15 +476,14 @@
                                                                                                     <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></th>
                                                                                                     <th align="right"></th>
                                                                                                 </tr>
+
                                                                                             </tbody>
-                                                                                                
                                                                                         </table>
-                                                                                                
+                                                                                        
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-
                                                                         <div class="row">
                                                                             <div class="col-md-3">
                                                                                 <div class="form-group">
@@ -551,7 +547,7 @@
                                                                             </div>  
                                                                         </div>
 
-                                                                        <div class="row mb-3">
+                                                                        <div class="row">
                                                                             <div class="col-md-6">
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/thong_tin_ve_thoi_han_thanh_toan.php'); ?>
                                                                             </div>
@@ -559,7 +555,7 @@
                                                                                 <?php inc('template/4_pham_vi_bao_hiem/thanh_toan_tai_ngan_hang.php'); ?>
                                                                             </div>
                                                                         </div>
-
+                                                                    
                                                                         <div class="form-group">
                                                                             <label for="">Thanh toán bảo hiểm: </label>
                                                                             <div class="row">
@@ -577,19 +573,15 @@
                                                                                                 <td class="text-right"><input class="form-control input-money text-right" type="text" value="0"></td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <td>1. Phạm vi A (Chết do mọi nguyên nhân)</td>
+                                                                                                <td>1. Phạm vi A (Chết do ốm đau, bệnh tật, thai sản)</td>
                                                                                                 <td class="text-right">0</td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <td>2. Phạm vi B (Thương tật thân thể do tai nạn)</td>
+                                                                                                <td>2. Phạm vi B (Chết và thương tật thân thể do tai nạn)</td>
                                                                                                 <td class="text-right">0</td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <td>3. Phạm vi C (Phẫu thuật do ốm đau bệnh tật)</td>
-                                                                                                <td class="text-right">0</td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>4. Phạm vi D (Nằm viện do ốm đau, bệnh tật, thương tật thân thể do tai nạn)</td>
+                                                                                                <td>3. Phạm vi C (Ốm đau, bệnh tật, thai sản phải nằm viện hoặc phẫu thuật)</td>
                                                                                                 <td class="text-right">0</td>
                                                                                             </tr>
                                                                                             
@@ -630,11 +622,10 @@
                                                                         </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                
                                                             </form>
 
                                                             <?php inc('template/actions.php'); ?>
-
+                                                            
                                                         </div>
                                                     </div>
                                                 </div>
@@ -649,8 +640,6 @@
                     </div>
                     <!-- /Content-block -->
 
-
-
                     <?php include_once MOBILE_NAV; ?>
                     <?php include_once BOTTOM; ?>
                 </div>
@@ -663,6 +652,7 @@
         <?php inc('quick-action.php'); ?> 
 
         <?php inc('modal/modal_ds_so_hop_dong_xin_cap.php'); ?> 
+        <?php inc('modal/modal_gxx_sua_doi_bo_sung.php'); ?> 
         <?php inc('modal/modal_ds_nguoi_tham_gia_bao_hiem.php'); ?> 
 
         <div class="modal-group">
@@ -676,8 +666,8 @@
         <?php inc('modal/modal_ds_dieu_khoan_loai_tru.php'); ?> 
         <?php inc('modal/modal_dieu_khoan_sua_doi_bo_sung.php'); ?> 
         <?php inc('modal/modal_ds_files.php'); ?>
+        
 
     </body>
 
 <?php include_once FOOTER; ?>
-

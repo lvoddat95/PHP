@@ -54,6 +54,7 @@
                                         <li><a href="<?php echo HTTP_PATH .'view/pages/don-cho-duyet.php'; ?>" class="nav-link"><span class="menu-title">Đơn chờ duyệt</span></a></li>
                                         <li><a href="<?php echo HTTP_PATH .'view/pages/xin-cap-so-hop-dong.php'; ?>" class="nav-link"><span class="menu-title">Xin cấp số hợp đồng</span></a></li>
                                         <li><a href="<?php echo HTTP_PATH .'view/pages/danh-sach-khach-hang.php'; ?>" class="nav-link"><span class="menu-title">Danh sách khách hàng</span></a></li>
+                                        <li><a href="<?php echo HTTP_PATH .'view/pages/sdbs/gxx.php'; ?>" class="nav-link"><span class="menu-title">Sửa đổi bổ sung Gxxx</span></a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item nav-item-submenu">
@@ -67,7 +68,6 @@
                                         <li><a href="<?php echo HTTP_PATH .'view/claim/danh-sach-ton-that.php'; ?>" class="nav-link"><span class="menu-title">Danh sách tổn thất</span></a></li>
                                         <li><a href="<?php echo HTTP_PATH .'view/claim/nhap-thong-bao-ton-that.php'; ?>" class="nav-link"><span class="menu-title">Nhập tổn thất</span></a></li>
                                         <li><a href="<?php echo HTTP_PATH .'view/claim/lap-pasc.php'; ?>" class="nav-link"><span class="menu-title">Lập PASC</span></a></li>
-
                                     </ul>
                                 </li>
                                 <li class="nav-item nav-item-submenu">

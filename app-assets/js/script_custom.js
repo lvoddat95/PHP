@@ -1,18 +1,5 @@
 $(function(){
-$(document).ready(function() {
-            $('#example').DataTable( {
-           "processing": true,
-                "ajax": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/730692/json.txt",
-                "columns": [
-                    { "data": "name" },
-                    { "data": "position" },
-                    { "data": "office" },
-                    { "data": "extn" },
-                    { "data": "start_date" },
-                    { "data": "salary" }
-                ]
-            } );
-        } );
+
     //Sửa lỗi input select2 khi mở modal bootstrap 4
     $.fn.modal.Constructor.prototype._enforceFocus = function () {
         var that = this;

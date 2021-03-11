@@ -202,3 +202,13 @@ var on_change_ngay_di_ngay_ve = function(p_this){
     }
 }
 
+var tim_kiem_gxx = function(p_this){
+    var v_input_value = $(p_this).val();
+    if ( v_input_value == "namsinh") {
+        $('#hoten').hide();
+        $('#namsinh').show();
+    }else{
+        $('#hoten').show();
+        $('#namsinh').hide();
+    }
+}
