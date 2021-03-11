@@ -219,6 +219,23 @@
                                                                             </div>
                                                                         </div>
 
+                                                                        <p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Upload thông tin danh sách người tham gia bảo hiểm</p>
+
+                                                                        <div class="row mb-3 align-items-center">
+                                                                            <div class="col-sm-4">
+                                                                                <button class="btn btn-light btn-file mr-3">
+                                                                                    <i class="far fa-upload mr-2"></i> 
+                                                                                    <span class="hidden-xs">Import file</span>
+                                                                                    <input type="file" class="file-input-preview">
+                                                                                </button>
+                                                                            </div>
+                                                                            <div class="col-sm-8">
+                                                                                <p class="mb-0 d-flex justify-content-end align-items-center"><span class="text-danger">Nhấn vào browser để upload dữ liệu từ excel.</span> <a href="" download="" class="text-primary">(Nhấn vào đây để tải file mẫu)</a></p>
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                        <hr class="border-dashed border-silver mb-3">
+
                                                                         <div class="form-group mb-3" >
                                                                             <table class="table table-bordered table-hover datatable child-row-sm" data-control-right="true" data-paging="true" data-info="false" data-ordering="false" data-searching="false">
                                                                                 <thead class="thead-light">
