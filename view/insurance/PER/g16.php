@@ -91,11 +91,14 @@
                                                                         </div>
 
                                                                         <div class="row">
-                                                                            <div class="col-md-6">
+                                                                            <div class="col-md-4">
                                                                                 <?php inc('template/1_thong_tin_chung/so_don_bao_hiem.php'); ?> 
                                                                             </div>
-                                                                            <div class="col-md-6">
+                                                                            <div class="col-md-4">
                                                                                 <?php inc('template/1_thong_tin_chung/so_gcnbh.php'); ?> 
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/1_thong_tin_chung/so_phan_tach.php'); ?> 
                                                                             </div>
                                                                         </div>
 

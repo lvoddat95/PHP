@@ -72,9 +72,6 @@
                                                                             <div class="col-md-3">
                                                                                 <?php inc('template/1_thong_tin_chung/hinh_thuc_khai_thac.php'); ?> 
                                                                             </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/1_thong_tin_chung/so_don_bao_hiem.php'); ?> 
-                                                                            </div>
                                                                             <div class="col-md-2">
                                                                                 <div class="form-group ">
                                                                                     <label>Đơn tái tục: <a href="#" data-tooltip="tipsy" original-title="Chọn <b style='color: red;'>“Có”</b> nếu là đơn tái tục." data-position="top"><i class="icon-info22"></i></a>
@@ -87,6 +84,15 @@
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/1_thong_tin_chung/so_don_bao_hiem.php'); ?> 
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <?php inc('template/1_thong_tin_chung/so_phan_tach.php'); ?> 
                                                                             </div>
                                                                         </div>
 
