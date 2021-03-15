@@ -82,15 +82,17 @@
                                                                         <div class="form-group" >
                                                                             <div class="row">
                                                                                 <div class="col-md-7" style=" border-radius: 6px; background: #f2f2f2;; padding: 15px;">
-                                                                                    <label class="font-weight-semibold">Tìm kiếm theo:</label>
-                                                                                    <div class="">
-                                                                                        <div class="form-check form-check-inline m-0 mr-4">
-                                                                                            <input type="radio" id="rd01" class="mr-1" name="id01" checked="" value="hoten" onchange="tim_kiem_gxx(this)">
-                                                                                            <label for="rd01" class="form-check-label">Họ tên</label>
-                                                                                        </div>
-                                                                                        <div class="form-check form-check-inline m-0 flex-grow-1">
-                                                                                            <input type="radio" id="rd02" class="mr-1" name="id01" value="namsinh" onchange="tim_kiem_gxx(this)">
-                                                                                            <label for="rd02" class="form-check-label ml-1">Năm sinh</label>
+                                                                                    <div class="mb-2">
+                                                                                        <label class="font-weight-semibold">Tìm kiếm theo:</label>
+                                                                                        <div class="">
+                                                                                            <div class="form-check form-check-inline m-0 mr-4">
+                                                                                                <input type="radio" id="rd01" class="mr-1" name="id01" checked="" value="hoten" onchange="tim_kiem_gxx(this)">
+                                                                                                <label for="rd01" class="form-check-label">Họ tên</label>
+                                                                                            </div>
+                                                                                            <div class="form-check form-check-inline m-0 flex-grow-1">
+                                                                                                <input type="radio" id="rd02" class="mr-1" name="id01" value="namsinh" onchange="tim_kiem_gxx(this)">
+                                                                                                <label for="rd02" class="form-check-label ml-1">Năm sinh</label>
+                                                                                            </div>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="row">
@@ -118,7 +120,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-
+                                                                        
                                                                         <div class="form-group">
                                                                             <div class="row">
                                                                                 <div class="col-md-3">
