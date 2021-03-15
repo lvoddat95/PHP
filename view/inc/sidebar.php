@@ -54,7 +54,8 @@
                                         <li><a href="<?php echo HTTP_PATH .'view/pages/don-cho-duyet.php'; ?>" class="nav-link"><span class="menu-title">Đơn chờ duyệt</span></a></li>
                                         <li><a href="<?php echo HTTP_PATH .'view/pages/xin-cap-so-hop-dong.php'; ?>" class="nav-link"><span class="menu-title">Xin cấp số hợp đồng</span></a></li>
                                         <li><a href="<?php echo HTTP_PATH .'view/pages/danh-sach-khach-hang.php'; ?>" class="nav-link"><span class="menu-title">Danh sách khách hàng</span></a></li>
-                                        <li><a href="<?php echo HTTP_PATH .'view/pages/sdbs/gxx.php'; ?>" class="nav-link"><span class="menu-title">Sửa đổi bổ sung Gxxx</span></a></li>
+                                        <li><a href="<?php echo HTTP_PATH .'view/pages/sdbs/gxx.php'; ?>" class="nav-link"><span class="menu-title">Sửa đổi bổ sung Gxx</span></a></li>
+                                        <li><a href="<?php echo HTTP_PATH .'view/pages/sdbs/bxx.php'; ?>" class="nav-link"><span class="menu-title">Sửa đổi bổ sung Bxx</span></a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item nav-item-submenu">
