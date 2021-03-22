@@ -392,7 +392,7 @@
                                                                         <div class="block">
                                                                             <p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Thông tin người thụ hưởng</p>
                                                                             <div class="form-group">
-                                                                                <label>Người được thụ hưởng: </label>
+                                                                                <label>Người được thụ hưởng 1: </label>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3 col-sm-3">
                                                                                         <input type="text" class="form-control required" placeholder="Nhập tên...">
@@ -408,14 +408,18 @@
                                                                                 </div>
                                                                             </div>
                                                                             <div class="form-group">
+                                                                                <label>Người được thụ hưởng 2: </label>
                                                                                 <div class="row">
+                                                                                    <div class="col-md-3 col-sm-3">
+                                                                                        <input type="text" class="form-control required" placeholder="Nhập tên...">
+                                                                                    </div>
                                                                                     <div class="col-md-3 col-sm-3">
                                                                                         <input type="text" class="form-control required" placeholder="Số HC/CMND">
                                                                                     </div>
                                                                                     <div class="col-md-3 col-sm-3">
                                                                                         <input type="text" class="form-control required" placeholder="Quan hệ">
                                                                                     </div>
-                                                                                    <div class="col-md-6 col-sm-6">
+                                                                                    <div class="col-md-9 col-sm-9 mt-1">
                                                                                         <input type="text" class="form-control required" placeholder="Địa chỉ">
                                                                                     </div>
                                                                                 </div>
