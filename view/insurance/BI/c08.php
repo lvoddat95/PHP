@@ -129,116 +129,45 @@
                                                                        
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <div class="collapse-group">
-                                                                                    <div class="p-title">Phạm vi bảo hiểm: <a href="#" data-tooltip="tipsy" original-title="Chỉ có thể chọn Tổn thất vật chất tự nguyện hoặc Tổn thất vật chất bắt buộc" data-position="top"><i class="icon-info22"></i></a></div>
-                                                                                    <div class="p-body collapse show">
-
-                                                                                        <div class="c-item">
-                                                                                            <div class="c-title">
-                                                                                                <span class="button-switch no-label">
-                                                                                                    <input type="checkbox" id="ckbchild1" class="switch cls_ckb">
-                                                                                                    <label for="ckbchild1" data-off="Không" data-on="Có"></label>
-                                                                                                </span>
-                                                                                                <a data-toggle="collapse" class="collapsed" href="#collapsible-item1">Nồi hơi</a>
-                                                                                            </div>
-                                                
-                                                                                            <div id="collapsible-item1" class="collapse" datatable-collapse>
-                                                                                                <div class="c-body">
-                                                                                                    <table class="table table-bordered datatable" 
-                                                                                                        data-paging="false"
-                                                                                                        data-info="false"
-                                                                                                        data-ordering="false"
-                                                                                                        data-searching="false" >
-                                                                                                        <thead class="thead-light">
-                                                                                                            <tr>
-                                                                                                                <th width="20%">Phạm vi bảo hiểm</th>
-                                                                                                                <th width="17%">Số tiền bảo hiểm</th>
-                                                                                                                <th width="5%" class="desktop">Phí (%)</th>
-                                                                                                                <th width="10%" class="desktop">Phí BH (có VAT)</th>
-                                                                                                                <th width="5%" class="desktop">VAT (%)</th>
-                                                                                                                <th width="10%" class="desktop">VAT</th>
-                                                                                                                <th width="5%" class="desktop">COM (%)</th>
-                                                                                                                <th width="10%" class="desktop">COM</th>
-                                                                                                                <th width="17%" class="desktop">Định mức</th>
-                                                                                                            </tr>
-                                                                                                        </thead>
-                                                                                                        <tbody>
-                                                                                                            <tr>
-                                                                                                                <td>Nồi hơi</td>
-                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
-                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                                <td><input class="form-control text-right input-float" type="text" value="10"></td>
-                                                                                                                <td><input class="form-control text-right input-money" type="text" value="0"></td>
-                                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
-                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                                <td>
-                                                                                                                    <select class="form-control" select2 >
-                                                                                                                        <option>Giá trị bảo hiểm&lt;200 tỷ</option>
-                                                                                                                        <option>Giá trị bảo hiểm từ 200 tỷ đến 1200 tỷ</option>
-                                                                                                                        <option>Giá trị bảo hiểm từ 1200 trở lên</option>
-                                                                                                                    </select>
-                                                                                                                </td>
-                                                                                                            </tr>
-                                                                                                        </tbody>
-                                                                                                    </table>
-                                                                                                    
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-
-                                                                                        <div class="c-item ">
-                                                                                            <div class="c-title">
-                                                                                                <span class="button-switch no-label">
-                                                                                                    <input type="checkbox"  id="ckbchild2" class="switch cls_ckb">
-                                                                                                    <label for="ckbchild2" data-off="Không" data-on="Có"></label>
-                                                                                                </span>
-                                                                                                <a class="collapsed " data-toggle="collapse" href="#collapsible-item2">Gián đoạn kinh doanh</a>
-                                                                                            </div>
-                                                                                            <div id="collapsible-item2" class="collapse" datatable-collapse>
-                                                                                                <div class="c-body">
-                                                                                                    <table class="table table-bordered datatable" 
-                                                                                                        data-paging="false"
-                                                                                                        data-info="false"
-                                                                                                        data-ordering="false"
-                                                                                                        data-searching="false" >
-                                                                                                        <thead class="thead-light">
-                                                                                                            <tr>
-                                                                                                                <th width="20%">Phạm vi bảo hiểm</th>
-                                                                                                                <th width="17%">Số tiền bảo hiểm</th>
-                                                                                                                <th width="5%" class="desktop">Phí (%)</th>
-                                                                                                                <th width="10%" class="desktop">Phí BH (có VAT)</th>
-                                                                                                                <th width="5%" class="desktop">VAT (%)</th>
-                                                                                                                <th width="10%" class="desktop">VAT</th>
-                                                                                                                <th width="5%" class="desktop">COM (%)</th>
-                                                                                                                <th width="10%" class="desktop">COM</th>
-                                                                                                                <th width="17%" class="desktop">Định mức</th>
-                                                                                                            </tr>
-                                                                                                        </thead>
-                                                                                                        <tbody>
-                                                                                                            <tr>
-                                                                                                                <td>Gián đoạn kinh doanh</td>
-                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
-                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                                <td><input class="form-control text-right input-float" type="text" value="10"></td>
-                                                                                                                <td><input class="form-control text-right input-money" type="text" value="0"></td>
-                                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
-                                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
-                                                                                                                <td>
-                                                                                                                    <select class="form-control" select2 >
-                                                                                                                        <option>Giá trị bảo hiểm&lt;200 tỷ</option>
-                                                                                                                        <option>Giá trị bảo hiểm từ 200 tỷ đến 1200 tỷ</option>
-                                                                                                                        <option>Giá trị bảo hiểm từ 1200 trở lên</option>
-                                                                                                                    </select>
-                                                                                                                </td>
-                                                                                                            </tr>
-                                                                                                        </tbody>
-                                                                                                    </table>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
+                                                                                <div class="form-group">
+                                                                                    <table class="table table-bordered datatable" 
+                                                                                        data-paging="false"
+                                                                                        data-info="false"
+                                                                                        data-ordering="false"
+                                                                                        data-searching="false" >
+                                                                                        <thead class="thead-light">
+                                                                                            <tr>
+                                                                                                <th width="20%">Phạm vi bảo hiểm</th>
+                                                                                                <th width="17%">Số tiền bảo hiểm</th>
+                                                                                                <th width="5%" class="desktop">Phí (%)</th>
+                                                                                                <th width="10%" class="desktop">Phí BH (có VAT)</th>
+                                                                                                <th width="5%" class="desktop">VAT (%)</th>
+                                                                                                <th width="10%" class="desktop">VAT</th>
+                                                                                                <th width="5%" class="desktop">COM (%)</th>
+                                                                                                <th width="10%" class="desktop">COM</th>
+                                                                                                <th width="17%" class="desktop">Định mức</th>
+                                                                                            </tr>
+                                                                                        </thead>
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td>Nồi hơi</td>
+                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0" value="0.99"></td>
+                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                <td><input class="form-control text-right input-float" type="text" value="10"></td>
+                                                                                                <td><input class="form-control text-right input-money" type="text" value="0"></td>
+                                                                                                <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
+                                                                                                <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                <td>
+                                                                                                    <select class="form-control" select2 >
+                                                                                                        <option>Giá trị bảo hiểm&lt;200 tỷ</option>
+                                                                                                        <option>Giá trị bảo hiểm từ 200 tỷ đến 1200 tỷ</option>
+                                                                                                        <option>Giá trị bảo hiểm từ 1200 trở lên</option>
+                                                                                                    </select>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
