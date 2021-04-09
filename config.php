@@ -12,6 +12,7 @@ set_include_path(get_include_path() . PATH_SEPARATOR . implode(PATH_SEPARATOR, $
 define('HEADER', 'header.php');
 define('FOOTER', 'footer.php');
 define('SIDEBAR', 'sidebar.php');
+define('SIDEBAR_QLAC', 'sidebar-qlac.php');
 define('MOBILE_NAV', 'mobile-bottom.php');
 define('TOP_RIGHT', 'top-right.php');
 define('BOTTOM', 'bottom.php');

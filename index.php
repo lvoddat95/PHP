@@ -260,7 +260,7 @@
                                     </div>
 
                                     <div class="col-md-4 col-sm-4 col-4">
-                                        <div class="about-box bg-theme-11">
+                                        <div class="about-box bg-theme-11" onclick="location.href='view/qlac/'">
                                             <div class="about-opacity-icon"> <i class="fad fa-file-certificate"
                                                     aria-hidden="true"></i> </div>
                                             <div class="about-main-icon">
