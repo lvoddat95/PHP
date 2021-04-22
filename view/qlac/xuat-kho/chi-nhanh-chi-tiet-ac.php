@@ -1,6 +1,6 @@
 <?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?>
-<?php $GLOBALS["menu"] = 'xuat-kho-can-bo,xuat-kho'; ?>
+<?php $GLOBALS["menu"] = 'xuat-kho-chi-nhanh,xuat-kho'; ?>
 <body>
 
     <div class="page-content home-page">
@@ -34,7 +34,7 @@
 
                 <div class="page-title">
                     <div class="p-title">
-                        <p class="font-weight-semibold font-size-m mb-0"><i class="fad fa-user-friends mr-2"></i>Xuất ấn chỉ cho cán bộ - Ấn chỉ bảo hiểm ô tô</p>
+                        <p class="font-weight-semibold font-size-m mb-0"><i class="fad fa-user-friends mr-2"></i>Xuất ấn chỉ cho phòng ban - Ấn chỉ bảo hiểm ô tô</p>
                     </div>
                     <div class="p-button">
                     </div>
@@ -66,18 +66,12 @@
                                             <p class="text-primary-800 font-weight-bold"><i class="fa fa-layer-minus mr-1"></i>Nơi xuất</p>
                                             <hr class="border-dashed border-silver mb-2">
                                             <div class="row form-group">
-                                                <label class="col-label col-label-150">Phòng ban: <span class="text-danger">*</span></label>
-                                                <div class="col-content col-content-md">
-                                                    <select class="form-control" select2="">
-                                                        <option value="">--- Chọn ---</option>
-                                                        <option value="">Phòng kinh doanh 1</option>
-                                                        <option value="" selected="">Phòng kinh doanh 2</option>
-                                                        <option value="">Phòng kinh doanh 3</option>
-                                                        <option value="">Phòng kinh doanh 4</option>
-                                                        <option value="">Phòng kinh doanh 5</option>
-                                                        <option value="">Phòng Kinh Doanh 6</option>
-                                                        <option value="">Phòng Kinh Doanh 8</option>
-                                                    </select>
+                                                <label class="col-label col-label-150">
+                                                    Đơn vị:
+                                                    <span class="text-danger">*</span> 
+                                                </label>
+                                                <div class="col-content col-content-sm">
+                                                    Sở Giao Dịch
                                                 </div>
                                             </div>
                                             <div class="row form-group">
@@ -121,6 +115,22 @@
                                         <div class="form-box mb-3">
                                             <p class="text-primary-800 font-weight-bold"><i class="fa fa-layer-plus mr-1"></i>Nơi nhận</p>
                                             <hr class="border-dashed border-silver mb-2">
+                                            <div class="row form-group">
+                                                <label class="col-label col-label-150">Phòng ban: <span class="text-danger">*</span></label>
+                                                <div class="col-content col-content-md">
+                                                    <select class="form-control" select2="">
+                                                        <option value="">--- Chọn ---</option>
+                                                        <option value="">Phòng kinh doanh 1</option>
+                                                        <option value="" selected="">Phòng kinh doanh 2</option>
+                                                        <option value="">Phòng kinh doanh 3</option>
+                                                        <option value="">Phòng kinh doanh 4</option>
+                                                        <option value="">Phòng kinh doanh 5</option>
+                                                        <option value="">Phòng Kinh Doanh 6</option>
+                                                        <option value="">Phòng Kinh Doanh 8</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                             
                                             <div class="row form-group">
                                                 <label class="col-label col-label-150">Cán bộ: <span class="text-danger">*</span></label>
                                                 <div class="col-content col-content-md">
