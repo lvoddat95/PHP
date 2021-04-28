@@ -146,8 +146,13 @@
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <div class="form-group">
-                                                                                    <label for="">Trọng tải:</label>
-                                                                                    <input type="text" class="form-control">
+                                                                                    <label for="">Trọng tải: <span class="text-danger">*</span></label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="text" class="form-control input-number text-right" placeholder="0" value="">
+                                                                                        <span class="input-group-append">
+                                                                                            <span class="input-group-text">tấn</span>
+                                                                                        </span>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-3">
