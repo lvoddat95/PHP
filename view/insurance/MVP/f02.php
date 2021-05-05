@@ -1034,8 +1034,13 @@
                                                                                                         >
                                                                                                         <thead class="thead-light">
                                                                                                             <tr>
-                                                                                                                <th class="w15p">Quyền lợi</th>
-                                                                                                                <th class="w15p">Số tiền bảo hiểm</th>
+                                                                                                                <th class="w10p">Quyền lợi</th>
+                                                                                                                <th class="w13p">Mức trách nhiệm/tấn</th>
+                                                                                                                <th class="w7p">Số tấn</th>
+                                                                                                                <th class="none">
+                                                                                                                    <span>Tổng mức trách nhiệm</span> <br> 
+                                                                                                                    <small>(Mức trách nhiệm/tấn x số tấn)</small>
+                                                                                                                </th>
                                                                                                                 <th class="desktop w5p">Phí (%)</th>
                                                                                                                 <th class="desktop w10p">Phí BH (có VAT)</th>
                                                                                                                 <th class="desktop w5p">VAT (%)</th>
@@ -1049,7 +1054,13 @@
                                                                                                             <tr>
                                                                                                                 <td><b>TNDS của chủ xe với hàng hóa</b></td>
                                                                                                                 <td>
-                                                                                                                    <input class="form-control text-right" type="text" value="0" >
+                                                                                                                    <input class="form-control text-right input-money" type="text" value="0" >
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right input-float" type="text" value="0" >
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right input-money" type="text" value="0" >
                                                                                                                 </td>
                                                                                                                 <td>
                                                                                                                     <input class="form-control text-left" style="color: red;" type="text" value="0" >
@@ -1081,6 +1092,7 @@
                                                                                                         </tbody>
                                                                                                     </table>
                                                                                                     <div class="row mt-3">
+
                                                                                                         <div class="col-md-2">
                                                                                                             <div class="form-group">
                                                                                                                 <label>Số tiền BH tiêu chuẩn:</label>
