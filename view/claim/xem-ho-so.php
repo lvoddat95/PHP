@@ -66,6 +66,12 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
+                                            <a href="#claim_qua_trinh_giai_quyet" class="nav-link" data-toggle="tab">
+                                                <i class="fal fa-recycle mr-1"></i>
+                                                <span>Quá trình giải quyết</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
                                             <a href="#claim_thong_bao_boi_thuong" class="nav-link" data-toggle="tab">
                                                 <i class="fal fa-bell-on mr-1"></i>
                                                 <span>Thông báo bồi thường</span>
@@ -342,6 +348,25 @@
                                             <div class="tab-pane-form">
                                                 <div class="">
                                                     <?php inc('claim/3_to_trinh_boi_thuong.php'); ?>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-pane " id="claim_qua_trinh_giai_quyet">
+                                            <div class="tab-pane-action">
+                                                <div class="page-title">
+                                                    <div class="p-title">
+                                                        <p class="t-top"><i class="icon-certificate mr-2"></i>Thêm mới quá trình giải quyết hồ sơ bồi thường</p>
+                                                    </div>
+                                                    <div class="p-button">
+                                                        <a href="javascript:;" class="btn bg-primary"><i class="fa fa-save mr-1"></i> Cập nhập</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-pane-form">
+                                                <div class="container">
+                                                    <?php inc('claim/qua_trinh_giai_quyet.php'); ?>
                                                 </div>
                                             </div>
                                         </div>
