@@ -934,8 +934,8 @@
                                                                                                         <thead class="thead-light">
                                                                                                             <tr>
                                                                                                                 <th class="w15p">Quyền lợi</th>
-                                                                                                                <th class="w10p">Mức trách nhiệm/người</th>
-                                                                                                                <th class="w17p">Đối tượng tham gia</th>
+                                                                                                                <th class="w12p">Mức trách nhiệm/người</th>
+                                                                                                                <th class="w10p">Đối tượng tham gia</th>
                                                                                                                 <th class="none">
                                                                                                                     <span>Tổng mức trách nhiệm</span> <br> 
                                                                                                                     <small>(Mức trách nhiệm/người * Đối tượng tham gia)</small>
@@ -954,7 +954,6 @@
                                                                                                                 <td><b>Tai nạn lái, phụ xe và người ngồi trên xe </b></td>
                                                                                                                 <td>
                                                                                                                     <input class="form-control text-right input-money" type="text" value="0" >
-                                                                                                                    <span>(/người/vụ)</span>
                                                                                                                 </td>
                                                                                                                 <td>
                                                                                                                     <select name="" select2>
@@ -1049,7 +1048,7 @@
                                                                                                         <thead class="thead-light">
                                                                                                             <tr>
                                                                                                                 <th class="w15p">Quyền lợi</th>
-                                                                                                                <th class="w10p">Mức trách nhiệm/tấn</th>
+                                                                                                                <th class="w12p">Mức trách nhiệm/tấn</th>
                                                                                                                 <th class="w10p">Số tấn</th>
                                                                                                                 <th class="none">
                                                                                                                     <span>Tổng mức trách nhiệm</span> <br> 
