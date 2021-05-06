@@ -252,7 +252,7 @@
 
     <div class="card border-1 border-dashed border-silver shadow-0 rounded-0 mb-3">
         <div class="card-header header-elements-inline pl-0 pr-0" data-action="collapse">
-            <p class="card-title text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Phí giám định cho bên thứ 3</p>
+            <p class="card-title text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Thông tin phí giám định</p>
             <div class="header-elements">
                 <div class="list-icons">
                     <a class="list-icons-item rotate-180" data-action="collapse" style="pointer-events: none;"></a>
@@ -266,32 +266,55 @@
        
                 <div class="row form-group">
                     <label class="col-label col-form-label">Đơn vị giám định:</label>
-                    <div class="col-content col-content-sm">
-                        <select select2 class="form-control">
-                            <option>--- Chọn ---</option>
-                            <option>VNI Hải Phòng</option>
-                            <option>VNI Quảng Ninh</option>
-                            <option selected>VNI Bắc Giang</option>
-                            <option>........</option>
-                        </select>
+                    <div class="col-content col-content-md">
+                        <input type="text" class="form-control" placeholder="" value="" />
                     </div>
                 </div>
                 <div class="row form-group">
                     <label class="col-label col-form-label">Cán bộ giám định:</label>
-                    <div class="col-content col-content-sm">
-                        <select select2 class="form-control">
-                            <option>--- Chọn ---</option>
-                            <option>Lê Văn A</option>
-                            <option selected>Lê Văn B</option>
-                            <option>Lê Văn C</option>
-                            <option>........</option>
-                        </select>
+                    <div class="col-content col-content-md">
+                        <input type="text" class="form-control" placeholder="" value="" />
                     </div>
                 </div>
                 <div class="row form-group">
                     <label class="col-label col-form-label">Số tiền:</label>
                     <div class="col-content col-content-sm">
-                        
+                        <input type="text" class="form-control input-money " placeholder="0" value="100,000,000" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card border-1 border-dashed border-silver shadow-0 rounded-0 mb-3">
+        <div class="card-header header-elements-inline pl-0 pr-0" data-action="collapse">
+            <p class="card-title text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Thông tin phí giám định cho bên thứ 3</p>
+            <div class="header-elements">
+                <div class="list-icons">
+                    <a class="list-icons-item rotate-180" data-action="collapse" style="pointer-events: none;"></a>
+                    <a class="list-icons-item" data-fullscreen="remove"></a>
+                </div>
+            </div>
+        </div>
+        <hr class="border-dashed border-silver mx-2 mt-0 mb-1" />
+        <div class="card-body">
+            <div class="card-block">
+       
+                <div class="row form-group">
+                    <label class="col-label col-form-label">Đơn vị giám định:</label>
+                    <div class="col-content col-content-md">
+                        <input type="text" class="form-control" placeholder="" value="" />
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-label col-form-label">Cán bộ giám định:</label>
+                    <div class="col-content col-content-md">
+                        <input type="text" class="form-control" placeholder="" value="" />
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-label col-form-label">Số tiền:</label>
+                    <div class="col-content col-content-sm">
                         <input type="text" class="form-control input-money " placeholder="0" value="100,000,000" />
                     </div>
                 </div>

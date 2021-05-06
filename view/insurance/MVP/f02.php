@@ -926,7 +926,7 @@
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </div>
-                                                                                                    <table class="table table-bordered datatable"
+                                                                                                    <table class="table table-bordered datatable child-row-md"
                                                                                                         data-paging="false"
                                                                                                         data-info="false"
                                                                                                         data-ordering="false"
@@ -934,7 +934,12 @@
                                                                                                         <thead class="thead-light">
                                                                                                             <tr>
                                                                                                                 <th class="w15p">Quyền lợi</th>
-                                                                                                                <th class="w15p">Số tiền bảo hiểm</th>
+                                                                                                                <th class="w10p">Mức trách nhiệm/người</th>
+                                                                                                                <th class="w17p">Đối tượng tham gia</th>
+                                                                                                                <th class="none">
+                                                                                                                    <span>Tổng mức trách nhiệm</span> <br> 
+                                                                                                                    <small>(Mức trách nhiệm/người * Đối tượng tham gia)</small>
+                                                                                                                </th>
                                                                                                                 <th class="desktop w5p">Phí (%)</th>
                                                                                                                 <th class="desktop w10p">Phí BH (có VAT)</th>
                                                                                                                 <th class="desktop w5p">VAT (%)</th>
@@ -948,8 +953,17 @@
                                                                                                             <tr>
                                                                                                                 <td><b>Tai nạn lái, phụ xe và người ngồi trên xe </b></td>
                                                                                                                 <td>
-                                                                                                                    <input class="form-control text-right" type="text" value="0" >
+                                                                                                                    <input class="form-control text-right input-money" type="text" value="0" >
                                                                                                                     <span>(/người/vụ)</span>
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <select name="" select2>
+                                                                                                                        <option>Lái xe</option>
+                                                                                                                        <option selected>Toàn bộ hành khách</option>
+                                                                                                                    </select>
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <input class="form-control text-right input-money col-content-sm" type="text" value="0" >
                                                                                                                 </td>
                                                                                                                 <td>
                                                                                                                     <input class="form-control text-left" style="color: red;" type="text" value="0" >
@@ -1026,7 +1040,7 @@
                                                                                             </div>
                                                                                             <div id="collapsible-item5" class="collapse" datatable-collapse>
                                                                                                 <div class="c-body">
-                                                                                                    <table class="table table-bordered datatable"
+                                                                                                    <table class="table table-bordered datatable child-row-md"
                                                                                                         data-paging="false"
                                                                                                         data-info="false"
                                                                                                         data-ordering="false"
@@ -1034,12 +1048,12 @@
                                                                                                         >
                                                                                                         <thead class="thead-light">
                                                                                                             <tr>
-                                                                                                                <th class="w10p">Quyền lợi</th>
-                                                                                                                <th class="w13p">Mức trách nhiệm/tấn</th>
-                                                                                                                <th class="w7p">Số tấn</th>
+                                                                                                                <th class="w15p">Quyền lợi</th>
+                                                                                                                <th class="w10p">Mức trách nhiệm/tấn</th>
+                                                                                                                <th class="w10p">Số tấn</th>
                                                                                                                 <th class="none">
                                                                                                                     <span>Tổng mức trách nhiệm</span> <br> 
-                                                                                                                    <small>(Mức trách nhiệm/tấn x số tấn)</small>
+                                                                                                                    <small>(Mức trách nhiệm/tấn * số tấn)</small>
                                                                                                                 </th>
                                                                                                                 <th class="desktop w5p">Phí (%)</th>
                                                                                                                 <th class="desktop w10p">Phí BH (có VAT)</th>
@@ -1060,7 +1074,7 @@
                                                                                                                     <input class="form-control text-right input-float" type="text" value="0" >
                                                                                                                 </td>
                                                                                                                 <td>
-                                                                                                                    <input class="form-control text-right input-money" type="text" value="0" >
+                                                                                                                    <input class="form-control text-right input-money col-content-sm" type="text" value="0" >
                                                                                                                 </td>
                                                                                                                 <td>
                                                                                                                     <input class="form-control text-left" style="color: red;" type="text" value="0" >

@@ -4013,6 +4013,9 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
 .child-row-sm tr.child .dtr-title{
     width: 170px;
 }
+.child-row-md tr.child .dtr-title{
+    width: 270px;
+}
 .child-row-title-none tr.child .dtr-title{
     display: none;
 }
@@ -4026,6 +4029,7 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
         width: calc(100% - 125px);
     }
 
+    .child-row-md tr.child .dtr-data,
     .child-row-sm tr.child .dtr-data{
         overflow-y: scroll;
         white-space: nowrap;
@@ -4034,9 +4038,11 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
 
 }
 @media only screen and (max-width: 567px) {
+    .child-row-md tr.child .dtr-title,
     .child-row-sm tr.child .dtr-title{
         width: 120px;
     }
+   
   /*  .col-label{
         width: 95px;
     }
