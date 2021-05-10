@@ -307,6 +307,24 @@
 	        </div>
 	    </div>
 	    <div class="row form-group mb-sm-2">
+	        <label class="col-label col-label-300">- Căn cứ pháp lý:</label>
+	        <div class="col-content col-content-xl">
+		        <textarea class="form-control" placeholder="Nhập nội dung..."></textarea>
+		    </div>
+	    </div>
+	    <div class="row form-group mb-sm-2">
+	        <label class="col-label col-label-300">- Căn cứ theo HĐ GCNBH:</label>
+	        <div class="col-content col-content-xl">
+		        <textarea class="form-control" placeholder="Nhập nội dung..."></textarea>
+		    </div>
+	    </div>
+	    <div class="row form-group mb-sm-2">
+	        <label class="col-label col-label-300">- Căn cứ xét bồi thường:</label>
+	        <div class="col-content col-content-xl">
+		        <textarea class="form-control" placeholder="Nhập nội dung..."></textarea>
+		    </div>
+	    </div>
+	    <div class="row form-group mb-sm-2">
 	        <label class="col-label col-label-300">- Nội dung khác:</label>
 	        <div class="col-content col-content-xl">
 		        <textarea class="form-control" placeholder="Nhập nội dung..."></textarea>
