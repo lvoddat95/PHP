@@ -87,25 +87,30 @@
                                                                                         <div class="">
                                                                                             <div class="form-check form-check-inline m-0 mr-4">
                                                                                                 <input type="radio" id="rd01" class="mr-1" name="id01" checked="" value="hoten" onchange="tim_kiem_gxx(this)">
-                                                                                                <label for="rd01" class="form-check-label">Họ tên</label>
+                                                                                                <label for="rd01" class="form-check-label">Tên tài sản</label>
                                                                                             </div>
                                                                                             <div class="form-check form-check-inline m-0 flex-grow-1">
                                                                                                 <input type="radio" id="rd02" class="mr-1" name="id01" value="namsinh" onchange="tim_kiem_gxx(this)">
-                                                                                                <label for="rd02" class="form-check-label ml-1">Năm sinh</label>
+                                                                                                <label for="rd02" class="form-check-label ml-1">Nhóm tài sản</label>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="row">
                                                                                         <div class="col-md-4 col-xs-8" id="hoten">
                                                                                             <div class="form-group mb-1">
-                                                                                                <label class="font-weight-semibold">Tên người được BH:</label>
+                                                                                                <label class="font-weight-semibold">Tên hạng mục tài sản bh:</label>
                                                                                                 <input type="text" class="form-control" name="" placeholder="Nhập tên...">
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="col-md-4 col-xs-8" id="namsinh" style="display: none;">
                                                                                             <div class="form-group mb-1">
-                                                                                                <label class="font-weight-semibold">Năm sinh:</label>
-                                                                                                <input type="text" class="form-control input-date datepicker" name="" placeholder="dd/mm/yyyy">
+                                                                                                <label class="font-weight-semibold">Nhóm tài sản:</label>
+                                                                                                <select class="form-control" select2="">
+                                                                                                    <option value="">--- Chọn ---</option>
+                                                                                                    <option value="">Nhà xưởng</option>
+                                                                                                    <option value="">Hàng hóa</option>
+                                                                                                    <option value="">Máy móc</option>
+                                                                                                </select>
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="col-md-2 col-xs-2">
