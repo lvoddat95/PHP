@@ -79,15 +79,15 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item nav-item-submenu <?php echo in_array('two', $arr) ? "nav-item-open" : ""; ?>">
+                        <li class="nav-item nav-item-submenu <?php echo in_array('de-nghi-cap-ac', $arr) ? "nav-item-open" : ""; ?>">
                             <a href="javascript:;" class="nav-link <?php echo in_array('one', $arr) ? "active" : ""; ?>">
                                 <i class="fad fa-file-signature fa-fw"></i>
                                 <span class="menu-title">Đề nghị cấp AC</span>
                             </a>
                             <ul class="nav nav-group-sub" scrollbar data-submenu-title="Đề nghị cấp AC">
-                                <li class="nav-item"><a href="" class="nav-link <?php echo in_array('one', $arr) ? "active" : ""; ?>"><span class="menu-title">Đề nghị cấp ấn chỉ của chi nhánh</span></a></li>
-                                <li class="nav-item"><a href="" class="nav-link <?php echo in_array('one', $arr) ? "active" : ""; ?>"><span class="menu-title">Đề nghị cấp ấn chỉ của phòng ban</span></a></li>
-                                <li class="nav-item"><a href="" class="nav-link <?php echo in_array('one', $arr) ? "active" : ""; ?>"><span class="menu-title">Đề nghị cấp ấn chỉ của bộ</span></a></li>
+                                <li class="nav-item"><a href="<?php echo HTTP_PATH ?>view/qlac/de-nghi-cap-ac/chi-nhanh.php" class="nav-link <?php echo in_array('de-nghi-cap-ac-chi-nhanh', $arr) ? "active" : ""; ?>"><span class="menu-title">Đề nghị cấp ấn chỉ của chi nhánh</span></a></li>
+                                <li class="nav-item"><a href="<?php echo HTTP_PATH ?>view/qlac/de-nghi-cap-ac/phong-ban.php" class="nav-link <?php echo in_array('de-nghi-cap-ac-phong-ban', $arr) ? "active" : ""; ?>"><span class="menu-title">Đề nghị cấp ấn chỉ của phòng ban</span></a></li>
+                                <li class="nav-item"><a href="<?php echo HTTP_PATH ?>view/qlac/de-nghi-cap-ac/can-bo.php" class="nav-link <?php echo in_array('de-nghi-cap-ac-can-bo', $arr) ? "active" : ""; ?>"><span class="menu-title">Đề nghị cấp ấn chỉ của bộ</span></a></li>
                             </ul>
                         </li>
 
