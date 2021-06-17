@@ -1,5 +1,13 @@
         <!-- Sidebar -->
-
+<?php 
+    $attr_menu = '';
+    $arr_menu = array();
+    if (!empty($GLOBALS["menu"])) {
+        $attr_menu = $GLOBALS["menu"];
+        $arr_menu = explode(",",$attr_menu);
+    }
+    
+ ?>
         <div id="main-nav" class="sidebar">
             <!-- Mobile Top -->
             <div class="sidebar-mobile-toggler">
@@ -29,7 +37,7 @@
                     <ul class="nav nav-sidebar" data-nav-type="accordion">
 
                         <li class="nav-item">
-                            <a href="<?php echo HTTP_PATH ?>" class="nav-link active" data-menu-title="Bảng điều khiển">
+                            <a href="<?php echo HTTP_PATH ?>" class="nav-link <?php echo in_array('index', $arr_menu) ? "active" : ""; ?>" data-menu-title="Bảng điều khiển">
                                 <i class="fad fa-home fa-fw"></i>
                                 <span class="menu-title">Bảng điều khiển</span>
                             </a>
@@ -60,19 +68,6 @@
                                 </li>
                                 <li class="nav-item nav-item-submenu">
                                     <a href="" class="nav-link">
-                                        <span class="menu-title">Bồi thường</span>
-                                    </a>
-                                    <ul class="nav nav-group-sub">
-                                        <li><a href="<?php echo HTTP_PATH .'view/claim/danh-sach-ho-so.php'; ?>" class="nav-link"><span class="menu-title">Danh sách hồ sơ</span></a></li>
-                                        <li><a href="<?php echo HTTP_PATH .'view/claim/xem-ho-so.php'; ?>" class="nav-link"><span class="menu-title">Xem hồ sơ</span></a></li>
-                                        <li><a href="<?php echo HTTP_PATH .'view/claim/nhap-ho-so.php'; ?>" class="nav-link"><span class="menu-title">Nhập hồ sơ</span></a></li>
-                                        <li><a href="<?php echo HTTP_PATH .'view/claim/danh-sach-ton-that.php'; ?>" class="nav-link"><span class="menu-title">Danh sách tổn thất</span></a></li>
-                                        <li><a href="<?php echo HTTP_PATH .'view/claim/nhap-thong-bao-ton-that.php'; ?>" class="nav-link"><span class="menu-title">Nhập tổn thất</span></a></li>
-                                        <li><a href="<?php echo HTTP_PATH .'view/claim/lap-pasc.php'; ?>" class="nav-link"><span class="menu-title">Lập PASC</span></a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item nav-item-submenu">
-                                    <a href="" class="nav-link">
                                         <span class="menu-title">Địa điểm</span>
                                     </a>
                                     <ul class="nav nav-group-sub">
@@ -86,6 +81,52 @@
                                 <li><a href="<?php echo HTTP_PATH .'view/pages/404.php'; ?>" class="nav-link"><span class="menu-title">Trang 404</span></a></li>
                             </ul>
                         </li>
+
+                        <li class="nav-item nav-item-submenu">
+                            <a href="javascript:;" class="nav-link">
+                                <i class="fad fa-sack-dollar fa-fw"></i>
+                                <span class="menu-title"> Bồi thường</span>
+                            </a>
+                            <ul class="nav nav-group-sub" scrollbar data-submenu-title="Bồi thường">
+                                <li><a href="<?php echo HTTP_PATH .'view/claim/danh-sach-ho-so.php'; ?>" class="nav-link"><span class="menu-title">Danh sách hồ sơ</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/claim/xem-ho-so.php'; ?>" class="nav-link"><span class="menu-title">Xem hồ sơ</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/claim/nhap-ho-so.php'; ?>" class="nav-link"><span class="menu-title">Nhập hồ sơ</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/claim/danh-sach-ton-that.php'; ?>" class="nav-link"><span class="menu-title">Danh sách tổn thất</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/claim/nhap-thong-bao-ton-that.php'; ?>" class="nav-link"><span class="menu-title">Nhập tổn thất</span></a></li>
+                                <li><a href="<?php echo HTTP_PATH .'view/claim/lap-pasc.php'; ?>" class="nav-link"><span class="menu-title">Lập PASC</span></a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item nav-item-submenu <?php echo in_array('tbh', $arr_menu) ? "nav-item-open" : ""; ?>">
+                            <a href="javascript:;" class="nav-link <?php echo in_array('one', $arr_menu) ? "active" : ""; ?>">
+                                <i class="fad fa-repeat fa-fw"></i>
+                                <span class="menu-title"> Tái bảo hiểm</span>
+                            </a>
+
+                            <ul class="nav nav-group-sub" scrollbar data-submenu-title="Tái bảo hiểm">
+                                <li>
+                                    <a href="<?php echo HTTP_PATH .'view/tbh/hop-dong-tbh/'; ?>" class="nav-link <?php echo in_array('hop-dong-tbh', $arr_menu) ? "active" : ""; ?>">
+                                        <span class="menu-title">Hợp đồng tái bảo hiểm</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo HTTP_PATH .'view/tbh/cau-truc-tbh/'; ?>" class="nav-link <?php echo in_array('cau-truc-tbh', $arr_menu) ? "active" : ""; ?>">
+                                        <span class="menu-title">Cấu trúc tái bảo hiểm</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo HTTP_PATH .'view/tbh/in-credit-note/'; ?>" class="nav-link <?php echo in_array('in-credit-note', $arr_menu) ? "active" : ""; ?>">
+                                        <span class="menu-title">In Credit Note</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo HTTP_PATH .'view/tbh/cap-nhap-so-tham-chieu/'; ?>" class="nav-link <?php echo in_array('in-credit-note', $arr_menu) ? "active" : ""; ?>">
+                                        <span class="menu-title">Cập nhập số tham chiếu (ref)</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
 
                         <li class="nav-item nav-item-submenu">
                             <a href="javascript:;" class="nav-link">
@@ -265,24 +306,7 @@
                                 <li><a href="" class="nav-link"><div class="menu-title">I01 - Bảo hiểm dầu khí</div></a></li>
                             </ul>
                         </li>
-                        <li class="nav-item nav-item-submenu">
-                            <a href="javascript:;" class="nav-link">
-                                <i class="fad fa-repeat fa-fw"></i>
-                                <span class="menu-title"> Nhận tái cố định</span>
-                            </a>
-
-                            <ul class="nav nav-group-sub" scrollbar data-submenu-title="Nhận tái cố định">
-                                <li><a href="j01.html" class="nav-link"><span class="menu-title">J01 - Nhận tái cố định nhóm bảo hiểm hàng hóa</span></a></li>
-                                <li><a href="j04.html" class="nav-link"><span class="menu-title">J04 - Nhận tái cố định nhóm bảo hiểm hàng không</span></a></li>
-                                <li><a href="j05.html" class="nav-link"><span class="menu-title">J05 - Nhận tái cố định nhóm bảo hiểm tài sản</span></a></li>
-                                <li><a href="j06.html" class="nav-link"><span class="menu-title">J06 - Nhận tái cố định nhóm bảo hiểm kỹ thuật</span></a></li>
-                                <li><a href="j07.html" class="nav-link"><span class="menu-title">J07 - Nhận tái cố định nhóm bảo hiểm tàu thuyền</span></a></li>
-                                <li><a href="j08.html" class="nav-link"><span class="menu-title">J08 - Nhận tái cố định nhóm bảo hiểm xe cơ giới</span></a></li>
-                                <li><a href="j09.html" class="nav-link"><span class="menu-title">J09 - Nhận tái cố định nhóm bảo hiểm con người</span></a></li>
-                                <li><a href="j10.html" class="nav-link"><span class="menu-title">J10 - Nhận tái cố định nhóm bảo hiểm trách nhiệm</span></a></li>
-                                <li><a href="j11.html" class="nav-link"><span class="menu-title">J11 - Nhận tái cố định nhóm bảo hiểm dầu khí</span></a></li>
-                            </ul>
-                        </li>
+                        
                         
                     </ul>
                 </div>

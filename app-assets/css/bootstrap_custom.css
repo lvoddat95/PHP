@@ -4586,13 +4586,6 @@ a.badge[class*=bg-]:not(.bg-transparent):not(.bg-white):not(.bg-light):hover, a.
 
 
 
-
-
-
-
-
-
-
 .input-group>.form-control-select:not(:last-child) {
 	border-top-right-radius: 4px;
 	border-bottom-right-radius: 4px;
@@ -4741,3 +4734,90 @@ a.badge[class*=bg-]:not(.bg-transparent):not(.bg-white):not(.bg-light):hover, a.
 	font-size: inherit;
 }
 
+.table [class*="thead-"]:first-child tr:first-child th, 
+.table [class*="thead-"]:first-child tr:first-child td{
+	border-left-width: 0;
+}
+.table [class*="thead-"]:first-child tr th:last-child, 
+.table [class*="thead-"]:first-child tr td:last-child {
+    border: 0;
+}
+
+.table .thead-light-1 th{
+    color: #111;
+    background-color: #b5c2c6;
+    border-color: #ddd;
+}
+.table .thead-light-1{
+	border: 1px solid #b5c2c6;
+}
+
+.table .thead-light-2 th{
+    color: #fff;
+    background-color: #418f7e;
+    border-color: #ddd;
+}
+.table .thead-light-2{
+	border: 1px solid #418f7e;
+}
+
+.table .thead-light-3 th{
+    color: #111;
+    background-color: #92cec1;
+    border-color: #ddd;
+}
+.table .thead-light-3{
+	border: 1px solid #92cec1;
+}
+
+.table .thead-light-4 th{
+    color: #fff;
+    background-color: #0f4a60;
+    border-color: #ddd;
+}
+.table .thead-light-4{
+	border: 1px solid #0f4a60;
+}
+
+.table .thead-primary th{
+    background-color: #94d0ff;
+    border-color: #ddd;
+}
+.table .thead-primary{
+	border: 1px solid #94d0ff;
+}
+.table .thead-success th{
+    background-color: #c3e6cb;
+    border-color: #ddd;
+}
+.table .thead-success{
+	border: 1px solid #c3e6cb;
+}
+.table .thead-danger th{
+    background-color: #f5c6cb;
+    border-color: #ddd;
+}
+.table .thead-danger{
+	border: 1px solid #f5c6cb;
+}
+.table .thead-info th{
+    background-color: #bee5eb;
+    border-color: #ddd;
+}
+.table .thead-info{
+	border: 1px solid #bee5eb;
+}
+.table .thead-warning th{
+    background-color: #bee5eb;
+    border-color: #ddd;
+}
+.table .thead-warning{
+	border: 1px solid #bee5eb;
+}
+.table .thead-warning th{
+    background-color: #bee5eb;
+    border-color: #ddd;
+}
+.table .thead-warning{
+	border: 1px solid #bee5eb;
+}

@@ -33,6 +33,7 @@
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/chart/d3.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/chart/d3_tooltip.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/chart/c3.min.js"></script>
+    <script src="<?php echo ASSET_ROOT; ?>/vendors/js/datatable/mark.js(jquery.mark.min.js),datatables.mark.js"></script>
     <!-- /JS Trang-->
 
 	<script src="<?php echo ASSET_ROOT; ?>/js/i18n.js"></script>

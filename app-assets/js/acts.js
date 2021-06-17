@@ -212,3 +212,33 @@ var tim_kiem_gxx = function(p_this){
         $('#namsinh').hide();
     }
 }
+
+var on_change_hinh_thuc_tbh = function(p_this){
+    var v_input_value = $(p_this).val();
+    console.log(v_input_value)
+    if ( v_input_value == "co-dinh" || v_input_value == "ket-hop") {
+        $('#cau-tuc-tai-theo-treaty').slideDown('400');
+        $('#tbh-qs, #tbh-sl').show();
+    }else{
+        $('#cau-tuc-tai-theo-treaty').slideUp('400');
+        $('#tbh-qs, #tbh-sl').hide();
+    }
+
+    if (v_input_value == "ket-hop") {
+        $('#tbh-facout').show();
+        $('#nha-tai-ket-hop-table').show();
+        $('#nha-tai-co-dinh-table').hide();
+        $('#nha-tai-table').hide();
+    }else if( v_input_value == 'co-dinh' ){
+        $('#tbh-facout').hide();
+        $('#nha-tai-ket-hop-table').hide();
+        $('#nha-tai-co-dinh-table').show();
+        $('#nha-tai-table').hide();
+    }else{
+        $('#tbh-facout').hide();
+        $('#nha-tai-ket-hop-table').hide();
+        $('#nha-tai-co-dinh-table').hide();
+        $('#nha-tai-table').show();
+    }
+
+}

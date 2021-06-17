@@ -1671,11 +1671,16 @@ var App = function () {
                 [10, 20, 50, 100, 200, 300, 400, 500, 1000], 
                 [10, 20, 50, 100, 200, 300, 400, 500, 1000]
             ],
+            mark: {
+                element: 'span',
+                className: 'highlight'
+            },
         });
 
         
 
         if (v_table) {
+
             var v_datatable = $(v_table).DataTable({
                 columnDefs: [
                     {
@@ -1685,11 +1690,24 @@ var App = function () {
                     },
                 ]
             });
-            _datatable_responsive_display(v_datatable);
 
-            if ($('.dataTables_search').length > 0) {
-                $('div.dataTables_filter').appendTo('.dataTables_search');
-            }
+            let dt_list = $( v_datatable.tables().containers() );
+            dt_list.each(function(i, e){ 
+                let v_dataTables_search = $(e).find('.dataTables_search');
+                let v_dataTables_filter = $(e).find('.dataTables_filter');
+
+                if ( v_dataTables_search.length > 0 ) {
+
+                    let v_placeholder = v_dataTables_search.attr("placeholder");
+                    v_dataTables_filter.appendTo(v_dataTables_search);
+
+                    if (v_placeholder == undefined) return false;
+                    if ( v_placeholder.length > 0 ){
+                        $(e).find('div.dataTables_filter input').attr("placeholder", v_placeholder);
+                    }
+                }
+            });
+
         } 
 
 
@@ -1915,6 +1933,17 @@ var App = function () {
 
         // Init truoc khi load trang
         initBeforeLoad: function() {
+
+            // Them event show / hide
+            (function ($) {
+              $.each(['show', 'hide'], function (i, ev) {
+                var el = $.fn[ev];
+                $.fn[ev] = function () {
+                  this.trigger(ev);
+                  return el.apply(this, arguments);
+                };
+              });
+            })(jQuery);
 
             // init control responsive
             $('.datatable').each(function(i, e){

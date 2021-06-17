@@ -1231,7 +1231,7 @@ input[type=checkbox]:not(.switch):not(.hc-chk):before {
     justify-content: center;
     opacity: 0;
     border-style: solid;
-    border-width: 0 0.12rem 0.12rem 0;
+    border-width: 0 0.15rem 0.15rem 0;
     border-color: #fff;
     height: 9px;
     top: 1px;
@@ -4228,4 +4228,11 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
 .btn:focus {
     outline: 1px dotted;
     outline: 5px auto -webkit-focus-ring-color;
+}
+
+.box-inner-card{
+    padding: 15px;
+    margin: 0 -15px;
+    background: #f1f5f8;
+    margin-bottom: 20px;
 }

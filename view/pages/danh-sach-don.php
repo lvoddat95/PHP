@@ -265,7 +265,7 @@
                                         </div>
                                     </div>
                                     <div class="card-body">
-                                        <table class="table datatable" 
+                                        <table class="table datatable table-bordered" 
                                             data-paging="true"
                                             data-info="true"
                                             data-ordering="true"

@@ -1,7 +1,7 @@
 <?php require_once 'config.php'; ?>
 
 <?php include_once HEADER; ?>
-
+<?php $GLOBALS["menu"] = 'index'; ?>
 <body>
     <div class="page-content home-page">
 
