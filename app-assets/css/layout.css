@@ -292,6 +292,7 @@
     color: #1c3faa;
 }
 .sidebar ul li.nav-item .nav-group-sub a.nav-link.active {
+    font-weight: 500;
     color: #FF9800;
     background: rgba(255, 255, 255, .1);
 }

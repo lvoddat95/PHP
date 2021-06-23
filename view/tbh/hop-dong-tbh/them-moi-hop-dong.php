@@ -59,7 +59,7 @@
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="row form-group">
-                                                        <label class="col-label col-label-150">
+                                                        <label class="col-label col-label-150 col-form-label">
                                                             Số hợp đồng: 
                                                             <span class="text-danger">*</span> 
                                                         </label>
@@ -70,7 +70,7 @@
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="row form-group">
-                                                        <label class="col-label col-label-150">
+                                                        <label class="col-label col-label-150 col-form-label">
                                                             Ngày hợp đồng: 
                                                         </label>
                                                         <div class="col-content col-content-sm">
@@ -82,7 +82,7 @@
 
                                             <div class="form-group mb-md-2">
                                                 <div class="row form-group">
-                                                    <label class="col-label col-label-150">Thời hạn hợp đồng:</label>
+                                                    <label class="col-label col-label-150 col-form-label">Thời hạn hợp đồng:</label>
                                                     <div class="col-content date-to-date">
                                                         <div class="d-flex">
                                                             <div class="input-group">
@@ -106,14 +106,14 @@
                                             </div>
 
                                             <div class="row form-group">
-                                                <label class="col-label col-label-150">Tiêu đề: <span class="text-danger">*</span></label>
+                                                <label class="col-label col-label-150 col-form-label">Tiêu đề: <span class="text-danger">*</span></label>
                                                 <div class="col-content col-content-xl">
                                                     <input type="text" class="form-control" value="">
                                                 </div>
                                             </div>
 
                                             <div class="row form-group">
-                                                <label class="col-label col-label-150">Phương pháp tái: <span class="text-danger">*</span></label>
+                                                <label class="col-label col-label-150 col-form-label">Phương pháp tái: <span class="text-danger">*</span></label>
                                                 <div class="col-content col-content-md">
                                                     <select select2="" class="form-control">
                                                         <option>--- Chọn ---</option>
@@ -127,7 +127,7 @@
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="row form-group">
-                                                        <label class="col-label col-label-150">TL đồng bảo hiểm cần tính lại treaty: <span class="text-danger">*</span></label>
+                                                        <label class="col-label col-label-150 col-form-label">TL đồng bảo hiểm cần tính lại treaty: <span class="text-danger">*</span></label>
                                                         <div class="col-content col-content-sm">
                                                             <div class="input-group">
                                                                 <input type="text" class="form-control input-number text-center" placeholder="0" value="0" >
@@ -140,7 +140,7 @@
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="row form-group">
-                                                        <label class="col-label col-label-150">TL treaty tính lại<span class="text-danger">*</span></label>
+                                                        <label class="col-label col-label-150 col-form-label">TL treaty tính lại<span class="text-danger">*</span></label>
                                                         <div class="col-content col-content-sm">
                                                             <div class="input-group">
                                                                 <input type="text" class="form-control input-number text-center" placeholder="0" value="0" >
@@ -154,7 +154,7 @@
                                             </div>
 
                                             <div class="row form-group">
-                                                <label class="col-label col-label-150">TL treaty tính lại với đơn nhận tái: <span class="text-danger">*</span></label>
+                                                <label class="col-label col-label-150 col-form-label">TL treaty tính lại với đơn nhận tái: <span class="text-danger">*</span></label>
                                                 <div class="col-content col-content-sm">
                                                     <div class="input-group">
                                                         <input type="text" class="form-control input-number text-center" placeholder="0" value="0" >
@@ -166,7 +166,7 @@
                                             </div>
 
                                             <div class="row form-group">
-                                                <label class="col-label col-label-150">Hoa hồng:</label>
+                                                <label class="col-label col-label-150 col-form-label">Hoa hồng:</label>
                                                 <div class="col-content col-content-sm">
                                                     <div class="input-group">
                                                         <input type="text" class="form-control input-number text-center" placeholder="0" value="0" >
@@ -178,7 +178,7 @@
                                             </div>
 
                                             <div class="row form-group">
-                                                <label class="col-label col-label-150">Thông báo tổn thất ngay:</label>
+                                                <label class="col-label col-label-150 col-form-label">Thông báo tổn thất ngay:</label>
                                                 <div class="col-content col-content-md">
                                                     <div class="input-group">
                                                         <input type="text" class="form-control input-money text-right" placeholder="0" value="0" >
@@ -189,7 +189,7 @@
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-label col-label-150">Thu đòi bồi thường ngay:</label>
+                                                <label class="col-label col-label-150 col-form-label">Thu đòi bồi thường ngay:</label>
                                                 <div class="col-content col-content-md">
                                                     <div class="input-group">
                                                         <input type="text" class="form-control input-money text-right" placeholder="0" value="0" >
@@ -200,14 +200,14 @@
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-label col-label-150">Kì thanh toán:</label>
+                                                <label class="col-label col-label-150 col-form-label">Kì thanh toán:</label>
                                                 <div class="col-content col-content-xs">
                                                     <input type="text" class="form-control input-number text-center" placeholder="0" value="0" >
                                                 </div>
                                             </div>
 
                                             <div class="row form-group">
-                                                <label class="col-label col-label-150">Tình trạng: <span class="text-danger">*</span></label>
+                                                <label class="col-label col-label-150 col-form-label">Tình trạng: <span class="text-danger">*</span></label>
                                                 <div class="col-content col-content-xl d-inline-flex align-items-center">
                                                     <div class="button-switch mr-2">
                                                         <input type="checkbox" id="tttpv" class="switch" name="tttpv" checked="">

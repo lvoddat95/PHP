@@ -58,21 +58,21 @@
                                                 <hr class="border-dashed border-silver mb-2">
 
                                                 <div class="row form-group">
-                                                    <label class="col-label col-label-150">Tên: <span class="text-danger">*</span></label>
+                                                    <label class="col-label col-label-150 col-form-label">Tên: <span class="text-danger">*</span></label>
                                                     <div class="col-content col-content-xl">
                                                         <input type="text" class="form-control" value="bảo an tín">
                                                     </div>
                                                 </div>
 
                                                 <div class="row form-group">
-                                                    <label class="col-label col-label-150">Mô tả:</label>
+                                                    <label class="col-label col-label-150 col-form-label">Mô tả:</label>
                                                     <div class="col-content col-content-xl">
                                                         <textarea class="form-control" placeholder="">Bảo an tín</textarea>
                                                     </div>
                                                 </div>
 
                                                 <div class="row form-group">
-                                                    <label class="col-label col-label-150">Thư mục chứa các mẫu in: </label>
+                                                    <label class="col-label col-label-150 col-form-label">Thư mục chứa các mẫu in: </label>
                                                     <div class="col-content col-content-md">
                                                         <select select2="" class="form-control">
                                                             <option id="" value="" name="">--- Chọn ---</option>
@@ -87,7 +87,7 @@
                                                 </div>
 
                                                 <div class="row form-group">
-                                                    <label class="col-label col-label-150">Thứ tự hiển thị: <span class="text-danger">*</span></label>
+                                                    <label class="col-label col-label-150 col-form-label">Thứ tự hiển thị: <span class="text-danger">*</span></label>
                                                     <div class="col-content col-content-xs">
                                                         <input type="text" class="form-control input-number" placeholder="0" value="1">
                                                     </div>

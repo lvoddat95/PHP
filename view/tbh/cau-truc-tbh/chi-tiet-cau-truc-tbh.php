@@ -1,11 +1,11 @@
-<?php require_once '../../../config.php'; ?>
-<?php include_once HEADER; ?>
-<?php $GLOBALS["menu"] = 'tbh,hop-dong-tbh'; ?>
+<?php require_once '../../../config.php';?>
+<?php include_once HEADER;?>
+<?php $GLOBALS["menu"] = 'tbh,cau-truc-tbh';?>
 <body>
 
     <div class="page-content home-page">
 
-        <?php include_once SIDEBAR; ?>
+        <?php include_once SIDEBAR;?>
 
         <div class="content-wrapper">
 
@@ -23,12 +23,12 @@
                         </div>
                         <div class="d-md-none logo-mobile">
                             <a href="<?php echo HTTP_PATH; ?>" class="logo-text">
-                                <div class="logo-img"><img src="<?php echo HTTP_PATH .'app-assets/images/logo/logo2.png'; ?>" alt="VNI Logo"></div>
+                                <div class="logo-img"><img src="<?php echo HTTP_PATH . 'app-assets/images/logo/logo2.png'; ?>" alt="VNI Logo"></div>
                                 <span class="text align-middle" style="font-weight: 900;">VNI</span>
                             </a>
                         </div>
                     </div>
-                    <?php include_once TOP_RIGHT; ?>
+                    <?php include_once TOP_RIGHT;?>
                 </div>
                 <!-- /Header -->
 
@@ -58,73 +58,73 @@
                                             <hr class="border-dashed border-silver mb-2">
 
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label">Đơn bảo hiểm số:</label>
+                                                <label class="col-label col-form-label">Đơn bảo hiểm số:</label>
                                                 <div class="col-content">
                                                     <span>012000007/B01</span>
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label">Loại hình bảo hiểm:</label>
+                                                <label class="col-label col-form-label">Loại hình bảo hiểm:</label>
                                                 <div class="col-content">
                                                     B01 - Bảo hiểm hỏa hoạn và các rủi ro đặc biệt
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label">Thời hạn bảo hiểm:</label>
+                                                <label class="col-label col-form-label">Thời hạn bảo hiểm:</label>
                                                 <div class="col-content">
                                                     24/08/2020 đến 24/08/2021
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label">Người được bảo hiểm:</label>
+                                                <label class="col-label col-form-label">Người được bảo hiểm:</label>
                                                 <div class="col-content">
                                                     CÔNG TY TNHH FOSECA VIỆT NAM
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label">Địa chỉ:</label>
+                                                <label class="col-label col-form-label">Địa chỉ:</label>
                                                 <div class="col-content">
                                                     SỐ 18, ĐƯỜNG 10, KHU ĐÔ THỊ VÀ DỊCH VỤ VSIP Bắc Ninh. xã Đại Đồng, huyện Tiên Du, Bắc Ninh
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label">Tình trạng tái:</label>
+                                                <label class="col-label col-form-label">Tình trạng tái:</label>
                                                 <div class="col-content">
                                                     Chưa xác định
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label">Loại tiền trên đơn:</label>
+                                                <label class="col-label col-form-label">Loại tiền trên đơn:</label>
                                                 <div class="col-content">
                                                     VND
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label">Số tiền bảo hiểm:</label>
+                                                <label class="col-label col-form-label">Số tiền bảo hiểm:</label>
                                                 <div class="col-content">
                                                     1,311,992,212,990
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label">Phí bảo hiểm: <br><i>(chưa VAT)</i></label>
+                                                <label class="col-label col-form-label">Phí bảo hiểm: <br><i>(chưa VAT)</i></label>
                                                 <div class="col-content">
                                                     655,996,106
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label">Phí bảo hiểm tính tái: <br><i>(chưa VAT)</i></label>
+                                                <label class="col-label col-form-label">Phí bảo hiểm tính tái: <br><i>(chưa VAT)</i></label>
                                                 <div class="col-content">
                                                     65,599,610
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label">TL bảo hiểm trên đơn gốc(%):</label>
+                                                <label class="col-label col-form-label">TL bảo hiểm trên đơn gốc(%):</label>
                                                 <div class="col-content">
                                                     10
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label">Ban NV xác nhận:</label>
+                                                <label class="col-label col-form-label">Ban NV xác nhận:</label>
                                                 <div class="col-content">
                                                     <span class="badge badge-dark">Chưa xác nhận</span>
                                                 </div>
@@ -132,10 +132,10 @@
                                             <button type="button" class="btn btn-primary mt-2" onclick="fancybox_modal(this,'#chon_pham_vi_tinh_tai')">
                                                 <span class="hidden-xs">Chọn phạm vi tính tái</span>
                                             </button>
-                                            <?php inc('modal/tbh/chon_pham_vi_tinh_tai.php'); ?>
-                                           
+                                            <?php inc('modal/tbh/chon_pham_vi_tinh_tai.php');?>
+
                                         </div>
-                               
+
                                         <div class="card card-radio border-1 border-dashed border-silver shadow-0 rounded-0 mb-3">
                                             <div class="card-header header-elements-inline" >
                                                 <p class="card-title text-primary-800 font-weight-bold">Hình thức tái <span class="text-danger">*</span></p>
@@ -203,7 +203,7 @@
                                                     <div class="row form-group mb-sm-2">
                                                         <label class="col-label col-form-label">Hợp đồng TBH:</label>
                                                         <div class="col-content col-content-lg">
-                                                            <?php inc('template/tbh/hop_dong_tai_select_box.php'); ?>
+                                                            <?php inc('template/tbh/hop_dong_tai_select_box.php');?>
                                                         </div>
                                                     </div>
 
@@ -225,7 +225,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                           
+
                                                     <div class="row form-group mb-sm-2">
                                                         <label class="col-label col-form-label">Mã:</label>
                                                         <div class="col-content col-content-sm">
@@ -253,7 +253,7 @@
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <table class="table datatable table-" data-paging="false" data-info="false" data-ordering="false" data-searching="false">
+                                                    <table class="table datatable table-bordered" data-paging="false" data-info="false" data-ordering="false" data-searching="false">
                                                         <thead class="thead-light">
                                                             <tr>
                                                                 <th class="all w20p"></th>
@@ -328,7 +328,7 @@
                                                         </thead>
                                                         <tbody data-repeater-list="treaty-limit">
                                                             <tr data-repeater-item>
-                                                                <td><?php inc('template/tbh/nha_tai_select_box.php', false); ?></td>
+                                                                <td><?php inc('template/tbh/nha_tai_select_box.php', false);?></td>
                                                                 <td><input class="form-control text-center input-float" type="text" name="" value="" placeholder="0.0"></td>
                                                                 <td><input class="form-control text-right input-money" type="text" name="" value="" placeholder="0"></td>
                                                                 <td><input class="form-control text-right input-money" type="text" name="" value="" placeholder="0"></td>
@@ -360,7 +360,7 @@
                                                         </thead>
                                                         <tbody data-repeater-list="treaty-limit">
                                                             <tr data-repeater-item>
-                                                                <td><?php inc('template/tbh/nha_tai_select_box.php', false); ?></td>
+                                                                <td><?php inc('template/tbh/nha_tai_select_box.php', false);?></td>
                                                                 <td><input class="form-control text-center input-float" type="text" name="" value="" placeholder="0.0"></td>
                                                                 <td><input class="form-control text-center input-float" type="text" name="" value="" placeholder="0.0"></td>
                                                                 <td><input class="form-control text-center input-float" type="text" name="" value="" placeholder="0.0"></td>
@@ -396,7 +396,7 @@
                                                         </thead>
                                                         <tbody data-repeater-list="treaty-limit">
                                                             <tr data-repeater-item>
-                                                                <td><?php inc('template/tbh/nha_tai_select_box.php', false); ?></td>
+                                                                <td><?php inc('template/tbh/nha_tai_select_box.php', false);?></td>
                                                                 <td><input class="form-control text-center input-float" type="text" name="" value="" placeholder="0.0"></td>
                                                                 <td><input class="form-control text-center input-float" type="text" name="" value="" placeholder="0.0"></td>
                                                                 <td><input class="form-control text-center input-float" type="text" name="" value="" placeholder="0.0"></td>
@@ -426,7 +426,7 @@
 
                                         <div class="form-box mb-3">
                                             <div class="row form-group mb-md-2">
-                                                <label class="col-label">Ý kiến(Khi từ chối xác định cấu trúc TBH)  </label>
+                                                <label class="col-label col-form-label">Ý kiến(Khi từ chối xác định cấu trúc TBH)  </label>
                                                 <div class="col-content">
                                                     <textarea class="form-control" placeholder="Nhập nội dung..."></textarea>
                                                 </div>
@@ -439,19 +439,19 @@
                         </div>
                     </div>
                 </div>
-                    <!-- /Content-block -->
+                <!-- /Content-block -->
 
-                    <?php include_once MOBILE_NAV; ?>
-                    <?php include_once BOTTOM; ?>
+                    <?php include_once MOBILE_NAV;?>
+                    <?php include_once BOTTOM;?>
                 </div>
 
             </div>
 
         </div>
-        <?php inc('modal/qlac/cap_nhap_kenh_ban.php'); ?>
+        <?php inc('modal/qlac/cap_nhap_kenh_ban.php');?>
 
 
 
 </body>
 
-<?php include_once FOOTER; ?>
+<?php include_once FOOTER;?>

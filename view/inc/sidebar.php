@@ -120,7 +120,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo HTTP_PATH .'view/tbh/cap-nhap-so-tham-chieu/'; ?>" class="nav-link <?php echo in_array('in-credit-note', $arr_menu) ? "active" : ""; ?>">
+                                    <a href="<?php echo HTTP_PATH .'view/tbh/cap-nhap-so-tham-chieu/'; ?>" class="nav-link <?php echo in_array('cap-nhap-so-tham-chieu', $arr_menu) ? "active" : ""; ?>">
                                         <span class="menu-title">Cập nhập số tham chiếu (ref)</span>
                                     </a>
                                 </li>

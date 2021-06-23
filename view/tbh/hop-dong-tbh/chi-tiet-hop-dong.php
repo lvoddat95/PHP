@@ -1,11 +1,11 @@
-<?php require_once '../../../config.php'; ?>
-<?php include_once HEADER; ?>
-<?php $GLOBALS["menu"] = 'tbh,hop-dong-tbh'; ?>
+<?php require_once '../../../config.php';?>
+<?php include_once HEADER;?>
+<?php $GLOBALS["menu"] = 'tbh,hop-dong-tbh';?>
 <body>
 
     <div class="page-content home-page">
 
-        <?php include_once SIDEBAR; ?>
+        <?php include_once SIDEBAR;?>
 
         <div class="content-wrapper">
 
@@ -23,12 +23,12 @@
                         </div>
                         <div class="d-md-none logo-mobile">
                             <a href="<?php echo HTTP_PATH; ?>" class="logo-text">
-                                <div class="logo-img"><img src="<?php echo HTTP_PATH .'app-assets/images/logo/logo2.png'; ?>" alt="VNI Logo"></div>
+                                <div class="logo-img"><img src="<?php echo HTTP_PATH . 'app-assets/images/logo/logo2.png'; ?>" alt="VNI Logo"></div>
                                 <span class="text align-middle" style="font-weight: 900;">VNI</span>
                             </a>
                         </div>
                     </div>
-                    <?php include_once TOP_RIGHT; ?>
+                    <?php include_once TOP_RIGHT;?>
                 </div>
                 <!-- /Header -->
 
@@ -59,9 +59,9 @@
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="row form-group">
-                                                        <label class="col-label col-label-150">
-                                                            Số hợp đồng: 
-                                                            <span class="text-danger">*</span> 
+                                                        <label class="col-label col-label-150 col-form-label">
+                                                            Số hợp đồng:
+                                                            <span class="text-danger">*</span>
                                                         </label>
                                                         <div class="col-content col-content-sm">
                                                             <input type="text" class="form-control " placeholder="" value="006/2021" >
@@ -70,8 +70,8 @@
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="row form-group">
-                                                        <label class="col-label col-label-150">
-                                                            Ngày hợp đồng: 
+                                                        <label class="col-label col-label-150 col-form-label">
+                                                            Ngày hợp đồng:
                                                         </label>
                                                         <div class="col-content col-content-sm">
                                                             <input type="text" class="form-control input-date datepicker " placeholder="dd/mm/yyyy" value="01/02/2021">
@@ -82,7 +82,7 @@
 
                                             <div class="form-group mb-md-2">
                                                 <div class="row form-group">
-                                                    <label class="col-label col-label-150">Thời hạn hợp đồng:</label>
+                                                    <label class="col-label col-label-150 col-form-label">Thời hạn hợp đồng:</label>
                                                     <div class="col-content date-to-date">
                                                         <div class="d-flex">
                                                             <div class="input-group">
@@ -106,14 +106,14 @@
                                             </div>
 
                                             <div class="row form-group">
-                                                <label class="col-label col-label-150">Tiêu đề: <span class="text-danger">*</span></label>
+                                                <label class="col-label col-label-150 col-form-label">Tiêu đề: <span class="text-danger">*</span></label>
                                                 <div class="col-content col-content-xl">
                                                     <input type="text" class="form-control" value="Hợp đồng TBH tỷ lệ Bảo An Tín 2021-2024">
                                                 </div>
                                             </div>
 
                                             <div class="row form-group">
-                                                <label class="col-label col-label-150">Phương pháp tái: <span class="text-danger">*</span></label>
+                                                <label class="col-label col-label-150 col-form-label">Phương pháp tái: <span class="text-danger">*</span></label>
                                                 <div class="col-content col-content-md">
                                                     <select select2="" class="form-control" disabled="">
                                                         <option>--- Chọn ---</option>
@@ -127,7 +127,7 @@
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="row form-group">
-                                                        <label class="col-label col-label-150">TL đồng bảo hiểm cần tính lại treaty: <span class="text-danger">*</span></label>
+                                                        <label class="col-label col-label-150 col-form-label">TL đồng bảo hiểm cần tính lại treaty: <span class="text-danger">*</span></label>
                                                         <div class="col-content col-content-sm">
                                                             <div class="input-group">
                                                                 <input type="text" class="form-control input-number text-center" placeholder="0" value="0" >
@@ -140,7 +140,7 @@
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="row form-group">
-                                                        <label class="col-label col-label-150">TL treaty tính lại<span class="text-danger">*</span></label>
+                                                        <label class="col-label col-label-150 col-form-label">TL treaty tính lại<span class="text-danger">*</span></label>
                                                         <div class="col-content col-content-sm">
                                                             <div class="input-group">
                                                                 <input type="text" class="form-control input-number text-center" placeholder="0" value="0" >
@@ -154,7 +154,7 @@
                                             </div>
 
                                             <div class="row form-group">
-                                                <label class="col-label col-label-150">TL treaty tính lại với đơn nhận tái: <span class="text-danger">*</span></label>
+                                                <label class="col-label col-label-150 col-form-label">TL treaty tính lại với đơn nhận tái: <span class="text-danger">*</span></label>
                                                 <div class="col-content col-content-sm">
                                                     <div class="input-group">
                                                         <input type="text" class="form-control input-number text-center" placeholder="0" value="0" >
@@ -166,7 +166,7 @@
                                             </div>
 
                                             <div class="row form-group">
-                                                <label class="col-label col-label-150">Hoa hồng:</label>
+                                                <label class="col-label col-label-150 col-form-label">Hoa hồng:</label>
                                                 <div class="col-content col-content-sm">
                                                     <div class="input-group">
                                                         <input type="text" class="form-control input-number text-center" placeholder="0" value="0" >
@@ -178,7 +178,7 @@
                                             </div>
 
                                             <div class="row form-group">
-                                                <label class="col-label col-label-150">Thông báo tổn thất ngay:</label>
+                                                <label class="col-label col-label-150 col-form-label">Thông báo tổn thất ngay:</label>
                                                 <div class="col-content col-content-md">
                                                     <div class="input-group">
                                                         <input type="text" class="form-control input-money text-right" placeholder="0" value="50,000" >
@@ -189,7 +189,7 @@
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-label col-label-150">Thu đòi bồi thường ngay:</label>
+                                                <label class="col-label col-label-150 col-form-label">Thu đòi bồi thường ngay:</label>
                                                 <div class="col-content col-content-md">
                                                     <div class="input-group">
                                                         <input type="text" class="form-control input-money text-right" placeholder="0" value="50,000" >
@@ -200,14 +200,14 @@
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-label col-label-150">Kì thanh toán:</label>
+                                                <label class="col-label col-label-150 col-form-label">Kì thanh toán:</label>
                                                 <div class="col-content col-content-xs">
                                                     <input type="text" class="form-control input-number text-center" placeholder="0" value="4" >
                                                 </div>
                                             </div>
 
                                             <div class="row form-group">
-                                                <label class="col-label col-label-150">Tình trạng: <span class="text-danger">*</span></label>
+                                                <label class="col-label col-label-150 col-form-label">Tình trạng: <span class="text-danger">*</span></label>
                                                 <div class="col-content col-content-xl d-inline-flex align-items-center">
                                                     <div class="button-switch mr-2">
                                                         <input type="checkbox" id="tttpv" class="switch" name="tttpv" checked="" disabled="">
@@ -236,14 +236,14 @@
                                                     <tbody data-repeater-list="danh-sach-nha-tai">
                                                         <tr data-repeater-item style="display: none">
                                                             <td>
-                                                                <?php inc('template/tbh/nha_tai_select_box.php', false); ?> 
+                                                                <?php inc('template/tbh/nha_tai_select_box.php', false);?>
                                                             </td>
                                                             <td><input type="text" class="form-control input-float text-center" value="" placeholder="0"></td>
                                                             <td><a href="javascript:;" data-repeater-delete="" class="d-flex align-items-center font-weight-bold text-danger"><i class="icon-trash mr-1"></i>Xoá</a></td>
                                                         </tr>
                                                         <tr data-repeater-item>
                                                             <td>
-                                                                <?php inc('template/tbh/nha_tai_select_box.php', false); ?> 
+                                                                <?php inc('template/tbh/nha_tai_select_box.php', false);?>
                                                             </td>
                                                             <td><input type="text" class="form-control input-float text-center" value="100" placeholder="0"></td>
                                                             <td><a href="javascript:;" data-repeater-delete="" class="d-flex align-items-center font-weight-bold text-danger"><i class="icon-trash mr-1"></i>Xoá</a></td>
@@ -306,14 +306,14 @@
                                                     </tbody>
                                                 </table>
                                                 <div class="border p-1" style="margin-top: -1px;">
-                                                    <a href="<?php echo HTTP_PATH .'view/tbh/hop-dong-tbh/them-moi-hop-dong.php'; ?>" class="d-flex align-items-center justify-content-center font-weight-bold text-success"><i class="far fa-plus-circle mr-1"></i>Thêm</a>
+                                                    <a href="<?php echo HTTP_PATH . 'view/tbh/hop-dong-tbh/them-moi-hop-dong.php'; ?>" class="d-flex align-items-center justify-content-center font-weight-bold text-success"><i class="far fa-plus-circle mr-1"></i>Thêm</a>
                                                 </div>
                                             </div>
 
-                                          
+
                                         </div>
 
-                                        
+
 
                                     </div>
                                 </div>
@@ -323,17 +323,17 @@
                 </div>
                 <!-- /Content-block -->
 
-                <?php include_once MOBILE_NAV; ?>
-                <?php include_once BOTTOM; ?>
+                <?php include_once MOBILE_NAV;?>
+                <?php include_once BOTTOM;?>
             </div>
 
         </div>
 
     </div>
-    <?php inc('modal/qlac/cap_nhap_kenh_ban.php'); ?>
+    <?php inc('modal/qlac/cap_nhap_kenh_ban.php');?>
 
 
 
 </body>
 
-<?php include_once FOOTER; ?>
+<?php include_once FOOTER;?>

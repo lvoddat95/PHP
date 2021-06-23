@@ -28,37 +28,37 @@
                             <tr>
                                 <td class="text-center">1</td>
                                 <td><input class="form-control" type="text" name="" value="Cháy nổ tự nguyện" placeholder=""></td>
-                                <td><input class="form-control input-money" type="text" name="" value="" placeholder="0"></td>
-                                <td><input class="form-control input-float" type="text" name="" value="" placeholder="0.0"></td>
-                                <td><input class="form-control input-money" type="text" name="" value="" placeholder="0"></td>
-                                <td><input class="form-control input-float" type="text" name="" value="" placeholder="0.0"></td>
-                                <td><input class="form-control input-money" type="text" name="" value="" placeholder="0"></td>
-                                <td><input class="form-control input-float" type="text" name="" value="" placeholder="0.0"></td>
-                                <td><input class="form-control input-money" type="text" name="" value="" placeholder="0"></td>
+                                <td><input class="form-control input-money text-right" type="text" name="" value="" placeholder="0"></td>
+                                <td><input class="form-control input-float text-center" type="text" name="" value="" placeholder="0.0"></td>
+                                <td><input class="form-control input-money text-right" type="text" name="" value="" placeholder="0"></td>
+                                <td><input class="form-control input-float text-center" type="text" name="" value="" placeholder="0.0"></td>
+                                <td><input class="form-control input-money text-right" type="text" name="" value="" placeholder="0"></td>
+                                <td><input class="form-control input-float text-center" type="text" name="" value="" placeholder="0.0"></td>
+                                <td><input class="form-control input-money text-right" type="text" name="" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="checkbox" name="" value="" checked=""></td>
                             </tr>
                             <tr>
                                 <td class="text-center">2</td>
                                 <td><input class="form-control" type="text" name="" value="Cháy nổ bắt buộc" placeholder=""></td>
-                                <td><input class="form-control input-money" type="text" name="" value="1,311,992,212,990" placeholder=""></td>
-                                <td><input class="form-control input-float" type="text" name="" value="0" placeholder=""></td>
-                                <td><input class="form-control input-money" type="text" name="" value="655,996,106" placeholder=""></td>
-                                <td><input class="form-control input-float" type="text" name="" value="" placeholder="0.0"></td>
-                                <td><input class="form-control input-money" type="text" name="" value="" placeholder="0"></td>
-                                <td><input class="form-control input-float" type="text" name="" value="" placeholder="0.0"></td>
-                                <td><input class="form-control input-money" type="text" name="" value="" placeholder="0"></td>
+                                <td><input class="form-control input-money text-right" type="text" name="" value="1,311,992,212,990" placeholder=""></td>
+                                <td><input class="form-control input-float text-center" type="text" name="" value="0" placeholder=""></td>
+                                <td><input class="form-control input-money text-right" type="text" name="" value="655,996,106" placeholder=""></td>
+                                <td><input class="form-control input-float text-center" type="text" name="" value="" placeholder="0.0"></td>
+                                <td><input class="form-control input-money text-right" type="text" name="" value="" placeholder="0"></td>
+                                <td><input class="form-control input-float text-center" type="text" name="" value="" placeholder="0.0"></td>
+                                <td><input class="form-control input-money text-right" type="text" name="" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="checkbox" name="" value="" checked=""></td>
                             </tr>
                             <tr>
                                 <td class="text-center">3</td>
                                 <td><input class="form-control" type="text" name="" value="Gián đoạn kinh doanh sau hỏa hoạn và các rủi ro đặc biệt" placeholder=""></td>
-                                <td><input class="form-control input-money" type="text" name="" value="" placeholder="0"></td>
-                                <td><input class="form-control input-float" type="text" name="" value="" placeholder="0.0"></td>
-                                <td><input class="form-control input-money" type="text" name="" value="" placeholder="0"></td>
-                                <td><input class="form-control input-float" type="text" name="" value="" placeholder="0.0"></td>
-                                <td><input class="form-control input-money" type="text" name="" value="" placeholder="0"></td>
-                                <td><input class="form-control input-float" type="text" name="" value="" placeholder="0.0"></td>
-                                <td><input class="form-control input-money" type="text" name="" value="" placeholder="0"></td>
+                                <td><input class="form-control input-money text-right" type="text" name="" value="" placeholder="0"></td>
+                                <td><input class="form-control input-float text-center" type="text" name="" value="" placeholder="0.0"></td>
+                                <td><input class="form-control input-money text-right" type="text" name="" value="" placeholder="0"></td>
+                                <td><input class="form-control input-float text-center" type="text" name="" value="" placeholder="0.0"></td>
+                                <td><input class="form-control input-money text-right" type="text" name="" value="" placeholder="0"></td>
+                                <td><input class="form-control input-float text-center" type="text" name="" value="" placeholder="0.0"></td>
+                                <td><input class="form-control input-money text-right" type="text" name="" value="" placeholder="0"></td>
                                 <td><input class="form-control" type="checkbox" name="" value="" checked=""></td>
                             </tr>
                         </tbody>
