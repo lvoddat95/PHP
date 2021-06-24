@@ -207,13 +207,12 @@
                                             </div>
 
                                             <div class="row form-group">
-                                                <label class="col-label col-label-150 col-form-label">Tình trạng: <span class="text-danger">*</span></label>
+                                                <label class="col-label col-label-150 col-form-label">Tình trạng áp dụng: <span class="text-danger">*</span></label>
                                                 <div class="col-content col-content-xl d-inline-flex align-items-center">
                                                     <div class="button-switch mr-2">
                                                         <input type="checkbox" id="tttpv" class="switch" name="tttpv" checked="" disabled="">
                                                         <label for="tttpv" data-off="Không" data-on="Có"></label>
                                                     </div>
-                                                    <span>Áp dụng ?</span>
                                                 </div>
                                             </div>
                                         </div>
