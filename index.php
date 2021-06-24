@@ -3,6 +3,8 @@
 <?php include_once HEADER; ?>
 <?php $GLOBALS["menu"] = 'index'; ?>
 <body>
+
+    <div class="ca"></div>
     <div class="page-content home-page">
 
         <?php include_once SIDEBAR; ?>

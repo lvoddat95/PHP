@@ -138,6 +138,8 @@
         margin: 0;
         max-height: 59px;
         padding: 10px 15px 7px;
+        position: fixed;
+        bottom: 0;
     }
     #footer::before {
         position: absolute;

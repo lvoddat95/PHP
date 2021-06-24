@@ -1,5 +1,5 @@
 <!-- Mobile Navigation -->
-<div class="mobile-bottom" >
+<!-- <div class="mobile-bottom" >
     <a class="item" href="index.html">
         <i class="icon fad fa-home"></i>
         <span>Trang chủ</span>
@@ -16,5 +16,5 @@
         <i class="icon fad fa-align-left"></i>
         <span>Menu</span>
     </a>
-</div>
+</div> -->
 <!-- /Mobile Navigation -->
