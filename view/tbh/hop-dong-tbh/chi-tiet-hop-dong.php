@@ -269,14 +269,14 @@
                                                     </thead>
                                                     <tbody data-repeater-list="danh-sach-nha-tai">
                                                         <tr data-repeater-item>
-                                                            <td>bảo an tín</td>
-                                                            <td>Bảo an tín</td>
+                                                            <td><a href="chi-tiet-nhom-treaty-limit.php">bảo an tín</a></td>
+                                                            <td><a href="chi-tiet-nhom-treaty-limit.php">Bảo an tín</a></td>
                                                             <td><a href="javascript:;" data-repeater-delete="" class="d-flex align-items-center font-weight-bold text-danger"><i class="icon-trash mr-1"></i>Xoá</a></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
                                                 <div class="border p-1" style="margin-top: -1px;">
-                                                    <a href="chi-tiet-nhom-treaty-limit.php" class="d-flex align-items-center justify-content-center font-weight-bold text-success"><i class="far fa-plus-circle mr-1"></i>Thêm</a>
+                                                    <a href="them-moi-nhom-treaty-limit.php" class="d-flex align-items-center justify-content-center font-weight-bold text-success"><i class="far fa-plus-circle mr-1"></i>Thêm</a>
                                                 </div>
                                             </div>
                                         </div>
