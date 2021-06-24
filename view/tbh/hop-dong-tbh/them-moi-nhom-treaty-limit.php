@@ -19,7 +19,7 @@
                     <div class="top-left">
                         <div class="breadcrumb">
                             <a href="<?php echo HTTP_PATH . 'view/tbh/hop-dong-tbh/'; ?>" class="breadcrumb-item"><i class="fad fa-file-certificate mr-1"></i>Hợp đồng tái bảo hiểm</a>
-                            <span class="breadcrumb-item active">Chi tiết nhóm Treaty Limit <b class="text-danger">(HĐ: 006/2021)</b></span>
+                            <span class="breadcrumb-item active">Chi tiết nhóm Treaty Limit</span>
                         </div>
                         <div class="d-md-none logo-mobile">
                             <a href="<?php echo HTTP_PATH; ?>" class="logo-text">
