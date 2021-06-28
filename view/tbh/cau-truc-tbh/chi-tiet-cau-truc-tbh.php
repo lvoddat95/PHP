@@ -343,7 +343,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div id="nha-tai-co-dinh-table" repeater datatable-onHide style="display: ;">
+                                                <div id="nha-tai-co-dinh-table" style="display: ;">
                                                     <table class="table datatable table-bordered" data-paging="false" data-info="false" data-ordering="false" data-searching="false">
                                                         <thead class="thead-light-1">
                                                             <tr>
@@ -355,11 +355,10 @@
                                                                 <th class="desktop text-center">Phí TBH</th>
                                                                 <th class="desktop w7p text-center">(%)Com</th>
                                                                 <th class="desktop text-center">Com</th>
-                                                                <th class="all w1p"></th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody data-repeater-list="treaty-limit">
-                                                            <tr data-repeater-item>
+                                                        <tbody >
+                                                            <tr>
                                                                 <td><?php inc('template/tbh/nha_tai_select_box.php', false);?></td>
                                                                 <td><input class="form-control text-center input-float" type="text" name="" value="" placeholder="0.0"></td>
                                                                 <td><input class="form-control text-center input-float" type="text" name="" value="" placeholder="0.0"></td>
@@ -368,13 +367,9 @@
                                                                 <td><input class="form-control text-right input-money" type="text" name="" value="" placeholder="0"></td>
                                                                 <td><input class="form-control text-center input-float" type="text" name="" value="" placeholder="0.0"></td>
                                                                 <td><input class="form-control text-right input-money" type="text" name="" value="" placeholder="0"></td>
-                                                                <td><a href="javascript:;" data-repeater-delete="" class="d-flex align-items-center font-weight-bold text-danger"><i class="icon-trash mr-1"></i>Xoá</a></td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
-                                                    <div class="border p-1" style="margin-top: -1px;">
-                                                        <a href="javascript:;" data-repeater-create="" class="d-flex align-items-center justify-content-center font-weight-bold text-success"><i class="far fa-plus-circle mr-1"></i>Thêm</a>
-                                                    </div>
                                                 </div>
 
                                                 <div id="nha-tai-ket-hop-table" repeater datatable-onHide style="display: ;">
