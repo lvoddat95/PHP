@@ -58,73 +58,73 @@
                                             <hr class="border-dashed border-silver mb-2">
 
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label col-form-label">Đơn bảo hiểm số:</label>
+                                                <label class="col-label">Đơn bảo hiểm số:</label>
                                                 <div class="col-content">
                                                     <span>012000007/B01</span>
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label col-form-label">Loại hình bảo hiểm:</label>
+                                                <label class="col-label">Loại hình bảo hiểm:</label>
                                                 <div class="col-content">
                                                     B01 - Bảo hiểm hỏa hoạn và các rủi ro đặc biệt
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label col-form-label">Thời hạn bảo hiểm:</label>
+                                                <label class="col-label">Thời hạn bảo hiểm:</label>
                                                 <div class="col-content">
                                                     24/08/2020 đến 24/08/2021
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label col-form-label">Người được bảo hiểm:</label>
+                                                <label class="col-label">Người được bảo hiểm:</label>
                                                 <div class="col-content">
                                                     CÔNG TY TNHH FOSECA VIỆT NAM
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label col-form-label">Địa chỉ:</label>
+                                                <label class="col-label">Địa chỉ:</label>
                                                 <div class="col-content">
                                                     SỐ 18, ĐƯỜNG 10, KHU ĐÔ THỊ VÀ DỊCH VỤ VSIP Bắc Ninh. xã Đại Đồng, huyện Tiên Du, Bắc Ninh
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label col-form-label">Tình trạng tái:</label>
+                                                <label class="col-label">Tình trạng tái:</label>
                                                 <div class="col-content">
                                                     Chưa xác định
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label col-form-label">Loại tiền trên đơn:</label>
+                                                <label class="col-label">Loại tiền trên đơn:</label>
                                                 <div class="col-content">
                                                     VND
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label col-form-label">Số tiền bảo hiểm:</label>
+                                                <label class="col-label">Số tiền bảo hiểm:</label>
                                                 <div class="col-content">
                                                     1,311,992,212,990
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label col-form-label">Phí bảo hiểm: <br><i>(chưa VAT)</i></label>
+                                                <label class="col-label">Phí bảo hiểm: <br><i>(chưa VAT)</i></label>
                                                 <div class="col-content">
                                                     655,996,106
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label col-form-label">Phí bảo hiểm tính tái: <br><i>(chưa VAT)</i></label>
+                                                <label class="col-label">Phí bảo hiểm tính tái: <br><i>(chưa VAT)</i></label>
                                                 <div class="col-content">
                                                     65,599,610
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label col-form-label">TL bảo hiểm trên đơn gốc(%):</label>
+                                                <label class="col-label">TL bảo hiểm trên đơn gốc(%):</label>
                                                 <div class="col-content">
                                                     10
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label col-form-label">Ban NV xác nhận:</label>
+                                                <label class="col-label">Ban NV xác nhận:</label>
                                                 <div class="col-content">
                                                     <span class="badge badge-dark">Chưa xác nhận</span>
                                                 </div>
@@ -241,9 +241,16 @@
                                                     </div>
 
                                                     <div class="row form-group mb-sm-2">
-                                                        <label class="col-label col-form-label">TL treaty tính lại:</label>
+                                                        <label class="col-label col-form-label">Tỷ lệ treaty tính lại:</label>
                                                         <div class="col-content col-content-sm">
-                                                            <input class="form-control text-center input-float" type="text" name="" value="50" placeholder="0.0">
+                                                            <input class="form-control text-center input-float" type="text" name="" value="0" placeholder="0.0">
+                                                        </div>
+                                                    </div>
+
+                                                    <div id="ti-le-facout" class="row form-group mb-sm-2">
+                                                        <label class="col-label col-form-label">Tỷ lệ BH theo Facout:</label>
+                                                        <div class="col-content col-content-sm">
+                                                            <input class="form-control text-center input-float" type="text" name="" value="0" placeholder="0.0">
                                                         </div>
                                                     </div>
 
@@ -343,7 +350,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div id="nha-tai-co-dinh-table" repeater datatable-onHide style="display: ;">
+                                                <div id="nha-tai-co-dinh-table" style="display: none;">
                                                     <table class="table datatable table-bordered" data-paging="false" data-info="false" data-ordering="false" data-searching="false">
                                                         <thead class="thead-light-1">
                                                             <tr>
@@ -355,11 +362,10 @@
                                                                 <th class="desktop text-center">Phí TBH</th>
                                                                 <th class="desktop w7p text-center">(%)Com</th>
                                                                 <th class="desktop text-center">Com</th>
-                                                                <th class="all w1p"></th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody data-repeater-list="treaty-limit">
-                                                            <tr data-repeater-item>
+                                                        <tbody >
+                                                            <tr>
                                                                 <td><?php inc('template/tbh/nha_tai_select_box.php', false);?></td>
                                                                 <td><input class="form-control text-center input-float" type="text" name="" value="" placeholder="0.0"></td>
                                                                 <td><input class="form-control text-center input-float" type="text" name="" value="" placeholder="0.0"></td>
@@ -368,16 +374,12 @@
                                                                 <td><input class="form-control text-right input-money" type="text" name="" value="" placeholder="0"></td>
                                                                 <td><input class="form-control text-center input-float" type="text" name="" value="" placeholder="0.0"></td>
                                                                 <td><input class="form-control text-right input-money" type="text" name="" value="" placeholder="0"></td>
-                                                                <td><a href="javascript:;" data-repeater-delete="" class="d-flex align-items-center font-weight-bold text-danger"><i class="icon-trash mr-1"></i>Xoá</a></td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
-                                                    <div class="border p-1" style="margin-top: -1px;">
-                                                        <a href="javascript:;" data-repeater-create="" class="d-flex align-items-center justify-content-center font-weight-bold text-success"><i class="far fa-plus-circle mr-1"></i>Thêm</a>
-                                                    </div>
                                                 </div>
 
-                                                <div id="nha-tai-ket-hop-table" repeater datatable-onHide style="display: ;">
+                                                <div id="nha-tai-ket-hop-table" repeater datatable-onHide style="display: none;">
                                                     <table class="table datatable table-bordered" data-paging="false" data-info="false" data-ordering="false" data-searching="false">
                                                         <thead class="thead-light-1">
                                                             <tr>
