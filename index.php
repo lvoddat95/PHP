@@ -37,6 +37,9 @@
 
                 </div>
                 <!-- /Header -->
+                    <input type="" name="" value="" class="textbox">
+                    <div class="divclass"></div>
+
 
                 <section>
                     <div class="sec-report">
