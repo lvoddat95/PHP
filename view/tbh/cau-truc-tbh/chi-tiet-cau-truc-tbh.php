@@ -241,9 +241,16 @@
                                                     </div>
 
                                                     <div class="row form-group mb-sm-2">
-                                                        <label class="col-label col-form-label">TL treaty tính lại:</label>
+                                                        <label class="col-label col-form-label">Tỷ lệ treaty tính lại:</label>
                                                         <div class="col-content col-content-sm">
-                                                            <input class="form-control text-center input-float" type="text" name="" value="50" placeholder="0.0">
+                                                            <input class="form-control text-center input-float" type="text" name="" value="0" placeholder="0.0">
+                                                        </div>
+                                                    </div>
+
+                                                    <div id="ti-le-facout" class="row form-group mb-sm-2">
+                                                        <label class="col-label col-form-label">Tỷ lệ BH theo Facout:</label>
+                                                        <div class="col-content col-content-sm">
+                                                            <input class="form-control text-center input-float" type="text" name="" value="0" placeholder="0.0">
                                                         </div>
                                                     </div>
 
@@ -343,7 +350,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div id="nha-tai-co-dinh-table" style="display: ;">
+                                                <div id="nha-tai-co-dinh-table" style="display: none;">
                                                     <table class="table datatable table-bordered" data-paging="false" data-info="false" data-ordering="false" data-searching="false">
                                                         <thead class="thead-light-1">
                                                             <tr>
@@ -372,7 +379,7 @@
                                                     </table>
                                                 </div>
 
-                                                <div id="nha-tai-ket-hop-table" repeater datatable-onHide style="display: ;">
+                                                <div id="nha-tai-ket-hop-table" repeater datatable-onHide style="display: none;">
                                                     <table class="table datatable table-bordered" data-paging="false" data-info="false" data-ordering="false" data-searching="false">
                                                         <thead class="thead-light-1">
                                                             <tr>
