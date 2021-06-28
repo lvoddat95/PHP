@@ -58,73 +58,73 @@
                                             <hr class="border-dashed border-silver mb-2">
 
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label col-form-label">Đơn bảo hiểm số:</label>
+                                                <label class="col-label">Đơn bảo hiểm số:</label>
                                                 <div class="col-content">
                                                     <span>012000007/B01</span>
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label col-form-label">Loại hình bảo hiểm:</label>
+                                                <label class="col-label">Loại hình bảo hiểm:</label>
                                                 <div class="col-content">
                                                     B01 - Bảo hiểm hỏa hoạn và các rủi ro đặc biệt
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label col-form-label">Thời hạn bảo hiểm:</label>
+                                                <label class="col-label">Thời hạn bảo hiểm:</label>
                                                 <div class="col-content">
                                                     24/08/2020 đến 24/08/2021
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label col-form-label">Người được bảo hiểm:</label>
+                                                <label class="col-label">Người được bảo hiểm:</label>
                                                 <div class="col-content">
                                                     CÔNG TY TNHH FOSECA VIỆT NAM
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label col-form-label">Địa chỉ:</label>
+                                                <label class="col-label">Địa chỉ:</label>
                                                 <div class="col-content">
                                                     SỐ 18, ĐƯỜNG 10, KHU ĐÔ THỊ VÀ DỊCH VỤ VSIP Bắc Ninh. xã Đại Đồng, huyện Tiên Du, Bắc Ninh
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label col-form-label">Tình trạng tái:</label>
+                                                <label class="col-label">Tình trạng tái:</label>
                                                 <div class="col-content">
                                                     Chưa xác định
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label col-form-label">Loại tiền trên đơn:</label>
+                                                <label class="col-label">Loại tiền trên đơn:</label>
                                                 <div class="col-content">
                                                     VND
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label col-form-label">Số tiền bảo hiểm:</label>
+                                                <label class="col-label">Số tiền bảo hiểm:</label>
                                                 <div class="col-content">
                                                     1,311,992,212,990
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label col-form-label">Phí bảo hiểm: <br><i>(chưa VAT)</i></label>
+                                                <label class="col-label">Phí bảo hiểm: <br><i>(chưa VAT)</i></label>
                                                 <div class="col-content">
                                                     655,996,106
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label col-form-label">Phí bảo hiểm tính tái: <br><i>(chưa VAT)</i></label>
+                                                <label class="col-label">Phí bảo hiểm tính tái: <br><i>(chưa VAT)</i></label>
                                                 <div class="col-content">
                                                     65,599,610
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label col-form-label">TL bảo hiểm trên đơn gốc(%):</label>
+                                                <label class="col-label">TL bảo hiểm trên đơn gốc(%):</label>
                                                 <div class="col-content">
                                                     10
                                                 </div>
                                             </div>
                                             <div class="row form-group mb-sm-2">
-                                                <label class="col-label col-form-label">Ban NV xác nhận:</label>
+                                                <label class="col-label">Ban NV xác nhận:</label>
                                                 <div class="col-content">
                                                     <span class="badge badge-dark">Chưa xác nhận</span>
                                                 </div>
