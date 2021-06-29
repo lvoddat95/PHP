@@ -49,7 +49,7 @@
                                         </select>
                                     </td>
                                     <td>
-                                        <input type="text" class="form-control text-center input-number" value="0.064" placeholder="0.0" disabled="">
+                                        <input type="text" class="form-control text-center input-float" value="0.064" placeholder="0.0" disabled="">
                                     </td>
                                     <td>
                                         <input type="text" class="form-control text-right input-money" value="1,815,212" placeholder="0" disabled="">
@@ -58,13 +58,13 @@
                                         <input type="text" class="form-control text-right input-money" value="3,384.65" placeholder="0.0">
                                     </td>
                                     <td>
-                                        <input type="text" class="form-control text-center input-number" value="32.750" placeholder="0.0">
+                                        <input type="text" class="form-control text-center input-float" value="32.750" placeholder="0.0">
                                     </td>
                                     <td>
                                         <input type="text" class="form-control text-right input-money" value="1,108.47" placeholder="0">
                                     </td>
                                     <td class="text-center">
-                                        <input type="text" class="form-control text-center input-number" value="0" placeholder="0" disabled="">
+                                        <input type="text" class="form-control text-center input-float" value="0" placeholder="0" disabled="">
                                     </td>
                                 </tr>
                                 <tr>
@@ -75,7 +75,7 @@
                                         </select>
                                     </td>
                                     <td>
-                                        <input type="text" class="form-control text-center input-number" value="0.004" placeholder="0.0" disabled="">
+                                        <input type="text" class="form-control text-center input-float" value="0.004" placeholder="0.0" disabled="">
                                     </td>
                                     <td>
                                         <input type="text" class="form-control text-right input-money" value="100,845" placeholder="0" disabled="">
@@ -84,13 +84,13 @@
                                         <input type="text" class="form-control text-right input-money" value="188.04" placeholder="0.0">
                                     </td>
                                     <td>
-                                        <input type="text" class="form-control text-center input-number" value="30.000" placeholder="0.0">
+                                        <input type="text" class="form-control text-center input-float" value="30.000" placeholder="0.0">
                                     </td>
                                     <td>
                                         <input type="text" class="form-control text-right input-money" value="56.41" placeholder="0">
                                     </td>
                                     <td class="text-center">
-                                        <input type="text" class="form-control text-center input-number" value="0" placeholder="0" disabled="">
+                                        <input type="text" class="form-control text-center input-float" value="0" placeholder="0" disabled="">
                                     </td>
                                 </tr>
                                 <tr>
@@ -101,7 +101,7 @@
                                         </select>
                                     </td>
                                     <td>
-                                        <input type="text" class="form-control text-center input-number" value="0.004" placeholder="0.0" disabled="">
+                                        <input type="text" class="form-control text-center input-float" value="0.004" placeholder="0.0" disabled="">
                                     </td>
                                     <td>
                                         <input type="text" class="form-control text-right input-money" value="100,845" placeholder="0" disabled="">
@@ -110,13 +110,13 @@
                                         <input type="text" class="form-control text-right input-money" value="188.04" placeholder="0.0">
                                     </td>
                                     <td>
-                                        <input type="text" class="form-control text-center input-number" value="30.000" placeholder="0.0">
+                                        <input type="text" class="form-control text-center input-float" value="30.000" placeholder="0.0">
                                     </td>
                                     <td>
                                         <input type="text" class="form-control text-right input-money" value="56.41" placeholder="0">
                                     </td>
                                     <td class="text-center">
-                                        <input type="text" class="form-control text-center input-number" value="0" placeholder="0" disabled="">
+                                        <input type="text" class="form-control text-center input-float" value="0" placeholder="0" disabled="">
                                     </td>
                                 </tr>
                             </tbody>
