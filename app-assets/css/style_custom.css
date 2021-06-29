@@ -572,10 +572,11 @@ a.sidebar-main-toggle:hover {
 
 .sup-down a {
     color: #1c3faa;
-    width: 100px;
+    width: 120px;
     text-align: center;
     height: 36px;
     line-height: 34px;
+    font-size: 13px;
     display: block;
     border: 2px solid #1c3faa;
     margin: 5px;

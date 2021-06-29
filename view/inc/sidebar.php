@@ -313,15 +313,15 @@
                 <!-- End-Main navigation -->
 
                 <!-- BOX -->
-                <div class="sup-box mt-5 d-none">
+                <div class="sup-box mt-5">
                     <div class="sup-up">
                         <h3>Hỗ trợ khẩn cấp</h3>
                         <p>Liên hệ ngay cho tôi !</p>
                     </div>
                     <img class="img" src="<?php echo HTTP_PATH .'app-assets/images/sidebar-bg/chat.png'; ?>" alt="">
                     <div class="sup-down">
-                        <p><a href=""><i class="fad fa-comment-lines mr-1"></i> <span>Chat</span></a></p>
-                        <p><a href=""><i class="fad fa-phone-rotary mr-1"></i> <span>Call</span></a></p>
+                        <p><a href=""><i class="fad fa-book mr-1"></i> <span>Hướng dẫn</span></a></p>
+                        <p><a href=""><i class="fad fa-phone-rotary mr-1"></i> <span>Liên hệ hỗ trợ</span></a></p>
                     </div>
                 </div>
                 <!-- End-BOX -->
