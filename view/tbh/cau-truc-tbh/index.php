@@ -1,6 +1,6 @@
 <?php require_once '../../../config.php'; ?>
 <?php include_once HEADER; ?> 
-<?php $GLOBALS["menu"] = 'tbh,cau-truc-tbh'; ?>
+<?php $GLOBALS["menu"] = 'tbh,cau-truc-tbh,cau-truc-tbh-list'; ?>
     <body>
 
         <div class="page-content home-page">
@@ -217,7 +217,7 @@
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> A01 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php">  </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> USD </a></td>
-									        <td> <a href="chi-tiet-cau-truc-tbh.php"> Chưa xác nhận </a></td>
+									        <td class="text-center"> <a href="javascript:;" onclick="fancybox_modal(this,'#thong_tin_xac_nhan_nv_pendding')"> <span class="badge badge-secondary">Chưa xác nhận</span> </a></td>
 									    </tr>
 									    <tr>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 011500001/C01 </a></td>
@@ -226,7 +226,7 @@
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> C01 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php">  </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> VND </a></td>
-									        <td> <a href="chi-tiet-cau-truc-tbh.php"> Chưa xác nhận </a></td>
+									        <td class="text-center"> <a href="javascript:;" onclick="fancybox_modal(this,'#thong_tin_xac_nhan_nv_pendding')"> <span class="badge badge-secondary">Chưa xác nhận</span> </a></td>
 									    </tr>
 									    <tr>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 011500002/A01 </a></td>
@@ -235,7 +235,7 @@
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> A01 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php">  </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> VND </a></td>
-									        <td> <a href="chi-tiet-cau-truc-tbh.php"> Chưa xác nhận </a></td>
+									        <td class="text-center"> <a href="javascript:;" onclick="fancybox_modal(this,'#thong_tin_xac_nhan_nv_pendding')"> <span class="badge badge-secondary">Chưa xác nhận</span> </a></td>
 									    </tr>
 									    <tr>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 011800003/B01 </a></td>
@@ -244,7 +244,7 @@
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> B01 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 71,078,863,020 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> VND </a></td>
-									        <td> <a href="chi-tiet-cau-truc-tbh.php"> Chưa xác nhận </a></td>
+									        <td class="text-center"> <a href="javascript:;" onclick="fancybox_modal(this,'#thong_tin_xac_nhan_nv_pendding')"> <span class="badge badge-secondary">Chưa xác nhận</span> </a></td>
 									    </tr>
 									    <tr>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 012000007/B01 </a></td>
@@ -253,7 +253,7 @@
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> B01 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 131,199,221,299 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> VND </a></td>
-									        <td> <a href="chi-tiet-cau-truc-tbh.php"> Chưa xác nhận </a></td>
+									        <td class="text-center"> <a href="javascript:;" onclick="fancybox_modal(this,'#thong_tin_xac_nhan_nv_pendding')"> <span class="badge badge-secondary">Chưa xác nhận</span> </a></td>
 									    </tr>
 									    <tr>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 022100010/H03 </a></td>
@@ -262,7 +262,7 @@
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> H03 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 11,500,000,000 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> VND </a></td>
-									        <td> <a href="chi-tiet-cau-truc-tbh.php"> Đã xác nhận </a></td>
+									        <td class="text-center"> <a href="javascript:;" onclick="fancybox_modal(this,'#thong_tin_xac_nhan_nv_accept')"> <span class="badge badge-success">Đã xác nhận</span> </a></td>
 									    </tr>
 									    <tr>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 022100299/F01.EXM/0000102 </a></td>
@@ -271,7 +271,7 @@
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> F01 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 155,000,000 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> VND </a></td>
-									        <td> <a href="chi-tiet-cau-truc-tbh.php"> Chưa xác nhận </a></td>
+									        <td class="text-center"> <a href="javascript:;" onclick="fancybox_modal(this,'#thong_tin_xac_nhan_nv_pendding')"> <span class="badge badge-secondary">Chưa xác nhận</span> </a></td>
 									    </tr>
 									    <tr>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 022102651/F02.BB21/8718 </a></td>
@@ -280,7 +280,7 @@
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> F02 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 2,500,000,000 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> VND </a></td>
-									        <td> <a href="chi-tiet-cau-truc-tbh.php"> Chưa xác nhận </a></td>
+									        <td class="text-center"> <a href="javascript:;" onclick="fancybox_modal(this,'#thong_tin_xac_nhan_nv_pendding')"> <span class="badge badge-secondary">Chưa xác nhận</span> </a></td>
 									    </tr>
 									    <tr>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 032105362/F02.BB21/0013876 </a></td>
@@ -289,7 +289,7 @@
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> F02 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 400,000,000 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> VND </a></td>
-									        <td> <a href="chi-tiet-cau-truc-tbh.php"> Chưa xác nhận </a></td>
+									        <td class="text-center"> <a href="javascript:;" onclick="fancybox_modal(this,'#thong_tin_xac_nhan_nv_pendding')"> <span class="badge badge-secondary">Chưa xác nhận</span> </a></td>
 									    </tr>
 									    <tr>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 032105941/F02.AD21/0001233 </a></td>
@@ -298,7 +298,7 @@
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> F02 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 250,000,000 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> VND </a></td>
-									        <td> <a href="chi-tiet-cau-truc-tbh.php"> Chưa xác nhận </a></td>
+									        <td class="text-center"> <a href="javascript:;" onclick="fancybox_modal(this,'#thong_tin_xac_nhan_nv_pendding')"> <span class="badge badge-secondary">Chưa xác nhận</span> </a></td>
 									    </tr>
 									    <tr>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 032105943/F02.AD21/0001218 </a></td>
@@ -307,7 +307,7 @@
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> F02 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 210,000,000 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> VND </a></td>
-									        <td> <a href="chi-tiet-cau-truc-tbh.php"> Chưa xác nhận </a></td>
+									        <td class="text-center"> <a href="javascript:;" onclick="fancybox_modal(this,'#thong_tin_xac_nhan_nv_pendding')"> <span class="badge badge-secondary">Chưa xác nhận</span> </a></td>
 									    </tr>
 									    <tr>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 042100006/C03.01 </a></td>
@@ -316,7 +316,7 @@
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> C03 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 1,224,000,000 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> VND </a></td>
-									        <td> <a href="chi-tiet-cau-truc-tbh.php"> Chưa xác nhận </a></td>
+									        <td class="text-center"> <a href="javascript:;" onclick="fancybox_modal(this,'#thong_tin_xac_nhan_nv_pendding')"> <span class="badge badge-secondary">Chưa xác nhận</span> </a></td>
 									    </tr>
 									    <tr>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 042100006/C03.02 </a></td>
@@ -325,7 +325,7 @@
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> C03 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 600,000,000 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> VND </a></td>
-									        <td> <a href="chi-tiet-cau-truc-tbh.php"> Chưa xác nhận </a></td>
+									        <td class="text-center"> <a href="javascript:;" onclick="fancybox_modal(this,'#thong_tin_xac_nhan_nv_pendding')"> <span class="badge badge-secondary">Chưa xác nhận</span> </a></td>
 									    </tr>
 									    <tr>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 042100009/C01 </a></td>
@@ -334,7 +334,7 @@
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> C01 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 53,250,000,000 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> VND </a></td>
-									        <td> <a href="chi-tiet-cau-truc-tbh.php"> Chưa xác nhận </a></td>
+									        <td class="text-center"> <a href="javascript:;" onclick="fancybox_modal(this,'#thong_tin_xac_nhan_nv_pendding')"> <span class="badge badge-secondary">Chưa xác nhận</span> </a></td>
 									    </tr>
 									    <tr>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 042100010/C01 </a></td>
@@ -343,7 +343,7 @@
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> C01 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 9,810,482,000 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> VND </a></td>
-									        <td> <a href="chi-tiet-cau-truc-tbh.php"> Chưa xác nhận </a></td>
+									        <td class="text-center"> <a href="javascript:;" onclick="fancybox_modal(this,'#thong_tin_xac_nhan_nv_pendding')"> <span class="badge badge-secondary">Chưa xác nhận</span> </a></td>
 									    </tr>
 									    <tr>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 042100041/G01 </a></td>
@@ -352,7 +352,7 @@
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> G01 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 549,450,000,000 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> VND </a></td>
-									        <td> <a href="chi-tiet-cau-truc-tbh.php"> Chưa xác nhận </a></td>
+									        <td class="text-center"> <a href="javascript:;" onclick="fancybox_modal(this,'#thong_tin_xac_nhan_nv_pendding')"> <span class="badge badge-secondary">Chưa xác nhận</span> </a></td>
 									    </tr>
 									    <tr>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 042100049/B01 </a></td>
@@ -361,7 +361,7 @@
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> B01 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 3,000,000,000 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> VND </a></td>
-									        <td> <a href="chi-tiet-cau-truc-tbh.php"> Chưa xác nhận </a></td>
+									        <td class="text-center"> <a href="javascript:;" onclick="fancybox_modal(this,'#thong_tin_xac_nhan_nv_pendding')"> <span class="badge badge-secondary">Chưa xác nhận</span> </a></td>
 									    </tr>
 									    <tr>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 042100050/B01 </a></td>
@@ -370,7 +370,7 @@
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> B01 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 4,067,645,473 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> VND </a></td>
-									        <td> <a href="chi-tiet-cau-truc-tbh.php"> Chưa xác nhận </a></td>
+									        <td class="text-center"> <a href="javascript:;" onclick="fancybox_modal(this,'#thong_tin_xac_nhan_nv_pendding')"> <span class="badge badge-secondary">Chưa xác nhận</span> </a></td>
 									    </tr>
 									    <tr>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 042101403/F02.BB21/0048341 </a></td>
@@ -379,7 +379,7 @@
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> F02 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 2,500,000,000 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> VND </a></td>
-									        <td> <a href="chi-tiet-cau-truc-tbh.php"> Chưa xác nhận </a></td>
+									        <td class="text-center"> <a href="javascript:;" onclick="fancybox_modal(this,'#thong_tin_xac_nhan_nv_pendding')"> <span class="badge badge-secondary">Chưa xác nhận</span> </a></td>
 									    </tr>
 									    <tr>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> 050900555.E01 </a></td>
@@ -388,7 +388,7 @@
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> C01 </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php">  </a></td>
 									        <td> <a href="chi-tiet-cau-truc-tbh.php"> VND </a></td>
-									        <td> <a href="chi-tiet-cau-truc-tbh.php"> Chưa xác nhận </a></td>
+									        <td class="text-center"> <a href="javascript:;" onclick="fancybox_modal(this,'#thong_tin_xac_nhan_nv_pendding')"> <span class="badge badge-secondary">Chưa xác nhận</span> </a></td>
 									    </tr>
 									</tbody>
 
@@ -407,6 +407,8 @@
         </div>
 
     </body>
+<?php inc('modal/tbh/thong_tin_xac_nhan_nv_accept.php'); ?> 
+<?php inc('modal/tbh/thong_tin_xac_nhan_nv_pendding.php'); ?> 
 
 <?php include_once FOOTER; ?>
 

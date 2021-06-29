@@ -109,11 +109,27 @@
                                         <span class="menu-title">Hợp đồng tái bảo hiểm</span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="<?php echo HTTP_PATH .'view/tbh/cau-truc-tbh/'; ?>" class="nav-link <?php echo in_array('cau-truc-tbh', $arr_menu) ? "active" : ""; ?>">
+
+                                <li class="nav-item nav-item-submenu <?php echo in_array('cau-truc-tbh', $arr_menu) ? "nav-item-open" : ""; ?>">
+                                    <a href="<?php echo HTTP_PATH .'view/tbh/cau-truc-tbh/'; ?>" class="nav-link">
                                         <span class="menu-title">Cấu trúc tái bảo hiểm</span>
                                     </a>
+                                    <ul class="nav nav-group-sub">
+                                        <li>
+                                            <a href="<?php echo HTTP_PATH .'view/tbh/cau-truc-tbh/'; ?>" class="nav-link <?php echo in_array('cau-truc-tbh-list', $arr_menu) ? "active" : ""; ?>">
+                                            <span class="menu-title">Danh sách</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="<?php echo HTTP_PATH .'view/tbh/cau-truc-tbh/chi-tiet-cau-truc-tbh.php'; ?>" class="nav-link <?php echo in_array('cau-truc-tbh-pendding', $arr_menu) ? "active" : ""; ?>">
+                                            <span class="menu-title">Đơn chưa xác nhận</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="<?php echo HTTP_PATH .'view/tbh/cau-truc-tbh/chi-tiet-cau-truc-tbh-accept.php'; ?>" class="nav-link <?php echo in_array('cau-truc-tbh-accept', $arr_menu) ? "active" : ""; ?>">
+                                            <span class="menu-title">Đơn đã xác nhận</span></a>
+                                        </li>
+                                    </ul>
                                 </li>
+
                                 <li>
                                     <a href="<?php echo HTTP_PATH .'view/tbh/in-credit-note/'; ?>" class="nav-link <?php echo in_array('in-credit-note', $arr_menu) ? "active" : ""; ?>">
                                         <span class="menu-title">In Credit Note</span>

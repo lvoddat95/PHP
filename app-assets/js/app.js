@@ -515,7 +515,7 @@ var App = function () {
             new Cleave(field, {
                 numeral: true,
                 numeralPositiveOnly: !v_negative ? true : false,
-                numeralThousandsGroupStyle: 'thousand',
+                numeralDecimalScale: 5
             });
         });
     
@@ -571,8 +571,7 @@ var App = function () {
             new Cleave(field, {
                 numeral: true,
                 numeralPositiveOnly: !v_negative ? true : false,
-                numeralDecimalMark: '',
-                delimiter: ''
+                numeralDecimalScale: 5
             });
         });
         $('.input-number').toArray().forEach(function (field) {

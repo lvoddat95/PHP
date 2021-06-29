@@ -853,6 +853,7 @@
         <?php inc('modal/modal_qua_trinh_xu_ly.php'); ?>
         <?php inc('modal/modal_hinh_anh_ho_so_boi_thuong.php'); ?>
         <?php inc('modal/modal_in_option.php'); ?>
+        
 
     </body>
 

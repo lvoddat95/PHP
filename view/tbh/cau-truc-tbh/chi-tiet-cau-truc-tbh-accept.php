@@ -1,6 +1,6 @@
 <?php require_once '../../../config.php';?>
 <?php include_once HEADER;?>
-<?php $GLOBALS["menu"] = 'tbh,cau-truc-tbh,cau-truc-tbh-pendding';?>
+<?php $GLOBALS["menu"] = 'tbh,cau-truc-tbh,cau-truc-tbh-accept';?>
 <body>
 
     <div class="page-content home-page">
@@ -45,6 +45,8 @@
                                         </div>
                                         <div class="p-button">
                                             <a href="" class="btn mr-1"><i class="fa fa-reply mr-1"></i> Quay lại</a>
+                                            <a href="javascript:;" class="btn btn-default"><i class="far fa-calendar-edit mr-1"></i> Đặt lịch chuyển KT</a>
+                                            <a href="javascript:;" class="btn btn-default"><i class="fa fa-repeat mr-1"></i> Chuyển kế toán</a>
                                             <a href="javascript:;" class="btn bg-danger"><i class="fa fa-ban mr-1"></i> Từ chối</a>
                                             <a href="javascript:;" class="btn bg-primary"><i class="fa fa-save mr-1"></i> Lưu</a>
                                         </div>
@@ -435,6 +437,18 @@
                                             </div>
                                         </div>
 
+                                        <hr class="border-dashed border-silver mb-2">
+                                        <h2 class="text-danger font-weight-semibold">(Lưu ý: Cần kiểm tra kĩ chia kỳ thanh toán trước khi chuyển kế toán)</h2>
+                                        <div class="form-box mb-3">
+                                            <div class="row form-group mb-md-2">
+                                                <label class="col-label col-form-label">Cấu trúc tái bảo hiểm theo lịch thanh toán</label>
+                                                <div class="col-content">
+                                                    <button type="button" onclick="fancybox_modal(this,'#lich_thanh_toan')" class="btn btn-default m-1"> Thanh toán lần 1 - Tháng kế toán: 04/2014</button>
+                                                    <button type="button" onclick="fancybox_modal(this,'#lich_thanh_toan')" class="btn btn-default m-1"> Thanh toán lần 2 - Tháng kế toán: 08/2013</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -450,7 +464,7 @@
             </div>
 
         </div>
-        <?php inc('modal/qlac/cap_nhap_kenh_ban.php');?>
+        <?php inc('modal/tbh/lich_thanh_toan.php');?>
         <?php inc('quick-action-cau-truc-tbh.php'); ?> 
 
 
