@@ -147,6 +147,47 @@
                 <a href="#" class="dropdown-item"><i class="fa fa-sign-out"></i> Đăng xuất</a>
             </div>
         </li>
+        <li class="nav-item dropdown nav-item-dropdown-lg ml-lg-auto">
+                    <a href="#" class="navbar-nav-button dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon-grid5 mr-1"></i>
+                        Danh mục
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-category dropdown-menu-right">
+                        <div class="dropdown-header">Truy cập nhanh</div>
+                        <a href="" class="dropdown-item">
+                            <i class="fad fa-stream"></i> <span>Đơn bảo hiểm chờ duyệt</span>
+                        </a>
+
+                        <div class="dropdown-submenu dropdown-submenu-left">
+                            <a href="#" class="dropdown-item dropdown-toggle"><i class="fad fa-folder-tree mr-1"></i> Danh sách chức năng</a>
+                            <div class="dropdown-menu">
+                                <a href="" class="dropdown-item"> <i class="fad fa-folder-open mr-1"></i> Danh sách hợp đồng xin cấp</a>
+                                <a href="" class="dropdown-item"> <i class="fad fa-folder-open mr-1"></i>Danh sách địa điểm</a>
+                                <a href="" class="dropdown-item"><i class="fad fa-folder-open mr-1"></i> Danh sách tàu biển</a>
+                                <a href="" class="dropdown-item active"><i class="fad fa-folder-open mr-1"></i>Danh sách bản chào phí</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-divider"></div>
+
+                        <a href="" class="dropdown-item">
+                            <i class="fad fa-calculator mr-1"></i> <span>Phân hệ Kế toán</span>
+                        </a>
+                        <a href="" class="dropdown-item">
+                            <i class="fad fa-file-certificate mr-1"></i> <span>Phân hệ Ấn chỉ</span>
+                        </a>
+                        <a href="" class="dropdown-item">
+                            <i class="fad fa-analytics mr-1"></i> <span>Quản lí Báo cáo</span>
+                        </a>
+
+                        <div class="dropdown-wrap mt-2">
+                            <p class="m-0"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius posuere mollis.</p>
+                        </div>
+                    </div>
+
+                    
+                </li>
     </ul>
 
 </div>

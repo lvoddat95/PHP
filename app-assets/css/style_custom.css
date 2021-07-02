@@ -4237,3 +4237,40 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     background: #f1f5f8;
     margin-bottom: 20px;
 }
+
+.navbar-nav-button{
+    display: inline-flex;
+    align-items: center;
+    background: #ccc;
+    color: #000 !important;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-left: 14px;
+    font-weight: 500;
+}
+.navbar-nav-button:hover:after{
+    display: none !important;
+}
+.dropdown-menu-category .dropdown-menu,
+.dropdown-menu-category{
+    min-width: 250px;
+}
+.dropdown-menu-category .dropdown-item{
+    color: #111;
+}
+.dropdown-wrap{
+    background-color: rgb(255, 250, 230);
+    padding: 12px;
+    border-radius: 4px;
+}
+.dropdown-menu-category .dropdown-item>i{
+    top: 0;
+    background: #1c3faa;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    color: #fff;
+    line-height: 20px;
+    border-radius: 4px;
+    font-size: 10px;
+}

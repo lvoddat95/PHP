@@ -12,10 +12,10 @@ $v_smtp = 'smtp.sendgrid.net';
 $v_port = 587;
 $v_SMTPSecure = "TLS";
 $v_username = 'apikey';
-$v_password = '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';
+$v_password = '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';
 
-$v_sender_name = 'From name';
-$v_sender_authentication = 'nhansu.ho@bhhk.com.vn';
+$v_sender_name = 'C_NAME';
+$v_sender_authentication = 'pioffice@bhhk.com.vn';
 
 $v_nguoi_nhan = 'lvoddat95@gmail.com';
 
