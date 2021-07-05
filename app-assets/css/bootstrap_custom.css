@@ -1294,17 +1294,15 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
 }
 
 .dropdown-header {
-	display: -ms-flexbox;
+    display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
     color: #111;
-    padding: 0px 6px;
+    padding: 10px 6px;
 }
 
 .dropdown-header-highlight {

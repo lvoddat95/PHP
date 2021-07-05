@@ -4239,8 +4239,8 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
 .navbar-nav-button{
     display: inline-flex;
     align-items: center;
-    background: #ccc;
-    color: #000 !important;
+    background: #ddd;
+    color: #111 !important;
     padding: 4px 10px;
     border-radius: 4px;
     margin-left: 14px;

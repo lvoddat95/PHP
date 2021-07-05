@@ -153,7 +153,7 @@
                 Danh mục
             </a>
 
-            <div class="dropdown-menu dropdown-menu-category dropdown-menu-right d-flex flex-column">
+            <div class="dropdown-menu dropdown-menu-category d-flex flex-column">
 
                 <div class="dropdown-header">Menu chức năng </div>
 
@@ -161,7 +161,7 @@
                     <i class="fad fa-stream"></i> <span>Đơn bảo hiểm chờ duyệt</span>
                 </a>
 
-                <div class="dropdown-submenu dropdown-submenu-left">
+                <div class="dropdown-submenu">
                     <a href="#" class="dropdown-item dropdown-toggle"><i class="fad fa-folder-tree mr-1"></i> Danh sách chức năng</a>
                     <div class="dropdown-menu">
                         <a href="" class="dropdown-item"> <i class="far fa-file-certificate mr-1"></i> Danh sách hợp đồng xin cấp</a>
@@ -173,7 +173,7 @@
 
 
                 <div class="dropdown-wrap mt-2 mb-2">
-                    <p class="m-0 font-weight-semibold"><span class="text-danger">(*)</span> Truy cập nhanh các phân hệ khác:</p>
+                    <p class="m-0"><span class="text-danger">(*)</span> Truy cập nhanh các phân hệ khác:</p>
                 </div>
 
 
