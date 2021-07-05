@@ -158,16 +158,16 @@
                 <div class="dropdown-header">Menu chức năng </div>
 
                 <a href="" class="dropdown-item">
-                    <i class="fal fa-stream"></i> <span>Đơn bảo hiểm chờ duyệt</span>
+                    <i class="far fa-stream"></i> <span>Đơn bảo hiểm chờ duyệt</span>
                 </a>
 
                 <div class="dropdown-submenu">
-                    <a href="#" class="dropdown-item dropdown-toggle"><i class="fal fa-folder-tree mr-1"></i> Danh sách chức năng</a>
+                    <a href="#" class="dropdown-item dropdown-toggle"><i class="far fa-folder-tree mr-1"></i> Danh sách chức năng</a>
                     <div class="dropdown-menu">
-                        <a href="" class="dropdown-item"> <i class="fal fa-file-certificate mr-1"></i> Danh sách hợp đồng xin cấp</a>
-                        <a href="" class="dropdown-item"> <i class="fal fa-map-marker-alt mr-1"></i>Danh sách địa điểm</a>
-                        <a href="" class="dropdown-item"><i class="fal fa-ship mr-1"></i> Danh sách tàu biển</a>
-                        <a href="" class="dropdown-item active"><i class="fal fa-clipboard-list mr-1"></i>Danh sách bản chào phí</a>
+                        <a href="" class="dropdown-item"> <i class="far fa-file-certificate mr-1"></i> Danh sách hợp đồng xin cấp</a>
+                        <a href="" class="dropdown-item"> <i class="far fa-map-marker-alt mr-1"></i>Danh sách địa điểm</a>
+                        <a href="" class="dropdown-item"><i class="far fa-ship mr-1"></i> Danh sách tàu biển</a>
+                        <a href="" class="dropdown-item active"><i class="far fa-clipboard-list mr-1"></i>Danh sách bản chào phí</a>
                     </div>
                 </div>
 
@@ -179,7 +179,7 @@
 
                 <div class="row about-box-menu">
                     <div class="col-md-4 col-sm-4 col-4">
-                        <div class="about-box bg-primary-400 mb-0">
+                        <div class="about-box mb-0 text-primary">
                             <div class="about-main-icon">
                                 <i class="fad fa-shield" aria-hidden="true"></i>
                             </div>
@@ -187,7 +187,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4 col-4">
-                        <div class="about-box bg-primary-400  mb-0">
+                        <div class="about-box mb-0 text-primary">
                             <div class="about-main-icon">
                                 <i class="fad fa-file-certificate" aria-hidden="true"></i>
                             </div>
@@ -195,7 +195,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4 col-4">
-                        <div class="about-box bg-primary-400 mb-0">
+                        <div class="about-box mb-0 text-primary">
                             <div class="about-main-icon">
                                 <i class="fad fa-analytics" aria-hidden="true"></i>
                             </div>

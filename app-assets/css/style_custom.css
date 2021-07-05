@@ -4263,12 +4263,12 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
 }
 .dropdown-menu-category .dropdown-item>i{
     top: 0;
-    background: #455a64;
-    height: 26px;
-    width: 26px;
+    /* background: #455a64; */
+    height: 24px;
+    width: 24px;
     text-align: center;
-    color: #fff;
-    line-height: 26px;
+    /* color: #fff; */
+    line-height: 24px;
     border-radius: 4px;
     font-size: 14px;
 }
@@ -4300,15 +4300,18 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
 }
 .about-box-menu .about-box{
     padding: 10px;
+    border: 2px solid;
 }
 .about-box-menu .about-main-icon{
     padding-bottom: 6px;
 }
 .about-box-menu .about-main-icon i {
     font-size: 30px;
+    color: inherit;
 }
 .about-box-menu h5{
     font-size: 12px;
     text-transform: capitalize;
+    color: inherit;
 }
 
