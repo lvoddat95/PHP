@@ -148,46 +148,65 @@
             </div>
         </li>
         <li class="nav-item dropdown nav-item-dropdown-lg ml-lg-auto">
-                    <a href="#" class="navbar-nav-button dropdown-toggle" data-toggle="dropdown">
-                        <i class="icon-grid5 mr-1"></i>
-                        Danh mục
-                    </a>
+            <a href="#" class="navbar-nav-button dropdown-toggle" data-toggle="dropdown">
+                <i class="icon-grid5 mr-1"></i>
+                Danh mục
+            </a>
 
-                    <div class="dropdown-menu dropdown-menu-category dropdown-menu-right">
-                        <div class="dropdown-header">Truy cập nhanh</div>
-                        <a href="" class="dropdown-item">
-                            <i class="fad fa-stream"></i> <span>Đơn bảo hiểm chờ duyệt</span>
-                        </a>
+            <div class="dropdown-menu dropdown-menu-category dropdown-menu-right d-flex flex-column">
 
-                        <div class="dropdown-submenu dropdown-submenu-left">
-                            <a href="#" class="dropdown-item dropdown-toggle"><i class="fad fa-folder-tree mr-1"></i> Danh sách chức năng</a>
-                            <div class="dropdown-menu">
-                                <a href="" class="dropdown-item"> <i class="fad fa-folder-open mr-1"></i> Danh sách hợp đồng xin cấp</a>
-                                <a href="" class="dropdown-item"> <i class="fad fa-folder-open mr-1"></i>Danh sách địa điểm</a>
-                                <a href="" class="dropdown-item"><i class="fad fa-folder-open mr-1"></i> Danh sách tàu biển</a>
-                                <a href="" class="dropdown-item active"><i class="fad fa-folder-open mr-1"></i>Danh sách bản chào phí</a>
+                <div class="dropdown-header">Menu chức năng </div>
+
+                <a href="" class="dropdown-item">
+                    <i class="fad fa-stream"></i> <span>Đơn bảo hiểm chờ duyệt</span>
+                </a>
+
+                <div class="dropdown-submenu dropdown-submenu-left">
+                    <a href="#" class="dropdown-item dropdown-toggle"><i class="fad fa-folder-tree mr-1"></i> Danh sách chức năng</a>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item"> <i class="far fa-file-certificate mr-1"></i> Danh sách hợp đồng xin cấp</a>
+                        <a href="" class="dropdown-item"> <i class="far fa-map-marker-alt mr-1"></i>Danh sách địa điểm</a>
+                        <a href="" class="dropdown-item"><i class="fad fa-ship mr-1"></i> Danh sách tàu biển</a>
+                        <a href="" class="dropdown-item active"><i class="far fa-clipboard-list mr-1"></i>Danh sách bản chào phí</a>
+                    </div>
+                </div>
+
+
+                <div class="dropdown-wrap mt-2 mb-2">
+                    <p class="m-0 font-weight-semibold"><span class="text-danger">(*)</span> Truy cập nhanh các phân hệ khác:</p>
+                </div>
+
+
+                <div class="row about-box-menu">
+                    <div class="col-md-4 col-sm-4 col-4">
+                        <div class="about-box bg-theme-10 mb-0">
+                            <div class="about-main-icon">
+                                <i class="fad fa-shield" aria-hidden="true"></i>
                             </div>
-                        </div>
-
-                        <div class="dropdown-divider"></div>
-
-                        <a href="" class="dropdown-item">
-                            <i class="fad fa-calculator mr-1"></i> <span>Phân hệ Kế toán</span>
-                        </a>
-                        <a href="" class="dropdown-item">
-                            <i class="fad fa-file-certificate mr-1"></i> <span>Phân hệ Ấn chỉ</span>
-                        </a>
-                        <a href="" class="dropdown-item">
-                            <i class="fad fa-analytics mr-1"></i> <span>Quản lí Báo cáo</span>
-                        </a>
-
-                        <div class="dropdown-wrap mt-2">
-                            <p class="m-0"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius posuere mollis.</p>
+                            <h5 class="mb-0 font-size-s">Kế toán</h5>
                         </div>
                     </div>
+                    <div class="col-md-4 col-sm-4 col-4">
+                        <div class="about-box bg-theme-10 mb-0">
+                            <div class="about-main-icon">
+                                <i class="fad fa-file-certificate" aria-hidden="true"></i>
+                            </div>
+                            <h5 class="mb-0 font-size-s">Ấn chỉ</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-4">
+                        <div class="about-box bg-theme-10 mb-0">
+                            <div class="about-main-icon">
+                                <i class="fad fa-analytics" aria-hidden="true"></i>
+                            </div>
+                            <h5 class="mb-0 font-size-s">Báo cáo</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                    
-                </li>
+            
+        </li>
     </ul>
 
 </div>

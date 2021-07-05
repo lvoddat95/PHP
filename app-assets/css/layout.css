@@ -361,6 +361,10 @@
     margin-left: 15px;
     background-color: #142C91;
 }
+.sidebar ul li.nav-item .nav-group-sub .nav-group-sub .nav-link.active{
+    color: #ff7043;
+    font-weight: 500;
+}
 
 .sidebar ul li.nav-item .nav-group-sub .nav-group-sub .nav-group-sub a {
     margin-left: 30px;
