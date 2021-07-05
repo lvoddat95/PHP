@@ -179,7 +179,7 @@
 
                 <div class="row about-box-menu">
                     <div class="col-md-4 col-sm-4 col-4">
-                        <div class="about-box bg-theme-10 mb-0">
+                        <div class="about-box bg-primary-400 mb-0">
                             <div class="about-main-icon">
                                 <i class="fad fa-shield" aria-hidden="true"></i>
                             </div>
@@ -187,7 +187,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4 col-4">
-                        <div class="about-box bg-theme-10 mb-0">
+                        <div class="about-box bg-primary-400  mb-0">
                             <div class="about-main-icon">
                                 <i class="fad fa-file-certificate" aria-hidden="true"></i>
                             </div>
@@ -195,7 +195,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4 col-4">
-                        <div class="about-box bg-theme-10 mb-0">
+                        <div class="about-box bg-primary-400 mb-0">
                             <div class="about-main-icon">
                                 <i class="fad fa-analytics" aria-hidden="true"></i>
                             </div>
