@@ -4264,13 +4264,13 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
 .dropdown-menu-category .dropdown-item>i{
     top: 0;
     background: #455a64;
-    height: 20px;
-    width: 20px;
+    height: 26px;
+    width: 26px;
     text-align: center;
     color: #fff;
-    line-height: 20px;
+    line-height: 26px;
     border-radius: 4px;
-    font-size: 10px;
+    font-size: 14px;
 }
 .dropdown-menu-category >.dropdown-submenu>.dropdown-menu{
     position: static;
