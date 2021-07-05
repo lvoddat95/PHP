@@ -218,30 +218,50 @@
                                 <div class="row">
                                     <div class="col-md-4 col-sm-4 col-4">
                                         <div class="about-box bg-theme-10">
-                                            <div class="about-opacity-icon">
-                                                <i class="fad fa-shield" aria-hidden="true"></i>
-                                            </div>
+                                            <a href="#1" class="about-link"><span class="d-none">link</span></a>
                                             <div class="about-main-icon">
                                                 <i class="fad fa-shield" aria-hidden="true"></i>
                                             </div>
-                                            <h5 class="mb-0 font-size-s">Bảo lãnh</h5>
+                                            <div class="about-hover" >
+                                                <h5 class="mb-0 font-size-s">Bảo lãnh</h5>
+                                                <ul class="list-unstyled" scrollbar>
+                                                    <li><a href="">F01 - Bảo hiểm xe máy</a></li>
+                                                    <li><a href="">F02 - Bảo hiểm xe ô tô</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="about-move"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-4">
                                         <div class="about-box bg-theme-9">
-                                            <div class="about-opacity-icon">
-                                                <i class="fad fa-sack-dollar" aria-hidden="true"></i>
-                                            </div>
+                                            <a href="#2" class="about-link"><span class="d-none">link</span></a>
                                             <div class="about-main-icon">
                                                 <i class="fad fa-sack-dollar" aria-hidden="true"></i>
                                             </div>
-                                            <h5 class="mb-0 font-size-s">Bồi thường</h5>
+                                            <div class="about-hover" >
+                                                <h5 class="mb-0 font-size-s">Bồi thường</h5>
+                                                <ul class="list-unstyled" scrollbar>
+                                                    <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g01.php'; ?>"><span>G01 - Bảo hiểm sức khỏe toàn diện</span></a></li>
+                                                    <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g02.php'; ?>"><span>G02 - Bảo hiểm con người mức trách nhiệm cao (VNI Care)</span></a></li>
+                                                    <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g03.php'; ?>"><span>G03 - Bảo hiểm tai nạn con người</span></a></li>
+                                                    <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g04.php'; ?>"><span>G04 - Bảo hiểm tai nạn con người của Cologne Re</span></a></li>
+                                                    <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g05.php'; ?>"><span>G05 - Bảo hiểm toàn diện học sinh</span></a></li>
+                                                    <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g06.php'; ?>"><span>G06 - Bảo hiểm du lịch trong nước</span></a></li>
+                                                    <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g07.php'; ?>"><span>G07.1 - Du lịch quốc tế</span></a></li>
+                                                    <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g072.php'; ?>"><span>G07.2 - Người Việt Nam du lịch nước ngoài</span></a></li>
+                                                    <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g073.php'; ?>"><span>G07.3 - Người nước ngoài du lịch Việt Nam</span></a></li>
+                                                    <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g08.php'; ?>"><span>G08 - Bảo hiểm sức khỏe giáo viên</span></a></li>
+                                                    <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g09.php'; ?>"><span>G09 - Bảo hiểm tai nạn đối với người lao động</span></a></li>
+                                                    <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g12.php'; ?>"><span>G12 - Bảo hiểm chăm sóc sức khỏe cá nhân White Lotus</span></a></li>
+                                                    <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g13.php'; ?>"><span>G13 - Bảo hiểm tai nạn hộ sử dụng điện</span></a></li>
+                                                    <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g16.php'; ?>"><span>G16 - Bảo hiểm sức khỏe người vay vốn</span></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="about-move"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-4">
                                         <div class="about-box bg-blue-400">
-                                            <div class="about-opacity-icon"> <i class="fad fa-repeat"
-                                                    aria-hidden="true"></i> </div>
                                             <div class="about-main-icon">
                                                 <i class="fad fa-repeat" aria-hidden="true"></i>
                                             </div>
@@ -251,8 +271,6 @@
 
                                     <div class="col-md-4 col-sm-4 col-4">
                                         <div class="about-box bg-pink-500">
-                                            <div class="about-opacity-icon"> <i class="fad fa-calculator"
-                                                    aria-hidden="true"></i> </div>
                                             <div class="about-main-icon">
                                                 <i class="fad fa-calculator" aria-hidden="true"></i>
                                             </div>
@@ -262,8 +280,6 @@
 
                                     <div class="col-md-4 col-sm-4 col-4">
                                         <div class="about-box bg-theme-11" onclick="location.href='view/qlac/'">
-                                            <div class="about-opacity-icon"> <i class="fad fa-file-certificate"
-                                                    aria-hidden="true"></i> </div>
                                             <div class="about-main-icon">
                                                 <i class="fad fa-file-certificate" aria-hidden="true"></i>
                                             </div>
@@ -272,8 +288,6 @@
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-4">
                                         <div class="about-box bg-teal-600">
-                                            <div class="about-opacity-icon"> <i class="fad fa-analytics"
-                                                    aria-hidden="true"></i> </div>
                                             <div class="about-main-icon">
                                                 <i class="fad fa-analytics" aria-hidden="true"></i>
                                             </div>
@@ -282,8 +296,6 @@
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-4">
                                         <div class="about-box bg-indigo-700">
-                                            <div class="about-opacity-icon"> <i class="fad fa-archive"
-                                                    aria-hidden="true"></i> </div>
                                             <div class="about-main-icon">
                                                 <i class="fad fa-archive" aria-hidden="true"></i>
                                             </div>
@@ -292,8 +304,6 @@
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-4">
                                         <div class="about-box bg-purple-600">
-                                            <div class="about-opacity-icon"> <i class="fad fa-users-cog"
-                                                    aria-hidden="true"></i> </div>
                                             <div class="about-main-icon">
                                                 <i class="fad fa-users-cog" aria-hidden="true"></i>
                                             </div>
@@ -302,8 +312,6 @@
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-4">
                                         <div class="about-box bg-theme-16">
-                                            <div class="about-opacity-icon"> <i class="fad fa-money-check-edit"
-                                                    aria-hidden="true"></i> </div>
                                             <div class="about-main-icon">
                                                 <i class="fad fa-money-check-edit" aria-hidden="true"></i>
                                             </div>
