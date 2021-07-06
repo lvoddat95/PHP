@@ -733,6 +733,7 @@ a.sidebar-main-toggle:hover {
 .about-box.open .about-hover ul {
     height: 110px;
     overflow: auto;
+    width: 100%;
 }
 
 .about-box.open .about-hover ul li a {
@@ -787,7 +788,7 @@ a.sidebar-main-toggle:hover {
     border-radius: 50%;
     z-index: 3;
 }
-
+.about-box.open .about-readmore,
 .about-readmore:hover {
     background-color: rgb(255 255 255);
 }

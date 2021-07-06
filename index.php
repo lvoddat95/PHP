@@ -224,7 +224,7 @@
                                             </div>
                                             <div class="about-hover" >
                                                 <h5 class="mb-0 font-size-s">Bảo lãnh</h5>
-                                                <ul class="list-unstyled" scrollbar>
+                                                <ul class="list-unstyled">
                                                     <li><a href="">F01 - Bảo hiểm xe máy</a></li>
                                                     <li><a href="">F02 - Bảo hiểm xe ô tô</a></li>
                                                 </ul>
@@ -240,7 +240,7 @@
                                             </div>
                                             <div class="about-hover" >
                                                 <h5 class="mb-0 font-size-s">Bồi thường</h5>
-                                                <ul class="list-unstyled" scrollbar>
+                                                <ul class="list-unstyled" >
                                                     <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g01.php'; ?>"><span>G01 - Bảo hiểm sức khỏe toàn diện</span></a></li>
                                                     <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g02.php'; ?>"><span>G02 - Bảo hiểm con người mức trách nhiệm cao (VNI Care)</span></a></li>
                                                     <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g03.php'; ?>"><span>G03 - Bảo hiểm tai nạn con người</span></a></li>
@@ -258,9 +258,7 @@
                                                 </ul>
                                                 
                                             </div>
-                                            <a href="javascript:;" class="about-readmore" 
-                                            data-tooltip="tipsy" original-title="Xem thêm" data-position="right"
-                                            onclick="on_click_about_readmore(this);">
+                                            <a href="javascript:;" class="about-readmore"  data-tooltip="tipsy" original-title="Xem thêm" data-position="bottom">
                                                 <i class="far fa-plus"></i>
                                             </a>
                                             

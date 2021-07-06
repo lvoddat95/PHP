@@ -88,6 +88,7 @@ $(function(){
         });
     })
 
+    // fancybox gallery images
     if ($('[data-fancybox="gallery"]').length > 0) {
         if (typeof $.fancybox != 'function') {
             console.warn('Warning - Fancybox Js is not loaded.');
@@ -117,6 +118,34 @@ $(function(){
             rotate: true,
         });
     }
+
+    //Readmore action
+    if ($('.about-readmore').length > 0) {
+        if (typeof PerfectScrollbar == 'undefined') {
+            console.warn('Warning - PerfectScrollbar Js is not loaded.');
+            return;
+        }
+        $('.about-readmore').each(function(index, elem){ 
+            let ul = $(elem).find('ul');
+            let v_parent = $(elem).closest('.about-box');
+            let v_scrollbar = v_parent.find('.about-hover > ul');
+            let ps;
+
+            $(elem).on("click", function(){
+                v_parent.toggleClass('open');
+                
+                if (ps) ps.destroy();
+                ps = new PerfectScrollbar($(v_scrollbar)[0]);
+
+                if (!v_parent.hasClass('open')){
+                   $(v_scrollbar).scrollTop(0);
+                    if (ps) ps.destroy();
+                    ps = null;
+                }
+            });
+        });
+    }
+
 
          
    
@@ -217,7 +246,11 @@ var fancybox_modal = function(p_this, p_src){
             },
             touch: false,
             baseClass: "fancybox-modal",
+            beforeShow: function(){
+                $('#loading').show();
+            },
             afterLoad : function( instance, current ) {
+                // $('body').remove('.fancybox-loading');
                 $($.fn.dataTable.tables(true)).DataTable()
                 .columns.adjust()
                 .responsive.recalc();
