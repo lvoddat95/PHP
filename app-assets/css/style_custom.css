@@ -4550,12 +4550,21 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
 }
 
 .about-box-menu .about-box {
+    text-align: center;
     padding: 10px;
     border: 2px solid;
+    height: auto;
+}
+
+.about-box-menu .about-box:before{
+    display: none;
 }
 
 .about-box-menu .about-main-icon {
-    padding-bottom: 6px;
+    color: inherit;
+    padding-bottom: 0px;
+    font-size: 24px;
+    display: block !important;
 }
 
 .about-box-menu .about-main-icon i {
@@ -4564,6 +4573,7 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
 }
 
 .about-box-menu h5 {
+    padding: 0;
     font-size: 12px;
     text-transform: capitalize;
     color: inherit;
