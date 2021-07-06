@@ -619,7 +619,8 @@ a.sidebar-main-toggle:hover {
     box-shadow: 0 0 5px rgba(127, 123, 123, 0.1);
     transition: ease-in-out 0.3s;
 }
-.about-link{
+
+.about-link {
     position: absolute;
     top: 0;
     left: 0;
@@ -627,6 +628,7 @@ a.sidebar-main-toggle:hover {
     width: 100%;
     z-index: 2;
 }
+
 .about-box:before {
     content: '';
     position: absolute;
@@ -704,36 +706,49 @@ a.sidebar-main-toggle:hover {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 20px;
-    padding: 0 30px;
-    transition: ease-in-out 0.3s;
+    bottom: 0;
+    padding: 0 30px 10px;
+    -webkit-transition: ease-in-out 0.25s;
+    transition: ease-in-out 0.25s;
     border-radius: 10px;
     cursor: auto;
     z-index: 2;
 }
-.about-box:hover .about-hover{
-    top: 0;
-    bottom: 0;
-}
-.about-box:hover .about-main-icon{
-    display: none;
+
+.about-box.open .about-main-icon {
+    opacity: 0;
 }
 
-.about-box:hover .about-hover h5{
+.about-box.open .about-hover {
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+}
+
+.about-box.open .about-hover h5 {
     color: #fff;
 }
-.about-box:hover .about-hover ul{
+
+.about-box.open .about-hover ul {
     height: 110px;
-}
-.about-box:hover .about-hover ul li a{
-    color: #fff;
+    overflow: auto;
 }
 
+.about-box.open .about-hover ul li a {
+    color: #fff;
+    white-space: normal;
+}
 
 .about-hover ul {
     margin: 0;
     position: relative;
+    overflow: hidden;
+    width: calc(100% - 20px);
     height: 48px;
+    z-index: 1;
+    -webkit-transition: height 0.25s linear;
+    transition: height 0.25s linear;
 }
 
 .about-hover ul li a {
@@ -745,6 +760,7 @@ a.sidebar-main-toggle:hover {
     color: #fff;
     transition: ease-in-out 0.3s;
 }
+
 .about-hover ul li a:hover {
     color: #f78b00 !important;
 }
@@ -755,6 +771,111 @@ a.sidebar-main-toggle:hover {
     font-weight: 600;
 }
 
+.about-readmore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    font-size: 16px;
+    bottom: 10px;
+    right: 10px;
+    color: #455a64 !important;
+    background-color: rgb(255 255 255 / 90%);
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.about-readmore:hover {
+    background-color: rgb(255 255 255);
+}
+.about-readmore > i{
+    -webkit-animation-name: plusButton;
+    animation-name: plusButton;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.about-box.open .about-readmore > i{
+    -webkit-animation-name: closeButton;
+    animation-name: closeButton;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes closeButton {
+    from {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    to {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, 135deg);
+        transform: rotate3d(0, 0, 1, 135deg);
+    }
+
+}
+
+@keyframes closeButton {
+    from {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    to {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, 135deg);
+        transform: rotate3d(0, 0, 1, 135deg);
+    }
+
+}
+
+@-webkit-keyframes plusButton {
+    from {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, -135deg);
+        transform: rotate3d(0, 0, 1, -135deg);
+    }
+
+    to {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: none;
+        transform: none;
+    }
+
+}
+
+@keyframes plusButton {
+    from {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, -135deg);
+        transform: rotate3d(0, 0, 1, -135deg);
+    }
+
+    to {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: none;
+        transform: none;
+    }
+
+}
 
 .lineChartWidget {
     height: 100px;
@@ -3811,8 +3932,8 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     bottom: 0;
     left: 0;
     text-align: center;/*    display: flex;
-                align-items: center;
-                justify-content: center;*/
+                        align-items: center;
+                        justify-content: center;*/
 }
 
 .loading-text {
@@ -4378,7 +4499,7 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
 .modal-none {
     display: none;
 }
-
+.fancybox-content,
 .fancybox-modal .fancybox-content {
     padding: 0;
     border-radius: 0.25rem;
@@ -4556,7 +4677,7 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     height: auto;
 }
 
-.about-box-menu .about-box:before{
+.about-box-menu .about-box:before {
     display: none;
 }
 

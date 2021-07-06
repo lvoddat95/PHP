@@ -70,115 +70,62 @@ $(function(){
     $(".go-top").click(function () {
         $("html, body").animate({scrollTop: 0}, 500);
     });
+
+    // Phan in anh ho so boi thuong theo dinh dang list/4/6
+    $('.btn-print').on('click',function(){
+        var data = $(this).data('print');
+        if (data == 'list') {
+            $("#print-claim").removeClass('view-grid4 view-grid6').addClass('view-list');
+        }else if (data == 'grid4'){
+            $("#print-claim").removeClass('view-list view-grid6').addClass('view-grid4');
+        }else{
+            $("#print-claim").removeClass('view-list view-grid4').addClass('view-grid6');
+        }
+        
+        $("#print-claim").print({
+            noPrintSelector : ".no-print",
+            timeout: 1750,
+        });
+    })
+
+    if ($('[data-fancybox="gallery"]').length > 0) {
+        if (typeof $.fancybox != 'function') {
+            console.warn('Warning - Fancybox Js is not loaded.');
+            return;
+        }
+        //Faxcybox hien thi danh sach anh  
+        $('[data-fancybox="gallery"]').fancybox({
+            buttons : [
+                "zoom",
+                "fb",
+                // "share",
+                "slideShow",
+                "fullScreen",
+                "download",
+                "thumbs",
+                "close"
+            ],
+            thumbs : {
+                autoStart : true
+            },
+            baseClass: "",
+            //div lay noi dung cho anh
+            caption : function( instance, item ) {
+                return $(this).find('figcaption').html();
+            },
+            // them xoay anh
+            rotate: true,
+        });
+    }
+
+         
    
-});
-
-// Hiểm thị hoặc ẩn password
-var show_password = function(p_this){
-    var x = document.getElementById("password");
-    if (x.type === "password") {
-        x.type = "text";
-        $(p_this).addClass('show');
-    } else {
-        x.type = "password";
-        $(p_this).removeClass('show');
-    }
-}
-
-// Phan in anh ho so boi thuong theo dinh dang list/4/6
-$('.btn-print').on('click',function(){
-    var data = $(this).data('print');
-    if (data == 'list') {
-        $("#print-claim").removeClass('view-grid4 view-grid6').addClass('view-list');
-    }else if (data == 'grid4'){
-        $("#print-claim").removeClass('view-list view-grid6').addClass('view-grid4');
-    }else{
-        $("#print-claim").removeClass('view-list view-grid4').addClass('view-grid6');
-    }
-    
-    $("#print-claim").print({
-        noPrintSelector : ".no-print",
-        timeout: 1750,
-    });
-    
-})
-// Fix kich thuoc anh ho so boi thuong
-var on_change_kich_thuoc_anh = function(p_this){
-    if ($(p_this).is(':checked')) {
-        $("#fancybox-gallery").addClass('view-fix')
-    }else{
-        $("#fancybox-gallery").removeClass('view-fix')
-    }
-}
-// Click chon/bo anh ho so boi thuong can in
-var on_change_print_select = function(p_this){
-    if (!$(p_this).is(':checked')) {
-        $(p_this).closest('li').addClass('no-print');
-    }else{
-        $(p_this).closest('li').removeClass('no-print');
-    }
-}
-
-
-//Fix z-index cho modal boostrap
-var modal_lv = 0;
-$('.modal').on('shown.bs.modal', function (e) {
-    $('.modal-backdrop:last').css('zIndex',1051+modal_lv);
-    $(e.currentTarget).css('zIndex',1052+modal_lv);
-    modal_lv++
-});
-
-$('.modal').on('hidden.bs.modal', function (e) {
-    modal_lv--
-});
-
-
-//Faxcybox hien thi danh sach anh  
-$('[data-fancybox="gallery"]').fancybox({
-    buttons : [
-        "zoom",
-        "fb",
-        // "share",
-        "slideShow",
-        "fullScreen",
-        "download",
-        "thumbs",
-        "close"
-    ],
-    thumbs : {
-        autoStart : true
-    },
-    baseClass: "",
-    //div lay noi dung cho anh
-    caption : function( instance, item ) {
-        return $(this).find('figcaption').html();
-    },
-    // them xoay anh
-    rotate: true,
 });
 
 //Sap xep anh
 $( "#fancybox-gallery" ).sortable({
     handle: ".img-sortable",
 });
-
-//Faxcybox modal
-var fancybox_modal = function(p_this, p_src){
-    p_this = $(p_this);
-    $.fancybox.open({
-        src : p_src,
-        btnTpl: {
-            smallBtn:"",
-        },
-        baseClass: "fancybox-modal",
-        afterLoad : function( instance, current ) {
-            $($.fn.dataTable.tables(true)).DataTable()
-            .columns.adjust()
-            .responsive.recalc();
-            // $(".list-files").isotope('layout');
-        }
-    });
-}
 
 /* Script mobile nav*/
 $(function(){
@@ -214,3 +161,70 @@ $(function(){
         lastScrollTop = windowTop;
     } );
 })
+
+// Hiểm thị hoặc ẩn password
+var show_password = function(p_this){
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+        x.type = "text";
+        $(p_this).addClass('show');
+    } else {
+        x.type = "password";
+        $(p_this).removeClass('show');
+    }
+}
+
+
+// Fix kich thuoc anh ho so boi thuong
+var on_change_kich_thuoc_anh = function(p_this){
+    if ($(p_this).is(':checked')) {
+        $("#fancybox-gallery").addClass('view-fix')
+    }else{
+        $("#fancybox-gallery").removeClass('view-fix')
+    }
+}
+// Click chon/bo anh ho so boi thuong can in
+var on_change_print_select = function(p_this){
+    if (!$(p_this).is(':checked')) {
+        $(p_this).closest('li').addClass('no-print');
+    }else{
+        $(p_this).closest('li').removeClass('no-print');
+    }
+}
+
+
+//Fix z-index cho modal boostrap
+var modal_lv = 0;
+$('.modal').on('shown.bs.modal', function (e) {
+    $('.modal-backdrop:last').css('zIndex',1051+modal_lv);
+    $(e.currentTarget).css('zIndex',1052+modal_lv);
+    modal_lv++
+});
+
+$('.modal').on('hidden.bs.modal', function (e) {
+    modal_lv--
+});
+
+
+//Faxcybox modal
+var fancybox_modal = function(p_this, p_src){
+    p_this = $(p_this);
+    $.fancybox.open({
+        src : p_src,
+        opts: {
+            btnTpl: {
+                smallBtn:"",
+            },
+            touch: false,
+            baseClass: "fancybox-modal",
+            afterLoad : function( instance, current ) {
+                $($.fn.dataTable.tables(true)).DataTable()
+                .columns.adjust()
+                .responsive.recalc();
+                // $(".list-files").isotope('layout');
+            }
+        },
+        
+    });
+}
+

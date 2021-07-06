@@ -229,11 +229,11 @@
                                                     <li><a href="">F02 - Bảo hiểm xe ô tô</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="about-move"></div>
+                                            
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-4">
-                                        <div class="about-box bg-theme-9">
+                                        <div class="about-box bg-theme-10">
                                             <a href="#2" class="about-link"><span class="d-none">link</span></a>
                                             <div class="about-main-icon">
                                                 <i class="fad fa-sack-dollar" aria-hidden="true"></i>
@@ -256,8 +256,14 @@
                                                     <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g13.php'; ?>"><span>G13 - Bảo hiểm tai nạn hộ sử dụng điện</span></a></li>
                                                     <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g16.php'; ?>"><span>G16 - Bảo hiểm sức khỏe người vay vốn</span></a></li>
                                                 </ul>
+                                                
                                             </div>
-                                            <div class="about-move"></div>
+                                            <a href="javascript:;" class="about-readmore" 
+                                            data-tooltip="tipsy" original-title="Xem thêm" data-position="right"
+                                            onclick="on_click_about_readmore(this);">
+                                                <i class="far fa-plus"></i>
+                                            </a>
+                                            
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-4">
