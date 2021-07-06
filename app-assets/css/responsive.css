@@ -344,7 +344,7 @@
         height: auto;
     }
     .about-box h5{
-        padding: 0;
+        padding: 10px 0 0;
     }
     .about-hover > ul{
         display: none;
@@ -355,6 +355,10 @@
     .about-hover {
         padding: 0;
         position: static;
+        transform: none;
+    }
+    .about-move{
+        display: none;
     }
 
 
@@ -414,6 +418,7 @@
         line-height: normal;
         font-weight: 400;
         text-transform: capitalize;
+        padding-top: 5px;
     }
     .sec-report > .row{
         display: block;

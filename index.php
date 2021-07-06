@@ -229,7 +229,7 @@
                                                     <li><a href="">F02 - Bảo hiểm xe ô tô</a></li>
                                                 </ul>
                                             </div>
-                                            
+                                            <div class="about-move"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-4">
@@ -256,12 +256,11 @@
                                                     <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g13.php'; ?>"><span>G13 - Bảo hiểm tai nạn hộ sử dụng điện</span></a></li>
                                                     <li><a href="<?php echo HTTP_PATH .'view/insurance/PER/g16.php'; ?>"><span>G16 - Bảo hiểm sức khỏe người vay vốn</span></a></li>
                                                 </ul>
-                                                
                                             </div>
-                                            <a href="javascript:;" class="about-readmore"  data-tooltip="tipsy" original-title="Xem thêm" data-position="bottom">
+                                            <a href="javascript:;" class="about-readmore" >
                                                 <i class="far fa-plus"></i>
                                             </a>
-                                            
+                                            <div class="about-move"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-4">
@@ -270,6 +269,7 @@
                                                 <i class="fad fa-repeat" aria-hidden="true"></i>
                                             </div>
                                             <h5 class="mb-0 font-size-s">Tái bảo hiểm</h5>
+                                            <div class="about-move"></div>
                                         </div>
                                     </div>
 
@@ -279,6 +279,7 @@
                                                 <i class="fad fa-calculator" aria-hidden="true"></i>
                                             </div>
                                             <h5 class="mb-0 font-size-s">Kế toán</h5>
+                                            <div class="about-move"></div>
                                         </div>
                                     </div>
 
@@ -288,6 +289,7 @@
                                                 <i class="fad fa-file-certificate" aria-hidden="true"></i>
                                             </div>
                                             <h5 class="mb-0 font-size-s">Ấn Chỉ</h5>
+                                            <div class="about-move"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-4">
@@ -296,6 +298,7 @@
                                                 <i class="fad fa-analytics" aria-hidden="true"></i>
                                             </div>
                                             <h5 class="mb-0 font-size-s">Báo cáo</h5>
+                                            <div class="about-move"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-4">
@@ -304,6 +307,7 @@
                                                 <i class="fad fa-archive" aria-hidden="true"></i>
                                             </div>
                                             <h5 class="mb-0 font-size-s">Danh mục dùng chung</h5>
+                                            <div class="about-move"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-4">
@@ -312,6 +316,7 @@
                                                 <i class="fad fa-users-cog" aria-hidden="true"></i>
                                             </div>
                                             <h5 class="mb-0 font-size-s">Quản trị người dùng</h5>
+                                            <div class="about-move"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-4">
@@ -320,6 +325,7 @@
                                                 <i class="fad fa-money-check-edit" aria-hidden="true"></i>
                                             </div>
                                             <h5 class="mb-0 font-size-s">Cấp đơn Bancassurance</h5>
+                                            <div class="about-move"></div>
                                         </div>
                                     </div>
 
