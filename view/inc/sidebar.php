@@ -34,7 +34,7 @@
 
                 <!-- Main navigation -->
                 <div class="card card-sidebar-mobile">
-                    <ul class="nav nav-sidebar" data-nav-type="accordion">
+                    <ul class="nav nav-sidebar">
 
                         <li class="nav-item">
                             <a href="<?php echo HTTP_PATH ?>" class="nav-link <?php echo in_array('index', $arr_menu) ? "active" : ""; ?>" data-menu-title="Bảng điều khiển">
@@ -44,15 +44,25 @@
                         </li>
 
                         <li class="nav-item nav-item-submenu">
-                            <a href="javascript:;" class="nav-link">
-                                <i class="fad fa-browser fa-fw"></i>
-                                <span class="menu-title"> Pages Template</span>
-                            </a>
+
+                            <span class="nav-add-link">
+                                <a href="#1">
+                                    <i class="fad fa-browser fa-fw"></i>
+                                    <span class="menu-title">Pages Template</span>
+                                </a>
+                                <span class="nav-link nav-link-icon"></span>
+                            </span>
+                            
+
                             <ul class="nav nav-group-sub" scrollbar data-submenu-title="Pages Template">
                                 <li class="nav-item nav-item-submenu">
-                                    <a href="" class="nav-link">
-                                        <span class="menu-title">Bảo hiểm</span>
-                                    </a>
+                                    <span class="nav-add-link">
+                                        <a href="#2">
+                                            <i class="fad fa-browser fa-fw"></i>
+                                            <span class="menu-title">Bảo hiểm</span>
+                                        </a>
+                                        <span class="nav-link nav-link-icon"></span>
+                                    </span>
                                     <ul class="nav nav-group-sub">
                                         <li><a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="nav-link"><span class="menu-title">Danh sách đơn</span></a></li>
                                         <li><a href="<?php echo HTTP_PATH .'view/pages/nhap-don.php'; ?>" class="nav-link"><span class="menu-title">Nhập đơn</span></a></li>

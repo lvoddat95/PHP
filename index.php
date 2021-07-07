@@ -269,7 +269,6 @@
                                                 <i class="fad fa-repeat" aria-hidden="true"></i>
                                             </div>
                                             <h5 class="mb-0 font-size-s">Tái bảo hiểm</h5>
-                                            <div class="about-move"></div>
                                         </div>
                                     </div>
 
@@ -279,7 +278,6 @@
                                                 <i class="fad fa-calculator" aria-hidden="true"></i>
                                             </div>
                                             <h5 class="mb-0 font-size-s">Kế toán</h5>
-                                            <div class="about-move"></div>
                                         </div>
                                     </div>
 
@@ -289,7 +287,6 @@
                                                 <i class="fad fa-file-certificate" aria-hidden="true"></i>
                                             </div>
                                             <h5 class="mb-0 font-size-s">Ấn Chỉ</h5>
-                                            <div class="about-move"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-4">
@@ -298,7 +295,6 @@
                                                 <i class="fad fa-analytics" aria-hidden="true"></i>
                                             </div>
                                             <h5 class="mb-0 font-size-s">Báo cáo</h5>
-                                            <div class="about-move"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-4">
@@ -307,7 +303,6 @@
                                                 <i class="fad fa-archive" aria-hidden="true"></i>
                                             </div>
                                             <h5 class="mb-0 font-size-s">Danh mục dùng chung</h5>
-                                            <div class="about-move"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-4">
@@ -316,7 +311,6 @@
                                                 <i class="fad fa-users-cog" aria-hidden="true"></i>
                                             </div>
                                             <h5 class="mb-0 font-size-s">Quản trị người dùng</h5>
-                                            <div class="about-move"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-4">
@@ -325,7 +319,6 @@
                                                 <i class="fad fa-money-check-edit" aria-hidden="true"></i>
                                             </div>
                                             <h5 class="mb-0 font-size-s">Cấp đơn Bancassurance</h5>
-                                            <div class="about-move"></div>
                                         </div>
                                     </div>
 

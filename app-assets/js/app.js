@@ -160,24 +160,23 @@ var App = function () {
 
         // Configure collapsible functionality
         $('.' + navClass).each(function() {
-            $(this).find('.' + navItemClass).has('.' + navSubmenuClass).children('.' + navItemClass + ' > ' + '.' + navLinkClass).not('.disabled').on('click', function (e) {
+            $(this).find('.' + navItemClass).has('.' + navSubmenuClass).find( '.' + navLinkClass).not('.disabled').on('click', function (e) {
                 e.preventDefault();
 
                 // Simplify stuff
                 var $target = $(this),
                     $navSidebarMini = $('.sidebar-xs').not('.sidebar-mobile-main').find('.sidebar-main .' + navClass).children('.' + navItemClass);
-
                 // Collapsible
-                if($target.parent('.' + navItemClass).hasClass(navItemOpenClass)) {
-                    $target.parent('.' + navItemClass).not($navSidebarMini).removeClass(navItemOpenClass).children('.' + navSubmenuClass).slideUp(navSlidingSpeed);
+                if($target.closest('.' + navItemClass).hasClass(navItemOpenClass)) {
+                    $target.closest('.' + navItemClass).not($navSidebarMini).removeClass(navItemOpenClass).children('.' + navSubmenuClass).slideUp(navSlidingSpeed);
                 }
                 else {
-                    $target.parent('.' + navItemClass).not($navSidebarMini).addClass(navItemOpenClass).children('.' + navSubmenuClass).slideDown(navSlidingSpeed);
+                    $target.closest('.' + navItemClass).not($navSidebarMini).addClass(navItemOpenClass).children('.' + navSubmenuClass).slideDown(navSlidingSpeed);
                 }
 
                 // Accordion
-                if ($target.parents('.' + navClass).data('nav-type') == 'accordion') {
-                    $target.parent('.' + navItemClass).not($navSidebarMini).siblings(':has(.' + navSubmenuClass + ')').removeClass(navItemOpenClass).children('.' + navSubmenuClass).slideUp(navSlidingSpeed);
+                if ($target.closest('.' + navClass).data('nav-type') == 'accordion') {
+                    $target.closest('.' + navItemClass).not($navSidebarMini).siblings(':has(.' + navSubmenuClass + ')').removeClass(navItemOpenClass).children('.' + navSubmenuClass).slideUp(navSlidingSpeed);
                 }
             });
         });

@@ -189,135 +189,6 @@ table .select2-container {
     font-size: 12px;
 }
 
-.sidebar-xs sidebar .nav-sidebar>.nav-item>.nav-link {
-    width: 30px;
-}
-
-a.sidebar-main-toggle {
-    position: absolute;
-    display: block;
-    outline: none;
-    top: 10px;
-    right: 10px;
-    margin-bottom: 10px;
-    color: #ffffff;
-    height: 30px;
-    width: 30px;
-    line-height: 30px;
-    text-align: center;
-    border-radius: 6px;
-    background: rgba(255, 255, 255, .1);
-    -webkit-transition: all ease-in-out 0.25s;
-    -ms-transition: all ease-in-out 0.25s;
-    transition: all ease-in-out 0.25s;
-}
-
-a.sidebar-main-toggle:hover {
-    background: rgba(255, 255, 255, .1);
-}
-
-.sidebar-xs a.sidebar-main-toggle {
-    position: static;
-    color: #fff;
-    background: rgba(255, 255, 255, .1);
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.sidebar-xs .sidebar-main-toggle>i:before {
-    content: "\f204";
-}
-
-.sidebar .logo {
-    position: relative;
-    padding: 0 10px 20px;
-    z-index: 4;
-    -webkit-transition: all ease-in-out 0.25s;
-    -ms-transition: all ease-in-out 0.25s;
-    transition: all ease-in-out 0.25s;
-}
-
-.sidebar .logo p {
-    float: left;
-    font-size: 20px;
-    margin: 10px 10px;
-    color: #FFFFFF;
-    line-height: 20px;
-}
-
-.logo-img {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.logo-img img {
-    width: 50px;
-    -webkit-transition: all ease-in-out 0.25s;
-    -ms-transition: all ease-in-out 0.25s;
-    transition: all ease-in-out 0.25s;
-}
-
-.sidebar-xs .sidebar .logo-img {
-    display: block;
-    text-align: center;
-    margin: auto;
-}
-
-.sidebar-xs .sidebar .logo-img img {
-    width: 30px;
-}
-
-.sidebar-xs .logo-text {
-    float: none !important;
-}
-
-.logo-text {
-    display: block;
-    color: #fff !important;
-}
-
-.sidebar .logo .logo-text .text {
-    font-size: 55px;
-    font-weight: bold;
-    line-height: 40px;
-    font-family: 'Titillium Web', sans-serif;
-    -webkit-transition: all ease-in-out 0.25s;
-    -ms-transition: all ease-in-out 0.25s;
-    transition: all ease-in-out 0.25s;
-}
-
-.sidebar-xs .sidebar .logo {
-    padding-left: 7.5px;
-    padding-right: 7.5px;
-}
-
-.sidebar-xs .sup-box, .sidebar-xs .sidebar .logo .logo-text .text {
-    display: none;
-}
-
-.sidebar-xs .sidebar-main .nav-sidebar>.nav-item>.nav-link[data-menu-title]:before {
-    content: attr(data-menu-title);
-    display: block;
-    color: #fff;
-    margin-bottom: 10px;
-    background: #516BBE;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 16.875rem;
-    display: none;
-    padding: 7px 15px;
-    transform: none;
-    margin: 0;
-    margin-left: 10px;
-    border-radius: 4px;
-    height: auto;
-}
-
-.sidebar-xs .sidebar-main .nav-sidebar>.nav-item:hover>.nav-link[data-menu-title]:before {
-    display: block !important;
-}
-
 .page-title {
     position: relative;
     padding: 0 0 1rem;
@@ -709,8 +580,8 @@ a.sidebar-main-toggle:hover {
     top: 0;
     bottom: 0;
     padding: 0 30px 10px;
-        -webkit-transform: translateY(70px);
-        transform: translateY(70px);
+    -webkit-transform: translateY(70px);
+    transform: translateY(70px);
     -webkit-transition: ease-in-out 0.25s;
     transition: ease-in-out 0.25s;
     border-radius: 10px;
@@ -725,7 +596,6 @@ a.sidebar-main-toggle:hover {
 .about-box.open .about-hover {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
-
 }
 
 .about-box.open .about-hover h5 {
@@ -790,11 +660,12 @@ a.sidebar-main-toggle:hover {
     border-radius: 50%;
     z-index: 3;
 }
-.about-box.open .about-readmore,
-.about-readmore:hover {
+
+.about-box.open .about-readmore, .about-readmore:hover {
     background-color: rgb(255 255 255);
 }
-.about-readmore > i{
+
+.about-readmore > i {
     -webkit-animation-name: plusButton;
     animation-name: plusButton;
     -webkit-animation-duration: .5s;
@@ -803,7 +674,7 @@ a.sidebar-main-toggle:hover {
     animation-fill-mode: both;
 }
 
-.about-box.open .about-readmore > i{
+.about-box.open .about-readmore > i {
     -webkit-animation-name: closeButton;
     animation-name: closeButton;
     -webkit-animation-duration: .5s;
@@ -3935,8 +3806,8 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     bottom: 0;
     left: 0;
     text-align: center;/*    display: flex;
-                        align-items: center;
-                        justify-content: center;*/
+                            align-items: center;
+                            justify-content: center;*/
 }
 
 .loading-text {
@@ -4502,8 +4373,8 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
 .modal-none {
     display: none;
 }
-.fancybox-content,
-.fancybox-modal .fancybox-content {
+
+.fancybox-content, .fancybox-modal .fancybox-content {
     padding: 0;
     border-radius: 0.25rem;
     width: 100%;
@@ -4702,3 +4573,4 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     text-transform: capitalize;
     color: inherit;
 }
+
