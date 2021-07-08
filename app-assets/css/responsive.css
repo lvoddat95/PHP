@@ -133,6 +133,7 @@
         padding: 0 15px 50px;
     }
     #footer {
+        position: fixed;
         display: block ;
         bottom: 0;
         left: 0;
@@ -143,8 +144,8 @@
         margin: 0;
         max-height: 59px;
         padding: 10px 15px 7px;
-        position: fixed;
         bottom: 0;
+        z-index: 1234;
     }
     #footer::before {
         position: absolute;

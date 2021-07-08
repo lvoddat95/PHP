@@ -8704,7 +8704,9 @@ body.hc-nav-open{overflow:visible;position:fixed;width:100%;min-height:100%;}
 .hc-offcanvas-nav.rtl .nav-back span{left:0;right:auto;}
 .hc-offcanvas-nav.rtl li.nav-parent .nav-item:last-child{padding-left:58px;padding-right:17px;}
 .hc-offcanvas-nav.rtl li.nav-parent .nav-item:not(:last-child){margin-left:44px;margin-right:0;}
-
+.hc-offcanvas-nav li.nav-parent .nav-link-icon{
+    display: none;
+}
 table.dataTable span.highlight {
   background-color: orange;
   border-radius: 0.28571429rem;

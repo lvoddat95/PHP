@@ -114,12 +114,12 @@ var App = function () {
             $('body').removeClass('sidebar-mobile-main');
         });
 
-        if($('#main-nav').length > 0) {
+        if($('#main-menu').length > 0) {
             if (typeof hcOffcanvasNav == 'undefined') {
                 console.warn('Warning - hcOffcanvasNav Js is not loaded.');
                 return;
             }
-            $('#main-nav').hcOffcanvasNav({
+            $('#main-menu').hcOffcanvasNav({
                 disableAt: 768,
                 customToggle: '.sidebar-mobile-main-toggle',
                 levelSpacing: 0,

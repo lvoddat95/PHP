@@ -34,7 +34,7 @@
 
                 <!-- Main navigation -->
                 <div class="card card-sidebar-mobile">
-                    <ul class="nav nav-sidebar">
+                    <ul id="main-menu" class="nav nav-sidebar">
 
                         <li class="nav-item">
                             <a href="<?php echo HTTP_PATH ?>" class="nav-link <?php echo in_array('index', $arr_menu) ? "active" : ""; ?>" data-menu-title="Bảng điều khiển">
@@ -107,7 +107,7 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item nav-item-submenu <?php echo in_array('tbh', $arr_menu) ? "nav-item-open" : ""; ?>">
+                        <li class="nav-item nav-item-submenu&nbsp;<?php echo in_array('tbh', $arr_menu) ? "nav-item-open" : ""; ?>">
                             <a href="javascript:;" class="nav-link <?php echo in_array('one', $arr_menu) ? "active" : ""; ?>">
                                 <i class="fad fa-repeat fa-fw"></i>
                                 <span class="menu-title"> Tái bảo hiểm</span>
@@ -120,7 +120,7 @@
                                     </a>
                                 </li>
 
-                                <li class="nav-item nav-item-submenu <?php echo in_array('cau-truc-tbh', $arr_menu) ? "nav-item-open" : ""; ?>">
+                                <li class="nav-item nav-item-submenu&nbsp;<?php echo in_array('cau-truc-tbh', $arr_menu) ? "nav-item-open" : ""; ?>">
                                     <a href="<?php echo HTTP_PATH .'view/tbh/cau-truc-tbh/'; ?>" class="nav-link">
                                         <span class="menu-title">Cấu trúc tái bảo hiểm</span>
                                     </a>
