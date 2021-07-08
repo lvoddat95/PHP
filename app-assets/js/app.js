@@ -119,17 +119,17 @@ var App = function () {
                 console.warn('Warning - hcOffcanvasNav Js is not loaded.');
                 return;
             }
-            $('#main-menu').hcOffcanvasNav({
-                disableAt: 768,
-                customToggle: '.sidebar-mobile-main-toggle',
-                levelSpacing: 0,
-                navTitle: 'DANH SÁCH MENU',
-                levelTitles: true,
-                levelTitleAsBack: true,
-                pushContent: '.page-content',
-                labelBack: 'Quay lại',
-                labelClose: false
-            });
+            // $('#main-menu').hcOffcanvasNav({
+            //     disableAt: 768,
+            //     customToggle: '.sidebar-mobile-main-toggle',
+            //     levelSpacing: 0,
+            //     navTitle: 'DANH SÁCH MENU',
+            //     levelTitles: true,
+            //     levelTitleAsBack: true,
+            //     pushContent: '.page-content',
+            //     labelBack: 'Quay lại',
+            //     labelClose: false
+            // });
         }
 
 
@@ -160,12 +160,13 @@ var App = function () {
 
         // Configure collapsible functionality
         $('.' + navClass).each(function() {
-            $(this).find('.' + navItemClass).has('.' + navSubmenuClass).find( '.' + navLinkClass).not('.disabled').on('click', function (e) {
+            $(this).find('.nav-item-submenu > .nav-link, .nav-item-submenu > .nav-add-link > .nav-link-icon').not('.disabled').on('click', function (e) {
                 e.preventDefault();
 
                 // Simplify stuff
                 var $target = $(this),
                     $navSidebarMini = $('.sidebar-xs').not('.sidebar-mobile-main').find('.sidebar-main .' + navClass).children('.' + navItemClass);
+
                 // Collapsible
                 if($target.closest('.' + navItemClass).hasClass(navItemOpenClass)) {
                     $target.closest('.' + navItemClass).not($navSidebarMini).removeClass(navItemOpenClass).children('.' + navSubmenuClass).slideUp(navSlidingSpeed);

@@ -46,7 +46,7 @@
                         <li class="nav-item nav-item-submenu">
 
                             <span class="nav-add-link">
-                                <a href="#1">
+                                <a href="#link">
                                     <i class="fad fa-browser fa-fw"></i>
                                     <span class="menu-title">Pages Template</span>
                                 </a>
@@ -56,6 +56,7 @@
 
                             <ul class="nav nav-group-sub" scrollbar data-submenu-title="Pages Template">
                                 <li class="nav-item nav-item-submenu">
+
                                     <span class="nav-add-link">
                                         <a href="#2">
                                             <i class="fad fa-browser fa-fw"></i>
@@ -63,6 +64,7 @@
                                         </a>
                                         <span class="nav-link nav-link-icon"></span>
                                     </span>
+                                    
                                     <ul class="nav nav-group-sub">
                                         <li><a href="<?php echo HTTP_PATH .'view/pages/danh-sach-don.php'; ?>" class="nav-link"><span class="menu-title">Danh sách đơn</span></a></li>
                                         <li><a href="<?php echo HTTP_PATH .'view/pages/nhap-don.php'; ?>" class="nav-link"><span class="menu-title">Nhập đơn</span></a></li>
@@ -107,7 +109,7 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item nav-item-submenu&nbsp;<?php echo in_array('tbh', $arr_menu) ? "nav-item-open" : ""; ?>">
+                        <li class="nav-item nav-item-submenu<?php echo in_array('tbh', $arr_menu) ? " nav-item-open" : ""; ?>">
                             <a href="javascript:;" class="nav-link <?php echo in_array('one', $arr_menu) ? "active" : ""; ?>">
                                 <i class="fad fa-repeat fa-fw"></i>
                                 <span class="menu-title"> Tái bảo hiểm</span>
@@ -120,7 +122,7 @@
                                     </a>
                                 </li>
 
-                                <li class="nav-item nav-item-submenu&nbsp;<?php echo in_array('cau-truc-tbh', $arr_menu) ? "nav-item-open" : ""; ?>">
+                                <li class="nav-item nav-item-submenu<?php echo in_array('cau-truc-tbh', $arr_menu) ? " nav-item-open" : ""; ?>">
                                     <a href="<?php echo HTTP_PATH .'view/tbh/cau-truc-tbh/'; ?>" class="nav-link">
                                         <span class="menu-title">Cấu trúc tái bảo hiểm</span>
                                     </a>
