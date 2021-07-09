@@ -119,17 +119,17 @@ var App = function () {
                 console.warn('Warning - hcOffcanvasNav Js is not loaded.');
                 return;
             }
-            // $('#main-menu').hcOffcanvasNav({
-            //     disableAt: 768,
-            //     customToggle: '.sidebar-mobile-main-toggle',
-            //     levelSpacing: 0,
-            //     navTitle: 'DANH SÁCH MENU',
-            //     levelTitles: true,
-            //     levelTitleAsBack: true,
-            //     pushContent: '.page-content',
-            //     labelBack: 'Quay lại',
-            //     labelClose: false
-            // });
+            $('#main-menu').hcOffcanvasNav({
+                disableAt: 768,
+                customToggle: '.sidebar-mobile-main-toggle',
+                levelSpacing: 0,
+                navTitle: 'DANH SÁCH MENU',
+                levelTitles: true,
+                levelTitleAsBack: true,
+                pushContent: '.page-content',
+                labelBack: 'Quay lại',
+                labelClose: false
+            });
         }
 
 
