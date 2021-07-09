@@ -562,7 +562,7 @@
 
                 </div>
                         <div id="append_html">
-                            <li class="file-item d">
+                            <li class="file-item a">
                                 <div class="file-wrapper">
                                     <div class="file-checkox">
                                         <label for="f21"></label>
@@ -619,8 +619,9 @@
     var add_file_ajax = function() {
         let $file_container = $(".list-files");
         let html = $('#append_html').html();
+
         newItems = $(html).appendTo($file_container);
-        $file_container.isotope('appended', newItems );
+        $file_container.isotope( 'appended', newItems );
     }
 
 </script>

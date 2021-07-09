@@ -9,7 +9,7 @@
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/jquery.tipsy.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/sweetalert2.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/jquery.sticky-sidebar.min.js"></script>
-    <script src="<?php echo ASSET_ROOT; ?>/vendors/js/isotope.pkgd.min.js"></script>
+    <script src="https://npmcdn.com/isotope-layout@3.0.6/dist/isotope.pkgd.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/jquery.fancybox.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/jQuery.print.min.js"></script>
     <script src="<?php echo ASSET_ROOT; ?>/vendors/js/hc-offcanvas-nav.js"></script>
