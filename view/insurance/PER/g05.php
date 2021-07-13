@@ -3,6 +3,7 @@
 <?php $GLOBALS["dk_sua_doi_bo_sung"] = 'g'; ?>
 <?php $GLOBALS["dk_loai_tru"] = 'g05'; ?>
 <?php $GLOBALS["quy_tac"] = 'remove_tra_cuu'; ?>
+<?php $GLOBALS["nguoi_duoc_bao_hiem"] = 'label_khach_hang'; ?>
 
     <body class="sidebar-xs">
 
@@ -172,6 +173,26 @@
                                                                         
                                                                         <hr class="border-dashed border-silver mb-3">
 
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group ">
+                                                                                    <label>Cấp học: <span class="text-danger">*</span></label>
+                                                                                    <select class="form-control" select2>
+                                                                                        <option value="">--- Chọn ---</option>
+                                                                                        <option value="">Mầm non</option>
+                                                                                        <option value="">Tiểu học</option>
+                                                                                        <option value="">THCS</option>
+                                                                                        <option value="">THPT</option>
+                                                                                        <option value="">TC/CĐ/ĐH/Nghề</option>
+                                                                                        <option value="">Khác</option>
+                                                                                    </select>
+                                                                                </div> 
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        
+
                                                                         <div class="form-group" repeater>
                                                                             <table class="table table-sm table-bordered datatable child-row-sm" data-control-right="true" data-paging="false" data-info="false" data-ordering="false" data-searching="false" >
                                                                                 <thead class="thead-light">
@@ -185,7 +206,6 @@
                                                                                         <th rowspan="2" class="none"><span class="text-danger">*</span> Tuổi</th>
                                                                                         <th rowspan="2" class="none"><span class="text-danger">*</span> Giới tính</th>
                                                                                         <th rowspan="2" class="none"><span class="text-danger">*</span> Lớp</th>
-                                                                                        <th rowspan="2" class="none"><span class="text-danger">*</span> Cấp học</th>
 
                                                                                         <th rowspan="2" class="none">Tên cha mẹ</th>
                                                                                         <th rowspan="2" class="none"><span class="text-danger">*</span> Hiệu lực từ ngày</th>
@@ -228,20 +248,7 @@
                                                                                         <td><input class="form-control col-content-xs" type="text" disabled=""></td>
                                                                                         <td><input class="form-control col-content-xs" type="text"></td>
                                                                                         <td><input class="form-control col-content-xs input-number" type="text"></td>
-                                                                                        <td>
-                                                                                            <div class="col-content-sm">
-                                                                                                <select select2>
-                                                                                                    <option value="">--- Chọn ---</option>
-                                                                                                    <option value="">Mầm non</option>
-                                                                                                    <option value="">Tiểu học</option>
-                                                                                                    <option value="">THCS</option>
-                                                                                                    <option value="">THPT</option>
-                                                                                                    <option value="">TC/CĐ/ĐH/Nghề</option>
-                                                                                                    <option value="">Khác</option>
-                                                                                                </select>
-                                                                                            </div>
-                                                                                        </td>
-
+                                                        
                                                                                         <td><input class="form-control col-content-sm" type="text"></td>
                                                                                         <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
                                                                                         <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>

@@ -35,7 +35,7 @@
 
                     <div class="page-title">
                         <div class="p-title">
-                            <p class="font-weight-semibold font-size-m mb-0"><i class="fad fa-cogs mr-2"></i>Cấu hình ngày hết hạn ẩn chỉ</p>
+                            <p class="font-weight-semibold font-size-m mb-0"><i class="fad fa-cogs mr-1"></i>Cấu hình ngày hết hạn ẩn chỉ</p>
                         </div>
                         <div class="p-button">
                         </div>
@@ -44,17 +44,6 @@
                     <!-- Content-block -->
                     <div class="content-block">
                     	<div class="card card-search">
-                            <div class="card-header header-elements-inline">
-                                <p class="card-title font-size-s">
-                                    <i style="width: 26px;height: 26px;line-height: 26px;font-size: 12px;" class="icon-search4 d-flex-inline align-items-center justify-content-center rounded-round bg-color mr-2"></i> 
-                                    Tìm kiếm ấn chỉ
-                                </p>
-                                <div class="header-elements">
-                                    <div class="list-icons">
-                                        <a class="list-icons-item" data-action="collapse"></a>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-3">
@@ -82,7 +71,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-md-3">
                                         <div class="form-group ">
                                             <label>Kí hiệu: </label>
                                             <div class="input-group">
@@ -93,7 +82,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-md-3">
                                         <div class="form-group ">
                                             <label>Quyển số:</label>
                                             <div class="input-group">
@@ -104,7 +93,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-md-3">
                                         <div class="form-group ">
                                             <label>Thời gian:</label>
                                             <div class="date-to-date">
@@ -118,11 +107,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-2">
-                                        <div class="form-group ">
-                                            <label class="d-none d-sm-block">&nbsp;</label>
-                                            <div>
-                                                <button type="submit" style="letter-spacing: 1px;" class="btn text-uppercase bg-orange"><i class="icon-search4 mr-2"></i> Tìm kiếm </button>
+                                   <div class="col-12">
+                                    <div class="d-flex justify-content-end ">
+                                            <div class="d-inline-block">
+                                                <button type="button" id="search-data" class="btn bg-primary"><i class="fa fa-filter mr-1"></i>Lọc</button>
+                                                <button type="button" id="clear-filter" class="btn btn-light" data-dismiss="modal"><i class="icon-cross2 mr-1"></i>Hủy điều kiện lọc</button>
                                             </div>
                                         </div>
                                     </div>
@@ -142,7 +131,7 @@
 		                                    data-page-length="20">
 		                                    <thead class="thead-light">
 		                                        <tr>
-		                                            <th class="w1p">#</th>
+		                                            <th class="w1p text-center">#</th>
 		                                            <th>Loại ấn chỉ</th>
 		                                            <th>Ký hiệu</th>
 		                                            <th>Từ quyển</th>
@@ -154,7 +143,7 @@
 		                                    <tbody>
 		                                        <?php for ($i = 0; $i < 60; $i++) { ?>
 		                                            <tr>
-		                                                <td>&nbsp;</td>
+		                                                <td align="center"> <?php echo $i+1; ?> </td>
 		                                                <td>&nbsp;</td>
 		                                                <td>&nbsp;</td>
 		                                                <td>&nbsp;</td>

@@ -119,7 +119,7 @@ var App = function () {
                 console.warn('Warning - hcOffcanvasNav Js is not loaded.');
                 return;
             }
-            $('#main-menu').hcOffcanvasNav({
+            var $nav = $('#main-menu').hcOffcanvasNav({
                 disableAt: 768,
                 customToggle: '.sidebar-mobile-main-toggle',
                 levelSpacing: 0,
@@ -130,6 +130,7 @@ var App = function () {
                 labelBack: 'Quay lại',
                 labelClose: false
             });
+            var Nav = $nav.data('hcOffcanvasNav');
         }
 
 
@@ -435,6 +436,8 @@ var App = function () {
 
         var select = $('[select2]');
         if (p_select) select = p_select;
+
+        console.log(p_select);
 
         if (select.length > 0) {
             $(select).select2({ 
@@ -1682,13 +1685,51 @@ var App = function () {
 
             var v_datatable = $(v_table).DataTable({
                 columnDefs: [
+     
                     {
                         className: 'w1p control not-desktop text-center',
                         orderable: false,
                         targets:    0
                     },
+                    // { 
+                    //     targets: '_all',  
+                    //     render: function(data, type, row, meta){
+                    //             // console.log(data);
+
+                    //         if(type === 'display'){
+                    //             var api = new $.fn.dataTable.Api(meta.settings);
+                              
+                    //             var $el = $('input, select, textarea', api.cell({ row: meta.row, column: meta.col }).node());
+
+                    //             var $html = $(data).wrap('<div/>').parent();
+
+                    //             // if($el.prop('tagName') === 'INPUT'){
+                    //             //     $('input', $html).attr('value', $el.val());
+                    //             //     if($el.prop('checked')){
+                    //             //         $('input', $html).attr('checked', 'checked');
+                    //             //     }
+                    //             // } else if ($el.prop('tagName') === 'TEXTAREA'){
+                    //             //     $('textarea', $html).html($el.val());
+                    //             // } else if ($el.prop('tagName') === 'SELECT'){
+                    //             //     $('option:selected', $html).removeAttr('selected');
+                    //             //     $('option', $html).filter(function(){
+                    //             //         return ($(this).attr('value') === $el.val());
+                    //             //     }).attr('selected', 'selected');
+                    //             // }
+
+                    //             // data = $html.html();
+                    //             console.log($(data).wrap('<div/>').parent());
+
+                    //         }
+
+                    //         return data;
+                    //     }
+                    // }
+
                 ]
             });
+
+            _datatable_responsive_display(v_datatable);
 
             let dt_list = $( v_datatable.tables().containers() );
             dt_list.each(function(i, e){ 
@@ -1728,6 +1769,8 @@ var App = function () {
                     }
 
                 });
+
+                console.log(p_datatable);
 
                 // recall
                 var select2 = $(this).find('select');
@@ -1963,6 +2006,11 @@ var App = function () {
         initAfterLoad: function() {
         },
 
+        // Init Resize Trang
+        initResize: function() {
+
+        },
+
         // Initialize all sidebars
         initSidebars: function() {
 
@@ -2063,4 +2111,8 @@ document.addEventListener('DOMContentLoaded', function() {
 // When page is fully loaded
 window.addEventListener('load', function() {
     App.initAfterLoad();
+});
+
+// When page is resized
+window.addEventListener('resize', function() {
 });

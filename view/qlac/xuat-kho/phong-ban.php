@@ -18,7 +18,7 @@
                     </button>
                     <div class="top-left">
                         <div class="breadcrumb">
-                            <a href="<?php echo HTTP_PATH . 'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fad fa-file-certificate mr-1"></i>Quản lý ấn chỉ</a>
+                            <a href="<?php echo HTTP_PATH . 'view/qlac/'; ?>" class="breadcrumb-item"><i class="fad fa-file-certificate mr-1"></i>Quản lý ấn chỉ</a>
                             <span class="breadcrumb-item active">Xuất kho</span>
                         </div>
                         <div class="d-md-none logo-mobile">
@@ -34,7 +34,7 @@
 
                 <div class="page-title">
                     <div class="p-title">
-                        <p class="font-weight-semibold font-size-m mb-0"><i class="fad fa-user-friends mr-2"></i>Xuất ấn chỉ cho phòng ban</p>
+                        <p class="font-weight-semibold font-size-m mb-0"><i class="fad fa-users-class mr-1"></i>Xuất ấn chỉ cho phòng ban</p>
                     </div>
                     <div class="p-button">
                     </div>
@@ -45,7 +45,7 @@
                     <div class="card card-search">
                         <div class="card-header header-elements-inline">
                             <p class="card-title font-size-s">
-                                <i style="width: 26px;height: 26px;line-height: 26px;font-size: 12px;" class="icon-search4 d-flex-inline align-items-center justify-content-center rounded-round bg-color mr-2"></i>
+                                <i style="width: 26px;height: 26px;line-height: 26px;font-size: 12px;" class="icon-search4 d-flex-inline align-items-center justify-content-center rounded-round bg-color mr-1"></i>
                                 Tìm kiếm ấn chỉ
                             </p>
                             <div class="header-elements">
@@ -191,7 +191,7 @@
                                     <table class="table table-bordered datatable" data-paging="true" data-info="true" data-ordering="false" data-searching="false" data-page-length="20">
                                         <thead class="thead-light">
                                             <tr>
-                                                <th class="w1p" align="center">#</th>
+                                                <th class="w3p text-center">#</th>
                                                 <th class="w10p">Ngày xuất</th>
                                                 <th class="w10p">Số phiếu xuất</th>
                                                 <th>Người nhận</th>
@@ -204,7 +204,7 @@
                                         </thead>
                                         <tbody>
                                             <tr class="odd_row">
-                                                <td><input type="checkbox" class="input-chk"></a></td>
+                                                <td class="text-center"></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">02/04/2021</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">PX04/02/21</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">Bùi Thị Nhung</a></td>
@@ -215,7 +215,7 @@
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">10</a></td>
                                             </tr>
                                             <tr class="round_row">
-                                                <td><input type="checkbox" class="input-chk"></a></td>
+                                                <td class="text-center"></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">23/03/2021</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">PX03/51/21</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">Bùi Thị Nhung</a></td>
@@ -226,7 +226,7 @@
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">20</a></td>
                                             </tr>
                                             <tr class="odd_row">
-                                                <td><input type="checkbox" class="input-chk"></a></td>
+                                                <td class="text-center"></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">23/03/2021</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">PX03/50/21</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">Bùi Thị Nhung</a></td>
@@ -237,7 +237,7 @@
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">10</a></td>
                                             </tr>
                                             <tr class="round_row">
-                                                <td><input type="checkbox" class="input-chk"></a></td>
+                                                <td class="text-center"></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">18/03/2021</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">PX03/39/21</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">Bùi Thị Nhung</a></td>
@@ -248,7 +248,7 @@
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">10</a></td>
                                             </tr>
                                             <tr class="odd_row">
-                                                <td><input type="checkbox" class="input-chk"></a></td>
+                                                <td class="text-center"></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">16/03/2021</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">PX03/34/21</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">Bùi Thị Nhung</a></td>
@@ -259,7 +259,7 @@
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">1</a></td>
                                             </tr>
                                             <tr class="round_row">
-                                                <td><input type="checkbox" class="input-chk"></a></td>
+                                                <td class="text-center"></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">16/03/2021</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">PX03/33/21</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">Bùi Thị Nhung</a></td>
@@ -270,7 +270,7 @@
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">3</a></td>
                                             </tr>
                                             <tr class="odd_row">
-                                                <td><input type="checkbox" class="input-chk"></a></td>
+                                                <td class="text-center"></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">16/03/2021</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">PX03/32/21</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">Bùi Thị Nhung</a></td>
@@ -281,7 +281,7 @@
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">6</a></td>
                                             </tr>
                                             <tr class="round_row">
-                                                <td><input type="checkbox" class="input-chk"></a></td>
+                                                <td class="text-center"></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">16/03/2021</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">PX03/31/21</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">Bùi Thị Nhung</a></td>
@@ -292,7 +292,7 @@
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">20</a></td>
                                             </tr>
                                             <tr class="odd_row">
-                                                <td><input type="checkbox" class="input-chk"></a></td>
+                                                <td class="text-center"></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">15/03/2021</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">PX03/26/21</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">Bùi Thị Nhung</a></td>
@@ -303,7 +303,7 @@
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">20</a></td>
                                             </tr>
                                             <tr class="round_row">
-                                                <td><input type="checkbox" class="input-chk"></a></td>
+                                                <td class="text-center"></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">15/03/2021</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">PX03/25/21</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">Bùi Thị Nhung</a></td>
@@ -314,7 +314,7 @@
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">10</a></td>
                                             </tr>
                                             <tr class="odd_row">
-                                                <td><input type="checkbox" class="input-chk"></a></td>
+                                                <td class="text-center"></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">10/03/2021</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">PX03/21/21</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">Bùi Thị Nhung</a></td>
@@ -325,7 +325,7 @@
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">1</a></td>
                                             </tr>
                                             <tr class="round_row">
-                                                <td><input type="checkbox" class="input-chk"></a></td>
+                                                <td class="text-center"></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">10/03/2021</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">PX03/20/21</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">Bùi Thị Nhung</a></td>
@@ -336,7 +336,7 @@
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">30</a></td>
                                             </tr>
                                             <tr class="odd_row">
-                                                <td><input type="checkbox" class="input-chk"></a></td>
+                                                <td class="text-center"></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">01/03/2021</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">PX03/04/21</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">Bùi Thị Nhung</a></td>
@@ -347,7 +347,7 @@
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">20</a></td>
                                             </tr>
                                             <tr class="round_row">
-                                                <td><input type="checkbox" class="input-chk"></a></td>
+                                                <td class="text-center"></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">01/03/2021</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">PX03/03/21</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">Bùi Thị Nhung</a></td>
@@ -358,7 +358,7 @@
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">20</a></td>
                                             </tr>
                                             <tr class="odd_row">
-                                                <td><input type="checkbox" class="input-chk"></a></td>
+                                                <td class="text-center"></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">01/03/2021</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">PX03/01/21</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">Bùi Thị Nhung</a></td>
@@ -369,7 +369,7 @@
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">50</a></td>
                                             </tr>
                                             <tr class="round_row">
-                                                <td><input type="checkbox" class="input-chk"></a></td>
+                                                <td class="text-center"></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">02/02/2021</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">PX02/04/21</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">Bùi Thị Nhung</a></td>
@@ -380,7 +380,7 @@
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">50</a></td>
                                             </tr>
                                             <tr class="odd_row">
-                                                <td><input type="checkbox" class="input-chk"></a></td>
+                                                <td class="text-center"></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">02/02/2021</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">PX02/03/20</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">Bùi Thị Nhung</a></td>
@@ -391,7 +391,7 @@
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">20</a></td>
                                             </tr>
                                             <tr class="round_row">
-                                                <td><input type="checkbox" class="input-chk"></a></td>
+                                                <td class="text-center"></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">21/01/2021</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">PX01/31/21</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">Bùi Thị Nhung</a></td>
@@ -402,7 +402,7 @@
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">50</a></td>
                                             </tr>
                                             <tr class="odd_row">
-                                                <td><input type="checkbox" class="input-chk"></a></td>
+                                                <td class="text-center"></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">21/01/2021</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">PX01/30/21</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">Bùi Thị Nhung</a></td>
@@ -413,7 +413,7 @@
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">20</a></td>
                                             </tr>
                                             <tr class="round_row">
-                                                <td><input type="checkbox" class="input-chk"></a></td>
+                                                <td class="text-center"></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">15/01/2021</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">PX01/24/21</a></td>
                                                 <td class="data"><a href="phong-ban-chi-tiet-ac.php">Bùi Thị Nhung</a></td>
@@ -446,3 +446,16 @@
 </body>
 
 <?php include_once FOOTER; ?>
+<script>
+    $(function(){
+        var table = $('.datatable').dataTable().api();
+        table.column(1, {
+            search: 'applied',
+            order: 'applied'
+        }).nodes().each(function(cell, i) {
+            console.log(cell);
+            cell.innerHTML = i + 1;
+        });
+      
+    });
+</script>

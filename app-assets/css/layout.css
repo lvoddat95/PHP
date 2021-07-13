@@ -338,7 +338,7 @@ body:not(.sidebar-xs) .sidebar ul li.nav-item .nav-add-link > a:not(.active):hov
     top: 50%;
     transform: -webkit-translateY(-50%);
     transform: translateY(-50%);
-    right: 13px;
+    right: 14px;
     transition: -webkit-transform 0.25s ease-in-out;
     transition: transform 0.25s ease-in-out;
     transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
@@ -432,7 +432,8 @@ body:not(.sidebar-xs) .sidebar ul li.nav-item .nav-add-link > a:not(.active):hov
     background-color: #142C91;
 }
 
-.sidebar ul li.nav-item .nav-group-sub .nav-group-sub .nav-add-link.active > a, .sidebar ul li.nav-item .nav-group-sub .nav-group-sub .nav-link.active {
+.sidebar ul li.nav-item .nav-group-sub .nav-group-sub .nav-add-link.active > a, 
+.sidebar ul li.nav-item .nav-group-sub .nav-link.active {
     color: #ff7043;
     font-weight: 500;
 }

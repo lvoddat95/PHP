@@ -18,7 +18,7 @@
                     </button>
                     <div class="top-left">
                         <div class="breadcrumb">
-                            <a href="<?php echo HTTP_PATH . 'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fad fa-file-certificate mr-1"></i>Quản lý ấn chỉ</a>
+                            <a href="<?php echo HTTP_PATH . 'view/qlac/'; ?>" class="breadcrumb-item"><i class="fad fa-file-certificate mr-1"></i>Quản lý ấn chỉ</a>
                             <span class="breadcrumb-item active">Xuất kho</span>
                         </div>
                         <div class="d-md-none logo-mobile">
@@ -34,7 +34,7 @@
 
                 <div class="page-title">
                     <div class="p-title">
-                        <p class="font-weight-semibold font-size-m mb-0"><i class="fad fa-user-friends mr-2"></i>Xuất ấn chỉ cho phòng ban - Ấn chỉ bảo hiểm ô tô</p>
+                        <p class="font-weight-semibold font-size-m mb-0"><i class="fad fa-users-class mr-1"></i>Xuất ấn chỉ cho phòng ban - Ấn chỉ bảo hiểm ô tô</p>
                     </div>
                     <div class="p-button">
                     </div>
@@ -48,7 +48,7 @@
                                 <div class="card-header card-header-sticky">
                                     <div class="page-title">
                                         <div class="p-title">
-                                            <p class="t-top"><i class="icon-certificate mr-2"></i>Cập nhập thông tin ấn chỉ</p>
+                                            <p class="t-top"><i class="icon-certificate mr-1"></i>Cập nhập thông tin ấn chỉ</p>
                                             <span class="desc">Vui lòng nhập đầy đủ thông tin vào trường bắt buộc có dấu <code>*</code>.</span>
                                         </div>
                                         <div class="p-button">
@@ -62,9 +62,10 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="container">
-                                        <div class="form-box mb-3">
+                                        <div class="form-box">
                                             <p class="text-primary-800 font-weight-bold"><i class="fa fa-layer-minus mr-1"></i>Nơi xuất</p>
                                             <hr class="border-dashed border-silver mb-2">
+
                                             <div class="row form-group">
                                                 <label class="col-label col-label-150">
                                                     Đơn vị:
@@ -86,6 +87,7 @@
                                                     </select>
                                                 </div>
                                             </div>
+                                            
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="row form-group">
@@ -112,7 +114,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="form-box mb-3">
+                                        <div class="form-box mb-2">
                                             <p class="text-primary-800 font-weight-bold"><i class="fa fa-layer-plus mr-1"></i>Nơi nhận</p>
                                             <hr class="border-dashed border-silver mb-2">
                                             <div class="row form-group">
@@ -145,7 +147,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="form-box mb-3">
+                                        <div class="form-box mb-2">
                                             <p class="text-primary-800 font-weight-bold"><i class="fa fa-file-certificate mr-1"></i>Ấn chỉ</p>
                                             <hr class="border-dashed border-silver mb-2">
 
@@ -221,7 +223,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="form-box mb-3">
+                                        <div class="form-box mb-2">
                                             <p class="text-primary-800 font-weight-bold"><i class="fa fa-info-circle mr-1"></i>Thông tin bổ sung</p>
                                             <hr class="border-dashed border-silver mb-2">
 

@@ -2678,6 +2678,7 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
 	padding: 10px;
 	margin: 0;
 	opacity: 0;
+	visibility: hidden;
 	-webkit-animation-duration: 60ms;
 	animation-duration: 60ms;
 	-webkit-animation-fill-mode: forwards;
@@ -2689,6 +2690,7 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
 }
 
 .dropdown-menu.show {
+	visibility: visible;
 	left: auto !important;
 	right: 0 !important;
 	-webkit-animation-delay: 0ms, 60ms;

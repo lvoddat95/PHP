@@ -35,7 +35,7 @@
 
                     <div class="page-title">
                         <div class="p-title">
-                            <p class="font-weight-semibold font-size-m mb-0"><i class="fad fa-search mr-2"></i>Tra cứu ấn chỉ</p>
+                            <p class="font-weight-semibold font-size-m mb-0"><i class="fad fa-search mr-1"></i>Tra cứu ấn chỉ</p>
                             <span class="text-muted d-block font-size-xs">Vui lòng nhập đầy đủ thông tin vào trường bắt buộc có dấu <code>*</code>.</span>
                         </div>
                         <div class="p-button">
@@ -140,7 +140,7 @@
                                                         <div class="form-group ">
                                                             <label class="d-none d-sm-block">&nbsp;</label>
                                                             <div>
-                                                                <button type="submit" style="letter-spacing: 1px;" class="btn text-uppercase bg-orange"><i class="icon-search4 mr-2"></i> Tìm kiếm </button>
+                                                                <button type="submit" style="letter-spacing: 1px;" class="btn text-uppercase bg-orange"><i class="icon-search4 mr-1"></i> Tìm kiếm </button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -244,7 +244,7 @@
                                                         <div class="form-group ">
                                                             <label class="d-none d-sm-block">&nbsp;</label>
                                                             <div>
-                                                                <button type="submit" style="letter-spacing: 1px;" class="btn text-uppercase bg-orange"><i class="icon-search4 mr-2"></i> Tìm kiếm </button>
+                                                                <button type="submit" style="letter-spacing: 1px;" class="btn text-uppercase bg-orange"><i class="icon-search4 mr-1"></i> Tìm kiếm </button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -334,7 +334,7 @@
                                                         <div class="form-group ">
                                                             <label class="d-none d-sm-block">&nbsp;</label>
                                                             <div>
-                                                                <button type="submit" style="letter-spacing: 1px;" class="btn text-uppercase bg-orange"><i class="icon-search4 mr-2"></i> Tìm kiếm </button>
+                                                                <button type="submit" style="letter-spacing: 1px;" class="btn text-uppercase bg-orange"><i class="icon-search4 mr-1"></i> Tìm kiếm </button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -422,7 +422,7 @@
                                                         <div class="form-group ">
                                                             <label class="d-none d-sm-block">&nbsp;</label>
                                                             <div>
-                                                                <button type="submit" style="letter-spacing: 1px;" class="btn text-uppercase bg-orange"><i class="icon-search4 mr-2"></i> Tìm kiếm </button>
+                                                                <button type="submit" style="letter-spacing: 1px;" class="btn text-uppercase bg-orange"><i class="icon-search4 mr-1"></i> Tìm kiếm </button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -507,7 +507,7 @@
                                                         <div class="form-group ">
                                                             <label class="d-none d-sm-block">&nbsp;</label>
                                                             <div>
-                                                                <button type="submit" style="letter-spacing: 1px;" class="btn text-uppercase bg-orange"><i class="icon-search4 mr-2"></i> Tìm kiếm </button>
+                                                                <button type="submit" style="letter-spacing: 1px;" class="btn text-uppercase bg-orange"><i class="icon-search4 mr-1"></i> Tìm kiếm </button>
                                                             </div>
                                                         </div>
                                                     </div>

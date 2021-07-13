@@ -36,21 +36,21 @@
                     <ul class="nav nav-sidebar" data-nav-type="accordion">
 
                         <li class="nav-item">
-                            <a href="<?php echo HTTP_PATH ?>" class="nav-link <?php echo in_array('one', $arr_menu) ? "active" : ""; ?>">
+                            <a href="<?php echo HTTP_PATH ?>" class="nav-link<?php echo in_array('one', $arr_menu) ? " active" : ""; ?>">
                                 <i class="fad fa-home fa-fw"></i>
                                 <span class="menu-title">Bảng điều khiển</span>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?php echo HTTP_PATH ?>view/qlac/" class="nav-link <?php echo in_array('index', $arr_menu) ? "active" : ""; ?>">
+                            <a href="<?php echo HTTP_PATH ?>view/qlac/" class="nav-link<?php echo in_array('index', $arr_menu) ? " active" : ""; ?>">
                                 <i class="fad fa-search fa-fw"></i>
                                 <span class="menu-title">Tra cứu ấn chỉ</span>
                             </a>
                         </li>
 
-                        <li class="nav-item nav-item-submenu <?php echo in_array('nhap-kho', $arr_menu) ? "nav-item-open" : ""; ?>">
-                            <a href="javascript:;" class="nav-link <?php echo in_array('one', $arr_menu) ? "active" : ""; ?>">
+                        <li class="nav-item nav-item-submenu<?php echo in_array('nhap-kho', $arr_menu) ? " nav-item-open" : ""; ?>">
+                            <a href="javascript:;" class="nav-link<?php echo in_array('one', $arr_menu) ? " active" : ""; ?>">
                                 <i class="fad fa-warehouse fa-fw"></i>
                                 <span class="menu-title">Nhập kho</span>
                             </a>
@@ -63,8 +63,8 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item nav-item-submenu <?php echo in_array('xuat-kho', $arr_menu) ? "nav-item-open" : ""; ?>">
-                            <a href="javascript:;" class="nav-link <?php echo in_array('one', $arr_menu) ? "active" : ""; ?>" 
+                        <li class="nav-item nav-item-submenu<?php echo in_array('xuat-kho', $arr_menu) ? " nav-item-open" : ""; ?>">
+                            <a href="javascript:;" class="nav-link<?php echo in_array('one', $arr_menu) ? " active" : ""; ?>" 
                                 
                             >
                                 <i class="fad fa-warehouse-alt fa-fw"></i>
@@ -77,8 +77,8 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item nav-item-submenu <?php echo in_array('de-nghi-cap-ac', $arr_menu) ? "nav-item-open" : ""; ?>">
-                            <a href="javascript:;" class="nav-link <?php echo in_array('one', $arr_menu) ? "active" : ""; ?>">
+                        <li class="nav-item nav-item-submenu<?php echo in_array('de-nghi-cap-ac', $arr_menu) ? " nav-item-open" : ""; ?>">
+                            <a href="javascript:;" class="nav-link<?php echo in_array('one', $arr_menu) ? " active" : ""; ?>">
                                 <i class="fad fa-file-signature fa-fw"></i>
                                 <span class="menu-title">Đề nghị cấp AC</span>
                             </a>
@@ -89,30 +89,30 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item nav-item-submenu <?php echo in_array('two', $arr_menu) ? "nav-item-open" : ""; ?>">
-                            <a href="javascript:;" class="nav-link <?php echo in_array('one', $arr_menu) ? "active" : ""; ?>">
+                        <li class="nav-item nav-item-submenu<?php echo in_array('huy-mat-ac', $arr_menu) ? " nav-item-open" : ""; ?>">
+                            <a href="javascript:;" class="nav-link<?php echo in_array('one', $arr_menu) ? " active" : ""; ?>">
                                 <i class="fad fa-engine-warning fa-fw"></i>
                                 <span class="menu-title">Huỷ / mất AC</span>
                             </a>
                             <ul class="nav nav-group-sub" scrollbar data-submenu-title="Huỷ / mất AC">
-                                <li class="nav-item"><a href="" class="nav-link <?php echo in_array('one', $arr_menu) ? "active" : ""; ?>"><span class="menu-title">Khai thác AC Huỷ/Mất <br>(Bộ phận khai thác nhập)</span></a></li>
-                                <li class="nav-item"><a href="" class="nav-link <?php echo in_array('one', $arr_menu) ? "active" : ""; ?>"><span class="menu-title">Khai thác AC Huỷ/Mất <br>(Kế toán AC nhập)</span></a></li>
-                                <li class="nav-item"><a href="" class="nav-link <?php echo in_array('one', $arr_menu) ? "active" : ""; ?>"><span class="menu-title">Import AC Xe máy</span></a></li>
-                                <li class="nav-item"><a href="" class="nav-link <?php echo in_array('one', $arr_menu) ? "active" : ""; ?>"><span class="menu-title">Import AC tai nạn HSD điện</span></a></li>
-                                <li class="nav-item"><a href="" class="nav-link <?php echo in_array('one', $arr_menu) ? "active" : ""; ?>"><span class="menu-title">Import AC toàn diện hộ GĐ</span></a></li>
-                                <li class="nav-item"><a href="" class="nav-link <?php echo in_array('one', $arr_menu) ? "active" : ""; ?>"><span class="menu-title">Import AC tai nạn con người</span></a></li>
-                                <li class="nav-item"><a href="" class="nav-link <?php echo in_array('one', $arr_menu) ? "active" : ""; ?>"><span class="menu-title">Import AC tai nạn giao thông</span></a></li>
+                                <li class="nav-item"><a href="<?php echo HTTP_PATH ?>view/qlac/huy-mat-ac/khai-bao-ac-huy-mat.php" class="nav-link <?php echo in_array('khai-bao-ac-huy-mat', $arr_menu) ? "active" : ""; ?>"><span class="menu-title">Khai báo AC Huỷ/Mất <br>(Bộ phận khai thác nhập)</span></a></li>
+                                <li class="nav-item"><a href="<?php echo HTTP_PATH ?>view/qlac/huy-mat-ac/xac-nhan-ac-huy-mat.php" class="nav-link <?php echo in_array('xac-nhan-ac-huy-mat', $arr_menu) ? "active" : ""; ?>"><span class="menu-title">Xác nhận AC Huỷ/Mất <br>(Kế toán AC nhập)</span></a></li>
+                                <li class="nav-item"><a href="" class="nav-link <?php echo in_array('import-ac-xe-may', $arr_menu) ? "active" : ""; ?>"><span class="menu-title">Import AC Xe máy</span></a></li>
+                                <li class="nav-item"><a href="" class="nav-link <?php echo in_array('import-ac-tai-nan-sd-dien', $arr_menu) ? "active" : ""; ?>"><span class="menu-title">Import AC tai nạn HSD điện</span></a></li>
+                                <li class="nav-item"><a href="" class="nav-link <?php echo in_array('import-ac-toan-dien-ho-gd', $arr_menu) ? "active" : ""; ?>"><span class="menu-title">Import AC toàn diện hộ GĐ</span></a></li>
+                                <li class="nav-item"><a href="" class="nav-link <?php echo in_array('import-ac-tai-nan-con-nguoi', $arr_menu) ? "active" : ""; ?>"><span class="menu-title">Import AC tai nạn con người</span></a></li>
+                                <li class="nav-item"><a href="" class="nav-link <?php echo in_array('import-ac-tai-nan-giao-thong', $arr_menu) ? "active" : ""; ?>"><span class="menu-title">Import AC tai nạn giao thông</span></a></li>
                             </ul>
                         </li>
 
-                        <li class="nav-item nav-item-submenu <?php echo in_array('two', $arr_menu) ? "nav-item-open" : ""; ?>">
-                            <a href="javascript:;" class="nav-link <?php echo in_array('one', $arr_menu) ? "active" : ""; ?>">
+                        <li class="nav-item nav-item-submenu<?php echo in_array('nhap-tra-ac', $arr_menu) ? " nav-item-open" : ""; ?>">
+                            <a href="javascript:;" class="nav-link<?php echo in_array('one', $arr_menu) ? " active" : ""; ?>">
                                 <i class="fad fa-hand-holding-box fa-fw"></i>
                                 <span class="menu-title">Nhập trả AC</span>
                             </a>
                             <ul class="nav nav-group-sub" scrollbar data-submenu-title="Nhập trả AC">
-                                <li class="nav-item"><a href="" class="nav-link <?php echo in_array('one', $arr_menu) ? "active" : ""; ?>"><span class="menu-title">Nhập trả AC trắng <br>(Nguyên quyển)</span></a></li>
-                                <li class="nav-item"><a href="" class="nav-link <?php echo in_array('one', $arr_menu) ? "active" : ""; ?>"><span class="menu-title">Nhập huỷ AC</span></a></li>
+                                <li class="nav-item"><a href="" class="nav-link <?php echo in_array('nhap-tra-ac-trang', $arr_menu) ? "active" : ""; ?>"><span class="menu-title">Nhập trả AC trắng <br>(Nguyên quyển)</span></a></li>
+                                <li class="nav-item"><a href="" class="nav-link <?php echo in_array('nhap-huy-ac', $arr_menu) ? "active" : ""; ?>"><span class="menu-title">Nhập huỷ AC</span></a></li>
                             </ul>
                         </li>
 

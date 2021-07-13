@@ -18,7 +18,7 @@
                     </button>
                     <div class="top-left">
                         <div class="breadcrumb">
-                            <a href="<?php echo HTTP_PATH . 'view/pages/danh-sach-don.php'; ?>" class="breadcrumb-item"><i class="fad fa-file-certificate mr-1"></i>Quản lý ấn chỉ</a>
+                            <a href="<?php echo HTTP_PATH . 'view/qlac/'; ?>" class="breadcrumb-item"><i class="fad fa-file-certificate mr-1"></i>Quản lý ấn chỉ</a>
                             <span class="breadcrumb-item active">Đề nghị cấp ấn chỉ chi nhánh</span>
                         </div>
                         <div class="d-md-none logo-mobile">
@@ -34,7 +34,7 @@
 
                 <div class="page-title">
                     <div class="p-title">
-                        <p class="font-weight-semibold font-size-m mb-0"><i class="fad fa-user-friends mr-2"></i>Danh sách đề nghị cấp ấn chỉ</p>
+                        <p class="font-weight-semibold font-size-m mb-0"><i class="fad fa-landmark mr-1"></i>Đề nghị cấp ấn chỉ chi nhánh</p>
                     </div>
                     <div class="p-button">
                     </div>
@@ -43,19 +43,9 @@
                 <!-- Content-block -->
                 <div class="content-block">
                     <div class="card card-search">
-                        <div class="card-header header-elements-inline">
-                            <p class="card-title font-size-s">
-                                <i style="width: 26px;height: 26px;line-height: 26px;font-size: 12px;" class="icon-search4 d-flex-inline align-items-center justify-content-center rounded-round bg-color mr-2"></i>
-                                Tìm kiếm ấn chỉ
-                            </p>
-                            <div class="header-elements">
-                                <div class="list-icons">
-                                    <a class="list-icons-item" data-action="collapse"></a>
-                                </div>
-                            </div>
-                        </div>
                         <div class="card-body">
                             <div class="row">
+                                
                                 <div class="col-md-6 col-sm-4 col-6">
                                     <div class="form-group ">
                                         <label class="font-weight-semibold">Đơn vị nhận ấn chỉ:</label>

@@ -220,7 +220,7 @@
                                                                                         <td><input class="form-control col-content-lg" type="text"></td>
                                                                                         <td>
                                                                                             <div class="col-content-xs">
-                                                                                                <select select2>
+                                                                                                <select select2 class="form-control">
                                                                                                     <option value="">--- Chọn ---</option>
                                                                                                     <option value="">1</option>
                                                                                                     <option value="">2</option>

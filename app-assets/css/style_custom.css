@@ -1482,10 +1482,16 @@ hr {
     padding: 5px;
 }
 
+.table tr:hover{
+    background: #fffcd2;
+}
 .collapse-group {
     margin-bottom: 20px;
 }
-
+.p-title > *{
+    display: flex;
+    align-items: center;
+}
 .collapse-group .p-title {
     font-weight: 500;
     margin-bottom: 20px;
@@ -4573,4 +4579,3 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     text-transform: capitalize;
     color: inherit;
 }
-
