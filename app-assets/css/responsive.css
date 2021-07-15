@@ -361,6 +361,12 @@
     .about-move{
         display: none;
     }
+    .dataTable tr.child .dtr-title{
+        padding-right: .5rem;
+    }
+    .tab-style > .tab-content {
+        padding: 10px;
+    }
 
 
 

@@ -116,11 +116,11 @@
                                                                                                <table class="table table-bordered datatable" data-paging="false" data-info="false" data-ordering="false" data-searching="false" >
                                                                                                     <thead>
                                                                                                         <tr>
-                                                                                                            <th class="w1p text-center">STT</th>
-                                                                                                            <th class="w15p">Mã nhóm</th>
+                                                                                                            <th class="w1p desktop text-center">STT</th>
+                                                                                                            <th class="w15p desktop">Mã nhóm</th>
                                                                                                             <th>Tên nhóm</th>
-                                                                                                            <td class="w20p text-center">Phạm vi quyền lợi và giới hạn phụ</td>
-                                                                                                            <th class="w1p text-center"></th>
+                                                                                                            <td class="all w20p text-center">Phạm vi quyền lợi và giới hạn phụ</td>
+                                                                                                            <th class="all w1p text-center"></th>
                                                                                                         </tr>
                                                                                                     </thead>
                                                                                                     <tbody data-repeater-list="repeater-parent">
@@ -244,7 +244,7 @@
                                                                                                             <td>
 
                                                                                                                 <div class="form-group">
-                                                                                                                    <p class="mb-1 font-weight-semibold">1. Phạm vi Tử vong/TTVV do tai nạn</p>
+                                                                                                                    <p class="mb-1 font-weight-semibold text-left">1. Phạm vi Tử vong/TTVV do tai nạn</p>
                                                                                                                     <table class="table table-bordered">
                                                                                                                         <thead class="thead-light-1">
                                                                                                                             <tr>
@@ -266,7 +266,7 @@
                                                                                                                 </div>
 
                                                                                                                 <div class="form-group">
-                                                                                                                    <p class="mb-1 font-weight-semibold">2. Phạm vi Trợ cấp do tai nạn</p>
+                                                                                                                    <p class="mb-1 font-weight-semibold text-left">2. Phạm vi Trợ cấp do tai nạn</p>
                                                                                                                     <table class="table table-bordered">
                                                                                                                         <thead class="thead-light-1">
                                                                                                                             <tr>
@@ -294,7 +294,7 @@
                                                                                                                 </div>
 
                                                                                                                 <div class="form-group">
-                                                                                                                    <p class="mb-1 font-weight-semibold">3. Phạm vi Tử vong/TTVV do ốm bênh, thai sản</p>
+                                                                                                                    <p class="mb-1 font-weight-semibold text-left">3. Phạm vi Tử vong/TTVV do ốm bênh, thai sản</p>
                                                                                                                     <table class="table table-bordered">
                                                                                                                         <thead class="thead-light-1">
                                                                                                                             <tr>
@@ -316,7 +316,7 @@
                                                                                                                 </div>
 
                                                                                                                 <div>
-                                                                                                                    <p class="mb-1 font-weight-semibold">4. Phạm vi Trợ cấp do ốm bệnh, thai sản</p>
+                                                                                                                    <p class="mb-1 font-weight-semibold text-left">4. Phạm vi Trợ cấp do ốm bệnh, thai sản</p>
                                                                                                                     <table class="table table-bordered">
                                                                                                                         <thead class="thead-light-1">
                                                                                                                             <tr>
@@ -381,9 +381,9 @@
                                                                                     <thead class="thead-light">
                                                                                         <tr>
                                                                                             <th class="w25p all"></th>
-                                                                                            <th class="text-center desktop"><b>Nhóm bảo hiểm</b></th>
-                                                                                            <th class="text-center desktop"><b>Số tiền</b></th>
-                                                                                            <th class="text-center desktop"><b>Phí bảo hiểm</b></th>
+                                                                                            <th class="text-center "><b>Nhóm bảo hiểm</b></th>
+                                                                                            <th class="text-center "><b>Số tiền</b></th>
+                                                                                            <th class="text-center "><b>Phí bảo hiểm</b></th>
                                                                                         </tr>
                                                                                     </thead>
                                                                                     <tbody>
@@ -401,8 +401,8 @@
                                                                                     <thead class="thead-light">
                                                                                         <tr>
                                                                                             <th class="w50p all"></th>
-                                                                                            <th class="desktop">Số tiền bảo hiểm</th>
-                                                                                            <th class="desktop">Phí bảo hiểm</th>
+                                                                                            <th class="">Số tiền bảo hiểm</th>
+                                                                                            <th class="">Phí bảo hiểm</th>
                                                                                         </tr>
                                                                                     </thead>
                                                                                     <tbody>
