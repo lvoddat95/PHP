@@ -81,7 +81,7 @@
                                                                                         <li class="nav-item">
                                                                                             <a href="#ds_quyen_loi" class="nav-link active show" data-toggle="tab">
                                                                                                 <i class="fal fa-file-invoice mr-1"></i>
-                                                                                                <span>Danh mục phạm vi bảo hiểm và các giới hạn phụ</span>
+                                                                                                <span>Danh mục quyền lợi bảo hiểm và các giới hạn phụ</span>
                                                                                             </a>
                                                                                         </li>
                                                                                         <li class="nav-item">
@@ -95,7 +95,7 @@
 
                                                                                     <div class="tab-content">
                                                                                         <div class="tab-pane active show" id="ds_quyen_loi">
-                                                                                            <p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Upload thông tin danh mục phạm vi bảo hiểm và các giới hạn phụ</p>
+                                                                                            <p class="text-primary-800 font-weight-bold"><i class="icon-info22 mr-1"></i>Upload thông tin danh mục quyền lợi bảo hiểm và các giới hạn phụ</p>
 
                                                                                             <div class="row mb-3 align-items-center">
                                                                                                 <div class="col-sm-4">
@@ -119,7 +119,7 @@
                                                                                                             <th class="w1p text-center">STT</th>
                                                                                                             <th class="w15p">Mã nhóm</th>
                                                                                                             <th>Tên nhóm</th>
-                                                                                                            <td class="w20p text-center">Phạm vi bảo hiểm và giới hạn phụ</td>
+                                                                                                            <td class="w20p text-center">Phạm vi quyền lợi và giới hạn phụ</td>
                                                                                                             <th class="w1p text-center"></th>
                                                                                                         </tr>
                                                                                                     </thead>
@@ -129,7 +129,7 @@
                                                                                                             <td><input type="text" class="form-control"></td>
                                                                                                             <td><input type="text" class="form-control"></td>
                                                                                                             <td class="text-center">
-                                                                                                                <button type="button" class="btn btn-outline-primary text-primary bg-white" onclick="fancybox_modal(this,'#ds_quyen_loi_bh')">+ Danh sách phạm vi <span>(0)</span></button>
+                                                                                                                <button type="button" class="btn btn-outline-primary text-primary bg-white" onclick="fancybox_modal(this,'#ds_quyen_loi_bh')">+ Danh sách quyền lợi <span>(0)</span></button>
                                                                                                             </td>
                                                                                                             <td class="text-center"><a href="javascript:;" data-repeater-delete class="btn btn-outline-danger text-danger bg-white"><i class="icon-trash"></i> Xoá</a></td>
                                                                                                             
@@ -166,19 +166,24 @@
                                                                                                         <tr>
                                                                                                             <th class="w1p all text-center"><input type="checkbox" id="input-chk-all"></th>
                                                                                                             <th class="none">Mã nhân viên</th>
-                                                                                                            <th class="w15p"><span class="text-danger">*</span> Người được BH</th>
-                                                                                                            <th class="w5p none">Giới tính</th>
-                                                                                                            <th class="w5p none">Ngày sinh</th>
-                                                                                                            <th class="none">Địa chỉ</th>
-                                                                                                            <th class="none">Email/Số điện thoại</th>
-                                                                                                            <th class="desktop"><span class="text-danger">*</span>Tuổi</th>
-                                                                                                            <th class="desktop">Đơn vị</th>
-                                                                                                            <th class="desktop">Chức vụ</th>
-                                                                                                            <th class="desktop">Phòng ban</th>
-                                                                                                            <th class="desktop"><span class="text-danger">*</span> Hiệu lực từ ngày</th>
-                                                                                                            <th class="desktop"><span class="text-danger">*</span> Đến ngày</th>
-                                                                                                            <th class="desktop"><span class="text-danger">*</span> Nhóm/Cấp</th>
-                                                                                                            <th class="none"><span class="text-danger">*</span> Tỉ lệ phí chuẩn / Phí chuẩn</th>
+                                                                                                            <th class="w15p">Tên nhân viên</th>
+                                                                                                            <th class="none">Chức vụ</th>
+                                                                                                            <th class="none">Phòng ban</th>
+                                                                                                            <th class="none">Đơn vị</th>
+                                                                                                            <th class="none">Nhóm cán bộ</th>
+                                                                                                            <th class="none">Email</th>
+
+                                                                                                            <th class="w11p">Ngày hiệu lực</th>
+                                                                                                            <th class="w11p">Ngày kết thúc</th>
+
+                                                                                                            <th class="w10p">Cấp bảo hiểm</th>
+                                                                                                            <th class="text-right">Mức lương</th>
+                                                                                                            <th class="text-right">Tổng MTN</th>
+                                                                                                            <th class="text-right">Tổng phí</th>
+
+                                                                                                            <th class="none">Thông tin NĐBH</th>
+                                                                                                            <th class="none">Phạm vi tham gia</th>
+                                                                                              
                                                                                                             <th class="all w1p"></th>
                                                                                                         </tr>
                                                                                                         
@@ -188,58 +193,156 @@
                                                                                                             <td class="text-center">
                                                                                                                 <b class="item-level">1.</b> <input type="checkbox" class="input-chk">
                                                                                                             </td>
-                                                                                                            <td><input class="form-control col-content-xs" type="text"></td>
+                                                                                                            <td><input class="form-control col-content-lg" type="text"></td>
                                                                                                             <td><input class="form-control" type="text"></td>
-
-                                                                                                            <td><input class="form-control col-content-xs" type="text"></td>
-                                                                                                            <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
                                                                                                             <td><input class="form-control col-content-lg" type="text"></td>
                                                                                                             <td><input class="form-control col-content-lg" type="text"></td>
-                                                                                                            <td><input class="form-control col-content-xs" type="text"></td>
                                                                                                             <td><input class="form-control col-content-lg" type="text"></td>
                                                                                                             <td><input class="form-control col-content-lg" type="text"></td>
                                                                                                             <td><input class="form-control col-content-lg" type="text"></td>
 
                                                                                                             <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
                                                                                                             <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
-                                                                                                            <td><input class="form-control col-content-sm" type="text"></td>
+
+                                                                                                            <td><input class="form-control col-content-lg" type="text"></td>
+                                                                                                            <td><input class="form-control col-content-lg text-right input-money" type="text" placeholder="0"></td>
+                                                                                                            <td><input class="form-control col-content-lg text-right input-money" type="text" placeholder="0"></td>
+                                                                                                            <td><input class="form-control col-content-lg text-right input-money" type="text" placeholder="0"></td>
+
 
                                                                                                             <td>
                                                                                                                 <table class="table table-bordered">
-                                                                                                                    <thead>
+                                                                                                                    <thead class="thead-light">
                                                                                                                         <tr>
-                                                                                                                            <th colspan="2" class="text-center">Phạm vi A</th>
-                                                                                                                            <th colspan="2" class="text-center">Phạm vi B</th>
-                                                                                                                            <th colspan="2" class="text-center">Phạm vi C</th>
-                                                                                                                            <th colspan="2" class="text-center">Phạm vi D</th>
-                                                                                                                        </tr>
-                                                                                                                        <tr>
-                                                                                                                            <th class="text-center w10p"><span class="text-danger">*</span> TL phí chuẩn A</th>
-                                                                                                                            <th class="text-center">Phí chuẩn A</th>
-                                                                                                                            <th class="text-center w10p"><span class="text-danger">*</span> TL phí chuẩn B</th>
-                                                                                                                            <th class="text-center">Phí chuẩn B</th>
-                                                                                                                            <th class="text-center w10p"><span class="text-danger">*</span> TL phí chuẩn C</th>
-                                                                                                                            <th class="text-center">Phí chuẩn C</th>
-                                                                                                                            <th class="text-center w10p"><span class="text-danger">*</span> TL phí chuẩn D</th>
-                                                                                                                            <th class="text-center">Phí chuẩn D</th>
+                                                                                                                            <th class="w25p">Tên NĐBH</th>
+                                                                                                                            <th class="text-center">Quan hệ</th>
+                                                                                                                            <th class="text-center">Ngày sinh</th>
+                                                                                                                            <th class="w10p text-center">Tuổi</th>
+                                                                                                                            <th class="w15p text-center">Giới tính</th>
+                                                                                                                            <th class="text-center">CMND</th>
                                                                                                                         </tr>
                                                                                                                     </thead>
                                                                                                                     <tbody>
                                                                                                                         <tr>
-                                                                                                                            <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
-                                                                                                                            <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
-
-                                                                                                                            <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
-                                                                                                                            <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
-
-                                                                                                                            <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
-                                                                                                                            <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
-
-                                                                                                                            <td><input class="form-control col-content-sm input-float text-right" placeholder="0.0" type="text"></td>
-                                                                                                                            <td><input class="form-control col-content-sm input-money text-right" placeholder="0" type="text" ></td>
+                                                                                                                            <td><input class="form-control col-content-lg" type="text"></td>
+                                                                                                                            <td><input class="form-control col-content-lg text-center" type="text"></td>
+                                                                                                                            <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy"></td>
+                                                                                                                            <td><input class="form-control col-content-lg text-center input-number" type="text" placeholder="0"></td>
+                                                                                                                            <td>
+                                                                                                                                <select select2>
+                                                                                                                                    <option value="">--- Chọn ---</option>
+                                                                                                                                    <option value="">Nam</option>
+                                                                                                                                    <option value="">Nữ</option>
+                                                                                                                                </select>
+                                                                                                                            </td>
+                                                                                                                            <td><input class="form-control col-content-lg text-center input-number" type="text"></td>
                                                                                                                         </tr>
                                                                                                                     </tbody>    
                                                                                                                 </table>
+                                                                                                            </td>
+
+                                                                                                            <td>
+
+                                                                                                                <div class="form-group">
+                                                                                                                    <p class="mb-1 font-weight-semibold">1. Phạm vi Tử vong/TTVV do tai nạn</p>
+                                                                                                                    <table class="table table-bordered">
+                                                                                                                        <thead class="thead-light-1">
+                                                                                                                            <tr>
+                                                                                                                                <th class="text-center">Số tháng lương mua BH</th>
+                                                                                                                                <th class="text-center">Tỷ lệ phí</th>
+                                                                                                                                <th class="text-center">Phí bảo hiểm</th>
+                                                                                                                                <th class="text-center">Số tiền BH</th>
+                                                                                                                            </tr>
+                                                                                                                        </thead>
+                                                                                                                        <tbody>
+                                                                                                                            <tr>
+                                                                                                                                <td><input class="form-control col-content-lg text-center input-number" type="text" placeholder="0"></td>
+                                                                                                                                <td><input class="form-control col-content-lg text-center input-float" type="text" placeholder="0"></td>
+                                                                                                                                <td><input class="form-control col-content-lg text-center input-money" type="text" placeholder="0"></td>
+                                                                                                                                <td><input class="form-control col-content-lg text-center input-money" type="text" placeholder="0"></td>
+                                                                                                                            </tr>
+                                                                                                                        </tbody>    
+                                                                                                                    </table>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-group">
+                                                                                                                    <p class="mb-1 font-weight-semibold">2. Phạm vi Trợ cấp do tai nạn</p>
+                                                                                                                    <table class="table table-bordered">
+                                                                                                                        <thead class="thead-light-1">
+                                                                                                                            <tr>
+                                                                                                                                <th class="text-center">Tháng trợ cấp lương TN</th>
+                                                                                                                                <th class="text-center">STBH trợ cấp lương TN</th>
+                                                                                                                                <th class="text-center">ST bồi thường tối đa/ngày</th>
+                                                                                                                                <th class="text-center">ST bồi thường tối đa/vụ</th>
+                                                                                                                                <th class="text-center">Tỷ lệ phí</th>
+                                                                                                                                <th class="text-center">Phí bảo hiểm</th>
+                                                                                                                                <th class="text-center">Số ngày bồi thường tối đa</th>
+                                                                                                                            </tr>
+                                                                                                                        </thead>
+                                                                                                                        <tbody>
+                                                                                                                            <tr>
+                                                                                                                                <td><input class="form-control col-content-lg text-center input-number" type="text" placeholder="0"></td>
+                                                                                                                                <td><input class="form-control col-content-lg text-center input-float" type="text" placeholder="0"></td>
+                                                                                                                                <td><input class="form-control col-content-lg text-center input-money" type="text" placeholder="0"></td>
+                                                                                                                                <td><input class="form-control col-content-lg text-center input-money" type="text" placeholder="0"></td>
+                                                                                                                                <td><input class="form-control col-content-lg text-center input-money" type="text" placeholder="0"></td>
+                                                                                                                                <td><input class="form-control col-content-lg text-center input-money" type="text" placeholder="0"></td>
+                                                                                                                                <td><input class="form-control col-content-lg text-center input-money" type="text" placeholder="0"></td>
+                                                                                                                            </tr>
+                                                                                                                        </tbody>    
+                                                                                                                    </table>
+                                                                                                                </div>
+
+                                                                                                                <div class="form-group">
+                                                                                                                    <p class="mb-1 font-weight-semibold">3. Phạm vi Tử vong/TTVV do ốm bênh, thai sản</p>
+                                                                                                                    <table class="table table-bordered">
+                                                                                                                        <thead class="thead-light-1">
+                                                                                                                            <tr>
+                                                                                                                                <th class="text-center">Số tháng lương mua BH</th>
+                                                                                                                                <th class="text-center">Tỷ lệ phí</th>
+                                                                                                                                <th class="text-center">Phí bảo hiểm</th>
+                                                                                                                                <th class="text-center">Số tiền BH</th>
+                                                                                                                            </tr>
+                                                                                                                        </thead>
+                                                                                                                        <tbody>
+                                                                                                                            <tr>
+                                                                                                                                <td><input class="form-control col-content-lg text-center input-number" type="text" placeholder="0"></td>
+                                                                                                                                <td><input class="form-control col-content-lg text-center input-float" type="text" placeholder="0"></td>
+                                                                                                                                <td><input class="form-control col-content-lg text-center input-money" type="text" placeholder="0"></td>
+                                                                                                                                <td><input class="form-control col-content-lg text-center input-money" type="text" placeholder="0"></td>
+                                                                                                                            </tr>
+                                                                                                                        </tbody>    
+                                                                                                                    </table>
+                                                                                                                </div>
+
+                                                                                                                <div>
+                                                                                                                    <p class="mb-1 font-weight-semibold">4. Phạm vi Trợ cấp do ốm bệnh, thai sản</p>
+                                                                                                                    <table class="table table-bordered">
+                                                                                                                        <thead class="thead-light-1">
+                                                                                                                            <tr>
+                                                                                                                                <th class="text-center">Tháng trợ cấp lương TN</th>
+                                                                                                                                <th class="text-center">STBH trợ cấp lương TN</th>
+                                                                                                                                <th class="text-center">ST bồi thường tối đa/ngày</th>
+                                                                                                                                <th class="text-center">ST bồi thường tối đa/vụ</th>
+                                                                                                                                <th class="text-center">Tỷ lệ phí</th>
+                                                                                                                                <th class="text-center">Phí bảo hiểm</th>
+                                                                                                                                <th class="text-center">Số ngày bồi thường tối đa</th>
+                                                                                                                            </tr>
+                                                                                                                        </thead>
+                                                                                                                        <tbody>
+                                                                                                                            <tr>
+                                                                                                                                <td><input class="form-control col-content-lg text-center input-number" type="text" placeholder="0"></td>
+                                                                                                                                <td><input class="form-control col-content-lg text-center input-float" type="text" placeholder="0"></td>
+                                                                                                                                <td><input class="form-control col-content-lg text-center input-money" type="text" placeholder="0"></td>
+                                                                                                                                <td><input class="form-control col-content-lg text-center input-money" type="text" placeholder="0"></td>
+                                                                                                                                <td><input class="form-control col-content-lg text-center input-money" type="text" placeholder="0"></td>
+                                                                                                                                <td><input class="form-control col-content-lg text-center input-money" type="text" placeholder="0"></td>
+                                                                                                                                <td><input class="form-control col-content-lg text-center input-money" type="text" placeholder="0"></td>
+                                                                                                                            </tr>
+                                                                                                                        </tbody>    
+                                                                                                                    </table>
+                                                                                                                </div>
+
                                                                                                             </td>
 
                                                                                                             <td class="text-center">

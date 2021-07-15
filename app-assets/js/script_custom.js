@@ -244,7 +244,6 @@ var fancybox_modal = function(p_this, p_src){
             btnTpl: {
                 smallBtn:"",
             },
-            touch: false,
             baseClass: "fancybox-modal",
             beforeShow: function(){
                 $('#loading').show();
@@ -261,3 +260,6 @@ var fancybox_modal = function(p_this, p_src){
     });
 }
 
+$.extend($.fancybox.defaults, {
+    touch: false,
+  });

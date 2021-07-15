@@ -1,157 +1,127 @@
 <!-- Danh sách quyền lợi bảo hiểm -->
-<div id="ds_quyen_loi_bh" class="modal-none fancybox-content-xl">
+<div id="ds_quyen_loi_bh" class="modal-none ">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title ">Danh sách phạm vi bảo hiểm và giới hạn phụ</h5>
+                <h5 class="modal-title ">Danh sách quyền lợi bảo hiểm và giới hạn phụ</h5>
                 <button type="button" class="close" data-fancybox-close><i class="fal fa-times"></i></button>
             </div>
             <form action="#">
                 <div class="modal-body">
                     <div class="form-group" repeater>
-                        <table class="table table-sm table-bordered table-hover datatable child-row-sm" data-control-right="true" data-paging="false" data-info="false" data-ordering="false" data-searching="false">
+                        <table class="table table-bordered table-hover datatable child-row-sm" data-control-right="true" data-paging="false" data-info="false" data-ordering="false" data-searching="false">
                             <thead class="thead-light">
                                 <tr>
-                                    <th rowspan="2" class="cell control not-desktop text-center">
-                                        <i class="fa fa-ellipsis-v"></i>
-                                    </th>
-                                    <th rowspan="2" class="w5p">Mã phạm vi</th>
-                                    <th rowspan="2" class="w12p desktop">Tên phạm vi</th>
-                                    <th rowspan="2" class="w12p desktop">Giới hạn phụ</th>
-                                    <th rowspan="2" class="w8p">Phạm vi/ Giới hạn phụ</th>
-                                    <th rowspan="2" class="w6p desktop">Số tiền BH</th>
-                                    <th rowspan="2" class="w6p none">Số tiền BH tối đa/vụ</th>
-                                    <th rowspan="2" class="w6p none">Số tiền BH tối đa/năm</th>
-                                    <th rowspan="2" class="w6p none">Số lần BH tối đa</th>
-                                    <th colspan="2" class="text-center">Khẩu trừ theo vụ</th>
-                                    <th rowspan="2" class="w3p">Tỉ lệ phí/năm</th>
-                                    <th rowspan="2" class="w3p">Tỉ lệ Disc</th>
-                                    <th rowspan="2" class="w6p">Phí/năm</th>
-                                    <th rowspan="2" class="w6p none">Ghi chú</th>
-                                    <th rowspan="2" class="w1p text-center">#</th>
-                                </tr>
-                                <tr>
-                                    <th class="w3p desktop">Tỷ lệ (%)/vụ</th>
-                                    <th class="w6p desktop">Số tiền/vụ</th>
+                                    <th class="w10p">Mã quyền lợi</th>
+                                    <th class="w20p">Tên quyền lợi</th>
+
+                                    <th class="w10p desktop text-center">GH Năm</th>
+                                    <th class="w10p desktop text-center">GH Ngày</th>
+                                    <th class="w10p desktop text-center">GH Bệnh</th>
+                                    <th class="w10p desktop text-center">GH Vụ</th>
+                                    <th class="w10p desktop text-center">Mã NTE</th>
+                                    <th class="w10p desktop text-center">PVI</th>
+                                    <th class="w10p desktop text-center">Phí</th>
+
+                                    <th class="w10p none">TV Ngày</th>
+                                    <th class="w10p none">BHYT</th>
+                                    <th class="w10p none">Tự chi trả</th>
+                                    <th class="w10p none">Số ngày</th>
+                                    <th class="w10p none">Tỉ lệ tái</th>
+                                    <th class="w10p none">K tái</th>
+              
+                                    <th class="w1p text-center">#</th>
                                 </tr>
                             </thead>
                             <tbody data-repeater-list="repeater-child">
                                 <tr data-repeater-item>
-                                    <td><input type="text" class="form-control" id="ma_ql"></td>
-                                    <td>
-                                        <select class="form-control" select2>
-                                                <option value="">--- Chọn ---</option>
-                                                <option value="">Tai nạn</option>
-                                                <option value="">1.1-Tử vong/Thương tật vĩnh viễn do tai nạn</option>
-                                                <option value="">1.2- Trợ cấp lương (theo lương thực nhận)</option>
-                                                <option value="">1.3-Số ngày nghỉ</option>
-                                                <option value="">1.4- Trợ cấp lương (theo số tiền cố định)</option>
-                                                <option value="">1.5-Số ngày nghỉ</option>
-                                                <option value="">1.6-Chi phí y tế do tai nạn</option>
-                                                <option value="">1.7-Trợ cấp giáo dục</option>
-                                                <option value="">1.8-Quyền lợi khác</option>
-                                                <option value="">Điều trị nội trú do ốm bệnh, thai sản</option>
-                                                <option value="">2.1-Giới hạn 1 ngày nằm viện</option>
-                                                <option value="">2.2-Tiền giường</option>
-                                                <option value="">2.3-Số ngày/năm</option>
-                                                <option value="">2.4-Phẫu thuật</option>
-                                                <option value="">2.5-Chi phí trước nhập viện</option>
-                                                <option value="">2.6-Điều trị sau xuất viện</option>
-                                                <option value="">2.7-Y tá chăm sóc tai nhà</option>
-                                                <option value="">2.8-Trợ cấp ngày nằm viện</option>
-                                                <option value="">2.8.1-Điều trị tại BV công</option>
-                                                <option value="">2.8.2-Điều trị tại BV công và sử dụng BHYT</option>
-                                                <option value="">2.8.3-Điều trị tại các bệnh viện khác</option>
-                                                <option value="">2.9-Trợ cấp sử dụng thẻ bảo hiểm y tế</option>
-                                                <option value="">2.10-Thai sản</option>
-                                                <option value="">2.10.1-Sinh thường hoặc biến chứng thai sản không cần phẫu thuật</option>
-                                                <option value="">2.10.2-Sinh mổ hoặc biến chứng thai sản cần phẫu thuật</option>
-                                                <option value="">2.10.3-Chăm sóc trẻ sơ sinh</option>
-                                                <option value="">2.10.4-Trợ cấp sinh tại BV công</option>
-                                                <option value="">2.10.5-Trợ cấp sinh tại BV công có sử dụng BHYT</option>
-                                                <option value="">2.11-Điều trị tại phòng cấp cứu</option>
-                                                <option value="">2.12-Vận chuyển cấp cứu</option>
-                                                <option value="">2.13-Vận chuyển cấp cứu bằng xe taxi</option>
-                                                <option value="">2.14-Phục hồi chức năng</option>
-                                                <option value="">2.15-Mai táng phí</option>
-                                                <option value="">2.16-Quyền lợi khác</option>
-                                                <option value="">Điều trị ngoại trú do ốm bệnh, thai sản</option>
-                                                <option value="">3.1-Chi phí điều trị ngoại trú</option>
-                                                <option value="">3.2-Chi phí vật lý trị liệu</option>
-                                                <option value="">3.3-Điều trị răng</option>
-                                                <option value="">3.3.1-Lấy cao răng</option>
-                                                <option value="">3.4-Quyền lợi khác</option>
-                                                <option value="">Trợ cấp nghỉ điều trị nội trú do ốm bệnh</option>
-                                                <option value="">4.1-Trợ cấp</option>
-                                                <option value="">4.2-Số ngày</option>
-                                            </option>
-                                        </select>
-                                    </td>
-                                    <td>
-                                        <select select2>
-                                            <option value="">--- Chọn ---</option>
-                                            <option value="">Trợ cấp</option>
-                                            <option value="">Trợ cấp nghỉ điều trị nội trú do ốm bệnh</option>
-                                            <option value="">Lấy cao răng</option>
-                                            <option value="">Điều trị răng</option>
-                                            <option value="">Số ngày</option>
-                                            <option value="">Chi phí vật lý trị liệu</option>
-                                            <option value="">Giới hạn số lần khám</option>
-                                            <option value="">Chi phí điều trị ngoại trú</option>
-                                            <option value="">Điều trị ngoại trú do ốm bệnh, thai sản</option>
-                                            <option value="">Mai táng phí</option>
-                                            <option value="">Phục hồi chức năng</option>
-                                            <option value="">Vận chuyển cấp cứu bằng xe taxi</option>
-                                            <option value="">Vận chuyển cấp cứu</option>
-                                            <option value="">Điều trị tại phòng cấp cứu</option>
-                                            <option value="">Trợ cấp sinh tại BV công có sử dụng BHYT</option>
-                                            <option value="">Trợ cấp sinh tại BV công</option>
-                                            <option value="">Chăm sóc trẻ sơ sinh</option>
-                                            <option value="">Sinh mổ hoặc biến chứng thai sản cần phẫu thuật</option>
-                                            <option value="">Sinh thường hoặc biến chứng thai sản không cần phẫu thuật</option>
-                                            <option value="">Thai sản</option>
-                                            <option value="">Trợ cấp sử dụng thẻ bảo hiểm y tế</option>
-                                            <option value="">Điều trị tại các bệnh viện khác</option>
-                                            <option value="">Điều trị tại BV công và sử dụng BHYT</option>
-                                            <option value="">Điều trị tại BV công</option>
-                                            <option value="">Trợ cấp ngày nằm viện</option>
-                                            <option value="">Y tá chăm sóc tai nhà</option>
-                                            <option value="">Điều trị sau xuất viện</option>
-                                            <option value="">Chi phí trước nhập viện</option>
-                                            <option value="">Phẫu thuật</option>
-                                            <option value="">Số ngày/năm</option>
-                                            <option value="">Tiền giường</option>
-                                            <option value="">Giới hạn 1 ngày nằm viện</option>
-                                            <option value="">Điều trị nội trú do ốm bệnh, thai sản</option>
-                                            <option value="">Quyền lợi khác</option>
-                                            <option value="">Trợ cấp giáo dục</option>
-                                            <option value="">Chi phí y tế do tai nạn</option>
-                                            <option value="">Trợ cấp lương (theo số tiền cố định)</option>
-                                            <option value="">Trợ cấp lương (theo lương thực nhận)</option>
-                                            <option value="">Tử vong/Thương tật vĩnh viễn do tai nạn</option>
-                                            <option value="">Tai nạn</option>
-                                        </select>
-                                    </td>
+                                    <td><input type="text" class="form-control" readonly></td>
                                     <td>
                                         <select class="form-control" select2>
                                             <option value="">--- Chọn ---</option>
-                                            <option value="">Phạm vi</option>
-                                            <option value="">Giới hạn phụ</option>
+                                            <option value="">A.1 - Bảo hiểm Tai nạn</option>
+                                            <option value="">A.1.01 - Chi phí y tế do tai nạn</option>
+                                            <option value="">A.1.01.01 - Chi phí xe cứu thương</option>
+                                            <option value="">A.1.01.02 - Chi phí xe taxi</option>
+                                            <option value="">A.1.02 - Trợ cấp giáo dục</option>
+                                            <option value="">A.1.03 - Trợ cấp mai táng</option>
+                                            <option value="">A.1.04 - Khác</option>
+                                            <option value="">A.2 - Điều trị nội trú do ốm bệnh, thai sản</option>
+                                            <option value="">A.2.01 - Giới hạn 1 ngày nằm viện</option>
+                                            <option value="">A.2.01.02 - Giới hạn tiền giường cho 1 ngày nằm viện</option>
+                                            <option value="">A.2.02 - Điều trị trong ngày</option>
+                                            <option value="">A.2.03 - Giới hạn điều trị tại phòng ICU</option>
+                                            <option value="">A.2.04 - Phẫu thuật</option>
+                                            <option value="">A.2.04.01 - Phẫu thuật nội trú</option>
+                                            <option value="">A.2.04.02 - Phẫu thuật trong ngày</option>
+                                            <option value="">A.2.04.03 - Phẫu thuật ngoại trú</option>
+                                            <option value="">A.2.04.04 - Thủ thuật</option>
+                                            <option value="">A.2.04.05 - Phẫu thuật tạo hình</option>
+                                            <option value="">A.2.05 - Chi phí khám trước nhập viện và điều trị sau xuất viện</option>
+                                            <option value="">A.2.06 - Chi phí trước nhập viện</option>
+                                            <option value="">A.2.07 - Điều trị sau xuất viện</option>
+                                            <option value="">A.2.08 - Y tá chăm sóc tai nhà</option>
+                                            <option value="">A.2.09 - Vận chuyển khẩn cấp</option>
+                                            <option value="">A.2.09.01 - Vận chuyển khẩn cấp bằng taxi</option>
+                                            <option value="">A.2.10 - Trợ cấp ngày nằm viện</option>
+                                            <option value="">A.2.10.01 - Trợ cấp tại BV công</option>
+                                            <option value="">A.2.10.02 - Trợ cấp tại BV công và sử dụng BHYT</option>
+                                            <option value="">A.2.10.03 - Trợ cấp tại các bệnh viện khác</option>
+                                            <option value="">A.2.10.04 - Trợ cấp sử dụng thẻ bảo hiểm y tế</option>
+                                            <option value="">A.2.11 - Thai sản</option>
+                                            <option value="">A.2.11.01 - Sinh thường hoặc biến chứng thai sản không cần phẫu thuật</option>
+                                            <option value="">A.2.11.02 - Sinh mổ hoặc biến chứng thai sản cần phẫu thuật</option>
+                                            <option value="">A.2.11.02.01 - Sinh mổ</option>
+                                            <option value="">A.2.11.02.02 - Biến chứng thai sản phải phẫu thuật</option>
+                                            <option value="">A.2.12 - Chăm sóc trẻ sơ sinh</option>
+                                            <option value="">A.2.13 - Cấy ghép nội tạng</option>
+                                            <option value="">A.2.14 - Trợ cấp sinh tại BV công</option>
+                                            <option value="">A.2.15 - Trợ cấp sinh tại BV công có sử dụng BHYT</option>
+                                            <option value="">A.2.16 - Điều trị tại phòng cấp cứu</option>
+                                            <option value="">A.2.17 - Phục hồi chức năng</option>
+                                            <option value="">A.2.18 - Mai táng phí</option>
+                                            <option value="">A.2.19 - Trợ cấp phần đồng chi trả với BHYT</option>
+                                            <option value="">A.2.20 - Quyền lợi khác</option>
+                                            <option value="">A.3 - Điều trị ngoại trú do ốm bệnh, thai sản</option>
+                                            <option value="">A.3.01 - Giới hạn tối đa 1 lần khám</option>
+                                            <option value="">A.3.01.01 - Giới hạn chi phí vật tư y tế (Xisat, Sterimar, Nacl…)</option>
+                                            <option value="">A.3.01.02 - Vitamin, thuốc bổ</option>
+                                            <option value="">A.3.01.03 - Chlamydia, nấm Candida, tạp khuẩn</option>
+                                            <option value="">A.3.01.04 - Khám không ra bệnh</option>
+                                            <option value="">A.3.01.05 - Khám ra bệnh nhưng chưa có hướng điều trị</option>
+                                            <option value="">A.3.01.06 - Khám ra bệnh có hướng điều trị chưa có đơn thuốc</option>
+                                            <option value="">A.3.01.07 - Xét nghiệm, SA, chụp chiếu ngoài phạm vi BH</option>
+                                            <option value="">A.3.01.08 - Khám tại phòng mạch tư</option>
+                                            <option value="">A.3.01.09 - Chi phí dược mỹ phẩm</option>
+                                            <option value="">A.3.01.10 - Chi phí theo yêu cầu tại BV công (trừ khoa QT, khoa tự nguyện…)</option>
+                                            <option value="">A.3.02 - Chi phí vật lý trị liệu</option>
+                                            <option value="">A.3.02.01 - Chi phí vật lý trị liệu tại PK đặc biệt</option>
+                                            <option value="">A.3.03 - Khám thai định kỳ</option>
+                                            <option value="">A.3.04 - Điều trị răng cơ bản</option>
+                                            <option value="">A.3.04.01 - Lấy cao răng</option>
+                                            <option value="">A.3.04.02 - Quyền lợi răng khác</option>
+                                            <option value="">A.4 - Điều trị răng toàn diện</option>
+                                            <option value="">A.4.01 - Giới hạn lấy cao răng</option>
+                                            <option value="">A.5 - Khám sức khỏe định kỳ</option>
+                                            <option value="">A.6 - Quyền lợi mở rộng khác</option>
                                         </select>
                                     </td>
-                                    <td><input type="text" class="form-control input-money text-right" placeholder="0"></td>
 
-                                    <td><input type="text" class="form-control input-money text-right col-content-xs" placeholder="0"></td>
-                                    <td><input type="text" class="form-control input-money text-right col-content-xs" placeholder="0"></td>
-                                    <td><input type="text" class="form-control input-money text-right col-content-xs" placeholder="0"></td>
+                                    <td><input type="text" class="form-control text-center"></td>
+                                    <td><input type="text" class="form-control text-center"></td>
+                                    <td><input type="text" class="form-control text-center"></td>
+                                    <td><input type="text" class="form-control text-center"></td>
+                                    <td><input type="text" class="form-control text-center"></td>
+                                    <td><input type="text" class="form-control text-center"></td>
+                                    <td><input type="text" class="form-control input-float text-center" placeholder="0.0"></td>
 
-                                    <td><input type="text" class="form-control input-float text-right" placeholder="0.0"></td>
-                                    <td><input type="text" class="form-control input-money text-right" placeholder="0"></td>
-
-                                    <td><input type="text" class="form-control input-float text-right" placeholder="0.0"></td>
-                                    <td><input type="text" class="form-control input-float text-right" placeholder="0.0"></td>
-                                    <td><input type="text" class="form-control input-money text-right" placeholder="0"></td>
-                                    <td><input type="text" class="form-control"></td>
+                                    <td><input type="text" class="form-control col-content-md"></td>
+                                    <td><input type="text" class="form-control col-content-md"></td>
+                                    <td><input type="text" class="form-control col-content-md"></td>
+                                    <td><input type="text" class="form-control col-content-md"></td>
+                                    <td><input type="text" class="form-control col-content-md"></td>
+                                    <td><input type="text" class="form-control col-content-md"></td>
+                                    
                                     <td class="text-center">
                                         <a href="javascript:;" data-repeater-delete class="text-danger"><i class="icon-trash"></i></a>
                                     </td>
