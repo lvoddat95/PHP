@@ -74,7 +74,7 @@
                                                                     
                                                                     <!-- Step 3 -->
                                                                     <fieldset class="tab-pane" id="step3">
-                                                                        <div class="row mb-md-5 mb-3">
+                                                                        <div class="row mb-md-3 mb-2">
                                                                            <div class="col-md-12">
                                                                                 <div class="tab-claim tab-style">
                                                                                     <ul class="nav nav-tabs">
@@ -165,23 +165,23 @@
                                                                                                     <thead class="thead-light">
                                                                                                         <tr>
                                                                                                             <th class="w1p all text-center"><input type="checkbox" id="input-chk-all"></th>
-                                                                                                            <th class="none">Mã nhân viên</th>
+                                                                                                            <th class="w15p">Nhóm cán bộ</th>
+                                                                                                            <th class="w15p">Mã nhân viên</th>
                                                                                                             <th class="w15p">Tên nhân viên</th>
-                                                                                                            <th class="none">Chức vụ</th>
-                                                                                                            <th class="none">Phòng ban</th>
-                                                                                                            <th class="none">Đơn vị</th>
-                                                                                                            <th class="none">Nhóm cán bộ</th>
-                                                                                                            <th class="none">Email</th>
-
-                                                                                                            <th class="w11p">Ngày hiệu lực</th>
-                                                                                                            <th class="w11p">Ngày kết thúc</th>
-
-                                                                                                            <th class="w10p">Cấp bảo hiểm</th>
-                                                                                                            <th class="text-right">Mức lương</th>
-                                                                                                            <th class="text-right">Tổng MTN</th>
-                                                                                                            <th class="text-right">Tổng phí</th>
+                                                                                                            <th class="w15p">Chức vụ</th>
+                                                                                                            <th class="w15p">Phòng ban</th>
+                                                                                                            <th class="w15p">Đơn vị</th>
 
                                                                                                             <th class="none">Thông tin NĐBH</th>
+
+                                                                                                            <th class="none">Ngày hiệu lực</th>
+                                                                                                            <th class="none">Ngày kết thúc</th>
+                                                                                                            <th class="none">Cấp bảo hiểm</th>
+                                                                                                            <th class="none">Email</th>
+                                                                                                            <th class="none">Mức lương</th>
+                                                                                                            <th class="none">Tổng MTN</th>
+                                                                                                            <th class="none">Tổng phí</th>
+
                                                                                                             <th class="none">Phạm vi tham gia</th>
                                                                                               
                                                                                                             <th class="all w1p"></th>
@@ -199,16 +199,6 @@
                                                                                                             <td><input class="form-control col-content-lg" type="text"></td>
                                                                                                             <td><input class="form-control col-content-lg" type="text"></td>
                                                                                                             <td><input class="form-control col-content-lg" type="text"></td>
-                                                                                                            <td><input class="form-control col-content-lg" type="text"></td>
-
-                                                                                                            <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
-                                                                                                            <td><input class="form-control col-content-xs input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
-
-                                                                                                            <td><input class="form-control col-content-lg" type="text"></td>
-                                                                                                            <td><input class="form-control col-content-lg text-right input-money" type="text" placeholder="0"></td>
-                                                                                                            <td><input class="form-control col-content-lg text-right input-money" type="text" placeholder="0"></td>
-                                                                                                            <td><input class="form-control col-content-lg text-right input-money" type="text" placeholder="0"></td>
-
 
                                                                                                             <td>
                                                                                                                 <table class="table table-bordered">
@@ -240,6 +230,16 @@
                                                                                                                     </tbody>    
                                                                                                                 </table>
                                                                                                             </td>
+
+                                                                                                            <td><input class="form-control col-content-sm input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
+                                                                                                            <td><input class="form-control col-content-sm input-date datepicker" placeholder="dd/mm/yyyy" type="text"></td>
+
+                                                                                                            <td><input class="form-control col-content-lg" type="text"></td>
+                                                                                                            <td><input class="form-control col-content-lg" type="text"></td>
+
+                                                                                                            <td><input class="form-control col-content-sm text-right input-money" type="text" placeholder="0"></td>
+                                                                                                            <td><input class="form-control col-content-sm text-right input-money" type="text" placeholder="0"></td>
+                                                                                                            <td><input class="form-control col-content-sm text-right input-money" type="text" placeholder="0"></td>
 
                                                                                                             <td>
 
@@ -371,7 +371,7 @@
                                                                         </div>
 
                                                                         <div class="row justify-content-end">
-                                                                            <div class="col-md-5">
+                                                                            <div class="col-md-6">
                                                                                 <table class="table datatable"  
                                                                                     data-paging="false"
                                                                                     data-info="false"
@@ -383,7 +383,7 @@
                                                                                             <th class="w25p all"></th>
                                                                                             <th class="text-center desktop"><b>Nhóm bảo hiểm</b></th>
                                                                                             <th class="text-center desktop"><b>Số tiền</b></th>
-                                                                                            <th class="text-center desktop"><b>Tỉ lệ phí (%)</b></th>
+                                                                                            <th class="text-center desktop"><b>Phí bảo hiểm</b></th>
                                                                                         </tr>
                                                                                     </thead>
                                                                                     <tbody>
@@ -391,45 +391,76 @@
                                                                                             <td><b><i class="far fa-sigma mr-1"></i>Tổng cộng:</b></td>
                                                                                             <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
                                                                                             <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
-                                                                                            <td><input type="text" class="form-control input-float text-right" name="" placeholder="0"></td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
                                                                                         </tr>
                                                                                     </tbody>
                                                                                 </table>
                                                                             </div>
-                                                                            <div class="col-md-4">
+                                                                            <div class="col-md-6">
                                                                                 <table class="table datatable" data-paging="false" data-info="false" data-ordering="false" data-searching="false">
                                                                                     <thead class="thead-light">
                                                                                         <tr>
-                                                                                            <th class="w30p all"></th>
+                                                                                            <th class="w50p all"></th>
                                                                                             <th class="desktop">Số tiền bảo hiểm</th>
                                                                                             <th class="desktop">Phí bảo hiểm</th>
                                                                                         </tr>
                                                                                     </thead>
                                                                                     <tbody>
                                                                                         <tr>
-                                                                                            <td>Phạm vi A</td>
+                                                                                            <td>1. Tử vong/TTVV do tai nạn</td>
                                                                                             <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
                                                                                             <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
                                                                                         </tr>
                                                                                         <tr>
-                                                                                            <td>Phạm vi B</td>
+                                                                                            <td>2. Trợ cấp do tai nạn</td>
                                                                                             <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
                                                                                             <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
                                                                                         </tr>
                                                                                         <tr>
-                                                                                            <td>Phạm vi C</td>
+                                                                                            <td>3. Chi phí y tế do tai nạn</td>
                                                                                             <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
                                                                                             <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
                                                                                         </tr>
                                                                                         <tr>
-                                                                                            <td>Phạm vi D</td>
+                                                                                            <td>4. Tử vong/TTVV do ốm bệnh, thai sản</td>
                                                                                             <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
                                                                                             <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
                                                                                         </tr>
+                                                                                        <tr>
+                                                                                            <td>5. Điều trị nội trú do ốm bệnh, thai sản</td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>6. Điều trị ngoại trú do ốm bệnh, thai sản</td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>7. Trợ cấp do ốm bệnh</td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>8. Điều trị răng toàn diện</td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>9. Khám sức khoẻ định kỳ</td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>10. Quyền lợi mở rộng khác</td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                            <td><input type="text" class="form-control input-money text-right" name="" placeholder="0"></td>
+                                                                                        </tr>
+
+                                                                                        
                                                                                         <tr>
                                                                                             <td>
                                                                                                 <b><i class="far fa-sigma mr-1"></i>Tổng cộng</b>
-                                                                                                <b class="small">(A+B+C+D)</b>
                                                                                             </td>
                                                                                             <td><input type="text" class="form-control input-money text-right font-weight-bold" value="0" placeholder="0" ></td>
                                                                                             <td><input type="text" class="form-control input-money text-right font-weight-bold" value="0" placeholder="0" ></td>
@@ -474,7 +505,7 @@
                                                                                             </thead>
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td>1. Phạm vi A (Chết, tàn tật toàn bộ vĩnh viễn do ốm đau bệnh tật)</td>
+                                                                                                    <td>1. Tử vong/TTVV do tai nạn</td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right input-float" type="text" value="10"></td>
@@ -488,7 +519,7 @@
                                                                                                     </td>
                                                                                                 </tr>
                                                                                                 <tr>
-                                                                                                    <td>2. Phạm vi B (Tai nạn cá nhân)</td>
+                                                                                                    <td>2. Trợ cấp do tai nạn</td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right input-float" type="text" value="10"></td>
@@ -497,12 +528,12 @@
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td>
                                                                                                         <select class="form-control " select2 name="dinh_muc" >
-                                                                                                            <option>Bảo hiểm con nguời mức trách nhiệm cao (VNI Care)</option>
+                                                                                                            <option>Bảo hiểm con nguời mức trách nhiệm cao (VNI Care)</option>    
                                                                                                         </select>
                                                                                                     </td>
                                                                                                 </tr>
                                                                                                 <tr>
-                                                                                                    <td>3. Phạm vi C (Trợ cấp nằm viện và phẫu thuật)</td>
+                                                                                                    <td>3. Chi phí y tế do tai nạn</td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right input-float" type="text" value="10"></td>
@@ -511,12 +542,12 @@
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td>
                                                                                                         <select class="form-control " select2 name="dinh_muc" >
-                                                                                                            <option>Bảo hiểm con nguời mức trách nhiệm cao (VNI Care)</option>
+                                                                                                            <option>Bảo hiểm con nguời mức trách nhiệm cao (VNI Care)</option>    
                                                                                                         </select>
                                                                                                     </td>
                                                                                                 </tr>
                                                                                                 <tr>
-                                                                                                    <td>4. Phạm vi D (Điều trị ngoại trú do ốm bệnh)</td>
+                                                                                                    <td>4. Tử vong/TTVV do ốm bệnh, thai sản</td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td><input class="form-control text-right input-float" type="text" value="10"></td>
@@ -525,10 +556,95 @@
                                                                                                     <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
                                                                                                     <td>
                                                                                                         <select class="form-control " select2 name="dinh_muc" >
-                                                                                                            <option>Bảo hiểm con nguời mức trách nhiệm cao (VNI Care)</option> 
+                                                                                                            <option>Bảo hiểm con nguời mức trách nhiệm cao (VNI Care)</option>    
                                                                                                         </select>
                                                                                                     </td>
                                                                                                 </tr>
+                                                                                                <tr>
+                                                                                                    <td>5. Điều trị nội trú do ốm bệnh, thai sản</td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                    <td><input class="form-control text-right input-float" type="text" value="10"></td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" value="0"></td>
+                                                                                                    <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                    <td>
+                                                                                                        <select class="form-control " select2 name="dinh_muc" >
+                                                                                                            <option>Bảo hiểm con nguời mức trách nhiệm cao (VNI Care)</option>    
+                                                                                                        </select>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>6. Điều trị ngoại trú do ốm bệnh, thai sản</td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                    <td><input class="form-control text-right input-float" type="text" value="10"></td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" value="0"></td>
+                                                                                                    <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                    <td>
+                                                                                                        <select class="form-control " select2 name="dinh_muc" >
+                                                                                                            <option>Bảo hiểm con nguời mức trách nhiệm cao (VNI Care)</option>    
+                                                                                                        </select>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>7. Trợ cấp do ốm bệnh</td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                    <td><input class="form-control text-right input-float" type="text" value="10"></td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" value="0"></td>
+                                                                                                    <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                    <td>
+                                                                                                        <select class="form-control " select2 name="dinh_muc" >
+                                                                                                            <option>Bảo hiểm con nguời mức trách nhiệm cao (VNI Care)</option>    
+                                                                                                        </select>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>8. Điều trị răng toàn diện</td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                    <td><input class="form-control text-right input-float" type="text" value="10"></td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" value="0"></td>
+                                                                                                    <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                    <td>
+                                                                                                        <select class="form-control " select2 name="dinh_muc" >
+                                                                                                            <option>Bảo hiểm con nguời mức trách nhiệm cao (VNI Care)</option>    
+                                                                                                        </select>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>9. Khám sức khoẻ định kỳ</td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                    <td><input class="form-control text-right input-float" type="text" value="10"></td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" value="0"></td>
+                                                                                                    <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                    <td>
+                                                                                                        <select class="form-control " select2 name="dinh_muc" >
+                                                                                                            <option>Bảo hiểm con nguời mức trách nhiệm cao (VNI Care)</option>    
+                                                                                                        </select>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>10. Quyền lợi mở rộng khác</td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                    <td><input class="form-control text-right input-float" type="text" value="10"></td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" value="0"></td>
+                                                                                                    <td><input class="form-control text-right input-float" type="text" placeholder="0.0" value="10.0"></td>
+                                                                                                    <td><input class="form-control text-right input-money" type="text" placeholder="0"></td>
+                                                                                                    <td>
+                                                                                                        <select class="form-control " select2 name="dinh_muc" >
+                                                                                                            <option>Bảo hiểm con nguời mức trách nhiệm cao (VNI Care)</option>    
+                                                                                                        </select>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                          
                                                                                                 <tr>
                                                                                                     <th><b>Tổng cộng: </b></th>
                                                                                                     <th align="right"><input class="form-control text-right" type="text" disabled readonly value="0"></th>
@@ -638,22 +754,47 @@
                                                                                             </tr>
                                                                                             
                                                                                             <tr>
-                                                                                                <td>Phạm vi A (Chết, tàn tật toàn bộ vĩnh viễn do ốm đau bệnh tật)</td>
+                                                                                                <td>1. Tử vong/TTVV do tai nạn</td>
+                                                                                                <td class="text-right">0</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>2. Trợ cấp do tai nạn</td>
+                                                                                                <td class="text-right">0</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>3. Chi phí y tế do tai nạn</td>
+                                                                                                <td class="text-right">0</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>4. Tử vong/TTVV do ốm bệnh, thai sản</td>
+                                                                                                <td class="text-right">0</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>5. Điều trị nội trú do ốm bệnh, thai sản    </td>
+                                                                                                <td class="text-right">0</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>6. Điều trị ngoại trú do ốm bệnh, thai sản</td>
+                                                                                                <td class="text-right">0</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>7. Trợ cấp do ốm bệnh</td>
+                                                                                                <td class="text-right">0</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>8. Điều trị răng toàn diện</td>
+                                                                                                <td class="text-right">0</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>9. Khám sức khoẻ định kỳ</td>
+                                                                                                <td class="text-right">0</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>10. Quyền lợi mở rộng khác</td>
                                                                                                 <td class="text-right">0</td>
                                                                                             </tr>
                                                                                             
-                                                                                            <tr>
-                                                                                                <td>Phạm vi B (Tai nạn cá nhân)</td>
-                                                                                                <td class="text-right">0</td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>Phạm vi C (Trợ cấp nằm viện và phẫu thuật)</td>
-                                                                                                <td class="text-right">0</td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>Phạm vi D (Điều trị ngoại trú do ốm bệnh)</td>
-                                                                                                <td class="text-right">0</td>
-                                                                                            </tr>
+                                                                                           
                                                                                             <tr class="font-weight-bold" style="background-color: #fff;">
                                                                                                 <td>Tổng phí BH (chưa VAT)</td>
                                                                                                 <td><input class="form-control text-right" type="text" readonly value="0"></td>
