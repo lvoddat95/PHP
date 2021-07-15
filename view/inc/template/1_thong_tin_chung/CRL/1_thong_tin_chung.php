@@ -30,9 +30,13 @@
                 <?php inc('template/1_thong_tin_chung/so_gcnbh.php'); ?> 
             </div>
         <?php endif; ?>
-        <div class="col-md-4">
-            <?php inc('template/1_thong_tin_chung/so_phan_tach.php'); ?>
-        </div>
+
+        <?php if (!empty($GLOBALS["so_phan_tach"]) && $GLOBALS["so_phan_tach"] == 'remove') : ?>
+        <?php else: ?>
+            <div class="col-md-4">
+                <?php inc('template/1_thong_tin_chung/so_phan_tach.php'); ?>
+            </div>
+        <?php endif; ?>
     </div>
     <div class="row">
         <div class="col-md-4">

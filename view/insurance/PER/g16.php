@@ -3,6 +3,7 @@
 <?php $GLOBALS["dk_sua_doi_bo_sung"] = 'g'; ?>
 <?php $GLOBALS["dk_loai_tru"] = 'g16'; ?>
 <?php $GLOBALS["quy_tac"] = 'remove_tra_cuu'; ?>
+<?php $GLOBALS["so_gcnbh"] = 'no_required'; ?>
 
     <body class="sidebar-xs">
 
@@ -96,9 +97,6 @@
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <?php inc('template/1_thong_tin_chung/so_gcnbh.php'); ?> 
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/1_thong_tin_chung/so_phan_tach.php'); ?> 
                                                                             </div>
                                                                         </div>
 

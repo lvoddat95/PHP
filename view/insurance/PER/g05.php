@@ -3,6 +3,7 @@
 <?php $GLOBALS["dk_sua_doi_bo_sung"] = 'g'; ?>
 <?php $GLOBALS["dk_loai_tru"] = 'g05'; ?>
 <?php $GLOBALS["quy_tac"] = 'remove_tra_cuu'; ?>
+<?php $GLOBALS["so_gcnbh"] = 'no_required'; ?>
 <?php $GLOBALS["nguoi_duoc_bao_hiem"] = 'label_khach_hang'; ?>
 
     <body class="sidebar-xs">

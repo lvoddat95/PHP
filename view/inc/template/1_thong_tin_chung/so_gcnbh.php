@@ -1,5 +1,11 @@
 <div class="form-group ">
-	<label class="d-block">Số GCNBH: <span class="text-danger">*</span> <i class="text-danger float-right font9">(Ví dụ:COV-AVP/000001)</i></label>
+	<label class="d-block">Số GCNBH:
+<?php if (!empty($GLOBALS["so_gcnbh"]) && $GLOBALS["so_gcnbh"] == 'no_required') : ?>
+    <?php else: ?>
+        <span class="text-danger">*</span>
+    <?php endif; ?>
+		<i class="text-danger float-right font9">(Ví dụ:COV-AVP/000001)</i></label>
+
 	<?php if (!empty($GLOBALS["gv"]) && $GLOBALS["gv"] == 'ebaohiem') : ?>
 		<div class="input-group">
 			<input type="text" class="form-control required" name="so_gcnbh" placeholder="Nhập số GCNBH..." value="">

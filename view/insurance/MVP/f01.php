@@ -95,9 +95,6 @@
                                                                                 <?php $GLOBALS["gv"] = 'ebaohiem'; ?>
                                                                                 <?php inc('template/1_thong_tin_chung/so_gcnbh.php'); ?> 
                                                                             </div>
-                                                                            <div class="col-md-4">
-                                                                                <?php inc('template/1_thong_tin_chung/so_phan_tach.php'); ?> 
-                                                                            </div>
                                                                         </div>
 
                                                                         <div class="row">
